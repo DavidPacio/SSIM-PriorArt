@@ -1,0 +1,166 @@
+jDesktop
+========
+
+djh changes 2011
+-----------
+Global:
+ $(wintb) -> wintb
+ $(win)   -> win
+ $('#main') -> MainEl
+ Many $(this) uses should also probably -> this
+ 0px -> 0
+Loading window removed
+Removed: theme: 'jwindow',                  // always jwindow ... this is old ... should be removed
+Rewrote LoadApp and StartApp() using a rigid file structure
+GetResources() brought inline into StartApp with appPath == '' branch removed
+Removed passing of win paramter to jWindow fns and used wEl & wtbEl instead. This allowed some anon fun calls to go back to direct ones.
+Resizable() moved into constructor like all the others. Big but so are some of the others
+Lots more ...
+
+More....
+App.htm -> Htm.htm
+App.js  -> Js.js
+AppStart.js -> Start.js
+App.css -> Css.css
+Removed need for an app to have its own css file
+
+17.01.12 Removed closeConfirm option with its button creation
+18.01.12 jWindow button removed from css
+
+17.02.12 Moved CloseWin out of jWindow to own fn so could be called directly rather than by programmatically clicking the close btn
+         Removed closable option as always closable for Braiins
+         Removed the double (function($) { ... })(jQuery);
+         Removed getCss()
+         Turned shadow on
+18.02.12
+  Moved options and defaults from $.fn.jWindow to jWin object
+  Moved window html code inline and simplified inclusion of title
+  Moved animationspeed from options to jWin object
+  Removed option of an app having a css file
+  Added OnClose, OnMin, OnRestore
+  Replaced various class and DOM uses by AppsO properties open and min
+  Removed ChkEl: function(id) - bring already open win to the top instead ofpulsing it
+  HighLightWin: function(id) which was only called by ChkEl
+  Removed resizable option incl
+    <div class='bottomrR skin'></div>
+    <span class=maxbtn title=Maximize></span>
+    function MinMaxWin()
+    $.fn.jDresizable = function(opts)
+    classes: .jwindow .wincontrols span.maxbtn
+             .jwindow .bottom .bottomrR
+    images:  minmax.gif
+             bottomrR.png
+  Removed:
+  //flexify: false,                // works great with jquery 1.4.2
+  //onResizeStart: function() {return false;},
+  //onResizeEnd:   function() {return false;},
+  //onFocusGet: function(){return false;},     // rebind keypress ...
+  //onFocusLost: function(){return false;},    // pause game or whatever you must do becouse this app has keypress unbinded (probably)
+  //onBeforeStart: function(){return false;},  // set up just before window pops up, maybe some splashscreen ?!
+  //onStart: function(){return false;},      // start app, remove splashscreen ?!
+  //onBeforeClose: function(){return false;},  // ummm, put something smart here too ...
+  //onClose: function(){ return false; }     // clean up after closing, delete global vars, stop processes
+
+19.02.12
+  Removed movable option - all movable
+  Added tbCap option for a different tool bar button caption e.g. if the title is too long as in 'Financial Statements'
+  Removed use of Start.js -> info in BDT.Menu()
+  
+20.02.12
+  Removed pulse
+  Changed from use of css() calls on tb btn hover to straight css. Switched to doing all via btn container and removed id from wintb span
+  Moved CloseWin, MinWin, and RestoreWin back inside jWindow using the this.CloseWin = function() { form of declaration
+   = callable from outside, but with jWindow local variables available.
+  Gave non-minimisable windows a tool bar button re hover and bringing to the top
+  Added box shadow to the active window and removed it as an option
+  
+21.02.12
+  Removed minable option - all minable
+  Removed skin class (was only in html)
+  
+22.02.12
+  Click handling much improved
+  Window open position varied via calc offsets
+  Interaction with Busy() added
+  <div class='mask'></div> and class removed
+  
+  
+
+jWindow
+-------
+Original:
+
+<div class='top skin'>
+  <div class='topc skin'>
+    <div class='topr skin'></div>
+  </div>
+</div>
+<div class='middle skin'>
+  <div class='content skin'>
+    <div class='mask'></div>
+    <div class='container'></div>
+  </div>
+</div>
+<div class='bottom skin'>
+  <div class='bottomc skin'>
+    <div class='bottomr skin'></div>
+    <div class='bottomrR skin'></div>
+  </div>
+</div>
+<div class='wintitle'>
+  <img alt='' title='' src='css/jd/images/jwindows/favicon.png'/>
+  <div class='titleleft'></div>
+  <div class='titletext'></div>
+  <div class='titleright'></div>
+</div>
+<div class='jwinhandle'></div>
+<span class='wincontrols'>
+  <span class='winmin' title='minimize'></span>
+  <span class='maxbtn' title='maximize'></span>
+  <span class='winclose' title='close'></span>
+</span>
+<div class='winmask'></div>
+
+As revised:
+
+<div class=top>
+  <div class=topc>
+    <div class=topr></div>
+  </div>
+</div>
+<div class=middle>
+  <div class=content>
+    <div class=container></div>
+  </div>
+</div>
+<div class=bottom>
+  <div class=bottomc>
+    <div class=bottomr></div>
+  </div>
+</div>
+<div class=wintitle>
+  <img alt='' title='' src=css/jd/img/favicon.png />
+  <div class=titleleft></div>
+  <div class=titletext>"+s.title+"</div>
+  <div class=titleright></div>
+</div>
+<div class=jwinhandle></div>
+<span class=wincontrols>
+  <span class=winmin title=Minimise></span>
+  <span class=winclose title=Close></span>
+</span>
+<div class=winmask></div>
+
+Toobar button original
+
+<div id=xxtbcont class=wintbcont>
+  <span id=xxtb class=wintb>CCC</span>
+  <span class=wintbclose title=Close></span>
+</div>
+
+Toobar button revised 20.02.12
+
+<div id=xxtbcont class=wintbcont>
+  <span class=wintb>CCC</span>
+  <span class=wintbclose title=Close></span>
+</div>

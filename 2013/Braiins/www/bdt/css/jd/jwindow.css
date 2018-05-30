@@ -1,0 +1,234 @@
+.jwindow{
+  position: absolute;
+  margin: 0;
+  overflow: hidden;
+  padding: 0 40px 56px 0;
+  border-radius: 8px;
+}
+.jwindow .wincontrols{
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+.jwindow .wincontrols span{
+  cursor: pointer;
+  margin: 1px;
+  padding: 0;
+  display: block;
+  float: left;
+  width: 15px;
+  height: 14px;
+  border-radius: 4px;
+}
+.jwindow .wincontrols span:hover{box-shadow: 0 0 20px #f00}
+.jwindow .wincontrols span.winmin{background:url(../../img/min1514.gif) no-repeat}
+.jwindow .wincontrols span.winclose{background:url(../../img/close1514.gif) no-repeat}
+.jwindow .wincontrols span.winclose:hover{background:url(img/closeh.gif)}
+.jwindow .wintitle{
+  font-weight: bold;
+  text-align: left;
+  left: 10px;
+  color: #000;
+  top: 0;
+  position: absolute;
+  width: 90%;
+  height: 24px;
+  overflow: hidden;
+}
+
+.jwindow .wintitle img{
+  padding-top: 5px;
+  padding-right: 6px;
+  float: left;
+}
+.jwindow .wintitle .titletext{
+  line-height: 16px;
+  vertical-align: top;
+  float: left;
+  width: auto;
+  overflow: hidden;
+  text-align: left;
+  height: 16px;
+  background: url(img/titletext.png);
+  margin-top: 5px;
+  font-family: Verdana, Arial;
+  font-size: 10px;
+  text-shadow: 0 1px 1px #555;
+}
+
+.jwindow .wintitle .titleleft{
+  width: 10px;
+  height: 16px;
+  float: left;
+  margin-top: 5px;
+  background: url(img/titlecloud.png) no-repeat;
+}
+
+.jwindow .wintitle .titleright{
+  width: 10px;
+  height: 16px;
+  float: left;
+  margin-top: 5px;
+  background: url(img/titlecloud.png) 10px 0;
+}
+
+.jwindow div.jwinhandle{
+  width: 100%;
+  cursor: move;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23px;
+  display: inline-block;
+  background-color: #fff;
+  opacity:0;
+  margin: 1px 0 0 1px;
+}
+
+.jwindow div.top{
+  background:#80badd url(img/topl.png) no-repeat;
+  width: 100%;
+  height: 36px;
+  clear: both;
+}
+.jwindow div.top .topr{
+  background:#80badd url(img/topr.png) no-repeat;
+  width: 20px;
+  height: 36px;
+  position: absolute;
+  right: -20px;
+}
+.jwindow div.top .topc{
+  background:#80badd url(img/topc.png);
+  height: 36px;
+  position: absolute;
+  margin-left: 40px;
+  left: -20px;
+  right: 20px;
+}
+.jwindow div.middle{
+  background:#80badd url(img/left.png) repeat-y top left;
+  width: 100%;
+  height: 100%;
+  clear: both;
+}
+.jwindow div.middle .content{
+  position: relative;
+  background:#80badd url(img/right.png) repeat-y top right;
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+  padding-right: 20px;
+  overflow: hidden;
+}
+.jwindow div.middle .content .container{
+   background-color: #fff;
+   overflow: hidden;
+   position: relative;
+   height: 100%;
+}
+
+.jwindow div.bottom{
+  background:#80badd url(img/bottoml.png) no-repeat;
+  width: 100%;
+  height: 20px;
+  clear: both;
+}
+.jwindow div.bottom .bottomr{
+  background:#80badd url(img/bottomr.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: -20px;
+}
+.jwindow div.bottom .bottomc{
+  background:#80badd url(img/bottomc.png) repeat bottom;
+  height: 20px;
+  position: absolute;
+  margin-left: 40px;
+  left: -20px;
+  right: 20px;
+}
+
+.winmask{
+ /*cursor: move;*/
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #ccc;
+   top: 0;
+   left: 0;
+   opacity:.6;
+   border-radius:8px;
+   padding: 38px 0 0 54px;
+   border: 1px solid #333;
+}
+
+.wintbcont {
+  cursor: pointer;
+  position: relative;
+  float: left;
+  width: 120px;
+  height: 100%;
+  overflow: hidden;
+  list-style: none;
+  background:#cef;
+  font:bold 11px arial,verdana,sans-serif;
+  color:#444;
+  text-shadow:1px 2px 3px #fff;
+  text-align: center;
+  line-height: 32px;
+  box-shadow: 0 0 8px #eee inset;
+  border: 1px solid #555;
+}
+
+.wintbcont:hover {
+  border: 1px solid #00f;
+  box-shadow:0 0 8px #00f inset;
+}
+
+.wintbcont.wtop {
+  color:#fff;
+  background:#1F7AD0;
+  text-shadow:1px 2px 3px #000;
+  box-shadow:0 0 8px #fff inset
+}
+
+.wintbcont.wtop:hover {
+  border: 1px solid #00f;
+  box-shadow:0 0 8px #00f inset;
+}
+
+.wintbcont.wmin {
+  color:#444;
+  background:transparent;
+  text-shadow:1px 2px 3px #fff;
+  box-shadow:0 0 8px #000 inset;
+}
+
+.wintbcont.wmin:hover {
+  border: 1px solid #00f;
+  box-shadow:0 0 8px #00f inset;
+}
+
+.wintbclose{
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background: url(../../img/close1514.gif) no-repeat;
+  height: 14px;
+  width: 15px;
+  opacity:0.5;
+}
+
+.wintbcont:hover .wintbclose{
+  opacity:1;
+  box-shadow: 0 0 8px #f00;
+}
+
+.wintbclose:hover{
+  background: url(img/closeh.gif);
+}
+
+.shadow {box-shadow:0 0 16px #444}
+.blueShadow {box-shadow:0 0 16px #00f}

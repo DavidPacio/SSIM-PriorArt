@@ -1,0 +1,450 @@
+PHP Snippets
+------------
+
+Operator Precedence http://id.php.net/manual/en/language.operators.precedence.php
+===================
+The precedence of an operator specifies how "tightly" it binds two expressions together.
+For example, in the expression 1 + 5 * 3, the answer is 16 and not 18 because the multiplication
+("*") operator has a higher precedence than the addition ("+") operator.
+Parentheses may be used to force precedence, if necessary. For instance: (1 + 5) * 3 evaluates to 18.
+
+When operators have equal precedence, their associativity decides whether they are evaluated starting from the right,
+or starting from the left - see the examples below.
+
+The following table lists the operators in order of precedence, with the highest-precedence ones at the top.
+Operators on the same line have equal precedence, in which case associativity decides the order of evaluation.
+
+                                  Operator Precedence
+Associativity     Operators                                            Additional Information
+non-associative   clone new                                            clone and new
+left              [                                                    array()
+non-associative   ++ --                                                increment/decrement
+right             ~ - (int) (float) (string) (array) (object) (bool) @ types
+non-associative   instanceof                                           types
+right             !                                                    logical
+left              * / %                                                arithmetic
+left              + - .                                                arithmetic and string
+left              << >>                                                bitwise
+non-associative   < <= > >= <>                                         comparison
+non-associative   == != === !==                                        comparison
+left              &                                                    bitwise and references
+left              ^                                                    bitwise
+left              |                                                    bitwise
+left              &&                                                   logical
+left              ||                                                   logical
+left              ? :                                                  ternary
+right              = += -= *= /= .= %= &= |= ^= <<= >>= =>             assignment
+left              and                                                  logical
+left              xor                                                  logical
+left              or                                                   logical
+left              ,                                                    many uses
+
+For operators of equal precedence, left associativity means that evaluation proceeds from left to right, and right associativity means the opposite.
+
+Note:
+
+Although = has a lower precedence than most other operators, PHP will still allow expressions similar to the following: if (!$a = foo()), in which case the return value of foo() is put into $a. 
+
+Download
+--------
+Example #1 Forcing a download using readfile()
+http://php.net/manual/en/function.readfile.php
+
+See also the Tari book download
+
+Trim + removing excess internal spaces
+--------------------------------------
+http://www.php.net/manual/en/function.preg-replace.php
+$str = 'foo   o';
+$str = preg_replace('/\s\s+/', ' ', $str);
+// This will be 'foo o' now
+echo $str;
+
+http://www.daniweb.com/forums/thread32638.html
+
+      $sTestString = 'This is a stringwith lots of odd spaces and tabs
+      and some newlines too
+
+      lets see if this works.';
+
+      $sPattern = '/\s*/m';
+      $sReplace = '';
+      echo $sTestString . '<br />';
+      echo preg_replace( $sPattern, $sReplace, $sTestString );
+
+As used in Clean() in FuncsDB.inc:
+
+preg_replace('/\s*/m', '', $val) // remove all ws for FT_PW and FT_EMAIL
+
+trim(preg_replace('/\s\s+/m', ' ', $val)) // trim and reduce internal excess ws to a single space
+
+Input validation - Security
+===========================
+HTML Purifier
+-------------
+http://htmlpurifier.org/
+HTML Purifier is a standards-compliant HTML filter library written in PHP. 
+
+Input Validation
+----------------
+http://www.php.net/manual/en/function.count-chars.php
+This function is great for input validation.  I frequently need to check that all characters in a string are 7-bit ASCII (and not null).  This is the fastest function I have found yet:
+
+function is7bit($string) {
+    // empty strings are 7-bit clean
+    if (!strlen($string)) {
+        return true;
+    }
+    // count_chars returns the characters in ascending octet order
+    $str = count_chars($str, 3);
+    // Check for null character
+    if (!ord($str[0])) {
+        return false;
+    }
+    // Check for 8-bit character
+    if (ord($str[strlen($str)-1]) & 128) {
+        return false;
+    }
+    return true;
+}
+
+See
+http://scvinodkumar.wordpress.com/2009/11/06/php-form-validation-functions/
+function fnSanitizeAlphanumeric($string) {
+  return preg_replace('/[^a-zA-Z0-9\s]/', '', $string);
+}
+
+From past attempts in FuncsDB.inc
+
+FILTER_SANITIZE_SPECIAL_CHARS as used for FT_STR & FT_TEXTAREA sanitizes special characters (" ' < > )" but does not try to remove tags as FILTER_SANITIZE_STRING does, which zapped everything after a < that wasn't closed.
+
+For FT_TEXTAREA we want to preserve CrLfs so use FILTER_FLAG_ENCODE_LOW rather than FILTER_FLAG_STRIP_LOW as for FT_STR. Then CrLf is converted to &#13;&#10;
+
+From http://scvinodkumar.wordpress.com/2009/11/06/php-form-validation-functions/
+
+// djh?? Add check for bad string data
+//case FT_STR: return $DB->real_escape_string(filter_var($val, FILTER_SANITIZE_SPECIAL_CHARS, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH));
+//case FT_TEXTAREA: return filter_var($val, FILTER_SANITIZE_SPECIAL_CHARS, FILTER_FLAG_ENCODE_LOW | FILTER_FLAG_STRIP_HIGH);
+
+
+Shorthand Object Creation
+-------------------------
+http://stackoverflow.com/questions/455800/does-php-feature-short-hand-syntax-for-objects
+
+$obj = (object)array('foo' => 'bar');
+echo $obj->foo; // yields "bar"
+
+or via json
+http://www.php.net/manual/en/function.json-encode.php
+or
+https://gist.github.com/820694
+for a mixture of assoc arrays and objects
+
+XBRL Class
+----------
+http://mzstyle.s147.xrea.com/xbrlphp/?lang=en
+
+Optimize File Downloading in PHP
+--------------------------------
+http://www.devshed.com/c/a/PHP/Optimize-File-Downloading-in-PHP/
+
+
+Optional assignment in a logical statement (not for the CamelCase use for which regex is better.)
+------------------------------------------
+Sam 25-Sep-2007 08:24
+A good way to use this method to convert CamelCase text into nice text would be-
+
+<?php
+        /**
+         Returns a formatted string based on camel case.
+         e.g. "CamelCase" -> "Camel Case".
+        */
+        function FormatCamelCase( $string ) {
+                $output = "";
+                foreach( str_split( $string ) as $char ) {
+                        strtoupper( $char ) == $char and $output and $output .= " "; # <============
+                        $output .= $char;
+                }
+                return $output;
+        }
+?>
+
+http://www.php.net/manual/en/function.str-split.php
+
+Charting with pChart (graphs bar chart plot)
+--------------------
+http://phpmaster.com/charting-with-pchart/
+http://www.pchart.net/
+
+PHP UTF-8 cheatsheet
+--------------------
+http://developer.loftdigital.com/blog/php-utf-8-cheatsheet
+
+fwrite($Fh, "\xEF\xBB\xBF"); # Write UTF-8 BOM at start of file
+
+PHP Operating System Program Execution Functions
+------------------------------------------------
+http://www.devshed.com/c/a/PHP/PHP-File-and-Operating-System-Program-Execution-Functions/
+
+Maintaining your Server with Command Line PHP
+---------------------------------------------
+http://phpmaster.com/maintaining-your-server-with-command-line-php/
+
+Generating CSV, Parsing Fixed-Width Data, Simple Template, communicating over various protocols
+===============================================================================================
+http://phpmaster.com/5-inspiring-and-useful-php-snippets/
+
+1. Generating CSV
+   --------------
+
+All too often we see code that attempts to convert a multi-dimensional array of data to CSV that looks like this:
+1	<?php
+2	$csv = "";
+3	foreach ($data as $row) {
+4	    $csv .= join(",", $row) . "\n";
+5	}
+6	echo $csv;
+
+The problem is that the individual elements are not properly escaped, and a single value with either a quotation mark or comma can throw off a parser that later tries to consume the CSV data. It’s much better to use the built-in fputcsv() function; it should execute faster because it’s implementation is in C code, and it handles the necessary quoting/escaping for you.
+
+The following code wraps logic to construct CSV output from an array of data. It has optional parameters to allow for header columns and whether to flush the CSV directly to the browser or return the output as a string. The elegance here is the usage of streams with fputcsv() as the function requires an open file handle to operate.
+01	<?php
+02	function toCSV(array $data, array $colHeaders = array(), $asString = false) {
+03	    $stream = ($asString)
+04	        ? fopen("php://temp/maxmemory", "w+")
+05	        : fopen("php://output", "w"); 
+06	 
+07	    if (!empty($colHeaders)) {
+08	        fputcsv($stream, $colHeaders);
+09	    }
+10	 
+11	    foreach ($data as $record) {
+12	        fputcsv($stream, $record);
+13	    }
+14	 
+15	    if ($asString) {
+16	        rewind($stream);
+17	        $returnVal = stream_get_contents($stream);
+18	        fclose($stream);
+19	        return $returnVal;
+20	    }
+21	    else {
+22	        fclose($stream);
+23	    }
+24	}
+
+With the toCSV() function in your arsenal, generating CSV becomes easy and fool proof.
+
+
+3. Parsing Fixed-Width Data with unpack()
+   ------------------------------------
+
+In today’s modern world filled with XML and JSON, you might think fixed-width formats are extinct… but you’d be wrong. There is still a large amount of fixed-width data, such as some log entries, MARC 21 (bibliographic information), NACHA (financial information), etc. And between you and me, I still have a soft spot for fixed-width data.
+
+Fixed-width data is relatively easy to work with in languages like C because the data, one loaded into memory, aligns perfectly with the accessing data structure. But for some, working with fixed-data in a dynamic language like PHP can be a struggle; the loose typing of the language makes such memory access impossible. And as a result, we often see code that looks like this:
+01	<?php
+02	// Parse a NACHA header record
+03	$row = fread($fp, 94);
+04	$header = array();
+05	$header["type"] = substr($row, 0, 1);
+06	$header["priority"] = substr($row, 1, 2);
+07	$header["immDest"] = substr($row, 3, 10);
+08	$header["immOrigin"] = substr($row, 13, 10);
+09	$header["date"] = substr($row, 23, 6);
+10	$header["time"] = substr($row, 29, 4);
+11	$header["sequence"] = substr($row, 33, 1);
+12	$header["size"] = substr($row, 34, 3);
+13	$header["blockFactor"] = substr($row, 37, 2);
+14	$header["format"] = substr($row, 39, 1);
+15	$header["destName"] = substr($row, 40, 23);
+16	$header["originName"] = substr($row, 63, 23);
+17	$header["reference"] = substr($row, 86, 8);
+18	print_r($header);
+
+You’re probably cringing. It’s okay, I wouldn’t want such code in my application either! It’s verbose and the indexing is error-prone. Luckily, there is a better alternative: unpack().
+
+The documentation for unpack() in the PHP Manual says: “Unpacks a binary string into an array according to the given format” and show usage examples escaped using binary data. What may not be immediately apparent is that the function can be used to parse fixed-width strings thanks to the format specifier ‘A’ which represents a character (after all, is not a string just a series of bits and bytes?).
+
+Using unpack(), the above example can be re-written more elegantly like so:
+1	<?php
+2	// Parse a NACHA header record
+3	$row = fread($fp, 94);
+4	$header = unpack("A1type/A2priority/A10immDest/A10immOrigin/"
+5	    . "A6date/A4time/A1sequence/A3size/A2blockFactor/A1format/"
+6	    . "A23destName/A23originName/A8reference", $row);
+7	print_r($header);
+
+The format string in this case is simply a series of A’s specifying character data, the character-count for the specific field, and the key name the retrieved data will be assigned in the final array, separated by slashes. A6date for example parses out the 6 characters and makes them available as $header["date"].
+
+
+4. Templating HTML
+   ---------------
+
+There’s never been much of a consensus about templating in the PHP community. We all agree that keeping HTML and PHP separate is desirable, but clash on the suitability of using template libraries such as Smarty or Twig. Some point out that PHP itself is a template engine, and argue against a library’s speed, syntax, etc. Others claim to have benefited greatly from using the DSL that templating systems provide. One compromise is to template your HTML to keep things clean using a very minimal class written in PHP.
+01	<?php
+02	class Template
+03	{
+04	    protected $dir;
+05	    protected $vars;
+06	 
+07	    public function __construct($dir = "") {
+08	        $this->dir = (substr($dir, -1) == "/") ? $dir : $dir . "/";
+09	        $this->vars = array();
+10	    }
+11	 
+12	    public function __set($var, $value) {
+13	        $this->vars[$var] = $value;
+14	    }
+15	 
+16	    public function __get($var) {
+17	        return $this->vars[$var];
+18	    }
+19	 
+20	    public function __isset($var) {
+21	        return isset($this->vars[$var]);
+22	    }
+23	 
+24	    public function set() {
+25	        $args = func_get_args();
+26	        if (func_num_args() == 2) {
+27	            $this->__set($args[0], $args[1]);
+28	        }
+29	        else {
+30	            foreach ($args[0] as $var => $value) {
+31	                $this->__set($var, $value);
+32	            }
+33	        }
+34	    }
+35	 
+36	    public function out($template, $asString = false) {
+37	        ob_start();
+38	        require $this->dir . $template . ".php";
+39	        $content = ob_get_clean();
+40	 
+41	        if ($asString) {
+42	            return $content;
+43	        }
+44	        else {
+45	            echo $content;
+46	        }
+47	    }
+48	}
+
+It’s not a full-fledged template engine; rather a succinct helper class that acts as a “bucket” to collects key/value data pairs which you can access in included files designated as templates. First you create an instance of the Template class in your view, optionally passing a directory name used to look up the subsequent template files (allowing you to group related files). Then, provide the values that should populate the templates to either the set() method or as a bare property. Once all the values are specified, you call the out() method to render the template.
+01	<?php
+02	$t = new Template();
+03	// setting a value as if it were a property
+04	$t->greeting = "Hello World!";
+05	// setting a value with set()
+06	$t->set("number", 42);
+07	// setting multiple values with set()
+08	$t->set(array(
+09	    "foo" => "zip",
+10	    "bar" => "zap"
+11	));
+12	// render template
+13	$t->out("mytemplate");
+
+The mytemplate.php file for the example might look something like this:
+01	<!DOCTYPE html>
+02	<html lang="en">
+03	 <head>
+04	  <meta charset="utf-8">
+05	...
+06	 </head>
+07	 <body>
+08	  <div role="main">
+09	   <h1><?=$this->greeting;?></h1>
+10	...
+11	  </div>
+12	 </body>
+13	</html>
+
+Within the template files you have access to the full range of PHP functionality to format values, filter values, etc. as you see fit.
+
+A second, optional parameter to out() can specify to return the template contents as a string instead of flushing it directly to the browser, which you can take advantage of to replace placeholders in one template with the result of a previously filled template.
+
+5. Using file_get_contents as a cURL Alternative  Performa a POST op.
+   ---------------------------------------------
+
+cURL is robust library for communicating over various protocols. It certainly is very full-featured, and there are times when nothing else will do. If you explicitly need functionality as exposed by cURL to accomplish your task, then use cURL! But the majority of day-to-day cURL usage in PHP revolves around issuing HTTP GET and POST requests, something that can be done easily with built-in PHP functions.
+
+The problem with relying on cURL for issuing HTTP requests is two-fold: 1) there of often many options that need to be set, even for the simplest of transactions, and 2) it is an extension that may or may not be available depending on your hosting and installation situation; it is a common extension, but one that is not enabled by default.
+
+file_get_contents() and stream_context_create() are two native PHP functions that have been available since the 4.3 days. Together, they can be used to perform many of the same types of requests commonly done via cURL.
+
+For basic GET requests, file_get_contents() can be used by itself:
+1	<?php
+2	$html = file_get_contents("http://example.com/product/42");
+
+For requests where you need to specify HTTP headers, be it GET or any of the other HTTP methods, you can create a context by passing a specially-keyed array to stream_context_create() and then pass the context to file_get_contents().
+01	<?php
+02	$context = stream_context_create(array(
+03	    "http" => array(
+04	        "method" => "POST",
+05	        "header" => "Content-Type: multipart/form-data; boundary=--foo\r\n",
+06	        "content" => "--foo\r\n"
+07	            . "Content-Disposition: form-data; name=\"myFile\"; filename=\"image.jpg\"\r\n"
+08	            . "Content-Type: image/jpeg\r\n\r\n"
+09	            . file_get_contents("image.jpg") . "\r\n"
+10	            . "--foo--"
+11	    )
+12	));
+13	 
+14	$html = file_get_contents("http://example.com/upload.php", false, $context);
+
+The example above shows uploading a file via POST, with the context array specifying the necessary information for the transaction using the keys “method”, “header”, and “content”.
+
+When using file_get_contents() for complex requests such as file uploads, it can be helpful to first make a mock web form and run it through Firefox with firebug enabled or something similar and then inspect what was included in the request. From there you can deduce the important header elements to include.
+
+
+Garbage Collection
+==================
+Better Understanding PHP’s Garbage Collection
+http://phpmaster.com/better-understanding-phps-garbage-collection/
+
+PDF
+===
+http://phpmaster.com/generating-invoices-with-zend_pdf/
+
+
+XML
+===
+http://www.phpclasses.org/blog/package/4/post/1-Processing-XML-with-a-single-PHP-call.html
+
+Parsing XML With SimpleXML
+http://phpmaster.com/parsing-xml-with-simplexml/
+
+Files and Directories
+---------------------
+phpmaster.com/list-files-and-directories-with-php/
+glob()
+as well as scandir() and SPL Iterators
+
+Conclusions
+
+In this article I’ve illustrated different ways to achieve the same goal: how to retrieve and filter files and directories in a given path. These are some key points to remember:
+
+    The function glob() is a one-line solution and allows filtering, but it isn’t very flexible.
+    The solution using opendir(), readdir(), and closedir() is a bit verbose and needs a post-filtering but is more flexible.
+    The function scandir() requires post-filtering as well but doesn’t need to manage the handle.
+    If you want to use an OOP approach, you should use the SPL library. Moreover you can extend the classes to fit your needs.
+    While the GlobIterator has the ability to do pre-filtering, the others can do the same in a comfortable way using the RegexIterator.
+
+PHP 5.4 Builds
+--------------
+http://www.anindya.com/    
+http://www.anindya.com/php-5-4-3-and-php-5-3-13-x64-64-bit-for-windows/
+
+Traits
+------
+Using Traits in PHP 5.4
+http://phpmaster.com/using-traits-in-php-5-4/
+
+PHP_CodeSniffer
+---------------
+http://pear.php.net/manual/en/package.php.php-codesniffer.php
+
+PHPMD - PHP Mess Detector
+-------------------------
+http://phpmd.org/

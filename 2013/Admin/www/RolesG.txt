@@ -1,0 +1,116 @@
+Info	01 - Entity Information
+BizReportInfo	02 - Business Report Information
+DirectorsReport	05 - Directors' Report
+AuditorsReport	06 - Auditor's Report
+ProftAndLossAcct	10 - Profit and Loss Account
+BSStatement	11 - Balance Sheet
+CashFlow	12 - Cash Flow Statement
+STRGL	13 - Statement of Total Recognised Gains and Losses
+NoteHistoricalCostProfits	14 - Note of Historical Cost Profits and Losses
+ReconciliationMvtsShareholderFunds	15 - Reconciliation of Movements in Shareholder Funds
+Notes	20 - Notes and Detailed Disclosures
+DetailedPL	30 - Detailed Profit and Loss
+FullDetailedProfitandLoss	31 - Full Detailed Profit and Loss
+CountriesAndRegions	94 - Countries and Regions
+StockExchanges	95 - Stock Exchanges
+Currencies	96 - Currencies
+Languages	97 - Languages
+GeneralPurposeContactInfo	98 - General Purpose Contact Information
+XBRLDocumentInfo	99 - XBRL Document Information
+PropGroupAndCo	100 - Property - Group and Company
+PropConsol	105 - Property - Consolidation
+PropRestated	110 - Property - Restatements
+PropOpActivs	120 - Property - Operating Activities
+PropAgeing	122 - Property - Ageing
+PropExceptItemAdjusts	150 - Property - Exceptional Item Adjustments
+PropAmortImpairAdjusts	160 - Property - Amortisation and Impairment Adjustments
+PropBizSegs	170 - Property - Business Segments
+PropProvisionsClasses	190 - Property - Provisions Classes
+PropIFAClasses	200 - Property - Intangible Fixed Asset Classes
+PropTFAClasses	210 - Property - Tangible Fixed Asset Classes
+PropTFAOwnership	220 - Property - Tangible Fixed Asset Ownership
+PropFAIHoldings	230 - Property - Fixed Asset Investment Holdings
+PropFAITypes	240 - Property - Fixed Asset Investment Types
+PropDividends	250 - Property - Dividends
+PropPensionSchemes	260 - Property - PensionSchemes
+PropShareBasedPaymentSchemes	265 - Property - Share Based Payment Schemes
+PropFinInstrValueType	270 - Property - Financial Instrument Value Type
+PropFinInstrCurrentNonCurrent	271 - Property - Financial Instrument Current and Non-Current
+PropFinInstrLevel	272 - Property - Financial Instrument Level
+PropFinInstrMvts	273 - Property - Financial Instrument Movements
+PropMaturitiesExpirationPeriods	275 - Property - Maturities or Expiration Periods
+PropAcqs	300 - Property - Acquisitions
+PropAcqAssetsLiabs	305 - Property - Acquisition Assets and Liabilities
+PropDisposals	310 - Property - Disposals
+PropJVs	320 - Property - Joint Ventures
+PropAssocs	325 - Property - Associates
+PropSubsids	330 - Property - Subsidiaries
+PropSubsids	331 - Property - Quasi Subsidiaries
+PropSubsids	332 - Property - Third Party Agents
+PropOtherInterestsInvests	336 - Property - Other Interests - Investments
+PropOfficers	500 - Property - Entity Officers
+PropOfficerType	501 - Property - Entity Officer Type
+PropShareClasses	502 - Property - Share Classes
+PropShareTypes	503 - Property - Share Types
+PropEntityContactType	505 - Property - Entity Contact Type
+PropTPAType	508 - Property - Third Party Agent Type
+PropTPAStatus	509 - Property - Third Party Agent Status
+PropFormOfContact	511 - Property - Form of Contact
+PropAddressType	512 - Property - Address Type
+PropPhoneNumberType	513 - Property - Phone Number Type
+PropCountriesAndRegions	520 - Property - Countries and Regions
+PropCurrencies	521 - Property - Currencies
+PropStockExchanges	522 - Property - Stock Exchanges
+PropLanguages	523 - Property - Languages
+PropActivity	550 - Property - Activity
+PropExpenseType	551 - Property - Expense Type
+PropExceptNonExcepttems	552 - Property - Exceptional and Non-Exceptional Items
+PropDetailedAnalysis	553 - Property - Detailed Analysis
+PropIntraExtraGroupTrans	554 - Property - Intra / extra group transactions
+FolioBasic	600 - Folio - Basic
+FolioIncomeDataAllProps	610 - Folio - Income Data All Properties
+FolioTangibleAssetDisposal	612 - Folio - Tangible Asset Disposal
+FolioIntangibleAssetDisposal	613 - Folio - Intangible Asset Disposal
+FolioTangibleAssetExpenses	614 - Folio - Tangible Asset Expenses
+FolioIntangibleAssetExpenses	615 - Folio - Intangible Asset Expenses
+FolioExceptsAmort	620 - Folio - Exceptionals, Amortisation
+FolioConsolExceptsAmort	630 - Folio - Consolidation, Exceptionals, Amortisation
+FolioOpActivsExcepts	640 - Folio - Op Activities, Exceptionals
+FolioOpActivsExceptsAmort	650 - Folio - Op Activities, Exceptionals, Amortisation
+FolioOpActivsConsolGeogBiz	660 - Folio - Op Activities, Consolidation, Geog, Business
+FolioOpActivsConsol	670 - Folio - Op Activities, Consolidation
+FolioOpActivs	680 - Folio - Operating Activities
+FolioConsol	685 - Folio - Consolidation
+FolioBizSegsIncomeData	690 - Folio - Business Segments Income Data
+FolioGeoSegsIncomeData	700 - Folio - Geographic Segments Income Data
+FolioBizSegsAssetData	710 - Folio - Business Segments Asset Data
+FolioGeoSegsAssetData	720 - Folio - Geographic Segments Asset Data
+FolioBizSegsBasic	730 - Folio - Business Segments Basic
+FolioGeoSegsBasic	740 - Folio - Geographic Segments Basic
+FolioProvisions	750 - Folio - Provisions
+FolioIFAs	760 - Folio - Intangible Fixed Assets
+FolioTFAs	770 - Folio - Tangible Fixed Assets
+FolioFAIs	780 - Folio - Fixed Asset Investments
+FolioFAILoans	790 - Folio - Fixed Asset Investment Loans
+FolioDividends	800 - Folio - Dividends
+FolioPensionSchemes	810 - Folio - Pension Schemes
+FolioShareBasedPaymentSchemes	811 - Folio - Share Based Payment Schemes
+FolioFinInstrs	820 - Folio - Financial Instruments
+FolioFinInstrMvts	821 - Folio - Financial Instrument Movements
+FolioAcqs	830 - Folio - Acquisitions
+FolioSharesAcqs	831 - Folio - Shares - Acquisitions
+FolioDisposals	834 - Folio - Disposals
+FolioJVs	840 - Folio - Joint Ventures
+FolioAssocs	841 - Folio - Associates
+FolioSubsids	842 - Folio - Subsidiaries
+FolioOtherInterestsInvests	844 - Folio - Other Interests - Investments
+FolioDetailedProfitAndLoss	850 - Folio - Detailed Profit and Loss
+FolioDetailedProfitAndLossReserve	851 - Folio - Detailed Profit and Loss Account Reserve
+FolioOfficers	900 - Folio - Entity Officers
+FolioShares	901 - Folio - Shares
+FolioEntityContactInfo	905 - Folio - Entity Contact Info
+FolioTPAs	906 - Folio - Third Party Agents
+FolioCountries	910 - Folio - Countries
+FolioCurrencies	911 - Folio - Currencies
+FolioStockExchanges	912 - Folio - Stock Exchanges
+FolioLanguages	913 - Folio - Languages

@@ -1,0 +1,28 @@
+﻿Testing
+ImportType:Replace
+No DE Check
+Debug:0
+
+#Tx5469	AAAAA Limited
+#Tx5470	No
+#Tx5492	Yes
+#Tx5600	87654321
+#Tx5376:Countries.England	1
+##Tx5589	2009.01.01	2008.01.01
+#Tx5460	2009.12.31	2008.12.31
+#
+#PLRev.TradingIncome.TurnoverGrossOpRevenue	-4	-2
+#PLExps.MarketingClientRelated.AdvertisingPromotionsMarketing	4	2
+#
+#Liabilities.Creditors.TaxationSocialSecurity.Other.PAYE:Ageing.<1	-2	1	# Test comment
+#Liabilities.Creditors.TaxationSocialSecurity.Other.PAYE:Ageing.<1	-2	1
+#Liabilities.Creditors.TaxationSocialSecurity.Other.PAYE:Ageing.1-2	-2
+
+Exp.Financial.InterestPayableSimilarCharges.FinanceIncome.NetReceivable.Other  	   -372 	  -1,876
+#STRGL.StatementThatThereWereNoGainsInPeriodOtherThanThoseInPL                        	1
+#SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo:Countries.UK           	-16,509,371 	-18,012,026
+#SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo:Countries.Europe       	    -81,856  	    -13,084
+#SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo:Countries.NorthAmerica 	            	   -878,597
+#SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo:Countries.OtherRegions 	    -22,324  	   -291,306
+#
+

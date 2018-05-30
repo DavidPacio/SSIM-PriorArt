@@ -1,0 +1,138 @@
+SIM Work started 15.03.13
+========
+03.07.13 Renamed from B R L 
+18.07.13 I t e m -> Member
+
+Add a DataType to DBO Property Members e.g. for OwnershipInterestPercent
+
+Add extracts from Members Notes to BroSets doc
+
+Change Members MuxList to be auto Ancestor and Kids?
+
+Think through Default Member
+
+Add •	“In SumList of <SumEnd | PostEnd | Stock> Bro BrosId” for Bros which are in the StartEnd Sum List(s) of another Bro
+to I StartEnd column of Export
+
+Make 'Agent' a user choice word re corporates
+
+• Allow for posting of multiple Property Members per Property
+
+• Add an 'also post to' list (whatever called) to Property Members
+
+Remove the All Property Members, instead allowing just the Property Name = sum for numeric properties
+
+Add the option of prefixing Non to any Region or Country, except perhaps for RoW and RoR. Or zap those?
+
+Get DboFieldN working
+
+Add tel country code code to Countries
+Add currency field to Countries
+Add languages list to Countries with 1st (or only) one the Braiins default
+
+Reduce the Countries list to major ones only as per languages
+Reduce the Currencies list
+
+Add updating of Property Labels according to Entity Type
+
+Fix the periods etc constants on a per BroSet basis
+
+Add bits re Members and "Cannot be excluded via Bro Members property" or "Can be reduced but not to 0"
+
+Fix DimGroups
+
+Bro Doc
+=======
+- Set rule changes: only summing datatypes allowed, o'wise no datatype, folio, excl props, allowprops, members, usableprops
+
+ToDo
+====
+
+Properties/Property Members
+
+  Entities
+
+  E2. Add provision for Entities which are not clients of the Agent, and for them to be:
+  •  Created
+  •  Edited
+  •  Converted to client status
+
+  People
+
+  O3. Add provision for People who are not members of the Agent, and for them to be:
+  •  Created
+  •  Edited
+  •  Converted to member status
+
+  A2 Add provision for adding addresses to Entities and People and editing them
+
+  Contacts
+
+  C2 Add provision for adding addresses to Entities and People and editing them
+
+
+Add building of Entity stuff to BuildSimStructs
+
+Mapping
+-------
+In-BroRef -> Out-BroRef
+
+Factors
+- Folio
+- Props
+- Members
+  MType Members
+- Tuples
+- Concrete Eles
+- ManDims
+- MembersDiMes
+
+
+Questions
+---------
+Allow some Property Object Members to be used in accounting posting BroRefs e.g.
+
+PublicRelations
+  InvestorRelations
+  MediaRelations
+SalesMarketing
+  Sales
+  Marketing
+
+Any properties for Quasi?
+
+SIC 12 Special purpose entities
+
+To Decide
+---------
+How to handle Tuples
+
+We will need some mechanism in In-BroSets to handle different instances of the same BroRef where that is appropriate e.g. donations to political parties A, B, C, where that 'mechanism' gets mapped to tuples and tuple instances in the Tx area.
+
+This will be an example of where 'properties all the way' will work well, I think.
+
+We could perhaps have a Property called Instances whose Members are dynamic and = the instance# or reference entered in posting.
+
+Once we allow for dynamic Property Members we could use them for other things too e.g. Director "instances" and so remove arbitrary limits like the 40 Directors in UK-GAAP. Though we would still need to cope with such limits when mapping BRL Properties to Taxonomy Dimensions.
+
+To be thought about...
+
+-----------
+
+Points/Questions to Charles
+
+- Group -> 1
+  Why needed at all?
+
+- Consol as an example of Ei reduction
+  No 'Other'
+
+  BizSegs also
+
+- 27 Subsids - quasi
+
+- K unque not within type
+
+- What does 'of this type' mean re PensionSchemes?
+
+

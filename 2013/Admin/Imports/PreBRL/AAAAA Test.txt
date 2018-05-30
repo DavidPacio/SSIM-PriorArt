@@ -1,0 +1,135 @@
+﻿Version based on Import 120823.txt with Text and commented out rows at the end remove.
+No DE Check
+Debug:0
+  Tx5469	AAAAA Limited 	
+							Agent Braiins Limited	
+							Date 2012.07.24	
+							ImportType:Replace	
+						Tx5470	No	
+						Tx5492	Yes	
+						Tx5600	87654321	
+						Tx5589	2009.01.01	
+						Tx5460	2009.12.31	
+						Tx4907	-16,613,551 	-19,195,013
+						Tx2409:Countries.UK	-16,509,371 	-18,012,026
+						Tx2409:Countries.Europe	-81,856 	-13,084
+						Tx2409:Countries.NorthAmerica	0 	-878,597
+						Tx2409:Countries.OtherRegions	-22,324 	-291,306
+						Tx4107:ExpenseType.CoS	8,826,243 	14,067,849
+#Tx4551:start:ExpenseType.CoS		0
+#Tx5092:start:ExpenseType.CoS		0
+#Tx2120:start:ExpenseType.CoS		0
+#Tx4551:ExpenseType.CoS		0
+#Tx5092:ExpenseType.CoS		0
+#Tx2120:ExpenseType.CoS		0
+			      Tx4551:ExpenseType.CoS	-147,996 	-182,290
+			      Tx5092:ExpenseType.CoS	-2,046,481 	-2,227,691
+			      Tx2120:ExpenseType.CoS	-615 	-836
+						Tx5061:ExpenseType.CoS	3,824,051 	3,878,057
+						Tx1851:ExpenseType.CoS	377,842 	410,836
+						Tx4482:ExpenseType.CoS	138,676 	144,565
+						Tx178:ExpenseType.CoS:IFAClasses.DevelopmentCosts	40,140 	40,000
+						Tx1268:ExpenseType.CoS:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	18,403 	18,000
+						Tx1268:ExpenseType.CoS:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	179,077 	143,176
+						Tx1268:ExpenseType.CoS:TFAClasses.VehiclesPlantMachinery:TFAOwnership.Leased	167,234 	202,824
+						Tx1268:ExpenseType.CoS:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	31,988 	30,000
+	#							
+						Tx3721:ExpenseType.Distrib	3,771 	87,955
+						Tx5061:ExpenseType.Distrib	169,160 	128,161
+						Tx1851:ExpenseType.Distrib	16,714 	13,577
+						Tx4482:ExpenseType.Distrib	6,135 	4,778
+						Tx1268:ExpenseType.Distrib:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	3,000 	3,000
+						Tx1268:ExpenseType.Distrib:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	20,000 	20,000
+						Tx1268:ExpenseType.Distrib:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	3,000 	3,000
+	#							
+						Tx4625:ExpenseType.Admin	327,152 	467,163
+						Tx5061:ExpenseType.Admin	184,539 	170,881
+						Tx1851:ExpenseType.Admin	18,233 	18,103
+						Tx4482:ExpenseType.Admin	6,692 	6,370
+						DirectorsSalariesDetPL:ExpenseType.Admin	240,321 	267,040
+						Tx1681:ExpenseType.Admin	47,956 	79,600
+						Tx5284:TPAType.Auditors	16,500 	16,500
+						Tx2480:ExpenseType.Admin	6,922 	10,445
+						Tx1268:ExpenseType.Admin:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	2,000 	2,000
+						Tx1268:ExpenseType.Admin:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	10,000 	10,000
+						Tx1268:ExpenseType.Admin:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	12,000 	12,000
+						Tx2272	-9,596 	-2,108
+						FinanceIncNetRecOther:Function.NonOp	-372 	-1,876
+						BankOverdraftCharges:Function.NonOp	23,386 	49,178
+						FinLeaseCharges:Function.NonOp	57,763 	67,998
+						Tx4920	303,243 	104,037
+						Tx2739	-209,529 	30,830
+						Tx2456	135,798 	249,611
+						Tx2741	-24,878 	-35,114
+						Tx2750	7,788 	-12,191
+						Tx2815:IFAClasses.DevelopmentCosts:start	415,682 	415,682
+						Tx2804:IFAClasses.DevelopmentCosts	82,565 	0
+						Tx2805:IFAClasses.DevelopmentCosts:start	-51,724 	-11,724
+						Tx2806:IFAClasses.DevelopmentCosts	-40,140 	-40,000
+						Tx4654:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold:start	2,067,544 	2,067,544
+						Tx4653:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	0 	0
+						Tx4664:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	0 	0
+						Tx4655:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold:start	-72,887 	-49,887
+						Tx4656:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	-23,403 	-23,000
+						Tx4658:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	0 	0
+			#	#	#	Tx4654:TFAClasses.VehiclesPlantMachinery:start	9,374,695 	9,374,695
+						Tx4654:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold:start	3,374,695 	3,374,695
+						Tx4654:TFAClasses.VehiclesPlantMachinery:TFAOwnership.Leased:start	6,000,000 	6,000,000
+			#	#	#	Tx4653:TFAClasses.VehiclesPlantMachinery	172,975 	
+						Tx4653:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	147,179 	
+						Tx4653:TFAClasses.VehiclesPlantMachinery:TFAOwnership.Leased	25,796 	
+						Tx4664:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	-52 	0
+			#	#	#	Tx4655:TFAClasses.VehiclesPlantMachinery:start	-7,678,365 	-7,302,365
+						Tx4655:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold:start	-2,795,036 	-2,619,036
+						Tx4655:TFAClasses.VehiclesPlantMachinery:TFAOwnership.Leased:start	-4,883,329 	-4,683,329
+			#	#	#	Tx4656:TFAClasses.VehiclesPlantMachinery	-376,311 	-376,000
+						Tx4656:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	-209,077 	-176,000
+						Tx4656:TFAClasses.VehiclesPlantMachinery:TFAOwnership.Leased	-167,234 	-200,000
+						Tx4658:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	52 	0
+						Tx4654:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold:start	927,564 	927,564
+						Tx4653:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	24,375 	0
+						Tx4664:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	-14,820 	0
+						Tx4655:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold:start	-826,476 	-781,476
+						Tx4656:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	-46,988 	-45,000
+						Tx4658:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	14,820 	0
+# Raw materials and consumables						Tx4551	147,996 	182,290
+# Work in progress 						Tx5092	2,046,481 	2,227,691
+# Finished goods and goods for resale 						Tx2120	615 	836
+		# Assets.Current.StocksInventory.WIPLongtermContracts.PaymentsOnAccountNotMatchedWithTurnover				Tx3130	147,996 	182,290
+		# Assets.Current.StocksInventory				Tx4536	2,046,481 	2,227,691
+		# Assets.Current.StocksInventory.WIPLongtermContracts				Tx5095	615 	836
+						Tx4834	3,186,522 	2,231,517
+						Tx237	0 	822,706
+						Tx3507	500 	2,650
+						Tx3935	442,988 	328,380
+						Tx273	892,193 	0
+	#							
+						Tx541	60,000 	30,000
+						Tx575	6,330 	5,082
+			#	#	#	Tx382:FinInstrCurrentNonCurrent.Current	-331,701 	-241,815
+						Tx389	-331,701 	-241,815
+#						Tx3389Hy13:start	-462,838 	-429,504
+						Tx3389Hy13	-462,838 	-429,504
+						Tx4829:Ageing.<1	-1,978,195 	-2,782,060
+						Tx3494:Ageing.<1	-452,680 	-415,262
+						Tx1015:Ageing.<1	-198,508 	-134,978
+						Tx3671:Ageing.<1	-603,843 	-423,600
+						Tx62:Ageing.<1	-171,105 	-163,472
+						Tx264:Ageing.<1	-778,078 	0
+						Tx252:Ageing.<1	-26,516 	0
+		# Liabilities.Creditors.ObligationsFinanceLeaseAndHPContracts.AfterOneYear.MoreThan1Year				ObligFLHPAfter1Yr:Ageing.>1	-592,949 	-959,560
+		# Liabilities.Creditors.ObligationsFinanceLeaseAndHPContracts.AfterOneYear				Tx3388:Ageing.>1	-592,949 	-959,560
+    # Tx3388:Ageing.>1	-592,949 	-959,560
+		# Liabilities.Creditors.ObligationsFinanceLeaseAndHPContracts.AfterOneYear (as above but with BD Aging switched off)				Tx3388	-592,949 	-959,560
+# Liabilities.Creditors.ObligationsFinanceLeaseAndHPContracts.AfterOneYear. As above , but with :start invoked.						Tx3388:start	-592,949 	-959,560
+    # Tx3388:start	-592,949 	-959,560
+	#					Tx4062:ProvisionsClasses.DeferredTaxation		
+						Tx1630	-165,202 	(177,215)
+						Tx3675		12,013
+						Tx4038	17,090 	0
+			#		#	LiabSuspense		
+						Tx4378:ShareClasses.Ordinary1	-3,981,190 	-3,981,190
+						Tx3984:start	-290,542 	-390,957
+#						Tx4776Hy26	700,000 	1,000,000 djh Fudge on next row to get DE to balance
+#						Tx4776Hy26	2,302,143	2,451,257 djh Fudge on next row to get DE to balance after start removed from year 0
+            Tx4776Hy26	5,704,796	2,451,257

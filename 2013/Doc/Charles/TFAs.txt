@@ -1,0 +1,40 @@
+TFAs via Skype 26.07.11
+-----------------------
+
+D: Could there ever be a TFA posting without a TFAownership DiMe?
+i.e. is use of a TFAownership DiMe mandatory with a TFA posting?
+
+(The default of TFAownership [TotalOwnedLeased] is not allowed for posting.)
+
+In the case of Officers I did allow posting for the non specific director case e.g. for Directors Remuneration in total, but presumably that is not applicable for TFAs, as there not be any postings for all TFAs.
+
+C: Thought is No, but will check through.
+
+D: I will assume no i.e. that a TFAownership DiMe mandatory with a TFA posting unless you advise otherwise.
+
+C: Note that TRAP and SAPA only show memo totalled figures for TFA under HP & Leases.
+Doing it on a granular upwards basis is better integrated and provides tighter control, if possibly slightly more postings from the user.
+It will also mean that on imports from SAPA and most other AP programs we will need to get the user to further split out between
+ TFA Classes (albeit may be with a default setting to help).
+Note that for GAAP disclosure do not need to show leased by Class, though do need to exclude Property
+(though these would never have a Finance Lease, would be Short or Long Term leases, so would wash out anyhow.)
+If we wanted to avoid user having to provide more detailed breakdown than would have doen in SAPA we would need
+to allow posting to 184 (Owned or Leased) and then show 186 separately.
+Also the posting to 186 would be to 159 All TFAs, which is currently shown as not allowing postings.
+Your thoughts?
+
+D: Seems def preferable to work on the "granular upwards basis".
+But if we do need to avoid user having to provide more detailed breakdown than would have done in SAPA, then:
+- posting to BRO with no dimension members = equivalent of 159 and 184 i.e. All TFAs, All Ownership
+- posting to BRO with just 186 (no 159) = Leased for all TFAs.
+  I would need to make a program change to allow this, as currently Property
+  type DiMes can't be used without a Set type also in use. But I would prefer
+  to make that change than change 159 to Set type with posting allowed.
+
+C: For all property TFAa we can take it that we know the split between oWned (Freehold) and two types of lease status.
+So we are just dealing in the other types. We couild just post default to 186 re leased.
+Then have configuration button to say default combined lease value and default TFA Class
+e.g. 165 typically (does not really matter which, one button would cover both questions).
+We then know that "Owned" Figures are in this case "Owned and Leased" and in RG or elsewhere
+do NOT add Owned and Leased to get Total TFA for each class.
+Plus do not break rule about NOT posting to 159 and 184

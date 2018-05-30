@@ -1,0 +1,2500 @@
+
+
+
+
+ 
+
+CALL SAPAEXPORTCDBGEN.P
+Client Details - GENERAL Page
+Client Ref	,cdb.gen.1,AAAAA
+Group	,cdb.gen.1.2,
+Cdb Master	,cdb.gen.1.3,SUBLTD
+Disk name	,cdb.gen.1.4,subltd
+Short name	,cdb.gen.1.5,aaaaa
+Full name	,cdb.gen.2,AAAAA Limited
+Address line 1,cdb.gen.3.1,
+Address line 2,cdb.gen.3.2,
+Address line 3,cdb.gen.3.3,
+City or Town	,cdb.gen.3.4,
+County	,cdb.gen.3.5,
+Country	,cdb.gen.3.6,
+Postcode	,cdb.gen.3.7,
+Telephone 1	,cdb.gen.4.1,
+Telephone 2	,cdb.gen.4.2,
+Fax number	,cdb.gen.4.3,
+Mobile (CP)	,cdb.gen.4.4,
+Email	,cdb.gen.4.5,
+WWW Address	,cdb.gen.4.6,
+Group Parent	,cdb.gen.5,
+Contact Name	,cdb.gen.6,
+Client details - CONTACT TAB 
+Contact Sal 1 ,cdb.gen.7.1,
+Contact Sal 2 ,cdb.gen.7.2,
+Contact Addr 1	,cdb.gen.8.1,
+Contact Addr 2	,cdb.gen.8.2,
+Contact Addr 3	,cdb.gen.8.3,
+Contact City/Town ,cdb.gen.8.4,
+Contact County	,cdb.gen.8.5,
+Contact Country	,cdb.gen.8.6,
+Contact Postcode	,cdb.gen.8.7,
+Contact Telephone ,cdb.gen.8.8,
+Contact Fax	,cdb.gen.8.9,
+Contact Email	,cdb.gen.8.10,
+Client Type	,cdb.gen.9,Limited Company
+Client Type	,cdb.gen.9.0,Limited Company
+Client Type	,cdb.gen.9.1,Limited Company
+Entity Type	,cdb.gen.9.2,Corporate
+"Director" Type	,cdb.gen.9.3,Director
+"Shareholder" Type ,cdb.gen.9.4,Shareholder
+Business Type	,cdb.gen.9.5,Not defined
+Industry Code	,cdb.gen.10,
+Analysis Code	,cdb.gen.11,
+F Client Type	,cdb.gen.12,HA_CLIENT
+Client details - MANAGEMENT TAB
+Status	,cdb.man.1,Live
+Partner ref	,cdb.man.2,
+Manager ref	,cdb.man.3,
+Clerk ref	,cdb.man.4,
+Office ref	,cdb.man.5,
+Last fee	,cdb.man.6,0.00
+Type of work	,cdb.man.7,
+Stat books	,cdb.man.8,
+Seal	,cdb.man.9,
+Last AR Year	,cdb.man.10.1,
+Date AR filed	,cdb.man.10.2,
+Last Accts Year ,cdb.man.11.1,
+
+ 
+
+Date Accts filed,cdb.man.11.2,
+Last TR Year	,cdb.man.12.1,
+Date TR filed	,cdb.man.12.2,
+Memo 1 Prompt	,cdb.man.13.1,
+Memo 1 Response ,cdb.man.13.2,
+Memo 2 Prompt	,cdb.man.14.1,
+Memo 2 Response ,cdb.man.14.2,
+Memo 3 Prompt	,cdb.man.15.1,
+Memo 3 Response ,cdb.man.15.2,
+Memo 4 Prompt	,cdb.man.16.1,
+Memo 4 Response ,cdb.man.16.2,
+Memo 5 Prompt	,cdb.man.17.1,
+Memo 5 Response ,cdb.man.17.2,
+Memo 6 Prompt	,cdb.man.18.1,
+Memo 6 Response ,cdb.man.18.2,
+Memo 7 Prompt	,cdb.man.19.1,
+Memo 7 Response ,cdb.man.19.2,
+Memo 8 Prompt	,cdb.man.20.1,
+Memo 8 Response ,cdb.man.20.2,
+Client details -BRANCHES Page
+No branches defined
+
+Call sapaexportcdbper.p
+Format to Test and Document cdb References
+Period Dates
+Year 0
+Year description	,cdb.per.0.1.1,year
+Year start date	,cdb.per.0.1.2,1 January 2005
+Year end date	,cdb.per.0.1.3,31 December 2005
+Number of periods ,cdb.per.0.4	,1
+Description per 1 ,cdb.per.0.2.1,year
+End date period 1 ,cdb.per.0.3.1,31 December 2005
+Year 1
+Year description	,cdb.per.1.1.1	year
+Year start date	,cdb.per.1.1.2	1 January 2006
+Year end date	,cdb.per.1.1.3	31 December 2006
+Number of periods ,cdb.per.1.4	1
+Description per 1 ,cdb.per.1.2.1,year
+End date period 1 ,cdb.per.1.3.1,31 December 2006
+Year 2
+Year description	,cdb.per.2.1.1	year
+Year start date	,cdb.per.2.1.2	1 January 2007
+Year end date	,cdb.per.2.1.3	31 December 2007
+Number of periods ,cdb.per.2.4	1
+Description per 1 ,cdb.per.2.2.1,year
+End date period 1 ,cdb.per.2.3.1,31 December 2007
+Year 3
+Year description	,cdb.per.3.1.1	year
+Year start date	,cdb.per.3.1.2	1 January 2008
+Year end date	,cdb.per.3.1.3	31 December 2008
+Number of periods ,cdb.per.3.4	1
+Description per 1 ,cdb.per.3.2.1,year
+End date period 1 ,cdb.per.3.3.1,31 December 2008
+Year 4
+Year description	,cdb.per.4.1.1	year
+Year start date	,cdb.per.4.1.2	1 January 2009
+Year end date	,cdb.per.4.1.3	31 December 2009
+Number of periods ,cdb.per.4.4	1
+Description per 1 ,cdb.per.4.2.1,year
+
+ 
+
+End date period 1 ,cdb.per.4.3.1,31 December 2009
+Year 5
+Year description	,cdb.per.5.1.1	year
+Year start date	,cdb.per.5.1.2	1 January 2010
+Year end date	,cdb.per.5.1.3	31 December 2010
+Number of periods ,cdb.per.5.4	1
+Description per 1 ,cdb.per.5.2.1	year
+End date period 1 ,cdb.per.5.3.1	31 December 2010
+Year 6
+Year description	,cdb.per.6.1.1	year
+Year start date	,cdb.per.6.1.2	1 January 2011
+Year end date	,cdb.per.6.1.3	31 December 2011
+Number of periods ,cdb.per.6.4	1
+Description per 1 ,cdb.per.6.2.1	year
+End date period 1 ,cdb.per.6.3.1	31 December 2011
+Year 7
+Year description	,cdb.per.7.1.1	year
+Year start date	,cdb.per.7.1.2	1 January 2012
+Year end date	,cdb.per.7.1.3	31 December 2012
+Number of periods ,cdb.per.7.4	1
+Description per 1 ,cdb.per.7.2.1	year
+End date period 1 ,cdb.per.7.3.1	31 December 2012
+Year 8
+Year description	,cdb.per.8.1.1	year
+Year start date	,cdb.per.8.1.2	1 January 2013
+Year end date	,cdb.per.8.1.3	31 December 2013
+Number of periods ,cdb.per.8.4	1
+Description per 1 ,cdb.per.8.2.1	year
+End date period 1 ,cdb.per.8.3.1	31 December 2013
+Year 9
+Year description	,cdb.per.9.1.1	year
+Year start date	,cdb.per.9.1.2	1 January 2014
+Year end date	,cdb.per.9.1.3	31 December 2014
+Number of periods ,cdb.per.9.4	1
+Description per 1 ,cdb.per.9.2.1	year
+End date period 1 ,cdb.per.9.3.1	31 December 2014
+CALL SAPAEXPORTCDBADD.P
+ADD Page
+Company Secretary
+EntityOfficers.CompanySecretary.Name:C C Smith
+add.1.2.1,
+add.1.2.2,
+add.1.2.3,
+add.1.2.4,
+add.1.2.5,
+add.1.2.6,
+add.1.2.7,
+add.1.2.8,
+add.1.2.9,
+add.1.2.10,
+EntityOfficers.CompanySecretary.DirectorSigningReport:C C Smith
+Solicitors
+add.2.1	,Gant, Howard & Company
+add.2.2.1,42 The Avenue
+add.2.2.2,Milford
+add.2.2.3,Southampton
+add.2.2.4,Hants S01 3RT
+add.2.2.5,
+add.2.2.6,
+
+ 
+
+add.2.2.7,
+add.2.2.8,
+add.2.2.9,
+add.2.2.10,
+Auditors
+add.3.1	,DEF LLP
+add.3.1.2,Mr Justin Tickit
+add.3.2.1,DEF House
+add.3.2.2,Sample Town
+add.3.2.3,
+add.3.2.4,
+add.3.2.5,
+add.3.2.6,
+add.3.2.7,ST12 0ZZ
+add.3.2.8,
+add.3.2.9,
+add.3.2.10,
+Previous Auditors
+add.4.1	,
+add.4.2.1,
+add.4.2.2,
+add.4.2.3,
+add.4.2.4,
+add.4.2.5,
+add.4.2.7,
+add.4.2.6,
+add.4.2.8,
+add.4.2.9,
+add.4.2.10,
+Accountants
+add.5.1	,Green & Co
+add.5.2.1,Penney House
+add.5.2.2,High Street
+add.5.2.3,
+add.5.2.4,Oldport
+add.5.2.5,Greenshire
+add.5.2.7,AB12 4RR
+add.5.2.6,
+add.5.2.8,
+add.5.2.9,
+add.5.2.10,
+Solicitors 2
+add.6.1	,Ian Jameson-King & Co.
+add.6.2.1,Trading Town Side
+add.6.2.2,Kilkenny
+add.6.2.3,
+add.6.2.4,
+add.6.2.5,
+add.6.2.6,
+add.6.2.7,
+add.6.2.8,
+add.6.2.9,
+add.6.2.10,
+CALL SAPAEXPORTCDBBNK.P
+Format to Test and Document cdb References
+BNK Page
+No banks defined
+
+Tax Office Page
+
+ 
+
+Tax Office 1
+Internal Ref	,cdb.txo.1.0
+Tax Reference ,cdb.txo.1.1
+District	,cdb.txo.1.2
+Telephone	,cdb.txo.1.3.1
+Fax	,cdb.txo.1.3.2
+Email	,cdb.txo.1.3.3
+Address line 1,cdb.txo.1.4.1
+Address line 2,cdb.txo.1.4.2
+Address line 3,cdb.txo.1.4.3
+City or Town	,cdb.txo.1.4.4
+County	,cdb.txo.1.4.5
+Postcode	,cdb.txo.1.4.7
+Country	,cdb.txo.1.4.6
+VAT Office Page
+VAT Office 1
+Internal Ref	,cdb.vto.1.0
+VAT Number	,cdb.vto.1.1
+Quarter End	,cdb.vto.1.2
+Office	,cdb.vto.1.3
+Telephone	,cdb.vto.1.4.1
+Fax	,cdb.vto.1.4.2
+Email	,cdb.vto.1.4.3
+Address line 1,cdb.vto.1.5.1
+Address line 2,cdb.vto.1.5.2
+Address line 3,cdb.vto.1.5.3
+City or Town	,cdb.vto.1.5.4
+County	,cdb.vto.1.5.5
+Postcode	,cdb.vto.1.5.7
+Country	,cdb.vto.1.5.6
+CALL SAPAEXPORTCDBAPS.P
+Format to Test and Document cdb References
+APS Page
+aps.0,HCUK
+aps.1.1,Yes
+aps.2,4
+aps.3,4
+aps.3.2,1
+aps.5,0
+aps.6,£
+aps.7,,
+aps.8,.
+aps.9,Online
+aps.9.2,
+aps.9.3,
+aps.10,-1
+aps.11.1,	795.00
+aps.11.2,Down
+aps.11.3,	795.00
+aps.12,	319.00
+aps.13.1,	1.00
+aps.13.2,	499I.99
+aps.13.3,	414I.99
+aps.13.4,	599.99
+aps.13.5,	61.00
+aps.14.1,	500.00
+aps.14.2,	999I.99
+aps.14.3,	771.00
+aps.15.1,	1000.00
+
+ 
+
+aps.15.2,	4999I.99
+aps.15.3,	1000.00
+
+cdb bfg.3.1,20
+cdb bfg.3.2,5
+cdb bfg.3.3,	500.00
+cdb bfg.1.1,	930.00
+cdb bfg.2.1,	50.00
+cdb bfg.2.2,10
+cdb bfg.2.3,	70.00
+cdb bfg.2.4,	630.00
+cdb bfg.2.5,20
+CALL SAPAEXPORTCDBSTA.P
+Interim version. Need to sort out string variables for share details.
+Format to Test and Document cdb References
+
+STA Page
+Registration num	,sta.1.1,87654321
+Charity number	,sta.1.2,
+Incorporation date	,sta.2,
+Country of Incorp.  ,sta.3,England and Wales
+Reg Off Addr 1	,sta.4.1,
+Reg Off Addr 2	,sta.4.2,
+Reg Off Addr 3	,sta.4.3,
+Reg Off City or Town,sta.4.4,
+Reg Off County	,sta.4.5,
+Reg Off Postcode	,sta.4.7,
+Reg Off Country	,sta.4.6,
+Principal Activity	,sta.5,The company continues to strive to be a 'best in class' supplier of components for OEM's and hence considers improvement in Key Performance Indicators of on-time delivery and quality performance to be fundament
+CALL SAPAEXPORTCDBSHR.P
+Crude version.
+It just takes the value per the cdb field without modification.
+For most fields this should not be a problem.
+It might for dividends per share (cdb.6.?.10) because this only goes to 2 decimal points, not 4 as in the Sage function version. Means dividend only to goes to exact pense per share, not parts of a pence. However, do not think we even need this field for AP work. Format to Test and Document cdb References
+Shares - Equity Instruments (Ordinary) crude way
+Eq Share class 1	,sta.6.1.1 ,Ordinary
+Par value this yr	,sta.6.1.2 ,1.00
+Paid value this yr ,sta.6.1.3 ,1.00
+Authorised this yr ,sta.6.1.4 ,3,981,190
+Issued this year	,sta.6.1.5 ,3,981,190
+Par value last yr	,sta.6.1.8 ,1.00
+Paid value last yr ,sta.6.1.9 ,1.00
+Authorised last yr ,sta.6.1.6 ,3,981,190
+Issued last year	,sta.6.1.7 ,3,981,190
+Dividend amount	,sta.6.1.10,0.56
+Div date payable	,sta.6.1.11,1 January 2010
+Eq Share class 2	,sta.6.2.1 ,Ordinary Class 2
+Par value this yr	,sta.6.2.2 ,0.00
+Paid value this yr ,sta.6.2.3 ,0.00
+Authorised this yr ,sta.6.2.4 ,0
+Issued this year	,sta.6.2.5 ,0
+Par value last yr	,sta.6.2.8 ,0.00
+Paid value last yr ,sta.6.2.9 ,0.00
+Authorised last yr ,sta.6.2.6 ,0
+Issued last year	,sta.6.2.7 ,0
+
+ 
+
+Dividend amount	,sta.6.2.10,0.00
+Div date payable	,sta.6.2.11,
+Eq Share class 3	,sta.6.3.1 ,Ordinary Class 3
+Par value this yr	,sta.6.3.2 ,0.00
+Paid value this yr ,sta.6.3.3 ,0.00
+Authorised this yr ,sta.6.3.4 ,0
+Issued this year	,sta.6.3.5 ,0
+Par value last yr	,sta.6.3.8 ,0.00
+Paid value last yr ,sta.6.3.9 ,0.00
+Authorised last yr ,sta.6.3.6 ,0
+Issued last year	,sta.6.3.7 ,0
+Dividend amount	,sta.6.3.10,0.00
+Div date payable	,sta.6.3.11,
+Eq Share class 4	,sta.6.4.1 ,Ordinary Class 4
+Par value this yr	,sta.6.4.2 ,0.00
+Paid value this yr ,sta.6.4.3 ,0.00
+Authorised this yr ,sta.6.4.4 ,0
+Issued this year	,sta.6.4.5 ,0
+Par value last yr	,sta.6.4.8 ,0.00
+Paid value last yr ,sta.6.4.9 ,0.00
+Authorised last yr ,sta.6.4.6 ,0
+Issued last year	,sta.6.4.7 ,0
+Dividend amount	,sta.6.4.10,0.00
+Div date payable	,sta.6.4.11,
+Eq Share class 5	,sta.6.5.1 ,
+Par value this yr	,sta.6.5.2 ,0.00
+Paid value this yr ,sta.6.5.3 ,0.00
+Authorised this yr ,sta.6.5.4 ,0
+Issued this year	,sta.6.5.5 ,0
+Par value last yr	,sta.6.5.8 ,0.00
+Paid value last yr ,sta.6.5.9 ,0.00
+Authorised last yr ,sta.6.5.6 ,0
+Issued last year	,sta.6.5.7 ,0
+Dividend amount	,sta.6.5.10,0.00
+Div date payable	,sta.6.5.11,
+Eq Share class 6	,sta.6.6.1 ,
+Par value this yr	,sta.6.6.2 ,0.00
+Paid value this yr ,sta.6.6.3 ,0.00
+Authorised this yr ,sta.6.6.4 ,0
+Issued this year	,sta.6.6.5 ,0
+Par value last yr	,sta.6.6.8 ,0.00
+Paid value last yr ,sta.6.6.9 ,0.00
+Authorised last yr ,sta.6.6.6 ,0
+Issued last year	,sta.6.6.7 ,0
+Dividend amount	,sta.6.6.10,0.00
+Div date payable	,sta.6.6.11,
+Eq Share class 7	,sta.6.7.1 ,
+Par value this yr	,sta.6.7.2 ,0.00
+Paid value this yr ,sta.6.7.3 ,0.00
+Authorised this yr ,sta.6.7.4 ,0
+Issued this year	,sta.6.7.5 ,0
+Par value last yr	,sta.6.7.8 ,0.00
+Paid value last yr ,sta.6.7.9 ,0.00
+Authorised last yr ,sta.6.7.6 ,0
+Issued last year	,sta.6.7.7 ,0
+Dividend amount	,sta.6.7.10,0.00
+Div date payable	,sta.6.7.11,
+Eq Share class 8	,sta.6.8.1 ,
+Par value this yr	,sta.6.8.2 ,0.00
+
+ 
+
+Paid value this yr ,sta.6.8.3 ,0.00
+Authorised this yr ,sta.6.8.4 ,0
+Issued this year	,sta.6.8.5 ,0
+Par value last yr	,sta.6.8.8 ,0.00
+Paid value last yr ,sta.6.8.9 ,0.00
+Authorised last yr ,sta.6.8.6 ,0
+Issued last year	,sta.6.8.7 ,0
+Dividend amount	,sta.6.8.10,0.00
+Div date payable	,sta.6.8.11,
+Eq Share class 9	,sta.6.9.1 ,
+Par value this yr	,sta.6.9.2 ,0.00
+Paid value this yr ,sta.6.9.3 ,0.00
+Authorised this yr ,sta.6.9.4 ,0
+Issued this year	,sta.6.9.5 ,0
+Par value last yr	,sta.6.9.8 ,0.00
+Paid value last yr ,sta.6.9.9 ,0.00
+Authorised last yr ,sta.6.9.6 ,0
+Issued last year	,sta.6.9.7 ,0
+Dividend amount	,sta.6.9.10,0.00
+Div date payable	,sta.6.9.11,
+Eq Share class 10	,sta.6.10.1 ,
+Par value this yr	,sta.6.10.2 ,0.00
+Paid value this yr ,sta.6.10.3 ,0.00
+Authorised this yr ,sta.6.10.4 ,0
+Issued this year	,sta.6.10.5 ,0
+Par value last yr	,sta.6.10.8 ,0.00
+Paid value last yr ,sta.6.10.9 ,0.00
+Authorised last yr ,sta.6.10.6 ,0
+Issued last year	,sta.6.10.7 ,0
+Dividend amount	,sta.6.10.10,0.00
+Div date payable	,sta.6.10.11,
+Shares - Financial Liabilities (Preference) crude way
+Eq Share class 1	,sta.7.1.1 ,Preference
+Par value this yr	,sta.7.1.2 ,0.00
+Paid value this yr ,sta.7.1.3 ,0.00
+Authorised this yr ,sta.7.1.4 ,0
+Issued this year	,sta.7.1.5 ,0
+Par value last yr	,sta.7.1.8 ,0.00
+Paid value last yr ,sta.7.1.9 ,0.00
+Authorised last yr ,sta.7.1.6 ,0
+Issued last year	,sta.7.1.7 ,0
+Dividend amount	,sta.7.1.10,0.00
+Div date payable	,sta.7.1.11,
+Eq Share class 2	,sta.7.2.1 ,Preference Class 2
+Par value this yr	,sta.7.2.2 ,0.00
+Paid value this yr ,sta.7.2.3 ,0.00
+Authorised this yr ,sta.7.2.4 ,0
+Issued this year	,sta.7.2.5 ,0
+Par value last yr	,sta.7.2.8 ,0.00
+Paid value last yr ,sta.7.2.9 ,0.00
+Authorised last yr ,sta.7.2.6 ,0
+Issued last year	,sta.7.2.7 ,0
+Dividend amount	,sta.7.2.10,0.00
+Div date payable	,sta.7.2.11,
+Eq Share class 3	,sta.7.3.1 ,Preference Class 3
+Par value this yr	,sta.7.3.2 ,0.00
+Paid value this yr ,sta.7.3.3 ,0.00
+Authorised this yr ,sta.7.3.4 ,0
+Issued this year	,sta.7.3.5 ,0
+
+ 
+
+Par value last yr	,sta.7.3.8 ,0.00
+Paid value last yr ,sta.7.3.9 ,0.00
+Authorised last yr ,sta.7.3.6 ,0
+Issued last year	,sta.7.3.7 ,0
+Dividend amount	,sta.7.3.10,0.00
+Div date payable	,sta.7.3.11,
+Eq Share class 4	,sta.7.4.1 ,Preference Class 4
+Par value this yr	,sta.7.4.2 ,0.00
+Paid value this yr ,sta.7.4.3 ,0.00
+Authorised this yr ,sta.7.4.4 ,0
+Issued this year	,sta.7.4.5 ,0
+Par value last yr	,sta.7.4.8 ,0.00
+Paid value last yr ,sta.7.4.9 ,0.00
+Authorised last yr ,sta.7.4.6 ,0
+Issued last year	,sta.7.4.7 ,0
+Dividend amount	,sta.7.4.10,0.00
+Div date payable	,sta.7.4.11,
+Eq Share class 5	,sta.7.5.1 ,Preference Class 5
+Par value this yr	,sta.7.5.2 ,0.00
+Paid value this yr ,sta.7.5.3 ,0.00
+Authorised this yr ,sta.7.5.4 ,0
+Issued this year	,sta.7.5.5 ,0
+Par value last yr	,sta.7.5.8 ,0.00
+Paid value last yr ,sta.7.5.9 ,0.00
+Authorised last yr ,sta.7.5.6 ,0
+Issued last year	,sta.7.5.7 ,0
+Dividend amount	,sta.7.5.10,0.00
+Div date payable	,sta.7.5.11,
+Eq Share class 6	,sta.7.6.1 ,
+Par value this yr	,sta.7.6.2 ,0.00
+Paid value this yr ,sta.7.6.3 ,0.00
+Authorised this yr ,sta.7.6.4 ,0
+Issued this year	,sta.7.6.5 ,0
+Par value last yr	,sta.7.6.8 ,0.00
+Paid value last yr ,sta.7.6.9 ,0.00
+Authorised last yr ,sta.7.6.6 ,0
+Issued last year	,sta.7.6.7 ,0
+Dividend amount	,sta.7.6.10,0.00
+Div date payable	,sta.7.6.11,
+Eq Share class 7	,sta.7.7.1 ,
+Par value this yr	,sta.7.7.2 ,0.00
+Paid value this yr ,sta.7.7.3 ,0.00
+Authorised this yr ,sta.7.7.4 ,0
+Issued this year	,sta.7.7.5 ,0
+Par value last yr	,sta.7.7.8 ,0.00
+Paid value last yr ,sta.7.7.9 ,0.00
+Authorised last yr ,sta.7.7.6 ,0
+Issued last year	,sta.7.7.7 ,0
+Dividend amount	,sta.7.7.10,0.00
+Div date payable	,sta.7.7.11,
+Eq Share class 8	,sta.7.8.1 ,
+Par value this yr	,sta.7.8.2 ,0.00
+Paid value this yr ,sta.7.8.3 ,0.00
+Authorised this yr ,sta.7.8.4 ,0
+Issued this year	,sta.7.8.5 ,0
+Par value last yr	,sta.7.8.8 ,0.00
+Paid value last yr ,sta.7.8.9 ,0.00
+Authorised last yr ,sta.7.8.6 ,0
+Issued last year	,sta.7.8.7 ,0
+
+ 
+
+Dividend amount	,sta.7.8.10,0.00
+Div date payable	,sta.7.8.11,
+Eq Share class 9	,sta.7.9.1 ,
+Par value this yr	,sta.7.9.2 ,0.00
+Paid value this yr ,sta.7.9.3 ,0.00
+Authorised this yr ,sta.7.9.4 ,0
+Issued this year	,sta.7.9.5 ,0
+Par value last yr	,sta.7.9.8 ,0.00
+Paid value last yr ,sta.7.9.9 ,0.00
+Authorised last yr ,sta.7.9.6 ,0
+Issued last year	,sta.7.9.7 ,0
+Dividend amount	,sta.7.9.10,0.00
+Div date payable	,sta.7.9.11,
+Eq Share class 10	,sta.7.10.1 ,
+Par value this yr	,sta.7.10.2 ,0.00
+Paid value this yr ,sta.7.10.3 ,0.00
+Authorised this yr ,sta.7.10.4 ,0
+Issued this year	,sta.7.10.5 ,0
+Par value last yr	,sta.7.10.8 ,0.00
+Paid value last yr ,sta.7.10.9 ,0.00
+Authorised last yr ,sta.7.10.6 ,0
+Issued last year	,sta.7.10.7 ,0
+Dividend amount	,sta.7.10.10,0.00
+Div date payable	,sta.7.10.11,
+CALL SAPAEXPORTCDBROP.P
+ï»¿Line 1
+Line 2
+Accounts General cdb.rop.acc.a.adl,	0
+Accounts General cdb.rop.acc.a.agm,	0
+Accounts General cdb.rop.acc.a.cad,	0
+Accounts General cdb.rop.acc.a.chr,	0
+Accounts General cdb.rop.acc.a.con,	0
+Accounts General cdb.rop.acc.a.crg,	0
+Accounts General cdb.rop.acc.a.csp,	0
+Accounts General cdb.rop.acc.a.nam,	0
+Accounts General cdb.rop.acc.a.off,	1
+Accounts General cdb.rop.acc.a.ofg,	0
+Accounts General cdb.rop.acc.a.per,	0
+Accounts General cdb.rop.acc.a.pn1,	0
+Accounts General cdb.rop.acc.a.pn2,	0
+Accounts General cdb.rop.acc.a.ret,	0
+Accounts General cdb.rop.acc.a.sec,	0
+Accounts General cdb.rop.acc.a.zci,	0
+Accounts General cdb.rop.acc.a.zim,	0
+Accounts General cdb.rop.acc.a.zni,	0
+Accounts Directors Report cdb.rop.acc.b.add,	0
+Accounts Directors Report cdb.rop.acc.b.app,	0
+Accounts Directors Report cdb.rop.acc.b.clo,	0
+Accounts Directors Report cdb.rop.acc.b.dir,	0
+Accounts Directors Report cdb.rop.acc.b.don,	0
+Accounts Directors Report cdb.rop.acc.b.int,	1
+Accounts Directors Report cdb.rop.acc.b.pub,	0
+Accounts Directors Report cdb.rop.acc.b.res,	0
+Accounts Directors Report cdb.rop.acc.b.ret,	0
+Accounts Directors Report cdb.rop.acc.b.sch,	0
+Accounts Directors Report cdb.rop.acc.b.sig,	0
+Accounts AcAud Rep cdb.rop.acc.c.abb,	0
+Accounts AcAud Rep cdb.rop.acc.c.apb,	0
+Accounts AcAud Rep cdb.rop.acc.c.ccr,	0
+
+ 
+
+Accounts AcAud Rep cdb.rop.acc.c.com,	0
+Accounts AcAud Rep cdb.rop.acc.c.doc,	0
+Accounts AcAud Rep cdb.rop.acc.c.isa,	0
+Accounts AcAud Rep cdb.rop.acc.c.lft,	0
+Accounts AcAud Rep cdb.rop.acc.c.lss,	0
+Accounts AcAud Rep cdb.rop.acc.c.new,	0
+Accounts AcAud Rep cdb.rop.acc.c.nme,	1
+Accounts AcAud Rep cdb.rop.acc.c.nta,	0
+Accounts AcAud Rep cdb.rop.acc.c.nti,	0
+Accounts AcAud Rep cdb.rop.acc.c.opn,	0
+Accounts AcAud Rep cdb.rop.acc.c.ops,	0
+Accounts AcAud Rep cdb.rop.acc.c.scp,	0
+Accounts AcAud Rep cdb.rop.acc.c.sol,	0
+Accounts AcAud Rep cdb.rop.acc.c.xmt,	0
+Accounts AcAud Rep cdb.rop.acc.c.xpo,	0
+Accounts AcAud Rep cdb.rop.acc.c.zad,	0
+members."
+Accounts AcAud Rep cdb.rop.acc.c.zbd,	0
+Accounts P&L AC cdb.rop.acc.e.bkt,	0
+Accounts P&L AC cdb.rop.acc.e.eps,	0
+Accounts P&L AC cdb.rop.acc.e.exc,	0
+
+Accounts P&L AC cdb.rop.acc.e.exp,	0
+Accounts P&L AC cdb.rop.acc.e.fad,	0
+Accounts P&L AC cdb.rop.acc.e.fm2,	0
+Accounts P&L AC cdb.rop.acc.e.frs,	0
+Accounts P&L AC cdb.rop.acc.e.PIE,	0
+Accounts P&L AC cdb.rop.acc.e.rsv,	0
+Accounts P&L AC cdb.rop.acc.e.str,	0
+Accounts P&L AC cdb.rop.acc.e.sub,	0
+Accounts P&L AC cdb.rop.acc.e.sup,	0
+Accounts BS cdb.rop.acc.f.acl,	0
+Accounts BS cdb.rop.acc.f.app,	0
+Accounts BS cdb.rop.acc.f.apq,	0
+Accounts BS cdb.rop.acc.f.aps,	0
+Accounts BS cdb.rop.acc.f.bkt,	0
+Accounts BS cdb.rop.acc.f.crs,	0
+Accounts BS cdb.rop.acc.f.crt,	0
+Accounts BS cdb.rop.acc.f.due,	0
+Accounts BS cdb.rop.acc.f.eql,	0
+Accounts BS cdb.rop.acc.f.fmt,	0
+Accounts BS cdb.rop.acc.f.gov,	0
+Accounts BS cdb.rop.acc.f.one,	0
+Accounts BS cdb.rop.acc.f.ppt,	0
+Accounts BS cdb.rop.acc.f.prv,	0
+Accounts BS cdb.rop.acc.f.spl,	0
+Accounts CashFlow cdb.rop.acc.g.aab,	0
+Accounts CashFlow cdb.rop.acc.g.flo,	0
+Accounts CashFlow cdb.rop.acc.g.pt1,	1
+Accounts CashFlow cdb.rop.acc.g.pt2,	1
+Accounts CashFlow cdb.rop.acc.g.pt3,	1
+Accounts CashFlow cdb.rop.acc.g.pt4,	1
+Accounts CashFlow cdb.rop.acc.g.pt5,	1
+Accounts CashFlow cdb.rop.acc.g.pt6,	1
+Accounts CashFlow cdb.rop.acc.g.pt7,	1
+Accounts CashFlow cdb.rop.acc.g.pt8,	1
+Accounts CashFlow cdb.rop.acc.g.ptc,	0
+Accounts CashFlow cdb.rop.acc.g.pte,	0
+Accounts CashFlow cdb.rop.acc.g.ptn,	1
+
+ 
+
+Accounts CashFlow cdb.rop.acc.g.sfi,	0
+Accounts CashFlow cdb.rop.acc.g.stb,	0
+Accounts CashFlow cdb.rop.acc.g.sub,	0
+Accounts AcPols cdb.rop.acc.h.aaa,	0
+Accounts AcPols cdb.rop.acc.h.aab,	0
+Accounts AcPols cdb.rop.acc.h.acs,	0
+Accounts AcPols cdb.rop.acc.h.dpi,	0
+Accounts AcPols cdb.rop.acc.h.dpn,	0
+Accounts AcPols cdb.rop.acc.h.dpr,	0
+Accounts AcPols cdb.rop.acc.h.drv,	0
+Accounts AcPols cdb.rop.acc.h.dto,	0
+Accounts AcPols cdb.rop.acc.h.dtx,	0
+Accounts AcPols cdb.rop.acc.h.fgn,	0
+Accounts AcPols cdb.rop.acc.h.fin,	0
+Accounts AcPols cdb.rop.acc.h.gdw,	0
+Accounts AcPols cdb.rop.acc.h.opl,	0
+Accounts AcPols cdb.rop.acc.h.pen,	1
+Accounts AcPols cdb.rop.acc.h.plc,	0
+Accounts AcPols cdb.rop.acc.h.prb,	0
+Accounts AcPols cdb.rop.acc.h.rnd,	0
+Accounts AcPols cdb.rop.acc.h.s21,	3
+Accounts AcPols cdb.rop.acc.h.s2a,	0
+Accounts AcPols cdb.rop.acc.h.sbp,	0
+Accounts AcPols cdb.rop.acc.h.sp1,	0
+Accounts AcPols cdb.rop.acc.h.sp2,	0
+Accounts AcPols cdb.rop.acc.h.sp3,	0
+Accounts AcPols cdb.rop.acc.h.sp4,	0
+Accounts AcPols cdb.rop.acc.h.sp5,	0
+Accounts AcPols cdb.rop.acc.h.stk,	0
+Accounts AcPols cdb.rop.acc.h.xci,	0
+Accounts AcPols cdb.rop.acc.h.xdi,	0
+Accounts Notes cdb.rop.acc.i.aut,	0
+Accounts Notes cdb.rop.acc.i.chg,	0
+Accounts Notes cdb.rop.acc.i.dir,	0
+Accounts Notes cdb.rop.acc.i.dis,	0
+Accounts Notes cdb.rop.acc.i.div,	0
+Accounts Notes cdb.rop.acc.i.f3a,	0
+Accounts Notes cdb.rop.acc.i.f3b,	0
+Accounts Notes cdb.rop.acc.i.f3c,	0
+Accounts Notes cdb.rop.acc.i.faa,	0
+Accounts Notes cdb.rop.acc.i.fad,	0
+Accounts Notes cdb.rop.acc.i.fai,	0
+Accounts Notes cdb.rop.acc.i.fap,	0
+Accounts Notes cdb.rop.acc.i.fas,	0
+Accounts Notes cdb.rop.acc.i.fcc,	0
+Accounts Notes cdb.rop.acc.i.gov,	0
+Accounts Notes cdb.rop.acc.i.gpi,	0
+Accounts Notes cdb.rop.acc.i.ins,	0
+Accounts Notes cdb.rop.acc.i.int,	0
+Accounts Notes cdb.rop.acc.i.iwo,	0
+Accounts Notes cdb.rop.acc.i.neg,	0
+Accounts Notes cdb.rop.acc.i.oca,	0
+Accounts Notes cdb.rop.acc.i.oir,	0
+Accounts Notes cdb.rop.acc.i.ooi,	0
+Accounts Notes cdb.rop.acc.i.ost,	0
+Accounts Notes cdb.rop.acc.i.p9a,	0
+Accounts Notes cdb.rop.acc.i.p9b,	0
+Accounts Notes cdb.rop.acc.i.pen,	0
+Accounts Notes cdb.rop.acc.i.pii,	0
+
+ 
+
+Accounts Notes cdb.rop.acc.i.rec,	1
+Accounts Notes cdb.rop.acc.i.rel,	0
+Accounts Notes cdb.rop.acc.i.rop,	1
+Accounts Notes cdb.rop.acc.i.rsv,	0
+Accounts Notes cdb.rop.acc.i.rsx,	0
+Accounts Notes cdb.rop.acc.i.sbp,	0
+Accounts Notes cdb.rop.acc.i.sdp,	0
+Accounts Notes cdb.rop.acc.i.seg,	0
+Accounts Notes cdb.rop.acc.i.stk,	0
+Accounts Notes cdb.rop.acc.i.stn,	0
+Accounts Notes cdb.rop.acc.i.tax,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.00,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.01,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.02,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.03,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.04,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.05,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.06,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.07,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.08,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.09,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.10,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.11,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.12,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.13,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.14,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.15,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.16,	0
+Accounts Spare Notes BS cdb.rop.acc.i1.99,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.01,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.02,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.03,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.04,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.05,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.06,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.07,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.08,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.09,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.10,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.11,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.12,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.13,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.14,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.15,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.16,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.17,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.18,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.19,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.20,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.21,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.22,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.23,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.24,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.25,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.26,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.27,	0
+Accounts Spare Notes P&L cdb.rop.acc.i2.99,	0
+Accounts ManInfo cdb.rop.acc.j.aaa,	1
+Accounts ManInfo cdb.rop.acc.j.adm,	0
+
+ 
+
+Accounts ManInfo cdb.rop.acc.j.all,	0
+Accounts ManInfo cdb.rop.acc.j.cat,	0
+Accounts ManInfo cdb.rop.acc.j.con,	0
+Accounts ManInfo cdb.rop.acc.j.cos,	0
+Accounts ManInfo cdb.rop.acc.j.grp,	0
+Accounts ManInfo cdb.rop.acc.j.mv1,	0
+Accounts ManInfo cdb.rop.acc.j.mv2,	0
+Accounts ManInfo cdb.rop.acc.j.mv3,	0
+Accounts ManInfo cdb.rop.acc.j.mv4,	0
+Accounts ManInfo cdb.rop.acc.j.opp,	0
+Accounts ManInfo cdb.rop.acc.j.pcc,	0
+Accounts ManInfo cdb.rop.acc.j.pno,	0
+tents."
+Accounts ManInfo cdb.rop.acc.j.srt,	0
+Accounts ManInfo cdb.rop.acc.j.tur,	0
+Accounts ManInfo cdb.rop.acc.j.z5s,	0
+Accounts ManInfo cdb.rop.acc.j.zu1,	0
+Accounts ManInfo cdb.rop.acc.j.zu2,	0
+Accounts ManInfo cdb.rop.acc.j.zu3,	0
+Accounts ManInfo cdb.rop.acc.j.zu4,	0
+Accounts Signing of acs cdb.rop.acc.k.and,	2
+Accounts Signing of acs cdb.rop.acc.k.cli,	1
+Accounts Signing of acs cdb.rop.acc.k.dir,	1
+Accounts Signing of acs cdb.rop.acc.k.rep,	1
+Accounts Notes selection review cdb.rop.acc.l.acc,	0
+Accounts Notes selection review cdb.rop.acc.l.acp,	0
+Accounts Notes selection review cdb.rop.acc.l.cai,	0
+Accounts Notes selection review cdb.rop.acc.l.cap,	0
+Accounts Notes selection review cdb.rop.acc.l.cin,	0
+Accounts Notes selection review cdb.rop.acc.l.clo,	0
+Accounts Notes selection review cdb.rop.acc.l.com,	0
+Accounts Notes selection review cdb.rop.acc.l.con,	0
+Accounts Notes selection review cdb.rop.acc.l.cos,	0
+Accounts Notes selection review cdb.rop.acc.l.cr1,	0
+Accounts Notes selection review cdb.rop.acc.l.cr2,	0
+Accounts Notes selection review cdb.rop.acc.l.csb,	0
+Accounts Notes selection review cdb.rop.acc.l.dca,	0
+Accounts Notes selection review cdb.rop.acc.l.def,	0
+Accounts Notes selection review cdb.rop.acc.l.dir,	0
+Accounts Notes selection review cdb.rop.acc.l.dis,	0
+Accounts Notes selection review cdb.rop.acc.l.div,	0
+Accounts Notes selection review cdb.rop.acc.l.drm,	0
+Accounts Notes selection review cdb.rop.acc.l.drs,	0
+Accounts Notes selection review cdb.rop.acc.l.dsc,	0
+Accounts Notes selection review cdb.rop.acc.l.emp,	0
+Accounts Notes selection review cdb.rop.acc.l.eps,	0
+Accounts Notes selection review cdb.rop.acc.l.exc,	0
+Accounts Notes selection review cdb.rop.acc.l.ext,	0
+Accounts Notes selection review cdb.rop.acc.l.fai,	0
+Accounts Notes selection review cdb.rop.acc.l.fin,	0
+Accounts Notes selection review cdb.rop.acc.l.gov,	0
+Accounts Notes selection review cdb.rop.acc.l.gpi,	0
+Accounts Notes selection review cdb.rop.acc.l.grp,	0
+Accounts Notes selection review cdb.rop.acc.l.inp,	0
+Accounts Notes selection review cdb.rop.acc.l.int,	0
+Accounts Notes selection review cdb.rop.acc.l.inv,	0
+Accounts Notes selection review cdb.rop.acc.l.iwo,	0
+Accounts Notes selection review cdb.rop.acc.l.oir,	0
+Accounts Notes selection review cdb.rop.acc.l.ooi,	0
+
+ 
+
+Accounts Notes selection review cdb.rop.acc.l.opl,	0
+Accounts Notes selection review cdb.rop.acc.l.p&l,	0
+Accounts Notes selection review cdb.rop.acc.l.pbs,	0
+Accounts Notes selection review cdb.rop.acc.l.pco,	0
+Accounts Notes selection review cdb.rop.acc.l.pen,	0
+Accounts Notes selection review cdb.rop.acc.l.pii,	0
+Accounts Notes selection review cdb.rop.acc.l.pro,	0
+Accounts Notes selection review cdb.rop.acc.l.pyr,	0
+Accounts Notes selection review cdb.rop.acc.l.rel,	0
+Accounts Notes selection review cdb.rop.acc.l.res,	0
+Accounts Notes selection review cdb.rop.acc.l.rev,	0
+Accounts Notes selection review cdb.rop.acc.l.shp,	0
+Accounts Notes selection review cdb.rop.acc.l.shr,	0
+Accounts Notes selection review cdb.rop.acc.l.sp1,	0
+Accounts Notes selection review cdb.rop.acc.l.sp2,	0
+Accounts Notes selection review cdb.rop.acc.l.sp3,	0
+Accounts Notes selection review cdb.rop.acc.l.stk,	0
+Accounts Notes selection review cdb.rop.acc.l.tan,	0
+Accounts Notes selection review cdb.rop.acc.l.tax,	0
+Accounts Notes selection review cdb.rop.acc.l.trn,	0
+Accounts New ac standards cdb.rop.acc.m.f17,	0
+Accounts New ac standards cdb.rop.acc.m.f20,	0
+Accounts New ac standards cdb.rop.acc.m.f21,	2
+Accounts New ac standards cdb.rop.acc.m.f23,	0
+Accounts New ac standards cdb.rop.acc.m.f26,	2
+Accounts New ac standards cdb.rop.acc.m.frp,	0
+Accounts New ac standards cdb.rop.acc.m.fse,	0
+Accounts New ac standards cdb.rop.acc.m.fsp,	0
+Accounts New ac standards cdb.rop.acc.m.pn5,	0
+Accounts New ac standards cdb.rop.acc.m.uit,	0
+cdb.rop.let.bnk.abl, 0
+cdb.rop.let.bnk.ack, 0
+cdb.rop.let.bnk.aut, 0
+cdb.rop.let.bnk.blt, 0
+cdb.rop.let.bnk.cus, 0
+cdb.rop.let.bnk.dct, 0
+cdb.rop.let.bnk.inf, 0
+cdb.rop.let.bnk.man, 0
+cdb.rop.let.bnk.sub, 0
+cdb.rop.let.bnk.trf, 0
+cdb.rop.let.gen.add, 0
+cdb.rop.let.gen.jhd, 0
+cdb.rop.let.gen.lt1, 3
+cdb.rop.let.gen.lt2, 5
+cdb.rop.let.gen.lt3, 3
+cdb.rop.let.gen.lt4, 5
+cdb.rop.let.gen.sal, 0
+cdb.rop.let.gen.sig, 0
+cdb.rop.let.gen.stk, 0
+cdb.rop.let.gen.tyr, 0
+cdb.rop.let.gen.yrs, 0
+cdb.rop.lnk.cta.clt, 0
+cdb.rop.lnk.cta.ina, 0
+cdb.rop.man.acc.chd, 0
+cdb.rop.man.acc.coh, 0
+cdb.rop.man.acc.col, 0
+cdb.rop.man.acc.con, 0
+cdb.rop.man.acc.lco, 0
+cdb.rop.man.acc.mgn, 0
+
+ 
+
+cdb.rop.man.acc.pct, 0
+cdb.rop.man.acc.srt, 0
+cdb.rop.man.e.a05,	0
+cdb.rop.man.e.aaa,	0
+cdb.rop.man.e.exp,	0
+cdb.rop.man.e.fad,	0
+cdb.rop.man.e.hdg,	0
+cdb.rop.man.e.inc,	0
+cdb.rop.man.e.int,	0
+cdb.rop.man.e.oin,	0
+cdb.rop.man.e.pcc,	0
+cdb.rop.man.e.pur,	0
+cdb.rop.man.e.raw,	0
+cdb.rop.man.e.spa,	0
+cdb.rop.man.e.stk,	0
+cdb.rop.man.e.trn,	0
+cdb.rop.man.f.aaa,	0
+cdb.rop.man.f.cap,	0
+cdb.rop.man.f.cbs,	0
+cdb.rop.man.f.cno,	0
+cdb.rop.man.f.sua,	0
+cdb.rop.man.f.sub,	0
+cdb.rop.man.f.suc,	0
+cdb.rop.man.f.sud,	0
+cdb.rop.man.f.sue,	0
+cdb.rop.man.f.thg,	0
+cdb.rop.man.zud.zu1, 0
+cdb.rop.man.zud.zu2, 0
+cdb.rop.man.zud.zu3, 0
+cdb.rop.man.zud.zu4, 0
+cdb.rop.mao.ati.enp, 0
+cdb.rop.mao.ati.fbo, 0
+cdb.rop.mao.ati.fde, 0
+cdb.rop.mao.ati.fev, 0
+cdb.rop.mao.ati.fit, 0
+cdb.rop.mao.ati.fsh, 0
+cdb.rop.mao.b01.b01, 0
+cdb.rop.mao.b01.b03, 0
+cdb.rop.mao.b01.b04, 0
+cdb.rop.mao.b01.enp, 0
+cdb.rop.mao.b01.etb, 0
+cdb.rop.mao.b01.etc, 0
+cdb.rop.mao.b01.fbo, 0
+cdb.rop.mao.b01.fde, 0
+cdb.rop.mao.b01.fev, 0
+cdb.rop.mao.b01.fit, 0
+cdb.rop.mao.b01.fsh, 0
+cdb.rop.mao.c02.b01, 0
+cdb.rop.mao.c02.b03, 0
+cdb.rop.mao.c02.b04, 0
+cdb.rop.mao.c02.enp, 0
+cdb.rop.mao.c02.etb, 0
+cdb.rop.mao.c02.etc, 0
+cdb.rop.mao.c02.fbo, 0
+cdb.rop.mao.c02.fde, 0
+cdb.rop.mao.c02.fev, 0
+cdb.rop.mao.c02.fit, 0
+cdb.rop.mao.c02.fsh, 0
+cdb.rop.mao.d03.b01, 0
+
+ 
+
+cdb.rop.mao.d03.b03, 0
+cdb.rop.mao.d03.b04, 0
+cdb.rop.mao.d03.enp, 0
+cdb.rop.mao.d03.etb, 0
+cdb.rop.mao.d03.etc, 0
+cdb.rop.mao.d03.fbo, 0
+cdb.rop.mao.d03.fde, 0
+cdb.rop.mao.d03.fev, 0
+cdb.rop.mao.d03.fit, 0
+cdb.rop.mao.d03.fsh, 0
+cdb.rop.mao.e04.b01, 0
+cdb.rop.mao.e04.b03, 0
+cdb.rop.mao.e04.b04, 0
+cdb.rop.mao.e04.enp, 0
+cdb.rop.mao.e04.etb, 0
+cdb.rop.mao.e04.etc, 0
+cdb.rop.mao.e04.fbo, 0
+cdb.rop.mao.e04.fde, 0
+cdb.rop.mao.e04.fev, 0
+cdb.rop.mao.e04.fit, 0
+cdb.rop.mao.e04.fsh, 0
+cdb.rop.mao.f05.b01, 0
+cdb.rop.mao.f05.b03, 0
+cdb.rop.mao.f05.b04, 0
+cdb.rop.mao.f05.enp, 0
+cdb.rop.mao.f05.etb, 0
+cdb.rop.mao.f05.etc, 0
+cdb.rop.mao.f05.fbo, 0
+cdb.rop.mao.f05.fde, 0
+cdb.rop.mao.f05.fev, 0
+cdb.rop.mao.f05.fit, 0
+cdb.rop.mao.f05.fsh, 0
+cdb.rop.mao.g06.b01, 0
+cdb.rop.mao.g06.b03, 0
+cdb.rop.mao.g06.b04, 0
+cdb.rop.mao.g06.enp, 0
+cdb.rop.mao.g06.etb, 0
+cdb.rop.mao.g06.etc, 0
+cdb.rop.mao.g06.fbo, 0
+cdb.rop.mao.g06.fde, 0
+cdb.rop.mao.g06.fev, 0
+cdb.rop.mao.g06.fit, 0
+cdb.rop.mao.g06.fsh, 0
+cdb.rop.mao.h07.b01, 0
+cdb.rop.mao.h07.b03, 0
+cdb.rop.mao.h07.b04, 0
+cdb.rop.mao.h07.enp, 0
+cdb.rop.mao.h07.etb, 0
+cdb.rop.mao.h07.etc, 0
+cdb.rop.mao.h07.fbo, 0
+cdb.rop.mao.h07.fde, 0
+cdb.rop.mao.h07.fev, 0
+cdb.rop.mao.h07.fit, 0
+cdb.rop.mao.h07.fsh, 0
+cdb.rop.mao.i08.b01, 0
+cdb.rop.mao.i08.b03, 0
+cdb.rop.mao.i08.b04, 0
+cdb.rop.mao.i08.enp, 0
+cdb.rop.mao.i08.etb, 0
+
+ 
+
+cdb.rop.mao.i08.etc, 0
+cdb.rop.mao.i08.fbo, 0
+cdb.rop.mao.i08.fde, 0
+cdb.rop.mao.i08.fev, 0
+cdb.rop.mao.i08.fit, 0
+cdb.rop.mao.i08.fsh, 0
+cdb.rop.mao.j09.b01, 0
+cdb.rop.mao.j09.b03, 0
+cdb.rop.mao.j09.b04, 0
+cdb.rop.mao.j09.enp, 0
+cdb.rop.mao.j09.etb, 0
+cdb.rop.mao.j09.etc, 0
+cdb.rop.mao.j09.fbo, 0
+cdb.rop.mao.j09.fde, 0
+cdb.rop.mao.j09.fev, 0
+cdb.rop.mao.j09.fit, 0
+cdb.rop.mao.j09.fsh, 0
+cdb.rop.mao.k10.b01, 0
+cdb.rop.mao.k10.b03, 0
+cdb.rop.mao.k10.b04, 0
+cdb.rop.mao.k10.enp, 0
+cdb.rop.mao.k10.etb, 0
+cdb.rop.mao.k10.etc, 0
+cdb.rop.mao.k10.fbo, 0
+cdb.rop.mao.k10.fde, 0
+cdb.rop.mao.k10.fev, 0
+cdb.rop.mao.k10.fit, 0
+cdb.rop.mao.k10.fsh, 0
+cdb.rop.mao.l11.b01, 0
+cdb.rop.mao.l11.b03, 0
+cdb.rop.mao.l11.b04, 0
+cdb.rop.mao.l11.enp, 0
+cdb.rop.mao.l11.etb, 0
+cdb.rop.mao.l11.etc, 0
+cdb.rop.mao.l11.fbo, 0
+cdb.rop.mao.l11.fde, 0
+cdb.rop.mao.l11.fev, 0
+cdb.rop.mao.l11.fit, 0
+cdb.rop.mao.l11.fsh, 0
+cdb.rop.mao.m12.b01, 0
+cdb.rop.mao.m12.b03, 0
+cdb.rop.mao.m12.b04, 0
+cdb.rop.mao.m12.enp, 0
+cdb.rop.mao.m12.etb, 0
+cdb.rop.mao.m12.etc, 0
+cdb.rop.mao.m12.fbo, 0
+cdb.rop.mao.m12.fde, 0
+cdb.rop.mao.m12.fev, 0
+cdb.rop.mao.m12.fit, 0
+cdb.rop.mao.m12.fsh, 0
+cdb.rop.mao.n13.b01, 0
+cdb.rop.mao.n13.b03, 0
+cdb.rop.mao.n13.b04, 0
+cdb.rop.mao.n13.enp, 0
+cdb.rop.mao.n13.etb, 0
+cdb.rop.mao.n13.etc, 0
+cdb.rop.mao.n13.fbo, 0
+cdb.rop.mao.n13.fde, 0
+cdb.rop.mao.n13.fev, 0
+
+ 
+
+cdb.rop.mao.n13.fit, 0
+cdb.rop.mao.n13.fsh, 0
+cdb.rop.mao.o14.b01, 0
+cdb.rop.mao.o14.b03, 0
+cdb.rop.mao.o14.b04, 0
+cdb.rop.mao.o14.enp, 0
+cdb.rop.mao.o14.etb, 0
+cdb.rop.mao.o14.etc, 0
+cdb.rop.mao.o14.fbo, 0
+cdb.rop.mao.o14.fde, 0
+cdb.rop.mao.o14.fev, 0
+cdb.rop.mao.o14.fit, 0
+cdb.rop.mao.o14.fsh, 0
+cdb.rop.mao.p15.b01, 0
+cdb.rop.mao.p15.b03, 0
+cdb.rop.mao.p15.b04, 0
+cdb.rop.mao.p15.enp, 0
+cdb.rop.mao.p15.etb, 0
+cdb.rop.mao.p15.etc, 0
+cdb.rop.mao.p15.fbo, 0
+cdb.rop.mao.p15.fde, 0
+cdb.rop.mao.p15.fev, 0
+cdb.rop.mao.p15.fit, 0
+cdb.rop.mao.p15.fsh, 0
+cdb.rop.mip.opt.lan, 0
+cdb.rop.mip.opt.ord, 0
+cdb.rop.mip.pag.asi, 0
+cdb.rop.mip.pag.asx, 0
+cdb.rop.mip.pag.crs, 0
+cdb.rop.mip.pag.dcr, 0
+cdb.rop.mip.pag.drs, 0
+cdb.rop.mip.pag.gpa, 0
+cdb.rop.mip.pag.gpp, 0
+cdb.rop.mip.pag.liq, 0
+cdb.rop.mip.pag.npa, 0
+cdb.rop.mip.pag.npp, 0
+cdb.rop.mip.pag.rce, 0
+cdb.rop.mip.pag.sp1, 0
+cdb.rop.mip.pag.sp2, 0
+cdb.rop.mip.pag.sp3, 0
+cdb.rop.mip.pag.sp4, 0
+cdb.rop.mip.pag.sp5, 0
+cdb.rop.mip.pag.stk, 0
+cdb.rop.prs.cap.ac1, 0
+Presentation Case cdb.rop.prs.cap.ac2, 0
+Presentation Case cdb.rop.prs.cap.ac3, 0
+Presentation Case cdb.rop.prs.cap.ALN, 0
+Presentation Case cdb.rop.prs.cap.ALp, 0
+Presentation Case cdb.rop.prs.cap.ALR, 0
+Presentation Case cdb.rop.prs.cap.cn1, 0
+Presentation Case cdb.rop.prs.cap.cn2, 0
+Presentation Case cdb.rop.prs.cap.cn3, 0
+Presentation Case cdb.rop.prs.cap.nt1, 0
+Presentation Case cdb.rop.prs.cap.nt2, 0
+Presentation Case cdb.rop.prs.cap.of1, 0
+Presentation Case cdb.rop.prs.cap.of2, 0
+Presentation Case cdb.rop.prs.cap.rp1, 0
+Presentation Case cdb.rop.prs.cap.wfc, 0
+Presentation Currency cdb.rop.prs.cur.a1,	0
+
+ 
+
+Presentation Currency cdb.rop.prs.cur.acs, 0
+Presentation Currency cdb.rop.prs.cur.not, 0
+Presentation Currency cdb.rop.prs.cur.rep, 0
+Presentation Currency cdb.rop.prs.cur.tnt, 2
+Presentation General cdb.rop.prs.gen.cmp, 2
+Presentation General cdb.rop.prs.gen.dat, 0
+Presentation General cdb.rop.prs.gen.dbg, 0
+Presentation General cdb.rop.prs.gen.doc, 0
+Presentation General cdb.rop.prs.gen.jac, 0
+Presentation General cdb.rop.prs.gen.jfp, 0
+Presentation General cdb.rop.prs.gen.jst, 0
+Presentation General cdb.rop.prs.gen.nth, 0
+Presentation General cdb.rop.prs.gen.pno, 1
+Presentation General cdb.rop.prs.gen.rnd, 0
+Presentation General cdb.rop.prs.gen.sin, 0
+Presentation General cdb.rop.prs.gen.top, 0
+Presentation General cdb.rop.prs.gen.xft, 0
+Presentation General cdb.rop.prs.gen.xpt, 0
+Presentation Spacing Gen cdb.rop.prs.spa.ah5, 1
+Presentation Spacing Gen cdb.rop.prs.spa.ahc, 0
+Presentation Spacing Gen cdb.rop.prs.spa.coa, @
+Presentation Spacing Gen cdb.rop.prs.spa.cod, @
+Presentation Spacing Gen cdb.rop.prs.spa.col, 0
+Presentation Spacing Gen cdb.rop.prs.spa.con, 1
+Presentation Spacing Gen cdb.rop.prs.spa.cz1, 0
+Presentation Spacing Gen cdb.rop.prs.spa.czz, 1
+Presentation Spacing Gen cdb.rop.prs.spa.dhd, 0
+Presentation Spacing Gen cdb.rop.prs.spa.dir, 1
+Presentation Spacing Gen cdb.rop.prs.spa.fah, 0
+Presentation Spacing Gen cdb.rop.prs.spa.fau, 1
+Presentation Spacing Gen cdb.rop.prs.spa.po0, 0
+Presentation Spacing Gen cdb.rop.prs.spa.po1, 1
+Presentation Spacing Gen cdb.rop.prs.spa.po2, 1
+Presentation Spacing Gen cdb.rop.prs.spa.r01, 1
+Presentation Spacing Gen cdb.rop.prs.spa.r20, 1
+Presentation Spacing Gen cdb.rop.prs.spa.sig, 4
+Presentation Spacing P&L cdb.rop.prs.spl.sp1, 0
+Presentation Spacing P&L cdb.rop.prs.spl.sp3, 0
+Presentation Spacing P&L cdb.rop.prs.spl.sp5, 0
+Presentation Spacing P&L cdb.rop.prs.spl.sp7, 0
+Presentation Spacing P&L cdb.rop.prs.spl.sp9, 0
+Presentation Spacing P&L cdb.rop.prs.spl.spb, 0
+Presentation Spacing P&L cdb.rop.prs.spl.spd, 0
+Presentation Spacing P&L cdb.rop.prs.spl.spf, 0
+Presentation Spacing BSheet cdb.rop.prs.sps.sp1, 0
+Presentation Spacing BSheet cdb.rop.prs.sps.sp3, 0
+Presentation Spacing BSheet cdb.rop.prs.sps.sp5, 0
+Presentation Spacing BSheet cdb.rop.prs.sps.sp7, 0
+Presentation Spacing BSheet cdb.rop.prs.sps.sp9, 0
+Presentation Spacing BSheet cdb.rop.prs.sps.spb, 0
+Presentation Spacing BSheet cdb.rop.prs.sps.spd, 0
+Presentation Spacing BSheet cdb.rop.prs.sps.spf, 1
+Presentation Spacing BSheet cdb.rop.prs.sps.sph, 1
+Presentation Spacing BSheet cdb.rop.prs.sps.spj, 0
+Presentation Spacing BSheet cdb.rop.prs.sps.spl, 0
+Presentation Spacing BSheet cdb.rop.prs.sps.spo, 0
+Presentation Spacing BSheet cdb.rop.prs.sps.spq, 0
+Presentation Style cdb.rop.prs.sty.boc, 1
+Presentation Style cdb.rop.prs.sty.bol, 0
+
+ 
+
+Presentation Style cdb.rop.prs.sty.evc, 0
+Presentation Style cdb.rop.prs.sty.evl, 0
+Presentation Style cdb.rop.prs.sty.itc, 0
+Presentation Style cdb.rop.prs.sty.itl, 0
+Presentation Style cdb.rop.prs.sty.shc, 0
+Presentation Style cdb.rop.prs.sty.shl, 0
+cdb.rop.rep.agm.alr, 0
+cdb.rop.rep.agm.shn, 0
+cdb.rop.rep.sch.det, 0
+cdb.rop.rep.sch.trn, 0
+cdb.rop.rep.sum.dpn, 0
+cdb.rop.rep.sum.p&l, 0
+cdb.rop.rep.sum.per, 0
+cdb.rop.rep.sum.rat, 0
+cdb.rop.rep.sum.stf, 0
+cdb.rop.rep.sum.sum, 0
+Company Status General cdb.rop.sta.gen.afr, 0
+Company Status General cdb.rop.sta.gen.ann, 0
+Company Status General cdb.rop.sta.gen.aud, 0
+Company Status General cdb.rop.sta.gen.dir, 0
+Company Status General cdb.rop.sta.gen.dor, 0
+Company Status General cdb.rop.sta.gen.exm, 3
+Company Status General cdb.rop.sta.gen.grp, 0
+Company Status General cdb.rop.sta.gen.gua, 0
+Company Status General cdb.rop.sta.gen.ocr, 0
+Company Status General cdb.rop.sta.gen.ode, 0
+Company Status General cdb.rop.sta.gen.odr, 0
+Company Status General cdb.rop.sta.gen.odv, 0
+Company Status General cdb.rop.sta.gen.oem, 0
+Company Status General cdb.rop.sta.gen.ofa, 1
+Company Status General cdb.rop.sta.gen.oin, 0
+Company Status General cdb.rop.sta.gen.ost, 0
+Company Status General cdb.rop.sta.gen.otx, 0
+Company Status General cdb.rop.sta.gen.oty, 0
+Company Status General cdb.rop.sta.gen.shd, 0
+Company Status General cdb.rop.sta.gen.sta, 1
+Company Status General cdb.rop.sta.gen.sub, 0
+Company Status Materiallity cdb.rop.sta.mat.ag2, 0
+Company Status Materiallity cdb.rop.sta.mat.agw, 0
+Company Status Materiallity cdb.rop.sta.mat.bfa, 0
+Company Status Materiallity cdb.rop.sta.mat.bia, 0
+Company Status Materiallity cdb.rop.sta.mat.cst, 0
+Company Status Materiallity cdb.rop.sta.mat.cwp, 0
+Company Status Materiallity cdb.rop.sta.mat.dfl, 0
+Company Status Materiallity cdb.rop.sta.mat.dhp, 0
+Company Status Materiallity cdb.rop.sta.mat.dop, 0
+Company Status Materiallity cdb.rop.sta.mat.edx, 0
+Company Status Materiallity cdb.rop.sta.mat.for, 0
+Company Status Materiallity cdb.rop.sta.mat.xto, 0
+CALL SAPAEXPORTRPAD.P
+genAGMeetingR,"at 12.00 noon on 1st April 2001 at the registered office"
+genBoardMeetingR,"at 11.30am on 1st April 2001 at the registered office"
+genExtraResolutionR,""
+genExtraResolution2R,""
+genExtraResolution3R,""
+genChairStatementR,""
+genOperatingFinancialReviewR,""
+genOffPageSubCommittee1R,""
+genOffPageSubCommittee2R,""
+
+ 
+
+genOffPageInvestAdviserR,""
+genOffPageOtherAdviser1R,""
+genOffPageOtherAdviser2R,""
+genOffPageExtraSolicitorR,""
+genOffPageExtraBankR,""
+genOffPageFinalItemR,""
+genCoverAddressR,""
+dirDateIncorpR,""
+dirMoreActivitiesR,"to this strategy. The year's performance has enabled the company to maintain Its status as a category A supplier to its principal customer"
+dirBusReviewR,"As predicted last year the manufacture of widgets for
+BigCorp during the year stabilised at a lower level than hitherto The resultant available capacity was principally taken up with the successful completion of a large scale (£4m) micro widget project and increased activity in other areas
+
+Investment in the AAAAA China facility has commenced and anticipates production in the coming financial year."
+dirFutDevelopR,""
+dirDividendsR,""
+dirFinancialRiskManagementR,"***Insert text here to explain the following:*** Financial risk management objectives and policies
+
+The principal risks and uncertainties facing the company include the acceptance by end customers of its products, changes in customer requirements and in levels of demand in the market, competitive pressure on pricing, delivery or technology, utility costs, changes in government legislation, and overall economic conditions
+
+a) the financial risk management objectives and policies of the company including the policy for hedging each major type of forecasted transaction for which hedge accounting is used; and
+
+b) the exposure of the company to price risk, credit risk, liquidity risk and cash flow risk;
+
+unless such information is not material for the assessment of the assets, liabilities, financial position and profit or loss of the company."
+dirResearch&DevR,""
+dirDirshareholdingsR,""
+dirDirsIntOverrideR,""
+dirMoreDetailsR,""
+dirDirsChangesR,""
+dirFixedAssetsR,""
+dirMiscellaneousR,""
+dirInsuranceR,""
+dirPayCreditorsR,""
+dirDonationsR,""
+dirPostBSeventR,""
+dirDisabledEmplR,""
+dirEmplInvolveR,""
+dirOwnSharesR,""
+dirIFRSTransitionR,""
+dirAuditorChangeR,""
+dirSignatoryR,"	 Mr B B Black
+
+	** Position **
+"
+aurLimitR,""
+aurExplanR,""
+
+ 
+
+aurAudqualR,""
+aurOpinionR,""
+aurEmphasisR,""
+acrDisclaimR,""
+aurAuditAddressR,""
+aurAPBEthicalR,"**** PLEASE ENTER TEXT IN REPORTPAD APBEthical ****"
+aurClarificationR,""
+aurUncertaintyR,""
+aurScopeOfAuditR,""
+aurMattersRepByExceptionR,""
+aurAltOpinionPrescByCA06R,""
+p&lTextAtTopR,""
+p&lTextBeforeExpR,""
+p&lTextAtEndR,""
+acsRevalAssetsR,"certain fixed assets"
+acsFinanceAssetsR,"assets"
+bsaTextBeforeFAR,""
+bsaTextBeforeEquityR,""
+bsaTextAtEndOfBSR,""
+bsaSignatoryR,"
+
+**Name 1**	**Name 2**
+**Position	**Position"
+cfsCashflowTextR,""
+cfsLiquidR,""
+acsCashflowNetDebt1R,""
+acsCashflowNetDebt2R,""
+polAcctBasisR,""
+polFRSSE2005NewR,"***Please amend reportpad FRSSE2005NewR as appropriate.***
+
+(Insert text here to explain the impact of the adoption of FRSSE (effective January 2005)in the year. Provide details of the changes including:
+
+(a) a brief explanation of the change in policy;
+(b) where practicable, the effect of a prior period adjustment on the results for the preceding period in accordance with FRS 3; and (c) where practicable, an indication of the effect of a change in accounting policy on the results for the current period.
+
+Where it is not practicable to make the disclosures described in (b) and (c) above, state that this is the case and give the reasons for it.)
+"
+polFRS17NewR,"***Please amend reportpad FRS17NewR as appropriate.***
+
+(Insert text here to explain the impact of the full adoption of FRS 17 in the year. Provide details of the changes including:
+
+(a) a brief explanation of the change in policy;
+(b) where practicable, the effect of a prior period adjustment on the results for the preceding period in accordance with FRS 3; and (c) where practicable, an indication of the effect of a change in accounting policy on the results for the current period.)
+"
+polFRS20NewR,"
+
+ 
+
+***The following text should be used as a guide, please amend reportpad FRS20NewR as appropriate.***
+
+FRS 20 'Share-Based Payment (IFRS 2)' requires the recognition of equity-settled share-based payments at fair value at the date of the grant and the recognition of liabilities for cash-settled share-based payments at the current fair value at each balance sheet date. Prior to the adoption of FRS 20, the company did not recognise the financial effect of share-based payments until such payments were settled.
+
+In accordance with the transitional provisions of FRS 20, the Standard has been applied retrospectively to all grants of equity instruments after 7 November 2002 that were unvested as of 1 January 2006.
+
+For year ended 31December2008, the change in accounting policy has resulted in a net decrease in the profit for the year of £-. The balance sheet at 31December2008 has been restated to reflect the recognition of a liability for share-based payments of £-, a share options reserve of £- and an additional deferred tax asset of £XXX
+
+For the year ended 31December2009 the change in accounting policy has resulted in a net charge to the profit and loss account of £-. At 31December2009, the share options reserve amounted to £-, the liability recognised for share-based payments amounted to £- and the related deferred tax asset amounted to £XXX.
+"
+polFRS21NewR,"***The following text should be used as a guide, please amend reportpad FRS21NewR as appropriate.***
+
+The adoption of FRS 21 has resulted in a change in accounting policy in respect of proposed equity dividends.  If the company declares dividends to the holders of equity instruments after the balance sheet date, the company does not recognise those dividends as a liability at the balance sheet date.  The aggregate amount of equity dividends proposed before approval of the financial statements, which have not been shown as liabilities at the balance sheet date, are disclosed in the notes to the financial statements. Previously, proposed equity dividends were recorded as liabilities at the balance sheet date.
+
+This change in accounting policy has resulted in a prior year adjustment for the company. Shareholders' funds at 1January2008 have been increased by £XXX. For year ended 31December2008, the change in accounting policy has resulted in a net increase in retained profit for the year of £XXX. The balance sheet at 31December2008 has been restated to reflect the de-recognition of a liability for proposed equity dividends of £XXX. For year ended 31December2009, the change in accounting policy has resulted in a net increase in retained profit for the year of £XXX.
+"
+polFRS23NewR,"***You have set rop.acc.m.f23 to 'yes' indicating that adoption of FRS 23 has resulted in a change in accounting policy, please enter text in reportpad FRS23NewR as appropriate.***
+"
+polFRS25_26NewR,"
+
+ 
+
+***The following text should be used as a guide, please amend reportpad FRS25_26NewR as appropriate.***
+
+Provide details of the changes including:
+
+a) a brief explanation of the change in policy;
+
+b) where practicable, the effect of a prior period adjustment on the results for the preceding period in accordance with FRS 3; and
+
+c) where practicable, an indication of the effect of a change in accounting policy on the results for the current period.
+"
+polUITFNewR,"***The following text should be used as a guide, amend reportpad UITFNewR***
+
+Provide details of the changes including:
+
+a) a brief explanation of the change in policy;
+
+b) where practicable, the effect of a prior period adjustment on the results for the preceding period in accordance with FRS 3; and
+
+c) where practicable, an indication of the effect of a change in accountancy policy on the results for the current period.
+"
+polFRSSE2007ChangePolicyR,""
+polFRSSE2007CashSBPR,"***The following text should be used as a guide, please amend reportpad FRSSE2007 Cash Settled Share Based Payments as appropriate***
+The <company/group> issues cash-settled share-based payments to certain employees(including directors). A liability equal to the portion of the goods and services received is recognised at the current fair value determined at each balance sheet date."
+polFRSSE2007EquitySBPR,"***The following text should be used as a guide, please amend reportpad FRSSE2007 Equity Settled Share Based Payments as appropriate***
+The <company/group> issues equity-settled share-based payments to certain employees(including directors). Equity-settled share-based payments are measured at fair value at the date of grant. Under the ruling of the Financial Reporting Standard for Smaller Entities (effective January 2007) equity-settled share based payments are not recorded in the financial statements and are recognised on a disclosure only basis."
+polRelPartiesTransPolR,""
+polCashFlowR,""
+polTurnoverR,""
+polTurnoverUITFR,"***Enter additional text in reportpad TurnoverUITF which will appear after the main turnover policy.***"
+polDepreciationR,""
+polRevalDepnR,""
+polImpairDepnR,""
+polInvestmentPropertyR,""
+polGoodWillR,""
+polOtherIntanFAR,""
+polTanFixAssetR,"All fixed assets are initially recorded at cost."
+polStockR,""
+polStockEndR,""
+polWipR,""
+polFRS17PensionR,"
+
+ 
+
+***The following text should be used as a guide, please amend reportpad FRS17PensionR*** The company operates a defined benefit pension scheme for employees. The assets of the scheme are held separately from those of the company.
+
+Current service costs, past service costs and gains and losses on settlements and curtailments are charged to the profit and loss account. Past service costs are recognised over the vesting period or immediately if the benefits have vested. When a settlement (eliminating all obligations for benefits already accrued) or a curtailment (reducing future obligations as a result of a material reduction in the scheme membership or a reduction in future entitlement) occurs, the obligation and related plan assets are re-measured using current actuarial assumptions and the resultant gain or loss is recognised in the profit and loss account during the period in which the settlement or curtailment occurs.
+
+The interest cost and the expected return on assets are shown as a net amount in the profit and loss account as other finance costs or income. Actuarial gains and losses are recognised immediately in the statement of total recognised gains and losses.
+
+Pension scheme assets are valued at fair value at the balance sheet date.  Fair value is based on market price information and in the case of quoted securities is the published bid price.  Pension scheme liabilities are measured on an actuarial basis using the projected unit method and are discounted to their present value using a rate equivalent to the current rate of return on a high quality corporate bond of equivalent currency and term to the scheme liabilities. Pension scheme (either: "surpluses (to the extent that they can be recovered) OR "deficits") are recognised in full on the balance sheet, net of related deferred tax.
+"
+polPensionR,""
+polPostRetireBenPolR,""
+polHirePurchaseR,""
+polFinanceLeaseR,""
+polCombinedLeasesR,""
+polOperatingLeaseR,""
+polResearch&DevR,"Research and development expenditure is written off in the year in which it is incurred."
+polProvLiabChargesPolR,""
+polDeferredTaxR,""
+polForeignCurrencyR,""
+polGovtGrantsR,""
+polDerivInstrumPolR,""
+polCapitalInstrumPolR,""
+polFRS20R,"***The following text should be used as a guide, please amend reportpad FRS20R as appropriate.***
+
+The company issues equity-settled and cash-settled share-based payments to certain employees (including directors). Equity-settled share-based payments are measured at fair value at the date of grant. The fair value determined at the grant date of the equity-settled share-based payments is expensed on a straight-line basis over the vesting period, together with a corresponding increase in equity, based upon the company's estimate of the shares that will eventually vest.
+
+Fair value is measured using the ***Please describe the pricing model by entering text in heading ShareOptionsPricingModelH***. The expected life used in the model has been adjusted, based on management's best estimate, for the effects of non-transferability, exercise restrictions and behavioural considerations.
+
+ 
+
+Where the terms of an equity-settled transaction are modified, as a minimum an expense is recognised as if the terms had not been modified. In addition, an expense is recognised for any increase in the value of the transaction as a result of the modification, as measured at the date of modification.
+
+Where an equity-settled transaction is cancelled, it is treated as if it had vested on the date of the cancellation, and any expense not yet recognised for the transaction is recognised immediately. However, if a new transaction is substituted for the cancelled transaction, and designated as a replacement transaction on the date that it is granted, the cancelled and new transactions are treated as if they were a modification of the original transaction, as described in the previous paragraph.
+
+For cash-settled share-based payments, a liability equal to the portion of the goods and services received is recognised at the current fair value determined at each balance sheet date.
+"
+polFRS25_26R,"***The following text should be used as a guide, please amend reportpad FRS25_26R as appropriate.***
+
+Financial instruments are classified and accounted for, according to the substance of the contractual arrangement, as either financial assets, financial liabilities or equity instruments. An equity instrument is any contract that evidences a residual interest in the assets of the company after deducting all of its liabilities.
+
+Investments
+
+All investments are initially recorded at cost, being the fair value of the consideration given and including acquisition costs associated with the investment. All purchases and sales of investments are recognised using trade date accounting.
+
+After initial recognition, investments, which are classified as held for trading and available-for-sale, are measured at fair value. Gains or losses on investments held for trading are recognised in the profit and loss account. Gains or losses on available-for-sale investments are recognised as a separate component of equity until the investment is disposed of or until its value is impaired, at which time the cumulative gain or loss previously reported in equity is included in the profit and loss account.
+
+Investments classified as held-to-maturity are subsequently measured at amortised cost using the effective interest method. Gains and losses are recognised in the profit and loss account when the investment in derecognised, or impaired, as well as through the amortisation process.
+
+Investments are fair valued using quoted market prices, independent appraisals, discounted cash flow analysis or other appropriate valuation models at the balance sheet date.
+
+Trade and other debtors
+
+Trade and other debtors are recognised and carried forward at invoices amounts less provisions for any doubtful debts. Bad debts are written off when identified.
+
+ 
+
+Interest-bearing loans and borrowings
+
+All loans and borrowings are recognised initially at cost, which is the fair value of the consideration received, net of issue costs associated with the borrowing.
+
+After initial recognition, interest-bearing loans and borrowings are measured at amortised cost using the effective interest method. Gains or losses are recognised in the profit and loss account when liabilities are derecognised or impaired, as well as through the amortisation process.
+
+Derivative financial instruments
+
+The company uses a number of derivative financial instruments such as foreign currency contracts and interest rate swaps to hedge its risks associated with interest rate and currency fluctuation risk. Such derivative financial instruments are always stated at their fair value.
+
+For derivatives that do not qualify for hedge accounting (see below), any gains or losses arising from changes in fair value are taken directly to the profit and loss account.
+
+Embedded derivatives are separated from their host contract and are recorded immediately in the profit and loss account when their economic characteristics and risks are not closely related to the host contract and the hybrid instrument itself is not measured at fair value.
+
+Hedging
+
+The company designates certain risks being hedged into three types:
+
+- fair value hedges;
+
+- cash flow hedges; and
+
+- hedge of a net investment in a foreign entity.
+
+In relation to fair value hedges, which meet the conditions for special hedge accounting, any gain or loss from re-measuring the hedging instrument at fair value is recognised immediately in the profit and loss account.
+
+In relation to cash flow hedges, designed to hedge the exposure to variability in future cash flows relating to firm commitments or highly probable forecasted transactions, the portion of the gain or loss on the hedging instrument, which meets the conditions for special hedge accounting, is recognised directly in equity. Deferred gains and losses are released to the profit and loss account when the forecasted transactions occur.
+
+An ineffective portion of the hedge is always recognised immediately in the profit and loss account.
+
+The hedge of a net investment in a foreign entity is accounted for as a cash flow hedge with foreign exchange differences recognised directly in equity.
+
+Hedge accounting is discontinued when the hedging instrument expires or is sold, terminated or exercised, or no longer qualifies for hedge accounting. At that point in time, any cumulative gain or loss on the hedging instrument recognised in equity is kept in equity until the forecasted transaction occurs. If a forecasted transaction is no longer expected to occur, the net cumulative gain or loss recognised in equity is transferred to the profit and loss account.
+"
+polFinancialInstrumPolR,"
+
+ 
+
+***Reportpad FinancialinstrumPol should be tailored for specific circumstances***
+
+Financial liabilities and equity instruments are classified according to the substance of the contractual arrangements entered into. An equity instrument is any contract that evidences a residual interest in the assets of the entity after deducting all of its financial liabilities.
+
+Where the contractual obligations of financial instruments (including share capital) are equivalent to a similar debt instrument, those financial instruments are classed as financial liabilities. Financial liabilities are presented as such in the balance sheet.  Finance costs and gains or losses relating to financial liabilities are included in the profit and loss account. Finance costs are calculated so as to produce a constant rate of return on the outstanding liability.
+
+Where the contractual terms of share capital do not have any terms meeting the definition of a financial liability then this is classed as an equity instrument. Dividends and distributions relating to equity instruments are debited direct to equity.
+
+*** The following text should be included if there are any compound instruments**** Compound instruments
+
+Compound instruments comprise both a liability and an equity component. At date of issue, the fair value of the liability component is estimated using the prevailing market interest rate for a similar debt instrument. The liability component is accounted for as a financial liability.
+
+The residual is the difference between the net proceeds of issue and the liability component (at time of issue). The residual is the equity component, which is accounted for as an equity instrument.
+
+The interest expense on the liability component is calculated applying the effective interest rate for the liability component of the instrument. The difference between this amount and any repayments is added to the carrying amount of the liability in the balance sheet.
+"
+polSpare1R,""
+polSpare2R,""
+polSpare3R,""
+polSpare4R,""
+polSpare5R,""
+ntpPrincipalR,""
+ntpTurnoverR,""
+ntpTurnoverOverrideR,""
+ntpTurnoverAnalysisTopR,""
+ntpTurnoverAnalysisActivityR,""
+ntpTurnoverAnalysisGeogR,""
+ntpTurnoverAnalysisGeogOverrideR,""
+ntpOtherOperatingIncomeR,""
+ntpExceptionalItemsR,""
+ntpNonOperatingExceptionalItemsR,"Please enter details of this non operating exceptional item in reportpad: notes - profit and loss account - NonOperatingExceptionalItems"
+ntpAuditFeeR,""
+ntpAuditorRemn1R,""
+ntpAuditorRemn2R,""
+ntpEmployeesR,""
+ntpEmployeesFRS17R,""
+ntpDirectorRemunerationR,""
+ntpDirectorsInSchemesR,""
+ntpFRS3DisposalFAR,""
+ntpFRS3DisposalDisconR,""
+ntpFRS3RestructureR,""
+
+ 
+
+ntpGroupIncR,""
+ntpParticipatingR,""
+ntpFAIncomeR,""
+ntpInterestRecR,""
+ntpWriteOffR,""
+ntpInterestPayR,""
+ntpCorpTaxR,""
+ntpBeforeTaxOrdActR,""
+ntpAfterTaxOrdActR,""
+ntpCorpTaxSOTRGLR,""
+ntpCurrTaxChargeR,""
+ntpFutureTaxChargeR,""
+ntpExtraordinaryR,""
+ntpDividendsR,""
+ntpEarningsPerShareR,""
+ntpTransactionsWithSharesR,"***The following text should be used as a guide, please amend reportpad TransactionsWithSharesR as appropriate.*** There have been no other transactions involving ordinary shares or potential ordinary shares since the reporting date and before the completion of these financial statements."
+ntpSparep00R,"SPAREP00 USER DEFINED HEADING
+
+......."
+ntpSparep01R,"SPAREP01 USER DEFINED HEADING
+
+......."
+ntpSparep02R,"SPAREP02 USER DEFINED HEADING"
+ntpSparep03R,"SPAREP03 USER DEFINED HEADING"
+ntpSparep04R,"SPAREP04 USER DEFINED HEADING"
+ntpSparep05R,"SPAREP05 USER DEFINED HEADING"
+ntpSparep06R,"SPAREP06 USER DEFINED HEADING"
+ntpSparep07R,"SPAREP07 USER DEFINED HEADING"
+ntpSparep08R,"SPAREP08 USER DEFINED HEADING"
+ntpSparep09R,"SPAREP09 USER DEFINED HEADING"
+ntpSparep10R,"SPAREP10 USER DEFINED HEADING"
+ntpSparep11R,"SPAREP11 USER DEFINED HEADING"
+ntpSparep12R,"SPAREP12 USER DEFINED HEADING"
+ntpSparep13R,"SPAREP13 USER DEFINED HEADING"
+ntpSparep14R,"SPAREP14 USER DEFINED HEADING"
+ntpSparep15R,"SPAREP15 USER DEFINED HEADING"
+ntpSparep16R,"SPAREP16 USER DEFINED HEADING"
+ntpSparep99R,"SPAREP99 USER DEFINED HEADING
+
+......."
+ntbFAIntangibleTitleR,""
+ntbFAIntangibleR,""
+ntbFATangibleTitleR,""
+ntbFATangibleRevaluationR,""
+ntbFATangibleR,""
+ntbFAInvestTitleR,""
+ntbFAInvestmentsDiscloseR,""
+ntbFAInvestmentsAbR,""
+ntbStockTextR,""
+ntbDebtorsTextR,""
+ntbInvestmentsR,""
+ntbInvestmentsAbR,""
+ntbCashAtBankR,""
+ntbCreditors<1yrR,""
+ntbCreditorsChargeR,""
+ntbCreditors>1yrR,""
+ntbCreditors>1yrChargeR,""
+
+ 
+
+ntbCreditors>5yrsR,""
+ntbDirectorsAccountsR,""
+ntbCapitalInstrmStartR,""
+ntbCapitalInstrumentR,""
+ntbConvertDebtR,""
+ntbPensionsR,""
+ntbPenSchDefConDescR,""
+ntbPenSchDefBenPN297DescR,"*** Example text only: Please amend reportpad PenSchDefBenPN297Desc ***
+The company operates a pension scheme providing benefits based on final pensionable pay. Under the scheme, the employees are entitled to retirement benefits varying between X% and Y% of final salary on reaching retirement age of 65. No other post-retirement benefits are provided. The scheme is a funded scheme.
+
+*** Other recommended disclosures ***
+	- narrative disclosures explaining the relationship between the company and the trustees of the scheme
+	- narrative disclosures explaining the method of measurement used to measure scheme liabilities
+	- narrative disclosures, which enable users of accounts, to understand the company’s funding obligations.
+"
+ntbPenSchDefBenPN297ProfLossR,""
+ntbPenSchDefBenPN297BalShtR,""
+ntbPenSchDefBenPN297AssetR,""
+ntbPensionExtraDiscR,""
+ntbPenSchDefBenDescR,""
+ntbPenSchDefBenValnR,""
+ntbPenSchDefBenActionR,""
+ntbPostRetBensR,""
+ntbPensCommitSSAP24R,""
+ntbPenSchDefBenOtherR,""
+ntbDeferredTaxR,""
+ntbProvisionsR,""
+ntbShareBasedPaymentsR,"***Please amend reportpad ShareBasedPayments as required*** The company has a share option scheme for all employees (including directors). Options are exercisable at a price equal to the average market price of the company's shares on the date of grant. The vesting period is usually … to … years. The exercise of options is also dependent on eligible executives meeting performance criteria. The options may not be exercised unless, over the vesting period, the … has increased by ...%. The options are settled in equity once exercised.
+
+If the options remain unexercised after a period of … years from the date of grant, the options expire. Options are forfeited if the employee leaves the company before the options vest.
+
+Details of the number of share options and the weighted average exercise price (WAEP) outstanding during the year are as follows: "
+ntbShareBasedPayments2R,"***Please amend reportpad ShareBasedPayments2 as required*** The share options outstanding at the end of the year have a weighted average remaining contractual life of X years (2008 - X years) and have the following exercise prices:"
+ntbShareBasedPayments3R,"***Please amend reportpad ShareBasedPayments3 as required*** In the year ended 31December2009, options were granted on the following dates: …, …, and …. The estimated fair value of the options granted on those dates were £X, £X and £X respectively. In the year ended 31December2008, options were granted on the following dates: … and … and … . The estimated fair values of the options granted on those dates were £X and £X respectively.
+
+The fair values were calculated using the ***Please describe the pricing model by entering 
+
+ 
+
+text in heading ShareOptionsPricingModelH***. The inputs into the model were as follows:"
+ntbShareBasedPayments4R,"***please amend reportpad ShareBasedPayments4 as required*** Expected volatility was determined by calculating the historical volatility of the company's share price over the previous … years. The expected life used in the model has been adjusted, based on the management's best estimate, for the effects of non-transferability, exercise restrictions and behavioural considerations.
+
+During the year ended 31December2009, the company repriced certain of its outstanding options. The exercise price was reduced from £… to the current market price of £…. The incremental fair value of £… will be expensed over the remaining vesting period of … years. The company used the inputs noted above to measure the fair value of the old and new options.
+
+The company recognised total expenses of £- (2008 - £-) related to equity-settled share-based payment transactions during the year."
+ntbCashSettledShareBasedPaymentsR,"***The following text should be used as a guide, please amend reportpad CashSettledShareBasedPaymentsR as appropriate.***
+
+The company issued to certain employees share appreciation rights (SARs) that require the company to pay the intrinsic value of the SAR to the employee at the date of exercise. At 31December2009, the company had recorded liabilities of £- (2008 - £-) in respect of SARs. The fair value of the SARs is determined using the ***Please describe the pricing model by entering text in heading ShareOptionsPricingModelH*** using the assumptions noted above. The company recorded total expenses of £- during the year ended 31December2009 (2008 - £-) in respect of SARs. At 31December2009 the total intrinsic value of the vested SARs was £- (2008 - £-)."
+NTBFinancialRiskManagementR,"***The following text should be used as a guide. Please amend reportpad FinancialRiskManagementR as appropriate
+
+The company holds or issues financial instruments in order to achieve three main objectives, being:
+
+(a) to finance its operations;
+
+(b) to manage its exposure to interest and currency risks arising from its operations and from its sources of finance; and
+
+(c) for trading purposes.
+
+In addition, various financial instruments (e.g. trade debtors, trade creditors, accruals and prepayments) arise directly from the company's operations.
+
+Transactions in financial instruments result in the company assuming or transferring to another party one or more of the financial risks described below."
+NTBInterestRateRiskR,"***The following text should be used as a guide. Please amend reportpad InterestRateRiskR as appropriate
+
+The following table sets out the carrying amounts by repricing/maturity dates and effective interest rates (when applicable) of the company's financial instruments that are exposed to interest rate risk:"
+NTBCreditRiskR,"***The following text should be used as a guide. Please amend reportpad CreditRiskR as appropriate
+
+The company monitors credit risk closely and considers that its current policies of credit checks meets its objectives of managing exposure to credit risk.
+
+The company has no significant concentrations of credit risk. Amounts shown in the balance sheet best represent the maximum credit risk exposure in the event other parties fail to perform their obligations under financial instruments."
+NTBLiquidityRiskR,"***Insert text in reportpad LiquidityRiskR to describe the company's policy in relation to liquidity risk.***"
+
+ 
+
+NTBCurrencyRiskR,"***Insert text in reportpad CurrencyRiskR to describe the company's policy in relation to currency risk."
+NTBFinancialInstrumentFairValueR,"
+Set out below is a comparison by category of carrying amounts and fair values of all of the company's financial instruments that are carried in the financial statements at other than fair values:"
+NTBFinancialInstrumentFairValue2R,"Insert text in reportpad FinancialInstrumentFairValue2R on the methods and assumptions used by the company in estimating the fair values of financial instruments included in the above table."
+NTBHedgingActivitiesR,"
+Insert text in reportpad HedgingActivitiesR to disclose the following information for each of: fair value hedges, cash flow hedges and hedges of a net investment in a foreign entity;
+
+(a) A description of the hedge;
+
+(b) A description of the financial instruments designated as hedging instruments and their fair values at the balance sheet date;
+
+(c) The nature of the risks being hedged; and
+
+(d) For cash flow hedges, the periods in which the cash flows are expected to occur, when they are expected to affect the profit and loss account, and a description of any forecasted transaction for which hedge accounting had been previously used, but which is no longer expected to occur."
+ntbDerivativesR,"***If the group has derivatives that it has not included in its accounts at fair value, insert the following information for each class of such derivatives in reportpad DerivativesR:***
+
+a) the fair value of the derivatives in that class, if such a value can be determined; and
+
+b) the extent and nature of the derivatives."
+ntbGrantsR,""
+ntbAccrualsR,""
+ntbHP&FinanceLeaseR,""
+ntbOperLeaseR,""
+ntbContingentLiabR,""
+ntbDirInterestsR,""
+ntbBeforeTradeAcqn1R,""
+ntbBeforeTradeAcqn2R,""
+ntbBeforeTradeAcqn3R,""
+ntbAfterTradeAcqn1R,""
+ntbAfterTradeAcqn2R,""
+ntbAfterTradeAcqn3R,""
+ntbBeforeTradeDisp1R,""
+ntbBeforeTradeDisp2R,""
+ntbBeforeTradeDisp3R,""
+ntbAfterTradeDisp1R,""
+ntbAfterTradeDisp2R,""
+ntbAfterTradeDisp3R,""
+ntbCashflowChangesR,""
+ntbCashflowContAcqR,""
+ntbRelatedPartiesFR8R,"***** Amend text in REPORTPAD relparties *****
+The company was under the control of Mr ******** throughout the current and previous year. Mr ********* is the managing director and majority
+shareholder.
+
+No transactions with related parties were undertaken such as are required to be disclosed under Financial Reporting Standard 8. (** Change FRS8 to FRSSE if applicable **)"
+ntbRelatedPartiesCA1985R,""
+ntbShareCapR,""
+
+ 
+
+ntbVertCoReservesR,""
+ntbSharePremiumR,""
+ntbCapRedemptionR,""
+ntbRevaluationReserveR,""
+ntbReservesOther1R,""
+ntbReservesOther2R,""
+ntbReservesOther3R,""
+ntbShareOptionsReserveR,""
+ntbProfit&LossAcR,""
+ntbShareHoldersFundsR,""
+ntbPriorYearAdjustmentR,""
+ntbLimitedByGuaranteeR,""
+ntbPostBSEventsR,""
+ntbParentCompanyR,""
+ntbFATangibleCapCommitR,""
+ntbLimitationOfAuditorsLiabilityR,""
+ntbSpareb01R,"SPAREB01 USER DEFINED HEADING
+
+......."
+ntbSpareb02R,"SPAREB02 USER DEFINED HEADING"
+ntbSpareb03R,"SPAREB03 USER DEFINED HEADING"
+ntbSpareb04R,"SPAREB04 USER DEFINED HEADING"
+ntbSpareb05R,"SPAREB05 USER DEFINED HEADING"
+ntbSpareb06R,"SPAREB06 USER DEFINED HEADING"
+ntbSpareb07R,"SPAREB07 USER DEFINED HEADING"
+ntbSpareb08R,"SPAREB08 USER DEFINED HEADING"
+ntbSpareb09R,"SPAREB09 USER DEFINED HEADING"
+ntbSpareb10R,"SPAREB10 USER DEFINED HEADING"
+ntbSpareb11R,"SPAREB11 USER DEFINED HEADING"
+ntbSpareb12R,"SPAREB12 USER DEFINED HEADING"
+ntbSpareb13R,"SPAREB13 USER DEFINED HEADING"
+ntbSpareb14R,"SPAREB14 USER DEFINED HEADING"
+ntbSpareb15R,"SPAREB15 USER DEFINED HEADING"
+ntbSpareb16R,"SPAREB16 USER DEFINED HEADING"
+ntbSpareb17R,"SPAREB17 USER DEFINED HEADING"
+ntbSpareb18R,"SPAREB18 USER DEFINED HEADING"
+ntbSpareb19R,"SPAREB19 USER DEFINED HEADING"
+ntbSpareb20R,"SPAREB20 USER DEFINED HEADING"
+ntbSpareb21R,"SPAREB21 USER DEFINED HEADING"
+ntbSpareb22R,"SPAREB22 USER DEFINED HEADING"
+ntbSpareb23R,"SPAREB23 USER DEFINED HEADING"
+ntbSpareb24R,"SPAREB24 USER DEFINED HEADING"
+ntbSpareb25R,"SPAREB25 USER DEFINED HEADING"
+ntbSpareb26R,"SPAREB26 USER DEFINED HEADING"
+ntbSpareb27R,"SPAREB27 USER DEFINED HEADING"
+ntbSpareb95R,""
+ntbSpareb96R,""
+ntbSpareb97R,""
+ntbSpareb98R,""
+ntbSpareb99R,""
+ntbPrepaymentsAccruedIncomeR,""
+ntbEquityShareholdersFundsR,""
+ntbNonEquityShareholdersFundsR,""
+cfsCashflowStartR,""
+cfsCashflowEndR,""
+p&lDetailedP&Lpage1StartR,""
+p&lDetailedP&Lpage1EndR,""
+p&lDetailedP&LSchedStartR,""
+p&lDetailedP&LSchedEndR,""
+
+ 
+
+manUserReport1R,""
+manUserReport2R,""
+manUserReport3R,""
+manUserReport4R,""
+p&lManagementP&LStartR,""
+p&lManagementP&LEndR,""
+manUserReportMan1R,""
+manUserReportMan2R,""
+manUserReportMan3R,""
+manUserReportMan4R,""
+schFaIntanR,""
+schFassetsR,""
+schFaInvestsR,""
+schCaInvestsR,""
+schStockR,""
+schDebtorsR,""
+schCashR,""
+schCreditorsR,""
+schCreditors>1R,""
+schProvisionsR,""
+schTaxR,""
+schCapitalR,""
+schReservesR,""
+schProfitandlossR,""
+othVarianceCommentR,""
+oth5YrSummaryCommentR,""
+othAccountsLogR,""
+othExampleR,"USER DEFINED HEADING
+
+This gives an example of how reportpads can be used for more sophisticated entries. In fact you can create "formats" inside reportpads.
+
+To try this reportpad out, copy it into one of the spare notes such as the first spare balance sheet note (spareB01).
+
+This is a text heading
+
+Heading to be used over the first set of figures
+
+Heading to be used over the second set of figures
+
+This is a short subheading
+Or you could put a heading here
+Sales
+
+16,613,551
+
+19,195,013
+
+Cost of Sales
+
+14,041,159
+
+16,784,961
+
+Expenses
+
+1,155,918
+
+1,510,467
+
+
+
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+Total
+
+1,416,474
+
+899,585
+
+
+
+ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+
+ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+
+
+Note that the figures will be correctly aligned with the rest of the reports, and will even take on the style assigned for the accounts, e.g. bold for current year figures.
+
+This is a text heading
+
+Heading to be used over the first set of figures
+
+Heading to be used over the second set of figures
+
+This is a short subheading
+Or you could put a heading here
+Line one of figures entered directly
+
+1,000
+
+2,500
+
+
+
+ 
+
+Line two of figures entered directly
+
+9,000
+
+3,500
+
+Line three of figures entered directly
+
+10,000
+
+12,500
+
+
+
+ÄÄÄÄÄÄÄÄÄ
+
+ÄÄÄÄÄÄÄÄÄ
+
+Total of above
+
+20,000
+
+13,500
+
+
+
+ÍÍÍÍÍÍÍÍÍ
+
+ÍÍÍÍÍÍÍÍÍ
+
+
+The above example show that numbers can be directly entered into columns. This is useful where the values do not come from the nominal ledger or any other part of the accounts.
+
+Note that the numbers have to be entered as if pence values. e.g. to get £1 enter 100.
+
+Values from the nominal ledger can appear in a paragraph by adding the command"text" within the column command. For example this is the value of all credit balances on accounts from 700 to 800 this year 4,766,029 (last year -
+4,392,137.
+
+So here we have a reportpad note which contains a couple of paragraphs of text, a table and a reference to some nominal balances in the text.
+
+You have to be careful about starting a command such as {sumc 700:800 c1 text} and splitting it at the end of the line. It thinks you have not completed the closing brackets.
+
+For further details see the Balance Sheet on page 0. Note that it can even look into the reports to find out on which page(s) the Balance Sheet appeared."
+corSalutationR,""
+corFreeTextR,""
+corPriorAgentR,"Name of Prior Agent (use reportpad PriorAgent)
+Address line 1
+Address line 2
+Address line 3
+Address line 4"
+Enter company name in reportpad 'SubsidiariesForBankLetter'
+enter sort code
+enter account no.
+
+
+
+Enter company name in reportpad 'SubsidiariesForBankLetter'
+enter sort code
+enter account no.
+
+
+
+Enter company name in reportpad 'SubsidiariesForBankLetter'
+enter sort code
+enter account no.
+
+
+
+Enter company name in reportpad 'SubsidiariesForBankLetter'
+enter sort code
+enter account no.
+
+
+
+"
+corBankLetterContactR,"***Please enter contact in Reportpads > Letters > BankLetterContact"
+corOtherInfoForBankLetR,""
+corBankAddressR,""
+corAcknowledgementR,""
+corFastTrackR,"Enter reason for the fast track request in reportpad "FastTrack""
+corBankLetterContactTelR,""
+corTradeFinanceR,""
+corDerivative&CommodityTradingR,""
+manMipGrossProfitPercentR,""
+manMipGrossProfitActualsR,""
+manMipNetProfitPercentR,""
+manMipNetProfitActualsR,""
+manMipLiquidityR,""
+manMipDebtorDaysR,""
+manMipCreditorDaysR,""
+manMipDebtorAndCreditorDaysR,""
+manMipStockDaysR,""
+manMipROCER,""
+manMipAveSalExclDirsR,""
+
+ 
+
+manMipAveSalInclDirsR,""
+manMipSpareChart1R,""
+manMipSpareChart2R,""
+manMipSpareChart3R,""
+manMipSpareChart4R,""
+manMipSpareChart5R,""
+END OF Rpads
+CALL SAPAEXPORTCDBDIR.P
+Format to Test and Document cdb References
+DIR Page
+Director	1
+Director.1.:aaaaa1	Black,Reference code	,dir.0.0	,
+Director.1.:2,Director number ,dir.0.21 ,
+Director.1.Name: Black
+Director.1.:Director,dir.0.20 ,Position
+Director.1.:Director.1.AgeDirector:,Date of birth,dir.0.1.3
+Director.1.:M,dir.0.1.4Sex
+Director.1.:,dir.0.1.5Nationality
+Director.1.:B B,dir.0.2.1Forenames
+Director.1.:,dir.0.2.2NI Number
+Director.1.:,dir.0.3.1Salutation 1
+Director.1.:,dir.0.3.2Salutation 2
+Director.1.:,dir.0.4.1Address line 1
+Director.1.:,dir.0.4.2Address line 2
+Director.1.:,dir.0.4.3Address line 3
+Director.1.:,dir.0.4.4City or Town
+Director.1.:,dir.0.4.5County
+Director.1.:,dir.0.4.6Country
+Director.1.:,dir.0.4.7Postcode
+Director.1.:,dir.0.5.1Telephone 1
+Director.1.:,dir.0.5.2Telephone 2
+Director.1.DateAssumedPosition:, Date appointed	,dir.0.6.1,
+Director.1.DateResignation:Date resigned	,dir.0.6.2,
+Director.1.DateNextReappointment:0,AGM rotate year,dir.0.7.1,
+Director.1.DirectorSigningAccounts:No,Accts signatory,dir.0.7.2,
+Director.1.:,Occupation,dir.0.8,
+Director.1.:,Other dir'ships,dir.0.9,
+Director.1.:Share 1 name ,dir.0.10.1,
+Director.1.:0Num this yr	,dir.0.10.2,
+Director.1.:0Family # this,dir.0.10.3,
+Director.1.:0Num last yr	,dir.0.10.4,
+Director.1.:0Family # last,dir.0.10.5,
+Director.1.:Share 2 name ,dir.0.11.1,
+Director.1.:0Num this yr	,dir.0.11.2,
+Director.1.:0Family # this,dir.0.11.3,
+Director.1.:0Num last yr	,dir.0.11.4,
+Director.1.:0Family # last,dir.0.11.5,
+Director.1.:Share 3 name ,dir.0.12.1,
+Director.1.:0Num this yr	,dir.0.12.2,
+Director.1.:0Family # this,dir.0.12.3,
+Director.1.:0Num last yr	,dir.0.12.4,
+Director.1.:0Family # last,dir.0.12.5,
+Director.1.:Share 4 name ,dir.0.13.1,
+Director.1.:0Num this yr	,dir.0.13.2,
+Director.1.:0Family # this,dir.0.13.3,
+Director.1.:0Num last yr	,dir.0.13.4,
+Director.1.:0Family # last,dir.0.13.5,
+Director.1.:Share 5 name ,dir.0.14.1,
+Director.1.:0Num this yr	,dir.0.14.2,
+
+ 
+
+Director.1.:0Family # this,dir.0.14.3,
+Director.1.:0Num last yr	,dir.0.14.4,
+Director.1.:0Family # last,dir.0.14.5,
+Director.1.:Share 6 name ,dir.0.15.1,
+Director.1.:0Num this yr	,dir.0.15.2,
+Director.1.:0Family # this,dir.0.15.3,
+Director.1.:0Num last yr	,dir.0.15.4,
+Director.1.:0Family # last,dir.0.15.5,
+Director.1.:,Comment 1,dir.0.16
+Director.1.:,Comment 2,dir.0.17
+Director.1.:0,Year	,dir.0.18
+Director.1.:Director,Position ,dir.0.20
+Director.1.:Sub account,dir.0.21,2
+Director	2
+Director.2.:aaaaa1	Green,Reference code	,dir.0.0	,
+Director.2.:1,Director number ,dir.0.21 ,
+Director.2.Name: Green
+Director.2.:Director,dir.0.20 ,Position
+Director.2.:Director.2.AgeDirector:,Date of birth,dir.0.1.3
+Director.2.:M,dir.0.1.4Sex
+Director.2.:,dir.0.1.5Nationality
+Director.2.:A A,dir.0.2.1Forenames
+Director.2.:,dir.0.2.2NI Number
+Director.2.:,dir.0.3.1Salutation 1
+Director.2.:,dir.0.3.2Salutation 2
+Director.2.:,dir.0.4.1Address line 1
+Director.2.:,dir.0.4.2Address line 2
+Director.2.:,dir.0.4.3Address line 3
+Director.2.:,dir.0.4.4City or Town
+Director.2.:,dir.0.4.5County
+Director.2.:,dir.0.4.6Country
+Director.2.:,dir.0.4.7Postcode
+Director.2.:,dir.0.5.1Telephone 1
+Director.2.:,dir.0.5.2Telephone 2
+Director.2.DateAssumedPosition:, Date appointed	,dir.0.6.1,
+Director.2.DateResignation:Date resigned	,dir.0.6.2,
+Director.2.DateNextReappointment:0,AGM rotate year,dir.0.7.1,
+Director.2.DirectorSigningAccounts:No,Accts signatory,dir.0.7.2,
+Director.2.:,Occupation,dir.0.8,
+Director.2.:,Other dir'ships,dir.0.9,
+Director.2.:Share 1 name ,dir.0.10.1,
+Director.2.:0Num this yr	,dir.0.10.2,
+Director.2.:0Family # this,dir.0.10.3,
+Director.2.:0Num last yr	,dir.0.10.4,
+Director.2.:0Family # last,dir.0.10.5,
+Director.2.:Share 2 name ,dir.0.11.1,
+Director.2.:0Num this yr	,dir.0.11.2,
+Director.2.:0Family # this,dir.0.11.3,
+Director.2.:0Num last yr	,dir.0.11.4,
+Director.2.:0Family # last,dir.0.11.5,
+Director.2.:Share 3 name ,dir.0.12.1,
+Director.2.:0Num this yr	,dir.0.12.2,
+Director.2.:0Family # this,dir.0.12.3,
+Director.2.:0Num last yr	,dir.0.12.4,
+Director.2.:0Family # last,dir.0.12.5,
+Director.2.:Share 4 name ,dir.0.13.1,
+Director.2.:0Num this yr	,dir.0.13.2,
+Director.2.:0Family # this,dir.0.13.3,
+Director.2.:0Num last yr	,dir.0.13.4,
+
+ 
+
+Director.2.:0Family # last,dir.0.13.5,
+Director.2.:Share 5 name ,dir.0.14.1,
+Director.2.:0Num this yr	,dir.0.14.2,
+Director.2.:0Family # this,dir.0.14.3,
+Director.2.:0Num last yr	,dir.0.14.4,
+Director.2.:0Family # last,dir.0.14.5,
+Director.2.:Share 6 name ,dir.0.15.1,
+Director.2.:0Num this yr	,dir.0.15.2,
+Director.2.:0Family # this,dir.0.15.3,
+Director.2.:0Num last yr	,dir.0.15.4,
+Director.2.:0Family # last,dir.0.15.5,
+Director.2.:,Comment 1,dir.0.16
+Director.2.:,Comment 2,dir.0.17
+Director.2.:0,Year	,dir.0.18
+Director.2.:Director,Position ,dir.0.20
+Director.2.:Sub account,dir.0.21,1
+Director	3
+Director.3.:aaaaa1	Smith,Reference code	,dir.0.0	,
+Director.3.:3,Director number ,dir.0.21 ,
+Director.3.Name: Smith
+Director.3.:Secretary,dir.0.20 ,Position
+Director.3.:Director.3.AgeDirector:,Date of birth,dir.0.1.3
+Director.3.:M,dir.0.1.4Sex
+Director.3.:,dir.0.1.5Nationality
+Director.3.:C C,dir.0.2.1Forenames
+Director.3.:,dir.0.2.2NI Number
+Director.3.:,dir.0.3.1Salutation 1
+Director.3.:,dir.0.3.2Salutation 2
+Director.3.:,dir.0.4.1Address line 1
+Director.3.:,dir.0.4.2Address line 2
+Director.3.:,dir.0.4.3Address line 3
+Director.3.:,dir.0.4.4City or Town
+Director.3.:,dir.0.4.5County
+Director.3.:,dir.0.4.6Country
+Director.3.:,dir.0.4.7Postcode
+Director.3.:,dir.0.5.1Telephone 1
+Director.3.:,dir.0.5.2Telephone 2
+Director.3.DateAssumedPosition:, Date appointed	,dir.0.6.1,
+Director.3.DateResignation:Date resigned	,dir.0.6.2,
+Director.3.DateNextReappointment:0,AGM rotate year,dir.0.7.1,
+Director.3.DirectorSigningAccounts:No,Accts signatory,dir.0.7.2,
+Director.3.:,Occupation,dir.0.8,
+Director.3.:,Other dir'ships,dir.0.9,
+Director.3.:Share 1 name ,dir.0.10.1,
+Director.3.:0Num this yr	,dir.0.10.2,
+Director.3.:0Family # this,dir.0.10.3,
+Director.3.:0Num last yr	,dir.0.10.4,
+Director.3.:0Family # last,dir.0.10.5,
+Director.3.:Share 2 name ,dir.0.11.1,
+Director.3.:0Num this yr	,dir.0.11.2,
+Director.3.:0Family # this,dir.0.11.3,
+Director.3.:0Num last yr	,dir.0.11.4,
+Director.3.:0Family # last,dir.0.11.5,
+Director.3.:Share 3 name ,dir.0.12.1,
+Director.3.:0Num this yr	,dir.0.12.2,
+Director.3.:0Family # this,dir.0.12.3,
+Director.3.:0Num last yr	,dir.0.12.4,
+Director.3.:0Family # last,dir.0.12.5,
+Director.3.:Share 4 name ,dir.0.13.1,
+
+ 
+
+Director.3.:0Num this yr	,dir.0.13.2,
+Director.3.:0Family # this,dir.0.13.3,
+Director.3.:0Num last yr	,dir.0.13.4,
+Director.3.:0Family # last,dir.0.13.5,
+Director.3.:Share 5 name ,dir.0.14.1,
+Director.3.:0Num this yr	,dir.0.14.2,
+Director.3.:0Family # this,dir.0.14.3,
+Director.3.:0Num last yr	,dir.0.14.4,
+Director.3.:0Family # last,dir.0.14.5,
+Director.3.:Share 6 name ,dir.0.15.1,
+Director.3.:0Num this yr	,dir.0.15.2,
+Director.3.:0Family # this,dir.0.15.3,
+Director.3.:0Num last yr	,dir.0.15.4,
+Director.3.:0Family # last,dir.0.15.5,
+Director.3.:,Comment 1,dir.0.16
+Director.3.:,Comment 2,dir.0.17
+Director.3.:0,Year	,dir.0.18
+Director.3.:Secretary,Position ,dir.0.20
+Director.3.:Sub account,dir.0.21,3
+CALL SAPAEXPORTCDBQUE.P
+Format to Test and Document cdb References
+Questions and Answers (QUE)
+Depreciation rates for Intangible and Tangible fixed asset types:
+Asset type	Depreciation policy text
+cdb.que.1.1,Goodwill	-	(500 - 509)
+cdb.que.2.1,510 - 519
+cdb.que.3.1,Freehold Property	-	(520 - 529)
+cdb.que.4.1,Plant & Machinery	-	(530 - 539)
+cdb.que.5.1,Fixtures & Fittings	-	(540 - 549)
+cdb.que.6.1,Motor Vehicles	-	(550 - 559)
+cdb.que.7.1,Equipment	-	(560 - 569)
+cdb.que.8.1,Leasehold Property	-	(570 - 579)
+cdb.que.9.1,580 - 589
+cdb.que.10.1,590 - 599
+nUMERIC(NUM)
+cdb.num.1.1,1
+Action Dates (DAT)
+cdb dat.3.2,14 March 2010
+cdb dat.4.2,
+cdb dat.5.2,14 March 2010
+cdb dat.6.2,14 March 2010
+cdb dat.7.2,
+CALL SAPAEXPORTTB3YR.P
+TBcsv3yr.p
+AAAAA
+Current year	aps.3	4
+Trial Balance for 3 years includes sub accounts
+RGNLBal1.00:-16509371,-18012026,
+RGNLBal40.00:-81856,-13084,
+RGNLBal41.00:,-878597,
+RGNLBal42.00:-22324,-291306,
+RGNLBal50.00:182290,,
+RGNLBal51.00:2227691,,
+RGNLBal55.00:836,,
+RGNLBal61.00:8826243,14067849,
+RGNLBal70.00:-147996,-182290,
+RGNLBal71.00:-2046481,-2227691,
+RGNLBal75.00:-615,-836,
+RGNLBal100.00:3824051,3878057,
+
+ 
+
+RGNLBal105.00:377842,410836,
+RGNLBal108.00:138676,144565,
+RGNLBal140.00:40140,40000,
+RGNLBal144.00:346311,346000,
+RGNLBal145.00:31988,30000,
+RGNLBal146.00:18403,18000,
+RGNLBal150.00:169160,128161,
+RGNLBal155.00:16714,13577,
+RGNLBal158.00:6135,4778,
+RGNLBal161.00:3771,87955,
+RGNLBal192.00:20000,20000,
+RGNLBal195.00:3000,3000,
+RGNLBal196.00:3000,3000,
+RGNLBal231.00:184539,170881,
+RGNLBal235.00:18233,18103,
+RGNLBal240.00:6692,6370,
+RGNLBal288.00:327152,467163,
+RGNLBal301.00:6922,10445,
+RGNLBal331.00:16500,16500,
+RGNLBal335.00:240321,267040,
+RGNLBal339.00:47956,79600,
+RGNLBal342.00:2000,2000,
+RGNLBal343.00:10000,10000,
+RGNLBal346.00:12000,12000,
+RGNLBal349.00:-9596,-2108,
+RGNLBal380.00:-372,-1876,
+RGNLBal411.00:23386,49178,
+RGNLBal412.00:57763,67998,
+RGNLBal415.00:303243,104037,
+RGNLBal417.00:135798,249611,
+RGNLBal420.00:-209529,30830,
+RGNLBal424.00:-17090,-47305,
+RGNLBal500.00:415682,415682,
+RGNLBal501.00:82565,,
+RGNLBal505.00:-51724,-11724,
+RGNLBal507.00:-40140,-40000,
+RGNLBal520.00:2067544,2067544,
+RGNLBal525.00:-72887,-49887,
+RGNLBal527.00:-23403,-23000,
+RGNLBal540.00:927564,927564,
+RGNLBal541.00:24375,,
+RGNLBal542.00:-14820,,
+RGNLBal545.00:-826476,-781476,
+RGNLBal546.00:14820,,
+RGNLBal547.00:-46988,-45000,
+RGNLBal550.00:9374695,9374695,
+RGNLBal551.00:172975,,
+RGNLBal552.00:-52,,
+RGNLBal555.00:-7678365,-7302365,
+RGNLBal556.00:52,,
+RGNLBal557.00:-376311,-376000,
+RGNLBal631.00:147996,182290,
+RGNLBal635.00:2046481,2227691,
+RGNLBal640.00:615,836,
+RGNLBal651.00:3186522,2231517,
+RGNLBal660.00:,822706,
+RGNLBal671.00:892193,,
+RGNLBal675.00:500,2650,
+RGNLBal690.00:442988,328380,
+
+ 
+
+RGNLBal735.00:-265371,-206733,-55379
+RGNLBal771.00:-1978195,-2782060,
+RGNLBal780.00:-26516,,
+RGNLBal781.00:-778078,,
+RGNLBal785.00:-452680,-415262,
+RGNLBal791.00:-198508,-134978,
+RGNLBal799.00:-603843,-423600,
+RGNLBal800.00:-462838,-429504,
+RGNLBal815.00:-171105,-163472,
+RGNLBal863.00:-592949,-959560,
+RGNLBal885.00:-148112,-165202,-212507
+RGNLBal900.00:-3981190,-3981190,
+RGNLBal930.00:-290542,-390957,
+RGNLBal930B.00:700000,1000000,
+RGNLBal999.00:,,267886
+RGNLBal1000.00:-1846366,-2698254,
+RGNLBal1210.00:140,155,
+RGNLBal1211.00:11,9,
+RGNLBal1212.00:12,12,
+RGNLBal1300.00:240321,267040,
+RGNLBal1307.00:47956,79600,
+RGNLBal1330.00:125218,113226,
+RGNLBal1331.00:15506,62813,
+RGNLBal1340.00:,3,
+RGNLBal1400.00:28,28,
+RGNLBal1405.00:-456091,-346292,
+RGNLBal1407.00:-49756,-70228,
+RGNLBal1506.00:167234,202824,
+RGNLBal1550.00:462838,429504,
+RGNLBal1551.00:303130,429504,
+RGNLBal1555.00:289819,530056,
+RGNLBal4075.02:700000,1000000,
+CALL SAPAEXPORTTB10YR.P
+TBcsv10yr.p
+AAAAA
+Current year	aps.3	4
+Trial Balance up to 10 years includes sub accounts
+1.00,Sales,-16509371,-18012026,,,,,,,,
+40.00,Overseas sales,-81856,-13084,,,,,,,,
+41.00,Overseas sales - Type 2,,-878597,,,,,,,,
+42.00,Overseas sales - Type 3,-22324,-291306,,,,,,,,
+50.00,Opening stock - raw materials,182290,,,,,,,,,
+51.00,Opening stock and work-in-progress,2227691,,,,,,,,,
+55.00,Opening stock - finished goods,836,,,,,,,,,
+61.00,Purchases,8826243,14067849,,,,,,,,
+70.00,Closing stock - raw materials,-147996,-182290,,,,,,,,
+71.00,Closing stock and work-in-progress,-2046481,-2227691,,,,,,,,
+75.00,Closing stock - finished goods,-615,-836,,,,,,,,
+100.00,Direct wages,3824051,3878057,,,,,,,,
+105.00,National insurance contributions on direct labour,377842,410836,,,,,,,,
+108.00,Pension contributions - direct labour,138676,144565,,,,,,,,
+140.00,Amortisation of cost of sales intangible assets - Type 1,40140,40000,,,,,,,,
+144.00,Depreciation of motor vehicles,346311,346000,,,,,,,,
+145.00,Depreciation of office equipment,31988,30000,,,,,,,,
+146.00,Depreciation of spare,18403,18000,,,,,,,,
+150.00,Distribution and sales wages,169160,128161,,,,,,,,
+155.00,National insurance contributions on distribution labour,16714,13577,,,,,,,,
+158.00,Pension contributions - distribution labour,6135,4778,,,,,,,,
+161.00,Other distribution costs,3771,87955,,,,,,,,
+
+ 
+
+192.00,Depreciation of plant and machinery,20000,20000,,,,,,,,
+195.00,Depreciation of office equipment,3000,3000,,,,,,,,
+196.00,Depreciation of spare,3000,3000,,,,,,,,
+231.00,Wages and salaries,184539,170881,,,,,,,,
+235.00,Staff national insurance contributions,18233,18103,,,,,,,,
+240.00,Staff pension contributions,6692,6370,,,,,,,,
+288.00,General expenses,327152,467163,,,,,,,,
+301.00,Operating lease: Equipment,6922,10445,,,,,,,,
+331.00,Auditors remuneration,16500,16500,,,,,,,,
+335.00,Directors salaries,240321,267040,,,,,,,,
+339.00,Directors pension contributions,47956,79600,,,,,,,,
+342.00,Depreciation,2000,2000,,,,,,,,
+343.00,Depn of plant and machinery,10000,10000,,,,,,,,
+346.00,Depreciation of office equipment,12000,12000,,,,,,,,
+349.00,Loss/(Profit) on disposal of fixed assets,-9596,-2108,,,,,,,,
+380.00,Bank interest receivable,-372,-1876,,,,,,,,
+411.00,Bank interest payable,23386,49178,,,,,,,,
+412.00,Hire purchase and finance lease charges,57763,67998,,,,,,,,
+415.00,Corporation tax charge,303243,104037,,,,,,,,
+417.00,Double taxation relief,135798,249611,,,,,,,,
+420.00,Over/under provision in prior year,-209529,30830,,,,,,,,
+424.00,Deferred tax,-17090,-47305,,,,,,,,
+500.00,Goodwill - B/Fwd,415682,415682,,,,,,,,
+501.00,Goodwill - Additions at cost,82565,,,,,,,,,
+505.00,Goodwill - Accumulated amortisation,-51724,-11724,,,,,,,,
+507.00,Goodwill - Amortisation charge,-40140,-40000,,,,,,,,
+520.00,Freehold Property,2067544,2067544,,,,,,,,
+525.00,F'hold prop - Accumulated depn,-72887,-49887,,,,,,,,
+527.00,F'hold prop - Depn charge,-23403,-23000,,,,,,,,
+540.00,Fixtures & Fittings,927564,927564,,,,,,,,
+541.00,F & F - Additions @ cost,24375,,,,,,,,,
+542.00,F & F - Disposals @ cost,-14820,,,,,,,,,
+545.00,F & F - Accumulated depn,-826476,-781476,,,,,,,,
+546.00,F & F - Depn on disposals,14820,,,,,,,,,
+547.00,F & F - Depn charge,-46988,-45000,,,,,,,,
+550.00,Motor Vehicles,9374695,9374695,,,,,,,,
+551.00,Mtr Veh - Additions @ cost,172975,,,,,,,,,
+552.00,Mtr Veh - Disposals @ cost,-52,,,,,,,,,
+555.00,Mtr Veh - Accumulated depn,-7678365,-7302365,,,,,,,,
+556.00,Mtr Veh - Depn on disposals,52,,,,,,,,,
+557.00,Mtr Veh - Depn charge,-376311,-376000,,,,,,,,
+631.00,Stocks - raw materials,147996,182290,,,,,,,,
+635.00,Work in progress,2046481,2227691,,,,,,,,
+640.00,Finished goods and goods for resale,615,836,,,,,,,,
+651.00,Trade debtors,3186522,2231517,,,,,,,,
+660.00,Amounts due from group undertakings,,822706,,,,,,,,
+671.00,Other Debtors account 671.00,892193,,,,,,,,,
+675.00,Other debtors,500,2650,,,,,,,,
+690.00,Prepayments and accrued income,442988,328380,,,,,,,,
+735.00,Cash at bank,-265371,-206733,-55379,,,,,,,
+771.00,Trade creditors,-1978195,-2782060,,,,,,,,
+780.00,Amounts owed to group undertakings,-26516,,,,,,,,,
+781.00,Amounts owed to group undertakings - Type 2,-778078,,,,,,,,,
+785.00,Other creditors,-452680,-415262,,,,,,,,
+791.00,Corporation tax,-198508,-134978,,,,,,,,
+799.00,Other taxation and social security costs account 799.00,-603843,-423600,,,,,,,,
+800.00,HP/Finance leases - < 1 Yr,-462838,-429504,,,,,,,,
+815.00,Accruals and deferred income,-171105,-163472,,,,,,,,
+863.00,HP/Finance leases - > 1 Yr,-592949,-959560,,,,,,,,
+
+ 
+
+
+885.00,Provision for deferred tax; FA allowances,-148112,-165202,-212507,,,,,,,
+900.00,Ordinary share capital brought forward,-3981190,-3981190,,,,,,,,
+930.00,Profit and loss account brought forward,-290542,-390957,,,,,,,,
+930B.00,Equity dividends paid,700000,1000000,,,,,,,,
+999.00,Suspense account,,,267886,,,,,,,
+1000.00,Memo information balance account,-1846366,-2698254,,,,,,,,
+1210.00,Number of production staff,140,155,,,,,,,,
+1211.00,Number of distribution staff,11,9,,,,,,,,
+1212.00,Number of administrative staff,12,12,,,,,,,,
+1300.00,Directors remuneration from the company,240321,267040,,,,,,,,
+1307.00,Contributions to directors money purchase schemes,47956,79600,,,,,,,,
+1330.00,Highest paid director - total remuneration,125218,113226,,,,,,,,
+1331.00,Highest paid director- money purchase scheme conts,15506,62813,,,,,,,,
+1340.00,Number of dirs in money purchase pension schemes,,3,,,,,,,,
+1400.00,Corporation tax: B/S rate or average rate for year,28,28,,,,,,,,
+1405.00,Profit/(loss) on ordinary activities by rate of tax,-456091,-346292,,,,,,,,
+1407.00,Capital allowances for period in excess of depreciation,-49756,-70228,,,,,,,,
+1506.00,Depn on finance lease assets,167234,202824,,,,,,,,
+1550.00,HP & Finance Lease: Repayable within 1 Yr,462838,429504,,,,,,,,
+1551.00,HP & Finance Lease: Repayable between 1/2 Yrs,303130,429504,,,,,,,,
+1555.00,HP & Finance Lease: Repayable in 2 - 5 Yrs,289819,530056,,,,,,,,
+4075.02,Paid during the year:,700000,1000000,,,,,,,,
+NO MORE FORMATS

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<title>HTML5 Test Input Pattern</title>
+<style>
+input,select,.in {font:normal 1em verdana,arial,sans-serif;color:#000;background:#f5ffff;border:1px solid #7F9DFF;padding:0 2px 1px;margin-top:1px}
+select {padding:0}
+input[type=checkbox] {position:relative;top:2px}
+input[type=radio] {position:relative;top:1px;margin-left:.5em}
+input[readonly] {background:#FEFCF5}
+input:invalid {border:1px solid #f00}
+</style>
+</head>
+<body>
+<br><br><br><br>
+<form>
+<input size=20 maxlength=12 pattern='^(?=.*[0-9])(?=.*[!-/:-@])(?=.*[A-Z])(?=.*[a-z])(?!.*[^a-zA-Z0-9!-/:-@]).{8,12}$'><br>
+<input size=20 maxlength=12 pattern='^(?=.*[0-9])(?=.*[!-/:-@[-`{-~£])(?=.*[A-Z])(?=.*[a-z])(?!.*[^a-zA-Z0-9!-/:-@[-`{-~£]).{8,12}$'><br>
+<input size=20 maxlength=12 pattern='(?=.*[0-9])(?=.*[!-/:-@[-`{-~\u00A3])(?=.*[A-Z])(?=.*[a-z])(?!.*[^a-zA-Z0-9!-/:-@[-`{-~\u00A3]).{8,12}'><br>
+Braiins Password: <input size=20 maxlength=16 pattern='(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!-/:-@[-`{-~£])(?!.*[^ -~£]).{6,16}'><br>
+<input size=20 maxlength=12 pattern='(?=.*[0-9])(?=.*[!-/:-@[-`{-~])(?=.*[A-Z])(?=.*[a-z])(?!.*[^a-zA-Z0-9!-/:-@[-`{-~]){8,12}'><br>
+<input size=20 maxlength=12 pattern='^(?=[a-zA-Z])(?=.*[0-9])(?=.*[#\$_])(?=.*[A-Z])(?=.*[a-z])(?!.*[^a-zA-Z0-9#\$_])(?!.*\s).{8,12}$'><br>
+Reference&nbsp;<input id=ENiR data-next=ENnLev size=40 maxlength=40 required pattern=[A-Za-z0-9]{1,40} title='Reference code for the Entity, which should be the same as used in the [AName] AP system, 1 to 40 digits and/or letters, case significant.'>
+<br><br>
+<button>Go</button>
+</form>
+</body>
+</html>

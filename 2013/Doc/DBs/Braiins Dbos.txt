@@ -1,0 +1,889 @@
+/Doc/Braiins Dbos.txt
+
+Braiins DB Dbos Table
+=====================
+
+02.08.13 Started
+
+Qs
+==
+PPA for Dbo stuff?
+
+ToDo
+====
+
+Table Dbos T_B_Dbos
+----------
+Used to hold Dbos for:
+ People     Dbo_PersonN
+ Entities   Dbo_EntityN
+ Addresses  Dbo_AddressN
+ Contacts   Dbo_ContactN
+
+each of which also has its own 'normal' DB Table.
+
+Dbos are used in conjunction with Properties, Bros.DboField and the RG.
+They provide all the named field info via a Bits int and one Json data string.
+They also provide a copy as at each period so that comparative info is correct for the previous period, and also if a report is re-run in a prior period.
+
+Dbos use just one index as a bigint constructed from the TableId, the Period (index), and the Dbo Type enum:
+
+TTTTTTTTTPPPPN
+32109876543210
+9 digits for TableId = billions = enough, but can go to more anyway in a bigint
+4 digits for Pi (Period index) = 9999 = 833 years at 12 per year
+1 digit for DboTypeN
+= 14 digits which can be held in 8 bytes as a bigint
+
+18446744073709551615 bigint
+ 9223372036854775807 PHP 64 bit int as at Kualo
+4294967295           int
+2147483647           PHP 32 bit int as via WampServer locally. Should be able to upgrade this to 64bit. djh??
+TTTTTPPPPN
+21474 = enough for dev purposes
+
+Periods are defined in the Entities table record.
+
+########## T_B_Dbos
+## Dbos ## DB Objects
+########## Each record consists of one Bits int and a Json string
+# Type: Master, no auto_increment Id
+Create Table Dbos (
+  Id    bigint unsigned not null, # DboId = TableId Period# TypeN iiiiiiiiiPPPPt  Not auto_increment.
+  Bits  int    unsigned not null, # The Dbo Bits
+  Data  mediumtext      not null, # Other Dbo data in Json string form
+  EditT timestamp not null default 0,
+  AddT  timestamp not null default 0,
+  Primary Key (Id) # unique
+) Engine = InnoDB Default Charset=utf8;
+
+Data is a json i [] with indices of DboI_* as below for each Dbo type
+Could be compacted via D1 and cs list storage.
+
+Entity Dbos Dbo_EntityN
+=======================
+Entity Dbos.Bits same as Entities.Bits
+----------------
+  
+Entity Dbos.Data
+----------------
+  EName        str Entity full name. Is the Agent Name (AName) for an Agent. /- Also in Entities table but in Dbos too to keep a record by period
+  Level        int Level re access control                                   |   as these things can change
+                   + Bits above                                              |
+
+  ETypeId      int Foreign key SIM.EntityTypes.Id which specifies Taxonomies amongst other things
+  ESizeId      int Foreign key SIM.EntitySizes.Id
+  MngrId       int Foreign key People.Id Agent's Manager for the Entity Account
+  PropsInUse   int Properties in use via PropId bit setting
+  PropsAllowed int Properties allowable via PropId bit setting = at least PropsInUse. Requires 64 bit ints.
+  SName        str Short name
+  TName        str Trading name
+  TaxNum       str Corporate/income tax registration number
+  VatNum       str VAT/GST/ST registration number
+  Descr        str Description of the nature of the business, or principal activity
+  Comments     str Comments about the entity D2 separated. (Internal Agency comments)
+
+  SuperiorsA   i [] of EntityIds of Superiors.      Info on the relationship is held in the Superior. This array is maintained via the Superior.
+  AssocsA      i [] of EntityIds of Associates.     Info on FromDate, ToDate etc is held in Bros.
+  JVsA         i [] of EntityIds of Joint Ventures. Details are held in Bros.
+  OPIsA        i [] of EntityIds of Other Participating Interests. Details are held in Bros.
+  SubsidsA     i [] of EntityIds of Subsidiaries.   Info on BasisDominantInfluence, FromDate, ToDate, Percentages etc is held in Bros.
+  SPEsA        i [] of EntityIds of Special Purpose Entities. Details are held in Bros.
+  TPAsA        i [] of EntityIds of Third Party Agents.       Info on the type and classification is held in Bros.
+  OfficersA    i [] of PersonIds of Officers.       Info on FromDate, ToDate, FromReason, ToReason etc is held in Bros.
+  AddressesA   i [] of AddressIds of Addresses which apply to the Entity
+  ContactsA    i [] of ContactIds of Contacts  which apply to the Entity
+  
+  all with Data json index consts of DboI_E_ + name above
+
+People Dbo_PersonN
+==================
+Person Dbos.Bits same as People.Bits
+----------------
+
+Person Dbos.Data
+----------------
+  DName      str    Display Name                                                   /- Also in People table but in Dbos too to keep a record by period
+  Email      str    Email address which can be null for a person added as a Dbo    |   as these things can change
+  Level      int  M Level re access control, from MLevel_Min (1) to MLevel_Max (9) |
+                    + Bits above                                                   |
+         
+  GName      str    Given name  = First name in US usage
+  FName      str    Family name = Last name in US usage
+  Title      str    Title
+  CtryId     int    Foreign key SIM.Countries.Id Country
+  SexN       int    MaleN or FemaleN with NONE or null meaning undefined
+  RoleN      int  M Role enum ROL_SnrPartner, ROL_Partner, ROL_Manager, ROL_Senior, ROL_Staff, ROL_Owner, ROL_CEO, ROL_FinDirector, ROL_Director, ROL_FinControl, ROL_Contractor, ROL_Consultant, ROL_Other
+  Role       str    Role or Position. Can be overridden for a Member via Member's RoleN. Required for member if RoleN = ROL_Other
+  DeptN      int  M Dept enum DEP_Management, DEP_Finance, DEP_Accounting, DEP_Audit, DEP_Tax, DEP_External, DEP_Other
+  Descr      str    Description of the person
+  AddressesA i []   of AddressIds which apply to the Person
+  ContactsA  i []   of ContactIds which apply to the Person
+                  |- M = applies only to Members
+
+  all with Data json index consts of DboI_P_ + name above
+  
+
+############ T_B_People
+## People ## People in any way connected with Braiins, including Members
+############
+# Type: Master
+CREATE TABLE IF NOT EXISTS People (
+  Id      mediumint unsigned not null auto_increment, # PeoId or MemId or PeopleId
+  AgentId mediumint unsigned not null, # Agents.Id Foreign key; 0 if a newsletter subscriber but nothing else
+  Ref     varchar(40)            null, #   Person reference mainly for use with Dbos as login is via email
+  DName   varchar(50)        not null, #   Display Name                                                   /- Also stored in Dbos to record by period as they can change
+  Email   varchar(40)            null, #   Email address which can be null for a person added as a Dbo    |
+  Level   tinyint   unsigned     null, # M Level re access control, from MLevel_Min (1) to MLevel_Max (9) |
+  Bits    mediumint unsigned not null default 2, # Bits as below, MB_OK set by default.                   |
+  
+  PW      binary(64)             null, # M Password, 8 - 16 case sensitive chars encrypted via GenPw() in ClassBDB.inc as an SHA512 hash() with salt based on Id so same password if used more than once is different in the DB.
+  Fails   tinyint   unsigned     null, # M Login failure count
+  # sys stuff
+  EditT timestamp not null default 0,
+  AddT  timestamp not null default 0,
+  Primary Key (Id),    # unique
+   Unique Key (Email), # unique
+   Unique Key AgentIdRef (AgentId, Ref), # unique. Ref is null so nulls don't cause duplicate key errors
+          Key (AgentId)                  # not unique
+) Engine = InnoDB Default Charset=utf8;
+
+
+###############
+## Addresses ##
+###############
+# Type: Master
+CREATE TABLE IF NOT EXISTS Addresses (
+  Id      mediumint unsigned not null auto_increment, # AddressId
+  AgentId mediumint unsigned not null, # Foreign key Agents.Id
+  Addr1    varchar(40)           null, # Address line 1
+  Addr2    varchar(40)           null, # Address line 2         Optional
+  Addr3    varchar(40)           null, # Address line 3         Optional
+  Town     varchar(30)           null, # Town or suburb
+  City     varchar(30)           null, # City
+  State    varchar(30)           null, # State/Province/County  Optional
+  PostCode varchar(10)           null, # Postcode or Zipcode
+  CtryId   smallint unsigned not null, # Foreign key SIM.Countries.Id  Country
+  Bits     smallint unsigned not null default 2, # Bits as below
+  Data     text                  null, # Additional jsonised data as below, retrieved via Address($o) as an Object; can be null
+  # sys stuff
+  EditT timestamp not null default 0,
+  AddT  timestamp not null default 0,
+  Primary Key (Id),      # unique
+          Key (AgentId), # not unique
+          Key (PostCode) # not unique
+) Engine = InnoDB Default Charset=utf8;
+
+Bits
+  AddrB_Main    Main address
+  AddrB_Postal  Postal address
+  AddrB_Street  Street address
+  AddrB_RegOff  Registered Office address
+  AddrB_Branch  Branch address
+  AddrB_Factory Factory address
+  AddrB_RnD     Research and Development Centre address
+  AddrB_Other   Other address
+  AddrB_Home    Home address
+
+Data =
+  EntityIdsA  i [] of EntityIds for Entities which use the address. Info in other direction is also in the Entities table.
+  PeopleIdsA  i [] of PeopleIs  for People   which use the address
+  Descr       string  Description or other information about the address
+
+# Addresses.Data and Contacts.Data indices
+const ACI_EntityIdsA = 0;
+const ACI_PeopleIdsA = 1;
+const ACI_Descr      = 2;
+
+Could use tables
+  Entities -> Addresses
+  People   -> Addresses
+instead of the Data arrays = more "proper" but as many entities won't have addresses, stick with the arrays method.
+
+
+##############
+## Contacts ##
+##############
+# Type: Master
+CREATE TABLE IF NOT EXISTS Contacts (
+  Id      mediumint unsigned not null auto_increment, # ContactId
+  AgentId mediumint unsigned not null, # Foreign key Agents.Id
+  NumOrId varchar(40)        not null, # Phone number (incl area code i.e. all except country code), Cell (Mobile) number, Fax number, Message system Id e.g. Skype Id or BBM
+  TypeN   tinyint   unsigned not null, # Contact_Fixed, Contact_Mobile, Contact_Fax, Contact_Skype, Contact_iMessage, Contact_BBM, Contact_FB, Contact_Other
+  CtryId  smallint  unsigned not null, # Defaulting to the CtryId of the Entity or Person, but allow to be different e.g. for holiday home.
+                                       # CtryId establishes country dialling code and international calling prefix if applicable
+  Bits     smallint unsigned not null default 2, # Bits as below
+  Data     text                  null, # Additional jsonised data as below, retrieved via Address($o) as an Object; can be null
+  # sys stuff
+  EditT timestamp not null default 0,
+  AddT  timestamp not null default 0,
+  Primary Key (Id),      # unique
+          Key (AgentId)  # not unique
+) Engine = InnoDB Default Charset=utf8;
+
+Notes
+  AreaCode is not a separate field. Too many oddities with mobile numbers. See http://en.wikipedia.org/wiki/List_of_mobile_phone_number_series_by_country
+  UK-GAAP has an AreaCode elelment but this is surely not important.
+
+Bits
+#onst MB_DELETE            1     0
+#onst MB_OK                2     1
+const ContactB_Direct =    4; #  2 Direct
+const ContactB_SBoard =    8; #  3 Switchboard
+const ContactB_Main   =   16; #  4 Main
+const ContactB_Office =   32; #  5 Office
+const ContactB_Home   =   64; #  6 Home
+const ContactB_Day    =  128; #  7 Day   /- Mux
+const ContactB_Night  =  256; #  8 Night |
+const ContactB_Emerg  =  512; #  9 Emergency
+const ContactB_Alt    = 1024; # 10 Alternative
+
+Data =
+  EntityIdsA  i [] of EntityIds for Entities which use the contact. Info in other direction is also in the Entities table.
+  PeopleIdsA  i [] of PeopleIs  for People   which use the contact
+  Descr       string  Description or other information about the contact
+
+Contacts.Data indices are the same as for Adresses - see above.
+
+
+
+########## T_B_Bros
+## Bros ## Bro Data Objects - Primary BroRef values only. Summing is performed dynamically
+########## Each record consists of one Json string. A null record is added on creation of a new entity.
+# Type: Master, no auto_increment Id
+CREATE TABLE IF NOT EXISTS Bros (
+  Id       mediumint unsigned not null, # BrosId. Not auto_increment. == Entities.Id for the Entity
+  Data     mediumtext             null, # The Bro data in Json string form for DataSet -> Period -> Journal -> Bro -> Primary BroRef -> Value
+  # sys stuff
+  EditT   timestamp not null default 0,
+  AddT    timestamp not null default 0,
+  Primary Key (Id) # unique
+) Engine = InnoDB Default Charset=utf8;
+
+Id == BrosId == EntityId is NOT BroId of the SIM.BrosInfo
+
+
+Years
+=====
+- Current Year   CurrYear starts at 0 and increments by 1 for each Braiins "Start Next Year" op    (Stored as Entities.CurrYear)
+- Entity Year    EntYear  from -6 upwards. Same as above for current year. Is Entities.CurrYear-1 to Entities.CurrYear-6 for prior year and Pya years
+- Relative Year  RelYear  0 to 6  with 0-3 for current and prior years, 4-6 for Pya years
+
+CurrYear is the master.
+EntYear  is used for transactions
+RelYear  is used for when importing and when generating accounts
+
+CurrYear and EntYear values do not change. RelYear values are updated at New Year.
+
+RelYear  = CurrYear - EntYear
+so
+EntYear  = CurrYear - RelYear
+CurrYear = EntYear + RelYear
+
+                         CurrYear  EntYear  RelYear YearRelPya
+First year of Braiins       0         0        0
+                                     -1        1
+                                     -2        2
+                                     -3        3              Can be deleted at new year
+                                     -4        4       1
+                                     -5        5       2
+                                     -6        6       3      Can be deleted at new year
+
+Second year roll forward    1         -        -              After EntYear == -3 or -6 data deleted
+                                      0        1
+                                     -1        2
+                                     -2        3
+
+                                     -4        5       2
+                                     -5        6       3
+
+Second year of Braiins      1         1        0              CurrYear data
+ with new CurrYear data               0        1
+                                     -1        2
+                                     -2        3
+                                     -3        4       1      New (if any) pya for year rolled
+                                     -4        5       2
+                                     -5        6       3
+
+############## T_B_BroTrans
+## BroTrans ## Transactions affecting the Bros Table. Can have multiple trans in one record for different DiMes of the Bro i.e. a Set of trans
+##############
+# Type: Trans (Master, no Bits, no EditT)
+CREATE TABLE IF NOT EXISTS BroTrans (
+  Id       mediumint unsigned not null auto_increment,
+  BrosId   mediumint unsigned not null,  # Foreign key Bros.Id which is NOT BroId but the Id of the Bro in the Bros table which is different from the BroId of the Bro.
+  MemId    mediumint unsigned not null,  # Foreign key People.Id, 0 for a system op
+  TypeN    tinyint   unsigned not null,  # Transaction type BDTT_ImportInsert | BDTT_ImportUpdate | BDTT_Post | BDTT_Edit
+  TransSet text               not null,  # The BroDat string for this trans set as per Bro::ToBroString() without the leading SrceNChr for Trans BroDats that are all BroDatSrce_P (Posting) type:
+  AddT     timestamp not null default 0, #     DatType {DiMeRef} Dat {DatType {DiMeRef} Dat ....} if Bro is not just a NormaBase. No StartBase or NormaBase if Bro is a summing Bro. Could but need not include Base for a non-summing Bro.
+  Primary Key (Id),                        # with Dat of  for a deleted tran BroDat. (Created by Import.php.) Only applicable to Data Trail, not full Bro storage and retrieval.
+          Key (BrosId)
+) Engine = InnoDB Default Charset=utf8;
+
+########## T_B_Refs
+## Refs ## Hash References used with Property Members
+########## Inserts are done during posting
+# Type: Trans (Master, no Bits, no EditT, no chars)
+CREATE TABLE IF NOT EXISTS Refs (
+  Id       mediumint unsigned not null auto_increment,
+  EntityId mediumint unsigned not null,  # Foreign key Entities.Id
+  RefId    mediumint unsigned not null,  # Incrementing Id per Entity
+  PMemId   smallint  unsigned not null,  # The Property Member Id which defines the Table e.g. Officer.* = People table
+  TableN   tinyint   unsigned not null,  # Enum of the Table with the Ref, not used during lookup where table name is determined in advance from PMemId for the join
+  TableId  mediumint unsigned not null,  # Id of the record in Table with the Ref
+  AddT     timestamp not null default 0, #
+  Primary Key (Id),
+   Unique Key (EntityId, RefId),
+   Unique Key (EntityId, PMemId, TableId) # Relevant when checking for a Ref already being in Refs
+) Engine = InnoDB; # No chars
+
+Re incrementing RefId atomically:
+
+Insert Refs Values(Null, 2, (Select RefId+1 From Refs Where EntityId=2 Order by RefId Desc Limit 1), 30, 0, 5, '2013-05-24 02:56:38')
+ Mysql error = 'You can't specify target table 'Refs' for update in FROM clause'
+
+Need a double subquery with a subquery in the From to get around the MySQL subquery restriction on selecting from the same table that is being updated
+See http://dev.mysql.com/doc/refman/5.1/en/subquery-restrictions.html
+
+Insert Refs Values(Null, 2, (Select * From (Select Case When RefId is Null then 1 Else RefId+1 End From Refs Where EntityId=2 Order by RefId Desc Limit 1) as T), 30, 0, 5, '2013-05-24 02:56:38')
+
+
+########### T_B_ERefs
+## ERefs ## Hash References used with Ee and Ei Property Members
+########### Inserts done during posting. There will also be a Refs table entry with TableN=T_B_ERefs
+# Type: Trans (Master, no Bits, no EditT)
+CREATE TABLE IF NOT EXISTS ERefs (
+  Id       mediumint unsigned not null auto_increment,
+  EntityId mediumint unsigned not null,  # Foreign key Entities.Id
+  PMemId   smallint  unsigned not null,  # The Property Member Id
+  Ref      varchar(40)        not null,  # The Hash Ref which must be unique on an Entity basis per PMemId
+  AddT     timestamp not null default 0, #
+  Primary Key (Id),
+   Unique Key (EntityId, PMemId, Ref)
+) Engine = InnoDB Default Charset=utf8;
+
+
+##############
+## Registry ## Key/Value pair table for storing one off pieces of 'Registry', Control, Status whatever information
+############## that do not fit into any of the other tables.
+# Type: Master
+CREATE TABLE IF NOT EXISTS Registry (
+  K       char(20)         not null, # Key
+  V       char(80)                 , # Value of variable type stored as a string
+# TypeN   tinyint unsigned not null, # Enum to give type of V: R_S, R_I, R_F, R_D, R_T
+  Comment char(80)                 , # Comment
+  EditT   timestamp not null default 0,
+  AddT    timestamp not null default 0,
+  Primary Key (K)
+) Engine = InnoDB Default Charset=utf8;
+
+Key                  Type  Comments
+12345678901234567890
+Version              R_S   0.1
+
+###########
+## Locks ## Used for BDB Locking, and Info re numbers online
+########### No Primary key as of 07.05.13
+#
+CREATE TABLE IF NOT EXISTS Locks (
+  TableN   int unsigned not null, # 0 for system, TableN for a Table
+  RowId    int unsigned not null, # 0 for system or a Table, Row Id for a Table record
+  LockN    int unsigned not null, # Lock enum = type of lock Lock_Login | Lock_Read | Lock_Write
+  VisId    int unsigned not null, # Visits.Id Foreign Key and BDTsessions.Id
+  StartT   timestamp not null default 0, # Start Time of a lock
+ #Duration int          not null, # Estimated duration of the lock in seconds. Main use is for System locks. -ve = time in advance to prevent new logins. No. Use another mechanism for this.
+ #Primary Key (TableN, RowId, VisId, LockN), # Unique. Removed 07.05.13 to allow multiple identical locks re AddAgent() and the Entities table lock.
+  Key (TableN), # Not unique
+  Key (RowId),  # Not unique
+  Key (LockN),  # Not unique
+  Key (VisId)   # Not unique
+) Engine = Memory Default Charset=utf8;
+
+Notes
+-----
+Memory tables. Potentially to become MySQL Cluster tables. See http://dev.mysql.com/doc/refman/5.5/en/memory-storage-engine.html
+MySQL Cluster offers the same features as the MEMORY engine with higher performance levels, and provides additional features not available with MEMORY:
+
+Records are to be deleted once all locks have been released.
+
+
+############
+## Visits ## Records information about visits. Used in conjunction with VisitTrans for session management.
+############ Records are kept after a visit ends to provide history, particularly:
+#            - number of visits (non-member, member, all) in a given period
+#            - time on site
+#            - ave number of non-member visits before join, etc
+# Type: Master
+CREATE TABLE IF NOT EXISTS Visits (
+  Id          mediumint unsigned not null auto_increment, # Passed to client in Dat. New record created if no VisId is received.
+  MemId       mediumint unsigned not null, # Foreign key People.Id when at LGN_LIST, LGN_TENT, LGN_FULL or LGN_GUEST status, 0 when at LGN_NOT
+  LoginN      tinyint   unsigned not null, # Login status LGN_NOT, LGN_LIST, LGN_TENT, LGN_FULL or LGN_GUEST
+  Bits        int       unsigned not null, # People.Bits (Member's Bits) once logged in
+  Email       varchar(40)            null, # Email address
+  DName       varchar(40)            null, # DName for login display
+  # -- tracking info --
+  PrevId      mediumint unsigned not null, # Previous Id (SesId) as per VisId if new session started as a result of a client info change or Id being invalid
+  Inst        tinyint   unsigned not null, # C Instance # derived via client localStorage. Normally 1. Should only be > 1 if another tab in client browser => different VisId.
+  ScrRes      int       unsigned not null, # C Screen Resolution as a number e.g. 12801024 or 800600
+  TZO         smallint           not null, # C Time Zone Offset as per browser = minutes +ve for West of GMT, -ve for East
+  Ip          varchar(40)        not null, # S Current IP address as determined by GetIp()
+                                           #   (max length for an ipv6 address is 39 chars 2001:0db8:0000:0000:0000:0000:1428:57ab
+  IpN         tinyint   unsigned not null, # S Current SERVER key enum for IP source as determined by GetIp()
+# UserAgentId mediumint unsigned not null, # U Foreign Key UserAgents.Id via EoD Utility with UserAgent then set to null
+  UserAgent   text                   null, # S $_SERVER['HTTP_USER_AGENT'], compacted
+  EditT       timestamp not null default 0,
+  AddT        timestamp not null default 0,
+  Primary Key (Id),                        # |- C = passed from client
+          Key (MemId)                      # |- S = worked out server side
+) Engine = InnoDB Default Charset=utf8;    # |- U = set by EoD Utility
+
+Notes
+-----
+Ip, IpN, and UserAgent get updated in Visits if different on a subsequent visit.
+Ip, IpN, and UserAgent get inserted into VisitTrans on the first tran for a vistor and after then only if changed.
+
+################
+## VisitTrans ##  Records each page and Ajax calls
+################
+# Type: Trans (Log)
+# Notes:
+# Ip, IpN, and UserAgent get inserted into VisitTrans on the first tran for a visitor and after then only if changed.
+
+CREATE TABLE IF NOT EXISTS VisitTrans (
+  Id          mediumint unsigned not null auto_increment,
+  AppN        tinyint   unsigned not null, # Enum of Application making the change: APP_Admin, APP_Braiins, APP_BDT
+  VisId       mediumint unsigned not null, # Id of Visitor: Visits.Id Foreign key
+  ActionN     tinyint   unsigned not null, # Visit action: V_SS = 1 etc.
+  Inst        tinyint   unsigned     null, # Instance (window) number, set for new visit ActionN=V_SS or VSS_L
+  MemId       mediumint unsigned     null, # Set if visitor is logged in
+  LoginN      tinyint   unsigned     null, # Set if tran involved a change
+  Op          tinyint   unsigned     null, # Op being performed as ord() of chr from client
+  PageN       smallint  unsigned     null, # Enum of the page visited
+  Ver         tinyint   unsigned     null, # Version # of the page visited
+  PageFromN   smallint  unsigned     null, # S Enum of the from page
+  URI         varchar(300)           null, # S $_SERVER['REQUEST_URI'], compacted
+  Referrer    varchar(300)           null, # S $_SERVER['HTTP_REFERER'], compacted
+  SSreferrer  varchar(250)           null, # C Referrer passed from client via SessionStart
+  Ip          varchar(40)            null, # S Current IP address as determined by GetIp()
+                                           #   (max length for an ipv6 address is 39 chars 2001:0db8:0000:0000:0000:0000:1428:57ab
+  IpN         tinyint  unsigned      null, # S Current SERVER key enum for IP source as determined by GetIp()
+# UserAgentId mediumint unsigned     null, # U UserAgents.Id Foreign Key via EoD Utility with UserAgent then set to null
+  UserAgent   text                   null, # S $_SERVER['HTTP_USER_AGENT'], compacted
+  AddT        timestamp not null default 0,
+  Primary Key (Id),
+          Key (VisId)
+) Engine = InnoDB Default Charset=utf8;
+
+djh?? Add utility to extract UserAgent to a sep table when more than one?
+
+#################
+## BDTsessions ## Records session info for BDT visits
+################# Id parallels Visits.Id. Not auto_increment
+#
+CREATE TABLE IF NOT EXISTS BDTsessions (
+  Id       mediumint unsigned not null, # Same as VisId. Not auto_increment
+  MemId    mediumint unsigned not null, # Foreign key People.Id
+  AgentId  mediumint unsigned not null, # Foreign key Agents.Id
+  EntityId mediumint unsigned not null, # Foreign key Entities.Id
+  TZO      smallint           not null, # Visits.TZO
+  MLevel   tinyint   unsigned not null, # People.Level = Member's Level
+  MBits    int       unsigned not null, # People.Bits  = Member's Bits
+  EditT    timestamp not null default 0,
+  AddT     timestamp not null default 0,
+  Primary Key (Id)
+) Engine = InnoDB Default Charset=utf8;
+
+###########
+## DBLog ## Log of inserts, updates, and deletes of master (non-transaction) records
+###########
+# Type: Log
+CREATE TABLE IF NOT EXISTS DBLog (
+  Id       mediumint unsigned not null auto_increment,
+  TypeN    tinyint   unsigned not null, # Record type: DBLOG_Insert, DBLOG_Update, DBLOG_Delete, DBLOG_Delete_GarbageCollect, DBLOG_Delete_ReplaceImport
+  EntityId mediumint unsigned not null, # Entities.Id Foreign key replacing AppN 12.10.12
+  MemId    smallint  unsigned not null, # Id of the Member making the change, 0 for a system op or when not logged in
+  TableN   tinyint   unsigned not null, # Enum of the Table involved
+  TableId  mediumint unsigned not null, # Id of the Master record in Table being changed
+  `Set`    text                   null, # The changed value as a string  20.04.11 djh Name changed from New to Set
+                                        #  to store the Set portion of the insert/update query as a single entry per insert/update
+  AddT  timestamp not null default 0,   #
+  Primary Key (Id),
+          Key (EntityId)                # Added 12.10.12 re ED.php and ER.php deletes. TableN too? djh??
+) Engine = InnoDB Default Charset=utf8;
+
+
+#########################
+# Taken out of service ##
+#########################
+
+############## Dropped 30.12.11
+## Headings ## No record for an Agent means use the Braiins master, Id = 1
+##############
+# Type: Master
+CREATE TABLE IF NOT EXISTS Headings (
+  Id      smallint  unsigned not null auto_increment,
+  AgentId mediumint unsigned not null, # Agents.Id Foreign key
+# TypeN   tinyint   unsigned not null, # Entity type enum ET_Sole, ET_Partnership, ET_PRIVATE_COMPANY, ET_PUBLIC_COMPANY, ET_Other
+  Ref     varchar(40)        not null, # Heading Reference or Name
+  Heading varchar(100)       not null, # The heading
+  Bits    tinyint   unsigned not null default 2, # Bit settings as below. MB_OK set by default.
+  # sys stuff
+  EditT   timestamp not null default 0,
+  AddT    timestamp not null default 0,
+  Primary Key (Id),          # unique
+   Unique Key AgentIdRef (AgentId, Ref), # unique
+          Key (Ref),         # not unique
+          Key (AgentId)      # not unique
+) Engine = InnoDB Default Charset=utf8;
+
+Bits
+----
+  MB_DELETE 1 0 Master table standard bit
+  MB_OK     2 1 Master table standard bit
+
+
+
+=========
+== OoS ==
+=========
+
+########## T_B_Bros OoS 30.07.13
+## Bros ## Bro Data Objects - Primary only. Summing is performed dynamically
+########## Each record consists of one Bro which includes all its BroRef children. No records are added on creation of a new entity.
+# Type: Master, no Bits
+CREATE TABLE IF NOT EXISTS Bros (
+  Id       mediumint unsigned not null auto_increment,
+  EntityId mediumint unsigned not null, # Foreign key Entities.Id
+  BroSetId smallint  unsigned not null, # Foreign key BroSets.Id
+  EntYear  tinyint     signed not null, # Entity Year from -6 upwards as per Entities.CurrYear. Can be -ve for initial prior years and < -3 for Pya data
+  BroId    mediumint unsigned not null, # The BroId
+  BroStr   text               not null, # The Bro in string form as created by Bro::ToBroString() reversed by NewBroFromBroString($broId, $broStr)
+  # sys stuff
+  EditT   timestamp not null default 0,
+  AddT    timestamp not null default 0,
+  Primary Key (Id),      # unique
+          Key (EntityId),
+          key (BroSetId),
+          Key (EntYear),
+          Key (BroId) # EntityId, EntYear, BroId is unique but this need not be enforced via a unique key as apps won't try to create two Bros with the same BroId in a given year
+) Engine = InnoDB Default Charset=utf8;
+
+##########
+## Text ## For larger strings. Removed from use 11.10.12. Leave the work to InnoDB with Text fields wherever long text could be involved.
+##########
+OoS CREATE TABLE IF NOT EXISTS Text (
+  Id    mediumint unsigned not null auto_increment,
+  Text  text               not null,
+  EditT timestamp not null default 0,
+  AddT  timestamp not null default 0,
+  Primary Key (Id)
+) Engine = InnoDB Default Charset=utf8;
+
+############# Raw Bro Data - individual Bro entries as entered or imported. Not summed values.
+## BroData ## The whole shebang incl intermediate dimension and summed values are held in BrosAll records.
+############# No records are added here on creation of a new entity.
+# Type: Master, no Bits
+OoS CREATE TABLE IF NOT EXISTS BroData (
+  Id       mediumint unsigned not null auto_increment,
+  EntityId mediumint unsigned not null, # Entities.Id Foreign key
+  EntYear  tinyint     signed not null, # Entity Year from -6 upwards as per Entities.CurrYear. Can be -ve for initial prior years and < -3 for Pya data
+  BroRef   varchar(40)        not null, # BroRef
+  Data     text               not null, # The BRO data, either string or number in string form, Decimal types with 4 places of implied decimals.
+  # sys stuff
+  EditT   timestamp not null default 0,
+  AddT    timestamp not null default 0,
+  Primary Key (Id),      # unique
+          Key (EntityId),
+          Key (EntYear),
+          Key (BroRef)
+) Engine = InnoDB Default Charset=utf8;
+
+##################
+## BroDataTrans ## Transactions affecting the BroData Table
+##################
+# Type: Trans (Master, no Bits, no EditT)
+OoS CREATE TABLE IF NOT EXISTS BroDataTrans (
+  Id      mediumint unsigned not null auto_increment,
+  AppN    tinyint   unsigned not null, # Enum of Application creating the tran: APP_Admin, APP_Braiins, APP_BDT
+  DataId  mediumint unsigned not null, # BroData.Id Foreign key
+  MemId   mediumint unsigned not null, # People.Id Foreign key, 0 for a system op
+  TypeN   tinyint   unsigned not null, # Transaction type BDTT_ImportInsert | BDTT_ImportUpdate | BDTT_Post | BDTT_Edit
+  Data    text               not null, # The data for this tran as per BroData.Data
+  AddT    timestamp not null default 0,
+  Primary Key (Id),
+          Key (DataId)
+) Engine = InnoDB Default Charset=utf8;
+
+#############
+## BrosAll ## Uses PHP's json_encode and json_decode functions to store the full expanded (all dimensions) and summed Bro data array in a simple table
+#############
+# Type: Master, no Bits, to be updated without DBLog entries as these values can be recreated from BroData
+OoS CREATE TABLE IF NOT EXISTS BrosAll (
+  Id       mediumint unsigned not null auto_increment,
+  EntityId mediumint unsigned not null, # Entities.Id Foreign key
+  RelYear  tinyint   unsigned not null, # Info Relative year, 0: current, 1: previous etc. RelYear = Entities.CurrYear - BroData.EntYear
+  Data     text               not null, # The jsonised data
+  # sys stuff
+  EditT   timestamp not null default 0,
+  AddT    timestamp not null default 0,
+  Primary Key (Id),      # unique
+          Key (EntityId),
+          Key (RelYear)
+) Engine = InnoDB Default Charset=utf8;
+
+const EData_NumYears  = 4; # Number of years for which entity data is held -> RelYear range of 0 - 3
+const Pya_Year_Offset = 3; # Year used for storing pya or restated Bro data = RelYear + Pya_Year_Offset -> 4,5,6 (Never pya data for year 0)
+const Max_RelYear     = 6; # RelYear range is 0 to 6
+
+Have from 0 to Max_RelYear+1 (7) records per entity.
+RelYear is rolled on change of Entities.CurrYear. (BroData.EntYear values do not change.)
+
+Records for RelYear >= EData_NumYears can be deleted
+
+All the balances summed for RG use.
+array BroRef -> Dat
+
+Tuples
+======
+A BrosAll Tuple BroRef may or may not include a tuple instance. Whether it does or not is indicated by whether the final "DiMe' is -ve or not.
+
+---
+
+Status
+
+CREATE TABLE IF NOT EXISTS Status (
+  TableN     int unsigned not null, # 0 for system, TableN for a Table
+  RowId      int unsigned not null, # 0 for system or a Table, Row Id for a Table record
+  LoginLocks int unsigned not null, # Number of Lock_Login locks
+  ReadLocks  int unsigned not null, # Number of Lock_Read  locks
+  WriteLocks int unsigned not null, # Number of Lock_Write locks = 0 | 1 - can be only one Lock_Write lock at a time
+  Primary Key (TableN, RowId) # Unique
+) Engine = Memory Default Charset=utf8;
+
+
+############## Replaced March 2013
+## Entities ## Entities = CH and HMRC speak for the clients of our clients.
+############## Can also be Company for direct company clients
+# Type: Master
+CREATE TABLE IF NOT EXISTS Entities (
+  Id           mediumint unsigned not null auto_increment,
+  AgentId      smallint  unsigned not null, # Agents.Id Foreign key
+  ERef         varchar(40)        not null, # Entity reference code as per AP system of Agent
+  EName        varchar(100)       not null, # Entity name
+  TxN          tinyint   unsigned not null, # Taxonomy Enum     TxN_UK_GAAP | TxN_UK_GAAP_DPL | TxN_UK_IFRS...
+  ETypeN       tinyint   unsigned not null, # Entity Type enum  ET_Sole, ET_Partnership, ET_LLP, ET_Charity, ET_PrivateLtdCo etc
+  CoSizeN      tinyint   unsigned not null, # Company Size enum CoSize_Small | CoSize_SmallFRSSE | CoSize_Medium | CoSize_Large | CoSize_IFRS_SME
+  StatusN      tinyint   unsigned not null, # Status enum EStatus_Master, EStatus_Demo, EStatus_Test, EStatus_Active, EStatus_Dormant
+  CurrYear     tinyint   unsigned not null, # The Entity's current year (also = Entity Year) from 0 upwards. This continues to increase for as long as the entity is active and rolled forwards.
+  Level        tinyint   unsigned not null, # Level re access control
+  ManagerId    mediumint unsigned not null, # Members.Id Foreign key, Agent's Manager for the Entity Account
+  DataState      tinyint unsigned not null, # Data state as at last check: 0: Not run. >0 = bits: EDSB_OK, EDSB_Errors, EDSB_Warnings
+  AcctsState     tinyint unsigned not null, # Accounts state: 0: Not run. >0 = bits: EASB_Draft, EASB_FinalCand, EASB_Final, EASB_Down
+  DGsInUse     int unsigned not null, # EDG_* bits for dimension groups in use
+  DGsAllowed   int unsigned not null, # EDG_* bits for the allowable dimension groups = at least DGsInUse
+  Bits           tinyint unsigned not null default 2, # MB_OK set by default.
+  Comments     text                   null, # Comments about the entity  (\2) separated
+  # sys stuff
+  EditT   timestamp not null default 0,
+  AddT    timestamp not null default 0,
+  Primary Key (Id),                       # unique
+   Unique Key AgentIdRef (AgentId, ERef), # unique
+          Key (AgentId)                   # not unique
+) Engine = InnoDB Default Charset=utf8;
+
+
+############## Replaced 30.04.13
+## Entities ## Entities = CH and HMRC speak for the clients of our clients.
+############## Can also be Company for direct company clients
+# Type: Master
+CREATE TABLE IF NOT EXISTS Entities (
+  Id           mediumint unsigned not null auto_increment,
+  AgentId      smallint  unsigned not null, # Foreign key Agents.Id
+  ERef         varchar(40)        not null, # Entity reference code as per AP system of Agent
+  EName        varchar(100)       not null, # Entity name
+ #TxN          tinyint   unsigned not null, # Taxonomy Enum     TxN_UK_GAAP | TxN_UK_GAAP_DPL | TxN_UK_IFRS...
+ #ETypeN       tinyint   unsigned not null, # Entity Type enum  ET_Sole, ET_Partnership, ET_LLP, ET_Charity, ET_PrivateLtdCo etc
+ #CoSizeN      tinyint   unsigned not null, # Company Size enum ES_Small | ES_SmallFRSSE | ES_Medium | ES_Large | ES_IFRS_SME
+  TaxnId       tinyint   unsigned not null, # Foreign key BRL.Taxonomies.Id
+  ETypeId      tinyint   unsigned not null, # Foreign key BRL.EntityTypes.Id
+  ESizeId      tinyint   unsigned not null, # Foreign key BRL.EntitySizes.Id
+  StatusN      tinyint   unsigned not null, # Status enum EStatus_Master, EStatus_Demo, EStatus_Test, EStatus_Active, EStatus_Dormant
+  CurrYear     tinyint   unsigned not null, # The Entity's current year (also = Entity Year) from 0 upwards. This continues to increase for as long as the entity is active and rolled forwards.
+  Level        tinyint   unsigned not null, # Level re access control
+  ManagerId    mediumint unsigned not null, # Foreign key Members.Id Foreign key, Agent's Manager for the Entity Account
+  DataState      tinyint unsigned not null, # Data state as at last check: 0: Not run. >0 = bits: EDSB_OK, EDSB_Errors, EDSB_Warnings
+  AcctsState     tinyint unsigned not null, # Accounts state: 0: Not run. >0 = bits: EASB_Draft, EASB_FinalCand, EASB_Final, EASB_Down
+  DGsInUse     int unsigned not null, # EDG_* bits for dimension groups in use
+  DGsAllowed   int unsigned not null, # EDG_* bits for the allowable dimension groups = at least DGsInUse
+  Bits           tinyint unsigned not null default 2, # MB_OK set by default.
+  Comments     text                   null, # Comments about the entity  (\2) separated
+  # sys stuff
+  EditT   timestamp not null default 0,
+  AddT    timestamp not null default 0,
+  Primary Key (Id),                       # unique
+   Unique Key AgentIdRef (AgentId, ERef), # unique
+          Key (AgentId)                   # not unique
+) Engine = InnoDB Default Charset=utf8;
+
+############## Replaced 01.05.13. Decided to go back to storing most things via Bros for flexibility, extensibility, and part year values.
+## Entities ## Entities. See end for older versions of this table
+##############
+# Type: Master
+CREATE TABLE IF NOT EXISTS Entities (
+  Id         mediumint unsigned not null auto_increment,
+  AgentId    smallint  unsigned not null, # Agents.Id Foreign key
+  ERef       varchar(40)        not null, # Entity reference code as per AP system of Agent
+  EName      varchar(100)       not null, # Entity full name
+  Identifier varchar(20)        not null, # Context identifier e.g. Company Registration Number
+  TaxnId     tinyint   unsigned not null, # BRL.Taxonomies.Id  Foreign key
+  ETypeId    tinyint   unsigned not null, # BRL.EntityTypes.Id Foreign key
+  ESizeId    tinyint   unsigned not null, # BRL.EntitySizes.Id Foreign key
+  CurrYear   tinyint   unsigned not null, # The Entity's current year (also = Entity Year) from 0 upwards. This continues to increase for as long as the entity is active and rolled forwards.
+  Level      tinyint   unsigned not null, # Level re access control
+  ManagerId  mediumint unsigned not null, # Members.Id Foreign key, Agent's Manager for the Entity Account
+  Bits       smallint  unsigned not null default 2, # Bits as below, MB_OK set by default.
+  DGsInUse   mediumint unsigned not null, # DG_* bits for dimension groups in use
+  DGsAllowed mediumint unsigned not null, # DG_* bits for the allowable dimension groups = at least DGsInUse
+  Data       text                   null, # Additional jsonised data as below, retrieved via Entity($o) as an Object; can be null
+  # sys stuff
+  EditT   timestamp not null default 0,
+  AddT    timestamp not null default 0,
+  Primary Key (Id),                       # unique
+   Unique Key AgentIdRef (AgentId, ERef), # unique
+          Key (AgentId)                   # not unique
+) Engine = InnoDB Default Charset=utf8;
+
+Bits                 Bit
+  MB_DELETE         1  0 Master table standard bit
+  MB_OK             2  1 Master table standard bit
+  MB_MASTER         4  2 Set for Braiins Master Agent or Entity. Also set for Member on BDT boot if Agent is a Master.
+  EB_Demo          16  4 Demo
+  EB_Test          32  5 Test
+  EB_ADO           64  6 ADO Entity i.e. an Entity for which accounts can't be produced; Entity not a client; Property ADO Entity
+  EB_Active       128  7 Active  - normal status for an Agent's Entity
+  EB_OnHold      256  8 Dormant - set by an Agent if Entity account is on hold
+  DataState Bits. None set = no postings
+  EB_DS_OK        512  9 OK
+  EB_DS_Errors   1024 10 Critical errors found
+  EB_DS_Warnings 2048 11 Warnings found
+  AcctsState Bits set if format of FTypeN = RGFT_Stat run and state changes, accompanied by an ETA_RgStat tran
+  None set = NotRun
+  EB_AS_Draft    4096 12 Draft           /- Set by RgRun.php on         /- MUX
+  EB_AS_FinalC   8192 13 Final Candidate |  running an RGFT_Stat format |
+  EB_AS_Final   16384 14 Final = Closed  Set by user                    |
+  EB_AS_Down    32768 15 Downloaded
+ #EB_DS         65536 16 Taking part in data sharing. Use bit 3?
+
+Data =
+  SName       string null Short name
+  TName       string null Trading name
+  FName       string null Former name
+  FNameDate   int    null eeDate when FName changed
+  Comments    string null Comments about the entity D2 separated
+  TaxNum      string null Corporate/income tax registration number
+  VatNum      string null VAT/GST/ST registration number
+  SuperiorsA  []     null [] of EntityIds of Superiors. Info on the relationship is held in the Superior. This array is created via the Superior.
+  SubordsA    []     null [] of EntityIds of Subordinates. Info on Type, BasisDominantInfluence, FromDate, ToDate, Percent etc to be held in Bros.
+  OfficersA   []          [] of PersonIds of Officers.     Info on FromDate, ToDate, FromReason, ToReason etc to be held in Bros.
+  AddressesA  []     null [] of AddressIds which apply to the Entity; null = none. Can be rebuilt from the Addresses table.
+  ContactsA   []     null [] of ContactIds which apply to the Entity; null = none. Can be rebuilt from the Contacts  table.
+
+############# Taken OoS 02.05.13
+## Members ## House Members and Agent Staff Members
+#############
+# Type: Master
+CREATE TABLE IF NOT EXISTS Members (
+  Id      mediumint unsigned not null auto_increment,
+  TypeN   tinyint   unsigned not null, # Member type enum MT_Member, MT_Advisor, M_List, MT_Guest
+  PeoId   mediumint unsigned not null, # People.Id Foreign key
+  AgentId smallint  unsigned not null, # Agents.Id Foreign key
+  Level   tinyint   unsigned not null, # Level re access control
+  RoleN   tinyint   unsigned     null, # Member role enum ROL_SnrPartner, ROL_Partner, ROL_Manager, ROL_Senior, ROL_Staff, ROL_Owner, ROL_CEO, ROL_FinDirector, ROL_Director, ROL_FinControl, ROL_Contractor, ROL_Consultant, ROL_Other
+  Role    varchar(50)            null, # Role in RoleN = ROL_Other case
+  DeptN   tinyint   unsigned     null, # Member dept enum DEP_Management, DEP_Finance, DEP_Accounting, DEP_Audit, DEP_Tax, DEP_External, DEP_Other
+  Email   varchar(40)            null, # Email address, if different for this Member from People.Email
+  PW      binary(64)             null, # Password if different for this Member from People.PW
+  Fails   tinyint   unsigned not null, # Login failure count
+  Bits    int unsigned not null default 2, # Member options as bit settings as below. MB_OK set by default.
+  # sys stuff
+  EditT   timestamp not null default 0,
+  AddT    timestamp not null default 0,
+  Primary Key (Id),   # unique
+          Key (PeoId) # not unique - same person can have multiple Members entries in different roles
+) Engine = InnoDB Default Charset=utf8;
+
+############ Revised 04.05.13
+## Agents ## Agents = CH and HMRC speak = our client firms.
+############ Can also be Company for direct company clients
+# Type: Master
+CREATE TABLE IF NOT EXISTS Agents (
+  Id       smallint  unsigned not null auto_increment,
+  AName    varchar(100)       not null, # Agent name
+  AType    tinyint   unsigned not null, # Agent type bits: ATB_HMRC_AGENT, ATB_CH_AGENT, ATB_ENTITY
+  CtryId   smallint  unsigned not null, # Foreign key BRL.Countries.Id  Country
+  Credits  smallint  unsigned not null, # Available credits.       For reporting. Can be regenerated from AgentTrans
+  NumPays  smallint  unsigned not null, # Number of payments made. For reporting. Can be regenerated from AgentTrans
+  TotPaid       int  unsigned not null, # Total paid in pence. For reporting. Can be regenerated from AgentTrans
+  Bits     tinyint   unsigned not null default 2, # Bit settings as below. MB_OK set by default.
+  Comment  varchar(240)           null, # Comment
+  # sys stuff
+  EditT   timestamp not null default 0,
+  AddT    timestamp not null default 0,
+  Primary Key (Id),      # unique
+   Unique Key (AName)    # unique
+) Engine = InnoDB Default Charset=utf8;
+
+############### Revised 05.05.13 with ADT_AgentInfo stuff moved to Agent's Entity
+## AgentData ## Agent Data. Braiins master data too with AgentId = 1
+############### Uses PHP's json_encode and json_decode functions to store multiple values in a single record
+# Type: Master, no bits
+CREATE TABLE IF NOT EXISTS AgentData (
+  Id       smallint unsigned not null auto_increment,
+  AgentId  smallint unsigned not null, # Agents.Id also = Entities.Id for the Agent's Entity
+  TypeN    tinyint  unsigned not null, # Data type enum ADT_AgentInfo, ADT_Headings, ADT_Preferences
+  Data     text              not null, # The jsonised data
+  # sys stuff
+  EditT   timestamp not null default 0,
+  AddT    timestamp not null default 0,
+  Primary Key (Id),      # unique
+          Key (AgentId)
+          Key (TypeN)
+) Engine = InnoDB Default Charset=utf8;
+
+ADT_AgentInfo 1
+-------------
+$AgentInfoA = [
+  'Name'          => "Braiins Limited", # Using keys as per Tx third party agent info
+  'Description'   => 'Braiins Master',
+  'AddressLine1'  => 'Address line 1',
+  'AddressLine2'  => 'Address line 2',
+  'AddressLine3'  => 'Address line 3',
+  'CityOrTown'    => 'Principal location - city or town',
+  'CountyRegion'  => 'County / Region',
+  'PostalCodeZip' => 'Postal Code / Zip',
+  'Country'       => 'United Kingdom' # Not in Taxonomy. Use country code?
+];
+
+ADT_Headings 2
+------------
+Stored in full for Braiins Master. Differences only stored for Agents. Merge needed at run time.
+$HeadingsA = [
+  'AccountsFullUnauditedH'     => 'Report of the Directors and Unaudited Financial Statements',
+  'AccountsFullAuditedH'       => 'Report of the Directors and Audited Financial Statements',
+  'AccountsShortH'             => 'Financial Statements',
+  'AccountsPeriodH'            => 'Period of Accounts',
+  'CompanyInformationH'        => 'Company Information',
+  'CompanyRegistrationNumberH' => 'Company Registration Number',
+  'RegisteredOfficeH'          => 'Registered Office Address',
+  'RestatedH'                  => '(Restated)'
+];
+
+ADT_Preferences 3
+---------------
+Stored in full for Braiins Master. Differences only stored for Agents. Merge needed at run time.
+$PreferencesA = [
+  'RealZero'  => '&#8211;', # en dash
+  'Undefined' => '',        # for a false balance
+  'ThisYearColCss' => 'b',
+  'PriorYearColCss' => ''
+];

@@ -1,0 +1,61 @@
+﻿<!-- AM Admin - Members -->
+<h2 class=c>Add/Edit/Delete Braiins Members for<br><span class=AName></span></h2>
+<div id=AMdO>
+<p id=AMA class=c><b>Action:</b> <span title='Choose the Action you wish to perform.'><input name=AMAr id=AMAr0 type=radio value=0> <label for=AMAr0>Add Member</label><input name=AMAr id=AMAr1 type=radio checked value=1> <label for=AMAr1>Edit or Delete Member</label></span></p>
+<p id=AMM class=c><label for=AMeM>Member to Edit or Delete:</label> <select id=AMeM title='Select a Member to Edit or Delete'></select></p>
+<div id=AMdI>
+<form>
+<table class='mc mb05'>
+<tr><td>Given Name</td><td><input id=AMiGN type=text size=21 data-minl=2 maxlength=20 required title='Given or First Name'></td></tr>
+<tr><td>Family Name</td><td><input id=AMiFN type=text size=31 data-minl=2 maxlength=30 required title='Family or Last Name'></td></tr>
+<tr><td>Display&nbsp;Name&nbsp;</td><td><input id=AMiPN type=text size=50 data-minl=4 maxlength=50 required title='Name to be displayed on the site and used in reports'></td></tr>
+<tr><td>Email</td><td><input id=AMiE type=email size=41 maxlength=40 required pattern='^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$' title="Email address. This is also used as the login 'User name'"></td></tr>
+<tr><td>Password</td><td><span style='position:relative;left:-2px' title='<p>8 to 16 characters, at least one of each of upper case letter A-Z, lower case letter a-z, digit 0-9, and a symbol (e.g. # or % etc incl £ and €) in any order with no spaces or non-keyboard characters.</p><p>Or Click the button to Generate a Password.</p>'><input id=AMiPW type=text size=20 maxlength=16 pattern='(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!-/:-@[-`{-~£€])(?!.*[^ -~£€]).{8,16}'> <button id=AMbPG class=bLoc>Generate a Password</button></span></td></tr>
+<tr><td>Role</td><td><select title="Member's role within [AName] if applicable. (Used in filtering/grouping some Admin Reports)">
+  <option value=0>~ Click to Select ~</option>
+  <option value=1>Senior Partner</option>
+  <option value=2>Partner</option>
+  <option value=3>Manager</option>
+  <option value=4>Staff Senior</option>
+  <option value=5>Staff Member</option>
+  <option value=6>Owner</option>
+  <option value=7>MD or CEO</option>
+  <option value=8>Finance Director</option>
+  <option value=9>Director</option>
+  <option value=10>Financial Controller</option>
+  <option value=11>Contractor</option>
+  <option value=12>Consultant</option>
+  <option value=13>Other</option>
+  </select></td></tr>
+<tr><td>Department</td><td><select title='Department within [AName] if applicable. (Used in filtering/grouping some Admin Reports)'>
+  <option value=0>~ Click to Select ~</option>
+  <option value=1>Management</option>
+  <option value=2>Finance</option>
+  <option value=3>Accounting</option>
+  <option value=4>Audit</option>
+  <option value=5>Tax</option>
+  <option value=6>External</option>
+  <option value=7>Other</option>
+  </select></td></tr>
+<tr><td>Access Level</td><td><input id=AMnLev type=number class=w30x min=1 data-min=1 size=1 maxlength=1></td></tr>
+<tr><td class='top u' title='<p>Access Permissions work in conjunction with Member Access Level above and Entity Access Level. A Member without a given Access Permission cannot perform the functions it controls at all - see the functions by hovering over the options.</p><p>A Member with a given Access Permission can perform the functions it controls, but only for Entities or Members that have an Access Level equal to or less than their own.</p><p class=mb0>You can only decrease, not increase, your own Access Rights (Level or Permissions), nor grant to other members rights you do not have yourself, unless you are an Administrator with an Access Level of 9.</p>'>Access<br>Permissions</td><td>
+  <div class=fl>
+  <span title='Read or View incl TB, Data Trail, Financial Statements, Change Entity. Turning this off effectively prevents a member from doing anything.'><input id=AMc1 type=checkbox> <label for=AMc1>Read (View)</label></span><br>
+  <span title='Add (Post) and Edit current entity accounting data, incl Data Check'><input id=AMc2 type=checkbox> <label for=AMc2>Accounting Data</label></span><br>
+  <span title='Set to Final, Start Next Year, New, Edit Entities. Start Next Year and New involve a credits charge. Edit can do also.'><input id=AMc3 type=checkbox> <label for=AMc3>Entities</label></span><br>
+  <span title='Upload Accounting Data'><input id=AMc4 type=checkbox> <label for=AMc4>Upload</label></span><br>
+  <span title='Download Financial Statements'><input id=AMc5 type=checkbox> <label for=AMc5>Download</label></span><br>
+  </div>
+  <div class='fl pl20'>
+  <span title='View and Edit Agent Data - Snapshot, Admin Reports, Account Details, Headings, Layout Options, and Download Export Format'><input id=AMc6 type=checkbox> <label for=AMc6>Agent Data</label></span><br>
+  <span title='Add/Edit Members'><input id=AMc7 type=checkbox> <label for=AMc7>Members</label></span><br>
+  <span title='Purchase Credits'><input id=AMc8 type=checkbox> <label for=AMc8>Purchase Credits</label></span><br>
+  <span title='Reset Entities, Delete Entities, Delete Members'><input id=AMc9 type=checkbox> <label for=AMc9>Delete</label></span><br>
+  <span title='All of the above plus Reverse Final state and Set/Unset these Access Permissions for Self and Others. There must always be at least one Administrator Member with this permission set.'><input id=AMcA type=checkbox> <label for=AMcA>Administrator</label></span><br>
+  </div>
+</td></tr>
+</table>
+<div class='c p10'><button id=AMbDel title='Click to Delete the Member'>Delete</button><button id=AMbRev></button><button id=AMbSav></button></div>
+</form>
+</div>
+</div>

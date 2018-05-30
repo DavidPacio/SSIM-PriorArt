@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<title>Braiins Admin UK-GAAP-DPL</title>
+<meta charset=utf-8>
+<link rel='shortcut icon' href=../favicon.png>
+<link rel=stylesheet type=text/css href=css/Utils.css>
+<script>
+function rotateit(x) {
+  x = parseInt(x)
+  document.body.setAttribute('style', ' -moz-transform: rotate('+x+'deg); -moz-transform-origin: 50% 50%; -webkit-transform: rotate('+x+'deg); -webkit-transform-origin: 50% 50%; -o-transform: rotate('+x+'deg); -o-transform-origin:50% 50%; -ms-transform: rotate('+x+'deg); -ms-transform-origin: 50% 50%; transform: rotate('+x+'deg); transform-origin: 50% 50%;')
+}
+function rotate() {
+for (i=0;i<=360;i++)
+  setTimeout('rotateit('+i+')',i*40)
+//void(0);
+}
+</script>
+<style>
+span.s1 {display:inline-block;width:68px}
+span.s2 {display:inline-block;width:55px}
+span.s3 {display:inline-block;width:50px}
+
+#bubbles {
+	font-family: arial, helvetica, freesans, sans-serif;
+	font-size: 100%;
+	color: #333;
+}
+
+p.bubble {
+	position: relative;
+	width: 200px;
+	height: 100px;
+  font-size:1.75em;
+	text-align: center;
+	line-height: 100px;
+	margin: 60px auto;
+	background-color: #fff;
+	border: 8px solid Navy;
+	border-radius: 30px;
+	box-shadow: 2px 2px 4px #888;
+}
+
+p.thought {
+	width: 130px;
+	line-height: 100px;
+	border-radius: 108px;
+}
+
+p.bubble:before, p.bubble:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+p.speech:before {
+	left: 30px;
+	top: 100px;
+	border: 25px solid;
+	border-color: Navy transparent transparent Navy;
+}
+
+p.speech:after {
+	left: 38px;
+	top: 100px;
+	border: 15px solid;
+	border-color: #fff transparent transparent #fff;
+}
+
+p.thought:before, p.thought:after {
+	left: 10px;
+	top: 70px;
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border: 8px solid Navy;
+	border-radius: 28px;
+}
+
+p.thought:after {
+	width: 20px;
+	height: 20px;
+	left: 5px;
+	top: 100px;
+	border-radius: 18px;
+}
+</style>
+</head>
+<body>
+<h1 class=c>Braiins Admin UK-GAAP-DPL</h1>
+<div class=mc style=width:120px>
+<ul>
+<li><a href=../>Braiins Admin</a></li>
+</ul>
+</div>
+<div class=mc style=width:570px>
+<div class='fl m05' style=width:245px>
+<h2>Taxonomy</h2>
+<ul>
+<li><span class=s1>Elements:</span><span class=s2><a href=ElementsList.php>List</a></span><a href=ElementsLookup.php>Lookup</a></li>
+<li><span class=s1></span><a href=ConcreteElements.php>All Concrete</a></li>
+<li><span class=s1></span><a href=CEsNotInBros.php>CEs Not In Bros</a></li>
+<li><span class=s1></span><a href=ElementsLookupB.php>Bro Prep Lookup</a></li>
+<li><a href=Arcroles.php>Arcroles List</a></li>
+<li><a href=Roles.php>Roles List</a></li>
+<li><a href=Arcs.php>Arcs List</a></li>
+<li><a href=Labels.php>Labels List</a></li>
+<li><a href=References.php>References List</a></li>
+<li><a href=HypercubesList.php>Hypercubes List</a></li>
+<li><a href=HypercubesSubset.php>Hypercubes Subset Check</a></li>
+<li><a href=DimensionsList.php>Dimensions List</a></li>
+<li><a href=DimensionsMap.php>Dimensions Map</a></li>
+<li><a href=DimensionGroups.php>Dimension Groups</a></li>
+<li><a href=TuplesList.php>Tuples List</a></li>
+<li><a href=BuildTxDB.php>Build the Taxonomy DB</a></li>
+<li><a href=BuildTxStructs.php>Build Taxonomy Based Structs</a></li>
+</ul>
+<h2>General</h2>
+<ul>
+<li><a href='' target=_blank>New UK-GAAP-DPL Tab</a></li>
+</ul>
+<h2>Fun</h2>
+<ul>
+<li><a href=javascript:rotate()>Roll It</a></li>
+</ul>
+</div>
+<div class='fl m05'>
+<h2>Report Generator</h2>
+<ul>
+<li><span class=s1>BROs:</span><span class=s2>List</span><span class=s3><a href=BrosLookup.php>Lookup</a></span></li>
+<li><span class=s1></span><span class=s2><a href=BrosImport.php>Import</a></span><span class=s3><a href=BrosExport.php>Export</a></span></li>
+<li><span class=s1></span><a href=BroNameSegments.php>Name Segments</a></li>
+<!--
+<li><span class=s1></span><a href=BrosRptOrderList.php>Report Order List</a></li>
+-->
+<li><span class=s1></span>Report Order List</li>
+<li><span class=s1></span><a href=BroSummingTrees.php>Summing Trees</a></li>
+<li><a href=BuildStructs.php>Build Bro Structs</a></li>
+</ul>
+<h2>Braiins</h2>
+<ul>
+<li><a href=Braiins.php target=_blank>==> Braiins Site</a></li>
+<li><a href=Import.php>Data Import</a></li>
+<li><a href=DataTrail.php>Data Trail</a></li>
+<li><a href=DataTrail_PdfCrowd.php>Data Trail Pdf via PdfCrowd.com</a></li>
+<li><a href=DataTrail_PdfReactor.php>Data Trail Pdf via PdfReactor</a></li>
+<li><a href=DataTrail_Prince.php>Data Trail Pdf via Prince</a></li>
+<li><a href=TB.php>Trial Balance</a></li>
+</ul>
+<h2>DB Stuff</h2>
+<ul>
+<li><a href=InitRGDB.php>Initialise the RG DB</a></li>
+</div>
+</div>
+
+<div id=bubbles class=clr>
+<p class="bubble thought">I think&hellip;</p>
+
+<p class="bubble speech">Braiins Rocks!</p>
+
+<p>Pure CSS3 Speech Bubbles Without Images thanks to <a href=http://blogs.sitepoint.com/pure-css3-speech-bubbles>SitePoint</a>.</p>
+<p>No images or additional elements are used to create these speech bubbles. You only require a single &lt;p&gt; tag and a little CSS3 code.</p>
+</div>
+</body>
+</html>
+

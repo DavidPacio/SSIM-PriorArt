@@ -1,0 +1,12 @@
+Wijmo.txt started 26.09.12
+======
+
+http://wijmo.com/
+
+Compare Complete and Open:
+http://jsbin.com/ihucen
+
+Knockout
+--------
+http://knockoutjs.com/
+http://jspro.com/toolsandlibraries/knockout-js-an-introduction/

@@ -1,0 +1,310 @@
+Html5
+-----
+
+www.tutorialspoint.com/html5/index.htm
+www.html5tuts.co.uk/
+
+A Developer’s Guide to HTML5 Canvas
+www.sitepoint.com/a-developer%E2%80%99s-guide-to-html5-canvas/
+
+MHTML5 BoilerPlate
+http://html5boilerplate.com/
+
+HTML 5 Local Storage
+--------------------
+http://dev.w3.org/html5/webstorage/
+www.devarticles.com/c/a/HTML/HTML5-Local-Storage-Overview/
+www.sitepoint.com/building-web-pages-with-local-storage/
+www.javascriptkit.com/javatutors/domstorage.shtml
+https://developer.mozilla.org/en/DOM/Storage
+www.tutorialspoint.com/html5/html5_web_storage.htm
+http://diveintohtml5.info/storage.html
+http://caniuse.com/#
+www.sitepoint.com/html5-browser-storage-past-present-future/  9 Oct 13
+
+interface Storage {
+  readonly attribute unsigned long length;
+  DOMString? key(unsigned long index);
+  getter DOMString getItem(DOMString key);
+  setter creator void setItem(DOMString key, DOMString value);
+  deleter void removeItem(DOMString key);
+  void clear();
+};
+
+sessionStorage
+This is a global object (sessionStorage) that maintains a storage area that's available for the duration of the page session.
+A page session lasts for as long as the browser is open and survives over page reloads and restores.
+Opening a page in a new tab or window will cause a new session to be initiated. 
+
+localStorage
+localStorage is the same as sessionStorage with same same-origin rules applied but it is persistent.
+
+
+// testing HTML5 storage support
+function testHTML5Storage() {
+    if ('localStorage' in window && window['localStorage'] !== null) {
+        alert('HTML5 localStorage is supported by your browser!');
+    }
+}
+// call the 'testHTML5Storage()' function when the web page is loaded
+window.onload = function() {
+    testHTML5Storage();
+}
+
+Storing can be done in 3 ways:
+-------
+localStorage.setItem["Country", "USA");  
+localStorage["Country"] = "USA";  
+localStorage.Country = "USA";  
+
+Use try/catch for running out of space: www.sitepoint.com/building-web-pages-with-local-storage/
+
+Reading can be done in 3 ways:
+-------
+localStorage.getItem('Country');
+localStorage['Country'];
+localStorage.Country
+
+Delete
+------
+localStore.removeItem("Country");  
+
+Tracking Changes to the HTML5 Storage Area
+------------------------------------------
+http://diveintohtml5.info/storage.html
+
+
+$(function () {
+
+  $(window).bind('storage', function (e) {
+    alert('storage changed');
+  });
+
+  localStorage.setItem('a', 'test');
+
+});
+
+
+Multiple Items http://paperkilledrock.com/2010/05/html5-localstorage-part-two/
+--------------
+values.push(name); //push each value into our values array
+values.push(hours);
+values.push(date);
+ 
+try {
+	localStorage.setItem(itemId, values.join(";")); //store the item in the database
+  
+  
+var itemKey = localStorage.key(0);
+var values = localStorage.getItem(itemKey); //values currently look like 'Some Project;12;5/7/2010'
+values = values.split(";");
+var project = values[0];
+var hours = values[1];
+var date = values[2];
+ 
+ 
+ 
+
+HTML 5 Web Workers webworkers
+------------------
+www.devarticles.com/c/a/HTML/HTML-5-and-Javascript-Web-Workers/
+www.html5rocks.com/en/tutorials/workers/basics/
+https://developer.mozilla.org/En/Using_web_workers
+http://caniuse.com/#search=webworker
+
+File System
+-----------
+http://dev.w3.org/2009/dap/file-system/pub/FileSystem/
+www.html5rocks.com/en/tutorials/file/filesystem/#toc-dir
+http://caniuse.com/#search=filesystem
+
+
+form and input
+--------------
+http://caniuse.com/#feat=forms
+https://developer.mozilla.org/en/HTML/Element/Input
+https://developer.mozilla.org/en/DOM/HTMLInputElement for methods e.g. checkValidity() and setCustomValidity(). Good reference.
+
+pattern
+i, g, and m globals are always off
+www.whatwg.org/specs/web-apps/current-work/multipage/common-input-element-attributes.html#the-pattern-attribute
+http://html5pattern.com/
+
+Email:
+^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$ http://dev.w3.org/html5/markup/input.email.html
+/^[a-z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/i
+/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i Site.js
+
+Password:
+http://html5pattern.com/ UpperCase, LowerCase and Number ^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$
+http://html5pattern.com/ UpperCase, LowerCase, Number/SpecialChar and min 8 Chars (?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
+http://juniororacledba.wordpress.com/2011/07/21/html5-pattern-regex-on-input-boxes/
+  at least one lowercase character
+  at least one numeric
+  at least one symbol of either # \ _ or $
+  first character must be a upper or lower case character
+  must not contain spaces
+  must be between 8 – 15 characters long
+  at least one uppercase character
+^(?=[a-zA-Z])(?=.*[0-9])(?=.*[#\$_])(?=.*[A-Z])(?=.*[a-z])(?!.*[^a-zA-Z0-9#\$_])(?!.*\s).{8,12}$  
+
+Braiins Password:
+  at least one lowercase character a-z
+  at least one uppercase character A-Z
+  at least one digit 0-9
+  at least one symbol `~!@€#£$%^&*(){}[]<>-_=+\|;:,./?
+  no spaces, quotes, or other characters
+  8 – 16 characters long
+
+(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!-/:-@[-`{-~£€])(?!.*[^ -~£€]).{8,16}
+
+(?: = non-capturing group
+(?> = atomic group www.regular-expressions.info/atomic.html
+(?= = lookahead as below
+(?! = negative lookahead
+(?<= = lookback
+(?<! = negative lookback
+ 
+(?=.*[a-z]) lookahead any ch(s) 0 or > times followed by a-z
+(?=.*[A-Z]) ditto A-Z
+(?=.*[0-9]) ditto 0-9
+(?=.*[!-/:-@[-`{-~£€]) ditto !"#$%&'()*+,-./  :;<=>?@  [\]^_`  {|}~  £€
+(?!.*[^ -~£€]) no char not in sp to ~ range + £ and €
+.{6,16} any char 
+
+String which must be min (3) to max (50) chars as per an agent address line with trailing space ok re validation after min is passed but not as the min char
+
+[ -~£€]{2} 2 chars - don't have to worry about leading space as that gets removed by input events
+(?=.*\S)   lookahead for a non space char after 0 or more chars. If 0 then we have 3 chars not ending in space, and if more then 0 then the 3rd char is a space but non space char(s) follows = ok
+[ -~£€]{1,48} rest up to max
+
+[ -~£€]{2}(?=.*\S)[ -~£€]{1,48}
+
+
+ 33 \x21 (0x21) \41  (041 )   100001       !
+ 34 \x22 (0x22) \42  (042 )   100010 \"    "
+ 35 \x23 (0x23) \43  (043 )   100011       #
+ 36 \x24 (0x24) \44  (044 )   100100       $
+ 37 \x25 (0x25) \45  (045 )   100101       %
+ 38 \x26 (0x26) \46  (046 )   100110       &
+ 39 \x27 (0x27) \47  (047 )   100111 \'    '
+ 40 \x28 (0x28) \50  (050 )   101000       (
+ 41 \x29 (0x29) \51  (051 )   101001       )
+ 42 \x2A (0x2A) \52  (052 )   101010       *
+ 43 \x2B (0x2B) \53  (053 )   101011       +
+ 44 \x2C (0x2C) \54  (054 )   101100       ,
+ 45 \x2D (0x2D) \55  (055 )   101101       -
+ 46 \x2E (0x2E) \56  (056 )   101110       .
+ 47 \x2F (0x2F) \57  (057 )   101111       /
+
+ 58 \x3A (0x3A) \72  (072 )   111010       :
+ 59 \x3B (0x3B) \73  (073 )   111011       ;
+ 60 \x3C (0x3C) \74  (074 )   111100       <
+ 61 \x3D (0x3D) \75  (075 )   111101       =
+ 62 \x3E (0x3E) \76  (076 )   111110       >
+ 63 \x3F (0x3F) \77  (077 )   111111       ?
+ 64 \x40 (0x40) \100 (0100)  1000000       @
+
+ 91 \x5B (0x5B) \133 (0133)  1011011       [
+ 92 \x5C (0x5C) \134 (0134)  1011100 \\    \
+ 93 \x5D (0x5D) \135 (0135)  1011101       ]
+ 94 \x5E (0x5E) \136 (0136)  1011110       ^
+ 95 \x5F (0x5F) \137 (0137)  1011111       _
+ 96 \x60 (0x60) \140 (0140)  1100000       `
+
+123 \x7B (0x7B) \173 (0173)  1111011       {
+124 \x7C (0x7C) \174 (0174)  1111100       |
+125 \x7D (0x7D) \175 (0175)  1111101       }
+126 \x7E (0x7E) \176 (0176)  1111110       ~
+
+
+
+2.5.2 Boolean attributes
+------------------------
+www.whatwg.org/specs/web-apps/current-work/#boolean-attributes
+http://dev.w3.org/html5/spec/common-microsyntaxes.html#boolean-attributes
+
+A number of attributes are boolean attributes. The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.
+
+If the attribute is present, its value must either be the empty string or a value that is an ASCII case-insensitive match for the attribute's canonical name, with no leading or trailing whitespace.
+
+The values "true" and "false" are not allowed on boolean attributes. To represent a false value, the attribute has to be omitted altogether.
+
+Here is an example of a checkbox that is checked and disabled. The checked and disabled attributes are the boolean attributes.
+
+<label><input type=checkbox checked name=cheese disabled> Cheese</label>
+
+This could be equivalently written as this:
+
+<label><input type=checkbox checked=checked name=cheese disabled=disabled> Cheese</label>
+
+You can also mix styles; the following is still equivalent:
+
+<label><input type='checkbox' checked name=cheese disabled=""> Cheese</label>
+
+
+MS Attributes not needed for html5
+----------------------------------
+www.tutorialspoint.com/html/html_attributes_ref.htm
+
+accesskey 	character 	Sets a keyboard shortcut to access an element
+language 	string 	This attribute specifies the scripting language to be used with an associated script bound to the element, typically through an event handler attribute. Possible values might include javascript, jscript, vbs, and vbscript.
+tabindex 	number 	Sets the tab order of an element
+contenteditable 	boolean 	Allows users to edit content rendered in Internet Explorer 5.5 or greater. Possible values are true or false.
+disabled 	boolean 	Elements with the disabled attribute set may appear faded and will not respond to user input. Possible values are true or false.
+hidefocus 	  	This proprietary attribute, introduced with Internet Explorer 5.5, hides focus on an element's content. Focus must be applied to the element using the tabindex attribute.
+unselectable 	on or off 	Used to prevent content displayed in Internet Explorer 5.5 from being selected.
+
+6 Useful HTML5 Tools
+--------------------
+www.sitepoint.com/6-useful-html5-tools/
+
+Adobe Edge Animate
+HTML KickStart
+HTML5 Reset
+Liveweave
+Modernizr
+Video.js
+
+
+File API
+--------
+
+MDN: Using files from web applications: https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications
+MDN: FileReader: https://developer.mozilla.org/en-US/docs/DOM/FileReader
+
+Working with files in JavaScript, Part 1: The Basics: www.nczonline.net/blog/2012/05/08/working-with-files-in-javascript-part-1/
+Working with files in JavaScript, Part 2: www.nczonline.net/blog/2012/05/15/working-with-files-in-javascript-part-2/
+
+WebSockets API
+--------------
+How to Use WebSockets
+http://cjihrig.com/blog/how-to-use-websockets/
+
+IndexedDB
+---------
+www.sitepoint.com/chrome-24-whats-new/
+IndexedDB is a client-side data storage technology. While we already have key-value pairs in localStorage and sessionStorage, IndexedDB provides greater data structure and indexing support. It’s the approved successor to the Web SQL Database which never became an agreed W3C specification.
+
+IndexedDB requires an article in itself, but the technology has become more viable now it’s supported in Chrome, Firefox and IE10. It’s likely to appear in Safari since, like Chrome, it uses the webkit engine. I’ve no doubt Opera are working on it. For more information, refer to the W3C IndexedDB Specification.
+www.w3.org/TR/IndexedDB/
+
+
+An Overview of the JavaScript History API
+-----------------------------------------
+http://jspro.com/apis/an-overview-and-usage-of-javascript-history-api/
+
+
+MutationObserver
+----------------
+Evolving a New Mutation
+They provided a unique way for scripts to monitor changes in the DOM, irrespective of the event or action that caused them
+www.sitepoint.com/evolving-a-new-mutation/
+ 
+MDN MutationObserver
+MutationObserver provides developers a way to react to changes in a DOM. It is designed as a replacement for Mutation Events defined in the DOM3 Events specification.
+https://developer.mozilla.org/en-US/docs/DOM/MutationObserver
+
+DOM MutationObserver – reacting to DOM changes without killing browser performance.
+https://hacks.mozilla.org/2012/05/dom-mutationobserver-reacting-to-dom-changes-without-killing-browser-performance/
+

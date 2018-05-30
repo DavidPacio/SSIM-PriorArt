@@ -1,0 +1,91 @@
+JavaScript
+==========
+
+Comparison of JavaScript frameworks http://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks
+MooTools http://mootools.net/
+JxLib    http://jxlib.org/
+jQuery   http://jquery.com/
+
+For more on jQuery see jQuery.txt
+
+Gzip Your Minified JavaScript Files
+-----------------------------------
+http://www.julienlecomte.net/blog/2007/08/13/
+
+XBRL Tools
+==========
+MissionKit 2011: http://www.altova.com/
+
+WAMP
+====
+
+Uniform Server
+--------------
+http://www.uniformserver.com/
+
+Settings:
+- Comment skip-innodb in the three mysql ini files
+- Uncheck the use port 80 and 443 checkbox in Skype Advanced Connection panel
+- Set email account in msmtp/msmtprc.ini
+
+
+Testing eFile Submissions
+-------------------------
+http://test.efileready.com/index.htm
+
+Xdebug
+======
+http://xdebug.org/
+
+Tailored Installation Instructions via http://www.xdebug.org/find-binary.php
+
+Summary
+Xdebug installed: no
+Server API: Apache 2.0 Handler
+Windows: yes - Compiler: MS VC6 - Architecture: x86
+Zend Server: no
+PHP Version: 5.3.5
+Zend API nr: 220090626
+PHP API nr: 20090626
+Debug Build: no
+Thread Safe Build: yes
+Configuration File Path: C:\WINDOWS
+Configuration File: C:\#Braiins\UniServer\usr\local\php\php.ini
+Extensions directory: C:\#Braiins\UniServer\usr\local\php\extensions
+Instructions
+
+    Download php_xdebug-2.1.2-5.3-vc6.dll
+    Move the downloaded file to C:\#Braiins\UniServer\usr\local\php\extensions
+    Edit C:\#Braiins\UniServer\usr\local\php\php.ini and add the line
+    zend_extension = C:\#Braiins\UniServer\usr\local\php\extensions\php_xdebug-2.1.2-5.3-vc6.dll
+    Restart the webserver
+
+If you like Xdebug, and thinks it saves you time and money, please have a look at the donation page.
+ 
+This site and all of its contents are Copyright © 2002-2011 by Derick Rethans.
+All rights reserved.
+
+
+http://phpmaster.com/debugging-and-profiling-php-with-xdebug/
+
+
+Version Control Systems
+=======================
+Git
+http://phpmaster.com/series/introduction-to-git/
+http://phpmaster.com/introduction-to-git-1/
+http://phpmaster.com/introduction-to-git-2/
+
+http://phpmaster.com/introduction-to-advanced-git/
+
+
+Search and Replace incl Search and Replace 98
+------------------
+http://www.techrepublic.com/photos/five-speedy-windows-desktop-search-apps/6381018
+
+PdfCrowd
+========
+//pdfcrowd.com/
+
+autoabacus pdfcrowdtrial
+API key: 3aef5a1f9b5c92d87cc8bb3359622e7a

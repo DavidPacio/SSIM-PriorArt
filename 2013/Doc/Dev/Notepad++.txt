@@ -1,0 +1,13 @@
+Notepadd++.txt
+==============
+
+Plugins removed 08.12.11 when attempting to track down the NppCrash.php crash:
+- Compare
+- Converter
+- Spell-Checker
+- MIMI Tools
+- Select 'N' Launch
+- TextFXcharacters
+- NppExport
+- NppFTP
+

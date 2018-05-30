@@ -1,0 +1,135 @@
+Kendo
+=====
+
+Kendo: david@elanelan.com u: autoabacus p: fred22kui45  Customer Id: BY942976 
+
+
+Forum Post 09.07.12
+http://www.kendoui.com/forums/framework/data-source/datasource---transport-read-from-local-array-not-from-url.aspx#2177599
+
+http://www.kendoui.com/forums/framework/data-source/overriding-datasource-s-json-parse-and-stringify---wholesale.aspx#2177715
+
+
+CSS for edit box in headings
+
+.k-edit-cell .k-textbox, .k-edit-cell .k-widget, .k-grid-edit-row .k-textbox, .k-grid-edit-row .k-widget {
+    width: 100%;
+}
+kendo....min.css (line 8)
+.k-edit-cell .k-textbox, .k-edit-cell .k-widget, .k-grid-edit-row .k-textbox, .k-grid-edit-row .k-widget {
+    width: 100%;
+}
+kendo....min.css (line 8)
+.k-grid-edit-row .k-textbox {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+kendo....min.css (line 8)
+.k-block, .k-widget, .k-inline-block, .k-textbox > input, .k-input[type="text"], .k-input[type="number"], .k-textbox, .k-picker-wrap .k-input, .k-button, .k-draghandle {
+    border-style: solid;
+    border-width: 1px;
+    font-family: inherit;
+    font-size: 100%;
+}
+kendo....min.css (line 8)
+.k-input, input.k-textbox, textarea.k-textbox, input.k-textbox:hover, textarea.k-textbox:hover, .k-textbox > input {
+    background-color: #FFFFFF;
+    color: #2E2E2E;
+}
+kendo....min.css (line 8)
+input.k-textbox {
+    height: 2.12em;
+    line-height: 1.6em;
+    padding: 2px 0.3em;
+}
+kendo....min.css (line 8)
+input[type="text"], input[type="email"], input[type="number"] {
+    outline: medium none;
+}
+BDT.css (line 105)
+.k-block, .k-button, .k-textbox, .k-drag-clue, .k-touch-scrollbar, .k-window, .k-window-titleless .k-window-content, .k-window-action, .k-inline-block, .k-grid .k-filter-options, .k-grouping-header .k-group-indicator, .k-autocomplete, .k-dropdown-wrap, .k-picker-wrap, .k-numeric-wrap, .k-list-container, .k-calendar-container, .k-calendar td, .k-calendar .k-link, .k-treeview .k-state-hover, .k-treeview .k-state-selected, .k-editor-button .k-state-hover, .k-editor-button .k-state-active, .k-tooltip, .k-tile, .k-slider-track, .k-slider-selection {
+    border-radius: 4px 4px 4px 4px;
+}
+kendo....min.css (line 8)
+.k-header, .k-grid-header, .k-toolbar, .k-dropdown-wrap, .k-picker-wrap, .k-grouping-header, .k-tooltip, .k-pager-wrap, .k-button, .k-draghandle, .k-tile, .k-textbox, .k-autocomplete, .k-state-hover, .k-state-selected, .k-state-focused, .k-tabstrip-items .k-item {
+    background-image: url("textures/highlight.png");
+}
+kendo....min.css (line 8)
+.k-input, input.k-textbox, textarea.k-textbox, input.k-textbox:hover, textarea.k-textbox:hover, .k-textbox > input {
+    background-color: #FFFFFF;
+    color: #2E2E2E;
+}
+kendo....min.css (line 8)
+.k-widget .k-dropdown-wrap, .k-widget .k-picker-wrap, .k-widget .k-numeric-wrap, .k-textbox, .k-autocomplete.k-header, .k-autocomplete.k-state-focused, div.k-dropdown-wrap.k-state-active, .k-dropdown-wrap.k-state-focused, .k-dropdown-wrap.k-state-focused:hover, div.k-picker-wrap.k-state-active, .k-picker-wrap.k-state-focused, .k-picker-wrap.k-state-focused:hover, span.k-numeric-wrap.k-state-active, .k-numeric-wrap.k-state-focused, .k-numeric-wrap.k-state-focused:hover {
+    background-color: #E9E9E9;
+    border-color: #C5C5C5;
+}
+kendo....min.css (line 8)
+.k-block, .k-widget, .k-input, .k-textbox, .k-group, .k-content, .k-header, .k-editable-area, .k-separator, .k-colorpicker .k-i-arrow-s, .k-textbox > input, .k-autocomplete, .k-dropdown-wrap, .k-toolbar, .k-group-footer td, .k-grid-footer, .k-footer-template td, .k-state-default, .k-state-default .k-select, .k-state-disabled, .k-grid-header-wrap, .k-grid-header, .k-grid td, .k-grid-footer-wrap, .k-pager-wrap, .k-pager-wrap .k-link, .k-pager-refresh, .k-grouping-header, .k-grouping-header .k-group-indicator, .k-dropdown-wrap, .k-panelbar > .k-item > .k-link, .k-panel > .k-item > .k-link, .k-panelbar .k-panel, .k-panelbar .k-content, .k-calendar th, .k-slider-track, .k-splitbar, .k-dropzone-active, .k-upload-files, .k-tiles, .k-toolbar, .k-dropdown-wrap, .k-tooltip, .k-progress {
+    border-color: #C5C5C5;
+}
+kendo....min.css (line 8)
+.k-block, .k-widget, .k-input, .k-textbox, .k-group, .k-content, .k-header, .k-editable-area, .k-separator, .k-colorpicker .k-i-arrow-s, .k-textbox > input, .k-autocomplete, .k-dropdown-wrap, .k-toolbar, .k-group-footer td, .k-grid-footer, .k-footer-template td, .k-state-default, .k-state-default .k-select, .k-state-disabled, .k-grid-header-wrap, .k-grid-header, .k-grid td, .k-grid-footer-wrap, .k-pager-wrap, .k-pager-wrap .k-link, .k-pager-refresh, .k-grouping-header, .k-grouping-header .k-group-indicator, .k-dropdown-wrap, .k-panelbar > .k-item > .k-link, .k-panel > .k-item > .k-link, .k-panelbar .k-panel, .k-panelbar .k-content, .k-calendar th, .k-slider-track, .k-splitbar, .k-dropzone-active, .k-upload-files, .k-tiles, .k-toolbar, .k-dropdown-wrap, .k-tooltip, .k-progress {
+    border-color: #C5C5C5;
+}
+kendo....min.css (line 8)
+.k-textbox {
+    -moz-box-sizing: border-box;
+    outline: 0 none;
+    width: 12.4em;
+}
+kendo....min.css (line 8)
+.k-input, .k-textbox > input {
+    outline: 0 none;
+}
+kendo....min.css (line 8)
+.k-input {
+    padding: 0.25em 0;
+}
+kendo....min.css (line 8)
+.k-button, .k-textbox, .k-timepicker, .k-datepicker, .k-datetimepicker {
+    display: inline-block;
+    vertical-align: middle;
+}
+kendo....min.css (line 8)
+.k-textbox, .k-autocomplete {
+    -moz-box-sizing: border-box;
+}
+kendo....min.css (line 8)
+.k-textbox, .k-autocomplete {
+    padding: 2px;
+}
+kendo....min.css (line 8)
+.k-textbox, .k-autocomplete, .k-dropdown-wrap, .k-picker-wrap, .k-numeric-wrap {
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px 22px 2px 2px;
+}
+kendo....min.css (line 8)
+.k-autocomplete, .k-combobox, .k-datepicker, .k-timepicker, .k-datetimepicker, .k-numerictextbox, .k-dropdown, .k-selectbox, .k-textbox {
+    border-width: 0;
+    display: inline-block;
+    overflow: visible;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 12.4em;
+}
+kendo....min.css (line 8)
+.k-block, .k-widget, .k-inline-block, .k-textbox > input, .k-input[type="text"], .k-input[type="number"], .k-textbox, .k-picker-wrap .k-input, .k-button, .k-draghandle {
+    border-style: solid;
+    border-width: 1px;
+    font-family: inherit;
+    font-size: 100%;
+}
+kendo....min.css (line 8)
+.k-block, .k-button, .k-header, .k-grid-header, .k-toolbar, .k-grouping-header, .k-tooltip, .k-pager-wrap, .k-tabstrip-items .k-item, .k-link.k-state-hover, .k-textbox, .k-textbox:hover, .k-autocomplete, .k-dropdown-wrap, .k-picker-wrap, .k-numeric-wrap, .k-autocomplete.k-state-hover, .k-dropdown-wrap.k-state-hover, .k-picker-wrap.k-state-hover, .k-numeric-wrap.k-state-hover, .k-draghandle {
+    background-position: 0 center;
+    background-repeat: repeat-x;
+}
+kendo....min.css (line 8)
+input, select, .in {
+    background: none repeat scroll 0 0 #F5FFFF;
+    border: 1px solid #7F9DFF;
+    color: #000000;
+    font: 1em/16px verdana,arial

@@ -1,0 +1,7 @@
+﻿BroId	Type	Level	BroName	Name0	N1	N2	N3	N4	N5	N6	N7	N8	ShortName	Master	Ref	Folio	DataType	AdbField	Sign	AcctTypes	PostType	RO	ExclProps	AllowProps	Items	SumUp	Check	Related	Period	StartEnd	Zones	Order	Descr	Comment	Scratch	I Usable Props	I Sum Usable Props	I M# Item Info	I StartEnd	I Slave Ids	I Slave Filtering
+BroSet Type: In-Incl, Name: AdbField Test, Descr: In-BroSet AdbField Column Test, SortKey: D9
+
+1	Set	0	Test	Test													String			Notes
+2	Ele	1	  Test.Name	 	Name												String	Entity.Name		Notes
+3	Ele	1	  Test.Ref	 	Ref												String	Entity.Ref		Notes
+4	Ele	1	  Test.CtryId	 	CtryId												String	Entity.CtryId		Notes

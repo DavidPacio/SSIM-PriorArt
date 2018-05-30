@@ -1,0 +1,62 @@
+﻿BroId	Type	Level	BroName	Name0	N1	N2	N3	N4	N5	N6	N7	N8	ShortName	Master	Ref	Folio	DataType	AdbField	Sign	AcctTypes	PostType	RO	ExclProps	AllowProps	Items	SumUp	Check	Related	Period	StartEnd	Zones	Order	Descr	Comment	Scratch	I UsableProps	I Sum UsableProps	I M Use Item Info	I StartEnd	I Slave Ids	I Slave Filtering
+BroSet Type: In-Main
+BroSet Name: DataImport Test2
+BroSet Descr: Simple BroSet purely for Testing
+BroSet SortKey: DIT2
+BroSet Taxonomies: UK-GAAP-DPL
+BroSet Countries: UK, Wales,-Scotland
+BroSet EntityTypes: UK Private Company, -6
+BroSet MemberLevel: 7
+BroSet EntityLevel: 7
+BroSet DateFrom: 15.01.01
+BroSet DateTo: 13.12.31
+OfficersBro = EntityInfo.Officers
+TPAsBro = EntityInfo.TPAs
+
+# EntityInfo
+1	Set	0	EntityInfo	EntityInfo													None
+2	Set	1	  EntityInfo.Dates	 	Dates												None
+3	Ele	2	    EntityInfo.Dates.PeriodStart	 		PeriodStart										Info	Date			Info									Instant							None
+4	Ele	2	    EntityInfo.Dates.PeriodEnd	 		PeriodEnd										Info	Date			Info									Instant							None
+5	Ele	2	    EntityInfo.Dates.BS	 		BS										Info	Date			Info									Instant							None
+6	Ele	2	    EntityInfo.Dates.AccountsApproved	 		AccountsApproved										Info	Date			Info									Instant							None
+7	Ele	2	    EntityInfo.Dates.DirRepSigned	 		DirRepSigned										Info	Date			Info									Instant							None
+8	Set	1	  EntityInfo.Status	 	Status												None			Info
+9	Ele	2	    EntityInfo.Status.Audited	 		Audited										Info	Boolean			Info																None
+10	Ele	2	    EntityInfo.Status.Trading	 		Trading										Info	Boolean			Info																None
+11	Ele	1	  EntityInfo.Officers	 	Officers												Boolean			Info				Officer												Officer
+12	Ele	1	  EntityInfo.TPAs	 	TPAs												Boolean			Info				TPA												TPA
+ 
+ =10000	Set	0	PL	PL												PL	Money		Credit	PL	DE															Group,Restated,OpActivs,BizSegs,Region,Country,Activity,ExpenseType,ExceptNon,Analysis,GroupTrans,Ageing
+10001	Set	1	  PL.Rev	 	Rev											PL	Money		Credit	PL	DE	RO				 +										Group,Restated,OpActivs,BizSegs,Region,Country,Activity,ExpenseType,ExceptNon,Analysis,GroupTrans,Ageing
+10002	Ele	2	    PL.Rev.TradingIncome	 		TradingIncome										PL	Money		Credit	PL	DE					 +										Group,Restated,OpActivs,BizSegs,Region,Country,Activity,ExpenseType,ExceptNon,Analysis,GroupTrans,Ageing
+10003	Set	1	  PL.Exp	 	Exp											PL	Money		Debit	PL	DE	RO				 +										Group,Restated,OpActivs,BizSegs,Region,Country,Activity,ExpenseType,ExceptNon,Analysis,GroupTrans,Ageing
+10004	Ele	2	    PL.Exp.OfficerRemuneration	 		OfficerRemuneration										Officers	Money		Debit	PL	DE		Officer		a:Officer.	 +										Group,Restated	Group,Restated,OpActivs,BizSegs,Region,Country,Activity,ExpenseType,ExceptNon,Analysis,GroupTrans,Ageing
+10005	Set	2	    PL.Exp.Donations	 		Donations										PL	Money		Debit	PL	DE					 +										Group,Restated,OpActivs,BizSegs,Region,Country,Activity,ExpenseType,ExceptNon,Analysis,GroupTrans,Ageing
+10006	Ele	3	      PL.Exp.Donations.Charitable	 			Charitable									PL	Money		Debit	PL	DE					 +										Group,Restated,OpActivs,BizSegs,Region,Country,Activity,ExpenseType,ExceptNon,Analysis,GroupTrans,Ageing
+10007	Ele	3	      PL.Exp.Donations.Political	 			Political									PL	Money		Debit	PL	DE					 +										Group,Restated,OpActivs,BizSegs,Region,Country,Activity,ExpenseType,ExceptNon,Analysis,GroupTrans,Ageing
+10008	Ele	2	    PL.Exp.Other	 		Other										PL	Money		Debit	PL	DE					 +										Group,Restated,OpActivs,BizSegs,Region,Country,Activity,ExpenseType,ExceptNon,Analysis,GroupTrans,Ageing
+ 
+ =10500	Set	0	SchPL	SchPL													None
+10501	Set	1	  SchPL.Rev	 	Rev											PL	Money		Credit	PL	Sch															Group,Restated,OpActivs,BizSegs,Region,Country,Activity,ExpenseType,ExceptNon,Analysis,GroupTrans,Ageing
+10502	Set	2	    SchPL.Rev.Seg	 		Seg										PL	Money		Credit	PL	Sch					 +										Group,Restated,OpActivs,BizSegs,Region,Country,Activity,ExpenseType,ExceptNon,Analysis,GroupTrans,Ageing
+10503	Set	3	      SchPL.Rev.Seg.Geo	 			Geo									PL	Money		Credit	PL	Sch					 +	10001 Equal To Either PL.Rev									Group,Restated,OpActivs,BizSegs,Region,Country,Activity,ExpenseType,ExceptNon,Analysis,GroupTrans,Ageing
+10504	Ele	4	        SchPL.Rev.Seg.Geo.Destination	 				Destination								PL	Money		Credit	PL	Sch		Group		a:Group.Co	 +								a:Group.Co just as a test, not intended to make sense here		Restated,OpActivs,BizSegs,Region,Country,Activity,ExpenseType,ExceptNon,Analysis,GroupTrans,Ageing
+ 
+ =11000	Set	0	SchDirRep	SchDirRep													None
+11001	Set	1	  SchDirRep.Donations	 	Donations												Money		Debit	Info	Sch			Region,Instance												Region,Instance
+11002	Ele	2	    SchDirRep.Donations.Charitable	 		Charitable											MoneyString			Info				Region,Instance		 +										Region,Instance
+11003	Ele	2	    SchDirRep.Donations.Political	 		Political											MoneyString			Info				Region,Instance		 +										Region,Instance
+ 
+ =50000	Set	0	BS	BS												Base	Money		Credit	BS	DE															Group,Restated
+50001	Set	1	  BS.Assets	 	Assets											Base	Money		Debit	BS	DE					 +										Group,Restated
+50002	Set	2	    BS.Assets.Fixed	 		Fixed										Base	Money		Debit	BS	DE					 +										Group,Restated
+50003	Set	3	      BS.Assets.Fixed.Intangible	 			Intangible									IFAs	Money		Debit	BS	DE					 +										Group,Restated,IFAClasses		M Use Item
+50004	Set	4	        BS.Assets.Fixed.Intangible.CostOrValuation	 				CostOrValuation								IFAs	Money		Debit	BS	DE					No										Group,Restated,IFAClasses		M Use Item
+50005	Ele	5	          BS.Assets.Fixed.Intangible.CostOrValuation.Cost	 					Cost							IFAs	Money		Debit	BS	DE					 +			Instant	SumEnd BS.Assets.Fixed.Intangible.CostOrValuation.Additions, IFADisposals, IFAAcqs						Group,Restated,IFAClasses		M Use Item	SumEnd 50006,50007,50008
+50006	Ele	5	          BS.Assets.Fixed.Intangible.CostOrValuation.Additions	 					Additions							IFAs	Money		Debit	BS	DE					 +										Group,Restated,IFAClasses		M Use Item
+50007	Ele	5	          BS.Assets.Fixed.Intangible.CostOrValuation.Disposals	 					Disposals				IFADisposals			IFAs	Money		Debit	BS	DE					 +										Group,Restated,IFAClasses		M Use Item
+50008	Ele	5	          BS.Assets.Fixed.Intangible.CostOrValuation.Acqs	 					Acqs				IFAAcqs			IFAs	Money		Debit	BS	DE					 +										Group,Restated,IFAClasses		M Use Item
+ 
+ =99950	Set	0	Suspense	Suspense													None
+99951	Ele	1	  Suspense.Suspense	 	Suspense											Base	Money		Either	Info	DE															Group,Restated

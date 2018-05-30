@@ -1,0 +1,25 @@
+<!-- EE Entity Edit -->
+<h2 class=c>Edit Current Entity</h2>
+<div id=EEdI>
+<h3 class=c>Basic Details of the Entity</h3>
+<form>
+<table class='mc mb05'>
+<tr><td>Name</td><td><input id=EEiN type=text size=75 data-minl=3 maxlength=100 required title='Name of the Entity'></td></tr>
+<tr><td>Reference&nbsp;</td><td><input id=EEiR type=text size=40 data-minl=1 maxlength=40 required title='Reference code for the Entity, which should be the same as used in the [AName] AP system'></td></tr>
+<tr><td>Taxonomy</td><td><input type=text size=40 readonly title='UK-GAAP only currently. Other taxonomies will follow.' value='UK GAAP'></td></tr>
+<tr><td>Type</td><td><input type=text size=40 readonly title='Private Limited Company only currently. Other entity types will follow.' value='Private Limited Company (2)'></td></tr>
+<tr><td>Size</td><td><span id=EEsCS class=in title='Size as defined by SI 2008/393 The Companies Act 2006 (Amendment) (Accounts and Reports) Regulations 2008)'></span></td></tr>
+<tr><td>Manager</td><td><select id=EEsMN title='The [AName] Member responsible for the Entity'></select>&nbsp;&nbsp;Entity Access Level <input id=EEnLev type=number class=w30x min=1 data-min=1 size=1 maxlength=1 title='Anyone with the required Access Permission(s) and a Member Access Level equal to or greater than this Entity Access Level will be able to access and operate on the entity. You can change this setting to any value between 1 and your Member Access Level of [MLevel].'></td></tr>
+</table>
+<h3 class=c>Reporting Requirements</h3>
+<p class=c>Reporting Requirements needed for processing the accounts for the entity. <span class=u title="<p>Reporting Requirements not already selected may be <b>added</b> if their checkbox is active. (Checkboxes for Reporting Requirements not applicable to the Company Size selection, or which aren't available yet, are disabled.)</p><p class=mb0>Reporting Requirements already selected may be <b>removed</b> for a refund if their checkbox is active. (Checkboxes for Reporting Requirements in use i.e. postings have been made that relate to them, are disabled to prevent removal.)</p>">More info...</span></p>
+<div class='c mb05'><button id=EEbAll class=bLoc title='Click to Select All available Reporting Requirements'>Select All</button><button id=EEbDeAll class=bLoc title="Click to Deselect All Reporting Requirements that aren't in use">Deselect All</button></div>
+<div id=EEdRR class=mc style=width:580px></div>
+<p class='clr c pt05 mb0'><span class=f90>The numbers in brackets after items above are the credits required for the item.</span><br>
+Credits charged for entity = <span class='EEOCrs b'></span>. Revised total after edits = <span class='EEECrs b'></span>. Credits <span class='EEWord b'></span> on save = <span class='EECrs b'></span>.</p>
+<div class='c p10'><button id=EEbRev title='Click to Revert to the Saved state of the Entity'>Revert</button><button id=EEbSav title='Click to Save your Edits'>Save</button></div>
+<p class=c><span class='EEIC hide wng'>Sorry, the available credits are insufficient to allow saving these edits.</span>
+<span class=EEOK>Make any desired edits and click the Save button. <span class=EECrs></span> credits will be <span class=EEWordv></span>.</span><br>
+Total available <span class=AName></span> credits = <span class=AgCrs></span>.<button id=EEbRef class=bLoc title='Click to Refresh the Available Credits if they might have been updated by another person or in another window.'>Refresh</button> Total after save = <span class=AgACrs></span>.</p>
+</form>
+</div>

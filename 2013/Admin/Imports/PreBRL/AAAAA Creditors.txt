@@ -1,0 +1,17 @@
+﻿Creditors Ageing test
+No DE Check
+Debug:0
+ImportType:Replace
+
+Creditors
+<1
+Tx3389Hy13 is SumEnd 2687,2680,2686,2685
+Tx3389Hy13	-429,500	-429,501	# Bro 2008
+Tx2687	-1	-1	# Bro 5272
+Tx2680	-2	-2	# Bro 5273
+
+>1
+Tx3388 is SumEnd SumEnd 2684,2679,2683,2682
+Tx3388	-33880	-33881	# Bro 2009
+Tx2684	-3	-3	# Bro 5279
+Tx2679	-4	-4	# Bro 5280

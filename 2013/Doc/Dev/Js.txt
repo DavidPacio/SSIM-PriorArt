@@ -1,0 +1,307 @@
+JavaScript Snippets
+-------------------
+php.js for js versions of php functions. Great stuff!
+------
+http://phpjs.org/pages/home
+
+  //if (to !== undefined) {
+    if (to === ~~to) {
+
+
+JavaScript
+==========
+Formatting numbers: http://www.mredkj.com/javascript/numberFormat.html#addcommas
+
+The Javascript Reference Series
+http://www.hunlock.com/blogs/Essential_Javascript_--_A_Javascript_Tutorial
+
+OPERATORS: &&   ||   !
+----------------------
+http://www.devguru.com/technologies/ecmascript/quickref/logical_operators.html
+The logical operators are generally used with Boolean values and, when they are, they return a Boolean value.
+However, both && and || actually return the value of one of their operands, so if the relevent operand is not a Boolean value, the operator may return a non-Boolean value. 
+
+&&
+This is the logical AND operator, which returns a Boolean true if both the operands are true.
+Logically it follows that if the first operand is false, then the whole expression is false, and this is how the operator works.
+It first evaluates the left hand operand, and if this returns false then, without going any further, it returns false for the whole expression.
+Otherwise it returns the value of the second operand: true or false for a Boolean value, or the actual value itself if non-Boolean.
+
+Assuming
+ a = 3
+ b = 5
+ c = 3
+the following examples all return true:
+ 
+if((a == c) && (b == 5))
+x = "bread" && (c == 3)
+ 
+... while the following return 'cheese':
+ 
+x = (b > c) && "cheese"
+x = "bread" && "cheese"
+ 
+||
+This is the logical OR operator and it returns a value of true if one or both of the operands is true.
+It works by first evaluating the left-hand operand and, if this is true, disregarding the right-hand one and returning true for the whole expression.
+If, however, the left-hand operand is false, then it returns the value of the right-hand operand: true or false if Boolean, or else the value itself.
+These next examples both return true:
+ 
+if((a == c) || (b == 9))
+x = (a > b) || (c == 3)
+ 
+...while this one returns 'cheese':
+ 
+x = (a > b) || "cheese"
+ 
+If, however, the first operand is not a Boolean value, the OR operator returns the value of the first operand whether the second is true or not; in the next example 'bread':
+ 
+x = "bread" || (c == 3)
+ 
+!
+This is the logical NOT operator which returns false if its single operand can be converted to true, or if it is a non-Boolean value:
+ 
+x = !(a == c)
+x = !"cheese"
+ 
+...and true if its operand can be converted to false: 
+ 
+x = !(a > b)
+
+When is a mouseout not a mouseout?
+----------------------------------
+http://www.sitepoint.com/blogs/2008/11/25/techy-treasures-3-when-is-a-mouseout-not-a-mouseout/
+
+
+http://kangax.github.com/es5-compat-table/
+
+MDN
+e.g. for forEach: https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/forEach
+
+Firebug
+-------
+For debugging use:
+console.log(...);
+
+
+HTML 5 Local Storage - moved to SnippetsHtml5.txt
+
+HTML 5 Web Workers - moved to SnippetsHtml5.txt
+
+Favelets (JS Favourites)
+--------
+http://www.pixy.cz/pixylophone/favelets/
+
+Removing js and css files
+-------------------------
+http://www.javascriptkit.com/javatutors/loadjavascriptcss2.shtml
+http://stackoverflow.com/questions/964631/removing-link-element-with-jquery
+
+
+Closures
+--------
+Javascript Closures: http://jibbering.com/faq/notes/closures/
+
+JavaScript Closures 101- they're not magic: <=== Good
+http://www.javascriptkit.com/javatutors/closures.shtml
+http://www.javascriptkit.com/javatutors/closures2.shtml
+
+Whenever you use function inside another function, a closure is used.
+A closure in JavaScript is like keeping a copy of the all the local variables, just as they were when a function exited.
+A new set of local variables is kept every time a function with a closure is called (Given that the function contains a
+function declaration inside it, and a reference to that inside function is either returned or an external reference is
+kept for it in some way).
+
+http://www.bennadel.com/blog/1482-A-Graphical-Explanation-Of-Javascript-Closures-In-A-jQuery-Context.htm
+
+http://www.devproconnections.com/article/javascript/javascript-closures-143684
+Another way to describe closures is that nested functions have access to the local variables of the functions they are defined within and retain references to those variables even when the inner function has a longer lifetime than the parent function. (I credit Douglas Crockford, Yahoo!’s chief JavaScript architect, for inspiring this description.)
+
+http://www.devproconnections.com/article/javascript/javascript-closures-143952
+
+A closure is a special kind of object that combines two things: a function, and the environment in which that function was created. The environment consists of any local variables that were in-scope at the time that the closure was created.
+
+function counter() {
+ var i = 0;
+ return {
+ count: function() {
+ return i++;
+ },
+ value: function() {
+ return i;
+ },
+ reset: function() {
+ i = 0;
+ }
+ }
+}
+
+
+Remove element from array/Remove element/property from object
+-------------------------------------------------------------
+http://wolfram.kriesing.de/blog/index.php/2008/javascript-remove-element-from-array
+
+ECMAScript 5 compatibility table
+--------------------------------
+http://kangax.github.com/es5-compat-table/
+
+Javascript implementation e.g. of array.forEach
+
+JavaScript Demystified
+----------------------
+http://devlicio.us/blogs/sergio_pereira/archive/tags/JavaScript-Demystified/default.aspx
+
+Function Calling
+----------------
+JavaScript, 5 ways to call a function 
+http://devlicio.us/blogs/sergio_pereira/archive/2009/02/09/javascript-5-ways-to-call-a-function.aspx
+
+Shift on arguments passed to fn which is not a real array
+---------------------------------------------------------
+http://stackoverflow.com/questions/676721/calling-dynamic-function-with-dynamic-parameters-in-javascript
+
+Array.prototype.shift.call(args);
+or
+[].shift.call(args);
+
+Poshytips uses this.
+
+Object to String
+----------------
+http://stackoverflow.com/questions/5612787/converting-javascript-object-to-string
+
+JSON.stringify(o)
+
+function objToString (obj) {
+    var str = '';
+    for (var p in obj) {
+        if (obj.hasOwnProperty(p)) {
+            str += p + '::' + obj[p] + '\n';
+        }
+    }
+    return str;
+}
+
+
+Key codes
+---------
+http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+http://delphi.about.com/od/objectpascalide/l/blvkc.htm
+
+sprintf
+-------
+From http://stackoverflow.com/questions/610406/javascript-equivalent-to-printf-string-format
+
+Here's a minimal implementation of sprintf in Javascript: it only does "%s". Useless to the OP, but other people who stumble across this thread coming from Google might benefit from it.
+
+function sprintf(format, etc) {
+    var arg = arguments,
+    var i = 1;
+    return format.replace(/%((%)|s)/g, function (m) { return m[2] || arg[i++] })
+}
+
+Example:
+alert(sprintf('Latitude: %s, Longitude: %s', 41.847, -87.661));
+
+-->
+
+function sprintf(format) {
+  var arg = arguments, i = 1;
+  return format.replace(/%((%)|s)/g, function (m) { return m[2] || arg[i++] })
+}
+
+
+Why /%((%)|s)/g when /%s/g works, for the example anyway?
+
+--
+
+See http://phpjs.org/functions/sprintf:522 for a full one
+
+and in its comments re adding a thousands separator:
+
+s/\d{1,3}(?=(\d{3})+(?!\d))/$&,/g
+
+This javascript code (based on the regex) does it:
+  function thousands (a){
+    return a.replace (/\d{1,3}(?=(\d{3})+(?!\d))/g,"$&,");
+  }
+
+
+IE Stuff
+========
+http://msdn.microsoft.com/en-us/library/hh772374%28v=vs.85%29.aspx
+
+Detect IE Version
+-----------------
+http://james.padolsey.com/javascript/detect-ie-in-js-using-conditional-comments/
+https://gist.github.com/527683
+
+var ie = (function(){
+  var undef,
+    v = 3,
+    div = document.createElement('div'),
+    all = div.getElementsByTagName('i');
+  while (
+      div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->', all[0]
+  );
+  return v > 4 ? v : undef;
+}());
+
+var ie = (function() {
+  var v = 3, div = document.createElement('div'), a = div.all || [];
+  while (div.innerHTML = '<!--[if gt IE '+(++v)+']><br><![endif]-->', a[0]);
+  return v > 4 ? v : !v;
+}());
+
+
+setTimeout
+----------
+To allow fn parameters to be passed in IE as in other browsers:
+http://der-design.com/javascripts/cross-browser-settimeout
+
+IE10??
+http://msdn.microsoft.com/en-us/library/hh773165%28v=vs.85%29.aspx
+
+
+High Resolution Time
+--------------------
+http://jspro.com/apis/discovering-the-high-resolution-time-api/#.UMLwx4az5OI
+performance.now()
+
+performance.now() vs Date.now()
+
+
+Prototypes in JavaScript
+------------------------
+http://jspro.com/raw-javascript/prototypes-in-javascript/
+
+
+Back to Basics: JavaScript Hoisting and IIFE = immediately-invoked function expression
+                           --------     ----   ---------------------------------------
+http://jspro.com/raw-javascript/back-to-basics-javascript-hoisting/
+
+Remove whitespace
+-----------------
+str = str.replace(/^\s+|\s+$/g, '').replace(/[\r\n]*\s*[\r\n]+/g, ' ').replace(/[ \t]+/g, ' ')
+from http://jspro.com/raw-javascript/intelligent-string-abbreviation/
+
+Array Extras
+------------
+http://jspro.com/raw-javascript/back-to-basics-array-extras/
+
+forEach()
+map()
+filter()
+every() and some()
+reduce() and reduceRight()
+indexOf() and lastIndexOf()
+
+
+How to Trace JavaScript Performance Using Your Developer Console
+----------------------------------------------------------------
+http://www.sitepoint.com/javascript-performance-developer-console/
+
+
+Demystifying Modern Social APIs: Social Sign-In
+-----------------------------------------------
+http://www.sitepoint.com/demystifying-modern-social-apis-social-sign-in/

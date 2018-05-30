@@ -1,0 +1,5 @@
+﻿BroId	Type	Level	Bro Name	Name0	N1	N2	N3	N4	N5	N6	N7	N8	ShortName	Master	Ref	Folio	DataType	Sign	AcctTypes	PostType	RO	ExclProps	AllowProps	Items	SumUp	Check	Period	StartEnd	Zones	Order	Descr	Comment	Scratch	I Usable Props	I Sum Usable Props	I M# Item Info	I StartEnd	I Slave Ids	I Slave Filtering
+BroSet Type: CoA Main, Name: CoA Test 1 By Includes, Descr: Same as Test 1 via Includes, SortKey: C5
+Include BroSet CoA Revenue
+Include BroSet CoA CoS
+Include BroSet CoA The Rest

@@ -1,0 +1,277 @@
+Css Snippets
+------------
+
+http://css3maker.com/
+
+http://www.thecssninja.com/css/custom-inputs-using-css
+http://www.w3schools.com/cssref/
+
+http://www.mozilla.org/en-US/firefox/technology/#css
+
+///////////////
+// CSS Stuff //
+///////////////
+
+Selectors
+=========
+http://www.w3.org/TR/CSS2/selector.html#selector-syntax
+
+Getting to Know CSS3 Selectors: Structural Pseudo-Classes
+http://www.sitepoint.com/getting-to-know-css3-selectors-structural-pseudo-classes/
+Getting to Know CSS3 Selectors: Other Pseudo-Classes
+http://www.sitepoint.com/getting-to-know-css3-selectors-other-pseudo-classes/
+
+5.3 Universal selector
+----------------------
+The universal selector, written "*", matches the name of any element type. It matches any single element in the document tree.
+
+If the universal selector is not the only component of a simple selector, the "*" may be omitted. For example:
+  *[lang=fr] and [lang=fr] are equivalent.
+  *.warning and .warning are equivalent.
+  *#myid and #myid are equivalent.
+
+5.5 Descendant Selectors
+------------------------
+h1 em
+
+div * p matches a P element that is a grandchild or later descendant of a DIV element.
+
+Combining descendant and attribute selectors,
+div p *[href] matches any element that has the "href" attribute set and is inside a P that is itself inside a DIV:
+
+Note: spaces matter!
+.grid-header .ui-icon.ui-state-hover is different from
+.grid-header .ui-icon .ui-state-hover
+
+See http://css-tricks.com/multiple-class-id-selectors/
+The first means the element which has both classes set
+The second means descendent of ....
+
+5.6 Child selectors >
+-------------------
+A child selector matches when an element is the child of some element.
+
+The following rule sets the style of all P elements that are children of BODY:
+body > P { line-height: 1.3 }
+
+The following example combines descendant selectors and child selectors:
+
+div ol>li p
+
+It matches a P element that is a descendant of an LI; the LI element must be the child of an OL element; the OL element must be a descendant of a DIV. Notice that the optional white space around the ">" combinator has been left out.
+
+5.7 Adjacent sibling selectors +
+------------------------------
+Adjacent sibling selectors have the following syntax: E1 + E2, where E2 is the subject of the selector.
+The selector matches if E1 and E2 share the same parent in the document tree and E1 immediately precedes E2,
+ignoring non-element nodes (such as text nodes and comments).
+
+Thus, the following rule states that when a P element immediately follows a MATH element, it should not be indented:
+
+math + p { text-indent: 0 }
+
+The next example reduces the vertical space separating an H1 and an H2 that immediately follows it:
+
+h1 + h2 { margin-top: -5mm }
+
+Example(s):
+
+The following rule is similar to the one in the previous example, except that it adds a class selector. Thus, special formatting only occurs when H1 has class="opener":
+
+h1.opener + h2 { margin-top: -5mm }
+
+5.8 Attribute selectors
+-----------------------
+CSS 2.1 allows authors to specify rules that match elements which have certain attributes defined in the source document.
+5.8.1 Matching attributes and attribute values
+...
+
+5.8.3 Class selectors
+---------------------
+...
+
+5.9 ID selectors
+----------------
+ID selectors have a higher specificity than attribute selectors. For example, in HTML, the selector #p123 is more specific than [id=p123] in terms of the cascade.
+
+5.10 Pseudo-elements and pseudo-classes
+---------------------------------------
+...
+Pseudo-elements:
+:before and :after pseudo-elements give access to generated content
+:first-line
+:first-letter
+
+Pseudo-classes:
+:first-child    div > p:first-child matches any P element that is the first child of a DIV element
+                The following two selectors are equivalent:
+                * > a:first-child   A is first child of any element
+                a:first-child       Same
+:link    { color: red }    /* unvisited links */
+:visited { color: blue }   /* visited links   */
+:hover   { color: yellow } /* user hovers     */
+:active  { color: lime }   /* active links    */
+:focus          For example, to draw a thick black line around an element when it has the focus, and a thick red line when it is active, the following rules can be used:
+                :focus  { outline: thick solid black }
+                :active { outline: thick solid red }
+:lang
+
+:enabled
+:disabled
+:invalid
+:checked
+:not()
+etc as per http://www.w3schools.com/cssref/css_selectors.asp
+
+:before 	p:before 	Insert content before every <p> element
+:after 	p:after 	Insert content after every <p> element
+:lang(language) 	p:lang(it) 	Selects every <p> element with a lang attribute value starting with "it"
+
+
+Font Size 62.5%
+---------------
+http://clagnut.com/blog/348/
+
+Image alignment from http://www.webkit.org/blog/175/introducing-css-gradients/
+---------------
+/* Begin Images */
+p img {
+  padding: 0;
+  max-width: 100%;
+  }
+
+/*  Using 'class="alignright"' on an image will (who would've
+  thought?!) align the image to the right. And using 'class="centered',
+  will of course center the image. This is much better than using
+  align="center", being much more futureproof (and valid) */
+
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+img.alignright {
+  padding: 4px;
+  margin: 0 0 2px 7px;
+  display: inline;
+  }
+
+img.alignleft {
+  padding: 4px;
+  margin: 0 7px 2px 0;
+  display: inline;
+  }
+
+.alignright {
+  float: right;
+  }
+
+.alignleft {
+  float: left
+  }
+/* End Images */
+
+Force Table Column Width
+------------------------
+Simple solution: Use a div with css width inside a td.
+See http://stackoverflow.com/questions/4457506/css-how-to-set-the-table-column-width-constant-regardless-of-the-amount-of-text
+for more
+
+Gradients
+---------
+https://developer.mozilla.org/en/Using_gradients
+
+http://www.webkit.org/blog/175/introducing-css-gradients/
+
+http://www.webdesignerwall.com/tutorials/cross-browser-css-gradient/
+
+background: #999; /* for non-css3 browsers */
+
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #ccc,  #000); /* for firefox 3.6+ */
+
+Vertical Align (re vertical centre or middle)
+--------------
+http://phrogz.net/css/vertical-align/index.html
+
+Sticky Footer via css. (Footer at bottom of visible window)
+-------------
+http://www.devarticles.com/c/a/HTML/HTML-and-CSS-Sticky-Footers/
+http://www.devarticles.com/c/a/HTML/Advanced-Sticky-Footers-in-HTML-and-CSS/
+
+Circle and Semicircle via css
+---------------------
+http://www.devarticles.com/c/a/Web-Style-Sheets/Drawing-Circular-Shapes-with-CSS3-and-Border-Radius/1/
+http://www.devarticles.com/c/a/Web-Style-Sheets/CSS-Semicircles-and-Web-Page-Headers/
+/* circle */
+.circle {
+     height: 200px;
+     width: 200px;
+     margin: 0 auto;
+     background-color: #00AE00;
+     font-size: 3.5em;
+     color: #fff;
+     line-height: 200px;
+     text-align: center;
+     -moz-border-radius: 100px;
+     -webkit-border-radius: 100px;
+}
+
+<div class="circle">Sample</div>
+
+Form elements Checkboxes
+------------------------
+http://www.tuttoaster.com/enhancing-forms-using-jquery-ui/12/
+http://filamentgroup.com/lab/accessible_custom_designed_checkbox_radio_button_inputs_styled_css_jquery/
+
+Buttons
+-------
+http://filamentgroup.com/lab/styling_buttons_and_toolbars_with_the_jquery_ui_css_framework/
+
+http://css3button.net/
+http://css-tricks.com/css3-button-maker/
+http://www.mightydeals.com/deal/maxbuttonspro.html?ref=news
+
+Browser Specific CSS FF vs Chrome
+---------------------------------
+http://stackoverflow.com/questions/7589302/font-variant-small-caps-shows-different-font-sizes-using-chrome-or-firefox
+
+From John Perryn
+----------------
+I came upon this item today http://vimeo.com/44773888 around 30 minutes of someone who actually made a lot of sense about planning and working with CSS elements to achieve resilience, abstraction, and modularity.
+
+
+Animated CSS3 Transform scale
+-----------------------------
+From Bdt.js as at 16.01.13 using step: as per http://stackoverflow.com/questions/5462275/animate-element-transform-rotate
+
+    // FocusWin
+    this.FocusWin = function() {
+      if (Tao&&Tao.state!==2) Tao.$a.BlurWin(2); // -> 2. Is already 2 for focus after load
+      Tao=ao;
+      switch (ao.state) { // 0: closed, 1: minimised, 2: open blurred, 3: top
+        case 1: // min so restore it
+          $tb.removeClass('wmin');
+          ao.Z=jWin.Z++;
+          $a.css({display:'block', zIndex:ao.Z, opacity:0});
+        //$a.animate({scale:[0.1,0.1]},1,function() {$a.animate({scale:[1,1],left:p.x, top:p.y, width:p.w, height:p.h, opacity:1},500,Focus)});
+        //$a.animate({transform:'scale(0.1)'},1,function() {$a.animate({transform:'scale(1)',left:p.x, top:p.y, width:p.w, height:p.h, opacity:1},500,Focus)});
+        // works  $a.css({transform:'scale(0.1)'}); $a.css({transform:'scale(1)',left:p.x, top:p.y, width:p.w, height:p.h, opacity:1});
+          $a.animate({left:p.x, top:p.y, width:p.w, height:p.h, opacity:1}, {
+              step: function(now,fx) {
+                if (fx.prop=='opacity') {
+                  console.log('step, now=',now,'fx=',fx);
+                  $(this).css('transform','scale('+now+')');
+                }
+              },
+              duration:500,
+              complete:Focus
+          });
+
+          
+The New CSS3 Relative Font Sizing Units
+---------------------------------------
+www.sitepoint.com/new-css3-relative-font-size/
+          

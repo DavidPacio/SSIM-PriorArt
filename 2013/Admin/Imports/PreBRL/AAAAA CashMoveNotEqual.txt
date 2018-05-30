@@ -1,0 +1,14 @@
+Cash movement test
+With all movement Bros defined but sum not equal to Tx542 movement -> Warning
+
+No DE Check
+ImportType:Replace
+
+Cash
+Tx541:OpActivities.ContinuingOpsExclAcqs	60,000 	30,000
+Tx575	6,330 	5,082
+Tx2646	2,646	#Posts to all of the Mvt Bros but sum not equal to Tx542 movement -> Warning. (Twice actually)
+Tx2648	2,648
+Tx2647	2,647
+Tx2649	2,649
+

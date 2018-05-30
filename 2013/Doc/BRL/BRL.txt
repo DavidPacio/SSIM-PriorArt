@@ -1,0 +1,279 @@
+BRL Work started 15.03.13
+========
+
+Add •	“In SumList of <SumEnd | PostEnd | Stock> Bro BrosId” for Bros which are in the StartEnd Sum List(s) of another Bro
+to I StartEnd column of Export
+
+Change ADO, Ado, to BDO or Bdo [Or DBO and Dbo?]
+
+Make 'Agent' a user choice word re corporates
+
+Change Id to BroId
+
+• Allow for posting of multiple Property Items per Property
+
+• Add an 'also post to' list (whatever called) to Property Items
+
+Remove the All Property Items, instead allowing just the Property Name = sum for numeric properties
+
+Add the option of prefixing Non to any Region or Country, except perhaps for RoW and RoR. Or zap those?
+
+Get DboFieldN working
+
+Add tel country code code to Countries
+Add currency field to Countries
+Add languages list to Countries with 1st (or only) one the Braiins default
+
+Reduce the Countries list to major ones only as per languages
+Reduce the Currencies list
+
+Add updating of Property Labels according to Entity Type
+
+Fix the periods etc constants on a per BroSet basis
+
+Add bits re Items and "Cannot be excluded via Bro Items property" or "Can be reduced but not to 0"
+
+Fix DimGroups
+
+Bro Doc
+=======
+- Set rule changes: only summing datatypes allowed, o'wise no datatype, folio, excl props, allowprops, items, usableprops
+
+ToDo
+====
+
+Properties/Property Items
+* P1. Replace Assoc, JV, Subsid, Quasi by Superior and Subordinate but keep TPA.
+
+* P2. Make the # (the EntityRef) for a Superior or Subordinate equal the Braiins ERef for that Entity so that an Entity can reference its Superior/Subordinates within the Braiins environment. Then all other attributes and properties could come from the other entity in the DB, and name etc changes would flow through. Thus for consolidation all group data would be available. (I.e. an Agent putting a Group through Braiins would 'have' to create entities for all subsidiaries, but surely that is legit.)
+
+  Allowance for not yet created entities will have to be made to avoid a catch 22 situation during entity creation.
+
+* P3. Remove the following Entity Property Items and instead access data in the Entities DB table for them all, accessed via the ERef as above.
+  • FullName
+  • ShortName
+  • Descr
+  • Taxonomy
+  • Type
+  • RegistrationNum
+
+  To do this it will be necessary to add any missing ones to the Entities record and add an In-BroSet column for mapping Entity data where applicable - point B1 below.
+
+* P4. Remove Property Item Group (ItemId 8) as this is handled by P5:
+
+* P5. Add mux properties to Superior (as used by a Subordinate) for:
+  • Controlling Party
+  • Ultimate Parent (Group)
+  • Immediate Parent (Group)
+
+  (Not as an enum as initially proposed as explained in P12 below.)
+
+* P6. Add properties to Subordinate (as used by a Superior) for:
+  Mux Type:
+  • Associate
+  • Joint Venture
+  • Other Participating Interest
+  • Subsidiary
+  Mux BasisDominantInfluence:
+  • Majority share holding
+  • Major common shareholder
+  • Special Purpose Entity
+
+* P7.  Remove Property Item PercentOwned (ItemId 12) as this info is held in 'PercentageHeld' Bros corresponding to your rows 25-27 (PercentageHeld, PercentageHeldByIndirectHoldings, PercentageHeldByDirectHoldings).
+
+* P8. Allow an Entity to have multiple Superiors as well as multiple Subordinates
+
+* P9. Add a Property Items option 'Allow use with Bro without any data'.
+  This idea was sparked by BasisDominantInfluence. I considered making that a Bro enum (DataType) but decided to go for the Property Item as above. However, it is quite possible that a Bro for BasisDominantInfluence which is a string in UK-GAAP would be fully covered by the property, with no actual words posted. In that case the property item label would provide the words for a report.
+
+  This option may prove useful for other Bro/Property Item combinations too.
+
+  ** Use 'String' option instead? Might be apllicable to Registered Office Address as one string too.
+
+* P10. Add a caption for groupings within properties. (Small blank lines in SS, thicker border in Property Items listing.)
+       Added as Name and Label with Name to be used for P9 purposes.
+
+* P11. Remove the following Person Property Items and instead access data in the People DB table for them all, accessed via the PersonRef:
+  • FamilyName
+  • GivenNames
+  • Salutation
+  • Position
+  • Descr
+  • FamilyNameFirst
+  • FamilyNameLast
+  • Female
+  • Male
+
+* P12. Remove the DataType column from property Items as all non-property data would be getting stored in the Braiins Entity and People DB tables = better. This is why I switched from an enum to properties for holding the Superior/Subordinate type info.
+
+* P13. Update the Property Items notes! [Partly]
+
+  Bros
+* B1. Add an In-BroSet column for mapping Entity or People data where applicable e.g. Entity.FullName for the Name Bro, which could not be posted to. This avoids a problem we had before where the Entity name was stored in 2 places, the Entity record and via Bros. The RG issued a warning if they were different but used the Bro name.
+
+* B2. Add an In-BroSet column for a Superior/Subordinate 'Applies to' list applicable if the Property Superior/Subordinate is allowed for the Bro, and the Bro is not mapped to Entity or People data as per B1 above.
+
+  Values as per your SS:
+  C,UP,IP: Posting allowable in a Subordinate for its Superior(s). (Not in the Superiors themselves.)
+  A,J,O,S: Posting allowable in a Superior for its Subordinates. (Not in the Subordinates themselves.)
+
+  Re Q2 and if c (both) is correct, then the RG or any other built-in report would need to:
+  In Superior for C,UP,IP info access the data from its Subordinates.
+  In Subordinate for A,J,O,S info access the data from its Superiors
+
+  If the answer to Q4 is 'Yes' rather than 'No' then the allowable values for this extra Bro column would need to have a second attribute to specify whether for this Bro the data applies to the alternate (Superior/Subordinate) entity or not.
+
+  Entities
+* E1. Add fields to the current Entities record for items removed in P3 that aren't there already.
+  • FullName
+  • ShortName
+  • Trading Name
+  • Former Name
+  • Date when ceased to be
+  • Descr
+  • Taxonomy
+  • Type
+  • RegistrationNum
+  • Tax Number
+  
+  E2. Add provision for Entities which are not clients of the Agent, and for them to be:
+  •  Created
+  •  Edited
+  •  Converted to client status
+
+  People
+* O1. Add fields to the current People record for items removed in P11 that aren't there already.
+  • FamilyName
+  • GivenNames
+  • Salutation
+  • Position
+  • Descr
+  • FamilyNameFirst
+  • FamilyNameLast
+  • Female
+  • Male
+
+* O2. Add a 'Ref' code to the People table. (Currently the only key is the email, but that wouldn't be a good key to use with properties.)
+
+  O3. Add provision for People who are not members of the Agent, and for them to be:
+  •  Created
+  •  Edited
+  •  Converted to member status
+
+* A1. Add Addresses
+  Address line 1
+  Address line 2
+  Address line 3
+  City or Town
+  Region, State, Province or County
+  Post or Zip Code
+  Country
+  Description or other information about address
+  Main address
+  Postal address
+  Street address
+  Registered Office address
+  Branch address
+  Factory address
+  Research and Development Centre address
+  Other address
+  Home address
+  
+  A2 Add provision for adding addresses to Entities and People and editing them
+
+* C1. Add Contacts
+  Descr	Description or other information about contact
+
+  Fixed	Fixed (landline) Telephone
+  Mobile	Mobile or Cell Telephone
+  Fax	Fax
+  CountryCode	Telephone Country Code
+  AreaCode	Telephone Area Code
+  Number	Telephone Number
+  Direct	Direct
+  Switchboard	Switchboard
+
+  Skype	Skype
+  iMessage	iMessage
+  BBM	BBM
+  MsgSys	Other Message System
+  MsgId	Message System Id/Reference
+
+  Main	Main
+  Office	Office
+  Home	Home
+  Day	Day
+  Night	Night
+  Emergency	Emergency
+  Alternative	Alternative
+
+  C2 Add provision for adding addresses to Entities and People and editing them
+
+
+Add building of Entity stuff to BuildBrlStructs
+
+Add mapping of ItemIds re Ei Items and Property classes
+
+Mapping
+-------
+In-BroRef -> Out-BroRef
+
+Factors
+- Folio
+- Props
+- Items
+  MType Items
+- Tuples
+- Concrete Eles
+- ManDims
+- ItemsDiMes
+
+
+Questions
+---------
+Allow some Property Object Items to be used in accounting posting BroRefs e.g.
+
+PublicRelations
+  InvestorRelations
+  MediaRelations
+SalesMarketing
+  Sales
+  Marketing
+
+Any properties for Quasi?
+
+SIC 12 Special purpose entities
+
+To Decide
+---------
+How to handle Tuples
+
+We will need some mechanism in In-BroSets to handle different instances of the same BroRef where that is appropriate e.g. donations to political parties A, B, C, where that 'mechanism' gets mapped to tuples and tuple instances in the Tx area.
+
+This will be an example of where 'properties all the way' will work well, I think.
+
+We could perhaps have a Property called Instances whose Items are dynamic and = the instance# or reference entered in posting.
+
+Once we allow for dynamic Property Items we could use them for other things too e.g. Director "instances" and so remove arbitrary limits like the 40 Directors in UK-GAAP. Though we would still need to cope with such limits when mapping BRL Properties to Taxonomy Dimensions.
+
+To be thought about...
+
+-----------
+
+Points/Questions to Charles
+
+- Group -> 1
+  Why needed at all?
+
+- Consol as an example of Ei reduction
+  No 'Other'
+
+  BizSegs also
+
+- 27 Subsids - quasi
+
+- K unque not within type
+
+- What does 'of this type' mean re PensionSchemes?
+
+

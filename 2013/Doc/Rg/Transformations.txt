@@ -1,0 +1,94 @@
+Change to v2 Transformations
+http://www.xbrl.org/Specification/inlineXBRL-transformationRegistry/PR-2011-07-06/inlineXBRL-transformationRegistry-PR-2011-07-06.html#d1e149
+This document indicates that the namespace name for v2 will be:
+http://www.xbrl.org/inlineXBRL/transformation/2011-07-31
+
+http://www.xbrl.org/SpecRecommendations/
+<ix:fraction  <ix:denominator  <ix:numerator
+ix:denominator
+ix:exclude
+ix:footnote
+ix:fraction
+ix:header
+ix:hidden
+ix:nonFraction
+ix:nonNumeric
+ix:numerator
+ix:references
+ix:resources
+ix:tuple
+
+Table 2: Attributes
+arcrole
+contextRef
+decimals
+escape
+footnoteID
+footnoteLinkRole
+footnoteRefs
+footnoteRole
+format
+id
+name
+precision
+order
+scale
+sign
+target
+title
+tupleID
+tupleRef
+unitRef
+
+Transformations v1
+numcomma    Re-formats numbers using comma as fraction separator into XSD non-negative decimal type
+numcommadot Re-formats numbers using commas as thousands separator and dot as fraction separator into XSD non-negative decimal type
+numdash     Re-formats accounting notation ‘-‘ as value zero in XSD nonnegative decimal type
+numdotcomma Re-formats numbers using dot as thousands separator and comma as fraction separator into XSD non-negative decimal type
+numspacedot Re-formats numbers using space as thousands separator and dot as fraction separator into XSD non-negative decimal type
+numspacecomma Re-formats numbers using space as thousands separator and comma as fraction separator into XSD non-negativedecimal type
+dateslashus Re-formats a US-style slash-separated date (MM/DD/(YY)YY) into XSD date format
+dateslasheu Re-formats a EU-style slash-separated date (DD/MM/(YY)YY) into XSD date format
+datedotus   Re-formats a US-style dot-separated date  (MM.DD.(YY)YY)into XSD date format
+datedoteu   Re-formats an EU-style dot-separated date (DD.MM.(YY)YY) into XSD date format
+datelongus  Re-formats a US-style long date (Month DD, (YY)YY) into XSD date format
+datelonguk  Re-formats a UK-style long date (DD Month (YY)YY) into XSD date format
+dateshortus Re-formats a US-style short date (mon DD, (YY)YY) into XSD date format
+dateshortuk Re-formats a UK-style short date (DD mon (YY)YY) into XSD date format
+
+08.02.12 Changed from v1 to v2
+v1              v2
+numcommadot     numcommadecimal
+numdash         zerodash
+datelonguk      datedaymonthyearen
+dateslasheu     datedaymonthyear
+datedoteu       datedaymonthyear
+
+Transformations v2 djh?? Change to v2
+http://www.xbrl.org/Specification/inlineXBRL-transformationRegistry/PR-2011-07-06/inlineXBRL-transformationRegistry-PR-2011-07-06.html#d1e149
+
+This document indicates that the namespace name for v2 will be:
+http://www.xbrl.org/inlineXBRL/transformation/2011-07-31
+
+Format Code               Description                                     Input type                    Output type                Input format          Output format
+ixt:booleanfalse          Any string                                      xs:string                     ixt:booleanfalseType       *                     false
+ixt:booleantrue           Any string                                      xs:string                     ixt:booleantrueType        *                     true
+ixt:datedaymonth          Numeric date recurring day and month            ixt:datedaymonthType          xs:gMonthDay               (D)D*(M)M             --MM-DD
+ixt:datedaymonthen        English date recurring day and month            ixt:datedaymonthenType        xs:gMonthDay               (D)D*Mon(th)          --MM-DD
+ixt:datedaymonthyear      Numeric date day month and year                 ixt:datedaymonthyearType      xs:date                    (D)D*(M)M*(Y)Y(YY)    YYYY-MM-DD
+ixt:datedaymonthyearen    English date day month and year                 ixt:datedaymonthyearenType    xs:date                    (D)D*Mon(th)*(Y)Y(YY) YYYY-MM-DD
+ixt:dateerayearmonthdayjp Japanese traditional date year month and day    ixt:dateerayearmonthdayjpType xs:date                    era year month day    YYYY-MM-DD
+ixt:dateerayearmonthjp    Japanese traditional date year and month        ixt:dateerayearmonthjpType    xs:gYearMonth              era year month        YYYY-MM
+ixt:datemonthday          Numeric date recurring month and day            ixt:datemonthdayType          xs:gMonthDay               (M)M*(D)D             --MM-DD
+ixt:datemonthdayen        English date recurring month and day            ixt:datemonthdayenType        xs:gMonthDay               Mon(th)*(D)D          --MM-DD
+ixt:datemonthdayyear      Numeric date month day and year                 ixt:datemonthdayyearType      xs:date                    (M)M*(D)D*(Y)Y(YY)    YYYY-MM-DD
+ixt:datemonthdayyearen    English date month day and year                 ixt:datemonthdayyearenType    xs:date                    Mon(th)*(D)D*(Y)Y(YY) YYYY-MM-DD
+ixt:datemonthyearen       English date month and year                     ixt:datemonthyearenType       xs:gYearMonth              Mon(th)*(Y)Y(YY)      YYYY-MM
+ixt:dateyearmonthdaycjk   Japanese/Chinese/Korean date year month and day ixt:dateyearmonthdaycjkType   xs:date                    year month day        YYYY-MM-DD
+ixt:dateyearmonthen       English date year and month                     ixt:dateyearmonthenType       xs:gYearMonth              (Y)Y(YY)*Mon(th)      YYYY-MM
+ixt:dateyearmonthcjk      Japanese/Chinese/Korean date year and month     ixt:dateyearmonthcjkType      xs:gYearMonth              year month            YYYY-MM
+ixt:nocontent             Any string                                      xs:string                     ixt:nocontentType          *
+ixt:numcommadecimal       Number with comma fraction separator            ixt:numcommadecimalType       ixt:nonNegativeDecimalType nnn*nnn*nnn,n          nnnnnnnnn.n
+ixt:numdotdecimal         Number with dot fraction separator              ixt:numdotdecimalType         ixt:nonNegativeDecimalType nnn*nnn*nnn.n          nnnnnnnnn.n
+ixt:numunitdecimal        Number with unit strings                        ixt:numunitdecimalType        ixt:nonNegativeDecimalType nnn*nnn Unit nn (Unit) nnnnnnnnn.n
+ixt:zerodash              Zero dash                                       ixt:zerodashType              ixt:zeroIntegerType        -                      0

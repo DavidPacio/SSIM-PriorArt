@@ -1,0 +1,145 @@
+Plan And Tasks Started 26.01.11 Last update 20.02.11
+==============
+
+Main Web Site www.Braiins.com
+=============
+. Header with Logo, Name, background image, Login/Logout
+. Footer
+. Menu
+. Links to the other sites:
+  The Braiins Desktop desk.braiins.com [Only active when logged in.]
+  The Braiins Blog    blog.braiins.com
+. Body for pages below
+
+- Home page
+  . Sales copy
+  . Desktop pics. Gallery?
+  . Video?
+  . Daily chuckle?
+
+- Free Trial
+  . the offer
+  . link or button to the Register page
+
+- Register
+
+- About Us
+
+- Contact Us
+
+- FAQs
+
+- Features & Benefits
+
+- Prices
+
+- Policies (Privacy and Security Policies)
+
+- Terms of Service
+
+- Testimonials [To be added only when we have some]
+
+- Sitemap
+
+The Braiins Desktop www.braiins.com/bdt
+===================
+Everything done within one screen "desktop".
+
+Title: "The Braiins Desktop"
+
+Top bar with 2 rows:
+  Small logo, Menu button, "The Braiins Desktop", and at the right: Messages icon [you have mail], Support button, Logout button, Close button
+  Agent name, Current Entity name
+
+Top bar menu to pop up with all options as per the icons below.
+Bottom task bar
+
+Plus desktop icons for:
+  Single action items:
+  . Logout -> logout and -> main site
+  . Close  -> main site without logging out
+  . Desktop (Minimise all open windows to bottom bar)
+  . Change Agent via a popup dialog [Only for people registered with multiple Agents]
+  . Change Entity via a popup dialog
+  Multiple action items, each of which will open a window with tabs for other options, as detailed below.
+  . Accounts (produce Accounts)
+  . Entities
+  . Messages
+  . Preferences
+  . Support
+  . Documentation
+  . Admin [Administrator only]
+
+Operations performed in resizeable, dragable windows, that can be maximised, standardised (set back to opening size),
+and minimised to the task bar, with tabs for the various options:
+
+- Accounts (produce Accounts)
+  . Set current year for accounts [access controlled by permissions]
+    This is when the credits are decremented, other than for demo entities,
+    not at upload data time in case someone does everything via edit.
+    Need to do a balance forward? Depends on whether we upload all years every year or just the current year. Not initially anyway.
+  . Upload data from export format run by user by copy/paste to a text box
+    . check if anything missing?
+  . Edit data in second lvel of tabs for each section with grids incl tagging if/where nec
+  . Generate Accounts with format selection option when we have multiple formats
+    Output to another tab, or possibly to a separate window just for showing accounts
+  . Reports
+    . Audit Tagging Report -> on screen view, with option to produce a pdf
+    . Entity (Client) Tagging Report -> on screen view, with option to produce a pdf
+  . Download Accpunts as an iXBRL file + optionally one or both of the tagging reports
+
+- Entity [access controlled by permissions]
+  . Add/Edit/Reset/Delete
+    Reset = back to initial data load for a real entity, back to initial state for demo entities
+  . Report tab
+    . Entities with stats
+
+- Messages system
+  . To Braiins
+  . From Braiins
+  . To other Staff?
+
+- Preferences [access controlled by permissions]
+  . Headings
+    . Master headings by entity type
+  . Layout stuff such as font choices, colours, page numbering etc
+  . More, lots more, in time
+
+- Support
+  . Open source ticket system which may require a separate url.
+    Or possibly better and perhaps even easier would be to roll our own using the message system to work within the desktop?
+
+- Documentation (Manual)
+
+- Administrator Options [Accessible only to Administrator]
+  . Credits
+    . Show current credits
+    . Buy Credits with discount for bulk purchase
+      . 4 payment options
+      . PayPal
+      . payment service to be chosen e.g. AlertPay
+      . cheque (credits only to become available on receipt of cheque)
+      . bank transfer
+    . Report tab
+      . report on credits purchased/used, within date ranges
+  . Download data export format(s)
+  . Edit Agent info
+  . Edit Administrator info
+  . Change Administrator
+  . Staff
+    . Add/edit/delete/logout Staff
+    . Edit permissions
+    . Report tab
+      . Staff list (with stats and showing who is logged in?)
+  . Reports [same rerports as above, all via one option]
+    . Credits usage
+    . Staff list
+    . Entities
+    . Audit Tagging Report (with entity selection)
+    . Entity (Client) Tagging Report (with entity selection)
+
+
+Blog blog.braiins.com
+====
+A WordPress site
+

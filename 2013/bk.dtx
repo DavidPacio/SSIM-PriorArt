@@ -1,0 +1,152 @@
+; bk.dtx
+
+; Example command file for bk, which allows for sets of files or directories to be backup up.
+; If the file exists in the target folder and has the same date/time stamp, and is the same size, it is not copied again.
+
+; Run bk with this file by entering (w/o the leading '; ') and with paths as needed:
+; bk bk.dtx
+
+; A Desktop icon may be set up with, for example:
+; Target   : "C:\Program Files\Utils\bk.exe" bk.dtx
+; Start In : "C:\Program Files\Utils"
+
+; File format
+; -----------
+; - The command file can have any name but must be a text file.
+; - Blank lines or lines which start with ';' or '//' are ignored.
+; - All active lines start with a key that ends with a ':' to define their  purpose.
+; - Multiple items on a line are separated by 2 or more spaces.
+; - Comments may be added at the end of a line, after a gap of 2 or more spaces.
+; - Double quotes i.e. " can be used to surround items that contain 2 or more spaces, and/or have leading/trailing spaces.
+; - Leading and trailing spaces are ignored, unless the item is enclosed in double quotes.
+;
+
+; Backup Data
+; -----------
+; Data to be backed up may be specified by file or directory, via file: and dir: command lines, in a list of any length.
+
+; By default, sub-directories of directories are included, to any depth. If this is not required for
+; a particular directory, it may be turned off by adding a 'sub:n' option to the command.
+
+; Options are available for base directories (source and target) to reduce the length of comamnd lines, and also
+; to allow selective backing up with Directory Lines, via either an inclusive or exclusive extension basis.
+
+; Options may be defined or re-defined at any point in the file, with options applying only to file and/or
+; directory lines that follow them in the command file.
+
+; Options
+; -------
+; All options are optional i.e. the default is used if the option is not specified.
+; Case is not significant.
+
+; Option           Valid    Def  Comments
+;                  Values   ault
+; base dir:        dddddd    ""  Specifies a base (or root) directory which is prepended to subsequent file names
+;                                in File Lines and to directory names in Directory Lines which start with ".".
+;                                BK adds or removes '/' or '\' characters as necessary. This option can be used
+;                               multiple times to apply to different groups of files or directories.
+; target base dir: dddddd    ""  Specifies a base (or root) directory which is prepended to subsequent target file names
+;                                in File Lines and to target directory names in Directory Lines which start with ".".
+;                                BK adds or removes '/' or '\' characters as necessary. This option can be used
+;                                multiple times to apply to different groups of files or directories.
+; incl-extensions: iiiiii    ""  Comma separated list up to 80 characters long of extensions to be included in the backup
+;                                of directories following the option, unless the directory line includes its own include
+;                                extensions list. This option can be used multiple times to apply to different groups of directories.
+; excl-extensions: eeeeee    ""  Comma separated list up to 80 characters long of extensions to be excluded from the backup
+;                                of directories following the option, unless the directory line includes its own exclude
+;                                extensions list. This option can be used multiple times to apply to different groups of directories.
+; time comparison: a|b|d|e|l  a  Specifies how the timestamps of the source and target files are to be compared in deciding whether
+;                                to copy the file or not.
+;                                a = after     i.e. copy if source file timestamp is after the target file timestamp
+;                                b = before    i.e. copy if source file timestamp is before the target file timestamp
+;                                d = different i.e. copy if source file timestamp is different from the target file timestamp
+;                                e = earlier = same as before
+;                                l = later   = same as after
+; time only:       y|n       n  If 'y' means base copy/don't copy decision only on the files' timestamps and ignore size differences
+; ask:             y|n       n  If 'y' means ask before copying each file. May also be applied on a dir: basis.
+;
+; File Lines
+; ----------
+; file: ffffff  ffffff
+; - First file name is source, second is target. Both must be specified.
+; - If the (source) file name starts with "." the current base directory (see base dir: option above) is prepended to
+;   the file name in place of the ".".
+; - If the (target) file name starts with "." the current target base directory (see target base dir: option above) is prepended to
+;   the file name in place of the ".".
+
+; Directory Lines
+; ---------------
+; dir: dddddd dddddd {incl-extensions: iiiiii  excl-extensions: eeeeee  excl-files: fffff  sub:n  ask:[y|n]}
+; - First directory name is source, second is target. Both must be specified.
+; - incl-extensions: iiiiii is an optional include extensions list that will overide the current list from an incl-extensions: iiiiii option.
+; - excl-extensions: eeeeee is an optional exclude extensions list that will overide the current list from an excl-extensions: eeeeee option.
+; - excl-files: fffff       is an optional exclude files list
+; - sub:n allows the default processing of sub-directories (any level) to be turned off.
+; - ask:[y|n] If 'y' means ask before copying each file. ask:n on a dir: line can be used to override a global ask:y
+; - If the (source) directory name starts with "." the current base directory (see base dir: option above) is prepended
+;   to the directory name in place of the ".".
+; - If the (target) directory name starts with "." the current target base directory (see target base dir: option above) is prepended to
+;   the directory name in place of the ".".
+; NB: dir: options must be used in the above order
+
+; Note: Copying of directories is prevented where this could cause repeated replication e.g. when a directory is backed
+;  up to a sub-directory of itself as in:
+;  dir: c:\MyData  c:\MyData.bak
+;  This will copy all files and sub-directories in c:MyData to c:\MyData.bak except for the sub-directory c:\MyData.bak itself, or
+;  otherwise the copying would keep going creating '.bak' sub-directories until the allowable directory name length is exceeded.
+
+;incl-extensions: php,htm,html,shtml,c,cpp,hpp,txt,dtx
+excl-extensions: bak,log,fxt,exe,txt~,php~,inc~,css~
+
+// For Acer Vista Notebook 21.11.07
+;base dir: "c:\Users\David"
+;dir: .AppData\Roaming\Thunderbird\Profiles\lnqwzyr5.default\Mail  d:\backup\Thunderbird  excl-extensions:msf  excl-files:Trash,Junk
+;dir: .Documents                                            d:\Backup\Documents
+;dir: .Music                                                d:\Backup\Music
+;dir: .Pictures                                             d:\Backup\Pictures
+;dir: c:\#SitesDev                                          d:\Backup\SitesDev
+;dir: c:\#Tat                                               d:\Backup\Tat
+;dir: c:\Utils                                              d:\Backup\Utils  excl-files:bk.dtx
+
+;dir: c:\Sites                                             e:\Backup\Sites  excl-files:Thumbs.db
+;dir: c:\#MOSSO                                            e:\Backup\MOSSO  excl-files:Thumbs.db
+;dir: c:\#TARI                                             e:\Backup\TARI   excl-files:Thumbs.db
+;dir: c:\Forex                                             e:\Backup\Forex  excl-files:Thumbs.db
+;dir: G:\experts                                            e:\Backup\GoMarket
+;dir: G:\tester                                             e:\Backup\GoMarket\tester
+
+// Dell Desktop XP
+;dir: c:\#HostGator                                         e:\Backup\HostGator  excl-files:Thumbs.db
+;dir: b:\                                                   e:\Braiins    excl-files:Thumbs.db
+;dir: c:\#Tat                                               e:\Backup\Tat
+;;ir: c:\Development stufff                                 e:\Development stufff  excl-files:Thumbs.db
+;base dir: "c:\Documents and Settings\David Hartley"
+;dir: .My Documents                                         e:\Backup\My Documents  excl-extensions:gg  excl-files:Thumbs.db
+;base dir: "c:\Documents and Settings\David Hartley\Application Data\Thunderbird\Profiles\971xu8xa.default"
+;;dir: .                                                    e:\Backup\Thunderbird  incl-extensions:mab,sdb  sub:n // Bug? incl-extensions:mab,sdb files weren't copied
+;file: .abook.mab                                           e:\Backup\Thunderbird\abook.mab
+;file: .abook-1.mab                                         e:\Backup\Thunderbird\abook-1.mab
+;file: .storage.sdb                                         e:\Backup\Thunderbird\storage.sdb
+;dir: .Mail                                                 e:\Backup\Thunderbird\Mail  excl-extensions:msf  excl-files:Trash,Junk
+;dir: c:\Program Files\Utils                                e:\Backup\Utils  excl-files:bk.dtx
+
+// Toshiba LT 15.04.12
+dir: b:\                                                   e:\Backup\B    excl-files:Thumbs.db
+base dir: c:\Users\David
+dir: .Documents                                            e:\Backup\My Documents  excl-files:Thumbs.db
+;dir: .Music                                                e:\Backup\My Music
+;dir: .Pictures                                             e:\Backup\My Pictures
+base dir: c:\Users\David\AppData\Roaming\Thunderbird\Profiles\dlseb5h3.default
+file: .abook.mab                                           e:\Backup\Thunderbird\abook.mab
+file: .abook-1.mab                                         e:\Backup\Thunderbird\abook-1.mab
+file: .abook-2.mab                                         e:\Backup\Thunderbird\abook-2.mab
+file: .history.mab                                         e:\Backup\Thunderbird\history.mab
+;ile: .storage.sdb                                         e:\Backup\Thunderbird\storage.sdb
+dir: .Mail                                                 e:\Backup\Thunderbird\Mail  excl-extensions:msf,mozmsgs,wdseml  excl-files:Trash,Junk
+dir: .ImapMail                                             e:\Backup\Thunderbird\ImapMail  excl-extensions:msf,mozmsgs,wdseml
+dir: c:\Program Files (x86)\EE Backup                      e:\Backup\EE Backup  excl-files:bk.dtx
+
+// Forex WIP added 02.10.13
+dir: c:\Forex\Accounts\VantageMT4/wip                      e:\Backup\Forex\Sam\wip  excl-files:Thumbs.db
+
+

@@ -1,0 +1,198 @@
+Activities Elements -> Bros using Braiins Activity Dimension
+
+  Distribution     Distrib
+  Farming          Farming
+  Manufacturing    Manuf
+  Trading          Trading
+  Other            Other
+
+Distrib
+680 - Hypercube - Operating Activities [13]
+  [A] 2953 Items inheriting Operating Activities dimension
+    [A] 1616 Detailed P&L items inheriting Operating Activities dimension [heading]
+      [A] 4322 Sales, costs and profit by type of activity [heading]
+        [A] 4849 Trading activities [heading]
+        [A] 3160 Manufacturing activities [heading]
+        [A] 2050 Farming activities [heading]
+~       [A] 1737 Distribution activities [heading]
+          [C] 4905 [13] Turnover, distribution activities
+            [C] 399 [13] Basic sales revenue, distribution activities
+            [C] 3553 [13] Other income, distribution activities
+          [A] 4538 Stocks / inventory, distribution activities [heading]
+            [C] 2723 [13] Increase (decrease) in stocks / inventory, distribution activities
+            [C] 4537 [13] Stocks / inventory, distribution activities
+            [C] 2728 [13] Increase (decrease) in stocks of raw materials and consumables, distribution activities
+            [C] 4552 [13] Stocks of raw materials and consumables, distribution activities
+            [C] 2745 [13] Increase (decrease) in work in progress, distribution activities
+            [C] 5093 [13] Work in progress, distribution activities
+            [C] 2689 [13] Increase (decrease) in finished goods and goods for resale, distribution activities
+            [C] 2121 [13] Finished goods and goods for resale, distribution activities
+            [C] 2706 [13] Increase (decrease) in payments on account for stocks, distribution activities
+            [C] 4547 [13] Stocks, payments on account, distribution activities
+          [C] 1030 [13] Cost of sales, distribution activities
+            [C] 1856 [13] Employment costs, distribution activities
+              [C] 4454 [13] Staff costs, distribution activities
+              [C] 4560 [13] Subcontractor costs, distribution activities
+            [C] 3905 [13] Premises costs, distribution activities
+            [C] 3182 [13] Materials costs, distribution activities
+            [C] 2506 [13] Hire and leasing of plant, equipment and vehicles, distribution activities
+            [C] 5053 [13] Vehicle running costs, distribution activities
+            [C] 4217 [13] Repairs, renewals and maintenance, distribution activities
+            [C] 3710 [13] Own work capitalised, distribution activities
+          [C] 3489 [13] Other costs, distribution activities
+            [C] 1477 [13] Description of other cost, distribution activities
+            [C] 5016 [13] Value of other cost, distribution activities
+          [C] 4763 [13] Total costs, distribution activities
+          [C] 3417 [13] Operating profit before tax, distribution activities
+        [A] 3464 Other activities [heading]
+
+Farming
+680 - Hypercube - Operating Activities [13]
+  [A] 2953 Items inheriting Operating Activities dimension
+    [A] 1616 Detailed P&L items inheriting Operating Activities dimension [heading]
+      [A] 4322 Sales, costs and profit by type of activity [heading]
+        [A] 4849 Trading activities [heading]
+        [A] 3160 Manufacturing activities [heading]
+~       [A] 2050 Farming activities [heading]
+          [C] 4906 [13] Turnover, farming activities
+            [C] 400 [13] Basic sales revenue, farming activities
+            [C] 3554 [13] Other income, farming activities
+          [A] 4540 Stocks / inventory, farming activities [heading]
+            [C] 2724 [13] Increase (decrease) in stocks / inventory, farming activities
+            [C] 4539 [13] Stocks / inventory, farming activities
+            [C] 2729 [13] Increase (decrease) in stocks of raw materials and consumables, farming activities
+            [C] 4553 [13] Stocks of raw materials and consumables, farming activities
+            [C] 2746 [13] Increase (decrease) in work in progress, farming activities
+            [C] 5094 [13] Work in progress, farming activities
+            [C] 2690 [13] Increase (decrease) in finished goods and goods for resale, farming activities
+            [C] 2122 [13] Finished goods and goods for resale, farming activities
+            [C] 2707 [13] Increase (decrease) in payments on account for stocks, farming activities
+            [C] 4548 [13] Stocks, payments on account, farming activities
+          [C] 1031 [13] Cost of sales, farming activities
+            [C] 1858 [13] Employment costs, farming activities
+              [C] 4456 [13] Staff costs, farming activities
+              [C] 4562 [13] Subcontractor costs, farming activities
+            [C] 3907 [13] Premises costs, farming activities
+            [C] 3184 [13] Materials costs, farming activities
+              [C] 4342 [13] Seeds and fertilisers costs, farming activities
+              [C] 2056 [13] Feed and bedding costs, farming activities
+              [C] 3594 [13] Other materials costs, farming activities
+                [C] 1492 [13] Description of other materials cost, farming activities
+                [C] 5021 [13] Value of other materials cost, farming activities
+            [C] 2508 [13] Hire and leasing of plant, equipment and vehicles, farming activities
+            [C] 4219 [13] Repairs, renewals and maintenance, farming activities
+            [C] 3712 [13] Own work capitalised, farming activities
+          [C] 3490 [13] Other costs, farming activities
+            [C] 1478 [13] Description of other cost, farming activities
+            [C] 5017 [13] Value of other cost, farming activities
+          [C] 4764 [13] Total costs, farming activities
+          [C] 3418 [13] Operating profit before tax, farming activities
+        [A] 1737 Distribution activities [heading]
+        [A] 3464 Other activities [heading]
+
+Manuf
+680 - Hypercube - Operating Activities [13]
+  [A] 2953 Items inheriting Operating Activities dimension
+    [A] 1616 Detailed P&L items inheriting Operating Activities dimension [heading]
+      [A] 4322 Sales, costs and profit by type of activity [heading]
+        [A] 4849 Trading activities [heading]
+~       [A] 3160 Manufacturing activities [heading]
+          [C] 4909 [13] Turnover, manufacturing activities
+            [C] 401 [13] Basic sales revenue, manufacturing activities
+            [C] 3556 [13] Other income, manufacturing activities
+          [A] 4543 Stocks / inventory, manufacturing activities [heading]
+            [C] 2725 [13] Increase (decrease) in stocks / inventory, manufacturing activities
+            [C] 4542 [13] Stocks / inventory, manufacturing activities
+            [C] 2730 [13] Increase (decrease) in stocks of raw materials and consumables, manufacturing activities
+            [C] 4554 [13] Stocks of raw materials and consumables, manufacturing activities
+            [C] 2747 [13] Increase (decrease) in work in progress, manufacturing activities
+            [C] 5096 [13] Work in progress, manufacturing activities
+            [C] 2691 [13] Increase (decrease) in finished goods and goods for resale, manufacturing activities
+            [C] 2123 [13] Finished goods and goods for resale, manufacturing activities
+            [C] 2708 [13] Increase (decrease) in payments on account for stocks, manufacturing activities
+            [C] 4549 [13] Stocks, payments on account, manufacturing activities
+          [C] 1033 [13] Cost of sales, manufacturing activities
+            [C] 1859 [13] Employment costs, manufacturing activities
+              [C] 4457 [13] Staff costs, manufacturing activities
+              [C] 4563 [13] Subcontractor costs, manufacturing activities
+            [C] 1999 [13] Factory costs, manufacturing activities
+              [C] 3908 [13] Premises costs, manufacturing activities
+              [C] 2502 [13] Hire and leasing of plant and equipment, manufacturing activities
+              [C] 4220 [13] Repairs, renewals and maintenance, manufacturing activities
+            [C] 3185 [13] Materials costs, manufacturing activities
+            [C] 3713 [13] Own work capitalised, manufacturing activities
+          [C] 3491 [13] Other costs, manufacturing activities
+            [C] 1479 [13] Description of other cost, manufacturing activities
+            [C] 5018 [13] Value of other cost, manufacturing activities
+          [C] 4766 [13] Total costs, manufacturing activities
+          [C] 3419 [13] Operating profit before tax, manufacturing activities
+        [A] 2050 Farming activities [heading]
+        [A] 1737 Distribution activities [heading]
+        [A] 3464 Other activities [heading]
+
+Trading
+680 - Hypercube - Operating Activities [13]
+  [A] 2953 Items inheriting Operating Activities dimension
+    [A] 1616 Detailed P&L items inheriting Operating Activities dimension [heading]
+      [A] 4322 Sales, costs and profit by type of activity [heading]
+~       [A] 4849 Trading activities [heading]
+          [C] 4912 [13] Turnover, trading activities
+            [C] 403 [13] Basic sales revenue, trading activities
+            [C] 3558 [13] Other income, trading activities
+          [A] 4545 Stocks / inventory, trading activities [heading]
+            [C] 2726 [13] Increase (decrease) in stocks / inventory, trading activities
+            [C] 4544 [13] Stocks / inventory, trading activities
+            [C] 2731 [13] Increase (decrease) in stocks of raw materials and consumables, trading activities
+            [C] 4555 [13] Stocks of raw materials and consumables, trading activities
+            [C] 2748 [13] Increase (decrease) in work in progress, trading activities
+            [C] 5097 [13] Work in progress, trading activities
+            [C] 2692 [13] Increase (decrease) in finished goods and goods for resale, trading activities
+            [C] 2124 [13] Finished goods and goods for resale, trading activities
+            [C] 2709 [13] Increase (decrease) in payments on account for stocks, trading activities
+            [C] 4550 [13] Stocks, payments on account, trading activities
+          [C] 1035 [13] Cost of sales, trading activities
+            [C] 1861 [13] Employment costs, trading activities
+              [C] 4459 [13] Staff costs, trading activities
+              [C] 4565 [13] Subcontractor costs, trading activities
+            [C] 3187 [13] Materials costs, trading activities
+            [C] 3910 [13] Premises costs, trading activities
+            [C] 2522 [13] Hire of plant and equipment, trading activities
+            [C] 4222 [13] Repairs, renewals and maintenance, trading activities
+            [C] 3715 [13] Own work capitalised, trading activities
+          [C] 3493 [13] Other costs, trading activities
+            [C] 1481 [13] Description of other cost, trading activities
+            [C] 5020 [13] Value of other cost, trading activities
+          [C] 4768 [13] Total costs, trading activities
+          [C] 3421 [13] Operating profit before tax, trading activities
+        [A] 3160 Manufacturing activities [heading]
+        [A] 2050 Farming activities [heading]
+        [A] 1737 Distribution activities [heading]
+        [A] 3464 Other activities [heading]
+
+Other
+680 - Hypercube - Operating Activities [13]
+  [A] 2953 Items inheriting Operating Activities dimension
+    [A] 1616 Detailed P&L items inheriting Operating Activities dimension [heading]
+      [A] 4322 Sales, costs and profit by type of activity [heading]
+        [A] 4849 Trading activities [heading]
+        [A] 3160 Manufacturing activities [heading]
+        [A] 2050 Farming activities [heading]
+        [A] 1737 Distribution activities [heading]
+~       [A] 3464 Other activities [heading]
+          [C] 4910 [13] Turnover, other activities
+            [C] 402 [13] Basic sales revenue, other activities
+            [C] 3557 [13] Other income, other activities
+          [C] 1034 [13] Cost of sales, other activities
+            [C] 1860 [13] Employment costs, other activities
+              [C] 4458 [13] Staff costs, other activities
+              [C] 4564 [13] Subcontractor costs, other activities
+            [C] 3909 [13] Premises costs, other activities
+            [C] 3186 [13] Materials costs, other activities
+            [C] 2509 [13] Hire and leasing of plant, equipment and vehicles, other activities
+            [C] 4221 [13] Repairs, renewals and maintenance, other activities
+            [C] 3714 [13] Own work capitalised, other activities
+          [C] 3492 [13] Other costs, other activities
+            [C] 1480 [13] Description of other cost, other activities
+            [C] 5019 [13] Value of other cost, other activities
+          [C] 4767 [13] Total costs, other activities
+          [C] 3420 [13] Operating profit before tax, other activities

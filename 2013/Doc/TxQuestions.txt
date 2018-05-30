@@ -1,0 +1,6 @@
+Taxonomy Related Questions started 25.12.11
+==========================
+
+1. Is tuple descrption nesting with comparative tuples really necessary if the two descriptions are the same?
+
+2. Is a 'start' tag legal for a StartEnd = Acc bro?

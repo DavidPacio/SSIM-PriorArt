@@ -1,0 +1,51 @@
+Donations.txt
+
+BroSet: DataImport Test2
+ImportType: Replace
+#No DE Check
+#Debug:1
+
+Import to test Property Ei use with Donations as per Charles' A-Dons Limited-2011-12-04-AccountsTRAP.html example (with a few adjustments)
+
+As per example accounts
+Political donations
+During the year the company made political donations of £4,406. Individual donations to EU political parties were:
+EU Party One            1,201
+EU Party Two            1,202
+EU Party Three          1,203
+
+The company has also contributed £800 to non-EU political parties.
+
+Charitable donations
+During the year the company made charitable donations of £3,006. Individual donations were:
+Save the Children       1,001
+Save the Parents        1,002
+Save the Planet         1,003
+
+And in the Detailed Profit and Loss Account
+
+Administrative expenses
+Charitable donations    3,006
+Political donations     3,606
+
+
+EntityInfo.Dates.PeriodStart       	2009-01-01	2008-01-01
+EntityInfo.Dates.PeriodEnd         	2009-12-31	2008-12-31
+
+Charitable
+SchDirRep.Donations.Charitable,Region.EU,Instance.StKids    	1,001|Save the Children	101|Save the Children
+SchDirRep.Donations.Charitable,Region.EU,Instance.StParents  	1,002|Save the Parents	102|Save the Parents
+SchDirRep.Donations.Charitable,Region.EU,Instance.StPlanetU  	1,003|Save the Planet	103|Save the Planet
+
+Political
+SchDirRep.Donations.Political,Region.EU,Instance.EUParty1  	1,201|EU Party One	201|EU Party One
+SchDirRep.Donations.Political,Region.EU,Instance.EUParty2  	1,202|EU Party Two	202|EU Party Two
+SchDirRep.Donations.Political,Region.EU,Instance.EUParty3  	1,203|EU Party Three	203|EU Party Three
+SchDirRep.Donations.Political,Region.RoW                  	800   	204|NonEU
+#SchInputDirRep.PoliticalCharitableDonations.Political.NonEU              	800   	204
+
+PL.Exp.Donations.Political,ExpenseType.Admin  	4,406 	810
+PL.Exp.Donations.Charitable,ExpenseType.Admin 	3,006 	306
+
+# DE Balancing Posting
+Suspense.Suspense  	-7,412    	-1,116

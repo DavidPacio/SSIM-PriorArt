@@ -1,0 +1,17 @@
+Donations Restated.txt
+StartYear: 4
+ImportType:Replace
+
+Political
+SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.NameOrDescrRecipientOrg,T.21 	EU Party One R	#Bro 5755
+SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg,Restated.AcctPolicyIncr,T.21  	1	#Bro 5756
+#SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.NameOrDescrRecipientOrg 	EU Party Two R
+#SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg,Restated.AcctPolicyIncr  	2
+#SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.NameOrDescrRecipientOrg 	EU Party Three R
+#SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg,Restated.AcctPolicyIncr  	3
+#SchInputDirRep.PoliticalCharitableDonations.Political.NonEU,Restated.AcctPolicyIncr  	4
+
+#PLExps.OperationalAdministration.PoliticalDonations,Restated.AcctPolicyIncr  	4
+
+# DE Balancing Posting
+#Suspense,Restated.AcctPolicyIncr  	-4

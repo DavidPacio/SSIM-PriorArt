@@ -1,0 +1,19 @@
+26.12.11
+
+Questions
+---------
+
+1. In starting to set up the three types of StartEnd Instants, I added a check to Bros Import for the members of the Start/End Sum Lists being of Duration period.
+
+   3019 with a list of 136 failed this as 136 is of Instant period.
+
+   222 with a list of 222 (tuples) failed also.
+
+   Is 3019 with 136 Instant OK? i.e. should I remove this check and allow Instants in SE sum lists?
+
+   Or?
+
+   (222 is a special case that I have to handle differently from other sums anyway.)
+
+2. Start sum always zero?
+

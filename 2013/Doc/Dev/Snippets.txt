@@ -1,0 +1,329 @@
+﻿Snippets.txt
+============
+
+See also
+SnippetsCss.txt
+SnippetsJs.txt
+SnippetsPhp.txt
+
+Setting/Unsetting Bits
+----------------------
+ On: bits = bits | setBit  (bits |= setBit)
+Off: bits = bits ^ setBit  (bits ^= setBit)   if the bit is known to be set
+     bits = bits & ~setBit (bits &= ~setBit)  if the bit might or might not be set, as if it is unset, bits ^ setBit will set it
+
+^ is eXclusive OR operator. x ^ y gives a 1 where x and y have different binary values, and 0 otherwise
+ 1010  1111  1011
+ 0110  0100  0100
+ ----  ----  ----
+ 1100  1011  1111
+
+ 
+Word Tips
+=========
+Shift F5 to go back to last edit
+http://legalofficeguru.com/pick-up-where-you-left-off-in-microsoft-word-with-go-back/
+
+Alt left arrow/right arrow for Back/Forward
+http://blog.jonschneider.com/2009/10/tip-navigate-back-like-in-browser-in.html
+
+
+HTML Stuff
+==========
+Characters html entities
+----------
+http://www.cs.sfu.ca/~ggbaker/reference/characters/
+http://www.natural-innovations.com/wa/doc-charset.html
+http://www.whatsmyip.org/htmlcharacters/
+http://www.fileformat.info/info/unicode/
+www.fileformat.info/info/unicode/char/2026/index.htm for a particular character using unicode hex in the url e.g. this one is for ellipsis
+
+If no keyboard shortcut is available a character may be entered in Word by entering the hex code e.g. 2122 for ™ then Alt X.
+Alt X again causes a return to the hex.
+
+The json and C++ way is "\u2026" for ellipsis etc i.e. \u plus the unicode hex code.
+
+C  Name                        <---- html entities ----> Unicode Keyboard  <------------- UTF-8 -------------->
+                                                                 Alt +     Decimal      Hex
+"  double quote                &quote;   &#34;   &#x22;   U+0022
+&  ampersand                   &amp;     &#38;   &#x26;   U+0026
+'  apostrophe and single quote &apos;    &#39;   &#x27;   U+0027
+<  less than                   &lt;      &#60;   &#x3c;   U+003C
+>  greater than                &gt;      &#62;   &#x3e;   U+003E
+   Non Breaking Space          &nbsp;    &#160;  &#xA0;   U+00A0 0160 255  194 160      0xC2 0xA0 (c2a0)
+£  Pound sterling              &pound;   &#163;  &#xa3;   U+00A3 0163 156  194 163      0xC2 0xA3 (c2a3)
+¥  Yen                         &yen;     &#165;  &#xa5;   U+00A5 0165      194 165      0xC2 0xA5 (c2a5)
+€  Euro                        &euro;    &#8364; &#x20ac; U+20AC 0128      226 130 172  0xE2 0x82 0xAC (e282ac)
+‘  left single quotation mark  &lsquo;   &#8216; &#x2018; U+2018 0145
+’  right single quotation mark &rsquo;   &#8217; &#x2019; U+2019 0146
+“  left double quotation mark  &ldquo;   &#8220; &#x201c; U+201C 0147
+”  right double quotation mark &rdquo;   &#8221; &#x201d; U+201D 0148
+…  ellipsis                    &hellip;  &#8230; &#x2026; U+2026                        0xE2 0x80 0xA6 (e280a6)
+   en space                    &ensp;    &#8194; &#x2002; U+2002
+   em space                    &emsp;    &#8195; &#x2003; U+2003
+–  en dash                     &ndash;   &#8211; &#x2013; U+2013                        0xE2 0x80 0x93 (e28093)
+—  em dash                     &mdash;   &#8212; &#x2014; U+2014                        0xE2 0x80 0x94 (e28094)
+•  bullet                      &bull;    &#8226; &#x2022; U+2022
+o
+®  Registered trademark        &reg;     &#174;  &#xae;   U+00AE 0174
+™  trademark                   &trade;   &#8482; &#x2122; U+2122
+©  Copyright                   &copy;    &#169;  &#xa9;   U+00A9 0169
+	 right arrow                 $rarr;    &#8594; &#x2192; U+2129
+‚  single low-9 quotation mark &sbquo;   &#8218; &#x201a; U+201A
+   single high reversed-9 quot &sbquo;   &#8219; &#x201b; U+201B
+„  double low-9 quotation mark &bdquo;   &#8222; &#x201e; U+201E
+
+Keyboard keycodes
+-----------------
+http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+http://www.webonweboff.com/tips/js/event_key_codes.aspx
+
+From JUI:
+keyCode:{ALT:18,BACKSPACE:8,CAPS_LOCK:20,COMMA:188,COMMAND:91,COMMAND_LEFT:91,COMMAND_RIGHT:93,CONTROL:17,DELETE:46,DOWN:40,END:35,ENTER:13,ESCAPE:27,HOME:36,INSERT:45,LEFT:37,MENU:93,NUMPAD_ADD:107,NUMPAD_DECIMAL:110,NUMPAD_DIVIDE:111,NUMPAD_ENTER:108,NUMPAD_MULTIPLY:106,NUMPAD_SUBTRACT:109,PAGE_DOWN:34,PAGE_UP:33,PERIOD:190,RIGHT:39,SHIFT:16,SPACE:32,TAB:9,UP:38,WINDOWS:91}})
+
+e.g. $.ui.keyCode.LEFT
+
+Key 	Code
+backspace 	8
+tab 	9
+enter 	13
+shift 	16
+ctrl 	17
+alt 	18
+pause/break 	19
+caps lock 	20
+escape 	27
+page up 	33
+page down 	34
+end 	35
+home 	36
+left arrow 	37
+up arrow 	38
+right arrow 	39
+down arrow 	40
+insert 	45
+delete 	46
+0 	48
+1 	49
+2 	50
+3 	51
+4 	52
+5 	53
+6 	54
+7 	55
+8 	56
+9 	57
+a 	65
+b 	66
+c 	67
+d 	68
+e 	69
+f 	70
+g 	71
+h 	72
+i 	73
+j 	74
+k 	75
+l 	76
+m 	77
+n 	78
+o 	79
+p 	80
+q 	81
+r 	82
+s 	83
+t 	84
+u 	85
+v 	86
+w 	87
+x 	88
+y 	89
+z 	90
+left window key 	91
+right window key 	92
+select key 	93
+numpad 0 	96
+numpad 1 	97
+numpad 2 	98
+numpad 3 	99
+numpad 4 	100
+numpad 5 	101
+numpad 6 	102
+numpad 7 	103
+numpad 8 	104
+numpad 9 	105
+multiply 	106
+add 	107
+subtract 	109
+decimal point 	110
+divide 	111
+f1 	112
+f2 	113
+f3 	114
+f4 	115
+f5 	116
+f6 	117
+f7 	118
+f8 	119
+f9 	120
+f10 	121
+f11 	122
+f12 	123
+num lock 	144
+scroll lock 	145
+semi-colon 	186
+equal sign 	187
+comma 	188
+dash 	189
+period 	190
+forward slash 	191
+grave accent 	192
+open bracket 	219
+back slash 	220
+close braket 	221
+single quote 	222
+	
+
+
+Back Button Support
+-------------------
+http://clientside.cnet.com/category/code-snippets/ajax/
+
+developed from http://www.streampad.com/blog/?p=110
+
+var historyArray = Array(); // create an empty array to hold the history
+var historyCounter = -1; // initialize the array pointer to -1
+function historyAdd(f){
+  if (historyCounter == -1){  // the first time this is called it will change the iframe location
+  document.getElementById('hFrame').src = 'historySpring.php';
+}
+var o = historyArray[historyCounter];
+if (f != o){ // don't put in consecutive duplicates
+  historyCounter++
+  historyArray[historyCounter] = f; // add function to history
+}
+function goBack() {
+  if (historyCounter> 0){ // don't want to call it if there is nothing in history array
+  historyCounter-- // set the pointer back one
+  var f = historyArray[historyCounter]; // get the function from the history array
+  f = f+'()';
+  eval(f); // call the function
+  }
+}
+
+--
+
+See also: http://www.cloversigns.co.uk/backbox/backbox.html
+
+
+Post Data
+=========
+Use the XMLHttpRequest Object to Post Data
+When using XMLHttpRequest object, there is a way to post data in the same way that an HTML Form is posted.
+
+All you need to do is add an HTTP header, and send the data the same way you'd send it on the QueryString.
+
+Here's a JScript example for the client side, that submits form data to another page:
+
+  var objHTTP, strResult;
+  objHTTP = new ActiveXObject('Microsoft.XMLHTTP');
+  objHTTP.open('POST',"OtherPage.asp",false);
+  objHTTP.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+
+  objHTTP.send("id=1&user="+txtUser.value+"&password="+txtPassword.value);
+
+  strResult=objHTTP.responseText;
+
+And from http://groups.google.com/group/mootools-users/browse_thread/thread/d7b40168017f0d7c?hl=en
+$('subscribeform').addEvent('submit', function(e){
+  new e.stop();
+  this.set('send', {
+    url: '/lists/?p=subscribe&id=2',
+    method: 'post',
+    onFailure: function(){alert('fail!');},
+    onRequest: function(){alert('on req');},
+    onSuccess: function(responseText, responseXML){$('newsletter-content').set('html', responseText);},
+    onStateChange: function(){alert('on change');}
+  }).send();
+});
+
+FireFox
+-------
+about:config
+dom.disable window open feature.location => false
+http://www.boutell.com/newfaq/creating/windowfeatures.html re location bar etc
+
+http://www.mozilla.org/en-US/firefox/technology/
+
+
+Applying DOM methods e.g. scroll to a remote site via an iframe within an iframe
+--------------------------------------------------------------------------------
+http://www.devarticles.com/c/a/HTML/The-Ins-and-Outs-of-iframes/  page
+
+GIMP Transparent png
+--------------------
+http://mcapewell.wordpress.com/2006/09/07/how-to-make-a-transparent-png-image-for-ie-6-in-the-gimp/
+
+Reveal Masked Passwords (In FF)
+-----------------------
+javascript:var els=document.getElementsByTagName('input');for(var x=0;x<els.length;x++) {if(els[x].type.toLowerCase()=='password'){var t=els[x].type=text}}
+
+
+Google pagespeed hints
+======================
+http://pagespeed.googlelabs.com
+
+Excel number formats FAQ Simon Hurst
+------------------------
+http://www.accountingweb.co.uk/article/excel-number-formats-faq/520914
+
+
+Templates and Frameworks
+========================
+Twitter Bootstrap
+http://twitter.github.com/bootstrap/
+http://www.datatables.net/blog/Twitter_Bootstrap
+
+Adminica etc via themeforest
+http://www.datatables.net/styling/themeforest
+
+Local Save using Flash
+======================
+http://pixelgraphics.us/downloadify/test.html
+Downloadify Example
+
+See also DataTables TableTools
+
+
+Laconic: a New Way to Generate DOM Content from JavaScript
+----------------------------------------------------------
+http://www.sitepoint.com/laconic-javascript-dom-content-generation/?utm_medium=email&utm_campaign=SitePoint+10th+May&utm_content=SitePoint+10th+May+CID_8ba53031d6e7eeb2c93629e63fcd5757&utm_source=Newsletter&utm_term=More
+
+
+Upgrade Wampserver
+------------------
+http://asciisoup.wordpress.com/2011/07/03/installing-php-5-4-0alpha1-into-wampserver/
+
+Geo Location
+------------
+http://jspro.com/apis/working-with-geolocation-and-google-maps-api/
+http://www.sitepoint.com/using-the-html5-geolocation-api/
+
+Email source geo
+http://whatismyipaddress.com/trace-email
+
+Server- Sent Events
+-------------------
+Implementing Push Technology Using Server-Sent Events
+http://jspro.com/apis/implementing-push-technology-using-server-sent-events/
+
+The Server Side of Server-Sent Events
+http://cjihrig.com/blog/the-server-side-of-server-sent-events/
+
+WebSockets API
+--------------
+See SnipppetsHtml5.txt
+
+Support or Helpdesk Systems
+---------------------------
+http://freshdesk.com/

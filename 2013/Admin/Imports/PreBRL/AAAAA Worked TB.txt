@@ -1,0 +1,57 @@
+﻿Import Data as per CW's SS WorkedTBs-AAAAAALtd.xlsx columns F, N, T
+No DE Check
+Debug:0
+ImportType:Replace
+Tx5469	AAAAA Limited
+Tx5470	No
+Tx5492	Yes
+Tx5600	87654321
+Tx5589	2009.01.01	2008.01.01
+Tx5460	2009.12.31	2008.12.31
+
+Revenue
+Tx4907                        	-16,613,551	-19,195,013
+Tx2409:Countries.UK	-16,509,371	-18,012,026
+Tx2409:Countries.Europe       	-81,856   	-13,084
+Tx2409:Countries.NorthAmerica 	          	-878,597
+Tx2409:Countries.OtherRegions 	-22,324   	-291,306
+
+Stock Closing Balances
+Tx4551:ExpenseType.CoS	147,996 	182,290
+Tx5092:ExpenseType.CoS	2,046,481 	2,227,691
+Tx2120:ExpenseType.CoS	615 	836
+
+#Tx4107:ExpenseType.CoS	8,826,243 	14,067,849
+ Tx4109             	8,826,243 	14,067,849
+#Tx5061:ExpenseType.CoS	3,824,051 	3,878,057
+ Tx5060             	3,824,051 	3,878,057
+#Tx1851:ExpenseType.CoS	377,842   	410,836
+ Tx1850             	377,842   	410,836
+#Tx4482:ExpenseType.CoS	138,676   	144,565
+ Tx4481             	138,676   	144,565
+#Tx178:ExpenseType.CoS:IFAClasses.DevelopmentCosts	40,140 	40,000
+ Tx176Hy:IFAClasses.DevelopmentCosts	40,140 	40,000
+#Tx1268:ExpenseType.CoS:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	18,403 	18,000
+ Tx1266Hy:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	18,403 	18,000
+#Tx1268:ExpenseType.CoS:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	179,077 	143,176
+ Tx1266Hy:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	179,077 	143,176
+#Tx1268:ExpenseType.CoS:TFAClasses.VehiclesPlantMachinery:TFAOwnership.Leased	167,234 	202,824
+ Tx1266Hy:TFAClasses.VehiclesPlantMachinery:TFAOwnership.Leased	167,234 	202,824
+#Tx1268:ExpenseType.CoS:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	31,988 	30,000
+ Tx1266Hy:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	31,988 	30,000
+
+#Tx3721:ExpenseType.Distrib	3,771   	87,955
+ Tx3724                 	3,771   	87,955
+#Tx5061:ExpenseType.Distrib	169,160 	128,161
+ Tx5062                 	169,160 	128,161
+#Tx1851:ExpenseType.Distrib	16,714  	13,577
+ Tx1852                 	16,714  	13,577
+#Tx4482:ExpenseType.Distrib	6,135   	4,778
+ Tx4483                 	6,135   	4,778
+#Tx1268:ExpenseType.Distrib:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	3,000 	3,000
+ Tx1267Hy:ExpenseType.Distrib:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	3,000 	3,000
+#Tx1268:ExpenseType.Distrib:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	20,000 	20,000
+ Tx1267Hy:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	20,000 	20,000
+#Tx1268:ExpenseType.Distrib:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	3,000 	3,000
+ Tx1267Hy:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	3,000 	3,000
+

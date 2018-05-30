@@ -1,0 +1,47 @@
+Base	Base	Base	600 - Hypercube - Basic	13
+IncomeDataAllDimensions	Income	Income data all dimensions	610 - Hypercube - Income Data All Dimensions	234567W
+TangibleAssetDisposal	TADisposal	Tangible asset disposal	612 - Hypercube - Tangible Asset Disposal	234567:;W
+IntangibleAssetDisposal	IADisposal	Intangible asset disposal	613 - Hypercube - Intangible Asset Disposal	2345679W
+TangibleAssetExpenses	TAExpenses	Tangible asset expenses	614 - Hypercube - Tangible Asset Expenses	1345:;
+IntangibleAssetExpenses	IAExpenses	Intangible asset expenses	615 - Hypercube - Intangible Asset Expenses	13459
+OperatingActivitiesJVsAssociatesGeogBusiness	OpActivsJVsGeoBiz	Operating activities, JVs, associates, geog, business	660 - Hypercube - Op Activities, Consolidation, Geog, Business	2347W
+OperatingActivitiesConsolidated	OpActivsConsol	Operating activities, consolidated	670 - Hypercube - Op Activities, Consolidation	234
+OperatingActivities	OpActivs	Operating activities	680 - Hypercube - Operating Activities	134`
+Consolidation	Consol	Consolidation	685 - Hypercube - Consolidation	23
+BusinessSegmentsIncomeData	BizSegsIncome	Business segments income data	690 - Hypercube - Business Segments Income Data	23567
+GeographicSegmentsIncomeData	GeoSegsIncome	Geographic segments income data	700 - Hypercube - Geographic Segments Income Data	2356W
+BusinessSegmentsAssetData	BizSegsAssets	Business segments asset data	710 - Hypercube - Business Segments Asset Data	2347
+GeographicSegmentsAssetData	GeoSegsAssets	Geographic segments asset data	720 - Hypercube - Geographic Segments Asset Data	234W
+BusinessSegmentsBasic	BizSegsBasic	Business segments basic	730 - Hypercube - Business Segments Basic	137
+GeographicSegmentsBasic	GeoSegsBasic	Geographic segments basic	740 - Hypercube - Geographic Segments Basic	13W
+ProvisionsForLiabilitiesCharges	Provisions	Provisions for liabilities and charges	750 - Hypercube - Provisions	1348`
+IntangibleFixedAssets	IFAs	Intangible fixed assets	760 - Hypercube - Intangible Fixed Assets	139
+TangibleFixedAssets	TFAs	Tangible fixed assets	770 - Hypercube - Tangible Fixed Assets	13:;
+FixedAssetInvestments	FAIs	Fixed asset investments	780 - Hypercube - Fixed Asset Investments	23<=
+FixedAssetInvestmentLoans	FAILoans	Fixed asset investment loans	790 - Hypercube - Fixed Asset Investment Loans	13<
+Dividends	Dividends	Dividends	800 - Hypercube - Dividends	13>OP
+PensionSchemes	PensionSchemes	Pension schemes	810 - Hypercube - Pension Schemes	13?
+ShareBasedPaymentSchemes	ShareSchemes	Share Based payment schemes	811 - Hypercube - Share Based Payment Schemes	13@
+FinancialInstruments	FIs	Financial instruments	820 - Hypercube - Financial Instruments	13ABCEX
+FinancialInstrumentMovements	FIMvts	Financial instrument movements	821 - Hypercube - Financial Instrument Movements	13D
+Acquisitions	Acqs	Acquisitions	830 - Hypercube - Acquisitions	13FG
+SharesAcquisitions	ShareAcqs	Shares - acquisitions	831 - Hypercube - Shares - Acquisitions	13FOP
+Disposals	Disposals	Disposals	834 - Hypercube - Disposals	13H
+JointVentures	JVs	Joint Ventures	840 - Hypercube - Joint Ventures	13IW
+Associates	Assocs	Associates	841 - Hypercube - Associates	13JW
+Subsidiaries	Subsids	Subsidiaries	842 - Hypercube - Subsidiaries	13KW
+OtherParticipatingInterestsInvestments	OtherInterests	Other participating interests and investments	844 - Hypercube - Other Interests - Investments	13L
+DetailedProfitLoss	DPL	Detailed profit and loss	850 - Hypercube - Detailed Profit and Loss	34W[\]^_
+DetailedProfitLossAccountReserve	DPLRes	Detailed profit and loss account reserve	851 - Hypercube - Detailed Profit and Loss Account Reserve	3[^
+EntityOfficers	Officers	Entity officers	900 - Hypercube - Entity Officers	13MN
+Shares	Shares	Shares	901 - Hypercube - Shares	13OP
+EntityContactInfo	ContactInfo	Entity contact info	905 - Hypercube - Entity Contact Info	1QTUVWZ
+ThirdPartyAgents	TPAs	Third party agents	906 - Hypercube - Third Party Agents	13RSTUVWZ
+Countries	Countries	Countries	910 - Hypercube - Countries	13W
+Currencies	Currencies	Currencies	911 - Hypercube - Currencies	13X
+StockExchanges	StockExs	Stock exchanges	912 - Hypercube - Stock Exchanges	1Y
+Languages	Languages	Languages	913 - Hypercube - Languages	1Z
+t	BaseAgeing	Base with Ageing	600 - Hypercube - Basic	13`
+t	BaseInstance	Base with Instance	600 - Hypercube - Basic	13c
+t	Info	Info	600 - Folio - Basic	b
+t	NoProps	NoProps	600 - Folio - Basic	b

@@ -1,0 +1,163 @@
+BdtTabApps.txt started 12.01.12
+--------------
+
+Braiins Desktop Initiated 'Apps' which run in a separate Tab (window)
+=====================================================================
+In all cases have a Bdt 'app' to kick things off by selecting options then clicking a Go button.
+
+Options
+
+1. Post to report php via a form in the bdt app with php module generating the report.
+   Name of new window time based so -> new tab each start. Use same name on a repat -> same tab.
+   Report could use window.parent to check that the parent still exists and close/empty itself if not.
+   Via window.parent report could potentially fill in info such as Agent name.
+   Via window.parent info or a time passed to the report php could revent reload working.
+   No way for bdt app to focus on the report tab for repeat reports tho unless an alert() in the report is used.
+
+   Advanatges
+   - More the normal way of doing things
+   - Each report in one server php file
+
+2. As for 1 with a stub loading in the new window whose body is filled in by polling the bdt for the body set via an Ajax call from the bdt app.
+   Advantages:
+   - All data exchange remains via Ajax
+   - No way for reload to recreate the report - localStorage gone
+   - Url same for all reports or all reports of same type i.e. DT or non DT
+   - Report stub, css, css images (and background/other imagess?), and JS loads at same time as report is being generated -> time saving.
+   Issues:
+   - More round about way of doing things, but thanks to overlapping http requests may be faster, not slower.
+   - Could not start to show in report window until complete report had been received, though that is not likely to matter for a DT type report anyway.
+   - Report size limit via Ajax and bdt var?
+     In test worked up to 9.4MB and 60,000 lines in FF and Chrome, though FF crashed afterwards. Did have Firebug running though.
+     Big enough. Could include paging via page code if a report was going to be so big.
+
+3.1 DT as for 3 with DT applied to the completed html table
+3.2 DT as for 3 with ajax data fill
+
+Try out method 3......
+
+Progress Reporting
+------------------
+Can change window title
+Can change favicon with a bit more work.
+  - http://ajaxify.com/run/favicon/
+  - http://stackoverflow.com/questions/260857/changing-website-favicon-dynamically/260876#260876
+
+As Implemented
+==============
+
+Uses
+. Bdt app named 'App' in file names here with at least:
+  /bdt/apps/App/Htm.htm
+  /bdt/apps/App/Js.js
+  /bdt/apps/App/Start.js
+
+. Bdt.js functions
+  $(function(){} to kick off the js
+  onunload calls CloseTabs
+  Call()
+  Back()
+  TabLoaded(c,wo)
+  Complete()
+  AjError()
+  TabFocus(c)
+  BDT()
+  Close()
+  CloseTabs()
+
+. /bdt/App/App.php    Ajax call for the data
+
+. /bdt/tab/Tab.php    Structure of the page as varied according to tm. Always has Page, header, Ante, Main, Post, footer sections
+
+. /bdt/tab/js/Tab.js  Js for Tab.php
+  $(function(){} to kick off the js
+  onunload calls DelBdtCall
+  OK()
+  Set()
+  Close()
+  TabAlert()
+  DelBdtCall()
+
+. /bdt/tab/js/App.js  optional Js for App aspects of Tab.php with
+  optional Init() to do more than Tab.js does
+
+. plus required css and other js files according to App
+
+Execution Flow
+--------------
+- Bdt App
+  App.js initialises:
+    Tn to Now (a Bdt.js var = time now in seconds) as the unique Tab name (windows.name)
+    C  to 0 where C is the Calls object key returned by Call(), and passed back for repeat calls
+
+  On the Go click calls:
+  Call(op, nr, [dat], Tn, C) where:
+    op  = op code chr
+    nr  = expected number of Ajax return values, at least 5
+    dat = array of data to be posted in the Ajax call which should be passed as 0 rather than [] if none
+    Tn and C as above.
+  which returns C after:
+  . creating/resusing a Calls object for the App
+  . posting to Tab.php target Tn, Dat c | tm | tn
+  . making the Ajax call to u
+
+- Ajax data returns to Bdt.js Back() which stores the data in the call object as Call.rd
+  At least 5  separated fields are expected for the Tab.php Title, Heading (incl 'as at ...' if applicable), plus Ante, Main, and Post divs.
+  More if the App needs them via its Init() fn.
+  Title and Heading can include [AName] and [EName] macros.
+  Ante, Main, and Post can include span class based 'macros':
+   <span class=AName></span>, <span class=EName></span>, <span class=PName></span>
+
+  The bdt App callback fn, if defined, is not called by Back(), but by TabLoaded() when that is called from Set() in Tab.js
+
+- Tab.php
+  . creates structure of an html5 page as varied according to tm, with:
+    title of 'Generating'
+    id of first meta tag for charset=utf-8 is set to c.tm.tn
+    Page, header, Ante, Main, Post, footer sections
+    required css and js tags
+
+  . $(function(){} in Tab.js runs and if parent exists (bdt not gone) and c,tm,tn via meta tag id = those in the cd array of the bdt call obj,
+     sets any elements (buttons) with class bBDT to call the BdtFocus fn on click
+     adds the anonymous scroll(0,0) function to any Top buttons - those with class topB
+     polls the Bdt via Set() for the arrival of Call.rd
+    or if no parent or c,tm,tn don't match, does a 'Please refresh/reload Braiins tabs only via your Braiins Desktop.' 'close' of the tab.
+    or if no id was found, an 'Invalid html received' 'close' of the tab
+
+  . When Set() detects the arrival of Call.rd via the bdt Ajax call, it:
+    sets the page title with Ajax data field 0 with macros expanded, shifting the field out of Call.rd as it does so
+    sets the page heading with Ajax data field 1 with macros expanded, shifting the field out of Call.rd as it does so
+    sets Ante, Main, Post from the Call.rd, Ajax data fields 2,3,4, shifting the fields out of Call.rd as it does so
+    calls the tab App's Init() if it exists. If this fn uses any data returned via the Ajax call, it should shift them out of Call.rd as it uses them
+    sets any AName, EName, PName 'macros' in the page. (Those with classes of AName, EName, PName)
+    sets the Page div width to the largest outerWidth of any element with a class w, min the window width.
+    calls the Bdt TabLoaded() fn with C,self to register the window object as Call.wo
+    TabLoaded() also:
+      calls the bdt App's callback fn if defined with whatever remains of the Ajax return data
+      deletes Call.rd
+      on repeats calls TabFocus() to shift focus to the tab. No call first time as the browser shifts focus shifts to the new tab.
+        'Alert' mode focus is forced as focus() doesn't work for FF or from here for Chrome eiether tho it does work via 'Tab focus' btn click.
+    Shows Top buttons if Main div height is >= 0.9 * window height, or otherwise hides them
+
+  . Close() is called for various close conditions including from the bdt CloseTabs()
+
+  . TabAlert() is called back from bdt.TabFocus(c) for cases when wo.focus() doesn't work
+
+  . DelBdtCall() deletes the bdt call object. It is called from Close() and onunload
+
+Repeat Reports to the same tab i.e. from the same BDT App
+---------------------------------------------------------
+Call() does not post to Tab.php target Tn but instead calls Set() in the tab when the Ajax call returns.
+
+Calls Object
+------------
+Calls is a BDT global object of Ajax call objects by # (var c) with numbers being re-used after objects have been deleted or their tab has closed.
+Properties per call object:
+  fn: bdt App callback fn called from Back() for a bdt app or from TabLoaded() for a tab app
+  op: the op code
+  nr: number of  separated return data values expected
+  and for tm calls:
+  cd: [c,tm,tn]
+  cn: count of the call/tab load base 0
+  wo: windows object for the tab set by TabLoaded() callback
+  rd: return dat set by Back

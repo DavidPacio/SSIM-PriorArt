@@ -1,0 +1,1271 @@
+; sr32.dtx
+
+; Example parameter file for sr32
+; Using a parameter file allows sr32 to process a list of files, and/or the files in a list of directories
+; filtered by a mask or masks, for a list of search and replace items.
+
+; Run sr32 with this file by entering (w/o the leading '; ') and with paths as needed:
+
+; sr32 sr32.dtx
+
+; Notes
+; =====
+
+; File format:
+; - The parameter file can have any name but must be a text file.
+; - Blank lines or lines which start with ';' or '//' are ignored.
+; - All active lines other than search/replace list lines start with a key that ends with a ':' to define their
+;   purpose.
+; - The parameters may occur in any order, except that 'base dir:' and 'mask:' options apply only to file
+;   and/or directory lines that follow them in the parameter file.
+; - Multiple items on a line are separated by 2 or more spaces.
+; - Comments may be added at the end of a line, after a gap of 2 or more spaces.
+; - Quotes can be used to surround items that contain 2 or more spaces, and/or have leading/trailing spaces.
+; - Leading and trailing spaces are ignored, unless the item is enclosed in quotes.
+;
+; Options
+; -------
+; - All options are optional i.e. the default is used DataByIdx the option is not specified.
+; - Case is not significant, except in masks when accessing a Linux/Unix machine.
+; - All masks may be composed of multiple comma separated masks e.g. *.php,*.htm of up to 80 characters in total.
+;
+; Option     Valid   Def  Comments
+;            Values  ault
+; base dir:  dddddd   ""  Specifies a base (or root) directory which is prepended to subsequent file names
+;                         in File Lines and to directory names in Directory Lines which start with ".".
+;                         Sr32 adds or removes '/' or '\' characters as necessary. This option can be used
+;                         multiple times to apply to different groups of files or directories.
+; case:      y/n      y   y causes a case sensitive search, n a case insensitive search. The case of replace
+;                           items is not affected - they are applied as in the search/replace list.
+; corp:      y/n      y   re :c: or :n: search lines intended for use with H.A (FAPP) formats - see below.
+; file type: s/w/u/m  a   Specifies how individial lines are terminated in a modified file.
+;                          s = Same as the input file type, automatically detected during reading
+;                          w = Windows/DOS i.e. CRLF pair
+;                          u = Unix/Linux i.e. LF
+;                          m = Mac i.e. CR
+; mask:      mmmmmm   *.* This wildcard mask of up to 80 characters is applied to any directories in the list
+;                         of directories following the option, unless the directory line includes its own mask.
+;                         This option can be used multiple times to apply to different groups of directories.
+; prompt:    y/n      n   y causes prompting for each replace. (There is always a prompt re saving of modified
+;                           files.)
+; save ftc:  y/n      n   y causes the save file option to be provided even DataByIdx the only change to the file
+;                           is to the file type. 'ftc' stands for 'file type change'.
+; skip //:   y/n      n   y causes search/replace operations to be skipped in '//' type comments
+; word:      y/n      y   y causes the search to be on a whole 'word' basis, with 'words' delineated by:
+;                           - start: start of line, or DataByIdx the previous character is a non alnum character
+;                                    except for '_', or DataByIdx the first search character is non alnum
+;                           - end:   end of line, or DataByIdx the next character is a non alnum character
+;                                    except for '_', or DataByIdx the last search character is non alnum
+
+; File Lines
+; ----------
+; file: file name
+
+; - If the file name starts with "." the current base directory (see base dir: option above) is prepended to
+;   the file name in place of the ".".
+; - Files named individually are processed before files found via the directories list. They are not processed
+;   a second time DataByIdx they are also found via the directories list.
+
+; Directory Lines
+; ---------------
+; dir: directory  {optional mask, *.* or current 'mask:' option used o'wise. Must be included DataByIdx a comment is to follow on the line}
+
+; - If the directory name starts with "." the current base directory (see base dir: option above) is prepended
+;   to the directory name in place of the ".".
+
+; Search/Replace List Lines
+; -------------------------
+; search item  replace text  optional comment
+
+; - 'replace' text is always inserted as in these lines i.e. with case preserved.
+; - Search/Replace List Lines which start :c: are Corporate only and are skipped DataByIdx the 'corp' option is 'n'
+; - Search/Replace List Lines which start :n: are uNincorp  only and are skipped DataByIdx the 'corp' option is 'y'
+
+// Sample follows
+// --------------
+
+case:      y
+word:      n
+mask:      *.php,*.htm,*.inc,*.js,*.css,*.txt,*.cli,*.bp,*.b,*.p
+skip //:   n
+prompt:    y
+file type: u
+save ftc:  y
+
+base dir: B:/Admin/www
+dir: .
+dir: ./css
+dir: ./inc
+dir: ./js
+dir: ./srv
+
+;ase dir: B:/Admin/www/UK-GAAP-DPL
+base dir: B:/Admin/www/UK-IFRS-DPL
+dir: .
+;ir: ./css
+dir: ./inc
+
+;base dir: B:/Admin/Formats/UK-GAAP-DPL
+;dir: .
+;dir: ./Corp
+;dir: ./Corp/sub
+;dir: ./Unincorp
+;dir: ./Shared
+
+dir: B:/Admin/Imports
+
+dir: B:/Braiins/Rg
+
+base dir: B:/Braiins/www
+dir: .
+dir: ./css
+dir: ./js
+dir: ./srv
+
+base dir: B:/Braiins/www/bdt
+dir: .
+dir: ./apps
+dir: ./apps/AA
+dir: ./apps/AH
+dir: ./apps/AM
+dir: ./apps/AS
+dir: ./apps/CDT
+dir: ./apps/CFD
+dir: ./apps/CFS
+dir: ./apps/CSF
+dir: ./apps/CUD
+dir: ./apps/EC
+dir: ./apps/ED
+dir: ./apps/EE
+dir: ./apps/EL
+dir: ./apps/EN
+dir: ./apps/ER
+dir: ./css
+dir: ./css/jd
+dir: ./js
+dir: ./js/jd
+;dir: ./pis
+;dir: ./pis/cm
+;dir: ./pis/sg
+dir: ./srv
+dir: ./tab
+dir: ./tab/css
+dir: ./tab/js
+
+base dir: B:/Com
+dir: ./inc
+;dir: ./inc/UK-GAAP
+;dir: ./inc/UK-GAAP-DPL
+dir: ./inc/UK-IFRS-DPL
+dir: ./emails
+
+base dir: B:/Doc
+dir: .
+;ir: ./BrosAndTx
+dir: ./DBs
+dir: ./rg
+dir: ./SIM
+
+; 21.02.11
+;'/'             './'
+;bdt/Start.htm   bdt/
+;../favicon.ico  favicon.png
+;favicon.ico     favicon.png
+;<div id="page">     <div id='page'>
+;<div id="header">   <div id='header'>
+;<div id="menu">     <div id='menu'>
+;id="tagline">       id='tagline'>
+;id="nav">       id='nav'>
+
+; 22.02.11
+;src="js/jquery-1.5.min.js">  src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'>
+
+; 23.02.11
+;DName  PName
+;Name   PName
+
+; 24.02.11
+;button fr  btn fr
+
+; 27.02.11
+<input id='Email'  <input id='email'
+
+; 15.03.11
+;AppConstants.inc  Base.inc
+;AP_ALL  AP_ALLSTD
+
+; 28.05.11
+;RGN_ID_OperationalStatus_Dormant  RGN_ID_Dormant
+;RGN_ID_OperationalStatus_Trading  RGN_ID_Trading
+
+; 04.06.11
+;RgNames     BROs
+;"RG Name"   BRO
+;"RG Names"  BROs
+;RgNameId    BroId
+;RgNamesToZones  BROsToZones
+;"RG Name"  BRO Name
+;"an RG Name"  "a BRO Name"
+;"an RG Names"  "a BROs"
+;RgNameTypeToStr  BroTypeToStr
+;RgDataTypeToStr  DataTypeToStr
+;RgNamesA        BroNamesA
+;RgNamesToIdA  BroNamesToIdA
+;RgNamesTxInfoA  BrosTxInfoA
+;RGNTXI_  BROTXI_
+;RGN_  BRO_
+;RgNameFromTxName  BroNameFromTxName
+;RgNamesArraysGAAP.inc  BrosArraysGAAP.inc
+;parentId  dadId
+;ParentId  DadId
+;BROTXI_ParentId  BROTXI_DadId
+
+; 08.06.11
+;BrosTxInfoA  BrosA
+;brosTxInfoAS  brosAS
+;BROTXI_  BROI_
+;TupleNameId  TupleId
+;tupleNameId  tupleId
+;RgZones   Zones
+;RgZonesA  ZonesA
+
+; 10.06.11
+;DiMeStrToIdA  DimensionsMap
+;DiMeStrToIdMap_UK-GAAP.inc   DimensionsMap_UK-GAAP.inc
+;BRORTI_NS  BRORTI_NsId
+
+; 17.06.11
+; ctr  c
+;mctr  mc
+;Entity.Info   Info
+;Entity.Dates  Dates
+;Entity.RegisteredOffice  RegisteredOffice
+;Entity.Statements        Statements
+;Entity.Officers  Officers
+;Entity.ThirdPartyAgents  TPAs
+;ThirdPartyAgentType      TPAtype
+;GeographicSegment        GeoSeg
+;BRO_ID_IncorporationCountry        BRO_ID_Info_IncorporationCountry
+;BRO_ID_CompanySize                 BRO_ID_Info_CompanySize
+;BRO_ID_Audited                     BRO_ID_Info_Audited
+;BRO_ID_Dormant                     BRO_ID_Info_Dormant
+;BRO_ID_Trading                     BRO_ID_Info_Trading
+;BRO_ID_Y0StartDate                 BRO_ID_Dates_Y0StartDate
+;BRO_ID_Y0EndDate                   BRO_ID_Dates_Y0EndDate
+;BRO_ID_DateSigningDirectorsReport  BRO_ID_Dates_SigningDirectorsReport
+;BRO_ID_BalanceSheetDate            BRO_ID_Dates_BS
+;BRO_ID_DateApprovalAccounts        BRO_ID_Dates_ApprovalAccounts
+
+; 19.06.11
+;TaxonomyConstants.inc  ConstantsTxUK-GAAP.inc
+;.../utils/ConstantsTxUK-GAAP.inc   /Com/inc/ConstantsTxUK-GAAP.inc
+;RgConstants.inc        ConstantsRG.inc
+;LocalConstants.inc     ConstantsLocal.inc
+;ServerFuncs.inc        FuncsServer.inc
+
+; 20.06.11
+;MhDiMeId         SetDiMeId
+;DIMAPI_MhDiMeId  DIMAPI_SetDiMeId
+;DimInList        InChrList
+;PackArrayToCharCodedStrList    PackArrayToChrList
+;UnpackCharCodedStrListToArray  UnpackChrListToArray
+;CharCodedStrListToCsList       ChrListToCsDecList
+;[DiMeId, DimensionId, SetDiMeId]  [DiMeId, DimensionId, DiMeTypeN, SetDiMeId, ETypeList]
+;MhDiMeIdToDiMeIdMap    SetDiMeIdToDiMeIdMap
+;DiMeIdToMhDiMeIdMap    DiMeIdToSetDiMeIdMap
+;BRO_ID_  BRO_Id_
+;DM_ID_TPA_Accountants  DM_Id_TPA_Accountants
+;DM_ID_TPA_Auditors     DM_Id_TPA_Auditors
+;DM_None       DMT_None
+;DM_Default    DMT_Default
+;DM_Standard   DMT_Standard
+;LimitedLiabilityPartnership  LLP
+;ExecutiveOfficers     ExecutiveOfficer
+;NonexecutiveOfficers  NonexecutiveOfficer
+;DIMET_Default         DIMET_Normal
+
+; 21.06.11
+;MustDimId  SetDimId
+;mustDimId  setDimId
+;BROB_MustDim  BROB_SetDim
+;'Must Have'   Set
+;BROCTI_MustDimId  BROCTI_SetDimId
+;Must Have     Set
+;BROB_SetDim  BROB_SetDimId
+;MustNotDims  NotDims
+;mustNotDims  notDims
+;CompanySecretary   CoSec
+;CoSecretary   CoSec
+;BROB_SetDimId  BROB_SetOpts
+;BROB_Must2Dim  BROB_2Dims
+;"has a SetDimId. (Also indicated by SetDimId itself)"  "has a SetOpts. (Also indicated by SetOpts itself)"
+;"SetDimId and Must2Dims"  "SetDiMeId and DiMeId unless $Dim2DiMeIdsA allows no second dim"
+
+; 22.06.11
+;DI_Set_Opt_  DI_SetOpt_
+;SetOpts  DimSetOpts
+;BROB_SetOpts  BROB_DimSetOpts
+;SetDimId  DimSetId
+;setOpts   dimSetOpts
+;setDimId  dimSetId
+;IdToChar  IdToChr
+;CharToId  ChrToId
+;BRO_Id_EntityName          BRO_Id_Info_EntityName
+;BRO_Id_RegistrationNumber  BRO_Id_Info_RegistrationNumber
+;BROB_2Dims  BROB_Dim2Managed
+
+; 28.06.11
+;ConstantsRG.inc   ConstantsRgUK-GAAP.inc
+;ChiefExecutive     CEO
+;CompanySecretaryDirectorI  CoSecDirectorI
+;CompanySecretaryStatusS    CoSecStatusS
+
+; 29.06.11
+;RGC_AllEntityOfficers  RGC_AllOfficers
+;RGC_EntityOfficer      RGC_Officer
+;RGC_ThirdPartyAgent    RGC_TPA
+;ThirdPartyAgentY       TPA_Y
+;EntityOfficerY         OfficerY
+;RGC_RegisteredOffice   RGC_RegOffice
+;RGC_NumberOfContexts   RGC_NumContexts
+;OTB_CoSecretaryDirector  OTB_CoSecDirector
+;DIME_Id_CoSecretaryDirector  DIME_Id_CoSecDirector
+;OTB_NonexecutiveOfficer       OTB_NonexecOfficer
+;DIME_Id_NonexecutiveOfficer   DIME_Id_NonexecOfficer
+
+; 30.06.11
+;ExecutiveOfficer     Executive
+;NonexecutiveOfficer  Nonexecutive
+;AllOfficers          All
+;AllOfficerTypes      All
+
+; 01.07.11
+;NT_  BT_
+;BRO_DirectorsLoopIncrement  BRO_SetDimensionLoopIncrement
+
+; 02.07.11
+;Officers.Type  Officers.Properties
+;BRO_Id_Officers_Type  BRO_Id_Officers_Properties
+
+; 05.07.11
+;NotDims  ExInDims
+;notDims  exInDims
+;Not Dims  ExIn Dims
+
+; 11.07.11
+BROCTI_SetOpts  BROCTI_DimSetOpts
+
+; 12.07.11
+;BroNamesToIdA  BroNameToIdA
+;BroIdsToNameA  BroIdToNameA
+
+; 13.07.11
+;BrosRTA  BrosBA
+;BRORTI_  BROBI_
+;BrosCTA  BrosA
+;BROCTI_  BROEI_
+;" and $BrosA to have been loaded"  ", $BrosBA and $BrosA to have been loaded"
+", $BrosBA and $BrosA to have been loaded"  " and $BrosA to have been loaded"
+;BrosBA  BrosA
+;BROBI_  BROI_
+;the Run Time array of       the array of
+;the Compile Time array of   the array of
+
+; 14.07.11
+;[DataTypeN, [SetId, [BroIds to sum]]]  [DataTypeN, [target BRO, [BROs to sum]]]
+
+; 15.07.11
+;BroIdToNameA  BroNamesA
+;BroNameToIdA  BroNamesToIdA
+
+; 16.07.11
+;BroIdxFromName  BroIdxFromRef
+;DiMesA           DiMeContextInfoA
+
+; 17.07.11
+;BRO_DimSetLoopIncrement  BRO_SetDiMeIdIncrement
+;BRO_DiMeIdIncrement      BRO_DiMeIdOffset
+;BRO_SetDiMeIdIncrement   BRO_SetDiMeIdOffset
+
+; 18.07.11
+;class='c'     class=c
+;class='b'     class=b
+;class='sinf'  class=sinf
+;class='on'    class=on
+;class='top'   class=top
+;class='l'      class=l
+;class='s'      class=s
+;class='mid'   class=mid
+;<br/>         <br>
+;type="text"   type=text
+;type='text'   type=text
+type='radio'   type=radio
+;class='mc'    class=mc
+;colspan='2'   colspan=2
+;method='post'  method=post
+;class='r'  class=r
+;class='radio'  class=radio
+;type='checkbox'  type=checkbox
+;value='1'  value=1
+;value='2'  value=2
+;class='s'  class=s
+;type='hidden'  type=hidden
+;checked='checked'  checked=checked
+
+; 20.07.11
+;DIME_Id_  DIME_
+;DM_Id_    DIME_
+;DiMeTypeN  DiMeBits
+;diMeTypeN  diMeBits
+;DMT_       DIMEB_
+;DIMET_     DIMEB_
+;DIMEB_Standard  DIMEB_Normal
+;DIMAPI_DiMeBits  DIMAPI_Bits
+;DIME_  DIME_Id_
+
+; 22.07.11
+;BROB_Dim2Managed  BROB_SetDimManProp
+;Dim2DiMeIdsA      SetDimManPropDiMeIdsA
+;Not a Dim2 managed BRO  Not a Set Dim managed Prop dime BRO
+
+; 23.07.11
+;DIMEB_Nix  DIMEB_Zilch
+;DIMEB_Bii  DIMEB_Bed
+
+; 26.07.11
+;DIMEB_Pya  DIMEB_pYa
+;DIMEB_Mux  DIMEB_muX
+;DIMEB_Bed  DIMEB_bEd
+;DIMEI_   DiMeCI_
+;DIMAPI_  DiMeI_
+
+; 27.07.11
+;DIME_Id_  DiMeId_
+;DIM_Id_MAX  DimId_Max
+;DIM_Id_     DimId_
+;TXEL_Id_NotApplicable  TxElId_NotApplicable
+
+; 28.07.11
+;DIMEB_  DiMeB_
+
+; 29.07.11
+;BRODI_  BroDI_
+;BROI_   BroI_
+
+; 30.07.11
+;Y0StartDate  YearStartDate
+;Y0EndDate  YearEndDate
+
+; 31.07.11
+;DI_SetOpt_Director    DiMe_PropSet_Director
+;DI_SetOpt_PartnerLLP  DiMe_PropSet_PartnerLLP
+BRO_LoopI_Id           BroLoopI_Ref
+BRO_LoopI_NumLoops     BroLoopI_NumLoops
+BRO_LoopI_IdIncr       BroLoopI_Type
+BRO_LoopI_TestIdDelta  BroLoopI_TestIdDelta
+BRO_Id_  BroId_
+BROB_  BroB_
+
+; 09.08.11
+;EIT_Balances  EIT_BroData
+
+; 10.08.11
+DBLOG_GC_DELETE  DBLOG_Delete_GarbageCollect
+DBLOG_INSERT  DBLOG_Insert
+DBLOG_UPDATE  DBLOG_Update
+DBLOG_DELETE  DBLOG_Delete
+
+; 12.08.11
+;CI_DiMeId  CI_DiMeIdsA
+
+; 09.09.11
+;CDB_  ColDtB_
+;ColDtB_  CDtB_
+
+; 11.10.11
+;DiMeB_Rpt  DiMeB_Report
+
+; 17.10.11
+;BroRaw  CastBro
+
+; 19.10.11
+;CastBro  BroData
+;BroB_Passup    BroB_SumUp
+;BroB_NoPassup  BroB_NoSumUp
+
+; 24.10.11
+;BRefB_Man  BRefB_DiMeMan
+;BRefB_Mux  BRefB_DiMeMux
+;BRefB_Pya  BRefB_DiMePya
+
+; 25.10.11
+;BroB_BD  BroB_BdMain
+
+; 27.10.11
+;BS_Debit   BS_Dr
+;BS_Credit  BS_Cr
+;TS_Debit   TS_Dr
+;TS_Credit  TS_Cr
+
+; 07.11.11
+;TupleId  TupleTxId
+
+; 08.11.11
+;TupleTxId  TupleTxIds
+
+; 17.11.11
+;ExclDiMeId  DiMeId
+;exclDiMeId  diMeId
+
+; 18.11.11
+;BroB_StartEnd   BroB_EndStart
+;StartEndTxIdsA  EndStartTxIdsA
+;DiMeId_RestatedAccountingPolicyIncrDecr  DiMeId_RestatedAcctPolicyIncrDecr
+
+; 19.11.11
+;DiMeId_RestatedMaterialErrorIncrDecr  DiMeId_RestatedMaterialErrIncrDecr
+;DimId_Function  DimId_BraiinsFunction
+;DimId_Ageing    DimId_BraiinsAgeing
+;DimId_PhoneNumberType  DimId_TelNumType
+
+; 20.11.11
+;DiMeI_MuxList  DiMeI_MuxListA
+;DiMeI_SumList  DiMeI_SumListA
+
+; 27.11.11
+;BroB_Report   BroB_RO
+;DiMeB_Report  DiMeB_RO
+;BroB_End      BroB_ESEnd
+;BroB_Start    BroB_ESStart
+
+; 04.12.11
+;ContextEnumToStr  ContextToStr
+;TupleUCs  TupleUCNs
+;TupleId   TupTxId
+;MemberId  MemTxId
+;MOrder    Ordr
+;from Tuples  From TuplePairs
+;From Tuples  From TuplePairs
+
+; 05.12.11
+;TupleId  TupId
+
+; 06.12.11
+;DiMeContextInfoA  DiMesRA
+;DiMeCI_  DiMeRI_
+;TupleLabelsA  TuLabelsA
+;TupleNamesA   TuNamesA
+;TupleMapA     TuMapA
+;TupleShortName  TuShortName
+
+; 07.12.11
+;TuMapA         TuMeMapA
+;TuNamesA       TupFullNamesA
+;TuLabelsA      TupLabelsA
+;TuShortNamesA  TupNamesA
+;DimensionsMap  DiMeMapA
+;DiMeShortNamesA  DiMeNamesA
+
+; 14.12.11
+;DR.Donations.Charitable.DescrPurposeSpecific  DR.Donations.Charitable.Descr
+;DR.Donations.Charitable.AmountSpecific  DR.Donations.Charitable.Amount
+;DR.Donations.Political.EU.NameOrDescrRecipientOrganisation  DR.Donations.Political.EU.NameOrg
+;DR.Donations.Political.EU.AmountToEUOrganisation  DR.Donations.Political.EU.Amount
+;DR.Donations.PoliticalCharitableFreetextComment  DR.Donations.PoliticalCharitableComment
+
+; 24.12.11
+;EsTypeN       SeTypeN
+;esTypeN       seTypeN
+;EsBroIds      SeBroIds
+;esBroIds      seBroIds
+;ES_SumEnd     SE_SumEnd
+;ES_PostEnd    SE_PostEnd
+;BroB_ESStart  BroB_SeStart
+;BroI_EsTypeN  BroI_SeTypeN
+;BrosEndStartA  BrosStartEndA
+;EndStartTxIdsA  StartEndTxIdsA
+;EndStart  StartEnd
+;SeTypeN  InTypeN
+;seTypeN  inTypeN
+;endStart  startEnd
+;EsTypeToStr  InTypeToStr
+;esList   seList
+;EsBroId  SeBroId
+
+; 02.01.12
+;Copyright (c) 2011 Braiins  Copyright (c) 2011-2012 Braiins Ltd
+
+; 03.01.12
+;Copyright 2011 Braiins Ltd.  Copyright 2011-2012 Braiins Ltd
+;Copyright (c) 2011-2012 Braiins Ltd Ltd  Copyright 2011-2012 Braiins Ltd
+;Copyright 2011-2012 Braiins Ltd.  Copyright 2011-2012 Braiins Ltd
+;Copyright &copy; 2011 Braiins Limited, UK  Copyright &copy; 2011-2012 Braiins Ltd
+;Copyright &copy; 2011 Braiins Ltd  Copyright &copy; 2011-2012 Braiins Ltd
+;Copyright (c) 2011-2012 Braiins Ltd  Copyright 2011-2012 Braiins Ltd
+
+; 07.01.12
+;id='email'   id=email
+;type='text'  type=text
+;size='30'    size=30
+;maxlength='40'  maxlength=40
+;" />"        >
+;/>           >
+;id='PW' name='PW' class  id='PW' class
+;for='email'  for=email
+;for='PW'     for=PW
+;class='mt6'  class=mt6
+;id='PW'      id=PW
+;size='12'    size=12
+;maxlength='16'  maxlength=16
+
+; 11.01.12
+;UPDATE  Update
+;FROM    From
+;SET     Set
+;WHERE   Where
+;INSERT  Insert
+;SELECT  Select
+;ORDER BY  Order by
+;LIMIT   Limit
+;GROUP   Group
+;DELETE  Delete
+;OR      Or
+;AND     And
+
+; 20.01.12
+;MEM_  MT_
+;ES_  EStatus_
+;DateTimeB.inc  DateTime.inc
+
+; 21.01.12
+;EDB_  EDGB_
+;BroData(  Bro(
+;BroData.inc  Bro.inc
+;EntityData   BroData
+;EntityTrans  BroDataTrans
+
+; 22.01.12
+;EIT_EntityInfo  EIT_Info
+;EIT_BroData     EIT_Bros
+;BroData  RawBroData
+;EntityInfo  BroDataSummed
+;RawBroData  BroData
+
+; 23.01.12
+;YearAbs   EntYear
+;YearCurr  CurrYear
+;YearRel   RelYear
+;BroDataSummed  BrosAll
+;Max_YearRel  Max_RelYear
+
+; 25.01.12
+;$EntityId = 1;  $EntityId = 2;
+
+; 28.01.12
+;mt1  mt10
+;m1  m10
+
+; 04.02.12
+;CGA Current entity Generate Accounts  CAR Current entity Accounts & Reports
+;CGA  CAR
+
+; 06.02.12
+;$Format  $FFileName
+
+; 12.02.12
+;AgentsRef  ERef
+;CAR Current entity Accounts & Reports  CFS Current entity Financial Statements
+;BDT_CAR  BDT_CFS
+;CAR  CFS
+;Current entity Accounts & Reports  Current entity Financial Statements
+
+; 13.02.12
+;AP_NEW     AP_New
+;AP_PREFS   AP_Prefs
+;AP_ALLSTD  AP_AllStd
+;AP_COMP    AP_Compile
+
+; 15.02.12
+;CFi  CSF
+
+; 17.04.12
+;ET_SOLE                 ET_Sole
+;ET_PARTNERSHIP          ET_Partnership
+;ET_LLP                  ET_LLP
+;ET_CHARITY              ET_Charity
+;ET_PRIVATE_LTD_CO       ET_PrivateLtdCo
+;ET_PRIVATE_UNLTD_CO     ET_PrivateUnltdCo
+;ET_PRIVATE_LTD_GUAR_CO  ET_PrivateLtdGuarCo
+;ET_COMM_INTEREST_CO     ET_CommInterestCo
+;ET_PUBLIC_LTD_CO        ET_PLC
+;ET_OTHER                ET_Other
+;NUM_ENTITY_TYPES        ET_Num
+
+; 21.08.12
+;IdToChr  IntToChr
+;ChrToId  ChrToInt
+
+; 23.04.12
+;EntityDimGroupsA  DimGroupsA
+;EDG_Group         DG_Group
+;EDG_Restated      DG_Restated
+;EDG_Excepts       DG_Excepts
+;EDG_BizSegs       DG_BizSegs
+;EDG_Provisions    DG_Provisions
+;EDG_IFAs          DG_IFAs
+;EDG_TFAs          DG_TFAs
+;EDG_FAIs          DG_FAIs
+;EDG_Pensions      DG_Pensions
+;EDG_FinInstrs     DG_FinInstrs
+;EDG_Maturities    DG_Maturities
+;EDG_Acqs          DG_Acqs
+;EDG_Disposals     DG_Disposals
+;EDG_JVs           DG_JVs
+;EDG_Assocs        DG_Assocs
+;EDG_OtherInts     DG_OtherInts
+;EDG_Countries     DG_Countries
+;EDG_Currencies    DG_Currencies
+;EDG_Languages     DG_Languages
+;EDGI_Name         DGI_Name
+;EDGI_Credits      DGI_Credits
+;EDGI_User         DGI_User
+;EDGI_FRSEE        DGI_FRSEE
+;EDGI_DimsA        DGI_DimsA
+;EDGI_ETsA         DGI_ETsA
+
+; 25.04.12
+;checked=checked    checked
+;disabled=disabled  disabled
+;required=required   required
+;autofocus=autofocus  autofocus
+;<input id=email type=text size=30 maxlength=40>  <input id=email type=text size=30 maxlength=40 autocomplete=on>
+
+; 29.04.12
+;FRSEE  FRSSE
+
+; 30.04.12
+;GOpen     Alert
+;GCloseFn  AOnClose
+;GCf       AOnCloseFn
+;GClose    AClose
+
+; 01.05.12
+;EDG_Num  DG_Num
+
+; 03.05.12
+;DGI_FRSSE  DGI_ExSmall
+;CompanySize_Small    CoSize_Small
+;CompanySize_Medium   CoSize_Medium
+;CompanySize_Large    CoSize_Large
+;COMPANY_SIZE_Small   CoSize_Small
+;COMPANY_SIZE_Medium  CoSize_Medium
+;COMPANY_SIZE_Large   CoSize_Large
+;CompanySecretaryStatusS      CoSecStatusS
+;CompanySizeI                 CoSizeI
+;CompanySecretaryDirectorI    CoSecDirectorI
+;EntityTypeC  ETypeC
+;EntityTypeI  ETypeI
+;$BaseNewEntityCreditsA  $EntityTypeCreditsA
+
+; 04.05.12
+;AP_Save   AP_AccData
+;AP_New    AP_Entity
+;AP_Prefs  AP_Agent
+
+; 05.05.12
+;ENbUnAll  ENbDeAll
+;EEbUnAll  EEbDeAll
+;EEsM  EEsMN
+;ENsM  ENsMN
+
+; 10.05.11
+;ROL_SNR_PARTNER   ROL_SnrPartner
+;ROL_PARTNER       ROL_Partner
+;ROL_MANAGER       ROL_Manager
+;ROL_SENIOR        ROL_Senior
+;ROL_STAFF         ROL_Staff
+;ROL_OWNER         ROL_Owner
+;ROL_CEO           ROL_CEO
+;ROL_FIN_DIRECTOR  ROL_FinDirector
+;ROL_DIRECTOR      ROL_Director
+;ROL_FIN_CONTR     ROL_FinControl
+;ROL_CONTRACTOR    ROL_Contractor
+;ROL_CONSULTANT    ROL_Consultant
+;ROL_OTHER         ROL_Other
+;DEP_MANAGEMENT    DEP_Management
+;DEP_FINANCE       DEP_Finance
+;DEP_ACCOUNTING    DEP_Accounting
+;DEP_AUDIT         DEP_Audit
+;DEP_Tax           DEP_Tax
+;DEP_External      DEP_External
+;DEP_OTHER         DEP_Other
+
+; 11.05.12
+;MB_Admin   AP_Admin
+;AP_AllStd  AP_All
+
+; 12.05.12
+;Inputs  $Inputs
+;AAInputs  $AAInputs
+;AMInputs  $AMInputs
+;Tips      $Tips
+
+; 13.05.12
+;Bdt.tao  Tao
+
+; 17.05.12
+;. Required.  ''
+;. Optional.  ''
+
+; 24.05.12
+;RelatedId  CheckId
+
+; 26.05.12
+;BroB_BdMain  BroB_Main
+;BdMainId     MainId
+;MainId       BdMainId
+
+; 01.06.12
+;TupleMembersByHyIdA  TupIdsByMemberTxIdAndHyIdA
+
+; 20.06.12
+;Info.EntityName                   EntityInfo.Names.CurrentLegalOrRegistered
+;Info.RegistrationNumber           EntityInfo.IdentifyingCodes.UKHouseRegisteredNumber
+;Info.IncorporationCountry         EntityInfo.LegalForm.CountryFormationOrIncorporation
+;;Info.CompanySize                 Now in DB and to be handled in code.
+;Info.Audited                      EntityInfo.OfficialOperationalStatus.Audited
+;Info.Dormant                      EntityInfo.OfficialOperationalStatus.Dormant
+;Info.Trading                      EntityInfo.OfficialOperationalStatus.Trading
+;Dates.YearStartDate               BRI.DatesPeriods.Start
+;Dates.YearEndDate                 BRI.DatesPeriods.End
+;Dates.SigningDirectorsReport      DirRep.DateSigningDirectorsReport
+;Dates.BS                          BRI.DatesPeriods.BS
+;Dates.ApprovalAccounts            BRI.DatesPeriods.ApprovalAccounts
+;Statements.NoOtherGainsOrLosses   STRGL.StatementThatThereWereNoGainsInPeriodOtherThanThoseInPL
+;Officers.Properties               EntityInfo.Officers.Properties
+;Officers.Name                     EntityInfo.Officers.Name
+;Officers.DirectorSigningReport    DirRep.DirectorSigningReport
+;Officers.DirectorSigningAccounts  EntityInfo.Officers.DirectorSigningAccounts
+;TPAs.AccountantsAndAuditors       EntityInfo.ThirdPartyAgents.AccountantsAndAuditors
+
+; 21.06.12
+;TPAs.                EntityInfo.ThirdPartyAgents.
+;PL.Revenue.Turnover  RevOp.Turnover
+
+; 22.06.12
+;PL.Expenses.Other       Exp.Other.OtherUnexceptional   TxId 3681
+;PL.Interest.Receivable  Exp.Financial.InterestPayableSimilarCharges.FinanceIncome.NetReceivable.Other:Function.NonOp  TxId 3571
+;PL.Interest.Payable     Exp.Financial.InterestPayableSimilarCharges.FinanceIncome.NetReceivable.Interest:Function.NonOp  TxId 2864
+;TaxOnOrdActivities      SegAnalysisRevCostsProfits.JVAssociates.TaxOnOrLossOnOrdinaryActivities TxId 4704 Queried with Charles
+;PL.Revenue.Analysis.GeoSeg.ByDestination  SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo  TxId 2409
+
+; 29.09.12
+;BaseGaap.inc  BaseUkGaap.inc
+;ConstantsRgUK-GAAP.inc  ConstantsRg-UkGaap.inc
+;ConstantsTxUK-GAAP.inc  ConstantsTx-UkGaap.inc
+;TxElementsSkippedUK-GAAP.inc  TxElementsSkipped-UkGaap.inc
+;BaseUkGaap.inc  BaseTx.inc
+;Base.inc  BaseBraiins.inc
+
+; 30.09.12
+;GAAP HMRC DPL  GAAP DPL
+;ConstantsRg-UkGaap.inc         ConstantsRg.inc
+;ConstantsRg-UkGaapHmrcDpl.inc  ConstantsRg.inc
+;ConstantsTx-UkGaap.inc         ConstantsTx.inc
+;ConstantsTx-UkGaapHmrcDpl.inc  ConstantsTx.inc
+;TxElementsSkipped-UkGaap.inc   TxElementsSkipped.inc
+;"'../../../Com/inc/ConstantsTx.inc'"                 "'../../../../Com/inc/'.TX_Name.'/ConstantsTx.inc'"
+;"'../../../Com/inc/ConstantsRg.inc'"                 "'../../../../Com/inc/'.TX_Name.'/ConstantsRg.inc'"
+;"'../../../Com/inc/TxElementsSkipped.inc'"           "'../../../../Com/inc/'.TX_Name.'/TxElementsSkipped.inc'"
+;"'../../../Com/structs/NamespacesRgA_UK-GAAP.inc'"   "'../../../../Com/str/'.TX_Name.'/NamespacesRgA.inc'"
+;"'../../../Com/structs/BroSumTreesA_UK-GAAP.inc'"    "'../../../../Com/str/'.TX_Name.'/BroSumTreesA.inc'"
+;"'../../../Com/structs/BroNamesA_UK-GAAP.inc'"       "'../../../../Com/str/'.TX_Name.'/BroNamesA.inc'"
+;"'../../../Com/structs/DiMeNamesA_UK-GAAP.inc'"      "'../../../../Com/str/'.TX_Name.'/DiMeNamesA.inc'"
+;"'../../../Com/structs/ZonesA_UK-GAAP.inc'"          "'../../../../Com/str/'.TX_Name.'/ZonesA.inc'"
+;"'../../../Com/structs/TupNamesA_UK-GAAP.inc'"       "'../../../../Com/str/'.TX_Name.'/TupNamesA.inc'"
+;"'../../../Com/structs/TuMesA_UK-GAAP.inc'"          "'../../../../Com/str/'.TX_Name.'/TuMesA.inc'"
+;"'../../../Com/structs/DiMesA_UK-GAAP.inc'"          "'../../../../Com/str/'.TX_Name.'/DiMesA.inc'"
+;"'../../../Com/structs/BrosA_UK-GAAP.inc'"           "'../../../../Com/str/'.TX_Name.'/BrosA.inc'"
+;"'../../../Com/structs/BroRptOrderA_UK-GAAP.inc'"    "'../../../../Com/str/'.TX_Name.'/BroRptOrderA.inc'"
+;"'../../../Com/structs/DiMeSumTreesA_UK-GAAP.inc'"   "'../../../../Com/str/'.TX_Name.'/DiMeSumTreesA.inc'"
+;"'../../../Com/structs/DiMesRA_UK-GAAP.inc'"         "'../../../../Com/str/'.TX_Name.'/DiMesRA.inc'"
+;"'../../../Com/structs/DiMeMapA_UK-GAAP.inc'"        "'../../../../Com/str/'.TX_Name.'/DiMeMapA.inc'"
+;"'../../../Com/structs/NamespacesTxA_UK-GAAP.inc'"   "'../../../../Com/str/'.TX_Name.'/NamespacesTxA.inc'"
+;"'../../../Com/structs/BroNamesToIdA_UK-GAAP.inc'"   "'../../../../Com/str/'.TX_Name.'/BroNamesToIdA.inc'"
+;"'../../../Com/structs/BroShortNamesA_UK-GAAP.inc'"  "'../../../../Com/str/'.TX_Name.'/BroShortNamesA.inc'"
+;"'../../../Com/structs/DiMeTargetsA_UK-GAAP.inc'"    "'../../../../Com/str/'.TX_Name.'/DiMeTargetsA.inc'"
+;"'../../../Com/structs/BroDescrsA_UK-GAAP.inc'"      "'../../../../Com/str/'.TX_Name.'/BroDescrsA.inc'"
+;"'../../../Com/structs/DiMeLabelsA_UK-GAAP.inc'"     "'../../../../Com/str/'.TX_Name.'/DiMeLabelsA.inc'"
+;"'../../../Com/structs/TupLabelsA_UK-GAAP.inc'"      "'../../../../Com/str/'.TX_Name.'/TupLabelsA.inc'"
+;/structs/  /str/
+;"'../../../Com"  "'../../../../Com"
+;TxN_UK-GAAP      TxN_UK_GAAP
+;TxN_UK_GAAP-DPL  TxN_UK_GAAP_DPL
+;TxN_UK-IFRS      TxN_UK_IFRS
+;"'../../../../Com/str/'.TX_Name.'/"  "Com_Inc_Tx.'"
+;"'../../../../Com/inc/'.TX_Name.'/"  "Com_Inc_Tx.'"
+;TX_Name  Tx_Name
+
+; 02.10.12
+;Group by L.LinkBaseId  Group by TextId
+
+; 05.10.12
+;DimId_ExceptItemsAdjusts  DimId_ExceptsAdjusts
+;DimId_AmortImpairAdjusts  DimId_AmortAdjusts
+;DimId_ExceptsAdjusts  DimId_ExceptAdjusts
+;ExceptsAdjusts      ExceptAdjusts
+;ExceptItemsAdjusts  ExceptAdjusts
+;AmortImpairAdjusts  AmortAdjusts
+;$DimNamesA   $DimShortNamesA
+;$DimNamesAS  $DimShortNamesAS
+;DiMeShortNamesA  UniqueDiMeShortNamesA
+;$DiMeShortNamesA  $UniqueDiMeShortNamesA
+;UniqueDiMeShortNamesA  UniqueDiMeRefsA
+
+; 06.10.12
+FAIholdings   FAIHoldings
+FAIloans      FAILoans
+FAItypes      FAITypes
+IFAclasses    IFAClasses
+TFAclasses    TFAClasses
+TFAownership  TFAOwnership
+TPAtype       TPAType
+TPAstatus     TPAStatus
+
+; 07.10.12
+;DiMeShortNamesToIdA  UniqueDiMeRefToIdA
+;DiMeNamesA.inc  DimShortNamesA.inc
+;$DiMeNamesA     $DiMeShortNamesA
+
+; 08.10.12
+;UniqueDiMeRefToIdA  UniqueDiMeRefMapA
+;DimShortNamesToIdA  DimShortNamesMapA
+;HyShortNamesToIdA   HyShortNamesMapA
+;BroNamesToIdA       BroNamesMapA
+;"Com_Inc_Tx.'NamespacesTxA.inc"          "Com_Str_Tx.'NamespacesTxA.inc"
+;"Com_Inc_Tx.'NamespacesRgA.inc"          "Com_Str_Tx.'NamespacesRgA.inc"
+;"Com_Inc_Tx.'HypercubeAs.inc"            "Com_Str_Tx.'HypercubeAs.inc"
+;"Com_Inc_Tx.'ManagedPropDiMeIdsAS.inc"   "Com_Str_Tx.'ManagedPropDiMeIdsAS.inc"
+;"Com_Inc_Tx.'DiMesA.inc"                 "Com_Str_Tx.'DiMesA.inc"
+;"Com_Inc_Tx.'DiMesRA.inc"                "Com_Str_Tx.'DiMesRA.inc"
+;"Com_Inc_Tx.'DimShortNamesA.inc"         "Com_Str_Tx.'DimShortNamesA.inc"
+;"Com_Inc_Tx.'UniqueDiMeRefsA.inc"        "Com_Str_Tx.'UniqueDiMeRefsA.inc"
+;"Com_Inc_Tx.'DiMeLabelsA.inc"            "Com_Str_Tx.'DiMeLabelsA.inc"
+;"Com_Inc_Tx.'DiMeMapA.inc"               "Com_Str_Tx.'DiMeMapA.inc"
+;"Com_Inc_Tx.'DiMeSumTreesA.inc"          "Com_Str_Tx.'DiMeSumTreesA.inc"
+;"Com_Inc_Tx.'DiMeTargetsA.inc"           "Com_Str_Tx.'DiMeTargetsA.inc"
+;"Com_Inc_Tx.'TuMesA.inc"                 "Com_Str_Tx.'TuMesA.inc"
+;"Com_Inc_Tx.'TupNamesA.inc"              "Com_Str_Tx.'TupNamesA.inc"
+;"Com_Inc_Tx.'TupFullNamesA.inc"          "Com_Str_Tx.'TupFullNamesA.inc"
+;"Com_Inc_Tx.'TupLabelsA.inc"             "Com_Str_Tx.'TupLabelsA.inc"
+;"Com_Inc_Tx.'BrosA.inc"                  "Com_Str_Tx.'BrosA.inc"
+;"Com_Inc_Tx.'BroNamesA.inc"              "Com_Str_Tx.'BroNamesA.inc"
+;"Com_Inc_Tx.'BroNamesMapA.inc"           "Com_Str_Tx.'BroNamesMapA.inc"
+;"Com_Inc_Tx.'BroShortNamesA.inc"         "Com_Str_Tx.'BroShortNamesA.inc"
+;"Com_Inc_Tx.'BroDescrsA.inc"             "Com_Str_Tx.'BroDescrsA.inc"
+;"Com_Inc_Tx.'BroTagsA.inc"               "Com_Str_Tx.'BroTagsA.inc"
+;"Com_Inc_Tx.'BroRptOrderA.inc"           "Com_Str_Tx.'BroRptOrderA.inc"
+;"Com_Inc_Tx.'BroSumTreesA.inc"           "Com_Str_Tx.'BroSumTreesA.inc"
+;"Com_Inc_Tx.'ZonesA.inc"                 "Com_Str_Tx.'ZonesA.inc"
+;"Com_Inc_Tx.'RgRT.inc"                   "Com_Str_Tx.'RgRT.inc"
+
+; 10.10.12
+;ElementId  ElId
+
+; 11.10.12 Just UK-GAAP
+;"Com_Inc_Tx.'NamespacesTxA.inc"          "Com_Str_Tx.'NamespacesTxA.inc"
+;"Com_Inc_Tx.'NamespacesRgA.inc"          "Com_Str_Tx.'NamespacesRgA.inc"
+;"Com_Inc_Tx.'HypercubeAs.inc"            "Com_Str_Tx.'HypercubeAs.inc"
+;"Com_Inc_Tx.'ManagedPropDiMeIdsAS.inc"   "Com_Str_Tx.'ManagedPropDiMeIdsAS.inc"
+;"Com_Inc_Tx.'DiMesA.inc"                 "Com_Str_Tx.'DiMesA.inc"
+;"Com_Inc_Tx.'DiMesRA.inc"                "Com_Str_Tx.'DiMesRA.inc"
+;"Com_Inc_Tx.'DimShortNamesA.inc"         "Com_Str_Tx.'DimShortNamesA.inc"
+;"Com_Inc_Tx.'UniqueDiMeRefsA.inc"        "Com_Str_Tx.'UniqueDiMeRefsA.inc"
+;"Com_Inc_Tx.'DiMeLabelsA.inc"            "Com_Str_Tx.'DiMeLabelsA.inc"
+;"Com_Inc_Tx.'DiMeMapA.inc"               "Com_Str_Tx.'DiMeMapA.inc"
+;"Com_Inc_Tx.'DiMeSumTreesA.inc"          "Com_Str_Tx.'DiMeSumTreesA.inc"
+;"Com_Inc_Tx.'DiMeTargetsA.inc"           "Com_Str_Tx.'DiMeTargetsA.inc"
+;"Com_Inc_Tx.'TuMesA.inc"                 "Com_Str_Tx.'TuMesA.inc"
+;"Com_Inc_Tx.'TupNamesA.inc"              "Com_Str_Tx.'TupNamesA.inc"
+;"Com_Inc_Tx.'TupFullNamesA.inc"          "Com_Str_Tx.'TupFullNamesA.inc"
+;"Com_Inc_Tx.'TupLabelsA.inc"             "Com_Str_Tx.'TupLabelsA.inc"
+;"Com_Inc_Tx.'BrosA.inc"                  "Com_Str_Tx.'BrosA.inc"
+;"Com_Inc_Tx.'BroNamesA.inc"              "Com_Str_Tx.'BroNamesA.inc"
+;"Com_Inc_Tx.'BroNamesMapA.inc"           "Com_Str_Tx.'BroNamesMapA.inc"
+;"Com_Inc_Tx.'BroShortNamesA.inc"         "Com_Str_Tx.'BroShortNamesA.inc"
+;"Com_Inc_Tx.'BroDescrsA.inc"             "Com_Str_Tx.'BroDescrsA.inc"
+;"Com_Inc_Tx.'BroTagsA.inc"               "Com_Str_Tx.'BroTagsA.inc"
+;"Com_Inc_Tx.'BroRptOrderA.inc"           "Com_Str_Tx.'BroRptOrderA.inc"
+;"Com_Inc_Tx.'BroSumTreesA.inc"           "Com_Str_Tx.'BroSumTreesA.inc"
+;"Com_Inc_Tx.'ZonesA.inc"                 "Com_Str_Tx.'ZonesA.inc"
+;"Com_Inc_Tx.'RgRT.inc"                   "Com_Str_Tx.'RgRT.inc"
+
+; 12.10.12 Both
+;"'	'"  TAB
+;eeDB           bbDB
+;eeResQuery     bbResQuery
+;eeQuery        bbQuery
+;eeObjQuery     bbObjQuery
+;eeOptObjQuery  bbOptObjQuery
+;eeAaQuery      bbAaQuery
+;eeOptAaQuery   bbOptAaQuery
+;eeOneQuery     bbOneQuery
+;eeOneStrQuery  bbOneStrQuery
+;eeDupQuery     bbDupQuery
+;eeInsertQuery  bbInsertQuery
+
+;eeInsertMaster('AgentData'     bbInsertMaster(T_Braiins_AgentData
+;eeInsertMaster('AgentTrans'    bbInsertMaster(T_Braiins_AgentTrans
+;eeInsertMaster('BroData'       bbInsertMaster(T_Braiins_BroData
+;eeInsertMaster('BroDataTrans'  bbInsertMaster(T_Braiins_BroDataTrans
+;eeInsertMaster('EntityTrans'   bbInsertMaster(T_Braiins_EntityTrans
+;eeInsertMaster('Members'       bbInsertMaster(T_Braiins_Members
+
+;eeInsertMasterNoLog('BrosAll'  bbInsertMasterNoLog(T_Braiins_BrosAll
+
+;eeDupInsertMaster('Agents'     bbDupInsertMaster(T_Braiins_Agents
+;eeDupInsertMaster('Entities'   bbDupInsertMaster(T_Braiins_Entities
+;eeDupInsertMaster('People'     bbDupInsertMaster(T_Braiins_People
+
+;eeUpdateMaster('AgentData'     bbUpdateMaster(T_Braiins_AgentData
+;eeUpdateMaster('BroData'       bbUpdateMaster(T_Braiins_BroData
+;eeUpdateMaster('Entities'      bbUpdateMaster(T_Braiins_Entities
+;eeUpdateMaster('Members'       bbUpdateMaster(T_Braiins_Members
+;eeUpdateMaster('People'        bbUpdateMaster(T_Braiins_People
+
+;eeUpdateMasterNoLog('BrosAll'  bbUpdateMasterNoLog(T_Braiins_BrosAll
+
+;eeDupUpdateMaster('Agents'     bbDupUpdateMaster(T_Braiins_Agents
+;eeDupUpdateMaster('Entities'   bbDupUpdateMaster(T_Braiins_Entities
+;eeDupUpdateMaster('People'     bbDupUpdateMaster(T_Braiins_People
+
+;eeDeleteMaster('AgentData'     bbDeleteMaster(T_Braiins_AgentData
+;eeDeleteMaster('BroData'       bbDeleteMaster(T_Braiins_BroData
+;eeDeleteMaster('BroDataTrans'  bbDeleteMaster(T_Braiins_BroDataTrans
+
+;eeIncrMaster('Members'         bbIncrMaster(T_Braiins_Members
+;eeIncrMaster('People'          bbIncrMaster(T_Braiins_People
+
+; 17.10.12
+;SGcontainer  sgContainer
+;grid-header  sgHdr
+;gridHdrBox   sgHdrBox
+;rowHover     sgRowHover
+
+; 23.10.12 re Formats
+;TPAs                      EntityInfo.ThirdPartyAgents
+;Info.EntityName           EntityInfo.Names.CurrentLegalOrRegistered
+;Info.RegistrationNumber   EntityInfo.IdentifyingCodes.UKCompaniesHouseRegisteredNumber
+;Dates.YearStartDate       BRI.DatesPeriods.Start
+;Dates.YearEndDate         BRI.DatesPeriods.End
+;Officers.                 EntityInfo.Officers.
+;RegisteredOffice          EntityInfo.MeansContact.Address:ContactType.RegisteredOffice
+;Dates.SigningDirectorsReport  DirRep.DateSigningDirectorsReport
+;PL.Revenue.Turnover  PLRev.TradingIncome.TurnoverGrossOpRevenue
+;PL.Expenses          PLExps
+;Function.Admin       ExpenseType.Admin
+;Function.CoS         ExpenseType.CoS
+;Function.Distrib     ExpenseType.Distrib
+;PL.Totals.GrossProfit      PLExps.ProfitTaxTotals.GrossProfit
+;PL.Totals.OperatingProfit  PLExps.ProfitTaxTotals.OperatingProfit
+;PL.Interest.Receivable
+;PL.Interest.Payable
+;Statements.NoOtherGainsOrLosses           STRGL.StatementThatThereWereNoGainsInPeriodOtherThanThoseInPL
+;PL.Revenue.Analysis.GeoSeg.ByDestination  SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo
+;Countries.UnitedKingdom  Countries.UK
+
+; 25.10.12
+;Funcs.inc    LoadFuncs.inc
+;FuncsSA.inc  LoadFuncsSA.inc
+;FuncsDB.inc   ClassBDB.inc
+;bbResQuery              ResQuery
+;bbQuery                 Query
+;bbObjQuery              ObjQuery
+;bbOptObjQuery           OptObjQuery
+;bbAaQuery               AaQuery
+;bbOptAaQuery            OptAaQuery
+;bbOneQuery              OneQuery
+;bbOneStrQuery           OneStrQuery
+;bbDupQuery              DupQuery
+;bbInsertQuery           InsertQuery
+;bbInsertMaster          InsertMaster
+;bbInsertMasterNoLog     InsertMasterNoLog
+;bbDupInsertMaster       DupInsertMaster
+;bbUpdateMaster          UpdateMaster
+;bbUpdateMasterNoLog     UpdateMasterNoLog
+;bbDupUpdateMaster       DupUpdateMaster
+;bbDeleteMaster          DeleteMaster
+;bbIncrMaster            IncrMaster
+;bbNextAutoIncrement     NextAutoIncrement
+;->Query  ->StQuery
+;bbDB  BDB
+
+; 28.11.12
+;DiMeId_RestatedPriorPeriodIncr  DiMeId_PyaPriorPeriodIncr
+;DiMeId_RestatedAcctPolicyIncr   DiMeId_PyaAcctPolicyIncr
+;DiMeId_RestatedMaterialErrIncr  DiMeId_PyaMaterialErrIncr
+;DiMeId_RestatedOriginalAmount   DiMeId_PyaOriginalAmount
+;DiMeId_RestatedAmount           DiMeId_PyaAmount
+
+; 12.12.12
+;EntityInfo.  SchInputEntity.
+;BRI.         SchInputBRI.
+;DirRep.      SchInputDirRep.
+;SegAnalysisRevCostsProfits.  SchInputPL.SegAnalysisRevCostsProfits.
+
+; 21.12.12
+;PensionSchemes.DefinedBenefit  SchInputPensionSchemes.DefinedBenefit
+
+; 10.01.13
+;2011-2012  2011-2013
+
+; 14.01.13
+;1.7.2   1.8.3
+;1.8.19  1.9.2
+
+; 18.01.12
+;BroI_ThisAllowDims  BroI_ThisUsableDims
+;BroI_PostAllowDims  BroI_PostUsableDims
+;thisAllowDims       thisUsableDims
+;postAllowDims       postUsableDims
+
+; 30.01.13
+;1.8.3.min.js  1.9.0.js
+
+; 07.02.13
+;1.9.0.js  1.9.1.js
+;1.9.1.js  1.9.1.min.js
+
+; 17.02.13
+;BroI_ThisUsableDims  BroI_UsableDims
+
+; 09.03.13
+;AddLoginLock                   AddBDbLoginLock
+;ReleaseLoginLock               RelBDbLoginLock
+;RemoveLoginLock                RelBDbLoginLock
+;AddAgentEntityLoginLocks       AddBDbAgentEntityLoginLocks
+;ReleaseAgentEntityLoginLocks   RelBDbAgentEntityLoginLocks
+
+; 10.03.13
+;OneStrQuery  StrOneQuery
+
+; 14.03.13
+;T_Braiins_  T_B_
+
+; 16.03.13
+;DiMeB_Man  DiMeB_M
+;ManType    MType
+;manType    mType
+
+; 17.03.13
+;DimId_BraiinsAgeing  DimId_Ageing
+
+; 20.03.13
+;Role_Dim  Role_Prop
+;Role_Hy   Role_PoP
+;Role_PoP  Role_Port
+
+; 21.03.13
+;Portfolio  Folio
+
+; 22.03.13
+;RGFB_OK         Status_OK
+;RGFB_Prod       Status_Prod
+;RGFB_Archived   Status_Archived
+;RGFB_Dormant    Status_Dormant
+;BroB_ManDim    BroB_M
+;BroB_Prop      BroB_2
+;BroB_NoManOK   BroB_NoMok
+
+; 24.03.13
+;BroI_UsableDims      BroI_BroUsableDims
+;BroI_PostUsableDims  BroI_SumUsablePropDims
+;PostUsableDims       SumUsablePropDims
+;ThisUsableDims       BroUsableDims
+;postUsableDims       sumUsablePropDims
+;thisUsableDims       broUsablePropDims
+;BroI_BroDiMesA       BroI_ItemDiMesA
+;BroDiMesI_MandatsA   II_MandatsA
+;BroDiMesI_DefaultsA  II_DefaultsA
+;BroDiMesI_ExcludesA  II_ExcludesA
+;BroDiMesI_AllowsA    II_AllowsA
+
+; 31.03.13
+;EntityTypeToStr        EntityTypeStr
+;CoSizeToStr            CoSizeStr
+;EntityStatusToStr      EntityStatusStr
+;EntityDataStateToStr   EntityDataStateStr
+;EntityAcctsStateToStr  EntityAcctsStateStr
+;BroTransTypeToStr      BroTransTypeStr
+;DataTypeToStr          DataTypeStr
+;SumUpToStr             SumUpStr
+;AccountTypeToStr       AccountTypeStr
+;TUCNToStr               TUCNStr
+;ContextToStr           ContextStr
+
+; 05.04.13
+;DimDiMeShortNamesA   DiMeNamesA
+;DimShortNamesA  DimNamesA
+;HyShortNamesA   HyNamesA
+;HypercubeAs.inc  Hypercubes.inc
+;HypercubeDimsA   HyDimsA
+;DiMeRI_ShortName  DiMeRI_DiMe_Name
+;DiMeRI_DiName     DiMeRI_DimEleName
+;DiMeRI_MeName     DiMeRI_DiMeEleName
+
+; 08.04.13
+;ChrListToCsDecList              ChrListToCsList
+;$StartEndTxIdsA                 $StartEndTxIdsGA
+;$TupIdsByMemberTxIdAndHyIdA     $TupIdsByMemberTxIdAndHyIdGA
+;$BroSumTypesA                   $BroSumTypesGA
+;$SummingBroExcludeDimsChrsA     $SummingBroExclDimsChrsGA
+;$NonSummingBroExcludeDimsChrsA  $NonSummingBroExclDimsChrsGA
+
+; 18.04.13
+;CoSize_   ES_
+foreach(  foreach (
+if(       if (
+for(      for (
+
+; 19.04.13
+;BroSetTxN  BroSetTxnId
+;CoSizeCredits  EntitySizeCredits
+;CoSizeStr      EntitySizeStr
+
+; 28.04.13
+;Braiins_DB  DB_Braiins
+;TX_DB       DB_Tx
+;DEFAULT_DB  DB_Default
+;HOME_URL    Home_URL
+
+; 29.04.13
+;$AppId  $AppAid
+;RegNum   Ident
+;SRegNum  SIdent
+;DimGroupsInUse    DGsInUse
+;DimGroupsAllowed  DGsAllowed
+
+; 19.07.13
+;ItemNamesA            PMemNamesA
+;ItemLabelsA           PMemLabelsA
+;ItemsA                PMemsA
+;ItemMapA              PMemMapA
+;ItemSumTreesA         PMemSumTreesA
+;ItemTargetsA          PMemTargetsA
+;RestatedItemTargetsA  RestatedPMemTargetsA
+;Property Item         Property Member
+;PropertyItems         PMembers
+;ItemB_                PMemB_
+;ItemI_                PMemI_
+;Item Use         Member Use
+;Item Excl Rule   Member Excl Rule
+;BroI_ItemDiMesA  BroI_PMemDiMesA
+;BRefB_ItemRef    BRefB_PMemRef
+;BRefB_ItemERef   BRefB_PMemERef
+;BRefB_ItemMux    BRefB_PMemMux
+;BRefB_ItemPya    BRefB_PMemPya
+;ItemDiMesA       PMemDiMesA
+;itemRef  pMemRef
+;ItemRef  PMemRef
+itemName  pMemName   
+ItemName  PMemName

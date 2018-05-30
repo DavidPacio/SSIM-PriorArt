@@ -1,0 +1,18 @@
+﻿Creditors Ageing test plus SumEnd DE Sch
+No DE Check
+Debug:0
+#Tx5469	Tx5469 AAAAA Limited
+ImportType:Replace
+#Tx5470	No
+#Tx5492	Yes
+#Tx5600	87654321
+#Tx5589	2009.01.01
+#Tx5460	2009.12.31
+Tx3389Hy13	-462,838 	-429,504	# :start removed 28.09.12
+Tx3388	-592,949 	-959,560	# :start removed 28.09.12
+Tx541       	186,723 	30,000
+Tx575       	15,082 	5,082
+Tx4107      	 	2,046,481	# Used to achieve DE balance
+Tx389       	-741,815 	-241,815
+Tx5092      	2,046,481 	2,046,481
+Tx3984:start	-450,684 	-450,684	# Bro 2764

@@ -1,0 +1,12 @@
+Cash movement test with dimensions is use
+Movement in Tx542 expected to be alocated to Tx2646 - Tx2648, Tx2647, Tx2649
+No DE Check
+ImportType:Replace
+
+Cash
+Tx541:OpActivities.ContinuingOpsExclAcqs	60,000 	30,000
+Tx575	6,330 	5,082
+Tx2648	2,648
+Tx2647	2,647
+Tx2649	2,649
+

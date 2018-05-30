@@ -1,0 +1,66 @@
+Press.txt
+=========
+
+http://www.xbrlwithsage.com/news.php
+
+
+AccMan (Dennis Howlett)
+-----------------------
+Sage's Nightmare Week
+http://www.constellationrg.com/1847/sages-nightmare-week/
+
+iXBRL to be delayed?
+http://accmanpro.com/2011/02/03/ixbrl-to-be-delayed/
+
+AccountancyAge
+--------------
+Sage delays full iXBRL release
+http://www.accountancyage.com/aa/news/1938400/sage-delays-ixbrl-release
+
+Expert claims Sage patch means extra work for users
+http://www.accountancyage.com/aa/news/1938895/expert-claims-sage-patch-means-extra-users
+
+Video: Sage delays release of iXBRL software
+http://www.accountancyage.com/aa/analysis/1939723/video-sage-delays-release-ixbrl-software
+
+Audio: Sage delays release of iXBRL software
+http://www.accountancyage.com/aa/analysis/1939724/audio-sage-delays-release-ixbrl-software
+
+Not very sage tactics
+http://www.accountancyage.com/aa/opinion/1939771/leader-hmrc-offensive
+
+Will iXBRL software delays dent confidence in Sage?
+http://www.accountancyage.com/aa/analysis/1939598/ixbrl-software-delays-dent-confidence-sage
+
+Accounting institutes call on Treasury to delay iXBRL
+http://www.accountancyage.com/aa/news/2019672/accounting-institutes-treasury-delay-ixbrl
+
+To defer or not to defer
+http://www.accountancyage.com/aa/analysis/2024075/defer-defer
+
+Treasury rejects institutes' plea for iXBRL delay
+http://www.accountancyage.com/aa/news/2025085/treasury-rejects-institutes-plea-ixbrl-delay
+
+AccountingWeb
+-------------
+iXBRL delay: the case for and against
+http://www.accountingweb.co.uk/topic/tax/ixbrl-delay-case-and-against/477549
+
+Tax bodies call for iXBRL filing delay
+http://www.accountingweb.co.uk/topic/technology/tax-bodies-join-forces-delay-ixbrl-filing/476515
+
+Minister stonewalls iXBRL delay request
+http://www.accountingweb.co.uk/topic/tax/minister-quashes-ixbrl-delay-request/478565
+
+ICAEW
+-----
+Delay requested in filing iXBRL accounts
+http://www.ion.icaew.com/TaxFaculty/21421
+
+Call for XBRL mandation delay
+http://www.ion.icaew.com/itcounts/21427
+
+Taxation
+--------
+Concern mounts over iXBRL deadline
+http://www.taxation.co.uk/taxation/articles/2011/02/03/21639/concern-mounts-over-ixbrl-deadlin

@@ -1,0 +1,89 @@
+Id	Standard Label	HyId	TupId	Type	Comments
+102	Actuarial gain (loss) recognised in pension schemes	39		Money	HyIds 1,14 done out of 1,14,39
+134	Agency and management earnings - Gross	13		Money	HyId 9 done out of 9,13
+162	Allowances for credit losses, financial assets [grouping]		3	Tuple	Tuple Members remaining: 4152
+171	Amortisation and impairment (reversal) of intangible fixed assets	38		Money	HyId 6 done out of 6,38
+178	Amortisation of intangible assets, expense	38		Money	HyId 6 done out of 6,38
+196	Amount of exceptional operating cost	13	81	Money	HyId 11 done out of 11,13
+277	Amounts written off (back) investments	38		Money	HyIds 1,10 done out of 1,10,38
+299	Assets with non-recourse finance arrangements [grouping]		6	Tuple	Tuple Members remaining: 3555
+343	Average capital employed	1		Money	HyIds 17,18 done out of 1,17,18
+381	Bank loans and overdrafts, finance charges	38		Money	HyId 13 done out of 13,38
+398	Basic sales revenue	13		Money	HyId 11 done out of 11,13
+923	Compound financial instruments with multiple embedded derivatives [grouping]		16	Tuple	All Tuple Members to go: 1348
+1041	Costs (gains) from fundamental restructuring or reorganisation	38		Money	HyId 2 done out of 2,38
+1231	Deferred tax arising on gains (losses) in pension schemes	39		Money	HyIds 1,14 done out of 1,14,39
+1259	Depreciation and impairment (reversal) of tangible fixed assets	38		Money	HyId 5 done out of 5,38
+1268	Depreciation of tangible fixed assets, expense	38		Money	HyId 5 done out of 5,38
+1393	Description of exceptional operating cost	13	81	String	HyId 11 done out of 11,13
+1489	Description of other government assistance	13	83	String	HyId 9 done out of 9,13
+1833	Employee share option payments, decrease (increase) in profit and loss account	39		Money	HyId 1 done out of 1,39
+1837	Employee share scheme costs	38		Money	HyId 9 done out of 9,38
+1877	Equity dividends paid	39		Money	HyIds 1,13 done out of 1,13,39
+2093	Financial assets valuation [grouping]		46	Tuple	Tuple Members remaining: 2742
+2118	Financial liabilities value [grouping]		47	Tuple	Tuple Members remaining: 2743
+2120	Finished goods and goods for resale	13		Money	HyId 38 done out of 13,38
+2220	Foreign exchange gain (loss) recognised in profit and loss	13		Money	HyId 9 done out of 9,13
+2272	Gain (loss) from disposal of fixed assets	38		Money	HyId 2 done out of 2,38
+2273	Gain (loss) from disposal of intangible fixed assets	38		Money	HyIds 4,13 done out of 4,13,38
+2277	Gain (loss) from disposal of tangible fixed assets	38		Money	HyIds 3,13 done out of 3,13,38
+2285	Gain (loss) from exchange adjustments, profit and loss account	39		Money	HyId 1 done out of 1,39
+2299	Gain (loss) from tax on exchange adjustments, profit and loss account	39		Money	HyId 1 done out of 1,39
+2341	Gain (loss) on sale or termination of operations	38		Money	HyId 2 done out of 2,38
+2440	Government grant receipts - Net	13		Money	HyId 9 done out of 9,13
+2512	Hire and leasing of plant and machinery, costs	13		Money	HyId 9 done out of 9,13
+2576	Impairment loss (reversal) intangible fixed assets	38		Money	HyId 6 done out of 6,38
+2581	Impairment loss (reversal) of tangible fixed assets	38		Money	HyId 5 done out of 5,38
+2585	Impairment losses on financial assets, income statement [grouping]		51	Tuple	Tuple Members remaining: 2199
+2611	Income from other fixed asset investments	38		Money	HyId 7 done out of 7,38
+2927	Investments not carried on an historical cost basis [grouping]		57	Tuple	Tuple Members remaining: 4941
+3021	Leases and hire purchase contracts, finance charges	38		Money	HyId 13 done out of 13,38
+3147	Loss (gain) from deferred tax, profit and loss account	39		Money	HyId 1 done out of 1,39
+3281	Net gain from other government assistance	13	83	Money	HyId 9 done out of 9,13
+3367	Number of employees at specific date [grouping]		70	Tuple	Tuple Members remaining: 3366, 3651
+3411	Operating lease expenditure	38		Money	HyId 9 done out of 9,38
+3531	Other exceptional operating costs	13		Money	HyId 11 done out of 11,13
+3615	Other operating income	38		Money	HyId 10 done out of 10,38
+3694	Own shares, additions	41		Money	
+3696	Own shares, amount written off	41		Money	
+3697	Own shares, cost	41		Money	
+3701	Own shares, net book value	41		Money	
+3704	Own shares, transfers	41		Money	
+3705	Own shares, transfers written off	41		Money	
+3706	Own shares, written of during period	41		Money	
+3707	Own work capitalised	13		Money	HyId 10 done out of 10,13,38
+"	"	38		Money	"
+3794	Pensions costs, defined benefit schemes	13		Money	HyId 9 done out of 9,13,38
+"	"	38		Money	"
+3795	Pensions costs, defined contribution schemes	13		Money	HyId 9 done out of 9,13,38
+"	"	38		Money	"
+3897	Preference shares classified as debt, finance charges	38		Money	HyId 13 done out of 13,38
+3984	Profit and loss account reserve	39		Money	HyId 1 done out of 1,39
+4024	Provision for loss on sale or termination of operation	38		Money	HyId 2 done out of 2,38
+4100	Purchase of own shares, decrease (increase) in profit and loss account	39		Money	HyId 1 done out of 1,39
+4190	Redundancy costs	13		Money	HyId 9 done out of 9,13,38
+"	"	38		Money	"
+4196	Reimbursement of costs	13		Money	HyId 9 done out of 9,13
+4208	Reorganisation and restructuring costs	13		Money	HyId 9 done out of 9,13,38
+"	"	38		Money	"
+4231	Research and development costs	13		Money	HyId 12 done out of 12,13,38
+"	"	38		Money	"
+4302	Royalty, licence and similar receivables	13		Money	HyId 9 done out of 9,13
+4420	Social security costs	38		Money	HyId 9 done out of 9,38
+4450	Staff costs	38		Money	HyId 9 done out of 9,38
+4536	Stocks / inventory	13		Money	HyId 38 done out of 13,38
+4546	Stocks, payments on account	13		Money	HyId 38 done out of 13,38
+4551	Stocks of raw materials and consumables	13		Money	HyId 38 done out of 13,38
+4825	Total transfer to (from) profit and loss account reserve	39		Money	HyId 1 done out of 1,39
+5058	Wages and salaries	38		Money	HyId 9 done out of 9,38
+5092	Work in progress	13		Money	HyId 38 done out of 13,38
+5127	Bonuses, directors	38		Money	HyId 40 done out of 38,40
+5129	Charitable donations	38		Money	HyId 1 done out of 1,38
+5130	Company contributions to defined benefit schemes, directors	38		Money	HyId 40 done out of 38,40
+5131	Company contributions to money purchase schemes, directors	38		Money	HyId 40 done out of 38,40
+5133	Compensation for loss of office, directors	38		Money	HyId 40 done out of 38,40
+5165	Details of specific options, directors [grouping]		146	Tuple	Tuple Members remaining: 5162
+5250	Payments to third parties for director services	38		Money	HyId 40 done out of 38,40
+5256	Political donations	38		Money	HyId 1 done out of 1,38
+5267	Salaries and fees, directors	38		Money	HyId 40 done out of 38,40
+6441	Description of activity	39		String	HyId 38 done out of 38,39

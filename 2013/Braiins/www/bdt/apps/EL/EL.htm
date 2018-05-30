@@ -1,0 +1,20 @@
+<!-- EL Entities List -->
+<h2 class=c>List the <span class=AName></span> Entities</h2>
+<h3 class=c>Report Options</h3>
+<div class='c mb05'><button id=ELbAll class=bLoc title='Click to select all options'>Select All</button><button id=ELbUnAll class=bLoc title='Click to deselect all options except for "Your Reference" which is always enabled'>Deselect All</button></div>
+<table id=ELtOpt class=mc>
+<tr><td colspan=2 class=c>Columns to be Included in the Report</td></tr>
+<tr><td><input type=checkbox checked disabled> Your Reference</td><td><input id=ELc1 type=checkbox> <label for=ELc1>Entity Name</label></td></tr>
+<tr><td><input id=ELc2 type=checkbox> <label for=ELc2>Entity Type</label></td><td><input id=ELc3 type=checkbox> <label for=ELc3>Company Size</label></td></tr>
+<tr><td><input id=ELc4 type=checkbox> <label for=ELc4>Year end date</label></td><td><input id=ELc5 type=checkbox> <label for=ELc5>Years of data held by Braiins</label></td></tr>
+<tr><td><input id=ELc6 type=checkbox> <label for=ELc6>Data state</label></td><td><input id=ELc7 type=checkbox> <label for=ELc7>Accounts state</label></td></tr>
+<tr><td class=pr10><input id=ELc8 type=checkbox> <label for=ELc8>Date last set of accounts run</label></td><td> <input id=ELc9 type=checkbox> <label for=ELc9>Manager</label></td></tr>
+<tr><td><input id=ELc10 type=checkbox> <label for=ELc10>Level</label></td><td><input id=ELc11 type=checkbox> <label for=ELc11>Status</label></td></tr>
+<tr><td><input id=ELc11 type=checkbox> <label for=ELc11>Comments</label></td><td></td></tr>
+<tr><td colspan=2 class=c>Entity Selection Criteria</td></tr>
+<tr><td><input id=ELcDemo type=checkbox> <label for=ELcDemo>Include Demo Entities</label></td><td>Include Entities with Level <= <input id=ELnLev class=w30x type=number min=1 data-min=1 size=1 maxlength=1 value=1 disabled></td></tr>
+</table>
+
+<div class='clr c p10'><button id=ELbGo title='Click to generate the List Entities Report'>List Entities</button><button id=ELbTab title='Click to go to the Browser Report Tab'>Report Tab</button></div>
+<p class='c f90'>When you click the List Entities button the report will appear in a new <i>Entities - <span class=AName></span></i> tab to the right.  A repeat report uses the same tab.</p>
+

@@ -1,0 +1,56 @@
+PHP Code taken Out of Service which might be useful one day......
+-----------------------------
+
+From Compile.php
+
+// Token tYpe bits          bit
+//nst TY_SCALAR   =    1;
+//nst TY_STRING   =    2;
+const TY_CHAR     =    1; // 0
+const TY_NUMSTR   =    2; // 1
+const TY_DQSTRING =    4; // 2
+const TY_SQSTRING =    8; // 3
+const TY_DQSTART  =   16; // 4
+const TY_SQSTART  =   32; // 5
+//nst TY_INT      =  256;
+//nst TY_FLOAT    =  512;
+//nst TY_BOOL     = 1024;
+//nst TY_ARRAY    = 2048;
+//nst TY_OBJECT   = 4096;
+//nst TY_RESOURCE = 8192;
+const TY_QSTRING  =   12; // TY_DQSTRING | TY_SQSTRING;
+
+// int Type($v)
+// ------------
+// Returns the type of $v in TY_ bit settings. String types can have multiple bits set.
+function Type($v) {
+  if (is_scalar($v)) {
+    if (is_string($v)) {
+      $ty  = TY_SCALAR | TY_STRING;
+      $len = strlen($v);
+      if ($len== 1)        $ty |= TY_CHAR;
+      if (is_numeric($v))  $ty |= TY_NUMSTR;
+      $chr0 = $v[0];
+      if ($chr0 == '"') {
+        // starts with "
+        if ($v[$len-1] == '"') $ty |= TY_DQSTRING;
+        else                   $ty |= TY_DQSTART;
+      }else if ($chr0 == '\'') {
+        // starts with '
+        if ($v[$len-1] == '\'') $ty |= TY_SQSTRING;
+        else                    $ty |= TY_SQSTART;
+      }
+      return $ty; // scalar string +
+    }
+    // not a string
+    if (is_int($v))   return TY_SCALAR | TY_INT;
+    if (is_float($v)) return TY_SCALAR | TY_FLOAT;
+    if (is_bool($v))  return TY_SCALAR | TY_BOOL;
+    return RGError("$v passed to CheckType has an unknown scalar type");
+  }
+  // not a scalar
+  if (is_array($v))    return TY_ARRAY;
+  //if (is_object($v))   return TY_OBJECT;
+  //if (is_resource($v)) return TY_RESOURCE;
+  return RGError("$v passed to Type() has an unknown non-scalar type");
+}

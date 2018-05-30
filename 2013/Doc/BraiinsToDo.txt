@@ -1,0 +1,438 @@
+To Do Braiins
+=============
+
+Braiins
+-------
+HINT: Take a look at the video on this web page titled “The Basics of Quantrix Modeler”: http://goo.gl/qQ4Hx This video will help you understand the difference between logical models and semantic models.
+
+Setup company
+
+Site
+----
+
+Looking for OWL info showed up another OWL http://www.doxbox.ca/ which has an impressive list of features, and is open source written in PHP!
+Despite all the features, this OWL does not seem to be getting much TLC though. Perhaps it could be useful for us. I haven't downloaded it yet, but will at some point.
+
+
+
+Get rid of $.browser use and jquery-migrate-1.0.0.js extract for it in BDT.js
+
+Alternative from SlickGrid channel:
+I just extended jQuery with the code below; although it does not directly answer your question it will definitely fix the problem with as few lines of code as possible. 
+jQuery.browser = {};
+jQuery.browser.mozilla = /mozilla/.test(navigator.userAgent.toLowerCase()) && !/webkit/.test(navigator.userAgent.toLowerCase());
+jQuery.browser.webkit = /webkit/.test(navigator.userAgent.toLowerCase());
+jQuery.browser.opera = /opera/.test(navigator.userAgent.toLowerCase());
+jQuery.browser.msie = /msie/.test(navigator.userAgent.toLowerCase());
+
+
+http://knockoutjs.com/
+
+http://requirejs.org/
+
+
+
+
+Check for jui 1.11 re Alert jwindow masking problem.
+Follow through on other jui 1.10 point in Bdt.js
+
+On DataImport ensure Year dates are set. (Used by EL, ER, ED.)
+
+Check the various zIndex values for possible interaction incl the sg ones and 999999 formask in Busy()
+
+
+
+
+use sscanf more.
+
+BDT Apps
+========
+
+EL Entities List
+----------------
+13.01.13  1. Add Tips. [Done for the buttons]
+13.01.13  2. Add Exclude Demo entities option to EL. [Done as Include...]
+13.01.13  3. Enable button only when a col in addition to Col reference is selected.
+
+AM Admin Members
+----------------
+          1. Allow duplicate emails for if diff agent i.e. same person a member of multiple agents as per Reg.php
+
+
+Bros as of Jan 2012
+====
+16.02.12  1. Add module to list elements not used by Bros, including by hypercube and tuple. And Start/End?. [ConcreteElementsNotInBros.php]
+
+          2. Bro Descriptions - add provision for
+             a. Optional Agent (Practice) variation
+             b. Optional Entity variation.
+
+02.03.12  3. Add a Bro Ref field
+             a. Add provision for Optional Agent (Practice) variation.
+             b. Do something with it!
+
+  .12.12  4. Check restated tuple
+
+          5. Add tuple descr nesting with comparative tuples
+
+  .12.12  6. Get Summing working for the Start/End cases
+
+          7. Handle Exceptional item before/after summing
+
+          8. Handle Amortisation adj before/after summing
+
+xx.xx.xx  9. Use full Source BroRef in BroData to avoid need for upgrade on Bro Id change and to make upgrade easier on a Bro name change? [No, not with change to use of Bro Class.]
+
+  .12.12 10. Change BroRef format so it sorts wo messing around? Or just for the BroData table? Or use PHP 5.4 natural sort? [Done as part of Bro Class work]
+
+06.06.12 11. Handle limiting tuple members used with multiple tuples when hypercubes don't do the job. [Tuple handling with Bros changed.]
+
+         12. Start/End outstanding: 4244 and 1903 status
+             See Doc/BrosAndTx/StartEndPeriodNotes.txt 'Extended 16.11.11 Following "Start/End Summing" email exchange with Charles'
+
+         13. Investigate excluding a Bro if allowable dims down to x e.g. for subsidiary capital Bros when no subsidiaries.
+             Or do we need Bro exclusion options?
+
+07.08.13 14. Add $AcctTypes to $BrosA if used, or delete it o'wise [Deleted.
+
+         15. Zones - make us of allowable dimensions list
+
+xx.xx.12 16. Add Bros Import warning for Sets with no members
+
+         17. Allow Excl Dims, Incl Dims DiMeId different for a Slave as HyId can be a subset = have to handle dims anyway?
+
+07.10.12 18. Remove DimNames from DiMeNamesA and use the Dim Names from DimNamesA?
+
+12.01.13 19. Make BroNameFromTxName($name, $dadName=0) apply only for BuildTxStructs and Tx option in BrosImport i.e. store all other uses of it as data.
+
+
+Project
+=======
+Choose payment processing service(s)
+
+Choose hosting
+
+Design logo, favicon, site look, wallpaper, desktop icons
+
+Site content
+
+Get HMRC account and -> Approval
+
+Get SSL certificate
+
+To Consider
+===========
+Use Trusteer? http://www.trusteer.com/
+
+Report Generator and Taxonomy Related Items
+===========================================
+          1. Add a signature to the generated htm file to enable checking of whether it has been modified
+          3. Provide for global hypercube/dimension inclusions/exclusions at client level
+08.02.12  4. Change to v2 Transformations
+          5. Check for 14 Predefined value items in XBRL (enums) in UK Detailed Tagging Information Version 1.0, dated 1 May 2011
+
+
+Public Site
+===========
+
+html/css/JavaScript
+-------------------
+          1. Add menu events support to Pub menu as per TARI MooTools code
+             See also Superfish in tools and http://users.tpg.com.au/j_birch/plugins/superfish/#getting-started
+12.01.12  2. Add leave site V_LS call. No. Abandon this idea because there is no way to tell a leave site unload from a reload/refresh one.
+xx.xx.11  3. Change jquery load to using CDN
+          4. Simplify tips code removing ie6 stuff and other unused stuff incl setting defaults to what is needed eg alignTo: 'target'
+16.01.12  5. Fix small grey vertical at bottom between 1st and 2nd segments of a grey button
+          6. Add a message form to Contact Us
+09.01.12  7. Change to xhml strict as per bdt?. No. Changed to html5.
+          8. Add a strength indicator to Registration password entry.
+11.01.12  9. Replace cookies use by html 5 local storage
+11.01.12 10. Change Site.js+ re field count as per BDT.js+
+         11. Add a 'log out completely' or 'remove all trace' option which clears localStorage
+         12. Make Site.js and Utils.js Ajax calling more like the Bdt.js method
+         14. Add progress images to ajax ops. [Done for Reg Jan 12. Only leaves Login/Out.]]
+         15. Add an Unload op -> V_UN Visit Trans like the BDT one?
+         16. Bring Login up to the BDT standard
+         17. Resolve login when person is member of multiple agents
+
+
+BDT
+===
+          1. Fix jdesktop points below
+24.02.12  2. Add a Context menu
+          3. Add desktop icons
+xx.xx.xx  4. Get DataTables Scroller working with EC (Change Entity) etc for keyboard scrolling. [N.A after change to Slickgrid.]
+08.02.12  5. Load DataTables modules via BDT index.htm rather than via Apps?
+09.01.12  6. Change from xhtml to html5
+xx.xx.12  7. Use own table for simple things like the Accounts & Reports table rather than DataTables? [Done for Snapshot and DataTrail.]
+13.01.13  8. Add hints to List Entities options selection [Done for the buttons.]
+12.02.12  9. Make Menu button grey initially and darken it when active.
+09.06.12 10. Grey out menu items not available to user
+09.06.12 11. Switch from rev to html data attribute
+18.01.12 12. Add a separate tab system for reports etc. See /Doc/BdtTabApps.txt
+18.02.12 13. Add a Close All Windows action item
+19.02.12 14. Make Change Entity non-minimisable. [No. Reversed 20.02.12 so all windows have a tool bar button re hover and bringing to the top.]
+         15. Add a tile/arrange windows option
+20.02.12 16. Make the desktop open with the menu showing
+23.02.12 17. Change DataTables row click binding to use on() on body plus tr filter
+21.02.12 18. Make dialogs position to app window rather than browser window
+         19. Intercept any click when a dialog is up and return focus to the dialog
+22.02.12 20. Add a Busy spinner after a task has been running for a second
+         21. Find a bigger spinner image.
+27.02.12 22. Center Busy spinner in the active window?
+xx.xx.xx 23. Add BDT btn top left and top right to separate tabs. [Huh?]
+20.02.12 24. Change BDT and Tab etc to make use of jWindows AppsO{} for for Back, After etc
+16.02.12 25. Make closing a separate tab callback the initiating BDT window to allow closing of its Report button.
+27.02.12 26. Add an Unload op -> V_UN Visit Trans
+13.01.13 27. EL List Entities: Add a panel for the options selections. [Nope. Leave it as it is.]
+28.02.12 28. Separate the App() and Init() functions so that a reinit does add duplicate event handlers -> 'Ref' undefined in CFS after Entity Change.
+xx.xx.12 29. Merge BDT and jDesktop. (Already partially the case as of 28.02.12) [Done.]
+xx.10.12 30. Upgrade to DataTables 1.9 released 01.02.12. [Changed to using SlickGrid instead.]
+         31. Add public cloud (DropBox etc) support for Upload and Download and combat Cloud Sprawl.
+             http://www.zdnet.com/uk/just-when-you-thought-it-was-safe-to-byoc-now-theres-cloud-sprawl-7000010083/
+
+
+jDesktop
+--------
+15.01.13  1. Upgrade to latest jquery.event.drag or remove the need for it with a jQ UI container? [Upgraded to jquery.event.drag-2.2.js and adjusted the BDT drag code for the parameter changes.]
+16.01.13  2. Upgrade to latest transform e.g. transform 0.9.3 vs 0.6.2 tho bigger. Or remove it as not much used as of 22.02.12? [Sylvester removed 28.02.12] [Use of transform plug-in removed by using CSS3 transform scale]
+20.02.12  3. Ugrade to new pulse http://james.padolsey.com/javascript/simple-pulse-plugin-for-jquery/ [Pulse used removed instead.]
+23.02.12  4. Check $(this) use as many probably can -> this as already changed in some cases.
+20.02.12  5. Add loading img to window and remove it once loaded [Tool bar btn now comes up quickly wo any downloading so that shows action is underway. Busy() handles bringing up a Busy image]
+20.02.12  6. Add a specific delete of jWindow closures on closing its window? [No. leave as it is.]
+          7. Add a window resize fn
+19.02.12  8. Improve -> top e.g. win hidden behind another & try to make new or hover over tb btn and it doesn't become visible
+21.02.12  9. Make use of onFocus and onBlur to adjust z-index values.
+19.02.12 10. Check use of tbx etc. Really current x,y,w,h rather than tb x etc? [Yes. Were not needed. Now just x, y etc.]
+16.01.12 11. Remove jWindow confirm window use in favour of general overridden alert/confirm? [Just removed, not replaced by anything.]
+xx.02.12 12. Fix movable problem with SlickGrid causing an error on close
+xx.02.12 13. Fix desktop key binding after headings close
+22.02.12 14. Bensure: Make removal of js and css files on close happen only if not in use by another window. No. Doesn't matter.
+         15. Bensure: Use jQuery Ajax loads as per jGrid.loader instead of Bensure? Or at least tidy it up... re css, forEach... Then use it for loading BDT js files?
+xx.02.12 16. Fix the SligGrid Destroy fudge
+xx.02.12 17. Tidy up the js and css, removing unused items. Lots. See /Doc/Dev/jDesktop.txt
+         18. Change moving and maximising to avoid covering the BDT Close button.
+21.02.12 19. Change/improve task bar button appearance. [20.02.12 Switched to more css class use, improved text shadow and hover re close btn.]
+14.01.13 20. Make jWindow borders less transparent i.e. change opacity. [Done by adding colour #80badd to the border div css background statements]
+16.01.12 21. Change to use of Braiins style buttons in apps. [-> JUI ones pt 22.]
+16.02.12 22. Change to use of JUI style buttons in apps
+21.02.12 27. Make use of jWindow's winmask instead of greying out buttons? [Both with change to active window system.]
+22.02.12 28. Make new windows avoid opening directly over the top of another window
+21.02.12 29. Add window onFocus and onBlur
+20.02.12 30. Give non-minimisable windows a tool bar button re hover and bringing to the top. [Later changed to make all windows minimisable.]
+21.02.12 31. Give box shadow to the active window and remove it as an option
+21.02.12 32. Change the move mask colour from red to blue
+22.02.12 33. Change window operation to having 3 states: minimised, open, active (top), with 3 too bar styles, and all that goes with this... incl reinit after change entity only on focus
+22.02.12 34. Stop window manipulation clicks while an app is loading or Ajax is running.
+14.01.13 35. Further simplify the jWindow div structure and css. [Leave as it is.]
+21.02.12 36. Remove use of pulse, giving window a shake plus blue box shadow instead when wanting to draw attaention to a window
+         37. Change to UI dialogs for the jWindows?
+         38. Improve the window close and minimise btns. Like the Windows 7 ones?
+         39. Use a stack of open windows?
+         40. Clone the win for min showing leaving orig unscaled?
+         41. Check click false returns. See http://fuelyourcoding.com/jquery-events-stop-misusing-return-false/
+
+
+DB Work
+-------
+          1. Add Foreign key constraints. http://www.sitepoint.com/mysql-foreign-keys-quicker-database-development/
+          2. Add locks re Import and Reports e.g. CDT, CTB, CFS, CFD .....
+
+          
+          
+Graphics
+--------
+         1. Produce smaller versions of the info64.png etc icons with transparency preserved.
+         2. Find or create a suitable tick for the Data Trail Restated column. png with transparent background.
+         3. Find or create Windows 7 style Close and Minimise button to use with BDT windows
+         4. Fix the tips (arrow head like protrusions) on the corners of BDT windows in Chrome.
+
+
+
+Server Side
+===========
+          1. Take error handling back to the pre Mosso method via an Exec call of Error.cli
+
+          2. Complete Sessions items:
+11.01.12     - Allow for multiple windows/tabs with info kept separate.
+11.01.12     - Tentative downgrade after xx wo access. Made to work for new window via sessionStorage and localStorage
+             - Ip, IpN, and UserAgent update in Visits if different on a subsequent visit, as per NMS.php
+             - Detect bots as per NMS.php
+             - Add detection of from page to set PageFromN
+             - Add EoD or other compaction of UserAgent and referrer fields
+
+02.01.12  3. Change password encoding to SHA2. http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_sha2
+             Or use the PHP fn sha1() of hash() instead of the MySQL one so saving a DB query just to do this e.g. when saving the pw in Reg.php.
+             But why is strong encryption an issue as any login attempt will go through the right hashing? Only relevent if DB table has been stolen?
+             Action taken 02.01.12:
+               Changed to use of SHA512 password encryption via hash() with salt based on Id, done in fn GenPw($pw, $id) added to FuncsDB.inc
+               Added count of falied attempts and lock person out if....
+               Removed security question from Registraion. Not relevent. Administrator to reset passwords.
+
+          4. Write cron tasks as per"Cron or EoD Task" section.
+
+30.12.11  5. For Headings add update of the AgentData ADT_Headings record
+             ==> or switch to doing everything via the AgentData ADT_Headings record and drop the Headings table
+
+07.04.11  6. Change DBLogging to record only the new not both old and new
+
+          7. Locking re multi-user posting
+
+          8. Site maintenance "lock"
+
+          9. Archive DBLog and Visit related tables
+
+         10. Write php module compacter for compiled formats. And for own modules? Use a php compiler?
+
+         11. ignore_user_abort() use needed? See http://php.net/manual/en/features.connection-handling.php
+
+DBs
+===
+          1. Move the AgentData records into Agents as three text fields and delete AgentData ? (AgentData is not kept by year.)
+
+
+Tools
+=====
+Checkout Knockout
+http://knockoutjs.com/
+
+
+Cron or EoD Task
+================
+- Compact Visits and VisitTrans re UserAgents and referrers re pages etc
+- Downgrade Visits from LGN_FULL if there has been no activity for more than 24 hours
+- Check for Ids approaching their size limits e.g. the mediumint Ids of BroData and BroDataTrans
+                                                   the smallint  Ids of Entities etc
+- Delete V_UN VisitTrans transactions which are immediately followed by another op
+
+- Check Status and Locks tables as per BuildMemoryTables.php
+
+
+Server Setup
+============
+PHP ini
+-------
+- check error handling settings incl error_log
+- set variables_order = "PCS"
+
+Platform
+========
+Checkout Salesforce app platform
+http://www.readwriteweb.com/cloud/2012/05/salesforces-chatter-elbows-microsofts-skype-out-of-the-enterprise.php?utm_source=twitterfeed&utm_medium=twitter&utm_campaign=Feed%3A+readwriteweb+%28ReadWriteWeb%29
+
+
+Security
+========
+1. Change to Bcrypt for password storage.
+   http://phpmaster.com/why-you-should-use-bcrypt-to-hash-stored-passwords/
+2. Go through PHPMaster Security Roundup
+   http://phpmaster.com/phpmaster-security-roundup/
+
+
+Prepare for Launch
+==================
+1. Remove ie6 stuff from poshytips and ui
+2. remove unused widgets from ui js
+3. Minimse js
+4. Set gzip on server
+5. Check for html5 input number support re level in List Entities and elsewhere...
+6. Update Aristo to latest (dec 2011?) version
+7. Use async and defer with js? async is FF, IE, webkit default. see https://developer.mozilla.org/En/HTML/Element/Script
+8. Clear history for separate tabs? See http://www.w3.org/TR/2009/WD-html5-20090423/history.html and http://caniuse.com/#search=%20history
+9. Clear history for Ajax calls?
+10. Any use for webworkers?
+11. Use link prefetch?
+12. Add ie9 check . See http://blogs.msdn.com/b/ie/archive/2010/08/17/ie9-opacity-and-alpha.aspx
+13. remove all non CSS3 stuff from all css incl ie pre 9 filter:Alpha(Opacity...
+
+
+Things to Check
+===============
+Should jui Buttons be destroyed on App close?
+
+
+Launch
+======
+  1. Get HMRC Approved
+  2. Set up hosting
+
+
+Misc Done
+=========
+xx.06.11 Fix empty []s tree display for tuples in elements lookup e.g. 4200
+         Revise BuildStructs to decide on allowable dimensions for multiple hypercube cases by context. [Done via HyId]
+xx.07.11 Revise InitRGB.php + compiler + run time for sparse array method of handling Entity officers and Third party Agents
+         Bring BROs Edit up to date for dimensions and inheritance handling
+         If BroB_SetDimManProp is never used with a Tx based BRO, remove the test for it from the Tx branch  of BuildStructs, BrosList, and BrosEdit
+         Handle wrong hypers but which may be OK e.g. 588 in PL.Revenue.Analysis.BusinessSegment
+         Write a BROs check
+xx.08.11 Compiler and RG progress on tables, alternative text, subtotals etc
+xx.09.11 Compiler and RG progress on tables, cell arithmetic, doc etc
+         Concrete Elements
+xx.10.11 Braiins Dimensions
+         Expenses Bros revised to use Function Dims
+         Officers and TPAs Bros revised for sub sets
+         Bro maintenance via SS with Export, Import, and Lookup
+         Exceptional Item added to Bros to allow for before/after summing re Dim 5 ExceptionalItemsAdjustmentsDimension
+         Amortisation Adj added to Bros to allow for before/after summing re Dim 6
+         Add Account Types and Post Type to Bros
+24.10.11 Make Bros Posting to set and members mux
+         Make posting without dim use and with dim use for any given Bro mux
+25.10.11 Simplify summing and summing checks with mux checks implemented
+26.10.11 Add Braiins Dimension Bros to BuildStructs.php
+27.10.11 Post to Braiins Dimensions - additions to BroRefPost() in FuncsPost.inc and BroRef() in Compile.php
+         Add DE balance check to Import
+xx.11.11 My next things to do (which have building up in the last few days) are:
+* write the email mentioned above re Statements Bros
+* write you an email about more Report Only use
+* zap Man Dim and Prop Dim if Report Only set (In Bro.inc and BuildStructs.php)
+* add a Context vs Tx Period check to Bros Import [and added more context types]
+* add auto creation of abbreviated name to Bro Import on command
+* add [Period Start] or [Period End] to Elements Lookup tree ToId elements when set
+* Ones with Bro TxIds: 2132,2155,2167,2805,2815,3019,4654,4655,5114,5121,5230,5234
+* fix Elements Lookup Def Tree for Tuples without Def Arcs - 5277,5164
+* fix Concrete Elements Def Trees for Tuples without Def Arcs
+* work through the various Bro review points and issues which have shown up
+* look into the Expenses Bros vs Function Dim use point that arose during discussion a few days ago
+* give you a bit more background to the Interest etc Bros situation
+* Add provision for a fixed or set DiMe as per Charles' comments on IFAs. (Via ExclDiMeId -> DiMeid +ve or -ve)
+* Make Dim 21 periods Mux
+* allow for Bros to have same TxId for PeriodStart and PeriodEnd. Change Context to Context Type and Period = Period | PeriodStart | PeriodEnd ?
+* MPeriods short names => <1 etc as per Ageing.
+* Get Ageing working with Bros Export/Import etc
+xx.12.11 StartEnd re Bros
+29.12.11 Sort out the html special characters at import/posting time
+20.01.12 Remove type=text/javascript from html5 pages
+12.10.12 Speed up DBLog deletes in ER.php and ED.php or leave them to GC. DBLog rearranged - AppN -> EntityId, Mensa -> TableN
+20.10.12 Move Apps srv php modules in Apps subsdirectories
+24.10.12 Get RG running again
+11/12.12 Write Bro Class
+28.12.12 Check why Fails count doesn't get incremented for failed logins. [Was Null field which IncrMaster() did not update.]
+
+
+
+Puzzles
+=======
+09.01.12  1. Why did posting of a heading containg & wo urlencoding work on 07.03.11 but not of 08.03.11?
+             Will never know. Changed 09.01.12 to call encodeURIComponent() on each field being posted in updated version of Post() passed an array of data rather than a dat string.
+
+
+One Day
+=======
+Make app loading faster by kicking of the initialisation ajax call before loading the html and javascript?
+
+Books
+=====
+Financial Accounting and Reporting
+http://edu.cengage.co.uk/catalogue/product.aspx?isbn=1408021137
+http://cws.cengage.co.uk/stolowy3/students/Website_Appendices%203rd%20edn.pdf
+
+
+Bugs
+====
+02.05.12 1. App window context menu close only worked once.
+
+         2. In FF clicking Close etc in a BDT App needs 2 clicks if a select had focus and its options are dropped down. OK in Chrome.
+            http://stackoverflow.com/questions/6207929/is-there-a-dom-event-that-fires-when-an-html-select-element-is-closed
+            precondition: using jQuery! jbabey 8 Jul 11
+

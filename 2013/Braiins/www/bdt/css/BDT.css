@@ -1,0 +1,147 @@
+/* Global */
+
+body {font:normal 12px Verdana,Arial,sans-serif;padding:1px 0;overflow:hidden; /* wo the padding the background doesn't appear in FF ? */
+/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0066cc', endColorstr='#5C9DE2'); for IE but doesn't work */
+  background: -webkit-gradient(linear,left top, left bottom, from(#06c), to(#06c), color-stop(0.5, #83BCDD));
+  background: -moz-linear-gradient(left, #06c, #83BCDD, #06c)}
+
+* {margin:0;padding:0}
+/* img {border:none} djh?? Not needed? */
+
+a {cursor:pointer;color:#06c;text-decoration:underline}
+a:hover {background:#ccc}
+p {margin:0 0 .5em}
+
+/*h1, h2, h3, h4, label {font-family:Verdana,Tahoma,Arial,Helvetica,Geneva,sans-serif} */
+h1{font-size:120%;color:#007AA3;margin:0 0 .6em}
+h2{font-size:115%;color:#007AA3;margin:0 0 .5em}
+h3{font-size:110%;color:#777AA3;margin:0 0 .2em}
+h4{font-size:105%;color:#069}
+
+ul {margin:0 0 .5em 1.5em;list-style-image:url(../../img/BlueDot.gif)}
+/*p+ul,h2+ul {margin-top:-0.5em} */
+li {margin:0 0 0.5em}
+
+hr {clear:both;border-top:1px solid #ddd;height:0}
+/*hr {clear: both;background: none repeat scroll 0 0 #ddd;color: #ddd;height: 0.1em;margin:0 0 1.2em;width:100%} /* jp */
+
+.fl {float:left}
+.fr {float:right}
+.hide {display:none}
+.block{display:block}
+.inline{display:inline}
+
+/* Layout */
+/* Main influenced by jD */
+#main {width:100%;height:100%;position:absolute;overflow:hidden}
+
+/* Top bar */
+/*
+#topbar {background:url(img/topbar.png) repeat scroll 0 0 transparent; height:35px; left:0; position:absolute; top:0; width:100%; z-index: 7000;}
+#topbar {position:fixed; background:url(Aristo/bg_fallback.png) 0 0 repeat-x; top:0; width:100%; height:44px; color:#eee}
+#topbar {position:fixed; background:url(img/nav-bg.png) repeat-x; top:0; width:100%; height:44px; color:#eee}
+  background: -webkit-gradient(linear,left bottom,left top, color-stop(1, #ededed), color-stop(0, #c4c4c4));
+ background: -moz-linear-gradient(center top,#0000ff,#c4c4c4);
+*/
+#topbar {position:fixed; top:0;width:100%; height:44px; color:#2F2F2F}
+#topbar,#footer {filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#ededed');
+  background: -webkit-gradient(linear,left top, left bottom, from(#ccc), to(#ccc), color-stop(0.5, #ededed));
+  background: -moz-linear-gradient(top,#ccc,#ededed,#ccc);
+}
+#logo {background:url(../../img/Logos.jpg) no-repeat; margin:1px 12px; width:122px; height:40px}
+#topbar #Mb {line-height:37px}
+#Mb:after {content:url(../../img/ArrowDown.png)}
+#Ag {margin:0.4em 0 0.3em}
+#En {margin:0}
+#Ag b, #En b {display:inline-block;width:48px;text-align:right}
+#rMnu {position:absolute;top:0;right:30px}
+#CL {position:absolute;top:0;right:0;height:44px;width:40px;padding:0 1px;background:url(../../img/CloseBtn30.png) no-repeat scroll right center}
+#CL:hover {background-color:#ccc;padding:0;border-left:1px solid #222;border-right:1px solid #666}
+
+/* Much simplified version of JPolite Native Navigation Tab + js for hover */
+#topbar ul {float:left;list-style-type:none;margin:0}
+#topbar li {float:left;display:block;font-size:120%;font-weight:bold;width:6em;text-align:center;height:44px;line-height:40px;cursor:pointer;position:relative;padding:0 1px;margin:0}
+
+/* Footer */
+#footer {position:fixed; bottom:0; width:100%; height:35px} /* 7000 z-index: as per jD removed so jui dialog overlay would go over it */
+/* jD task bar buttons container djh 05.03.11 Moved here from jdesktop.css when it became the last one left */
+#tcontainer {height:100%; overflow:hidden; position:absolute}
+
+/* Content */
+
+/* misc */
+.b{font-weight:bold}
+.c{text-align:center}
+.bb {font-weight:bold;color:#069}
+.n  {font-weight:normal}
+.i  {font-style:italic}
+.s  {font-size:smaller}
+.L  {font-size:127%}
+.u {text-decoration:underline}
+.ua {text-decoration:underline;cursor:pointer}
+.f75{font-size:75%}
+.f90{font-size:90%}
+.clr{clear:both}
+.mc{margin-left:auto;margin-right:auto}
+.left{text-align:left}
+.right{text-align:right}
+.top{vertical-align:top}
+.mb0{margin-bottom:0}
+.mb05{margin-bottom:.5em}
+.p05{padding:.5em}
+.pb0{padding-bottom:0}
+.p10{padding:1em}
+.pl10{padding-left:1em}
+.pr10{padding-right:1em}
+.pl20{padding-left:2em}
+.pt05{padding-top:.5em}
+.w30x{width:30px}
+.w32x{width:32px}
+.greya{color:#aaa}
+.wng{font-weight:bold;color:#f00}
+.inpbg{background-color:#f5ffff} /* input background colour */
+.notb{border-top:0 !important}
+.norb{border-right:0 !important}
+.nobb{border-bottom:0 !important}
+
+/*table {border-spacing:2px} removed 19.07.12 re Wijmo */
+table  td {display:table-cell}
+/* inputs .in for span to look like an input*/
+input,select,.in {font:normal 1em verdana,arial,sans-serif;color:#000;background:#f5ffff;border:1px solid #7F9DFF;padding:0 2px 1px;margin-top:1px;outline-color:#7F9DFF;line-height:16px}
+input[type=text],input[type=email],input[type=number] {outline:none} /* To turn off Chrome's outline on these inputs, but need to allow it on selects, CBs, RBs as box-shadow doesn't work, but need to change their colour as above*/
+select {padding:0;white-space:pre} /* padding 0 as padding appears around button; white-space was an attempt to get FF to include trailing spaces but it didn't help */
+input[type=checkbox] {position:relative;top:2px} /* align the CBs better */
+input[type=radio] {position:relative;top:1px} /* align the RBs better */
+label+input[type=radio] {margin-left:1em} /* space RBs */
+span[title] {padding:2px} /* so that mouse in/out works for tips re included disabled inputs/btns */
+input[readonly] {background:#FEFCF5}
+input:invalid {border:1px solid #db7800;box-shadow:none} /* box-shadow to kill FF's big red bs */
+:disabled{border:1px solid silver;background:#f8f8f8}
+:disabled+label {opacity:0.4} /* only works when label is on the right. No left sibling selector! */
+input:focus,select:focus,span.childHasFocus {box-shadow:0 0 3px #7F9DFF;background:#fff}
+input:focus:invalid{box-shadow:0 0 3px #db7800}
+button+button{margin-left:1em}
+
+/* Table to show in an App window with appearance similar to a slick-grid table */
+table.show {font-size:1em;background:#FDFEFE;border:1px solid silver;border-collapse:collapse;margin:1em auto}
+table.show td {padding:4px;vertical-align:top;border:1px solid silver;}
+table.show tr.odd {background: #FBFBFB} /* with even rows #FDFEFE as per the table */
+
+/* Little Local Button */
+button.bLoc {padding:1px 0.5em;background:#DAE6F4;border: 1px solid #7F9DFF;border-radius:6px;font-size:90%}
+button.bLoc:hover{color:#00f;box-shadow:0 0 0 1px #7FBBFF inset;background:#e0ffff}
+
+/* Menu Div */
+#Md {display:none}
+#Md dl {float:left}
+#Md dl:first-child {width:46%;margin-right:5px;border-right:1px solid #ddd}
+#Md dt {margin:.6em 0 .4em;font-weight:bold}
+#Md li {margin:0 0 .3em}
+
+.lilBox{font-size:90%;border:1px solid silver;border-radius:8px;background:#f5f5f5;margin-top:6px;padding:8px}
+.info{font-size:90%;border:1px solid silver;border-radius:6px;background: #F5F7D7;margin-top:10px;padding:5px 5px 0 10px}
+
+#B{z-index:99999;position:absolute;top:47%;left:47%;width:48px;height:48px;padding:8px;border:2px solid #666;border-radius:8px;background:#eee url(../../img/Busy.gif) no-repeat center 12px;display:none}
+#B>div{position:relative;top:34px;text-align:center}
+
+.up2 {position:relative;top:-2px}

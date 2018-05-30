@@ -1,0 +1,50 @@
+Braiins Dimensions
+==================
+
+Dimension   Dimension Members
+Function    Admin
+            CoS
+            Distrib
+
+            with the sum of the dims in Main Bro = "Total Costs"
+
+Braiins Ageing Dimension
+Ageing.All
+  Ageing.WithinOneYear
+  Ageing.AfterOneYear
+    Ageing.BetweenOneFiveYears
+      Ageing.BetweenOneTwoYears
+      Ageing.BetweenTwoFiveYears
+    Ageing.MoreThanFiveYears
+
+
+Relates to those Creditors needing further analysis between 1-2 yrs, 2-5, yrs, Over 5 years.
+
+A 'Periods' dimension exists:
+275 - Dimension - Maturities or Expiration Periods [21]
+  [A] 157 All periods
+    [A] 5091 Within one year
+      [A] 5089 Within 30 days
+      [A] 2249 From 30 to 60 days
+      [A] 2250 From 60 to 90 days
+      [A] 5090 Within 6 months
+      [A] 411 Between 6 months and one year
+    [A] 133 After one year
+    [A] 412 Between one and five years
+      [A] 413 Between one and two years
+      [A] 414 Between two and five years
+    [A] 3205 More than five years
+    [A] 5339 Not applicable [default]
+
+which is only used by Hypercube 29
+29 FinInstrs	820 - Hypercube - Financial Instruments
+
+
+Additional mapping required for Braiins Dimensions by Bro:
+ - TxId for each DiMe
+ - HyId to apply if different e.g. 13 for 2512 [9]
+
+Total Costs                                                               Admin                                                              CoS                Distrib
+[C] 2505 Hire and leasing of plant, equipment and vehicles, costs         [C] 2503 Hire and leasing of plant, equipment and vehicles         [C] 2504 Hire and  [C] 2507 Hire and
+  [C] 2512 [9,13] Hire and leasing of plant and machinery, costs            [C] 2510 Hire and leasing of plant and machinery                   [C] 2511 Hire a    [C] 2513 Hire a
+

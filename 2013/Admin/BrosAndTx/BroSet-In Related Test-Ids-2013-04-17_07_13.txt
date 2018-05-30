@@ -1,0 +1,5 @@
+﻿BroId	Type	Level	BroName	Name0	N1	N2	N3	N4	N5	N6	N7	N8	ShortName	Master	Ref	Folio	DataType	Sign	AcctTypes	PostType	RO	ExclProps	AllowProps	Items	SumUp	Check	Related	Period	StartEnd	Zones	Order	Descr	Comment	Scratch	I Usable Props	I Sum Usable Props	I M# Item Info	I StartEnd	I Slave Ids	I Slave Filtering
+BroSet Type: In-Incl, Name: In Related Test, Descr: In-BroSet Related Column Test, SortKey: D8
+1	Set	0	Test	Test													String		Notes
+2	Ele	1	  Test.CharitableDonationDescr	 	CharitableDonationDescr												String		Notes								M Test.CharitableDonationAmount
+3	Ele	1	  Test.CharitableDonationAmount	 	CharitableDonationAmount												Money	Debit	Notes	Sch							M Test.CharitableDonationDescr

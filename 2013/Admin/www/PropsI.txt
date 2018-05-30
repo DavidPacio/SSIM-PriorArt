@@ -1,0 +1,47 @@
+Entity	Entity	01 - Entity Information
+Superior	Superior Entity	01 - Entity Information
+Subord	Subordinate Entity	01 - Entity Information
+TPA	Third Party Agent	508 - Property - Third Party Agent Type
+Person	Person	01 - Entity Information
+Officer	Officer	500 - Property - Entity Officers
+Address	Address	01 - Entity Information
+Contact	Contact	01 - Entity Information
+Group	Group and company	100 - Property - Group and Company
+ConDis	Continuing and discontinued operations	105 - Property - Continuing and Discontinued
+Restated	Restatements	110 - Property - Restatements
+EquityClasses	Equity classes	130 - Property - Equity Classes
+OpSegs	Operating segments	150 - Property - Operating Segments
+ProdsServs	Products and services	170 - Property - Products And Services
+MajCusts	Major customers	180 - Property - Major Customers
+BizCombos	Business combinations	190 - Property - Business Combinations
+PPEClasses	Property, plant and equipment classes	200 - Property - PPE Classes
+IFAClasses	Intangible asset classes	210 - Property - Intangible Asset Classes
+ImpairAllowType	Impairment allowance account type	225 - Property - Impairment Allowance Account Type
+FIValueType	Financial instrument value type	230 - Property - Financial Instrument Value Type
+FIs	Financial instrument current and non-current	232 - Property - Financial Instrument Current and Non-Current
+FILevel	Financial instrument level	233 - Property - Financial Instrument Level
+FIMvts	Financial instrument movements	234 - Property - Financial Instrument Movements
+ICRisk	Industry concentration risk	235 - Property - Industry Concentration Risk
+CrRatings	Credit ratings	238 - Property - Credit Ratings
+MPeriods	Maturities or expiration periods	240 - Property - Maturities Or Expiration Periods
+DefTaxClasses	Deferred tax asset and liability classes	250 - Property - Deferred Tax Classes
+ProvClasses	Provisions classes	260 - Property - Provisions Classes
+PensionSchemes	Pension schemes	270 - Property - Pension Schemes
+SharePayment	Share-based payment schemes	280 - Property - Share-based Payment Schemes
+ContLiabClasses	Contingent liabilities classes	290 - Property - Contingent Liabilities Classes
+RelatedParties	Related parties	300 - Property - Related Parties
+ShareClasses	Share classes	502 - Property - Share Classes
+Regions	Regions	520 - Property - Countries and Regions
+Countries	Countries	520 - Property - Countries and Regions
+Currencies	Currencies	521 - Property - Currencies
+Exchanges	Exchanges	522 - Property - Stock Exchanges
+Languages	Languages	523 - Property - Languages
+Industry	Industry SIC 2007	550 - Property - Activity
+ExpenseType	Expense type	551 - Property - Expense Type
+ExceptNon	Exceptional and non-exceptional items	552 - Property - Exceptional and Non-Exceptional Items
+Analysis	Detailed analysis	553 - Property - Detailed Analysis
+GroupTrans	Intra / extra group transactions	554 - Property - Intra / extra group transactions
+Ageing	Ageing	150 - Property - Operating Segments
+Instance	Instance	150 - Property - Operating Segments
+None	None	01 - Entity Information
+Unallocated	Unallocated	150 - Property - Operating Segments

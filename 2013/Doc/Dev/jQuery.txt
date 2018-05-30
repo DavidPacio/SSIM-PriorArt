@@ -1,0 +1,464 @@
+jQuery
+======
+
+jQuery 1.8 change coming
+------------------------
+http://api.jquery.com/jQuery.ajax/
+Deprecation Notice: The jqXHR.success(), jqXHR.error(), and jqXHR.complete() callbacks will be deprecated in jQuery 1.8. To prepare your code for their eventual removal, use jqXHR.done(), jqXHR.fail(), and jqXHR.always() instead.
+
+// Assign handlers immediately after making the request,
+// and remember the jqxhr object for this request
+var jqxhr = $.ajax( "example.php" )
+    .done(function() { alert("success"); })
+    .fail(function() { alert("error"); })
+    .always(function() { alert("complete"); });
+
+// perform other work here ...
+
+
+jQuery   http://jquery.com/
+------
+CDN:
+http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/
+http://encosia.com/cripple-the-google-cdns-caching-with-a-single-character/
+==> protcol-less:
+//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js
+
+From 29.01.12
+<script src=http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js></script>
+=> 
+<script src=//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js></script>
+- protocol-less
+- specific version re 1 day -> 365 day caching and to avoid upgrade breaks
+
+
+UI and Themes
+-------------
+http://jqueryui.com/home
+
+CDN:
+http://stackoverflow.com/questions/1348559/are-there-hosted-jquery-ui-themes-anywhere
+// Google
+http://ajax.googleapis.com/ajax/libs/jqueryui/[UI.VERSION]/themes/[THEME-NAME]/jquery-ui.css
+// Microsoft
+http://ajax.aspnetcdn.com/ajax/jquery.ui/[UI.VERSION]/themes/[THEME-NAME]/jquery-ui.css
+
+
+ThemeRoller
+http://jqueryui.com/themeroller/
+http://taitems.github.com/Aristo-jQuery-UI-Theme/
+
+10 Great jQuery Plugins (incl Cloud Zoom)
+-----------------------
+http://www.devarticles.com/c/a/JavaScript/10-Great-jQuery-Plugins/
+
+Class: jQuery Annex
+-------------------
+http://www.jsclasses.org/package/90-JavaScript-General-purpose-functions-missing-in-jQuery.html
+This package provides general purpose functions missing in jQuery library.
+
+It extends the jQuery object, jQuery enabled objects and selectors to provide many additional features useful for different purposes like:
+
+- creating jQuery-enabled DOM-elements on the fly
+- checking if a variable exists, is set and if it has a certain type
+- checking if an object all has given variables set
+- complex replacing or truncating of strings
+- (re)scheduling timed invocations of callback functions
+- reloading the current page or redirecting the browser to a new URL with complex parameter sets
+- setting or getting the current URL anchor or cookie values
+- extracting CSS property values for code or template use
+- deselecting any content in a page or make a dom element unselectable
+- measuring hidden elements
+- etc.
+
+jQuery Grids
+============
+http://stackoverflow.com/questions/159025/jquery-grid-recommendations
+
+jQuery UI Grid
+http://blog.jqueryui.com/2011/02/unleash-the-grid/ 
+http://wiki.jqueryui.com/w/page/34246941/Grid#Stage4GridAddons
+http://wiki.jqueryui.com/w/page/12138038/Roadmap
+
+ jqGrid http://www.trirand.com/blog/                jqGrid is free. Trirand also sells server side packages.
+        http://www.trirand.net/default.aspx
+        http://trirand.com/blog/jqgrid/jqgrid.html  Demo
+
+ SlickGrid https://github.com/mleibman/SlickGrid/wiki/Examples
+
+Datatables
+----------
+See separate Datatables.txt
+
+jQuery data Grid http://jqframework.com/index.php
+Wijmo: http://wijmo.com/widgets/wijmo-open/
+
+jQuery Desktops
+===============
+jDesktop - Not IE yet
+http://plugins.jquery.com/plugin-tags/desktop
+http://fractalbrain.net/
+http://www.windowbuilder.fractalbrain.net/
+
+http://sonspring.com/journal/jquery-desktop
+https://github.com/nathansmith/jQuery-Desktop
+jQuery.portal http://sourceforge.net/projects/jqportal/
+jPolite http://www.trilancer.com/jpolite2/index1.html
+
+MB http://pupunzi.open-lab.com/mb-jquery-components/mb-containerplus/
+
+UI.Layout http://layout.jquery-dev.net/index.cfm
+
+jquery.Metadata
+---------------
+Metadata 2.1 which adds support for HTML5 data-* attributes: http://plugins.jquery.com/node/8774
+Older version wo HTML5 data-* sttribute support, as used by MB: https://github.com/jquery/jquery-metadata
+See also: http://www.notgoingdark.com/blog/archive/2010/02/25/a-very-quick-guide-to-the-jquery-meta-data-plug-in.aspx
+
+Popup Box
+---------
+http://jqframework.com/index.php
++ WYSIWYG Editor
++ Grid
+
+http://roosteronacid.com/blog/index.php/2010/01/20/jquery-plug-in-personalized-alert-messages/
+Replaces standard alert() using UI dialog
+
+ToolTips
+--------
+http://vadikom.com/tools/poshy-tip-jquery-plugin-for-stylish-tooltips/
+
+Snippets
+--------
+
+this vs $(this)
+---------------
+http://docs.jquery.com/Plugins/Authoring
+http://stackoverflow.com/questions/1051782/jquery-this-vs-this
+http://stackoverflow.com/questions/1158582/jquery-this-vs-this-in-plugin-development
+
+this is dom element
+$(this) is qQuery object
+
+$(this)[0] == this
+$("#myDiv")[0] == document.getElementById("myDiv");
+
+this is ok for native fns e.g.
+this.reset()
+this.focus()
+
+$(this) for jQuery methods
+
+Also .get() give a DOM element
+
+
+Enter -> Next form field
+-------------------------
+http://codeigniter.com/forums/viewthread/121358/
+
+27 September 2010 11:49 AM
+
+$(document).ready(function(){
+   if ($.browser.mozilla) {
+        $(".enter").keypress(checkForEnter);
+    } else {
+        $(".enter").keydown(checkForEnter);
+    }
+});
+
+function checkForEnter(event) {
+    var lfound = false
+    if (event.keyCode == 13) {
+        var obj = this;
+        $(".enter").each(function() {
+            if (this == obj) {
+                lfound = true
+            } else {
+                if (lfound) {
+                    $(this).focus()
+                    $(this).select();
+                    event.preventDefault();
+                    return false;
+                }
+            }
+        });
+    }
+}
+
+OR, original:
+
+$(document).ready( function() {
+        // get only input tags with class data-entry
+        textboxes = $("input");
+        //alert(textboxes.length);
+        // now we check to see which browser is being used
+        if ($.browser.mozilla) {
+            $(textboxes).keypress (checkForEnter);
+        } else {
+            $(textboxes).keydown (checkForEnter);
+        }
+    });
+
+function checkForEnter (event) {
+    if (event.keyCode == 13) {
+          currentBoxNumber = textboxes.index(this);
+        if (textboxes[currentBoxNumber + 1] != null) {
+            nextBox = textboxes[currentBoxNumber + 1]
+            nextBox.focus();
+            nextBox.select();
+            event.preventDefault();
+            return false;
+        }
+    }
+}
+
+=====>
+
+  FieldsQA = $('.enter')
+  FieldsQA.keydown(FoTrapTabOrEnter)
+
+
+function FoTrapTabOrEnter(evt) {
+  var k=evt.which
+  if (k==9 || k == 13) {
+    FieldsQA[Roll(FieldsQA.index(this)+1-2*evt.shiftKey,FieldsQA.length)].focus()
+    evt.preventDefault();
+    return false;
+  }
+  return true
+}
+
+function Roll(i, len) {
+  if (i < 0) i = len-1
+  if (i == len) i = 0
+  return i
+}
+
+
+
+
+//Ver = (Ver=$('meta').get(0)).name == 'Bver' ? Ver.content : '' // works but so does the following which is shorter
+  Ver = (Ver=$('meta')[0]).name == 'Bver' ? Ver.content : ''
+
+    // Grey out approp menus
+    $('#nav a[rel=LI]').each(function() {
+      var t=$(this),p=t.parent()
+      p.text(t.text())
+      p.attr('title',t.attr('title'))
+      t.remove()
+      p.addClass('grey')
+    });
+
+trim()
+------
+String.prototype.trim = function() {
+  return this.replace(/^\s+|\s+$/g, '');
+};
+
+function FNumber(n) {
+  var a,n1,rgx,s = 0
+  if (n < 0) {
+    n = -n
+    s = 1
+  }
+  a = (n.toString()).split('.');
+  n1 = a[0]
+  rgx = /(\d+)(\d{3})/
+  while (rgx.test(n1))
+    n1 = n1.replace(rgx, '$1' + ',' + '$2');
+  n = n1 + (a.length > 1 ? '.' + a[1] : '');
+  if (s)
+    n = '(' + n + ')'
+  return n
+}
+
+// Strip , ( ) - formatting from a number string but leave dec pt
+function StripThou(s) {
+  return s.replace(/[,()-]+/g,'')
+}
+
+// keypress key test. !k allows tab and cursor keys in FireFox
+function KeyTest(re,e) {
+  var k = IE ? e.keyCode : e.which
+  return (re.test(String.fromCharCode(k)) || !k || k==8)
+}
+
+// keypress fn to allow digits only for integer number input
+function NumIn(e) {
+  return KeyTest(/[0-9]/, e)
+}
+
+// keypress fn to allow digits and . for decimal number input
+function DecNumIn(e) {
+  return KeyTest(/[0-9.]/, e)
+}
+
+function ChEq(e,e1) {
+  return ChkRet(e, e.value != e1.value)
+}
+
+Immediate execution of a fn
+---------------------------
+Follow it by () or (parameters)
+
+// function(v){alert(v)}('fred')  // syntax error wo the enclosing ()
+  (function(v){alert(v)})('fred') // executes immediately
+  var fn = function(v){alert(v)}    // no eclosing ()s
+  fn('dave')
+  fn = function(v){alert(v+' 2')}
+  fn('sam')
+
+
+Doc Ready
+=========
+$(document).ready(function(){
+  code
+})
+
+$(function() { // same as above, a shortcut
+  code
+})
+
+Or using a closure: http://groups.google.com/group/jquery-en/browse_thread/thread/ecaebf42a4fb3fae
+and http://docs.jquery.com/Using_jQuery_with_Other_Libraries
+
+(function($){
+  code
+})(jQuery);
+
+where 'code' is executed with jQuery passed in via $
+See also: http://jquery-howto.blogspot.com/2008/12/what-heck-is-function-jquery.html
+
+http://groups.google.com/group/jquery-en/browse_thread/thread/ecaebf42a4fb3fae
+Remember that there's a big difference between:
+
+  function blah() { /* something */ };
+  $( blah );
+
+And:
+
+  function blah() { /* something */ };
+  $( blah() );
+
+The first adds the "blah" function as an "on document ready" handler.
+The second executes the "blah" function then passes it's return value
+to the "$" function (which could do a number of things depending on
+the returned value).
+
+
+Re $.fn see
+
+http://docs.jquery.com/Plugins/Authoring
+--
+
+
+
+http://www.hunlock.com/blogs/Closing_The_Book_On_Javascript_Closures
+var myObject = function() {} (); // final () means execute the function immediately
+
+----------
+Change form on the fly: http://intertwingly.net/blog/2008/10/12/jQuery-and-Closures
+jQuery and Closures
+
+$("#archive").click(function() {
+  $.getJSON('unscanned.cgi', {}, function(unscanned) {
+
+    // replace realname input field with a selection list
+    var select = $('<select name="realname" id="realname"/>')[0];
+    for (var i=0; i<unscanned.length; i++) {
+      select.options[i] = new Option(unscanned[i][1], i);
+    }
+    $('#realname').before(select).remove();
+
+    $("#archive").attr("disabled","disabled");
+
+    // process selection
+    $('#realname').focus().change(function() {
+      var icla = unscanned[$("#realname option:selected").val()];
+      $("#realname").before('<input type=text ' +
+        'id="realname" name="realname"/>').remove();
+      $("#realname").val(icla[1]);
+      $("#pubname").val(icla[2]);
+      $("#email").val(icla[3]);
+      $("#replaces").val(icla[0] + ':' + icla[3]);
+      $("#filename").val('').focus();
+      $("#archive").removeAttr("disabled");
+    });
+  });
+  return false;
+})
+
+Disable a JUI Dialog Button
+---------------------------
+by giving the button as Id then using the Id to call button('disable')
+From bdt/apps/ED.js on 14.02.12 before change to closing the dialog instead:
+
+      GOpen("<img src=img/important.png class='fl pr05' width=32 height=32><span class=wng>WARNING:</span> If you click '"+t+"', the Entity will be deleted and cannot be recovered.",
+        '<span class=wng>'+t+'</span>',
+        400,
+        [{id:'EDDb',text:t,click:function(){$('#EDDb').button('disable');Call('ED.php',EDBack,'D',0,[Ref],EDAfter)},style:'color:red;font-weight:bold'},
+         {text:'Cancel'}],
+        EDAfter)
+
+        [{id:'EDDb',text:t,click:function(){$('#EDDb').button('disable');Call('ED.php',EDBack,'D',0,[Ref],EDAfter)},style:'color:red;font-weight:bold'},
+
+        
+        
+Event Default Cancelling, Controlling Propogation etc
+-----------------------------------------------------
+http://fuelyourcoding.com/jquery-events-stop-misusing-return-false/
+ 
+Probably one of the first topics covered when you get started learning about jQuery events is the concept of canceling the browser’s default behavior. For instance, a beginner click tutorial may include this:
+$("a.toggle").click(function () {
+    $("#mydiv").toggle();
+    return false; // Prevent browser from visiting `#`
+});
+
+This function toggles the hiding and displaying of #mydiv, then cancels the browser’s default behavior of visiting the href of the anchor tag.
+
+It is in these very first examples that bad habits are formed as users continue to use return false; whenever they want to cancel the default browser action. I am going to cover two very important topics in this article relating to the canceling of browser events:
+
+Use the right method for the job:
+ return false
+ vs
+ preventDefault, stopPropagation, and stopImmediatePropagation
+ 
+Top, bottom or somewhere in the middle: where in the event callback should you cancel default behavior?
+
+
+Form Systems
+------------
+Forms
+-----
+http://www.jformer.com/
+
+Currency input
+http://www.decorplanit.com/plugin/
+
+
+Event Delegation with jQuery
+----------------------------
+http://jspro.com/jquery/event-delegation-with-jquery/
+
+Why We Develop jQuery Plugins (jQuery Plugin example with reasons)
+-----------------------------
+http://jspro.com/jquery/why-we-develop-jquery-plugins/
+
+
+Plugin Repository
+-----------------
+http://www.unheap.com/
+
+
+Charts, Graphics Fusion Charts graphs
+-------------------------------------
+http://www.fusioncharts.com/products/suite/?utm_source=sitepoint&utm_medium=email_external&utm_content=serious-JS-charts-text&utm_campaign=Delightful_JS_Charts
+Costs. Do have SaaS licence but no prices quoted.
+
+
+I just extended jQuery with the code below; although it does not directly answer your question it will definitely fix the problem with as few lines of code as possible. 
+jQuery.browser = {};
+jQuery.browser.mozilla = /mozilla/.test(navigator.userAgent.toLowerCase()) && !/webkit/.test(navigator.userAgent.toLowerCase());
+jQuery.browser.webkit = /webkit/.test(navigator.userAgent.toLowerCase());
+jQuery.browser.opera = /opera/.test(navigator.userAgent.toLowerCase());
+jQuery.browser.msie = /msie/.test(navigator.userAgent.toLowerCase());

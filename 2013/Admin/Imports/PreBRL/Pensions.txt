@@ -1,0 +1,21 @@
+Pensions.txt
+
+Import to test Tuples use with two levels of dimensions via Restated.
+
+ImportType:Replace
+SchInputEntity.Names.CurrentLegalOrRegistered   	AAAAA Limited
+SchInputBRI.DatesPeriods.Start       	2009-01-01	2008-01-01
+SchInputBRI.DatesPeriods.End         	2009-12-31	2008-12-31
+
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.DescrType,PensionSchemes.1,T.1	UK Gilts	UK Gilts	#Bro 6135
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.DescrType,PensionSchemes.1,T.2	UK Stocks	UK Stocks	#Bro 6135
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.DescrType,PensionSchemes.1,T.3	EU Stocks	EU Stocks	#Bro 6135
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,T.1	50001	45001	#Bro 6136
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,T.2	50002	45002	#Bro 6136
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,T.3	50003	45003	#Bro 6136
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.Type,PensionSchemes.1,T.1	33	33	#Bro 6137
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.Type,PensionSchemes.1,T.2	33	34	#Bro 6137
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.Type,PensionSchemes.1,T.3	34	33	#Bro 6137
+
+# DE Balancing Posting
+Suspense  	-150,006    	-135,006

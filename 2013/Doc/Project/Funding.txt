@@ -1,0 +1,10 @@
+Funding.txt Started 15.07.13
+-----------
+
+Do Things that Don't Scale July 2013
+http://paulgraham.com/ds.html
+
+The arrival of crowdfunding (or more precisely, preorders) has helped a lot.
+
+Why AngelList will become the Android of venture capital
+http://venturebeat.com/2013/08/04/why-angellist-will-become-the-android-of-venture-capital/

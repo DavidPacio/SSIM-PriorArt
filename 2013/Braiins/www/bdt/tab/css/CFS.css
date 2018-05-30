@@ -1,0 +1,25 @@
+/* Braiins/www/bdt/tab/css/CFS.css
+
+css for BDT own window (Tab) modules for CFS reports which contain their own css in the Main div, as per /Rg/RgHead-TxName.inc,
+so this is just for the outer chrome of the page, or the difference in the case of the header h2/3 classes.
+
+Global */
+* {margin:0;padding:0}
+body {font:normal 12px Verdana,Arial,sans-serif;color:#000;background:#06c}
+header h2{font-size:115%;color:#007AA3;margin:0 0 .3em}
+header h3{font-size:110%;color:#db7800;margin:0 0 .2em}
+
+a:link    {color: #0000CD}
+a:active  {color: #0000FF}
+a:visited {color: Navy}
+a:hover   {color: #483D8B}
+
+/* layout */
+#Page   {background:#fff;border:1px solid #ddd;margin:4px auto;padding:8px 12px 6px;border-radius:8px}
+/*header {padding:6px;border-bottom:2px solid #ededed} */
+footer {margin-top:6px;padding:0.5em 0 0;border-top:2px solid #ededed;text-align:center;font-size:75%;color:#333}
+
+/* Buttons */
+.topB {margin:6px auto;width:27px;height:12px;padding-top:14px;font-size:8.5pt;font-weight:bold;color:#333;background-image:url(../../../img/TopBtn.png);background-repeat:no-repeat;background-position:50% 0}
+.topB:hover {background-position:50% -30px;color:#f00}
+button.bGo{margin-top:6px}

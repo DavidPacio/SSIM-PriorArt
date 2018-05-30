@@ -1,0 +1,21 @@
+﻿AAAAA
+Agent Braiins Limited
+Date  2013.05.13
+BroSet: DataImport Test2
+No DE Check
+#Debug:1
+ImportType: Replace
+
+PL.Rev.TradingIncome                        	-100
+PL.Exp.OfficerRemuneration,Officer.WoodgateC	20
+#PL.Exp.Other,Ageing.>1 	1 Mux
+PL.Exp.Other,Ageing.1-2 	12
+PL.Exp.Other,Ageing.2-5 	25
+PL.Exp.Other,Ageing.>5  	50
+
+SchPL.Rev.Seg.Geo.Destination,Country.UK          	-100
+SchPL.Rev.Seg.Geo.Destination,Region.Europe       	  -2
+#SchPL.Rev.Seg.Geo.Destination,Region.NorthAmerica 	  -1
+#SchPL.Rev.Seg.Geo.Destination,Region.OtherRegions 	  -3
+#SchPL.Rev.Seg.Geo.Destination,Country.UK,Region.Europe 	-200
+

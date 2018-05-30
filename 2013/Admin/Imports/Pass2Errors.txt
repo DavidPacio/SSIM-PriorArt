@@ -1,0 +1,17 @@
+﻿AAAAA
+Agent Braiins Limited
+Date  2013.06.09
+BroSet: DataImport Test2
+ImportType: Replace
+
+Data out of range
+EntityInfo.Dates.PeriodEnd   	2009-12-32
+
+Mux posting
+PL.Exp.Other,Ageing.>1 	1 Mux
+PL.Exp.Other,Ageing.1-2 	12
+PL.Exp.Other,Ageing.2-5 	25
+PL.Exp.Other,Ageing.>5  	50
+
+No String for a MoneyString DataType
+SchDirRep.Donations.Political,Instance.EUParty3  	1,203

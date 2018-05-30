@@ -1,0 +1,214 @@
+Questions to Charles
+
+* Are there any HMRC or CH xhtml (iXBRL) sample files available?
+
+* What ref did you use to learn about XBRL and iXBRL?
+
+* Non consec note numbers. Oops. Wrong.
+
+* UK GAAP 2009-09-01 Includes Common Data Taxonomy so why use CD?
+  Because HMRC does!
+
+  Have you experimeneted with the HMRC PDF
+  http://www.accountingweb.co.uk/anyanswers/hmrc-accounts-package/475021
+
+* 1. What do ae and pt stand for?
+     ae and pt both obsolete
+     ae = Abbreviated Exempt
+     pt = PresenTation
+
+     Was a Companies House special, now abandoned.
+     See Taxonomy UK: Companies House (2006-1-16) Audit Exempt re ae
+     http://bigfoot.corefiling.com/yeti/resources/yeti-gwt/Yeti.jsp#tax~%28id~2*v~76%29!net~%28a~18*l~6%29!lang~%28code~en%29!rg~%28rg~1*p~1%29
+
+* 2. Cover page? Yes
+  2.1 Firm N&A in footer?
+
+* 3. Table of Contents?
+     Yes, but could be postponed.
+     Page numbers not essential esp if have links.
+
+* 4. Directors starting/ending part way through a year?
+     Yes, as per Jones
+
+* 5. Will you want to show Officers and Professional Advisors in tabular form as per T or in running form ie.e info under the headings, as per the other samples?
+     This affects formatting/the RG. T's layout requires a table for layout purposes (unless more complex CSS is used which is not appropriate for a report), whereas the running form does not.
+     A: Simplest
+
+* 6. Director's Report heading and other like it?
+     SAPA export format to generate in simpler way than current.
+     Consider adding Headings facility to iXA
+
+* 7. Is it going to be necessary to tag different parts of one paragraph with different tags?
+      reworded as
+     Think we will actually encounter two sections of text (not something we know about) in one paragraph needing to be tagged as in T's example?
+     Yes
+
+* No. Check format as per pagetest.hc?
+
+* No. The following pages do not form part of the financial statements
+      Detailed profit and loss account
+      Notes to the detailed profit and loss account
+      Five year summary
+
+* Tag every instance of things like Company Name?
+  No. Just the first time is enough.
+
+* Directors tagged where? Any preference?
+  Once, first time.
+
+* Links?
+  Yes if easy.
+
+* "I" in 499I.99 P&L Range
+  Extra accounts added via alpha!
+
+* 8. Do we need to allow for Audited Accounts in this round?
+     Not essential
+
+* 9. Do we need to allow for accounts in pounds and pence, or just pounds as per Jones?
+     Just pounds fine
+
+* 10. Do we need to allow for accounts in thousands of pounds? (Assume not.)
+      Not initially
+
+* 11. Do we need to allow for a currency symbol other than £?
+      Not initially
+
+* 12. Do we need to allow for different thousands and decimal separators?
+      No
+
+* 13. What words do you suggest we use for : (More of these terminology questions will arise no doubt. This has arisen re DB table and field names.)
+       13.1 Our client firms. Firms? Users? Members. Clients? [See also Q 14 below]  [CW] Agent
+       13.2 Staff members of our client firms who can access the system?  [CW] Staff
+       13.3.The clients of our clients? [See also Q 15 below]  [CW] Entity
+
+      CW: Follows terminology in Taxonomy, and in HMRC and Companies house to describe firms of accountants.
+
+* 14. Will we have individuals as clients? Presumably. So in that case 13.1 and the DB have to allow for our client being a person rather than a firm, with possibly a different word being used.
+      CW: Potentially if/when iXBRL extends to sole traders and partnerships
+
+* 15. The same applies for 13.3 i.e. the clients of our clients. Initially they will always be companies as that is all we are handling, but in the DB design I need to allow for what will come.
+      CW: Potentially if/when iXBRL extends to sole traders and partnerships
+
+* 16. I propose to use email address as the user ref for logging in i.e. no separate User Name to think of, enter, remember and store. Audit reports will use the person's name.
+      OK with that?
+
+* 17. What "countries" do we need to allow for re the CH Registraion Number?
+      England and Wales
+      Scotland
+      Northern Ireland
+      Any others? Isle of Man? Channel Islands?
+
+      CW: Top 3 enough See statistics on marketing spreadsheet.
+          Assume we can add more later?
+
+* 18. Agent staff types:
+      Staff
+      Senior Staff
+      Partner
+      Senior Partner
+      Financial Controller
+      Director
+      Finance Director
+      MD or CEO
+
+      The last 4 are just in preparation for possible company clients one day.
+      This is another reason why I don't like Agent much. Though perhaps when we get as far as having direct corp clients
+      that word can become a DB entry. The DB table and field names that users won't ever see can remain Agent.
+
+      Any others?
+
+      [CW]
+      Junior
+      Semi-senior
+      Qualified
+      Assistant Manager
+      Manager
+      Salaried Partner
+      Full Partner
+      Think most of the above are probably obsolete or just not relevant in this context.
+
+* 19. The charging scheme currently envisaged is via credits to be purchased in advance where one credit = one set of accounts.
+      Or use a term other than "credits" such as tokens or ??
+      Or a different scheme? e.g. a recurring subscription until cancelled of £xx per month allowing yy sets of accounts per month,
+      perhaps with different levels. If we use this model, then do unused entitlements flow over to the next month or not?
+      Note: Not all payment processing services support automatic recurring payments, but PayPal and AlertPay do.
+      May not suit because of varying work load throughout the year.
+      Or some combination of the two?
+      For the DB design at this stage I have assumed the simple one of just credits purchased in advance, without any other "product".
+
+      [CW] Credits. tokens etc implies fixed price e.g. 1 token = 1 set of accounts. But might have different prices for different sets
+      of accounts small v large, include exclude cash flow.
+      Can clients not just pay as they go, with option to top up, i.e. keep money in the account, like being in advance really.
+      Keeping the PAYG telephone model in mind, then the other is a contract say 12 months or 24 months, at so much a month. Inducement
+      would be lower unit prices, either discount on standard price or inclusive "credits" per month.
+      Guess we could set all prices on a standard so that say 1 credit = £10.
+      Dormant company = 1 credit
+      Small abbrev    = 2 credits
+      Small Full      = 5 credits
+      Large
+      etc
+      [CW] Would like to encourage some form of hook and loyalty system so that people do see themselves as clients of braiins,
+      and we in turn can talk of how many accounting firms we have as clients as well as number of sets of accounts we have
+      processed - all good for company status and future welfare. (See separate question re Tax Companies)
+
+* 20. Do you think we will need to offer "manual" tagging by us, via our system, for Accountants who aren't up to driving it?
+      If so, charged for how? x credits if we get involved??
+
+      [CW] Think provision of this will be very important. Think we need to look on charging in the same way as a bespoke set
+      of accounts. They call us, we "weigh" it and give a figure. (We want to make sure that if direct labour is involved that
+      the price per hour is high enough to be worthwhile. Not keen early on either to be employing people of or using an outsource
+      method. However, if and when do, might talk to Steve Thorns about his outsourcing operation.
+
+  21. Guarantee
+
+
+Subhead?
+
+Does Digita's tagging tool produce a tagging report?
+
+Braiins News
+
+Subhea
+
+============
+
+Zones re sign as per email.....
+
+DBLog
+
+Can't change Tx to No Tx or vv
+
+
+Show Fetch and New
+
+New defaults
+
+For Directors and CompanySecretary
+DirectorSigningReport 5224
+DateAssumedPosition
+
+
+Id for TName
+
+
+ 122     /uitls/NamesEdit.htm which pulls in:
+ 102      ../css/Admin.css
+      72  ../css/apprise.css
+       ?  http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
+ 344     js/NamesEdit.js
+  92     ../js/Admin.js
+     102 ../js/apprise-1.5.full.js
+ 513     /uitls/srv/NamesEdit.php, the Ajax backend for NamesEdit.htm which pulls in:
+ 385                NamesFns.inc
+ 101     /Com/inc/RgConstants.inc
+  41                BaseGaap.inc which pulls in
+  56     /Com/inc/DBconnectDC.inc
+ 190     /Utils/TaxonomyConstants.inc
+ 121     /Utils/UtilsFuncs.inc
+  43     /Com/inc/FuncsDC.inc which pulls in
+ 391     /Com/inc/Constants.inc
+ 125     /Com/inc/Error.inc
+ 648     /Com/inc/FuncsDB.inc
+ 150     /Com/inc/ServerFuncs.inc

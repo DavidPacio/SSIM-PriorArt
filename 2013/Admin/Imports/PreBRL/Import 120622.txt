@@ -1,0 +1,112 @@
+﻿Sapa Export
+Agent Braiins Limited
+Date  2011.10.23
+#ImportType:Complete
+ImportType:Replace
+SchInputEntity.Names.CurrentLegalOrRegistered           	AAAAA Limited
+SchInputEntity.IdentifyingCodes.UKHouseRegisteredNumber   	87654321
+SchInputEntity.LegalForm.CountryFormationOrIncorporation:Countries.England 	1
+SchInputEntity.OfficialOperationalStatus.Audited              	1
+SchInputEntity.OfficialOperationalStatus.Trading              	1
+SchInputBRI.DatesPeriods.Start       	2009-01-01	2008-01-01
+SchInputBRI.DatesPeriods.End         	2009-12-31	2008-12-31
+SchInputDirRep.DateSigningDirectorsReport    	2010-03-04
+AddressType on next line is default [MainAddress]
+#RegisteredOffice.Properties:AddressType             	1
+SchInputEntity.MeansContact.Address.Line1:ContactType.RegisteredOffice    	Sample £ £ ¥ € & "O'Reilly House" s & d quotes
+SchInputEntity.MeansContact.Address.CityOrTown:ContactType.RegisteredOffice	Sample Town
+SchInputEntity.MeansContact.Address.PostCode:ContactType.RegisteredOffice  	ST9 9ZY
+SchInputEntity.Officers.Name:.CoSec                                	C C Smith
+SchInputDirRep.DirectorSigningReport:Officers.CoSec                   	1
+#Officers.DirectorRemuneration.ExclTPs.Direct.SalariesFees.Salaries:.Director1 	50,001
+SchInputEntity.Officers.Properties:.Director1:OfficerType.Exec     	1
+SchInputEntity.Officers.Properties:.Director1:.Chairman            	1
+SchInputEntity.Officers.Name:.Director1                            	A A Green
+SchInputEntity.Officers.DirectorSigningAccounts:.Director1         	1
+SchInputEntity.Officers.Properties:.Director2:OfficerType.Exec     	1
+SchInputEntity.Officers.Properties:.Director2:.CoSecDirector       	1
+SchInputEntity.Officers.Name:.Director2                            	B B Black
+SchInputEntity.Officers.DirectorSigningAccounts:.Director2         	1
+#Officers.DirectorRemuneration.ExclTPs.Direct.SalariesFees.Salaries:.Director2 	50,002
+SchInputEntity.Officers.Properties:.Director2:.HighestPaidDirector 	1
+SchInputEntity.Officers.Properties:.Director3:OfficerType.Nonexec  	1
+SchInputEntity.Officers.Name:.Director3                            	T T Three
+SchInputEntity.Officers.DirectorSigningAccounts:.Director3         	1
+SchInputEntity.ThirdPartyAgents.AccountantsAndAuditors                         	1
+SchInputEntity.ThirdPartyAgents.Name:TPAType.Auditors                          	DEF LLP
+#SchInputEntity.ThirdPartyAgents.Properties:TPAType.Auditors:AddressType.Postal 	1
+SchInputEntity.ThirdPartyAgents.MeansContact.Address.Line1:TPAType.Auditors:AddressType.Postal      	DEF House
+SchInputEntity.ThirdPartyAgents.MeansContact.Address.CityOrTown:TPAType.Auditors:AddressType.Postal 	Sample Town
+SchInputEntity.ThirdPartyAgents.MeansContact.Address.PostCode:TPAType.Auditors:AddressType.Postal   	ST12 0ZZ
+RevOp.Turnover                                 	-16,613,551 	-19,195,013
+Exp.Other.OtherUnexceptional used below for the AAAAA HMRC example aggregate figures with allocations not available,
+as per email exchange PL.Expenses.Aggregate Bro needed? II of 14.12.11
+Exp.Other.OtherUnexceptional:ExpenseType.Admin                    	    862,719 	  1,057,994
+Exp.Other.OtherUnexceptional:ExpenseType.CoS                      	 13,819,379 	 16,524,490
+Exp.Other.OtherUnexceptional:ExpenseType.Distrib                  	    221,780 	    260,471
+Exp.Financial.InterestPayableSimilarCharges.FinanceIncome.NetReceivable.Other:Function.NonOp  	       -372 	     -1,876
+Exp.Financial.InterestPayableSimilarCharges.FinanceIncome.NetReceivable.Interest:Function.NonOp	     81,149 	    117,176
+SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.TaxOnOrLossOnOrdinaryActivities                        	    212,422 	    337,173
+STRGL.StatementThatThereWereNoGainsInPeriodOtherThanThoseInPL                     	1
+SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo:Countries.UK  	-16,509,371 	-18,012,026
+SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo:Countries.Europe         	    -81,856  	    -13,084
+SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo:Countries.NorthAmerica   	            	   -878,597
+SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo:Countries.OtherRegions   	    -22,324  	   -291,306
+
+Testing other valid dimension use examples
+SchInputEntity.Officers.Properties:.CoSec:OfficerType.Exec                 	1
+#Officers.Aggregates.NumberDirectorsWhoExercisedShareOptions 	2
+#Officers.Aggregates.NumberDirectorsAccruingRetireBenefits   	3
+#BS.Assets.TFAs.MvtAnalysis.CostOrVal.Additions:TFAClasses.MotorCars:TFAOwnership.Leased               	10,000
+#BS.Assets.TFAs.MvtAnalysis.CostOrVal.Additions:TFAClasses.CommercialMotorVehicles:TFAOwnership.Leased 	20,000
+
+#PL.Expenses.FixedAssetCosts.DepnImpairTFAs:ExpenseType.Admin:TFAClasses.MotorCars:TFAOwnership.Leased	1,000
+
+#
+# Testing error detection of invalid dimension use
+#
+#Officers.DirectorRemuneration:.CoSec         	10000
+#SchInputEntity.Officers.Name                                	A A Green
+#SchInputEntity.Officers.Name:.PartnerLLP1                   	A A Green
+#SchInputEntity.Officers.Name:TPAType.Auditors               	A A Green
+#SchInputEntity.Officers.Properties:.Director1:.Chairperson  	1
+#SchInputEntity.Officers.Properties:.Director1:.CoSec        	1
+#SchInputEntity.Officers.Properties:.Director1               	1
+#RegisteredOffice.AddressLine1:AddressType    	Sample House
+#
+# Testing DiMe Mux posting
+#
+#BS.Assets.TFAs.CostOrValuation.Disposals:TFAClasses.MotorVehicles:TFAOwnership.Leased          	-6000
+#BS.Assets.TFAs.CostOrValuation.Disposals:TFAClasses.VehiclesPlantMachinery:TFAOwnership.Leased 	-6000
+#
+# Testing ancestor Mux posting
+#
+#PL.Expenses                      1, 1
+#PL.Expenses.BadDebts             2, 2
+#
+# Testing descendant Mux posting
+#
+#PL                               3, 2
+#Officers.DirectorRemuneration                                 100000
+#Officers.DirectorRemuneration:.Director1:.HighestPaidDirector    55000
+#BS.Assets.TFAs.CostOrValuation:TFAClasses.VehiclesPlantMachinery:TFAOwnership.Leased               13000
+#BS.Assets.TFAs.CostOrValuation:TFAClasses.MotorCars:TFAOwnership.Leased 25000
+#
+# Testing with and without dim use Mux
+#
+#SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo -16509371,-18012026
+#
+# Testing Braiins Dimension Posting
+#
+#PL.Expenses.BadDebts:ExpenseType.Admin   528, 5281
+#PL.Expenses.BadDebts:ExpenseType.CoS     529
+#PL.Expenses.BadDebts:ExpenseType.Distrib 530
+#PL.Expenses.FixedAssetCosts.DepnImpairTFAs.GoodwillReversal:ExpenseType.Admin   651
+#PL.Expenses.FixedAssetCosts.DepnImpairTFAs.GoodwillReversal:ExpenseType.CoS     652
+#PL.Expenses.FixedAssetCosts.DepnImpairTFAs.GoodwillReversal:ExpenseType.Distrib 653
+#PL.Expenses:ExpenseType.CoS            13819379,  16524490
+#PL.Expenses:ExpenseType.Distrib          221780,   260471
+#PL.Expenses:ExpenseType.Admin            862719,  1057994
+#
+# DE Balancing Posting
+#BS.Suspense  	1,385,474 	899,585

@@ -1,0 +1,38 @@
+Datatables
+==========
+
+Forum: autoabacus david@elanelan.com fred22dt45
+
+http://www.datatables.net/
+Uses jEditable for editing: http://www.appelsiini.net/projects/jeditable or own Editor as of May 2012
+http://sprymedia.co.uk/index allan jardine ui developer
+http://datatables.net/blog/Getting_started_with_DataTables%3A_First_steps
+http://datatables.net/blog/Creating_beautiful_and_functional_tables_with_DataTables
+
+Datatables 1.9 Beta:
+Demos: http://datatables.net/beta/1.9/examples/
+What's new: http://datatables.net/new/1.9
+Upgrade notes: http://datatables.net/upgrade/1.9
+
+Doc: http://datatables.net/docs/DataTables/1.9.beta.3/
+
+DataTables CDN
+http://datatables.net/blog/Microsoft_CDN
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.8.2/css/jquery.dataTables.css"> 
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.8.2/jquery.dataTables.min.js"></script>
+ 
+Themes or Templates
+http://www.datatables.net/blog/Twitter_Bootstrap
+Adminica etc via themeforest
+http://www.datatables.net/styling/themeforest
+
+http://www.datatables.net/forums/discussion/4304/strange-bug-columns-resize-on-click/p1
+
+Keyboard scrolling
+http://www.datatables.net/forums/discussion/2667/scrolling-using-the-up-and-down-arrow/p1
+
+YUI DataTable http://developer.yahoo.com/yui/datatable/

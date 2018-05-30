@@ -1,0 +1,43 @@
+Braiins Local Storage
+=====================
+
+History:
+08.01.12 djh Started
+
+Local
+=====
+B   Braiins JS and localStorage version
+t#  Time in secs for instance # of a Braiins.com main tab (not a separate tab app), updated every second via setInterval() for a live tab
+v#  CVisId for instance #
+
+Session
+=======
+i  Instance # of a Braiins.com main tab (not a separate tab app)
+   Computed by js as # for which there is no localStorage t# or a t# not updated for > 5 seconds
+v  CVisId for the tab
+
+
+Notes
+=====
+How to allow multiple Braiins.com tabs without getting them mixed up?
+
+FF remembers sessionStorage through a browser restart! (With auto re-load of tabs)
+Chrome does not.
+
+Use polling?
+Use storage change event?
+
+
+This doesn't work. Need to call removeItem() in a separate loop as it changes len
+      var len=localStorage.length, k, now = new Date().getTime()
+      for (i=0;i<len;i++) {
+        k=localStorage.key(i)
+        if (k.contains('Tab')) {
+          if (now - localStorage[k] > 30000) {
+           if (!Me)
+             Me=k
+           else
+             localStorage.removeItem(k)
+          }
+        }else
+          localStorage.removeItem(k)

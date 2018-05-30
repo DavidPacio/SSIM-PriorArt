@@ -1,0 +1,883 @@
+Id	Standard Label	Hypercube	Type	Comments
+65	Accruals disposed of with subsidiaries	33	Money	
+66	Accrued expenses	29	Money	
+100	Actuarial gain (loss) on individual pension scheme as percentage of scheme liabilities	27	Percent	
+109	Adjusted EPS, after dilution	39	PerShare	
+110	Adjusted EPS, before dilution	39	PerShare	
+111	Adjusted number of shares after dilution	39	Share	
+112	Adjusted number of shares after non-vested shares	39	Share	
+113	Adjustment for higher (lower) tax rates on overseas earnings	1	Money	
+114	Adjustment for higher (lower) tax rates on overseas earnings, impact on tax rate	1	Percent	
+115	Adjustment for long accounting periods leading to an increase (decrease) in the tax charge	1	Money	
+116	Adjustment for long accounting periods leading to an increase (decrease) in the tax charge, impact on tax rate	1	Percent	
+117	Adjustment for prior periods leading to an increase (decrease) in the tax charge	1	Money	
+118	Adjustment for prior periods leading to an increase (decrease) in the tax charge, impact on tax rate	1	Percent	
+119	Adjustment in research and development tax credit leading to an increase (decrease) in the tax charge	1	Money	
+120	Adjustment in research and development tax credit leading to an increase (decrease) in the tax charge, impact on tax rate	1	Percent	
+121	Administration and support, average number of employees	1	Decimal	
+122	Administration and support, number of employees at date	1	Decimal	
+126	Advanced corporation tax written off (back)	1	Money	
+135	Agency and management earnings (payments)	9	Money	
+138	Aggregate dividends due at balance sheet date	1	Money	
+139	Aggregate dividends paid in the financial year	1	Money	
+140	Aggregate dividends proposed before date of approval of accounts and not otherwise disclosed	1	Money	
+165	Amortisation of ancillary costs related to borrowing arrangements	13	Money	
+166	Amortisation of deferred development expenditure	12	Money	
+167	Amortisation of discounts or premiums relating to borrowings	13	Money	
+175	Amortisation of intangible assets, administrative expenses	6	Money	
+176	Amortisation of intangible assets, cost of sales	6	Money	
+177	Amortisation of intangible assets, distribution costs	6	Money	
+184	Amount of barter payments (receipts) for advertising	1	Money	
+185	Amount of barter payments (receipts) including in turnover	1	Money	
+186	Amount of borrowing exposed to interest rate changes	29	Money	
+187	Amount of borrowing repayable within a set time	29	Money	
+189	Amount by which tax on profit on ordinary activities is lower (higher) than tax calculated at standard UK rate	1	Money	
+190	Amount by which tax rate on profit on ordinary activities is lower (higher) than standard UK tax rate	1	Percent	
+193	Amount of debt covered by refinancing arrangement	1	Money	
+195	Amount due from (to) related party	1	Money	
+196	Amount of exceptional operating cost	11	Money	Have HyId 13 via Bro 800 but after subset elim HyId should be 11
+197	Amount guaranteed	1	Money	
+198	Amount of loan due after five years	1	Money	
+200	Amount not recognised	1	Money	
+214	Amount outstanding on guaranteed overdrafts of subsidiaries	1	Money	
+215	Amount of particular consignment stock	13	Money	
+216	Amount payable on redemption of convertible debt	1	Money	
+217	Amount payable on winding up if different from book value of limited recourse debt	1	Money	
+218	Amount payable on winding up if different from book value of obligation to pay	1	Money	
+219	Amount payable on winding up if different from book value of other unusual debt	1	Money	
+220	Amount payable on winding up if different from book value of subordinated debt	1	Money	
+221	Amount received for debenture loan / loans issued in the period	1	Money	
+225	Amount of specific bank loan	1	Money	
+226	Amount that may be payable (recoverable)	1	Money	
+227	Amount of transitional relief taken to income	1	Money	
+228	Amount written off in period in respect of debt due from related party	1	Money	
+229	Amounts due for social security and other taxes, current	29	Money	
+233	Amounts due to related parties, trade and other payables	29	Money	
+255	Amounts owed to group undertakings and participating interests after one year, subtotal	13	Money	
+257	Amounts owed to group undertakings and participating interests within one year, subtotal	13	Money	
+277	Amounts written off (back) investments	10	Money	
+278	Amounts written off current asset investments	1	Money	
+293	Assets (liabilities) by business segment free-text comment	1	String	
+295	Assets (liabilities) by geography free-text comment	1	String	
+343	Average capital employed	1	Money	Multi: TxId 343 &amp; HyId 1 needed
+343	Average capital employed	17	Money	Multi: TxId 343 &amp; HyId 17 needed
+343	Average capital employed	18	Money	Multi: TxId 343 &amp; HyId 18 needed
+344	Average number of employees, analysis by specific department	1	Decimal	
+346	Average number of employees during the period	11	Decimal	
+347	Bad debts written off	9	Money	
+352	Balance sheet adjustments free-text comment	1	String	
+361	Bank borrowings	29	Money	
+362	Bank borrowings and debentures	1	Money	
+363	Bank borrowings and debentures after five years	1	Money	
+364	Bank borrowings and debentures between one to two years	1	Money	
+365	Bank borrowings and debentures between two to five years	1	Money	
+366	Bank borrowings and debentures due after one year	1	Money	
+367	Bank borrowings and debentures due within one year	1	Money	
+369	Bank borrowings free-text comment	1	String	
+370	Bank borrowings and overdrafts	29	Money	
+371	Bank borrowings and overdrafts, secured	29	Money	
+372	Bank borrowings and overdrafts, unsecured	29	Money	
+374	Bank borrowings, secured	29	Money	
+375	Bank borrowings, unsecured	29	Money	
+379	Bank loans [grouping]		Tuple	
+382	Bank overdrafts	29	Money	
+385	Bank overdrafts disposed of with subsidiaries	33	Money	
+388	Bank overdrafts free-text comment	1	String	
+389	Bank overdrafts, secured	29	Money	
+390	Bank overdrafts, unsecured	29	Money	
+392	Barter payment (receipt) from specific transaction	1	Money	
+395	Basic earnings (loss)	1	Money	
+396	Basic earnings (loss) per share	39	PerShare	
+398	Basic sales revenue	11	Money	Have HyId 13 via Bro 473 but after subset elim HyId should be 11
+405	Basis on which standard tax rate has been determined	1	String	
+431	Book profit on chargeable assets	1	Money	
+432	Book profit on chargeable assets, impact on tax rate	1	Percent	
+433	Book profit on non-taxable share issues	1	Money	
+434	Book profit on non-taxable share issues, impact on tax rate	1	Percent	
+436	Book value of debenture loan / loans held by nominees or trustees of the entity	1	Money	
+437	Borrowing costs capitalised	1	Money	
+439	Borrowings	29	Money	
+440	Borrowings free-text comment	1	String	
+493	Called up share capital not paid, not expressed as current asset	13	Money	
+498	Capital allowances in excess of depreciation leading to a decrease (increase) in tax	1	Money	
+499	Capital allowances in excess of depreciation leading to a decrease (increase) in taxation, impact on tax rate	1	Percent	
+507	Capital gains	1	Money	
+508	Capital gains, impact on tax rate	1	Percent	
+509	Capital grant	1	Money	
+513	Capital and reserves	12	Money	
+515	Capitalisation of own reserves, decrease (increase) in total reserves	1	Money	
+516	Capitalisation rate for capitalised borrowing costs	1	Percent	
+527	Carrying amount of loan payable in default or breach	1	Money	
+544	Cash disposed of with subsidiaries	33	Money	
+584	Central profit (loss) on ordinary activities not attributed to a business segment	7	Money	
+585	Central profit (loss) on ordinary activities not attributed to a geographic segment	7	Money	
+590	Central / Unallocated assets, geographic segment analysis	1	Money	
+591	Central / unallocated net assets (liabilities), excluding goodwill, business segment analysis	1	Money	
+592	Central / unallocated net assets (liabilities), excluding goodwill, geographic segment analysis	1	Money	
+593	Central / unallocated net assets (liabilities), geographic segment analysis	1	Money	
+594	Central / unallocated net assets (liabilities), including goodwill, business segment analysis	1	Money	
+595	Central / unallocated non-interest bearing net assets (liabilities), business segment analysis	1	Money	
+596	Central / unallocated non-interest bearing net assets (liabilities), geographic segment analysis	1	Money	
+597	Central / unallocated total assets, business segment analysis	1	Money	
+615	Change in credit default swaps, derivatives assets, designated as cash flow hedges	30	Money	HyId 29 via Bro 2229 but not this HyId 30
+854	Changes in provisions leading to an increase (decrease) in the tax charge	1	Money	
+855	Changes in provisions leading to an increase (decrease) in the tax charge, impact on tax rate	1	Percent	
+862	Charge in relation to equity reserve	1	Money	
+864	Charge (release) per share of prior year provisions and tax credits on exceptional operating items, diluted	39	PerShare	
+865	Charge (release) per share of prior year provisions and tax credits on exceptional operating items, undiluted	39	PerShare	
+909	Committed facilities for refinancing [grouping]		Tuple	
+923	Compound financial instruments with multiple embedded derivatives [grouping]		Tuple	
+946	Conditional obligation to pay [grouping]		Tuple	
+947	Conditional rollover relief [grouping]		Tuple	
+948	Conditions to obtain rollover relief on gain on sale of asset which is expected to be rolled over into replacement assets	1	String	
+952	Consignment stock [grouping]		Tuple	
+953	Consignment stock held	13	Money	
+954	Consignment stock included in balance sheet	13	Money	
+958	Consolidation free-text comment	1	String	
+973	Continuing and discontinued operations free-text comment	13	String	Have HyId 1 via Bro 80 but after subset elim HyId should be 13
+978	Contract provisions	9	Money	
+985	Contributions to pension scheme	27	Money	
+986	Contributions to remuneration trust	9	Money	
+988	Conversion of convertible debt, number of shares issuable	39	Share	
+990	Conversion of exchangeable undated loan capital, increase (decrease) in total reserves	1	Money	
+991	Conversion at option of issuer rather than holder	1	Boolean	
+992	Conversion of preference shares, number of shares issuable	39	Share	
+993	Convertible bond issues, equity component	1	Money	
+994	Convertible bond issues [grouping]		Tuple	
+996	Convertible bond issues, liability component on initial recognition	1	Money	
+997	Convertible bond issues, original face value	1	Money	
+998	Convertible bonds free-text comment	1	String	
+999	Convertible bonds, interest expense	1	Money	
+1000	Convertible bonds, interest paid	1	Money	
+1001	Convertible debt	29	Money	
+1005	Convertible loans after five years, by instalments	1	Money	
+1006	Convertible loans after five years, not by instalments	1	Money	
+1021	Cost of the benefit scheme	27	Money	
+1066	Creditors and borrowings free-text comment	1	String	
+1068	Creditors disposed of with subsidiaries	33	Money	
+1070	Creditors due after one year free-text comment	13	String	
+1071	Creditors due after one year, other than convertible debt	13	Money	
+1073	Creditors due within one year free-text comment	13	String	
+1074	Creditors due within one year, other than convertible debt	13	Money	
+1076	Creditors, other than convertible debt	13	Money	
+1081	Cumulative goodwill written off against reserves - Net	1	Money	
+1101	Currency hedging activities gain (loss) recognised in profit and loss	9	Money	
+1112	Current asset investments disposed of with subsidiaries	33	Money	
+1118	Current assets disposed of with subsidiaries	33	Money	
+1119	Current assets free-text comment	13	String	
+1126	Current year research and development expenditure	12	Money	
+1140	Date of acquisition	31	Date	
+1142	Date of disposal	33	Date	
+1152	Date at which number of employees measured	1	Date	
+1153	Dates or period of possible conversion	1	String	
+1154	Debenture loan / loans held by nominees or trustees of the entity [grouping]		Tuple	
+1155	Debenture loan / loans issued in the period [grouping]		Tuple	
+1156	Debenture loans after five years, by instalments	1	Money	
+1157	Debenture loans after five years, not by instalments	1	Money	
+1159	Debentures and other loans	29	Money	
+1161	Debentures and other loans free-text comment	1	String	
+1204	Debtors disposed of with subsidiaries	33	Money	
+1215	Decrease (increase) in estimate of recoverable deferred tax asset	1	Money	
+1222	Deduction from aggregate dividends for dividends for ESOP trusts	26	Money	
+1224	Default or other breaches remedied before financial statements authorised for issue [true/false]	1	Boolean	
+1225	Deferred consideration, disposal of subsidiaries	33	Money	
+1263	Depreciation and other amounts written off tangible and intangible fixed assets	9	Money	
+1269	Depreciation of tangible and intangible fixed assets	9	Money	
+1291	Description of the amounts not recognised	1	String	
+1307	Description of asset and circumstances in which asset would be recoverable	1	String	
+1315	Description of basis of apportionment of tax between extraordinary and exceptional items	1	Money	
+1318	Description of business segment	19	String	
+1323	Description of change in price index over the period	1	String	
+1340	Description of circumstances in which tax would be payable (recoverable)	1	String	
+1359	Description of convertible debt	1	String	
+1365	Description of debenture loan / loans held by nominees or trustees of the entity	1	String	
+1366	Description of debenture loan / loans issued in the period	1	String	
+1367	Description of debt covered by refinancing arrangement	1	String	
+1368	Description of default or breaches on principal, interest, sinking fund or redemption terms	1	String	
+1392	Description of exceptional items and special circumstances	1	String	
+1393	Description of exceptional operating cost	11	String	Have HyId 13 via Bro 804 but after subset elim HyId should be 11
+1410	Description of gain or loss in net monetary position arising from presentation in hyperinflationary currency	1	String	
+1412	Description of geographic segment	20	String	
+1415	Description of guarantee	1	String	
+1429	Description of individual extraordinary item	1	String	
+1431	Description of interest rate on specific bank loan	1	String	
+1437	Description of limited recourse debt	1	String	
+1445	Description of method of allocation of interest between continuing and discontinued operations	13	String	
+1449	Description of method and underlying assumptions of allocation of tax between continuing and discontinued operations	1	String	
+1450	Description of method used in accounting for hyperinflationary currency	1	String	
+1471	Description of non-interest bearing borrowings	29	String	
+1472	Description of obligation to pay	1	String	
+1489	Description of other government assistance	9	String	Have HyId 13 via Bro 1270 but after subset elim HyId should be 9
+1505	Description of other type of default or breach	1	String	
+1507	Description of other unusual debt	1	String	
+1510	Description of particular consignment stock	13	String	
+1524	Description of probable contingent assets	1	String	
+1539	Description of the relationship between the parties	1	String	
+1540	Description of restatements to figures for previous periods	1	String	
+1543	Description of retained ownership interests, if any	33	String	
+1552	Description of security for guarantee, if required	1	String	
+1555	Description of shares which debt may convert to	1	String	
+1556	Description of significant change in activities during period	1	String	
+1559	Description of special circumstances	1	String	
+1561	Description of specific bank loan	1	String	
+1565	Description of specific convertible bond issue	1	String	
+1580	Description of specific loan due after five years	1	String	
+1582	Description of specific redeemable preference share issue	1	String	
+1584	Description of subordinated debt	1	String	
+1587	Description of tax treatment of amounts transferred to or from the revaluation reserve	1	String	
+1588	Description of terms of repayment and rate of interest for bank borrowings and debenture loans after five years	1	String	
+1589	Description of terms of repayment and rate of interest for bank loans and overdrafts after five years	1	String	
+1590	Description of terms of repayment and rate of interest for borrowings due after five years	1	String	
+1591	Description of terms of repayment and rate of interest for convertible debt after five years	1	String	
+1592	Description of terms of repayment and rate of interest for debenture loans after five years	1	String	
+1593	Description of terms of repayment and rate of interest for finance leases and hire purchase contracts after five years	1	String	
+1594	Description of terms of repayment and rate of interest for other loans after five years	1	String	
+1595	Description of terms of repayment and rate of interest for specific loan due after five years	1	String	
+1597	Description of the transaction and general amounts involved	1	String	
+1599	Description of transaction which is artificial or lacks substance and which leads to no gain or loss being recognised	1	String	
+1602	Description of transitional relief taken to income by non-taxpaying entity that has lost right to reclaim tax credits	1	String	
+1607	Description of type and means of measurement of rate against sterling	1	String	
+1612	Description of valuations of land or buildings which differ significantly from the book value	1	String	
+1623	Details of convertible debt [grouping]		Tuple	
+1633	Diluted earnings (loss)	1	Money	
+1634	Diluted earnings (loss) per share	39	PerShare	
+1706	Discounted provisions	13	Money	
+1734	Disposals free-text comment	33	String	
+1738	Distribution, average number of employees	1	Decimal	
+1743	Distribution, number of employees at date	1	Decimal	
+1744	Dividend cover	1	Decimal	
+1745	Dividend income	1	Money	
+1746	Dividend income from associates	1	Money	
+1747	Dividend income from available-for-sale financial assets	1	Money	
+1748	Dividend income from financial assets at fair value through profit or loss	1	Money	
+1749	Dividend income from joint-ventures	1	Money	
+1750	Dividend income from other equity instruments	1	Money	
+1751	Dividend income from subsidiaries	1	Money	
+1759	Dividends free-text comment	26	String	
+1763	Dividends from other current asset investments, listed	13	Money	
+1764	Dividends from other current asset investments, unlisted	13	Money	
+1765	Dividends from other fixed asset investments, listed	13	Money	
+1766	Dividends from other fixed asset investments, unlisted	13	Money	
+1767	Dividends from shares in individual associate	35	Money	
+1768	Dividends from shares in individual participating interest	37	Money	
+1769	Dividends from shares in individual subsidiary	36	Money	
+1770	Dividends from UK companies	1	Money	
+1771	Dividends from UK companies, impact on tax rate	1	Percent	
+1775	Dividends paid and payable to minority interests	13	Money	Have HyId 1 via Bro 1863 but after subset elim HyId should be 13
+1779	Dividends previously appropriated	26	Money	Have HyId 1 via Bro 1789 but after subset elim HyId should be 26
+1781	Dividends proposed, creditors due within one year	13	Money	
+1782	Dividends proposed, cumulative preference shares, creditors due within one year	13	Money	
+1783	Dividends proposed, ordinary shares, creditors due within one year	13	Money	
+1786	Dividends withdrawn from total reserves	1	Money	
+1791	Double taxation relief	1	Money	
+1792	Double taxation relief, impact on tax rate	1	Percent	
+1793	Double taxation relief on tax on extraordinary profit (loss)	1	Money	
+1794	Earliest date at which lender could demand repayment of debt in absence of refinancing	1	Date	
+1798	Effect of change in discount rate serving to increase (decrease) discounted provisions	13	Money	
+1800	Effect on basic EPS of goodwill amortisation and exceptional items	39	Money	
+1801	Effect on diluted EPS of goodwill amortisation and exceptional items	39	Money	
+1804	Effective current tax rate	1	Percent	
+1805	Effective interest rate on bank borrowings	1	Percent	
+1806	Effective interest rate on bank overdrafts	1	Percent	
+1807	Effective interest rate on borrowings	1	Percent	
+1808	Effective interest rate on convertible bond issues	1	Percent	
+1809	Effective tax rate	1	Percent	
+1829	Employee contribution rate for latest period as percentage of pensionable earnings	27	Percent	
+1834	Employee share option payments, decrease (increase) in total reserves	1	Money	
+1837	Employee share scheme costs	9	Money	
+1840	Employer contribution rate for latest period as percentage of pensionable earnings	27	Percent	
+1922	Exceptional finance charges (gains) per share, diluted	39	PerShare	
+1923	Exceptional finance charges (gains) per share, undiluted	39	PerShare	
+1924	Exceptional gain (loss) per share for operating items, diluted	39	PerShare	
+1925	Exceptional gain (loss) per share for operating items, undiluted	39	PerShare	
+1926	Exceptional gain (loss) per share of non-operating items, diluted	39	PerShare	
+1927	Exceptional gain (loss) per share of non-operating items, undiluted	39	PerShare	
+1937	Excess of replacement costs, finished goods and goods for resale	13	Money	
+1938	Excess of replacement costs over balance sheet values	13	Money	
+1939	Excess of replacement costs, payments on account	13	Money	
+1940	Excess of replacement costs, raw materials and consumables	13	Money	
+1941	Excess of replacement costs, work in progress	13	Money	
+1942	Exchange gain (loss) on foreign currency borrowings and deposits	1	Money	
+1943	Exchange gain (loss) per share on foreign currency borrowings and deposits, diluted	39	PerShare	
+1944	Exchange gain (loss) per share on foreign currency borrowings and deposits, undiluted	39	PerShare	
+1945	Exchange rate used against sterling	1	Decimal	
+1946	Exercise of options, number of shares issuable	39	Share	
+1971	Expenses not deductible for tax purposes	1	Money	
+1972	Expenses not deductible for tax purposes, impact on tax rate	1	Percent	
+1973	Expenses not deductible for tax purposes, other than goodwill amortisation and impairment	1	Money	
+1974	Expenses not deductible for tax purposes, other than goodwill amortisation and impairment, impact on tax rate	1	Percent	
+1980	Explanation for any difference between the net asset (liability) for all schemes shown in the balance sheet and the total across individual schemes	27	String	
+1988	Explanatory statement if it is not possible to ascertain attributable goodwill	33	String	
+1990	Extraordinary items free-text comment	1	String	
+2039	Fair value of hedges, increase (decrease) in total reserves	1	Money	
+2061	Final dividend per share	26	PerShare	
+2062	Final other dividend payment	26	Money	
+2063	Final participating dividend payment	26	Money	
+2064	Final payment	26	Money	Have HyId 1 via Bro 1788 but after subset elim HyId should be 26
+2068	Finance costs capitalisation rate	13	Percent	
+2069	Finance costs capitalised	13	Money	
+2070	Finance costs capitalised in period for tangible fixed assets	13	Money	
+2073	Finance costs payable to subsidiaries / group undertakings	13	Money	
+2088	Financial assets for which terms renegotiated, carrying value	1	Money	
+2106	Financial instruments net gains (losses), before tax	1	Money	
+2134	Fixed asset investments disposed of with subsidiaries	33	Money	
+2168	Fixed assets	12	Money	
+2170	Fixed assets disposed of with subsidiaries	33	Money	
+2213	Foreign currency translation gain (loss) recognised in profit and loss	9	Money	
+2215	Foreign current tax	12	Money	
+2216	Foreign current tax after adjustment for prior periods	12	Money	
+2217	Foreign current tax on income for the period	1	Money	
+2218	Foreign deferred tax	12	Money	
+2219	Foreign exchange gain (loss) on borrowings less deposits	9	Money	
+2220	Foreign exchange gain (loss) recognised in profit and loss	9	Money	Have HyId 13 via Bro 644 but after subset elim HyId should be 9
+2258	Further information on the contingent liability, including uncertainties over amount, timing and possibility of reimbursement	1	String	
+2263	Further relevant information on convertible debt	1	String	
+2265	Future finance charges	1	Money	
+2267	Gain (loss) from adjustments related to previous disposals	1	Money	
+2269	Gain (loss) from changes in assumptions underlying the present value of pension scheme liabilities as percentage of present value of scheme liabilities	27	Percent	
+2286	Gain (loss) from exchange adjustments, revaluation reserve	1	Money	
+2289	Gain (loss) from exchange adjustments, revaluation reserve, properties	1	Money	
+2297	Gain (loss) from settlements and curtailments included in a separate item after operating profit	27	Money	
+2303	Gain (loss) on derivatives at fair value, recognised in profit or loss	1	Money	
+2304	Gain (loss) on derivatives held for trading, recognised in profit or loss	1	Money	
+2305	Gain (loss) on derivatives initially designated at fair value, recognised in profit or loss	1	Money	
+2318	Gain (loss) on financial instruments	1	Money	
+2322	Gain (loss) on hedge accounting	1	Money	
+2337	Gain (loss) on repurchase or early settlement of debt	1	Money	
+2338	Gain (loss) on sale of investments	1	Money	
+2339	Gain (loss) on sale or termination of individual operation	1	Money	
+2342	Gain (loss) on sale of subsidiaries' net assets	1	Money	
+2343	Gain (loss) on sales of current asset investments	1	Money	
+2344	Gain (loss) on sales of fixed asset investments	1	Money	
+2346	Gain (loss) per share from disposal of fixed assets, diluted	39	PerShare	
+2347	Gain (loss) per share from disposal of fixed assets, undiluted	39	PerShare	
+2348	Gain (loss) per share on sale or termination of operations, diluted	12	PerShare	Multi: TxId 2348 &amp; HyId 12 needed
+2348	Gain (loss) per share on sale or termination of operations, diluted	39	PerShare	Multi: TxId 2348 &amp; HyId 39 needed
+2349	Gain (loss) per share on sale or termination of operations, undiluted	39	PerShare	
+2360	Gains (losses) on financial assets at fair value through profit or loss	1	Money	
+2361	Gains (losses) on financial assets at fair value through profit or loss, classified as held for trading	1	Money	
+2362	Gains (losses) on financial assets at fair value through profit or loss, designated as upon initial recognition	1	Money	
+2363	Gains (losses) on financial liabilities at amortised cost	1	Money	
+2364	Gains (losses) on financial liabilities at fair value through profit or loss	1	Money	
+2365	Gains (losses) on financial liabilities at fair value through profit or loss, classified as held for trading	1	Money	
+2366	Gains (losses) on financial liabilities at fair value through profit or loss, designated as upon initial recognition	1	Money	
+2367	Gains (losses) on held-to-maturity investments	1	Money	
+2370	Gains (losses) on loans and receivables	1	Money	
+2371	Gains (losses) on other non-operating activities	1	Money	
+2417	Goodwill amortisation and impairment per share, diluted	39	PerShare	
+2418	Goodwill amortisation and impairment per share, undiluted	39	PerShare	
+2419	Goodwill amortisation per share, diluted	39	PerShare	
+2420	Goodwill amortisation per share, undiluted	39	PerShare	
+2422	Goodwill created on acquisition of associates	1	Money	
+2423	Goodwill created on acquisition of joint-ventures	1	Money	
+2424	Goodwill impairment per share, diluted	39	PerShare	
+2425	Goodwill impairment per share, undiluted	39	PerShare	
+2426	Goodwill previously eliminated against reserves on sale or termination of operations	1	Money	
+2428	Goodwill relating to disposals	1	Money	
+2429	Goodwill resurrected (lost) on disposal of subsidiaries	33	Money	Have HyId 1 via Bro 1791 but after subset elim HyId should be 33
+2440	Government grant receipts - Net	9	Money	Have HyId 13 via Bro 1271 but after subset elim HyId should be 9
+2448	Gross gain (loss) on sale or termination of individual operation	1	Money	
+2456	Group taxation relief receivable (payable)	1	Money	
+2464	Hedge of net investments in foreign operations free-text comment	1	String	
+2531	Hire of property and other lease expenditure	9	Money	
+2533	Historical cost depreciation charge less the actual depreciation charge calculated on the revalued amount	1	Money	
+2535	Historical cost profit (loss) for the period	1	Money	
+2536	Historical cost profit (loss) on ordinary activities before taxation	1	Money	
+2557	Impairment loss, available-for-sale equity investments	1	Money	
+2558	Impairment loss, available-for-sale investment debt securities	1	Money	
+2559	Impairment loss, available-for-sale investments	1	Money	
+2560	Impairment loss directly reduced to specific class of financial asset	1	Money	
+2561	Impairment loss, financial assets, income statement analysis	1	Money	
+2562	Impairment loss, fixed asset investments	10	Money	
+2563	Impairment loss, held-to-maturity investments	1	Money	
+2564	Impairment loss, loans and receivables, statement of recognised gains and losses	1	Money	
+2570	Impairment loss (reversal), available-for-sale equity investments	1	Money	
+2571	Impairment loss (reversal), available-for-sale investment debt securities	1	Money	
+2572	Impairment loss (reversal), available-for-sale investments	1	Money	
+2573	Impairment loss (reversal), financial assets, income statement analysis	1	Money	
+2574	Impairment loss (reversal), fixed asset investments	10	Money	
+2575	Impairment loss (reversal), held-to-maturity investments	1	Money	
+2577	Impairment loss (reversal) intangible fixed assets, administrative expenses	6	Money	
+2578	Impairment loss (reversal) intangible fixed assets, cost of sales	6	Money	
+2579	Impairment loss (reversal) intangible fixed assets, distribution costs	6	Money	
+2580	Impairment loss (reversal), loans and receivables, income statement	1	Money	
+2586	Impairment reversal, available-for-sale investments	1	Money	
+2587	Impairment reversal, financial assets, income statement analysis	1	Money	
+2588	Impairment reversal, fixed asset investments	10	Money	
+2589	Impairment reversal, held-to-maturity investments	1	Money	
+2591	Impairment reversal, loans and receivables	1	Money	
+2592	Impairment reversal on specific type of financial asset	1	Money	
+2594	Impairment (reversal) of tangible and intangible fixed assets	9	Money	
+2599	Income (charge) from individual extraordinary item	1	Money	
+2600	Income (charge) on pension schemes - Net	13	Money	
+2604	Income from fixed asset investments, excluding group undertakings	7	Money	
+2607	Income from loans to joint-ventures and associates	7	Money	
+2608	Income from loans to subsidiaries / group undertakings	7	Money	
+2609	Income from other current asset investments	7	Money	
+2611	Income from other fixed asset investments	7	Money	
+2613	Income from other participating interests	7	Money	
+2614	Income from shares in associates	7	Money	
+2616	Income from shares in subsidiaries / group undertakings	7	Money	
+2619	Income statement adjustments free-text comment	1	String	
+2622	Income tax, subtotal of UK income tax and tax attributable to investment income	1	Money	
+2625	Increase (decrease) in the amounts charged to minority interests due to disposal of tangible fixed assets	1	Money	
+2626	Increase (decrease) in the amounts charged to minority interests due to fundamental restructuring / reorganisation	1	Money	
+2627	Increase (decrease) in the amounts charged to minority interests due to non-operating exceptional items	1	Money	
+2628	Increase (decrease) in the amounts charged to minority interests due to other non-operating exceptional gains (losses)	1	Money	
+2629	Increase (decrease) in the amounts charged to minority interests due to sale or termination of operation	1	Money	
+2630	Increase (decrease) in the amounts charged to minority interests due to specific non-operating exceptional item	1	Money	
+2644	Increase (decrease) in capital grant during period	1	Money	
+2658	Increase (decrease) in current tax arising from adjustments for prior periods	1	Money	
+2659	Increase (decrease) in current tax arising from adjustments for prior periods and double-taxation relief	1	Money	
+2668	Increase (decrease) in deferred tax arising from adjustments for prior periods	1	Money	
+2669	Increase (decrease) in deferred tax from origination and reversal of timing differences	1	Money	
+2670	Increase (decrease) in depreciation following profit (loss) on disposal of fixed assets	9	Money	
+2671	Increase (decrease) in discount deducted	1	Money	
+2693	Increase (decrease) in foreign deferred tax arising from adjustment for prior periods	1	Money	
+2694	Increase (decrease) in foreign tax arising from adjustment for prior periods	1	Money	
+2695	Increase (decrease) in foreign tax from origination and reversal of timing differences	1	Money	
+2710	Increase (decrease) in pension reserve	1	Money	
+2721	Increase (decrease) in stocks of finished goods and work in progress	9	Money	
+2732	Increase (decrease) in tax on profit on ordinary activities due to disposal of tangible fixed assets	1	Money	
+2733	Increase (decrease) in tax on profit on ordinary activities due to fundamental restructuring / reorganisation	1	Money	
+2734	Increase (decrease) in tax on profit on ordinary activities due to non-operating exceptional items	1	Money	
+2735	Increase (decrease) in tax on profit on ordinary activities due to other non-operating exceptional gains (losses)	1	Money	
+2736	Increase (decrease) in tax on profit on ordinary activities due to sale or termination of operation	1	Money	
+2737	Increase (decrease) in tax on profit on ordinary activities due to specific non-operating exceptional item	1	Money	
+2739	Increase (decrease) in UK corporation tax arising from adjustment for prior periods	1	Money	
+2740	Increase (decrease) in UK deferred tax arising from adjustment for prior periods	1	Money	
+2741	Increase (decrease) in UK tax from origination and reversal of timing differences	1	Money	
+2749	Increase (decrease) on opening liability for foreign tax from changes in tax rates and laws	1	Money	
+2750	Increase (decrease) on opening liability for UK tax from changes in tax rates and laws	1	Money	
+2751	Increase (decrease) on opening tax liability from changes in tax rates and laws	1	Money	
+2755	Increase (decrease) of taxation charge caused by sale or termination of individual operation	1	Money	
+2760	Increase in tax payable (receivable) arising from the special circumstances	1	Money	
+2761	Increase in tax payable (receivable) arising from the special circumstances related to exceptional items	1	Money	
+2762	Increase or decrease in pension fund prepayment leading to a decrease (increase) in tax	1	Money	
+2763	Increase or decrease in pension fund prepayment leading to a decrease (increase) in taxation, impact on tax rate	1	Percent	
+2772	Individual acquisition free-text comment	31	String	
+2773	Individual disposal free-text comment	33	String	
+2778	Information on individual extraordinary items [grouping]		Tuple	
+2780	Instalment debts due after 5 years	1	Money	
+2796	Intangible assets disposed of with subsidiaries	33	Money	
+2830	Interest bearing borrowings	29	Money	
+2834	Interest from other current asset investments, listed	13	Money	
+2835	Interest from other current asset investments, unlisted	13	Money	
+2836	Interest from other fixed asset investments, listed	13	Money	
+2837	Interest from other fixed asset investments, unlisted	13	Money	
+2838	Interest from shares in individual associate	35	Money	
+2839	Interest from shares in individual participating interest	37	Money	
+2840	Interest from shares in individual subsidiary	36	Money	
+2859	Interest on pension schemes liabilities	13	Money	
+2865	Interest payable and similar charges free-text comment	13	String	
+2898	Interest saved on conversion of debt, basic earnings analysis	1	Money	
+2899	Interest saved on conversion of debt, diluted earnings	1	Money	
+2900	Interim dividend per share	26	PerShare	
+2901	Interim other dividend payment	26	Money	
+2902	Interim participating dividend payment	26	Money	
+2903	Interim payment	26	Money	Have HyId 1 via Bro 1787 but after subset elim HyId should be 26
+2915	Investment income - Net	7	Money	
+2998	Key performance statistics free-text comment	1	String	
+3030	Legal form of qualifying partnership	1	String	
+3031	Legal form of unlimited company	1	String	
+3055	Liabilities disposed of with subsidiaries	33	Money	
+3056	Liabilities due after one year	12	Money	
+3057	Liabilities due within one year	12	Money	
+3058	Liability arising from pension schemes that are wholly or partly funded	27	Money	
+3059	Liability arising from pension schemes that are wholly unfunded	27	Money	
+3064	Limited recourse debt book value	1	Money	
+3065	Limited recourse debt [grouping]		Tuple	
+3081	Loan notes received, disposal of subsidiaries	33	Money	
+3088	Loans and finance leases disposed of with subsidiaries	33	Money	
+3089	Loans, fixed asset investments, additions	25	Money	
+3090	Loans, fixed asset investments, cost	25	Money	
+3092	Loans, fixed asset investments, provisions	25	Money	
+3093	Loans, fixed asset investments, provisions, made during period	25	Money	
+3094	Loans, fixed asset investments, provisions, released	25	Money	
+3095	Loans, fixed asset investments, repayments	25	Money	
+3096	Loans, fixed asset investments, written off	25	Money	
+3097	Loans from associates	12	Money	
+3099	Loans from associates and joint-ventures	12	Money	
+3101	Loans from directors after one year	13	Money	
+3102	Loans from directors within one year	13	Money	
+3103	Loans from joint-ventures	12	Money	
+3106	Loans from other participating interests	12	Money	
+3108	Loans from undertakings in which the entity has a participating interest	12	Money	
+3114	Loans payable in default or breach [grouping]		Tuple	
+3119	Loans and receivables, trade and other receivables	29	Money	
+3124	Loans to customers, loans and receivables	29	Money	
+3126	Loans to related parties, loans and receivables analysis	29	Money	
+3129	Long-term contracts: net cost less foreseeable losses	13	Money	
+3130	Long-term contracts: payments on account received and receivable, not matched with turnover	13	Money	
+3148	Loss (gain) from deferred tax, revaluation reserve	1	Money	
+3151	Loss (gain) from deferred tax, revaluation reserve, properties	1	Money	
+3152	Loss (gain) from deferred tax, total reserves	1	Money	
+3171	Marketing, average number of employees	1	Decimal	
+3176	Marketing, number of employees at date	1	Decimal	
+3189	Maximum credit risk exposure on specific type of financial asset	1	Money	
+3190	Maximum exposure to credit risk	1	Money	
+3195	Membership of qualifying partnership [grouping]		Tuple	
+3197	Membership of unlimited company [grouping]		Tuple	
+3199	Minority interests	7	Money	
+3201	Minority interests, disposal of subsidiaries	33	Money	
+3202	Minority interests, extraordinary activities	1	Money	
+3203	Minority interests free-text comment	1	String	
+3211	Mortgage loans, loans and receivables	29	Money	
+3219	Name of acquisition	31	String	
+3221	Name of business segment	19	String	
+3230	Name of geographic segment	20	String	
+3232	Name or description of disposal	33	String	
+3238	Name of qualifying partnership	1	String	
+3243	Name of unlimited company	1	String	
+3244	Names of the related parties involved in the transaction	1	String	
+3247	Negative goodwill added to reserves	1	Money	
+3253	Net assets disposed of with subsidiaries, including goodwill and minority interests	33	Money	
+3254	Net assets disposed of with subsidiaries, not including goodwill and minority interests	33	Money	
+3257	Net assets (liabilities) of acquisitions, by segment	19	Money	HyId 31 via Bro 3424 but not this HyId 19
+3257	Net assets (liabilities) of acquisitions, by segment	20	Money	HyId 31 via Bro 3424 but not this HyId 20
+3258	Net assets (liabilities) of disposals, by segment	19	Money	Multi: TxId 3258 &amp; HyId 19 needed
+3258	Net assets (liabilities) of disposals, by segment	20	Money	Multi: TxId 3258 &amp; HyId 20 needed
+3259	Net assets (liabilities), excluding goodwill, segmental breakdown	12	Money	Multi: TxId 3259 &amp; HyId 12 needed
+3259	Net assets (liabilities), excluding goodwill, segmental breakdown	17	Money	Multi: TxId 3259 &amp; HyId 17 needed
+3259	Net assets (liabilities), excluding goodwill, segmental breakdown	18	Money	Multi: TxId 3259 &amp; HyId 18 needed
+3260	Net assets (liabilities), including goodwill, segmental breakdown	12	Money	Multi: TxId 3260 &amp; HyId 12 needed
+3260	Net assets (liabilities), including goodwill, segmental breakdown	17	Money	Multi: TxId 3260 &amp; HyId 17 needed
+3260	Net assets (liabilities), including goodwill, segmental breakdown	18	Money	Multi: TxId 3260 &amp; HyId 18 needed
+3262	Net assets (liability) excluding pension asset (liability)	13	Money	
+3276	Net contribution rate for latest period as percentage of pensionable earnings	27	Percent	
+3281	Net gain from other government assistance	9	Money	Have HyId 13 via Bro 1274 but after subset elim HyId should be 9
+3303	Net operating costs, Format 1	10	Money	
+3304	Net operating costs, Format 2	10	Money	
+3329	Nominal amount of debenture loan / loans held by nominees or trustees of the entity	1	Money	
+3338	Non-instalment debts due after 5 years	1	Money	
+3339	Non-interest bearing assets	12	Money	
+3340	Non-interest bearing borrowings	29	Money	
+3341	Non-interest bearing liabilities	12	Money	
+3343	Non-interest bearing net assets (liabilities), segmental breakdown	12	Money	Multi: TxId 3343 &amp; HyId 12 needed
+3343	Non-interest bearing net assets (liabilities), segmental breakdown	17	Money	Multi: TxId 3343 &amp; HyId 17 needed
+3343	Non-interest bearing net assets (liabilities), segmental breakdown	18	Money	Multi: TxId 3343 &amp; HyId 18 needed
+3347	Non-tax deductible amortisation of goodwill and impairment	1	Money	
+3348	Non-tax deductible amortisation of goodwill and impairment, impact on tax rate	1	Percent	
+3349	Non-taxable income	1	Money	
+3350	Non-taxable income, impact on tax rate	1	Percent	
+3351	Non-taxable income less expenses not deductible for tax purposes	1	Money	
+3352	Non-taxable income less expenses not deductible for tax purposes, impact on tax rate	1	Percent	
+3353	Non-taxable income less expenses not deductible for tax purposes, other than goodwill amortisation and impairment	1	Money	
+3354	Non-taxable income less expenses not deductible for tax purposes, other than goodwill amortisation and impairment, impact on tax rate	1	Percent	
+3355	Non-vested shares held by employee share ownership trusts	39	Share	
+3364	Number of employees at date	11	Decimal	
+3365	Number of employees at date, analysis by specific department	1	Decimal	
+3367	Number of employees at specific date [grouping]		Tuple	
+3378	Number of shares acquired	32	Share	
+3385	Number of shares which debt may convert to	1	Share	
+3386	Obligation to pay book value	1	Money	
+3391	Obligations under finance leases and hire purchase contracts after five years	1	Money	
+3392	Obligations under finance leases and hire purchase contracts between one to two years	1	Money	
+3393	Obligations under finance leases and hire purchase contracts between two to five years	1	Money	
+3405	Operating costs, Format 1	10	Money	
+3411	Operating lease expenditure	9	Money	
+3412	Operating lease rental receipts	9	Money	
+3423	Operating profit (loss) per share for discontinued operations before goodwill amortisation, diluted	39	PerShare	
+3424	Operating profit (loss) per share for discontinued operations before goodwill amortisation, undiluted	39	PerShare	
+3425	Operating profit (loss) per share for disposed businesses, diluted	39	PerShare	
+3426	Operating profit (loss) per share for disposed businesses, undiluted	39	PerShare	
+3469	Other assets held in pension scheme, expected rate of return (regulations prior to December 2006)	27	Percent	
+3471	Other assets held in pension scheme, fair value (regulations prior to December 2006)	27	Money	
+3476	Other borrowings	29	Money	
+3482	Other central and common costs, business segment analysis	7	Money	
+3483	Other central costs, geographic segment analysis	7	Money	
+3484	Other cost, distribution activities [grouping]		Tuple	
+3485	Other cost, farming activities [grouping]		Tuple	
+3486	Other cost, manufacturing activities [grouping]		Tuple	
+3487	Other cost, other activities [grouping]		Tuple	
+3488	Other cost, trading activities [grouping]		Tuple	
+3495	Other creditors after one year	13	Money	
+3496	Other creditors due within one year	13	Money	
+3497	Other creditors including taxation and social security after one year, subtotal	13	Money	
+3499	Other creditors including taxation and social security within one year, subtotal	13	Money	
+3510	Other departments, average number of employees	1	Decimal	
+3511	Other departments, number of employees at date	1	Decimal	
+3514	Other differences leading to an increase (decrease) in the tax charge	1	Money	
+3515	Other differences leading to an increase (decrease) in the tax charge, impact on tax rate	1	Percent	
+3522	Other EPS	39	PerShare	
+3523	Other exceptional gain (loss) per share reported after operating profit (loss), diluted	39	PerShare	
+3524	Other exceptional gain (loss) per share reported after operating profit (loss), undiluted	39	PerShare	
+3536	Other external charges	10	Money	
+3577	Other investment income	1	Money	
+3586	Other loans after five years, by instalments	1	Money	
+3587	Other loans after five years, not by instalments	1	Money	
+3588	Other loans, loans and receivables	29	Money	
+3593	Other materials cost, farming activities [grouping]		Tuple	
+3608	Other operating charges, Format 2	10	Money	
+3620	Other operating receipts	9	Money	
+3633	Other payables	29	Money	
+3640	Other provisions disposed of with subsidiaries	33	Money	
+3669	Other tax relief (charge) on exceptional items	1	Money	
+3670	Other tax relief (charge) on exceptional items, impact on tax rate	1	Percent	
+3674	Other taxes not already shown	1	Money	
+3676	Other timing differences leading to a decrease (increase) in taxation	1	Money	
+3677	Other timing differences leading to a decrease (increase) in taxation, impact on tax rate	1	Percent	
+3682	Other unusual debt book value	1	Money	
+3683	Other unusual debt [grouping]		Tuple	
+3694	Own shares, additions	39	Money	
+3695	Own shares, aggregate nominal value	39	Money	
+3696	Own shares, amount written off	39	Money	
+3697	Own shares, cost	39	Money	
+3701	Own shares, net book value	39	Money	
+3702	Own shares, number	39	Share	
+3704	Own shares, transfers	39	Money	
+3705	Own shares, transfers written off	39	Money	
+3706	Own shares, written of during period	39	Money	
+3744	Payments by third parties for research and development on their behalf	12	Money	
+3765	Pension costs	9	Money	
+3769	Pension fund asset disposed of with subsidiaries	33	Money	
+3772	Pension provisions disposed of with subsidiaries	33	Money	
+3773	Pension reserve	1	Money	
+3785	Pension scheme sensitivity free-text comment	27	String	
+3846	Percentage share of share capital sold	33	Percent	
+3847	Percentage of shares acquired	32	Percent	
+3851	Percentage of turnover attributable to markets outside the UK	1	Percent	
+3927	Premium on ordinary shares issued for acquisitions, net of expenses	1	Money	
+3929	Premium on share issues - Gross	1	Money	
+3930	Premium on share issues - Net	1	Money	
+3939	Present value of total lease receivables	29	Money	
+3941	Previously unrecognised surplus (deficit) deducted from (added to) service cost	27	Money	
+3942	Previously unrecognised surplus (deficit) deducted from (added to) settlement or curtailments	27	Money	
+3966	Prior period and policy change adjustments general free-text comment	1	String	
+3972	Proceeds from disposal of subsidiaries	33	Money	
+3976	Product remediation costs	9	Money	
+3977	Production, average number of employees	1	Decimal	
+3978	Production, number of employees at date	1	Decimal	
+3986	Profit and loss account reserve adjustments free-text comment	1	String	
+3991	Profit (loss) for period, diluted earnings	1	Money	
+3995	Profit (loss) on disposal of subsidiaries	33	Money	
+3999	Profit and loss account reserve, excluding pension reserve	1	Money	
+4023	Provision for doubtful debt due from related party	1	Money	
+4026	Provision per share for loss on sale or termination of operation, diluted	39	PerShare	
+4027	Provision per share for loss on sale or termination of operation, undiluted	39	PerShare	
+4044	Provisions disposed of with subsidiaries	33	Money	
+4083	Provisions no longer required on disposed businesses and written back	1	Money	
+4102	Purchase of own shares, decrease (increase) in total reserves	1	Money	
+4133	Raw materials and consumables	9	Money	
+4134	Realisation of property valuation gains of prior periods	1	Money	
+4145	Receivable (payable) for interest rate swaps	1	Money	
+4146	Receivables from related parties, loans and receivables analysis	29	Money	
+4162	Recovery of aborted acquisition costs	9	Money	
+4175	Redeemable preference share issues [grouping]		Tuple	
+4176	Redeemable preference shares	29	Money	
+4178	Redeemable preference shares free-text comment	1	String	
+4180	Redemption date of convertible debt	1	Date	
+4185	Redemption of preference shares, decrease (increase) in total reserves	1	Money	
+4194	Registered office address of unlimited company	1	String	
+4195	Registered or head office address of qualifying partnership	1	String	
+4196	Reimbursement of costs	9	Money	Have HyId 13 via Bro 1276 but after subset elim HyId should be 9
+4200	Related party transactions [grouping]		Tuple	
+4212	Reorganisation, restructuring and redundancy costs	9	Money	
+4213	Reorganising, restructuring and integrating of acquisitions	9	Money	
+4224	Repayment date of specific bank loan	1	Date	
+4230	Research and development, average number of employees	1	Decimal	
+4231	Research and development costs	12	Money	Have HyId 13 via Bro 952 but after subset elim HyId should be 12
+4235	Research and development exceptional costs	12	Money	
+4236	Research and development, number of employees at date	1	Decimal	
+4238	Research and development tax credit	1	Money	
+4241	Reserves free-text comment	1	String	
+4248	Restructuring provisions disposed of with subsidiaries	33	Money	
+4253	Return on assets	1	Decimal	
+4255	Return on shareholders' funds	1	Decimal	
+4261	Revaluation of interests in subsidiary undertakings, increase (decrease) in total reserves	1	Money	
+4272	Revaluation reserve, properties	1	Money	
+4274	Revaluation surplus in period	14	Money	Have HyId 1 via Bro 2175 but after subset elim HyId should be 14
+4277	Revaluation surplus in period, properties	1	Money	
+4282	Revenue of acquisitions free-text comment	31	String	HyId 15 via Bro 490 but not this HyId 31
+4296	Rollover relief on profit on disposal of fixed assets	1	Money	
+4297	Rollover relief on profit on disposal of fixed assets, impact on tax rate	1	Percent	
+4302	Royalty, licence and similar receivables	9	Money	Have HyId 13 via Bro 1278 but after subset elim HyId should be 9
+4321	Sales of capacity, net receipts	9	Money	
+4324	Sales, marketing and distribution, average number of employees	1	Decimal	
+4325	Sales, marketing and distribution, number of employees at date	1	Decimal	
+4331	Secured debentures and other loans, total liability	29	Money	
+4332	Secured debts	13	Money	
+4345	Selling, average number of employees	1	Decimal	
+4346	Selling, number of employees at date	1	Decimal	
+4376	Share-related awards, increase (decrease) in total reserves	1	Money	
+4381	Share of contingent liabilities of associates and joint-ventures	1	Money	
+4384	Share dividend alternative, increase (decrease) in total reserves	1	Money	
+4386	Share issues expenses	1	Money	
+4391	Share of net assets (liabilities) of joint-ventures and associates free-text comment	12	String	
+4400	Share price high in period	1	Money	
+4401	Share price low in period	1	Money	
+4407	Shares in issue	39	Share	
+4418	Short term timing differences leading to a decrease (increase) in taxation	1	Money	
+4419	Short term timing differences leading to a decrease (increase) in taxation, impact on tax rate	1	Percent	
+4420	Social security costs	9	Money	
+4422	Special circumstances, other than those relating to exceptional items, affecting the tax charge [grouping]		Tuple	
+4423	Special circumstances relating to exceptional items affecting the tax charge [grouping]		Tuple	
+4424	Special factors affecting joint-ventures and associates leading to an increase (decrease) in the tax charge	1	Money	
+4425	Special factors affecting joint-ventures and associates leading to an increase (decrease) in the tax charge, impact on tax rate	1	Percent	
+4434	Specific increase (decrease) in fair value / available-for-sale reserve	1	Money	
+4437	Specific loan due after five years [grouping]		Tuple	
+4450	Staff costs	9	Money	
+4500	Standard (nominal) tax rate	1	Percent	
+4507	Statement on how the accounts of the qualifying partnership have been handled	1	String	
+4511	Statement on treatment for tax purposes of amounts debited or credited to fair value reserve	1	String	
+4533	Stocks disposed of with subsidiaries	33	Money	
+4534	Stocks free-text comment	13	String	
+4566	Subordinated debt book value	1	Money	
+4567	Subordinated debt details [grouping]		Tuple	
+4646	Tangible assets disposed of with subsidiaries	33	Money	
+4675	Tax attributable to investment income	1	Money	
+4676	Tax deduction arising from exercise of employee options	1	Money	
+4677	Tax deduction arising from exercise of employee options, impact on tax rate	1	Percent	
+4695	Tax on extraordinary profit (loss) arising from foreign tax	1	Money	
+4696	Tax on extraordinary profit (loss) arising from UK corporation tax	1	Money	
+4697	Tax on extraordinary profit (loss) arising from UK income tax	1	Money	
+4698	Tax on extraordinary profit (loss), including adjustments to tax on earlier extraordinary items	1	Money	
+4699	Tax on group profit on ordinary activities at standard UK tax rate	1	Money	
+4700	Tax on non-operating exceptional items	1	Money	
+4701	Tax on operating exceptional items	1	Money	
+4702	Tax on profit on ordinary activities free-text comment	1	String	
+4705	Tax on recognised gains and losses not included in the profit and loss account	1	Money	
+4707	Tax relating to exceptional items per share, diluted	39	PerShare	
+4708	Tax relating to exceptional items per share, undiluted	39	PerShare	
+4709	Tax that will become payable if conditions are not met	1	Money	
+4711	Taxation creditors disposed of with subsidiaries	33	Money	
+4714	Taxation and deferred taxation provisions disposed of with subsidiaries	33	Money	
+4719	Taxation related to disposal of subsidiaries	33	Money	
+4749	Total assets	12	Money	
+4751	Total assets, excluding goodwill	12	Money	
+4752	Total assets less current liabilities	13	Money	
+4753	Total assets, segmental breakdown	17	Money	Multi: TxId 4753 &amp; HyId 17 needed
+4753	Total assets, segmental breakdown	18	Money	Multi: TxId 4753 &amp; HyId 18 needed
+4755	Total capital	1	Money	
+4759	Total central and common costs, business segment analysis	7	Money	
+4760	Total central costs, geographic segment analysis	7	Money	
+4771	Total current tax on exceptional items	1	Money	
+4773	Total deferred tax on exceptional items	1	Money	
+4776	Total dividend payment	26	Money	Have HyId 1 via Bro 1786 but after subset elim HyId should be 26
+4777	Total dividend per share	26	PerShare	
+4778	Total entity costs	7	Money	
+4779	Total exceptional gain (loss) for operating and non-operating items after tax	1	Money	
+4780	Total exceptional gain (loss) for operating and non-operating items before tax	1	Money	
+4781	Total exceptional gain (loss) per share for operating and non-operating items, diluted	39	PerShare	
+4782	Total exceptional gain (loss) per share for operating and non-operating items, undiluted	39	PerShare	
+4783	Total extraordinary charges	1	Money	
+4784	Total extraordinary income	1	Money	
+4792	Total increase (decrease) of taxation charge caused by sale or termination of operations	1	Money	
+4793	Total interest bearing net assets (liabilities)	12	Money	Multi: TxId 4793 &amp; HyId 12 needed
+4793	Total interest bearing net assets (liabilities)	17	Money	Multi: TxId 4793 &amp; HyId 17 needed
+4793	Total interest bearing net assets (liabilities)	18	Money	Multi: TxId 4793 &amp; HyId 18 needed
+4798	Total liabilities	12	Money	
+4800	Total liabilities, excluding goodwill	12	Money	
+4804	Total non-interest bearing net assets (liabilities)	12	Money	Multi: TxId 4804 &amp; HyId 12 needed
+4804	Total non-interest bearing net assets (liabilities)	17	Money	Multi: TxId 4804 &amp; HyId 17 needed
+4804	Total non-interest bearing net assets (liabilities)	18	Money	Multi: TxId 4804 &amp; HyId 18 needed
+4805	Total other dividend payment	26	Money	
+4808	Total participating dividend payment	26	Money	
+4810	Total reserves	1	Money	
+4824	Total tax on exceptional items	1	Money	
+4826	Total transfer to (from) total reserves	1	Money	
+4827	Total UK and foreign current tax, after adjustments and relief	12	Money	
+4828	Total UK and foreign deferred tax	12	Money	
+4832	Trade creditors disposed of with subsidiaries	33	Money	
+4841	Trade and other payables	29	Money	
+4842	Trade and other payables free-text comment	29	String	
+4846	Trade payables	29	Money	
+4847	Trade payables and accrued expenses	29	Money	
+4848	Trade receivables	29	Money	
+4852	Transactions with subsidiaries, joint-ventures or associates which are not recognised [grouping]		Tuple	
+4857	Transfer from revaluation reserve of amount equivalent to additional depreciation of revalued assets	1	Money	
+4858	Transfer from revaluation reserve of amount equivalent to additional depreciation of revalued assets, properties	1	Money	
+4863	Transfer from (to) equity reserve	1	Money	
+4871	Transfer of realised revaluation surplus from revaluation reserve	1	Money	
+4874	Transfer of realised revaluation surplus from revaluation reserve, properties	1	Money	
+4891	Transitional relief [grouping]		Tuple	
+4917	UK current corporation tax	12	Money	
+4918	UK current corporation tax after adjustment for prior periods	12	Money	
+4919	UK current corporation tax after double-taxation relief, before adjustment for prior periods	12	Money	
+4920	UK current corporation tax on income for the period	1	Money	
+4921	UK deferred tax	12	Money	
+4922	UK and foreign current tax, before adjustments and relief	12	Money	
+4923	UK income tax	1	Money	
+4928	Undrawn borrowing facilities	1	Money	
+4929	Undrawn borrowing facilities, fixed rate	1	Money	
+4930	Undrawn borrowing facilities, floating rate	1	Money	
+4931	Undrawn committed borrowing facilities	1	Money	
+4932	Undrawn committed borrowing facilities expiring after two years	1	Money	
+4933	Undrawn committed borrowing facilities expiring between one to two years	1	Money	
+4934	Undrawn committed borrowing facilities expiring within one year	1	Money	
+4957	Unrecognised deferred tax asset [grouping]		Tuple	
+4958	Unrecognised deferred tax [grouping]		Tuple	
+4959	Unrelieved loss on disposal of operation	1	Money	
+4960	Unrelieved loss on disposal of operation, impact on tax rate	1	Percent	
+4961	Unrelieved loss on foreign subsidiaries	1	Money	
+4962	Unrelieved loss on foreign subsidiaries, impact on tax rate	1	Percent	
+4963	Unrelieved tax losses carried forward	1	Money	
+4964	Unrelieved tax losses carried forward, impact on tax rate	1	Percent	
+4965	Unsecured debentures and other loans, total liability	29	Money	
+4966	Unsecured guarantees by subsidiaries to third parties	1	Money	
+4968	Unusual debt free-text comment	1	String	
+4970	Unwinding of discount on provisions serving to decrease (increase) discounted provisions	13	Money	
+4988	Utilisation of tax losses	1	Money	
+4989	Utilisation of tax losses, impact on tax rate	1	Percent	
+5001	Vacant property provisions disposed of with subsidiaries	33	Money	
+5013	Value of liabilities in pension scheme	27	Money	
+5058	Wages and salaries	9	Money	
+5088	Withholding tax	1	Money	
+5095	Work in progress in respect of long-term contracts	13	Money	
+5100	Write-off of acquisition goodwill previously set against reserves	1	Money	
+5111	Accounts are in accordance with special provisions in section 445(3) of the Companies Act relating to medium-sized companies	1	String	
+5144	Description of arrangements related to employees, such as provision of information and consultation	1	String	
+5155	Description of reasons for purchase of own shares	39	String	
+5156	Description of special circumstances and the type, number and nominal values of shares acquired, disposed of or charged	39	Money	
+5180	Dividend recommended by directors	1	Money	
+5183	Employment of disabled persons policy	1	String	
+5186	Exercise price of option	28	Money	HyId 38 via Bro 362, HyId 39 via Bro 3474 but not this HyId 28
+5207	Maximum nominal value of own shares held by entity in period	39	Money	
+5208	Maximum number of own shares held by entity in period	39	Share	
+5210	Net consideration paid for own shares	39	Money	
+5213	Nominal value of own shares purchased	39	Money	
+5214	Nominal value of own shares sold	39	Money	
+5224	Number of own shares purchased	39	String	
+5225	Number of own shares sold	39	Share	
+5246	Own shares acquired or held in special circumstances [grouping]		Tuple	
+5247	Payment of creditors policy and practice	1	String	
+5253	Percentage of called-up share capital represented by purchases during the period	39	Percent	
+5262	Purchase of own shares	39	Money	
+5263	Purchase of own shares free-text comment	39	String	
+5268	Sale of own shares	39	Money	
+5274	Statement on qualifying third party indemnity provisions	1	String	
+5275	Statement on quality and completeness of information provided to auditors	1	String	
+5358	Business report copyright statement	1	String	
+5361	Business report name	1	String	
+5362	Business report principal language	45	Fixed	
+5364	Business report publisher name, if different from entity	1	String	
+5369	Code for activity	42	String	
+5370	Companies House document authentication	1	String	
+5382	Date of formation or incorporation	1	Date	
+5383	Date of revision	1	Date	
+5384	Date when ceased to be legal or registered name	1	String	
+5386	Description of activity code system	42	String	
+5387	Description of business report	1	String	
+5391	Description or title of author	1	String	
+5392	Description of other activities	42	String	
+5394	Description of principal activities	42	String	
+5395	Description of revision	1	String	
+5396	Description of share type	32	String	Have HyId 39 via Bro 3442 but after subset elim HyId should be 32
+5397	Description of specific security of entity	44	String	
+5464	Entity activity code [grouping]		Tuple	
+5471	Entity former legal or registered name	1	String	
+5472	Entity former legal or registered name [grouping]		Tuple	
+5482	Entity listing [grouping]		Tuple	
+5493	Entity trading name	1	String	
+5513	Legal form of entity	1	EntityForm	
+5518	Main trading symbol on exchange	44	String	
+5523	Name of author	1	String	
+5526	Name of revision author	1	String	
+5540	Other currency used in business report	43	Fixed	
+5575	Principal currency used in business report	43	Fixed	
+5577	Principal stock exchange	44	Fixed	
+5578	Is principle document author	1	Boolean	
+5585	Secondary stock exchange	44	Fixed	
+5593	Symbol of specific security of entity	44	String	
+5601	UK VAT registration number	1	String	
+5611	Version number of revision	1	String	

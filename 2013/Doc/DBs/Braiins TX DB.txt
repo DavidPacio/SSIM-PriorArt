@@ -1,0 +1,1139 @@
+/doc/Braiins TX DB.txt
+
+TX DB Tables and Notes
+======================
+
+29.09.12 Created from Braiins UK GAAP DB.txt for UK GAAP DPL work
+         Schema and Imports Location fields increased from 120 to 150;
+         LinkbaseRefs.href fields increased from 80 to 100
+
+09.10.12 Doc table added for Labels and References, replacing previous Labels and References tables
+10.10.12 Names table removed from use as the only use was for Element names and only 27 names were duplicated. Elements.NameId -> Elements.name
+
+Used initially with the UK-GAAP-DPL DB
+
+The capitalisation 'code' for the first letter of DB column names is:
+l/c = original xml name used
+u/c = own name, usually when something is stored as an enum rather than a string for efficiency, like SignN or SubstGroupN
+
+Though case does not matter in where clauses entered for any of the list modules. It does matter, however, in php code accesses query results, as a case difference will cause an error.
+
+ToDo
+====
+
+Tables
+======
+Arcroles
+Arcs
+Doc
+Elements
+LinkbaseRefs
+Namespaces
+Roles
+Schema
+Text
+
+
+Hypercubes
+Dimensions
+DimensionMembers
+TuplePairs
+
+Tables used during build which could be dropped on completion.
+Imports
+
+Tables which have gone...
+Names
+Labels
+References
+AttributeGroups
+Attributes
+ComplexTypes
+SimpleTypes
+Unions
+
+############
+## Schema ## Create failed using Schemas - reserved word?
+############
+CREATE TABLE IF NOT EXISTS `Schema` (
+  Id                   tinyint unsigned not null auto_increment,
+  Location             varchar(150)     not null, # schemaLocation from <import
+  targetNamespace      varchar(80)      not null,
+  attributeFormDefault varchar(80)          null,
+  elementFormDefault   varchar(80)          null,
+# Doc                  text                 null, # <annotation><documentation> elements concatenated. Skipped as 02.04.11
+  Primary Key (Id)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+################
+## Namespaces ##
+################
+CREATE TABLE IF NOT EXISTS Namespaces (
+  Id        tinyint  unsigned not null auto_increment,
+  namespace varchar(80)       not null,
+  Prefix    varchar(15)           null, # uk-countries
+# Tag       varchar(12)           null, # first tag defining the namespace  Dropped 10.10.12
+  File      varchar(40)       not null, # csv list of Imports.Id(s) or LinkbaseRefs.Id+100 of file(s) where defined
+  Num       smallint unsigned not null default 1, # count of times defined
+  Primary Key (Id)
+#  Unique Key (namespace) Dropped 10.10.12
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+##############
+## Elements ## http://www.schemacentral.com/sc/xsd/e-xsd_element-1.html
+##############
+CREATE TABLE IF NOT EXISTS Elements (
+  Id            smallint unsigned not null, # auto_increment removed 10.10.12 as DB Build sets the Id, with gaps for elements now excluded in order to keep the Ids as they were for the UK-GAAP build.
+  NsId          tinyint  unsigned not null, # Namespaces.Id of the target namespace of the schema
+# IdId          smallint unsigned     null, # Ids.Id   for id   [0..1] xsd:ID      When used it is name with prefix e.g. uk-gaap_AccountancyFeesAdministrativeExpenses. Removed 08.10.12 Not used in practice. Switched to in memory during DB build.
+# NameId        smallint unsigned not null, # Names.Id for name [0..1] xsd:NCName  Replaced by following 10.10.12
+  name          varchar(160)      not null, # name [0..1] xsd:NCName  max length 155 as of 10.10.12, with only 27 names duplicated so separated Names table taken OoS
+  TypeN         tinyint  unsigned     null, # TET_* enum for type e.g. TET_Money, TET_String ....
+  abstract      tinyint  unsigned     null, # abstract                      Default "false". True stored as 1
+  nillable      tinyint  unsigned     null, # nillable  [0..1] xsd:boolean  Default "false". True stored as 1
+  SubstGroupN   tinyint  unsigned     null, # TSG_* enum for substitutionGroup e.g. TSG_Item ....
+  PeriodN       tinyint  unsigned     null, # TPT_* enum for periodType - TPT_None (null) | TPT_Instant | TPT_Duration
+  SignN         tinyint  unsigned     null, # TSB_*  enum for balance   - TS_None (null)  | TS_Dr    | TS_Cr
+# DocId         smallint unsigned     null, # Text.Id for element documentation. Removed 02.04.11 as spec says not required to show doc other than via labels
+  StdLabelTxtId smallint unsigned     null, # Text.Id for element's standard label. Added 29.04.11 for element access speed
+  Hypercubes    char(4)               null, # List of hypercubes for this element/set as Hypercubes.Id (1-46) in char form + 48 -> '1' upwards, Max # for UK GAAP is 3.
+# ComplexTypeId tinyint  unsigned     null, # Removed 29.04.11 as not ever used after build
+# SimpleTypeId  tinyint  unsigned     null, # Removed 29.04.11 as not ever used after build
+# SchemaId      tinyint  unsigned not null, # Schema.Id of schema where defined. Removed 29.04.11 as not ever used after build
+  Primary Key (Id),
+          Key (name)                     # Can have duplicate names with different NsIds. There are 27 such duplicates as of 10.10.12
+#  Unique Key NameIdNsId (NsId,name)     # Would work as a unique key if required.
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+<element id="uk-bus_OrdinaryShareClass1"   name="OrdinaryShareClass1" type="uk-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+<element id="uk-direp_OrdinaryShareClass1" name="OrdinaryShareClass1" type="uk-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+
+Notes:
+- concept elements must have an id
+
+
+Retired 29.03.11 in favour of enaums and DocId as above
+# type              varchar(40)           null, # type      [0..1] xsd:QName    max length =  35 from uk-types:entityAccountsTypeItemType
+# substitutionGroup varchar(20)           null, # null (23) | link:part (56) | xbrldt:dimensionItem (42)  | xbrldt:hypercubeItem (46) |
+#                                               # xbrli:item (6076) | xbrli:tuple (158) | xl:arc (6)      | xl:documentation (1) |
+#                                               # xl:extended (6)   | xl:locator  (1)   | xl:resource (3) |  xl:simple (4)
+# periodType        varchar(8)            null, # xbrli:periodType  null (258)  | duration (5098) | instant (1066)
+# balance           varchar(6)            null, # xbrli:balance     null (3711) | credit (876)    | debit (1835) T = 6422
+# Doc               varchar(180)          null, # max length = 178
+
+xsd:element
+Element Information
+Namespace: http://www.w3.org/2001/XMLSchema
+Schema Document: xmlschema.xsd
+Properties: Local, Qualified
+Type: xsd:localElement
+Other elements with the same name: xsd:element, xsd:element
+
+Content
+  Sequence [1..1]
+    xsd:annotation [0..1]
+    Choice [0..1]
+      xsd:simpleType
+      xsd:complexType
+    Choice [0..*]   from group xsd:identityConstraint
+      xsd:unique
+      xsd:key
+      xsd:keyref
+
+Attributes
+Name       Occ   Type         Description  Notes
+id        [0..1] xsd:ID       inherited from xsd:annotated
+name      [0..1] xsd:NCName   from group xsd:defRef
+type      [0..1] xsd:QName    inherited from xsd:element
+nillable  [0..1] xsd:boolean   Default value is "false". inherited from xsd:element
+ref       [0..1] xsd:QName    from group xsd:defRef                                   /- Not used in UK GAAP
+minOccurs [0..1] xsd:nonNegativeInteger  Default value is "1". from group xsd:occurs  |
+maxOccurs [0..1] xsd:allNNI    Default value is "1". from group xsd:occurs            |
+default   [0..1] xsd:string    inherited from xsd:element                             |
+fixed     [0..1] xsd:string    inherited from xsd:element                             |
+block     [0..1] xsd:blockSet    inherited from xsd:element                           |
+form      [0..1] xsd:formChoice  inherited from xsd:element                           |
+Any attribute  [0..*]    Namespace: ##other, Process Contents: lax
+Used In
+    Group xsd:nestedParticle
+    Group xsd:particle
+    Type xsd:explicitGroup
+    Type xsd:group
+    Type xsd:simpleExplicitGroup
+
+Sample Instance
+
+<xsd:element>
+   <xsd:simpleType>
+      <xsd:restriction>
+         <xsd:simpleType>...
+         </xsd:simpleType>
+         <xsd:minExclusive value="any value">...
+         </xsd:minExclusive>
+      </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:unique name="NCName">
+      <xsd:selector xpath="token">
+      </xsd:selector>
+      <xsd:field xpath="token">
+      </xsd:field>
+   </xsd:unique>
+</xsd:element>
+
+  <element name="documentation"  type="xl:documentationType"
+    substitutionGroup="xl:documentation">
+    <annotation>
+      <documentation>
+      Concrete element to use for documentation of extended links and linkbases.
+      </documentation>
+    </annotation>
+  </element>
+
+  <element name="documentation" type="xl:documentationType" abstract="true">
+    <annotation>
+      <documentation>
+      Abstract element to use for documentation of extended links and linkbases.
+      </documentation>
+    </annotation>
+  </element>
+
+##################
+## LinkbaseRefs ## http://www.schemacentral.com/sc/xbrl21/e-link_linkbaseRef.html
+##################
+CREATE TABLE IF NOT EXISTS LinkbaseRefs (
+  Id        tinyint  unsigned not null auto_increment,
+# type      varchar(6)        not null, # link:type with fixed value of "simple" so not stored
+  href      varchar(100)      not null, # xlink:href [1..1] xsd:anyURI max length 72 <== None of these are used anywhere else so brought back from Hrefs table on 31.02.11
+# RoleId    smallint unsigned     null, # Uris.Id  for xlink:role Use removed 31.03.11 as it doesn't provide any useful info, just presentationLinkbaseRef etc which we don't need
+  title     varchar(30)           null, # link:title  NULL  8 | Definition Links, all  8 | Label Links, all 9 | Reference Links, all  7
+# arcrole   varchar(80)           null, # xlink:arcrole This attribute must have the value: http://www.w3.org/1999/xlink/properties/linkbase
+# SchemaId  tinyint unsigned  not null, # Schema.Id of schema where defined Removed 29.04.11 as not ever used after build
+  Primary Key (Id)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+xlink:type    [1..1] Anonymous    Fixed value is "simple". inherited from xl:simpleType
+xlink:href    [1..1] xsd:anyURI
+xlink:role    [0..1] Anonymous
+xlink:title   [0..1] xsd:string
+xlink:show    [0..1] Anonymous
+xlink:actuate [0..1] Anonymous
+xlink:arcrole [1..1] Anonymous  This attribute must have the value: http://www.w3.org/1999/xlink/properties/linkbase
+Any attribute [0..*] Namespace: http://www.w3.org/XML/1998/namespace, Process Contents: lax
+
+<link:linkbaseRef
+ xlink:type="simple"
+ xlink:href="uk-gaap-2009-09-01-presentation.xml"
+ xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"
+ xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+/>
+
+###############
+## Linkbases ## http://www.schemacentral.com/sc/xbrl21/e-link_linkbase.html
+###############
+No table. Namespaces and Imports are updated. No other new info.
+
+<linkBase
+
+Choice [0..*]
+  link:documentation Concrete element to use for documentation of extended links and linkbases.
+  link:roleRef       Definition of the roleRef element used to link to resolve xlink:role attribute values to the roleType element declaration.
+  link:arcroleRef    Definition of the roleRef element used to link to resolve xlink:arcrole attribute values to the arcroleType element declaration.
+
+subst. group xl:extended  http://www.schemacentral.com/sc/xbrl21/e-xl_extended.html
+  link:presentationLink   presentation extended link element definition.
+  link:definitionLink     definition extended link element definition
+  link:calculationLink    calculation extended link element definition
+  link:labelLink          label extended link element definition
+  link:referenceLink      reference extended link element definition
+  link:footnoteLink       footnote extended link element definition
+
+Attributes
+Name  Occ  Type  Description  Notes
+id    [0..1]  xsd:ID
+Any attribute  [0..*]    Namespace: http://www.w3.org/XML/1998/namespace, Process Contents: lax
+Sample Instance
+
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation=" http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+
+###########
+## Roles ## Replacing RoleTypes, RoleRefs, and uris without RoleTypes entries
+###########
+CREATE TABLE IF NOT EXISTS Roles (
+  Id          tinyint  unsigned not null auto_increment,
+  Role        varchar(60)       not null, # Role uri with http://, www. etc stripped to leave only what is necessary to identify the role. max lngth 56
+  usedOn      varchar(20)       not null, # link:usedOn [1..*]  max length 19
+  definition  varchar(70)           null, # 10 - Profit and Loss Account  max length 62
+  ElId        smallint unsigned     null, # Elements.Id of the associated hypercube if applicable
+  FileId      tinyint  unsigned not null, # Schema.Id or LinkbaseRefs.Id+100 of file where defined
+  Uses        smallint unsigned not null, # Number of uses
+  Primary Key (Id)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+##############
+## Arcroles ## Replacing ArcroleTypes, ArcroleRefs and uris without ArcroleTypes entries
+##############
+CREATE TABLE IF NOT EXISTS Arcroles (
+  Id            tinyint  unsigned not null auto_increment,
+  Arcrole       varchar(25)       not null, # Arcrole uri with http://, www. etc stripped to leave only what is necessary to identify the arcrole. max lngth 23
+  usedOn        varchar(20)       not null, # link:usedOn [1..*]  max length 13
+  definition    varchar(160)          null, # 10 - Profit and Loss Account  max length 155
+  cyclesAllowed varchar(10)           null, # cyclesAllowed [1..1] Anonymous max length  10 none | undirected  (any not used in UK GAAP)
+  FileId        tinyint  unsigned not null, # Schema.Id or LinkbaseRefs.Id+100 of file where defined
+  Uses          smallint unsigned not null, # Number of uses
+  Primary Key (Id)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+###################
+## RoleTypes ## http://www.schemacentral.com/sc/xbrl21/e-link_roleType.html
+###################
+No separate table as of 31.03.11. The Info is used to create Roles entries.
+
+<link:roleType
+The roleType element is used to define custom role values in XBRL extended links.
+
+5.1.3 Defining custom role types – the roleType element
+The roleType element contains a custom role type definition. The roleType element describes the custom role type by defining the
+roleURI of the role type, declaring the elements that the role type may be used on, and providing a human-readable definition of the role type.
+
+Role types define custom values for the xlink:role attribute on the [XLINK] extended link and resource elements. The roleType element MUST be
+located among the set of nodes identified by the [XPATH] path "//xsd:schema/xsd:annotation/xsd:appinfo/*". The role values that are defined by
+this specification (as standard role attribute values) MUST NOT be redefined using the roleType element.
+
+There MUST NOT be more than one roleType element with the same roleURI attribute value within a taxonomy schema. Within a DTS, there MAY be more
+than one roleType element with the same roleURI attribute value. However, all roleType elements with the same roleURI attribute value MUST be s-equal.
+
+The value of the roleURI attribute identifies the xlink:role attribute value that is being defined. The values of the usedOn sub-elements identify
+which elements are allowed to use the custom role type. Since roleType elements are pointed to via a roleRef element in linkbases that use the
+custom role type, the roleType element MAY have an id attribute.
+
+Properties: Global, Qualified
+Type: Anonymous
+
+Content
+Sequence [1..1]
+  link:definition [0..1] The element to use for human-readable definition of custom roles and arc roles.
+  link:usedOn [1..*]     Definition of the usedOn element - used to identify what elements may use a taxonomy defined role or arc role value.
+
+Attributes
+Name    Occ  Type  Description  Notes
+roleURI [1..1]  xl:nonEmptyURI
+id      [0..1]  xsd:ID
+
+<link:roleType roleURI="http://www.xbrl.org/uk/role/ProftAndLossAccount" id="IncomeStatement">
+  <link:definition>10 - Profit and Loss Account</link:definition>
+  <link:usedOn>link:presentationLink</link:usedOn>
+</link:roleType>
+
+##############
+## RoleRefs ## http://www.schemacentral.com/sc/xbrl21/e-link_roleRef.html
+##############
+No table as of 31.03.11 as though RoleRefs exist in the UK GAAP taxonomy they do not appear to serve any useful purpose.
+
+<link:roleRef
+The roleRef element is used to resolve xlink:role attribute values to the roleType element declaration.
+
+3.5.2.4 The roleRef element (optional)
+The roleRef element is used to resolve custom xlink:role values that are used in a linkbase or XBRL instance (for footnoteLink and footnote).
+The roleRef element is a simple link, as defined in Section 3.5.1. The roleRef element points to the roleType element in a taxonomy schema document
+that declares the xlink:role attribute value (see section 5.1.3).  The value, V, of the xlink:role attribute on a standard resource or extended link
+element MUST be an absolute URI.  If V does not correspond to a role defined by this specification, it is a custom role; in this case the ancestor
+linkbase element of the resource or extended link element MUST have a child roleRef element with V as the value of its roleURI attribute.
+
+Note that roleRefs are only required for roles that are used on standard extended links and standard resources.
+The standard extended links are those defined by this specification: definitionLink, calculationLink, presentationLink, labelLink, referenceLink
+and footnoteLink.  Likewise, the standard resources are label, footnote, and reference.
+
+Properties: Global, Qualified
+Type: Anonymous
+
+Content: Empty content
+
+Attributes
+Name  Occ  Type  Description  Notes
+xlink:type    [1..1]  Anonymous    Fixed value of "simple" so not stored
+xlink:href    [1..1]  xsd:anyURI
+xlink:arcrole [0..1]  Anonymous   /- Not used in UK GAAP
+xlink:role    [0..1]  Anonymous   |
+xlink:title   [0..1]  xsd:string  |
+xlink:show    [0..1]  Anonymous   |
+xlink:actuate [0..1]  Anonymous   |
+Any attribute [0..*]              Namespace:  http://www.w3.org/XML/1998/namespace, Process Contents: lax
+roleURI       [1..1]  xl:nonEmptyURI  This attribute contains the role name.
+
+Used In
+  Anonymous type of element link:linkbase
+  Anonymous type of element xbrli:xbrl
+
+Substitution Hierarchy
+  xl:simple
+     can be substituted with link:roleRef
+
+<roleRef
+ xlink:type="simple"
+ xlink:href="uk-gaap-2009-09-01.xsd#IncomeStatement"
+ roleURI="http://www.xbrl.org/uk/role/ProftAndLossAccount" />
+
+##################
+## ArcroleTypes ## http://www.schemacentral.com/sc/xbrl21/e-link_arcroleType.html
+##################
+No separate table as of 31.03.11. The Info is used to create Roles entries.
+
+link:arcroleType
+  The arcroleType element is used to define custom arc role values in XBRL extended links.
+
+5.1.4 Defining custom arc role types – the arcroleType element
+
+The arcroleType element contains a custom arc role definition. The arcroleType element describes the custom arc role type by declaring the arc role value, declaring the elements that the arc role type may be used on, declaring the type of cycles that are allowed for a network of relationships using the arc role type, and providing a human-readable definition of the meaning of the arc role type.
+
+The arcroleType element MUST be among the set of nodes identified by the [XPATH] path "//xsd:schema/xsd:annotation/xsd:appinfo/*”. The arc role values defined by this specification (as standard arc role values) MUST NOT be redefined using the arcroleType element.
+
+There MUST NOT be more than one arcroleType element with the same arcroleURI attribute value within a taxonomy schema. Within a DTS, there MAY be more than one arcroleType element with the same arcroleURI attribute value. However, all arcroleType elements with the same arcroleURI attribute value MUST be s-equal.
+
+The value of the arcroleURI identifies the xlink:arcrole attribute value that is being defined. The values of the usedOn sub-elements identify which arcs may use this arc role type. Because arcroleType elements are pointed to via an arcroleRef element in linkbases that use the custom arc role value, the arcroleType element MAY have an id attribute.
+
+Properties: Global, Qualified
+Type: Anonymous
+
+Content
+  Sequence [1..1]
+    link:definition [0..1] The element to use for human-readable definition of custom roles and arc roles.
+    link:usedOn [1..*]     Definition of the usedOn element - used to identify what elements may use a taxonomy defined role or arc role value.
+
+Attributes
+Name          Occ    Type  Description  Notes
+arcroleURI    [1..1] xl:nonEmptyURI
+id            [0..1] xsd:ID
+cyclesAllowed [1..1] Anonymous
+Sample Instance
+
+<link:arcroleType arcroleURI="http://www.example.com/" cyclesAllowed="any">
+   <link:definition>string</link:definition>
+   <link:usedOn>QName</link:usedOn>
+</link:arcroleType>
+
+<arcroleType id="hypercube-dimension" cyclesAllowed="none" arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension">
+  <definition>Source (a hypercube) contains the target (a dimension) among others.</definition>
+  <usedOn>definitionArc</usedOn>
+</arcroleType>
+
+#################
+## ArcroleRefs ## http://www.schemacentral.com/sc/xbrl21/e-link_arcroleRef.html
+#################
+No table as of 31.03.11 as though ArcroleRefs exist in the UK GAAP taxonomy they do not appear to serve any useful purpose.
+
+link:arcroleRef
+  The arcroleRef element is used to resolve xlink:arcrole attribute values to the arcroleType element declaration.
+
+3.5.2.5 The arcroleRef element (optional)
+
+The arcroleRef element is used to resolve custom xlink:arcrole values that are used in a linkbase or an XBRL instance (for footnoteArc). The arcroleRef element is a simple link, as defined in Section 3.5.1. The arcroleRef element points to the arcroleType element in a taxonomy schema document that declares the xlink:arcrole attribute value (see section 5.1.4). The value, V, of the xlink:arcrole attribute on a standard arc element in a standard extended link element MUST be an absolute URI.  If V does not correspond to an arcrole defined by this specification, it is a custom arcrole; in this case the ancestor linkbase element of the arc element MUST have a child arcroleRef element with V as the value of its arcroleURI attribute.
+
+Note that arcroleRefs are only required for arcroles that are used on standard arcs appearing in standard extended links.  The standard arcs are those defined by this specification: definitionArc, calculationArc, presentationArc, labelArc, referenceArc and footnoteArc.
+
+The XML Schema definition of the arcroleRef element is shown below.
+
+Element Information
+Namespace: http://www.xbrl.org/2003/linkbase
+Schema Document: xbrl-linkbase-2003-12-31.xsd
+Properties: Global, Qualified
+Type: Anonymous
+
+Content: Empty content
+
+Attributes
+Name          Occ     Type  Description  Notes
+xlink:type    [1..1] Anonymous  Fixed value of "simple" so not stored
+xlink:href    [1..1] xsd:anyURI
+xlink:arcrole [0..1] Anonymous   /- Not used in UK GAAP
+xlink:role    [0..1] Anonymous   |
+xlink:title   [0..1] xsd:string  |
+xlink:show    [0..1] Anonymous   |
+xlink:actuate [0..1] Anonymous   |
+Any attribute [0..*]              Namespace: http://www.w3.org/XML/1998/namespace, Process Contents: lax  inherited from xl:simpleType
+arcroleURI    [1..1] xl:nonEmptyURI  This attribute contains the arc role name.
+
+Used In
+  Anonymous type of element link:linkbase
+  Anonymous type of element xbrli:xbrl
+
+Substitution Hierarchy
+  xl:simple
+    can be substituted with link:arcroleRef
+
+<arcroleRef xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain" arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain" />
+
+############
+## XLinks ## <presentationLink <definitionLink <labelLink <referenceLink
+############
+No table as of 31.03.11 as the info does not need to be stored, but is just used by BuildTaxonomyDB.php
+for processing the following loc, arc, label, and reference tags.
+
+link:presentationLink  http://www.schemacentral.com/sc/xbrl21/e-link_presentationLink.html
+link:definitionLink    http://www.schemacentral.com/sc/xbrl21/e-link_definitionLink.html
+link:labelLink         http://www.schemacentral.com/sc/xbrl21/e-link_labelLink.html
+link:referenceLink     http://www.schemacentral.com/sc/xbrl21/e-link_referenceLink.html
+     extended link element definition.
+
+Properties: Global, Qualified
+
+Type: Anonymous
+Content
+  Choice [0..*]
+    link:documentation   Concrete element to use for documentation of extended links and linkbases.
+    link:loc             Concrete locator element. The loc element is the XLink locator element for all extended links in XBRL.
+    link:presentationArc
+
+Attributes
+Name        Occ      Type        Description  Notes
+xlink:type  [1..1]  Anonymous    Fixed value of "extended" so not stored.
+xlink:role  [1..1]  Anonymous
+xlink:title [0..1]  xsd:string
+id          [0..1]  xsd:ID
+Any attribute  [0..*]  Namespace: http://www.w3.org/XML/1998/namespace, Process Contents: lax
+
+Used In
+  Anonymous type of element link:linkbase
+
+Substitution Hierarchy
+  xl:extended
+     can be substituted with link:presentationLink
+
+<presentationLink xlink:type="extended" xlink:role="http://www.xbrl.org/uk/role/ProftAndLossAccount" xlink:title="Income Statement ">
+
+Can have identical presentationLink nodes e.g.:
+  <presentationLink xlink:type="extended" xlink:role="http://www.xbrl.org/uk/role/CashFlowStatement" xlink:title="Cash Flow Statement">
+  <presentationLink xlink:type="extended" xlink:role="http://www.xbrl.org/uk/role/CashFlowStatement" xlink:title="Cash Flow Statement">
+with own loc and presentationArc content.
+
+##############
+## Locators ## http://www.schemacentral.com/sc/xbrl21/e-link_loc.html
+##############
+No table as of 31.03.11 as the info does not need to be stored, but is just used by BuildTaxonomyDB.php
+for processing the following arc tags.
+
+link:loc
+Concrete locator element.  The loc element is the XLink locator element for all extended links in XBRL.
+Properties: Global, Qualified
+
+Type: xl:locatorType
+
+Content: Empty content
+
+Attributes
+Name        Occ      Type        Description  Notes
+xlink:type  [1..1]  Anonymous    Fixed value of "locator" so not stored
+xlink:href  [1..1]  xsd:anyURI
+xlink:label [1..1]  xsd:NCName
+xlink:role  [0..1]  Anonymous   Not used by UK GAAP
+xlink:title [0..1]  xsd:string
+
+Used In
+  Anonymous type of element link:calculationLink
+  Anonymous type of element link:definitionLink
+  Anonymous type of element link:footnoteLink
+  Anonymous type of element link:labelLink
+  Anonymous type of element link:presentationLink
+  Anonymous type of element link:referenceLink
+  Type xl:extendedType
+
+Substitution Hierarchy
+  xl:locator
+     can be substituted with link:loc
+ <loc xlink:type="locator" xlink:href="uk-gaap-2009-09-01.xsd#uk-gaap_ProfitLossAccountHeading" <===== after href # = concept (element) id
+     xlink:label="uk-gaap_ProfitLossAccountHeading" />                                          <===== loc "id"
+                                                                                                <====> Always the same for UK GAAP, checked via Locators.php and wip DB
+##########
+## Arcs ## http://www.schemacentral.com/sc/xbrl21/e-link_presentationArc.html
+##########
+CREATE TABLE IF NOT EXISTS Arcs (
+  Id           smallint unsigned not null auto_increment,
+  TypeN        tinyint  unsigned not null, # TLT_Presentation | TLT_Definition | TLT_Label | TLT_Reference | TLT_Calculation | TLT_Footnote
+  FromId       smallint unsigned not null, # Elements.Id for xlink:from    [1..1] xsd:NCName
+  ToId         smallint unsigned not null, # Elements.Id for xlink:to      [1..1] xsd:NCName for presentation and definition arcs, all 1 to 1 in UK GAAP
+                                        # or Doc.Id      for label and reference arcs with potentially 1 to many relationships set by DB Build based on for xlink:to [1..1] xsd:NCName
+  PRoleId      tinyint  unsigned not null, # Roles.Id of the parent <presentationLink, <definitionLink etc
+  ArcroleId    tinyint  unsigned not null, # Roles.Id    for xlink:arcrole [1..1] Anonymous
+# TitleId      smallint unsigned     null, # Text.Id     for xlink:title   [0..1] xsd:string with 'definition: ' stripped.  Taken OoS 08.10.12
+  ArcOrder     int      unsigned     null, # for order [0..1] xsd:decimal * 1000000 re use of 6 decimals e.g. 1.999795         /- Name change mainly because order & use are MySQL reserved words
+  ArcUseN      tinyint               null, # for use   [0..1] xl:useEnum   | NULL 11892 | TU_Optional 13911 | TU_Prohibited 50 |
+  priority     tinyint unsigned      null, # priority  [0..1] xsd:integer
+  PrefLabelRoleId  tinyint  unsigned null, # Roles.Id   for preferredLabel [0..1] Anonymous, these actually being roles e.g. http://www.xbrl.org/2003/role/label | http://www.xbrl.org/2003/role/periodStartLabel etc
+#                                          Any attribute   [0..*] Some 'any' follow
+  ClosedB      tinyint  unsigned     null, # xbrldt:closed         "true" stored as 1
+  ContextN     tinyint  unsigned     null, # for xbrldt:contextElement       | NULL 25807 | TC_Segment 46
+  UsableB      tinyint  unsigned     null, # for xbrldt:usable default true  | NULL 25832 | false 21
+  TargetRoleId tinyint  unsigned     null, # Roles.Id for xbrldt:targetRole  <=== Used only with Hypercubes. All Arcs with ArcroleId=7 TA_HypercubeDim, 191 of them
+  LinkbaseId   tinyint  unsigned not null, # LinkbaseRefs.Id of file where defined
+  Primary Key (Id),
+#         Key (TypeN),     # Not needed as a key since ArcroleId covers it. See the TR_ constants. Remove from table?
+          Key (FromId),
+          Key (ToId),
+          Key (PRoleId),
+          Key (ArcroleId),
+          Key (ArcOrder)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+SELECT * FROM `arcs` WHERE  TypeN=1 and ArcroleId != 10
+SELECT * FROM `arcs` WHERE  TypeN=2 and ArcroleId not in (9,11,12,13,14,15)
+
+<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="uk-gaap_ProfitLossAccountHeading" xlink:to="uk-gaap_ProfitLossFormat1Heading" order="17" use="optional" />
+<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="uk-gaap_FinancialInstrumentValueTypeDimension" xlink:to="uk-gaap_ValueTypeHeading" xlink:title="definition: FinancialInstrumentValueTypeDimension to ValueTypeHeading" order="2" use="optional" xbrldt:usable="false" />
+<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="uk-gaap_ItemsInheritingBasicDimensions" xlink:to="uk-gaap_BasicHypercube" order="1" use="optional" xbrldt:contextElement="segment" xbrldt:closed="true" />
+<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="uk-gaap_BasicHypercube" xlink:to="uk-gaap_RestatementsDimension" order="1" use="optional" xbrldt:targetRole="http://www.xbrl.org/uk/role/Dimension-Restatements" />
+
+link:presentationArc
+     Element Information
+
+3.5.3.9  Arcs  file:///B:/Info/Specs/XBRL/XBRL-RECOMMENDATION-2003-12-31+Corrected-Errata-2008-07-02.htm#_3.5.3.9
+All XBRL extended links MAY contain arcs. Arcs document relationships between resources identified by locators in extended links
+or occurring as resources in extended links.
+
+Arcs represent relationships between the XML fragments referenced by their [XLINK] attributes: xlink:from and xlink:to. The xlink:from
+and the xlink:to attributes represent each side of the arc.  These two attributes contain the xlink:label attribute values of locators
+and resources within the same extended link as the arc itself.  For a locator, the referenced XML fragments comprise the set of XML
+elements identified by the xlink:href attribute on the locator. For a resource, the referenced XML fragment is the resource element itself.
+
+An arc MAY reference multiple XML fragments on each side (“from” and “to”) of the arc. This can occur if there are multiple locators and/or
+resources in the extended link with the same xlink:label attribute value identified by the xlink:from or xlink:to attribute of the arc.
+Such arcs represent a set of one-to-one relationships between each of the XML fragments on their “from” side and each of the XML fragments
+on their “to” side.
+
+Example 2. One-to-One arc relationships [XLINK] [Simplified with unnec stuff removed]
+---------------------
+This presentation link contains an arc that relates one XBRL concept to one other XBRL concept.
+The XML fragment on the “from” side is the conceptA element definition, found in the example.xsd taxonomy schema.
+The XML fragment on the “to” side is the conceptB element definition, also found in the example.xsd taxonomy schema.
+
+<presentationLink  role="link">
+  <loc type="locator" label="a" href="example.xsd#conceptA"/>
+  <loc type="locator" label="b" href="example.xsd#conceptB"/>
+  <presentationArc from="a" to="b" arcrole="parent-child" order="1"/>
+</presentationLink>
+
+Example 3. One-to-Many arc relationships [XLINK] [Simplified with unnec stuff removed]
+----------------------
+This label link contains a single arc that relates one XBRL concept to two XBRL labels.
+This is accomplished by giving each of the label resources the same xlink:label attribute value, which, in turn,
+is the same as the xlink:to attribute value on the arc. The arc represents two relationships, one between conceptA
+and the standard label (“Concept A”) and another between conceptA and the total label (“Total of Concept A”).
+
+<labelLink role="link">
+  <loc label="a" href="example.xsd#conceptA"/>
+  <label label="lab_a" role="label">Concept A</label>
+  <label label="lab_a" role="totalLabel">Total of Concept A</label>
+  <labelArc from="a" to="lab_a" arcrole="concept-label"/>
+</labelLink>
+
+This extended link could also express the same two relationships but be written with separate label attribute values for each label and two arcs.
+<labelLink role="link">
+  <loc label="a" href="example.xsd#conceptA"/>
+  <label label="lab_a_standard" role="label">Concept A</label>
+  <label label="lab_a_total" role="totalLabel">Total of Concept A</label>
+  <labelArc from="a" to="lab_a_standard" arcrole="concept-label"/>
+  <labelArc from="a" to="lab_a_total"    arcrole="concept-label"/>
+</labelLink>
+
+Semantically, these two extended links represent the same set of relationships between the concept and its labels.
+
+Example 4. Many-to-Many arc relationships [XLINK] [Simplified with unnec stuff removed]
+-----------------------
+This label link contains a single arc that relates two concepts to two labels.  This is accomplished by each of the locators for the concepts having
+the same label attribute value, which in turn is the same as the from attribute value on the arc, and by each of the label resources
+having the same label attribute value, which in turn is the same as the to attribute value.
+
+<labelLink role="link">
+  <loc label="ab" href="example.xsd#conceptA"/>
+  <loc label="ab" href="example.xsd#conceptB"/>
+  <label label="lab_ab" role="label">Concept A or B</label>
+  <label label="lab_ab" role="totalLabel">Total of Concept A or B</label>
+  <labelArc from="ab" to="lab_ab" arcrole="concept-label"/>
+</labelLink>
+
+The arc represents 4 relationships as follows:
+1. between conceptA and the label resource “Concept A or B”
+2. between conceptA and the label resource “Total of Concept A or B”
+3. between conceptB and the label resource “Concept A or B”
+4. between conceptB and the label resource “Total of Concept A or B”
+
+Like the one-to-many example, this extended link could be re-written as 4 one-to-one arcs, where each locator and each resource has a unique
+label attribute value. It could also be re-written as two one-to-two arcs where the label resources have the same label attribute
+value and the locators have unique label attribute values or vice versa.
+
+See spec for more on priotity, use etc
+
+Element Information
+Namespace: http://www.xbrl.org/2003/linkbase
+Schema Document: xbrl-linkbase-2003-12-31.xsd
+Properties: Global, Qualified
+Type: Anonymous
+
+Content: Empty content
+
+Attributes
+Name           Occ    Type        Description  Notes
+xlink:type     [1..1] Anonymous    Fixed value of "arc" so not stored
+xlink:from     [1..1] xsd:NCName
+xlink:to       [1..1] xsd:NCName
+xlink:arcrole  [1..1] Anonymous
+xlink:title    [0..1] xsd:string
+xlink:show     [0..1] Anonymous   /- Not used by UK GAAP
+xlink:actuate  [0..1] Anonymous   |
+order          [0..1] xsd:decimal
+use            [0..1] xl:useEnum
+priority       [0..1] xsd:integer
+Any attribute  [0..*]            Namespace: ##other, Process Contents: lax  inherited from xl:arcType
+preferredLabel [0..1] Anonymous
+
+Used In
+  Anonymous type of element link:presentationLink
+  Type xl:extendedType
+
+Substitution Hierarchy
+  xl:arc
+     can be substituted with link:presentationArc
+
+<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="uk-gaap_ProfitLossAccountHeading" xlink:to="uk-gaap_ProfitLossFormat1Heading" order="17" use="optional" />
+
+-----
+
+link:definitionArc  http://www.schemacentral.com/sc/xbrl21/e-link_definitionArc.html
+     Concrete arc for use in definition extended links.
+
+Element Information
+Namespace: http://www.xbrl.org/2003/linkbase
+Schema Document: xbrl-linkbase-2003-12-31.xsd
+Properties: Global, Qualified
+Type: xl:arcType                  <==== Only difference from presentationArc??
+
+Content: Empty content
+
+Attributes
+Name          Occ    Type        Description  Notes
+xlink:type    [1..1] Anonymous    Fixed value is "arc".
+xlink:from    [1..1] xsd:NCName
+xlink:to      [1..1] xsd:NCName
+xlink:arcrole [1..1] Anonymous
+xlink:title   [0..1] xsd:string
+xlink:show    [0..1] Anonymous
+xlink:actuate [0..1] Anonymous
+order         [0..1] xsd:decimal
+use           [0..1] xl:useEnum
+priority      [0..1] xsd:integer
+Any attribute [0..*] Namespace: ##other, Process Contents: lax
+
+Used In
+ Anonymous type of element link:definitionLink
+ Type xl:extendedType
+
+Substitution Hierarchy
+  xl:arc
+    can be substituted with link:definitionArc
+
+
+#########
+## Doc ## Holds Labels and References, replacing previous Labels and References tables as of 09.10.12
+#########
+CREATE TABLE IF NOT EXISTS Doc (
+  Id          smallint unsigned not null auto_increment,
+  ElId        smallint unsigned not null, # Elements.Id of the Element this Label/Reference belongs to, resolved at DB build time via xlink:label [1..1] xsd:NCName
+  TypeN       tinyint  unsigned not null, # TLT_Label or TLT_Reference
+  RoleId      tinyint  unsigned     null, # Roles.Id for xlink:role  [0..1] Anonymous
+  TextId      smallint unsigned not null, # Text.Id of content of the label or Json for the Ref
+  LinkbaseId  tinyint  unsigned not null, # LinkbaseRefs.Id of file where defined
+  Primary Key (Id),
+          Key (ElId) # Not unique - can have multiple label entries plus a ref entry
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+
+##########
+## Text ## For larger xsd:string fields. As of 08.10.12 is just Label content and References json
+########## No index on text as assumed this won't be used as a key or for searching. Actually it is searched in ElementLookup. (Std Label.)
+CREATE TABLE IF NOT EXISTS Text (
+  Id           smallint unsigned not null auto_increment,
+  Text         varchar(400)      not null, # xsd:string    max length 368
+  Uses         smallint unsigned not null, # Number of times used
+  Primary Key (Id)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Arcs.title       # xlink:title [0..1] xsd:string  Taken OoS 08.10.12
+Labels.title     # xlink:title [0..1] xsd:string  Taken OoS 08.10.12
+Labels.Text      #                    The content of the label
+References.refs  # References content stored as json
+
+Arcs       TitleId     # Text.Id  for xlink:title [0..1] xsd:string  with 'definition: ' stripped.  Taken OoS 08.10.12
+Labels     TitleId     # Text.Id  for xlink:title [0..1] xsd:string                                 Taken OoS 08.10.12
+           TextId      # Text.Id  for the content of the label
+References RefsJsonId  # Text.Id  for Refs content stored as json
+
+
+################
+## Hypercubes ##
+################
+CREATE TABLE IF NOT EXISTS Hypercubes (
+  Id          tinyint unsigned not null auto_increment,
+  ElId        smallint unsigned not null, # Elements.Id of the hypercube
+  RoleId      tinyint  unsigned not null, # Roles.Id    of the hypercube = Arcs.PRoleId
+  Dimensions  char(10)          not null, # List of dimensions for this hypercube as Dimensions.Id (1-42) in char form + 48 -> '1' upwards
+  Primary Key (Id)                        # Max number of dimensions per hypercube is 9. Only one, the empty hypercube (our ID=46) has none.
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+################
+## Dimensions ##
+################
+CREATE TABLE IF NOT EXISTS Dimensions (
+  Id          tinyint unsigned not null auto_increment,
+  ElId        smallint unsigned not null, # Elements.Id of the dimension
+  RoleId      tinyint  unsigned not null, # Roles.Id    of the dimension = Arcs.PRoleId
+  Primary Key (Id)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+######################
+## DimensionMembers ##
+######################
+CREATE TABLE IF NOT EXISTS DimensionMembers (
+  Id        smallint unsigned not null auto_increment, # Used as DiMeId
+  DimId     tinyint  unsigned not null, # Dimensions.Id of the dimension
+  ElId      smallint unsigned not null, # Elements.Id of the dimension member = DiMeId
+  Bits      tinyint  unsigned not null, # Dimension Member bits: DMB_Default ... defined ConstantsRgUK-GAAP
+  Level     tinyint  unsigned not null, # Level of the DiMe from 0 upwards re Dimension Map and summing
+  Primary Key (Id)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+################
+## TuplePairs ## Combines the equivalent of Tuples and TupleMembers in one Table
+################
+CREATE TABLE IF NOT EXISTS TuplePairs (
+  Id        smallint unsigned not null auto_increment, # Used as TuMeId: 1 to 524
+  TupId     tinyint  unsigned not null, # Id of the Tuple as it would be if in a Tuples Table: 1 to 158
+  TupTxId   smallint unsigned not null, # Elements.Id of the Tuple
+  MemTxId   smallint unsigned not null, # Elements.Id of a Member of the Tuple
+  Ordr      tinyint  unsigned not null, # Member Order within the Tuple as per its complexType sequence from 1 upwards and used with Order in tags
+  minOccurs tinyint  unsigned not null, # 0 or 1 expected
+  maxOccurs tinyint  unsigned not null, # 1 or 255 for unbounded expected
+  TUCN      tinyint  unsigned not null, # <TUC_O | TUC_M | TUC_U> (<1 | 2 | 3>) for normal use instead of minOccurs and maxOccurs
+  Primary Key (Id),
+          Key (MemTxId)  # Not unique
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+const TUC_O = 1; # O Optional once corresponding to Taxonomy minOccurs=0 and maxOccurs=1
+const TUC_M = 2; # M Mandatory once if tuple used corresponding to Taxonomy minOccurs=1 and maxOccurs=1
+const TUC_U = 3; # U Optional Unbounded corresponding to Taxonomy minOccurs=0 and maxOccurs=unbounded
+
+
+#################################################################
+# Tables used during build which could be dropped on completion #
+#################################################################
+Imports
+
+#############
+## Imports ##
+#############
+CREATE TABLE IF NOT EXISTS Imports (
+  Id        tinyint  unsigned not null auto_increment,
+  Location  varchar(150)      not null, # schemaLocation in case of <import
+  File      varchar(255)          null, # csv list of Imports.Id(s) of file(s) where defined
+  Num       smallint unsigned not null default 1, # count of times
+  Primary Key (Id),
+   Unique Key (Location)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+#####################
+# Tables dropped... #
+#####################
+Names
+Labels
+References
+Ids
+AttributeGroups
+Attributes
+ComplexTypes
+LinkbaseRefs
+SimpleTypes
+Unions
+
+## Names ## For xsd:NCName
+########### Removed from use 10.10.12 as the only use was for Element names and only 27 names were duplicated. Elements.NameId -> Elements.name
+CREATE TABLE IF NOT EXISTS Names (
+  Id           smallint unsigned not null auto_increment,
+  name         varchar(170)      not null, # xsd:NCName  max length 167 -> 155 as at 10.10.12
+# Defs         tinyint  unsigned not null, # Number of times defined OoS 09.10.12
+  Uses         smallint unsigned not null, # Number of times used
+  Primary Key (Id),
+   Unique Key (name)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Elements.name    # name        [0..1] xsd:NCName
+Arcs.to          # xlink:to    [1..1] xsd:NCName for label or reference arcs
+Labels.label     # xlink:label [1..1] xsd:NCName
+References.label # xlink:label [1..1] xsd:NCName
+
+Elements   NameId   # Names.Id for name [0..1] xsd:NCName  Only one in use as of 09.10.12
+Arcs       ToId     # Elements.Id for xlink:to      [1..1] xsd:NCName for presentation and definition arcs, all 1 to 1 in UK GAAP           OoS 09.10.12
+                 # or Names.Id    for xlink:to      [1..1] xsd:NCName for label and reference arcs with potentially 1 to many relationships OoS 09.10.12
+Labels     LabelId  # Names.Id for xlink:label [1..1] xsd:NCName  OoS 09.10.12
+References LabelId  # Names.Id for xlink:label [1..1] xsd:NCName  OoS 09.10.12
+
+
+
+## Labels ## http://www.schemacentral.com/sc/xbrl21/e-link_label.html
+############
+CREATE TABLE IF NOT EXISTS Labels (
+  Id          smallint unsigned not null auto_increment,
+# TypeN       tinyint  unsigned not null, # Not included as always TLT_Label
+# PRoleId     tinyint  unsigned not null, # Roles.Id of the parent <labelLink No need. Always link
+  RoleId      tinyint  unsigned     null, # Roles.Id for xlink:role  [0..1] Anonymous
+  LabelId     smallint unsigned not null, # Names.Id for xlink:label [1..1] xsd:NCName
+# IdId        smallint unsigned     null, # Ids.Id   for id          [0..1] xsd:ID     Removed 08.10.12 as no use was made of it other than in Labels List
+  TextId      smallint unsigned not null, # Text.Id  for the content of the label
+# TitleId     smallint unsigned     null, # Text.Id  for xlink:title [0..1] xsd:string Removed 08.10.12 as no use was made of it other than in Labels List
+#                                           Any attribute [0..*]  Namespace: http://www.w3.org/XML/1998/namespace, Process Contents: lax
+#                                           xml:lang="en" - ignored for UK GAAP
+  LinkbaseId   tinyint unsigned not null, # LinkbaseRefs.Id of file where defined
+  Primary Key (Id)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Notes:
+- xlink:label is not unique i.e. there can be duplicates with different roles
+
+5 roles are used with UK GAAP labels:
+http://www.xbrl.org/2003/role/label
+http://www.xbrl.org/2003/role/periodStartLabel
+http://www.xbrl.org/2003/role/periodEndLabel
+http://www.xbrl.org/2003/role/verboseLabel
+http://www.xbrl.org/2003/role/documentation
+
+link:label
+     Definition of the label resource element.
+
+Have some duplicate ids for same roles:
+
+Admin\Taxonomies\CT2013-1.0\www.xbrl.org\uk\reports\direp\2009-09-01\uk-direp-2009-09-01-label.xml
+<label id="uk-gaap-pt_DirectorsRemunerationAnalysis_lbl_0" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="uk-direp_DirectorsRemunerationHeading_lbl" xml:lang="en">Heading.  Elements in this section may be used for named directors or simply for highest paid director</label>
+<label id="uk-gaap-pt_DirectorsRemunerationAnalysis_lbl_1" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="uk-direp_DirectorsRemunerationHeading_lbl" xml:lang="en" xlink:title="UKD_directors_Remuneration">Directors' remuneration [heading]</label>
+
+Admin\Taxonomies\CT2013-1.0\www.xbrl.org\uk\gaap\core\2009-09-01\uk-gaap-2009-09-01-label.xml
+<label id="uk-gaap-pt_DirectorsRemunerationAnalysis_lbl_0" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="uk-gaap_ForDirectorsRemunerationSeeDirectorsRemunerationSectionInDirectorsReportCrossReference_lbl" xml:lang="en">cross-reference</label>
+<label id="uk-gaap-pt_DirectorsRemunerationAnalysis_lbl_1" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="uk-gaap_ForDirectorsRemunerationSeeDirectorsRemunerationSectionInDirectorsReportCrossReference_lbl" xml:lang="en" xlink:title="UKD_directors_Remuneration">For directors' remuneration, see 'Directors' Remuneration' section in Directors' Report [cross reference]</label>
+
+But labels are different. ids appear to serve no purpose and as of 08.10.12 are not processed other than for elements.
+
+5.2.2.2  The label element
+Although each taxonomy defines a single set of elements representing a set of business reporting concepts, the human-readable XBRL documentation
+for those concepts, including labels (strings used as human-readable names for each concept) and other explanatory documentation, is contained in
+a resource element in the label linkbase. The resource uses the xml:lang attribute to specify the language used (via the XML standard lang attribute)
+and an optional classification of the purpose of the documentation (via a role attribute).
+
+This ability to provide documentation in a variety of different languages enables XBRL concepts to be more easily reported in a multilingual environment.
+
+Documentation of XBRL concepts MUST be contained in label elements in labelLink extended links. The label element is an [XLINK] resource.
+Its generic syntax is documented in Section 3.5.3.8. The label element MUST have the standard xml:lang attribute, and it MUST appear inside
+a labelLink element. This content of the label element is mixed, allowing a simple string, a fragment of XHTML or a combination of both.
+
+XBRL processors are NOT REQUIRED to detect or display concept documentation that appears anywhere other than in a label element.
+
+Element Information
+Namespace: http://www.xbrl.org/2003/linkbase
+Schema Document: xbrl-linkbase-2003-12-31.xsd
+Properties: Global, Qualified
+Type: Anonymous
+Content
+  Any text (mixed) content, intermingled with:
+  Any element [0..*] Namespace: http://www.w3.org/1999/xhtml, Process Contents: skip
+
+Attributes
+Name        Occ    Type        Description  Notes
+xlink:type  [1..1] Anonymous   Fixed value of "resource" so not stored
+xlink:label [1..1] xsd:NCName
+xlink:role  [0..1] Anonymous
+xlink:title [0..1] xsd:string
+id          [0..1] xsd:ID
+                   Any attribute  [0..*]    Namespace: http://www.w3.org/XML/1998/namespace, Process Contents: lax
+Used In
+  Anonymous type of element link:labelLink
+  Type xl:extendedType
+
+Substitution Hierarchy
+  xl:resource
+    can be substituted with link:label
+
+<label id="id_541d3e" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="uk-gaap_AccountTypeDimension-AppliesToAllDataHeading_lbl" xml:lang="en">Heading</label>
+The id is not used anywhere
+
+<label xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="uk-bus_EntityCurrentLegalOrRegisteredName_lbl" xml:lang="en">Name under which entity is officially registered and identified</label>
+<label xlink:role="http://www.xbrl.org/2003/role/label"         xlink:label="uk-bus_EntityCurrentLegalOrRegisteredName_lbl" xml:lang="en">Entity current legal or registered name</label>
+
+## References ## http://www.schemacentral.com/sc/xbrl21/e-link_reference.html
+################
+CREATE TABLE IF NOT EXISTS `References` (
+  Id          smallint unsigned not null auto_increment,
+# TypeN       tinyint  unsigned not null, # Not included as always TLT_Reference
+# PRoleId     tinyint  unsigned not null, # Roles.Id of the parent <referenceLink  No need. Always link
+  RoleId      tinyint  unsigned     null, # Roles.Id for xlink:role  [0..1] Anonymous
+  LabelId     smallint unsigned not null, # Names.Id for xlink:label [1..1] xsd:NCName
+# IdId        smallint unsigned     null, # Ids.Id   for id          [0..1] xsd:ID  Removed 08.10.12 as no use was made of it
+  RefsJsonId  smallint unsigned not null, # Text.Id    for Refs content stored as json. Too many different subtags for individual fields!
+#                                           Any attribute [0..*]  Namespace: http://www.w3.org/XML/1998/namespace, Process Contents: lax
+#                                           xml:lang="en" - ignored for UK GAAP
+  LinkbaseId   tinyint unsigned not null, # LinkbaseRefs.Id of file where defined
+  Primary Key (Id)  # djh? other key?
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+link:reference
+     Definition of the reference  resource element.
+
+Element Information
+Namespace: http://www.xbrl.org/2003/linkbase
+Schema Document: xbrl-linkbase-2003-12-31.xsd
+Properties: Global, Qualified
+Type: Anonymous
+Content: Any text (mixed) content
+
+Attributes
+Name        Occ    Type        Description  Notes
+xlink:type  [1..1] Anonymous   Fixed value of "resource" so not stored.
+xlink:label [1..1] xsd:NCName
+xlink:role  [0..1] Anonymous
+xlink:title [0..1] xsd:string  Not used in UK GAAP
+id          [0..1] xsd:ID
+
+Used In
+  Anonymous type of element link:referenceLink
+  Type xl:extendedType
+
+Substitution Hierarchy
+  xl:resource
+     can be substituted with link:reference
+
+<reference id="id_1765447" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:label="uk-gaap_AccountTypeDimension-AppliesToAllDataHeading_ref">
+  <ref:Name>Common practice</ref:Name>
+</reference>
+
+<reference xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:label="uk-gaap_AccountingPeriodAssociate_ref">
+  <ref:Name>FRS</ref:Name>
+  <ref:Number>9</ref:Number>
+  <ref:Paragraph>52</ref:Paragraph>
+  <ref:Subparagraph>b</ref:Subparagraph>
+</reference>
+
+# ref_Name                                # Content: <ref:Name>FRS</ref:Name>
+# ref_Number                              # Content: <ref:Number>9</ref:Number>
+# ref_Paragraph                           # Content: <ref:Paragraph>52</ref:Paragraph>
+# ref_Subparagraph                        # Content: <ref:Subparagraph>b</ref:Subparagraph>
+# ref_Section                             # Content: <ref:Section>242B</ref:Section>
+# ref:Clause
+# ref:Appendix
+# ref:Publisher
+# uk_gaap_ref_Schedule varchar(255) null, # Content: <uk-gaap-ref:Schedule>5</uk-gaap-ref:Schedule>
+# uk-gaap-ref:Part                                   <uk-gaap-ref:Part>III</uk-gaap-ref:Part>
+# uk-gaap-ref:Abstract
+# uk-gaap-ref:Year
+# uk-cd-ref:ISOName
+# uk-cd-ref:Code
+# uk-cd-ref:AlternativeCode
+# uk-cd-ref:Date
+# uk-cd-ref:Description
+# uk-cd-ref:ExchangeAcronym
+# uk-cd-ref:HomeCity
+# uk-cd-ref:HomeCountry
+# uk-cd-ref:HomeCountryCode
+# uk-cd-ref:MarketIdentificationCode
+
+## Ids ## For xsd:ID fields, which should be unique i.e. defined only once.
+######### Though some are duplicated e.g. ref_Publisher in http://www.xbrl.org/2004/ref-2004-08-10.xsd and http://www.xbrl.org/2006/ref-2006-02-27.xsd
+# Duplicate Ids: ref_Publisher, ref_Name, ref_Number, ref_IssueDate, ref_Chapter, ref_Article, ref_Note, ref_Section, ref_Subsection, ref_Paragraph, ref_Subparagraph, ref_Clause, ref_Subclause, ref_Appendix, ref_Example, ref_Page, ref_Exhibit, ref_Footnote, ref_Sentence, ref_URI, ref_URIDate
+# http://www.xbrl.org/2004/ref-2004-08-10.xsd did not contain any elements not in http://www.xbrl.org/2006/ref-2006-02-27.xsd so http://www.xbrl.org/2004/ref-2004-08-10.xsd was removed frpm build on 08.10.12
+# Taken out of service on 08.10.12 as:
+- Ids not used for Labels or references
+- Ids were used for Elements and were avaailable in Lookup but feature was never used.
+So have dropped the lot and during DB build use an array to record element Ids.
+CREATE TABLE IF NOT EXISTS Ids (
+  Id           smallint unsigned not null auto_increment,
+  XId          varchar(170)      not null, # xsd:ID    max length 163
+  Defs         tinyint  unsigned not null, # Number of times defined. Should be 1 but some ids are defined more than once in UK GAAP.
+                                           # Number of times used i.e. referenced by an arc from or to
+  Primary Key (Id),
+   Unique Key (Xid)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Elements.id      # id          [0..1] xsd:ID
+Labels.id        # id          [0..1] xsd:ID
+Reference.id     # id          [0..1] xsd:ID
+
+
+
+## Attributes ## <attribute at the schema level. <attribute in a complexType is stored witin the complexType
+################
+CREATE TABLE IF NOT EXISTS Attributes (
+  Id            tinyint unsigned not null auto_increment,
+  name          varchar(40)      not null,
+  SimpleTypeId  tinyint unsigned     null, # SimpleTypes.Id if the attribute is a simple type
+  SchemaId      tinyint unsigned not null, # Schema.Id of schema where defined
+# Doc           varchar(255)         null, # Skipped as of 02.04.11
+  Primary Key (Id),
+   Unique Key (name)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+## AttributeGroups ##
+#####################
+CREATE TABLE IF NOT EXISTS AttributeGroups (
+  Id               tinyint unsigned not null auto_increment,
+  name             varchar(40)      not null,
+  ref              varchar(40)          null, # <attributeGroup ref="xbrli:factAttrs" /> djh?? Make this RefId -> AttributeGroups.Id ?
+  attributeJson    varchar(255)         null, # json for <attribute name="id" type="ID" use="optional" /> - can be multiple entries
+  anyAttributeJson varchar(120)         null, # json for <anyAttribute namespace="##other" processContents="lax" />
+  SchemaId         tinyint unsigned not null, # Schema.Id of schema where defined
+# Doc              varchar(255)         null, # Skipped as of 02.04.11
+  Primary Key (Id),
+   Unique Key (name)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+## SimpleTypes ##
+#################
+CREATE TABLE IF NOT EXISTS SimpleTypes (
+  Id           tinyint  unsigned not null auto_increment,
+  name         varchar(40)           null,
+  base         varchar(20)       not null,
+  minLength    tinyint  unsigned     null, # Used with base = 'anyURI'
+  minExclusive tinyint  unsigned     null, # Used with base = 'decimal'
+  maxExclusive smallint unsigned     null, # "                           djh?? Also tiny?
+  EnumList     varchar(80)           null, # csv list of enumeration values for base = 'token' and 'string'
+  UnionId      tinyint  unsigned     null, # Unions.Id if the simpleType is a union
+  SchemaId     varchar(20)       not null, # csv list of Schema.Id(s) of schema(s) where defined
+# Doc          varchar(255)          null, # Skipped as of 02.04.11
+  Primary Key (Id),
+   Unique Key (name)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+## ComplexTypes ##
+##################
+CREATE TABLE IF NOT EXISTS ComplexTypes (
+  Id                 tinyint  unsigned not null auto_increment,
+  name               varchar(40)           null,
+  final              varchar(20)       not null,
+# extensionBase      varchar(20)       not null,
+  attributeGroupRef  varchar(40)           null, # Only 1: xbrli:essentialNumericItemAttrs on fractionItemType   extension
+  mixed              tinyint unsigned      null, # true stored as 1
+  anyAttributeJson   varchar(120)          null, # json for <anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax" />
+  attributesJson     text                  null,
+  choiceJson         text                  null,
+  complexContentJson text                  null,
+  simpleContentJson  text                  null,
+  sequenceJson       text                  null,
+  SchemaId           tinyint  unsigned not null, # Schema.Id of schema where defined
+# Doc                varchar(255)          null, # Skipped as of 02.04.11
+  Primary Key (Id),
+   Unique Key (name)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+## Unions ##
+############
+CREATE TABLE IF NOT EXISTS Unions (
+  Id            tinyint unsigned not null auto_increment,
+  memberTypes   varchar(20)          null,
+  SimpleType1Id tinyint unsigned     null, # SimpleTypes.Id
+  SimpleType2Id tinyint unsigned     null, # SimpleTypes.Id if the unions has a second simple type
+  SchemaId      varchar(20)      not null, # csv list of Schema.Id(s) of schema(s) where defined
+  Primary Key (Id),
+   Unique Key (memberTypes)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+

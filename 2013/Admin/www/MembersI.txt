@@ -1,0 +1,501 @@
+1	Entity	#	Entity Ref		D	1						N	Agent's Ref for the Entity, with 'This' an alias for the Current Entity
+													
+2	Superior	#	Superior's Entity Ref		H	2				3 - 5	+RL1	N	Superior Entity
+		CP	Controlling Party			3			2			1	
+		UP	Ultimate Parent (Group)			4			2			1	
+		IP	Immediate Parent (Group)			5			2			1	
+													
+3	Subord	#	Subordinate's Entity Ref		H	6				7 - 11	+RL1	N	Subordinate Entity
+		Type	Type of Subordinate										
+		Assoc	Associate			7			6			1	
+		JV	Joint Venture			8			6			1	
+		OPI	Other Participating Interest			9			6			1	
+		SPE	Special Purpose Entity			10			6			1	
+		Subsid	Subsidiary			11			6	12, 13	+RL1	1	
+		BasisDominantInfluence	Basis of Dominant Influence										
+		MajSH	Majority share holding			12			11			1	
+		MajCSH	Major common shareholder			13			11			1	
+													
+4	TPA	#	Third Party Agent's Entity Ref		H	14				15 - 25	+RLn	N	
+		Type	Type or Types of TPA										
+		Accountants	Accountants			15			14			1	
+		Auditors	Auditors			16			14			1	
+		Bankers	Bankers			17			14			1	
+		Consultants	Consultants			18			14			1	
+		LegalAdvisors	LegalAdvisors			19			14			1	
+		Underwriters	Underwriters			20			14			1	
+		Administrators	Administrators			21			14			1	
+		Liquidators	Liquidators			22			14			1	
+		Receivers	Receivers			23			14			1	
+		PublicRelationsAdvisers	PublicRelationsAdvisers			24			14				
+		RegistrationAgents	RegistrationAgents			25			14				
+		Classification	Classification of Agent										
+		Principal	Principal			26		26 - 28	15 - 23				
+		Joint	Joint			27		26 - 28	15 - 23				
+		Other	Other			28		26 - 28	15 - 23				
+													
+5	Person	#	Person Ref		D	29						N	Agent's Ref of the Person
+													
+6	Officer	#	Officer's Person Ref		H	30				31 - 34	+RLn	N	
+		Director	Director [or other as per the EntityType]			31			30	36, 37	+RL1	1	Label is set from the Entity Type info
+		Chairman	Chairman [or other as per the EntityType]			32			30	31	+RL1	1	"
+		CEO	Chief Executive Officer [or other as per the EntityType]			33			30	31	+RL1	1	"
+		CoSec	Company Secretary [or other as per the EntityType]			34			30			1,ET	"
+		HighestPaidOfficer	Highest Paid Officer			35							
+		ExecType	Exec or Non-Exec										
+		Exec	Executive Officer			36			31			1	
+		NonExec	Non-Executive Officer			37			31			1	
+		Signing	Signing Authority										
+		SignAccounts	Signing Accounts			38			31			1	
+		SignDirRep	Signing Directors' Report			39			31, 34			1,ET	Only allowed in CoSec case if CoSec of Entity Type is permitted to sign Directors' Report
+													
+7	Address	#	Ref of an Entity or Person Address		D	40						N	See Notes for examples
+		Main	Main address		O	41							
+		Postal	Postal address		O	42							
+		Street	Street address		O	43							
+		RegisteredOffice	Registered Office address		O	44							
+		Branch	Branch address		O	45							
+		Factory	Factory address		O	46							
+		RandD	Research and Development Centre address		O	47							
+		Other	Other address		O	48							
+		Home	Home address		O	49							
+													
+8	Contact	#	Ref of an Entity or Person Contact		D	50						N	See Notes for examples
+		HeadOffice	Head office			51							
+		MainBusiness	Main business			52							
+		RegisteredOffice	Registered office			53							
+		PublicRelations	Public relations			54		Kids					
+		  InvestorRelations	  Investor relations	1		55							
+		  MediaRelations	  Media relations	1		56							
+		SalesMarketing	Sales and marketing			57		Kids					
+		  Sales	  Sales	1		58							
+		  Marketing	  Marketing	1		59							
+		ProductInfo	Product information			60							
+		TechnicalInfo	Technical information			61							
+		BusinessReport	Business report contact			62							
+													
+9	Group	Consol	Consolidated			63	Kids					N	Charles, just these two with company adding to Consolidated? See Els 764 and 753
+		  Co	  Company	1		64							djh?? Needs work for this to be the default if Charles says yes to above.
+													
+10	ConDis	ConOps	Continuing Operations			65							Continuing and discontinued operations
+		DisOps	Discontinued Operations			66	Kids	Kids					
+		  SpecificDisOp.#	  Specific Discontinued Operation #	1	Ei	67							
+		DisposalGroupsHeldForSale	Disposal groups classified as held for sale			68	Kids	Kids					
+		  SpecificDisposalGroupHeldForSale.#	  Specific disposal group held for sale #	1	Ei	69							
+													
+11	Restated	Amount	Restated amount		RO,Y	70	Kids					N	
+		   PriorPeriodIncr	  Prior period increase (decrease)	1	RO,Y	71	Kids					N	
+		      AcctPolicyIncr	    Accounting policy increase (decrease)	2	Y	72							
+		      MaterialErrorIncr	    Material error increase (decrease)	2	Y	73							
+		   OriginalAmount	  Original amount	1	Z,Y	74						N	
+													
+12	EquityClasses	ShareCapital	Share capital			75	Kids	Kids					
+		  ShareCapitalOrdinaryShares	  Share capital, ordinary shares	1		76							
+		  ShareCapitalPreferenceShares	  Share capital, preference shares	1		77							
+		SharePremium	Share premium			78	Kids	Kids					
+		  SharePremiumOrdinaryShares	  Share premium, ordinary shares	1		79							
+		  SharePremiumPreferenceShares	  Share premium, preference shares	1		80							
+		ShareCapitalSharePremiumSubtotal	Share capital and share premium, subtotal			81							
+		CapitalReserve	Capital reserve			82	Kids	Kids					
+		  TreasurySharesOwnSharesReserve	  Treasury shares / own shares reserve	1		83							
+		  CapitalRedemptionReserve	  Capital redemption reserve	1		84							
+		  ConvertibleDebtComponentReserve	  Convertible debt equity component reserve	1		85							
+		  OtherCapitalReserve	  Other capital reserve	1		86							
+		MergerReserve	Merger reserve			87							
+		ForeignCurrencyTranslationReserve	Foreign currency translation reserve			88							
+		HedgingReserve	Hedging reserve			89							
+		RevaluationReserve	Revaluation reserve			90	Kids	Kids					
+		  PropertiesRevaluationReserve	  Properties revaluation reserve	1		91							
+		  InvestPropertiesRevaluationReserve	  Investment properties revaluation reserve	1		92							
+		GeneralBankingRisksReserve	General banking risks reserve			93							
+		AvailForSaleInvestsReserve	Available-for-sale investments reserve			94							
+		WarrantReserve	Warrant reserve			95							
+		AssetRevaluationSurplusReserve	Asset revaluation surplus reserve			96							
+		ShareBasedPaymentsReserve	Share based payments reserve			97							
+		ShareBuybackReserve	Share buy-back reserve			98							
+		LegalStatutoryReserve	Legal and statutory reserve			99							
+		AssetsDisposalGroupsHeldForSaleReserve	Assets and disposal groups held for sale reserve			100							
+		ProposedDividendReserve	Proposed dividend reserve			101							
+		SilentParticipationInGovernmentProtectionScheme	Silent participation in government protection scheme			102							
+		OtherMiscReserve	Other miscellaneous reserve			103							
+		OtherReservesSubtotal	Other reserves, subtotal			104							
+		RetainedEarningsAccumulatedLosses	Retained earnings (Accumulated losses)			105							
+		TotalAttribToHoldersBeforeNonControllingInterests	Total equity attributable to equity holders, before non-controlling interests			106							
+		NonControllingInterests	Non-controlling interests			107							
+													
+13	OpSegs	ReconcilingAdjustsReportable	Reconciling adjustments, reportable operating segments			108							Charles. The summing doesn't look right here. ??
+		TotalReportable	Total reportable operating segments			109							Total not the Total but this is as per UK-IFRS Dim 6
+		OtherReportable	Other reportable operating segments			110							"CW: Yes agree.  May in part because have N/A as the Default. But thinking logically about it and Entity must operate in at least one OpSegment. So N/A is a cop out. For SIM use would make sense to have Other as a default. Looking at UK IFRS Taxonomy Other is not shown as parent of Banking etc., Other has no children"
+		Banking	Banking reportable operating segments			111							CW: Added
+		  RetailBanking	Retail banking segment	1		112							
+		  CorporateBanking	Corporate banking segment	1		113							
+		  InvestBanking	Investment banking segment	1		114							
+		  AssetManagement	Asset management segment	1		115							
+		  GroupBankingFunction	Group banking function	1		116							
+		MiningReportableOperatingSegments	Mining reportable operating segments [heading]										CW: Added
+		  Mining	Mining segment	1		117							This looks like a replication of the heading!
+		Activity	Activity										
+		  MiningProduction	Mining production segment	1		118							Separation of Production and Exploration would make sense if totalled to Mining.
+		  MiningExplorationEvaluation	Mining exploration and evaluation segment	1		119							This and the obove cover Process - what they are doing.
+		Minerals	Minerals										
+		  Metals	Metals segment	1		120							This and below cover the What or Product i.e. what type of mineral. Would seem logical that this is a totalling for all metals
+		   PreciousMetals	Precious metals segment	2		121							
+		    Gold	Gold segment	3		122							
+		    Silver	Silver segment	3		123							
+		  BaseMetals	Base metals segment	2		124							
+		   Aluminium	Aluminium segment	3		125							
+		   Copper	Copper segment	3		126							
+		   Manganese	Manganese segment	3		127							
+		   Zinc	Zinc segment	3		128							
+		   IronOre	Iron ore segment	3		129							
+		   Steel	Steel segment	3		130							
+		  OtherMetals	Other metals segment	2		131							
+		 PreciousStones	Precious stones segment	1		132							
+		   Diamonds	Diamonds segment	2		133							
+		  OtherMiningOps	Other mining operations segment	1		134							
+		OilGas	Oil and gas segment			135							
+		  Oil	Oil segment	1		136							
+		  Gas	Gas segment	1		137							
+		  OilGasExplorationProduction	Oil and gas exploration and production segment	1		138							
+		  OilGasExploration	Oil and gas exploration segment	1		139							
+		  OilGasProduction	Oil and gas production segment	1		140							
+		  Refining	Refining segment	1		141							
+		  OtherOilGasOps	Other oil and gas operations segment	1		142							
+		Reportable.#	Reportable operating segment #		Ei	143							
+													
+14	ProdsServs	ReconcilingAdjusts	Reconciling adjustments, products and services			144							
+		TotalReportable	Total reportable products and services			145							
+		ProdServ.#	Other products and services / Product and service #		Ei	146							Charles - add a level and sum here i.e. does sum of these = Total Reportable? In UK-IFRS too?
+													
+15	MajCusts	ReconcilingAdjusts	Reconciling adjustments, major customers			147							
+		TotalReportable	Total reportable major customers			148							
+		MajCust.#	Other major customers / Major customer #		Ei	149							Charles - add a level and sum here i.e. does sum of these = Total Reportable? In UK-IFRS too?
+													
+16	BizCombos	IndividuallyImmaterial	Total of individually immaterial business combinations			150							
+		BizCombo.#	Specific business combination #		Ei	151							
+													
+17	PPEClasses	LandBuildings	Land and buildings			152	Kids	Kids			M		
+		  Land	  Land	1		153		152			M		
+		  Buildings	  Buildings	1		154		152			M		
+		PropertiesUnderConstruction	Properties under construction			155					M		
+		VehiclesMachinery	Vehicles, plant and machinery			156	Kids	Kids			M		
+		  Machinery	  Plant and machinery	1		157		156			M		
+		  Vehicles	  Vehicles	1		158	Kids	156, Kids			M		
+		    Aircraft	    Aircraft	2		159		156,158			M		
+		    Boats	    Boats	2		160		156,158			M		
+		    MotorVehicles	    Motor vehicles	2		161		156,158, Kids			M		
+		      CommercialMotorVehicles	      Commercial motor vehicles	3		162		156,158,161			M		
+		      MotorCars	      Motor cars	3		163		156,158,161			M		
+		    OtherVehicles	    Other vehicles	2		164		156,158			M		
+		FurnitureFittingsTools	Furniture, fittings, tools and equipment			165	Kids	Kids			M		
+		  FurnitureFittings	  Furniture and fittings	1		166		165			M		
+		  Tools	  Tools and equipment	1		167		165			M		
+		  Office	  Office equipment	1		168	Kids	165, Kids			M		
+		    Computer	    Computer equipment	2		169		165,168			M		
+		ExplorationOrEvaluationAssets	Tangible exploration and evaluation assets			170					M		
+		Other	Other property, plant and equipment			171	Kids	Kids			M		
+		  TotalOtherThanExplorationEvaluationAssets	  Total property, plant and equipment other than exploration and evaluation assets	1		172		171			M		
+		  OilGasProperties	  Oil and gas properties	1		173		171			M		
+		  OilGasProductionAssets	  Oil and gas production assets	1		174		171			M		
+		  OilDepotsStorageTanksServiceStations	  Oil depots, storage tanks and service stations	1		175		171			M		
+		  TotalMineProperties	  Total mine properties	1		176		171			M		
+		  ProducingMines	  Producing mines	1		177		171			M		
+		  MiningAssetsUnderConstruction	  Mining assets under construction	1		178		171			M		
+		  DeferredStrippingExpendituresForMineProperties	  Deferred stripping expenditures for mine properties	1		179		171			M		
+		  OtherMiningAssets	  Other mining assets	1		180		171			M		Charles - Other UK GAAP TFA not included here for SIM?? Charles - Basis of Ownership as for UK GAAP required for SIM??
+													
+18	IFAClasses	Goodwill	Goodwill			181				198 - 199	M+RL1		Charles - no positive and negetive goodwill?
+		IFAsOtherThanGoodwill	Intangible assets other than goodwill			182	Kids	Kids		198 - 199	M+RL1		Charles - no Intellectual Property as opposed to Patents etc?
+		  BrandNames	  Brand names	1		183		182		198 - 199	M+RL1		
+		  MastheadsPublishingTitles	  Mastheads and publishing titles	1		184		182		198 - 199	M+RL1		
+		  ComputerSoftware	  Computer software	1		185		182		198 - 199	M+RL1		
+		  PatentsTrademarksLicencesConcessionsSimilar	  Patents, trademarks, licences, concessions and similar	1		186	Kids	182, Kids		198 - 199	M+RL1		
+		    LicencesFranchises	    Licences and franchises	2		187		182,186		198 - 199	M+RL1		
+		    CopyrightsPatentsTrademarksServiceOpRights	    Copyrights, patents, trademarks, service and operating rights	2		188		182,186		198 - 199	M+RL1		
+		  RecipesFormulaeModelsDesignsPrototypes	  Recipes, formulae, models, designs and prototypes	1		189		182		198 - 199	M+RL1		
+		  DevelopmentCosts	  Development costs	1		190		182		198 - 199	M+RL1		
+		  CustomerRelationships	  Customer relationships	1		191		182		198 - 199	M+RL1		
+		  PaymentsOnAccount	  Payments on account, intangible fixed assets	1		192		182		198 - 199	M+RL1		
+		  OtherResidual	  Other / residual intangible assets	1		193	Kids	182, Kids		198 - 199	M+RL1		
+		    ExplorationEvaluationAssets	    Intangible exploration and evaluation assets	2		194		182,193		198 - 199	M+RL1		
+		    ExplorationLicenses	    Exploration licenses	2		195		182,193		198 - 199	M+RL1		
+		    MiningRights	    Mining rights	2		196		182,193		198 - 199	M+RL1		
+		    OtherMiscExplorationEvaluationAssets	    Other miscellaneous intangible exploration and evaluation assets	2		197		182,193		198 - 199	M+RL1		
+		GenerationType	Generation Type										
+		Internal	Internally generated intangible asset(s)			198			181 - 197			1	
+		External	Externally generated intangible asset(s)			199			181 - 197			1	
+													
+19	ImpairAllowType	LoansAdvancesToCustomersBanks	Loans and advances to customers and banks allowance account			200							Charles - should or could this be ImpairAllow? (No Type)
+		LoansAdvancesToCustomers	Loans and advances to customers allowance account			201	Kids	Kids					Charles - should this be RO not Mux Kids?
+		  CorporateLending	  Corporate lending allowance account	1		202							
+		  SmallBizLending	  Small business lending allowance account	1		203							
+		  ConsumerLending	  Consumer lending allowance account	1		204							
+		  ResidentialMortgages	  Residential mortgages allowance account	1		205							
+		  Overdrafts	  Overdrafts allowance account	1		206							
+		  CreditCards	  Credit cards allowance account	1		207							
+		  TermLoans	  Term loans allowance account	1		208							
+		  OtherAmountsDueFromCustomers	  Other amounts due from customers allowance account	1		209							
+		TotalDueFromBanks	Total due from banks allowance account			210	Kids	Kids					Charles - should this be RO not Mux Kids?
+		  PlacementWithOtherBanks	  Placement with other banks allowance account	1		211							
+		  ItemsInCourseCollectionFromBanks	  Items in course of collection from banks allowance account	1		212							
+		  OtherLoansAdvancesToBanks	  Other loans and advances to banks allowance account	1		213							
+		  OtherAmountsDueFromBanks	  Other amounts due from banks allowance account	1		214							
+		AvailForSale	Available-for-sale allowance account			215	Kids	Kids					Charles - should this be RO not Mux Kids?
+		  AvailForSaleDebtSecurities	  Available-for-sale debt securities allowance account	1		216							
+		  AvailForSaleEquitySecurities	  Available-for-sale equity securities allowance account	1		217							
+		HeldToMaturity	Held-to-maturity allowance account			218	Kids	Kids					Charles - should this be RO not Mux Kids?
+		  HeldToMaturityDebtSecurities	  Held-to-maturity debt securities allowance account	1		219							
+		  HeldToMaturityEquitySecurities	  Held-to-maturity equity securities allowance account	1		220							
+		LoansReceivablesDebtSecurities	Loans and receivables debt securities allowance account			221							
+		OtherFinAssets	Other financial assets allowance account			222							
+													
+20	FIValueType	CarryingAmount	Carrying amount			223							Charles - could this be part of FIs like IFAs GenerationType?
+		Contractual	Contractual value			224							
+		Fair	Fair value			225							
+		PastDueOrImpaired	Past due or impaired, carrying value			226	Kids	Kids					Charles - should this be RO not Mux Kids?
+		  PastDueButNotImpaired	  Past due but not impaired, carrying value	1		227							
+		  Impaired	  Impaired, carrying value	1		228							
+		NeitherPastDueNorImpaired	Neither past due nor impaired, carrying value			229	Kids	Kids					Charles - should this be RO not Mux Kids?
+		  HighGradeNeitherPastDueNorImpaired	  High grade, neither past due nor impaired	1		230							
+		  StandardGradeNeitherPastDueNorImpaired	  Standard grade, neither past due nor impaired	1		231							
+		  SubstandardGradeNeitherPastDueNorImpaired	  Sub-standard grade, neither past due nor impaired	1		232							
+		  SpecialMonitoringNeitherPastDueNorImpaired	  Special monitoring, neither past due nor impaired	1		233							
+		NotionalAmount	Notional amount			234							
+		MaximumCreditRiskExposure	Maximum credit risk exposure			235							
+													
+21	FIs	Current	Current financial instruments			236							
+		NonCurrent	Non-current financial instruments			237							
+													
+22	FILevel	FILevel.1	Level 1			238							Charles - could this be part of FIs like IFAs GenerationType?
+		FILevel.2	Level 2			239							Charles - are there only ever 3 levels? (It seems like it which is why I have left this an an explicit property this time.)
+		FILevel.3	Level 3			240							
+													
+23	FIMvts	TransferLevel1To2	Transfer from level 1 to 2			241							Charles - could this be part of FIs like IFAs GenerationType?
+		TransferLevel2To1	Transfer from level 2 to 1			242							
+		FairGainRecorded	Fair value gain (loss) for level 3 instruments recorded in income statement			243							
+		GainRecordedEquity	Gain (loss) for level 3 instruments recorded in other comprehensive income			244							
+		NetIncrLevel3PurchasesSalesSettlements	Net increase (decrease) in level 3 from purchases, sales and settlements			245	Kids	Kids					Charles - should this be RO not Mux Kids?
+		  NetIncrLevel3Purchases	  Net increase (decrease) in level 3 from purchases	1		246		245					This level is missing in the Taxonomy. UK-GAAP also
+		  NetIncrLevel3Sales	  Net increase (decrease) in level 3 from sales	1		247		245					
+		  NetIncrLevel3Settlements	  Net increase (decrease) in level 3 from settlements	1		248		245					
+		ReclassifiedToLoansReceivables	Reclassified from level 3 to loans and receivables			249							
+		TransferLevel12To3	Transfer from level 1 and 2 to 3			250							
+		TransferLevel3To12	Transfer from level 3 to 1 and 2			251							
+		GainLevel3HeldEndPeriod	Gain (loss) in profit or loss for level 3 instruments held at end of period			252							
+		GainLevel3BizCombo	Gain (loss) for level 3 instruments from business combination			253							
+		RealisedGainLevel3	Realised gain (loss) for level 3 instruments in income statement			254							
+		UnrealisedGainLevel3	Unrealised gain (loss) for level 3 instruments in income statement			255							
+													
+24	ICRisk	FinancialServices	Financial services concentration risk			256							
+		Banking	Banking industry concentration risk			257							
+		Insurance	Insurance industry concentration risk			258							
+		AssetManagement	Asset management industry concentration risk			259							
+		ResidentialMortgageLoans	Residential mortgage loans concentration risk			260							
+		OtherPersonalLending	Other personal lending concentration risk			261							
+		FinanceLeaseReceivables	Finance lease receivables concentration risk			262							
+		GovernmentCentralBanks	Government and central banks concentration risk			263							
+		RetailWholesaleIndustries	Retail and wholesale industries concentration risk			264							
+		ConstructionMaterials	Construction and materials concentration risk			265							
+		ManufacturingOilGas	Manufacturing, oil and gas concentration risk			266							
+		Manufacturing	Manufacturing concentration risk			267							
+		OilGas	Oil and gas concentration risk			268							
+		ServiceIndustries	Service industries concentration risk			269							
+		Agriculture	Agriculture concentration risk			270							
+		Utilities	Utilities concentration risk			271							
+		Transport	Transport concentration risk			272							
+		Telecoms	Telecommunications concentration risk			273							
+		IT	Information technology concentration risk			274							
+		Healthcare	Healthcare concentration risk			275							
+		Other	Other concentration risk			276							
+													
+25	CrRatings	AAAOrEquivalent	AAA rating, or equivalent			277							
+		AAOrEquivalent	AA- to AA+ rating, or equivalent			278							
+		AOrEquivalent	A- to A+ rating, or equivalent			279							
+		LowerThanAOrEquivalent	Lower than A- rating, or equivalent			280							
+		BBBplusOrEquivalent	BBB+ rating, or equivalent			281							
+		BBBOrEquivalent	BBB- to BBB rating, or equivalent			282							
+		BBplusOrEquivalent	BB+ rating, or equivalent			283							
+		BBOrEquivalent	BB- to BB rating, or equivalent			284							
+		BOrEquivalent	B- to B+ rating, or equivalent			285							
+		CCCplusOrEquivalent	CCC+ rating, or equivalent			286							
+		CCCOrEquivalent	CCC- to CCC rating, or equivalent			287							
+		CToCCOrEquivalent	C to CC rating, or equivalent			288							
+		DOrEquivalent	D rating, or equivalent			289							
+		Unrated	Unrated			290							
+													
+26	MPeriods	OneYear	Within one year			291	Kids	Kids					Charles - prefer the <s etc as before?
+		  Demand	  On demand	1		292		291					
+		  LessThan7Days	  Less than 7 days	1		293		291					
+		  SevenTo30Days	  Seven to 30 days	1		294		291					
+		  30Days	  Within 30 days	1		295		291					
+		  30To60Days	  From 30 to 60 days	1		296		291					
+		  60To90Days	  From 60 to 90 days	1		297		291					
+		  6Months	  Within 6 months	1		298		291					
+		  6MonthsOneYear	  Between 6 months and one year	1		299		291					
+		AfterOneYear	After one year			300	Kids	Kids					
+		  OneFiveYears	  Between one and five years	1	RO	301	Kids						At same level as 'AfterOneYear' in Taxonomy
+		    OneTwoYears	    Between one and two years	2		302		300					
+		    TwoFiveYears	    Between two and five years	2		303		300					
+		  MoreThanFiveYears	  More than five years	1	RO	304	Kids						At same level as 'AfterOneYear' in Taxonomy
+		    Five10Years	    Between five and 10 years	2		305		300					
+		    After10Years	    After 10 years	2		306		300					
+		NonInterestBearingFinInstrs	Non-interest bearing financial instruments			307							
+		TradingDerivatives	Trading derivatives										
+						308							
+27	DefTaxClasses	AcceleratedDepn	Accelerated tax depreciation, deferred tax			309							
+		Amort	Amortisation, deferred tax			310							
+		FairGains	Fair value gains, deferred tax			311							
+		ConvertibleBondEquitycomponent	Convertible bond equity-component, deferred tax			312							
+		ConvertiblePreferenceShares	Convertible preference shares, deferred tax			313							
+		PensionBenefitObligations	Pension benefit obligations, deferred tax			314							
+		OtherPostEmploymentBenefits	Other post-employment benefits, deferred tax			315							
+		ShareBasedPayment	Share based payment, deferred tax			316							
+		Provisions	Provisions, deferred tax			317							
+		Accruals	Accruals, deferred tax			318							
+		ImpairLosses	Impairment losses, deferred tax			319							
+		DevelopmentCosts	Deferred development costs, deferred tax			320							
+		RevaluationPropertyPlantEquipment	Revaluation of property, plant and equipment, deferred tax			321							
+		RevaluationProperty	Revaluation of property, deferred tax			322							
+		RevaluationPlantEquipment	Revaluation of plant and equipment, deferred tax			323							
+		RevaluationIFAs	Revaluation of intangible assets, deferred tax			324							
+		RevaluationBiologicalAssets	Revaluation of biological assets, deferred tax			325							
+		RevaluationInvestProperty	Revaluation of investment property, deferred tax			326							
+		RevaluationsFinInstrs	Revaluations of financial instruments, deferred tax			327							
+		ForeignExchangeContracts	Foreign exchange contracts, deferred tax			328							
+		FinAssetsFairThroughProfitOrLoss	Financial assets at fair value through profit or loss, deferred tax			329							
+		AvaliableForSaleFinAssets	Available-for-sale financial assets, deferred tax			330							
+		HeldToMaturityInvests	Held-to-maturity investments, deferred tax			331							
+		Derivatives	Derivatives, deferred tax			332							
+		RevaluationFairHedges	Revaluation of fair value hedges, deferred tax			333							
+		RevaluationCashFlowHedges	Revaluation of cash flow hedges, deferred tax			334							
+		LoansBorrowings	Loans and borrowings, deferred tax			335							
+		Inventories	Inventories, deferred tax			336							
+		Revenue	Deferred revenue, deferred tax			337							
+		Credits	Tax credits, deferred tax			338							
+		LossesCarryForwards	Tax losses carry-forwards, deferred tax			339							
+		OtherItems	Other items, deferred tax			340	Kids	Kids					
+		  OilGasProperties	  Oil and gas properties, deferred tax	1		341		340					
+		  MiningProperties	  Mining properties, deferred tax	1		342		340					
+		  ExplorationEvaluationCostsCapitalised	  Exploration and evaluation costs capitalised, deferred tax	1		343		340					
+		  PetroleumRevenue	  Petroleum revenue tax, deferred tax	1		344		340					
+													
+28	ProvClasses	Warranties	Warranties			345							Charles - some UK-GAAP ones are not missing?
+		RestructuringOrReorg	Restructuring or reorganisation			346							
+		LegalProceedings	Legal proceedings			347							
+		OnerousContracts	Onerous contracts			348							
+		DecommissioningRestoration	Decommissioning and restoration			349							
+		TaxationInclDeferred	Taxation, including deferred taxation			350	Kids	Kids					
+		  DeferredTaxation	  Deferred taxation	1		351							Charles - need a Tax Member here? (Not deferred) O'wise posting and sum won't work.
+		EmployeeBenefits	Employee benefits			352							
+		SocialSecurityContribs	Social security contributions			353							
+		PostEmploymentBenefits	Post-employment benefits			354							
+		Pensions	Pensions			355							
+		BadDebts	Bad debts			356							
+		FinancialGuarantees	Financial guarantees			357							
+		EnvironmentalCosts	Environmental costs			358	Kids	Kids					
+		  WasteDisposal	  Waste disposal	1		359							Charles - need an 'Other' Member here? (Not deferred) O'wise posting and sum won't work.
+		DeferredConsids	Deferred considerations			360							
+		VacantProperties	Vacant properties			361							
+		ProfitSharingBonuses	Profit sharing and bonuses			362							
+		OpLease	Operating lease			363							
+		ContLiabOnBizCombo	Contingent liability on business combination			364							
+		MiscOtherTypes	Miscellaneous other types			365							
+													
+29	PensionSchemes	PensionScheme.#	Pension scheme #		Ei	366							
+		PostEmploymentMedical.#	Post-employment medical scheme #		Ei	367							
+													
+30	SharePayment	#	Share based payment scheme #		Ei	368							
+													
+31	ContLiabClasses	Warranties	Warranties			369							Same Members as ProvClasses. Same Tx Elese in UK-IFRS
+		RestructuringOrReorg	Restructuring or reorganisation			370							
+		LegalProceedings	Legal proceedings			371							
+		OnerousContracts	Onerous contracts			372							
+		DecommissioningRestoration	Decommissioning and restoration			373							
+		TaxationInclDeferred	Taxation, including deferred taxation			374	Kids	Kids					
+		  DeferredTaxation	  Deferred taxation	1		375							Charles - need a Tax Member here? (Not deferred) O'wise posting and sum won't work.
+		EmployeeBenefits	Employee benefits			376							
+		SocialSecurityContribs	Social security contributions			377							
+		PostEmploymentBenefits	Post-employment benefits			378							
+		Pensions	Pensions			379							
+		BadDebts	Bad debts			380							
+		FinancialGuarantees	Financial guarantees			381							
+		EnvironmentalCosts	Environmental costs			382	Kids	Kids					
+		  WasteDisposal	  Waste disposal	1		383							Charles - need an 'Other' Member here? (Not deferred) O'wise posting and sum won't work.
+		DeferredConsids	Deferred considerations			384							
+		VacantProperties	Vacant properties			385							
+		ProfitSharingBonuses	Profit sharing and bonuses			386							
+		OpLease	Operating lease			387							
+		BizCombo	Contingent liability on business combination			388							
+		MiscOtherTypes	Miscellaneous other types			389							
+													
+32	RelatedParties	Parent	Parent			390				397 - 405	M+RL1		Charles - handle differently for SIM with Subords etc?
+		EntitiesWithJointControlOrSignificantInfluence	Entities with joint control or significant influence			391				397 - 405	M+RL1		
+		Subsidiary.#	Subsidiary #		Ei	392				397 - 405	M+RL1		
+		Assoc.#	Associate #		Ei	393				397 - 405	M+RL1		
+		JV.#	Joint venture #		Ei	394				397 - 405	M+RL1		
+		KeyManagementPersonnel	Key management personnel			395				397 - 405	M+RL1		
+		Others	Other related parties			396				397 - 405	M+RL1		
+		TransactionType	Related Party Transaction Type										
+		SaleOrPurchaseGoods	Sale or purchase of goods			397			390 - 396				
+		SaleOrPurchasePropertyOrOtherAssets	Sale or purchase of property or other assets			398			390 - 396				
+		RenderingOrReceivingServices	Rendering or receiving of services			399			390 - 396				
+		Leases	Leases			400			390 - 396				
+		TransfersResearchDevelopment	Transfers of research and development			401			390 - 396				
+		TransfersUnderLicenceArrangements	Transfers under licence arrangements			402			390 - 396				
+		TransfersUnderFinArranges	Transfers under finance arrangements			403			390 - 396				
+		ProvisionsGuaranteesOrCollateral	Provisions of guarantees or collateral			404			390 - 396				
+		SettlementLiabs	Settlement of liabilities			405			390 - 396				
+													
+33	ShareClasses	Ordinary.#	Ordinary share class #			406							
+		Preference.#	Preference share #			407							
+		SharesClassifiedAsLiab	Shares classified as liability			408							
+		ShareType	Share Type										
+		Cum	  Cumulative shares		RO	409	Kids					N	
+		  CumRedeemable	    Cumulative and redeemable shares	1		410							
+		  CumNonRedeemable	    Cumulative and non-redeemable shares	1		411							
+		NonCum	  Non-cumulative shares		RO	412	Kids					N	
+		  NonCumRedeemable	    Non-cumulative and redeemable shares	1		413							
+		  NonCumNonRedeemable	    Non-cumulative and non-redeemable shares	1		414							
+		Others	  Other share types			415							
+													
+34	Region	#	Region #		R	416						N	
+													
+35	Country	#	Country #		C	417						N	
+													
+36	Currency	#	Currency #		U	418						N	
+													
+37	StockEx	#	Stock Exchange #		X	419						N	
+													
+38	Language	#	Language #		L	420						N	
+													
+39	Industry	#	Industry SIC2007 #		I	421						N	
+													
+40	ExpenseFunction	CoS	Cost of sales			422							
+		Distrib	Distribution costs			423							
+		Admin	Administrative expenses			424							
+													
+41	ExceptNon	Non	Non-exceptional			425							
+		Except	Exceptional			426							
+													
+42	Analysis	#	Analysis #		Ei	427						N	
+													
+43	GroupTrans	Undertakings	Group undertakings		RO	428	Kids					N	
+		  Parent	  Parent	1		429							
+		  SubsidUndertakings	  Subsidiaries / other group undertakings	1		430							
+		JVs	Joint ventures			431							
+		Assocs	Associates			432							
+		ParticInterests	Participating interests			433							
+		TPs	Third parties outside group			434							
+													
+44	Ageing	<1	<1			435							
+		>1	>1			436	Kids	Kids					
+		  1-5	  1-5	1	RO	437	Kids					N	
+		    1-2	    1-2	2		438		436					
+		    2-5	    2-5	2		439		436					
+		  >5	  >5	1		440		436					
+													
+45	Instance	#	Instance #		Ei	441						N	
+													
+46	None	None	None		Z	442						N	A null Property to allow Folios 'Info' and 'NoProps' which are for Bro only BroRefs i.e. no Properties allowed.
+													
+47	Unallocated	Unallocated	Unallocated		Z	999						N	Used by Bro summing if necessary

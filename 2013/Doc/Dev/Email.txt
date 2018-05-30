@@ -1,0 +1,53 @@
+﻿SnippetsEmail.txt started 18.09.12
+=================
+
+Thunderbird Add-on QuoteAndComposeManagr
+http://nic-nac-project.de/~kaosmos/index-en.html
+
+Made a huge difference for me re use of Thunderbird, bringing the fone mess under control.
+
+Donated 25 EU 22.12.12.
+
+------
+
+
+http://www.sitepoint.com/the-art-of-designing-and-marking-up-email-signatures/
+The Art of Designing and Marking Up Email Signatures
+
+
+Cloud Email Services
+http://cloudspring.com/saas-cloud-service-curation/
+http://cloudspring.com/email-as-a-service-part-2-sendgrid-mailgun-and-postmark/
+
+http://www.mailgun.com/
+Mailgun is a set of powerful APIs that allow you to send, receive, track and store email effortlessly.
+
+Sending and receiving with mailboxes that email clients can access. Spam filtering, but only SpamAssassin http://documentation.mailgun.net/user_manual.html#um-mailboxes
+
+http://context.io/
+Context.IO is the missing email API that makes it easy and fast to integrate your user's email data in your application.
+
+Context.IO is mentioned in the MailGun FAQs:
+Can I get access data in my Mailboxes through an HTTP API?
+We don’t have an HTTP API to access data in Mailboxes, but context.io has some great APIs for this.
+
+But IMAP only?
+
+
+http://postmarkapp.com/
+Transactional only. Appears to be just for sending.
+
+http://mailchimp.com/
+MailChimp helps you design email newsletters, share them on social networks, integrate with services you already use, and track your results. It's like your own personal publishing platform
+
+Plus http://www.mandrill.com/
+Inbound Email
+
+Set up inboxes for Mandrill to control. When they receive email, we’ll make an API call to your app with all the relevant information, so you don’t have to worry about what’s happening behind the scenes. 
+
+
+http://phpmaster.com/sending-email-with-swift-mailer/
+
+Zimbra
+zimbra.com
+Zimbra is an enterprise-class email, calendar and collaboration solution, built for the cloud, both public and private. With a redesigned browser-based interface, Zimbra offers the most innovative messaging experience available today, connecting end users to the information and activity in their personal clouds.

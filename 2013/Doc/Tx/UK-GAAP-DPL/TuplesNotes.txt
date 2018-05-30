@@ -1,0 +1,382 @@
+UK GAAP Tuples Notes started 07.11.11
+====================
+Doc/BrosAndTx/TuplesNotes.txt
+
+Tuples do not appear in Definition trees, only Presentation ones. That is what caused me not to give them much attention
+previously, following the advice of the good book which said that the definition trees were what mattered.
+
+There is actually quite a lot to them.
+See
+- HMRC CT Inline XBRL Style Guide V2.0 April 2011
+  3.11 Hidden data items
+  The declaration of tuple container elements
+
+  4.7 Nesting Mark-up
+  Re One visible descr for two tuples, one for this year, one for the comparatives.
+
+  4.8 Tuple Member Ordering
+  The Inline XBRL Specification deliberately avoids the need for conformant processors to be Taxonomy‐aware. As a consequence,
+  an Inline XBRL processor is not aware of the constraints of the content model of a Taxonomy tuple definition. It is therefore
+  up to thecreator of the Inline XBRL mark‐up to explicitly provide information about the order inwhich tuple members are to
+  appear in the target XBRL instance document (the order of tuples themselves and other primary items is, of course, irrelevant).
+
+  The ‘order’ attribute exists to carry this information and it can take any decimal value. The output order of tuple members is
+  imposed by the natural ordering relation defined by decimal values of increasing magnitude - it is not necessary for the values
+  to be consecutive integers. This allows an application to assign static order values to each member of a tuple, corresponding
+  with the order defined by the ComplexType definitionin a Taxonomy, regardless of whether every tuple member appears in the output.
+
+  The fractional part of the decimal value can be used to represent the order of members in a tuple nested inside another tuple.
+  For example, if a tuple were the 4th child member of an enclosing tuple its member content could be ordered thus: 4.1, 4.2, 4.3, etc
+  – in terms of the sub‐tuple the constant integer part is irrelevant; the ordering of members is defined by the fractional part.
+
+- XBRL UK Preparers and Developers Guide Version 1.0, dated 31 March 2010
+  . 3.5 Tuples
+    Tuples are used to group tags ....
+
+    A special case of tuples is those which contain only one tag.  An example is the tuple ‘Accounting policy changes [grouping]’
+    which contains only the tag ‘Description of change in accounting policy and its impact’.  The purpose of containing this tag
+    within a tuple is to allow it to be used multiple times in a report to tag different descriptions of changes in accounting policies.
+
+  . 4.9 Repetition of tags within tuples
+    RULE:  Tags within tuples may be used multiple times for the same context within an XBRL report, but in this case they must be
+    reported in different occurrences of the tuple.
+
+    This rule reflects the normal functionality of tuples.
+
+  . 7.5 Other technical features
+    4.  Tuples in the accounts taxonomies generally do not impose significant rules on the minimum / maximum occurrences of elements.
+    However, a few tuples do impose such cardinality rules.  Software should accurately implement these rules.
+    (See "UK Detailed Tagging Information Version 1.0, dated 1 May 2011" Section 13.)
+
+- "UK Detailed Tagging Information Version 1.0, dated 1 May 2011"
+  . 4.14  Use of 'groupings'  (tuples)
+
+  . Section 13 "Groupings / tuples - further information"
+    re minOccurs and maxOccurs
+
+Braiins DB
+----------
+Tuples DB info is held in the Tuples table and via Elements and Arcs.
+
+View Tuples via Elements List and SubstGroupN = 2
+and the Tuples List report via Utils Menu
+
+Basic Info
+----------
+Number of Tuples:                    158
+Number of Tuple/Tx Elements pairs:   524 (number of rows in the Tuples table)
+Number of unique Tx Element members: 506 (9 members appear in multiple tuples a total of 27 times = 18 fewer unique pairs)
+
+Elements that are Members of Multiple Tuples [See also "Narrowing Scope of Elements that are Members of Multiple Tuples" later on.]
+--------------------------------------------
+There are 9 of them: 1324, 1448, 1563, 1608, 3237, 3382 (Share), 3878, 4617, 5186 (Money). Others with no (Type) are String
+See also the "Other Tuples also Member Of" column of Tuples List.
+
+One of these, 5186, which has 3 possible tuples, is used with Officers.
+See List Bros for Officers% with the Tuples column turned on.
+Or do a Bros Lookup for Tx Id = 5186.
+Or an Elements Lookup for 5186.
+
+27 Tuple/Member pairs are involved.
+
+The max # of Tuples is 6 with element 4617: 868, 500, 4293, 3761, 3546, 4433
+
+Select count(*) C, ElId From TuplePairs group by ElId having C > 1 order by C desc
+6   4617
+5   1563
+3   3237
+3   5186
+2   1324
+2   1448
+2   1608
+2   3382
+2   3878
+--
+27
+
+Tuple Members used twice with same Tuple in Presentation Trees
+--------------------------------------------------------------
+There are 9 such tuple members:  196,  213, 1393, 1489, 1506, 3281, 5121, 5230, 5234
+                        Tuple = 3530, 3680, 3530, 3551, 3680, 3551, 5269, 5164, 5165
+5121, 5230, and 5234 are for Period Start/Period End cases. The others involve different presentation trees and/or hypercubes.
+
+None of these is used in multiple tuples.
+
+Select A.FromId,A.ToId,A.priority,A.ArcOrder,A.PrefLabelRoleId from Arcs A Join Arcs B on B.FromId=A.FromId and B.ToId=A.ToId Join Elements E on E.Id=A.FromId Where B.Id<>A.Id and A.ArcRoleId=1 and B.ArcRoleId=1 and E.SubstGroupN=2 Order by ToId,ArcOrder
+Rows: 18
+FromId ToId priority ArcOrder PrefLabelRoleId
+3530    196   NULL  2000000   NULL
+3530    196   NULL  2000000   NULL
+3680    213   NULL  2000000   NULL
+3680    213   NULL  2000000   NULL
+3530   1393   NULL  1000000   NULL
+3530   1393   NULL  1000000   NULL
+3551   1489   NULL  1000000   NULL
+3551   1489   NULL  1000000   NULL
+3680   1506   NULL  1000000   NULL
+3680   1506   NULL  1000000   NULL
+3551   3281   NULL  2000000   NULL
+3551   3281   NULL  2000000   NULL
+5269   5121   NULL  2000000   3 <- Period Start
+5269   5121   NULL  5000000   4 <- Period End
+5164   5230   NULL  4000000   3
+5164   5230   NULL  8500000   4
+5165   5234   NULL  4000000   3
+5165   5234   NULL  7000000   4
+
+Via Select * From TuplePairs where ElId in (196,  213, 1393, 1489, 1506, 3281, 5121, 5230, 5234)
+5121 and 5234 are minOccurs = 0, maxOccurs = unbounded, the others are all 0, 1
+
+Abstract Tuple Members
+----------------------
+There are 3 Abstract Tuple Members: 1348,2199,3366
+
+Select TupTxId,ElId,Text From TuplePairs T Join Elements E on E.Id= T.ElId Join Text X on X.Id=E.StdLabelTxtId Where E.abstract is not null
+Rows: 3
+TupTxId ElId Text
+ 923   1348  Description of compound financial instruments with multiple embedded derivatives
+2585   2199  For impairment loss included in the movement of impairment allowance account, see 'Allowance for Credit Losses, Financial Assets' note [cross-reference]
+3367   3366  Number of employees at date by department [heading]
+
+Tuples as Members of other Tuples
+---------------------------------
+7 tuple members are themselves tuples: 4152,3555,2742,2743,4941,3651,5162
+
+Select TupTxId,ElId,Text From TuplePairs T Join Elements E on E.Id= T.ElId Join Text X on X.Id=E.StdLabelTxtId Where E.SubstGroupN=2
+Rows: 7
+TupTxId ElId Text
+ 162   4152  Reconciliation of changes in impairment allowance account [grouping]
+ 299   3555  Other income items affected by asset with non-recourse finance arrangement [grouping]
+2093   2742  Increase (decrease) in value yet to be recognised arising from difference in asset fair value and value from valuation technique [grouping]
+2118   2743  Increase (decrease) in value yet to be recognised arising from difference in liability fair value and value from valuation technique [grouping]
+2927   4941  Unlisted investments not carried on an historical cost basis [grouping]
+3367   3651  Other specific departments, number of employees at date [grouping]
+5165   5162  Details of exercise of specific options, directors [grouping]
+
+Re Some Section 13 "Groupings / tuples – further information" Points (Re minOccurs and maxOccurs)
+====================================================================
+There are only three minOccurs and maxOccurs combinations in use:
+Optional once      0,1               O
+Mandatory once     1,1               M
+Optional Unbounded 1,255 unbounded   U
+
+Section says in part:
+--------------------
+The cardinality of most tags in tuples is set to min 0 and max 1.
+
+The number of Tuple/Member pairs where this is true is 478.
+
+Select TupTxId,ElId,Text From TuplePairs T Join Elements E on E.Id= T.ElId Join Text X on X.Id=E.StdLabelTxtId Where minOccurs=0 and maxOccurs = 1 order by ElId
+Rows: 478
+TupTxId   ElId   Text
+4258   104   Additional description of specific intangible fixed assets, if required
+4279   105   Additional description of specific tangible fixed assets, if required
+4925   106   Address of controlling party
+3730   107   Address of parent of largest group
+...
+5482   5397   Description of specific security of entity
+5614   5523   Name of author
+5620   5526   Name of revision author
+5614   5578   Is principle document author
+5482   5593   Symbol of specific security of entity
+5620   5611   Version number of revision
+
+Section says in part:
+--------------------
+However, a small number of tags in certain tuples have cardinality of min 1 and max 1, so that they must be used if the tuple is used.
+(This mainly applies to descriptive tags which are essential to the meaning of the data concerned.)
+
+The number is 18.
+
+Select TupTxId,ElId,Text From TuplePairs T Join Elements E on E.Id= T.ElId Join Text X on X.Id=E.StdLabelTxtId Where minOccurs=1 and maxOccurs = 1 order by ElId
+Rows: 18
+TupTxId   ElId   Text
+3649   966   Content of other specific accounting policy
+3484   1477   Description of other cost, distribution activities
+3485   1478   Description of other cost, farming activities
+3486   1479   Description of other cost, manufacturing activities
+3487   1480   Description of other cost, other activities
+3488   1481   Description of other cost, trading activities
+3593   1492   Description of other materials cost, farming activities
+3609   1493   Description of other operating cost, administrative expenses
+3610   1494   Description of other operating cost, cost of sales
+3611   1495   Description of other operating cost, distribution costs
+5271   5118   Amount of donation to EU political organisation
+5270   5124   Amount of specific charitable donation
+5174   5145   Description of director interest in debentures of entity or its undertakings
+5270   5152   Description of purpose of specific charitable donation
+5246   5156   Description of special circumstances and the type, number and nominal values of shares acquired, disposed of or charged
+5269   5157   Description of specific advance or credit and its conditions, directors
+5271   5209   Name or description of recipient organisation
+5472   5471   Entity former legal or registered name
+
+Section says in part:
+--------------------
+In a few tuples, the cardinality of a tag is set to max unbounded, so that it can be used an unlimited number of times in a tuple occurrence.
+
+The number is 28. All have minOccurs=0
+
+Select TupTxId,ElId,Text From TuplePairs T Join Elements E on E.Id= T.ElId Join Text X on X.Id=E.StdLabelTxtId Where maxOccurs > 1 order by ElId
+Rows: 28
+TupTxId   ElId   Text
+  49   1320   Description of change in accounting policy and its impact
+ 853   1322   Description of change in format of accounts
+1918   1325   Description of change to estimation technique
+1802   1379   Description of effect of specific revision to useful life of intangible fixed assets
+1803   1380   Description of effect of specific revision to useful life of tangible fixed assets
+1921   1390   Description of exceptional cash flow not related to exceptional or extraordinary items
+3885   1460   Description of nature of particular inflow, assets concerned and possible financial effect
+3154   1470   Description of non-cash transaction
+3082   1482   Description of other disclosure relevant to the loan transfer
+4333   1483   Description of other disclosure relevant to the securitisation
+3546   1488   Description of other financial commitments not provided for in the accounts
+3732   1509   Description of partially transferred asset and uncertainty over gain and loss
+4247   1541   Description of restrictions preventing transfer of cash between parts of business and group and amounts involved
+4293   1544   Description of right, obligation, guarantee or commitment not recognised as asset or liability
+4314   1549   Description of sale and repurchase arrangement based on a secured loan
+4315   1550   Description of sale and repurchase arrangement under which seller has a different asset
+4316   1551   Description of sale and repurchase arrangement which is not a financing transaction
+1919   1557   Description of significant estimation technique
+1254   1566   Description of specific departure from normal assumption
+4622   1598   Description of a transaction underlying the financial statements and its commercial effect
+4852   1599   Description of transaction which is artificial or lacks substance and which leads to no gain or loss being recognised
+4967   1611   Description of unusual asset or liability
+ 299   3555   Other income items affected by asset with non-recourse finance arrangement [grouping]
+2927   4941   Unlisted investments not carried on an historical cost basis [grouping]
+5269   5121   Amount of specific advance or credit, directors
+5165   5162   Details of exercise of specific options, directors [grouping]
+5165   5234   Number of specific options, directors
+5464   5369   Code for activity
+
+Section says in part
+--------------------
+Note that the cardinality of a tag is defined individually in each tuple – if a tag is used in several tuples,
+it can have different cardinality in each tuple.
+
+Select * From TuplePairs where ElId in (Select ElId From TuplePairs group by ElId having count(*) > 1) order by ElId desc
+-> 27 results
+All have minOccurs=0 and maxOccurs=1
+
+So, "can have different cardinality in each tuple" but don't in UK-GAAP.
+
+
+Narrowing Scope of Elements that are Members of Multiple Tuples
+===============================================================
+Can the scope (where use allowed) of the 9 elements which are members of multiple tuples
+1324, 1448, 1563, 1608, 3237, 3382, 3878, 4617, 5186
+be narrowed down?
+
+TxIds with multiple hypercubes which are Tuple Members:
+SQL query: SELECT MemTxId,E.Hypercubes,T.TupId,TupTxId From Elements E join TuplePairs T on T.MemTxId=E.Id WHERE length(Hypercubes)>1 order by MemTxId,TupId
+MemTxId Hypercubes TupId TupTxId
+196   ;=   81   3530
+1393  ;=   81   3530
+1489  9=   83   3551
+
+3237  FGH  111  4258
+      FGH  113  4279
+      FGH  140  4941
+
+3281  9=   83   3551
+3364  1;   70   3367
+
+3382  LW   44   2041
+      LW   122  4412
+
+5186  LVW  44   2041
+      LVW  122  4412
+      LVW  146  5165
+
+All tuple/element pairs have Tuple Use Code = O (Optional 0,1 Occurs)
+
+By Hypercube:
+Ele  Tuples                      Hypercubes
+1324 2093,2118                   1
+1448 2093,2118                   1
+1563 162,1063,2093,2585,2595     1
+1608 4440,4441                   27
+3237 4258,4279,4941              22,23,24  * 22 => 4258, 23 => 4279, 24 => 4941
+3382 2041,4412                   28,39     * 28 => 2041, 39 => 4412
+3878 2093,2118                   1
+4617 500,868,3546,3761,4293,4433 1
+5186 2041,4412,5165              28,38,39  * 28 => 2041, 38 => 5165, 39 => 4412
+
+Hypercubes works for 3 of them!
+3237,3382,5186
+$TupIdsByMemberTxIdAndHyIdGA = array( # [TupleMemberTxId (TuplePairs.MemTxId) => [HyId => TupTxId]]
+  3237 => array(22 => 4258, 23 => 4279, 24 => 4941),
+  3382 => array(28 => 2041, 39 => 4412),
+  5186 => array(28 => 2041, 38 => 5165, 39 => 4412));
+$TupIdsByMemberTxIdAndHyIdGA = array( # [TupleMemberTxId (TuplePairs.MemTxId) => [HyId => TupId]]
+  3237 => array(22 => 111, 23 => 113, 24 => 140),
+  3382 => array(28 =>  44, 39 => 122),
+  5186 => array(28 =>  44, 38 => 146, 39 => 122));
+
+Leaves:
+Ele  Tuples TupTxId              Hypercubes
+1324 2093,2118                   1
+1448 2093,2118                   1
+1563 162,1063,2093,2585,2595     1
+1608 4440,4441                   27
+3878 2093,2118                   1
+4617 500,868,3546,3761,4293,4433 1
+
+1324,1448,1563,1608,3878,461
+
+Longest List of Elements that are Members of Multiple Tuples
+------------------------------------------------------------
+Is for 4617
+TupTxId 500,868,3546,3761,4293,4433
+TuIds     8, 13,  82, 102, 115, 126
+TuMeIds  32, 52, 301, 353, 393, 425
+
+Tuple References and DB Storage
+===============================
+<ix:tuple tag in iXBRL head section
+  one per tuple used : per specific instance : per period
+  e.g. from TH sample:                                                                            <------> Braiins tupleID
+  <ix:tuple name="uk-gaap:SpecificTypeEquityAssetHeldInPensionSchemeGrouping" tupleID="tuple.101" T.1.1.Y0 /> Instance = European equities, Period = 2008
+  <ix:tuple name="uk-gaap:SpecificTypeEquityAssetHeldInPensionSchemeGrouping" tupleID="tuple.102" T.1.1.Y1 /> Instance = European equities, Period = 2007
+  <ix:tuple name="uk-gaap:SpecificTypeEquityAssetHeldInPensionSchemeGrouping" tupleID="tuple.103" T.1.2.Y0 /> Instance = Other equities, Period = 2008
+  <ix:tuple name="uk-gaap:SpecificTypeEquityAssetHeldInPensionSchemeGrouping" tupleID="tuple.104" T.1.2.Y1 /> Instance = Other equities, Period = 2007
+
+  Braiins convention for the tupleId: T.n.i.Y#
+  where n  = running number for tuples in the FS - same for tuples with same name /- same for diff years
+        i  = instance number                                                      |
+        Y# = Y and year digit as used in contexts
+
+tupleRef='the tupleId' and 'order='x' in the tag e.g. from TH sample
+  <ix:nonNumeric name="uk-gaap:DescriptionTypeEquityAssetHeldInPensionScheme" order="1" tupleRef="tuple.101" contextRef="Period_TMinusZero">European equities</ix:nonNumeric>
+
+Though could use this form (from ddddd) as now used in header for the Author Tuple:
+
+<ix:tuple name='uk-bus:XBRLDocumentAuthorGrouping' tupleID='AuthorTuple'>
+  <ix:nonNumeric name='uk-bus:NameAuthor' contextRef='PeriodY0' order='1'>$v</ix:nonNumeric>
+  <ix:nonNumeric name='uk-bus:DescriptionOrTitleAuthor' contextRef='PeriodY0' order='2'>Braiins Limited</ix:nonNumeric>
+  <ix:nonNumeric name='uk-bus:PrincipleDocumentAuthor' contextRef='PeriodY0' order='3'>true</ix:nonNumeric>
+</ix:tuple>
+
+Need to record
+- normal BroRef which -> BroId which -> TxId which = MemTxId of the tuple but that is not unique so also need the tuple ref
+- tuple ref = TxId of tuple or tuple # (Id)
+- tuple instance code = running #
+- the value
+
+RG would need to know of tuple to include it in the BroRef.
+RG will need to be able to loop for instances.
+
+
+Questions
+=========
+- Is it necessary to nest Descr as below from the Style Guide Section 4.7 Nesting Mark-up?
+  TH's example does not do this.
+
+<td><ix:nonNumeric name=”DescLine” contextref=”CY” tupleref=”t1” order=”1”>
+    <ix:nonNumeric name=”DescLine” contextref=”PY” tupleref=”t2” order=”1”>
+      Line Description
+    </ix:nonNumeric>
+    </ix:nonNumeric>
+</td>
+<td><ix:nonFraction name=”ValueLine” contextref=”CY” unitref=”GBP” tupleref=”t1” order=”2”>100</ix:nonFraction></td>
+<td><ix:nonFraction name=”ValueLine” contextref=”PY” unitref=”GBP” tupleref=”t2” order=”2”>200</ix:nonFraction></td>
+

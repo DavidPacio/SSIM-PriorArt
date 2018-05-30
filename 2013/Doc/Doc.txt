@@ -1,0 +1,406 @@
+Doc.txt
+=======
+
+Braiins: Business Reporting and Accounting Inline InterNet Service
+Braains: Business Reporting Anything Anywhere InterNet Service
+Breains: Business Reporting Everything Anywhere Internet Service
+
+Braiins is an iXBRL accounts expert system which generates Taxonomy and HMRC/CH compliant accounts while ensuring
+accounting and dimensional integrity is maintained, all under full practice control, with complete audit trail.
+
+Semantic Financial Reporting Standardised Model
+SFRSM
+
+Semantic Financial Reporting Standardised Information Model
+SFRSIM
+
+SIM = Folios, Properties, Property Members
+      BroSets (incl Bros)
+      DataSets
+      Journals
+
+SFR = RG and tools using SIM
+
+Whole product = SFRSIM
+
+SFRSIM.com and SFRSM.com are available
+
+
+So where does BRAIINS fit?
+
+Just a name like Apple with no specific meaning?
+
+Domains
+=======
+braiins.com GoDaddy
+
+Customer #:  41576962
+User Name Charles Woodgate
+Email  charleswoodgate@pendennis.plus.com
+Password Copping52
+Hint  Trevor
+PIN  2239
+
+sfrsim.com  07/05/2015 Public Add Privacy None Add  Launch
+sfrsim.info 07/05/2015
+sfrsim.net  07/05/2015
+sfrsim.org  07/05/2015
+braiins.com 02/06/2018
+
+
+Kualo Hosting
+=============
+Account
+-------
+my.kualo.com
+Charles:
+  charles@braiins.com
+  iN7e?&v]Rq@6
+
+David:
+  david@braiins.com
+  iN6d?&v]Rq@5
+
+http://edgar.secure.kualo.net/cpanel    http://www.braiins.co.uk/cpanel
+Username: braiinsc
+Password: 11iq5dZBc2
+
+FTP Hostname: ftp.braiins.co.uk
+Username: braiinsc
+Password: 11iq5dZBc2
+
+Dedicated IP: 91.197.231.243
+
+Sites Authorisation
+-------------------
+22iX45Cbh
+
+Nameservers
+ns1.kualo.net
+ns2.kualo.net
+ns3.kualo.net
+ns4.kualo.net
+
+pws:
+Braiins: 22iX45Cbh
+DJH:     22iXdjh45Cbh
+EE:      22iXee45Cbh
+AA:      22iXaa45Cbh
+TAG:     TaG131811Spo
+
+Email
+-----
+charles@braiins.com VKW6ZPR~gdLu
+david@braiins.com   gmh0a4n0m4o0t2
+david@elanelan.com  gmh0a4n0m4o0t2
+OandaEurope@elanelan.com gmh0a4n0m4o0t2
+Spookie@TenneshaGreene.com TaG131811Spo -> David268Spookie1
+
+Webmail login: https://edgar.secure.kualo.net:2096/login.php
+
+Incoming: edgar.secure.kualo.net POP3S (SSL/TLS) Port 995
+Outgoing: edgar.secure.kualo.net (SSL/TLS) Port 465
+
+ v=spf1 +a +mx +ip4:91.197.231.175 ?all
+ ->
+ v=spf1 +a +mx +ip4:91.197.231.175 +ip4:50.115.17.0/24 ?all
+
+Re actual sender being 50.115.17.119 for david@braiins.com
+
+Received: from kualo-edgar.g1-srv1a.filteredmx.net (kualo-edgar.g1-srv1a.filteredmx.net. [50.115.17.119]) by mx.google.com with ESMTPS id u12si3306034ann.206.2012.11.12.20.15.57 (version=TLSv1/SSLv3 cipher=OTHER); Mon, 12 Nov 2012 20:15:58 -0800 (PST)
+Received-SPF: pass (google.com: domain of david@braiins.com designates 50.115.17.119 as permitted sender) client-ip=50.115.17.119;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of david@braiins.com designates 50.115.17.119 as permitted sender)
+Received: from edgar.ldn.kualo.net ([91.197.231.175]) by tpa-srv1.filteredmx.net with esmtps (TLSv1:DHE-RSA-AES256-SHA:256) (Exim 4.80.1) (envelope-from <david@braiins.com>) id 1TY7uj-0005pK-KB for david.braiins@gmail.com; Mon, 12 Nov 2012 23:15:57 -0500
+
+and 50.115.17.120 for david@elanelan.com on 18.11.12
+
+05.03.13 it was back to
+ v=spf1 +a +mx +ip4:91.197.231.175 ?all
+->
+Received: from kualo-edgar.g1-srv1a.filteredmx.net (kualo-edgar.g1-srv1a.filteredmx.net. [50.115.17.119]) by mx.google.com with ESMTPS id y2si3143828yhn.117.2013.03.04.22.48.00 (version=TLSv1 cipher=RC4-SHA bits=128/128); Mon, 04 Mar 2013 22:48:00 -0800 (PST)
+Received-SPF: neutral (google.com: 50.115.17.119 is neither permitted nor denied by domain of david@braiins.com) client-ip=50.115.17.119;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 50.115.17.119 is neither permitted nor denied by domain of david@braiins.com) smtp.mail=david@braiins.com; dkim=policy (weak key) header.i=@braiins.com
+Received: from edgar.ldn.kualo.net ([91.197.231.175]) by tpa-srv1.filteredmx.net with esmtps (TLSv1:DHE-RSA-AES256-SHA:256) (Exim 4.80.1) (envelope-from <david@braiins.com>) id 1UClfG-00079J-HF for david.braiins@gmail.com; Tue, 05 Mar 2013 01:47:59 -0500
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=braiins.com; s=default; h=Content-Type:Subject:To:MIME-Version:From:Date:Message-ID; bh=4K9gAI7shOZa8YgK0z+d8sJQli0s8wwbyTIQSSsvEF4=; b=qIggycA1/YjOJKSFMTPlLGthxhnEBv+L7Xxt57mxaMnyayxpIyOJZrmtZnEJzQYsTckfV43o9HrB6+b73ju016cIWnBqyBKHPHDJu6s6eTSDlIMjx20BCnY6AhFQvQa4;
+Received: from 124-170-76-244.dyn.iinet.net.au ([124.170.76.244]:64289 helo=[127.0.0.1]) by edgar.ldn.kualo.net with esmtpsa (TLSv1:DHE-RSA-CAMELLIA256-SHA:256) (Exim 4.80) (envelope-from <david@braiins.com>) id 1UClfD-00058J-UR for david.braiins@gmail.com; Tue, 05 Mar 2013 06:47:53 +0000
+
+Changed back to
+ v=spf1 +a +mx +ip4:91.197.231.175 +ip4:50.115.17.0/24 ?all
+->
+
+Received: from kualo-edgar.g1-srv1a.filteredmx.net (kualo-edgar.g1-srv1a.filteredmx.net. [50.115.17.119]) by mx.google.com with ESMTPS id v21si5414055yhi.161.2013.03.05.10.57.49 (version=TLSv1 cipher=RC4-SHA bits=128/128); Tue, 05 Mar 2013 10:57:49 -0800 (PST)
+Received-SPF: pass (google.com: domain of david@braiins.com designates 50.115.17.119 as permitted sender) client-ip=50.115.17.119;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of david@braiins.com designates 50.115.17.119 as permitted sender) smtp.mail=david@braiins.com; dkim=policy (weak key) header.i=@braiins.com
+Received: from edgar.ldn.kualo.net ([91.197.231.175]) by tpa-srv1.filteredmx.net with esmtps (TLSv1:DHE-RSA-AES256-SHA:256) (Exim 4.80.1) (envelope-from <david@braiins.com>) id 1UCx3S-0006da-HA for david.braiins@gmail.com; Tue, 05 Mar 2013 13:57:49 -0500
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=braiins.com; s=default; h=Content-Type:In-Reply-To:References:Subject:To:MIME-Version:From:Date:Message-ID; bh=EWZ/GIln1o/2FCOB8Ntn5jVT92JjSTPH7EsWp8xCqP0=; b=QXhLluYEIziDKjLC7IXi3XjTu7XNR/pzSS+hycnLCnhM4PsDQs0JpLaoG2Nx21OVE4kfO+WpEQAmqTs14cGekAYA8+t3UloSqhnEOV1T7lUbzjCHVwWXnwQZ4k3QTNtg;
+Received: from 58-6-219-141.dyn.iinet.net.au ([58.6.219.141]:51461 helo=[127.0.0.1]) by edgar.ldn.kualo.net with esmtpsa (TLSv1:DHE-RSA-CAMELLIA256-SHA:256) (Exim 4.80) (envelope-from <david@braiins.com>) id 1UCx3P-0001C9-JE for david.braiins@gmail.com; Tue, 05 Mar 2013 18:57:36 +0000
+
+
+
+Server Config
+=============
+Php 5.4
+
+Php.ini
+-------
+See Wamp php.ini
+Plus
+
+[Date]
+; Defines the default timezone used by the date functions
+; http://php.net/date.timezone
+date.timezone = UTC
+
+or, in code: date_default_timezone_set('UTC')
+
+MySql
+-----
+System time should be set to UTC (or +00:00) as per http://dev.mys#ql.com/doc/refman/5.5/en/time-zone-support.html
+or failing that, add
+default-time-zone = '+0:00'
+to my.ini [mysqld] section
+then
+SELECT @@global.time_zone, @@session.time_zone;
+-> +00:00   +00:00
+= same result for client as SYSTEM set to UTC.
+
+
+Point
+=====
+https://braiins.pointhq.com/
+d@ee
+fred22point45
+
+
+
+
+
+
+
+Hostgator Hosting
+=================
+Domain:   autoabacus.com
+Username: autoabac
+Password: iM5d?&W]Tq@4
+Accounts: gymahr0i4m0a402
+
+Server name: gator142
+                            13.06.11
+IP address: 67.18.19.212 -> 74.52.59.141
+
+CP:      http://www.autoabacus.com/cpanel or http://gator142.hostgator.com/cpanel
+WebMail: webmail: http://autoabacus.com:2095/  or http://yourdomain.com/webmail  http://elanelan.com/webmail
+Tickets: https://tickets.hostgator.com/
+Forum:   http://forums.hostgator.com/
+
+Support login:
+http://support.hostgator.com/
+https://tickets.hostgator.com/login
+Four accounts:
+  david.hartley@elanelan.com      516d6563       <====== main one
+  david.hartley.antigua@gmail.com fred2245
+  david@elanelan.com              Y00G8xl9       2 x 20120 tickets
+  david.hartley@autoabacus.com    iM5d?&W]Tq@4   1 ticket 06.06.12 by accident
+
+david.hartley@elanelan.com
+david@elanelan.com
+david.hartley.antigua@gmail.com
+david.hartley@autoabacus.com
+
+
+All HG servers can run PHP 5.3, just add the following to .htaccess;
+
+AddType application/x-hg-php53 .php         <=== as per ticket but this did not work -> FF asking what to do with file.
+AddType application/x-httpd-php53 .php      <=== as per http://support.hostgator.com/articles/pre-sales-questions/php-5-3  This worked
+
+Sites Authorisation
+-------------------
+Braiins
+22iX45Cbh
+
+
+Support login:
+http://support.hostgator.com/
+https://tickets.hostgator.com/login
+Two accounts:
+  david.hartley@elanelan.com 516d6563
+  david.hartley.antigua@gmail.com fred2245
+Control panel: www.autoabacus.com/cpanel or http://74.53.105.242/cpanel
+Default site:  http://74.53.105.242/~davidhar/
+
+
+
+Braiins Members
+david@braiins.com
+ 8UHx,s}VBn
+ 4nmKyZfqf:xuLbj
+ ~YwLaNP15pmu
+ Bond007
+
+Sam MasLDT&vB<H95QKk
+Joe V3Cb€3kL2
+Sue BngpVEL~yG9
+Mary t52<48ZYP2VA2JsD
+Jane Wb+/k75Ay-
+
+Email
+=====
+David
+-----
+Email: david@elanelan.com
+pw: gmh0a4n0m4o0t2
+
+Mail Server Username: david+elanelan.com
+Incoming Mail Server: mail.elanelan.com
+Incoming Mail Server: (SSL) secure142.hostgator.com or gator142.hostgator.com
+Outgoing Mail Server: mail.elanelan.com (server requires authentication) port 26
+Outgoing Mail Server: (SSL) secure142.hostgator.com or gator142.hostgator.com (server requires authentication) port 465
+Supported Incoming Mail Protocols: POP3, POP3S (SSL/TLS), IMAP, IMAPS (SSL/TLS)
+Supported Outgoing Mail Protocols: SMTP, SMTPS (SSL/TLS)
+
+Charles
+-------
+Email: charles@braiins.com
+pw: VKW6ZPR~gdLu
+
+Mail Server Username: charles+braiins.com
+Incoming Mail Server: mail.braiins.com
+Incoming Mail Server: (SSL) shared-image.hostgator.com or secure142.hostgator.com or gator142.hostgator.com
+Outgoing Mail Server: mail.braiins.com (server requires authentication) port 26
+Outgoing Mail Server: (SSL) secure142.hostgator.com or gator142.hostgator.com (server requires authentication) port 465
+Supported Incoming Mail Protocols: POP3, POP3S (SSL/TLS), IMAP, IMAPS (SSL/TLS)
+Supported Outgoing Mail Protocols: SMTP, SMTPS (SSL/TLS)
+
+ElanElan Email
+--------------
+Autoabacus.com         domain forwarded to elanelan.com
+Braiins.com            domain forwarded to elanelan.com
+CureMS.me              domain forwarded to elanelan.com
+DavidJohnHartley.com   domain forwarded to elanelan.com
+NakedMS.me             domain forwarded to elanelan.com
+
+                                    ElanElan.com Forwards
+caramia@elanelan.com yarimabob22    caramia.hartley caramiahartley chocolate  ch
+  david@elanelan.com gmh0a4n0m4o0t2 david.hartley davidhartley hartley admin demo djh error fred help info ms sales support
+                                    tari test web.server
+
+  caramia@nakedms.me yarimabob22
+    david@nakedms.me gmh0a4n0m4o0t2
+    admin@nakedms.me forwarded to caramia.nakedms.me and david@elanelan.com
+     info@nakedms.me forwarded to caramia.nakedms.me and david@nakedms.me
+
+WinSCP
+======
+Hostname: autoabacus.com
+Port number: 2222
+Username: autoabac
+Password: iM5d?&W]Tq@4
+Protocol: SFTP
+
+Then in the left panel
+
+Environment:
+Adjust remote timestamp to local conventions
+
+Connection - Keepalives
+Sending of null SSH packets
+Seconds between keepalives: 30
+
+ElanElan Server ftp
+===================
+Hostname: autoabacus.com
+Port number: 21
+Username: braiins@autoabacus.com
+Password: 22iX45Cbh
+Protocol: ftp no encryption
+
+phpMyAdmin
+----------
+http://www.autoabacus.com:2082/3rdparty/phpMyAdmin/index.php
+u: autoabac
+p: iM5d?&W]Tq@4
+
+4shared.com
+-----------
+u: iXBRL  (or david@elanelan.com)
+p: 22iX45Cbh
+
+Folder: http://www.4shared.com/dir/9z_Sb6xF/sharing.html
+
+doc.txt http://www.4shared.com/document/9zeJl8K7/doc.html
+
+http://www.4shared.com/file/-ICDOjNr/10030059_Full.html
+[06:33:25] Charles Woodgate: pw = cory5624
+
+NetBeans
+========
+david@elanelan.com
+u: autoabacus
+p: fred22nbi45
+
+
+
+urls
+====
+iXBRL/XBRL
+----------
+http://xbrl.squarespace.com/xbrl-for-dummies/
+http://www.ifrs.org/XBRL/Resources/Resources.htm
+http://www.ifrs.org/XBRL/Resources/Fundamentals.htm
+
+CoreFiling - Yeti: http://bigfoot.corefiling.com/yeti/
+http://www.marketwatch.com/story/corefiling-win-prestigious-accounting-award-2011-10-19
+
+
+iXBRL Forum http://www.ixbrlforum.com/
+
+Companies House
+---------------
+Companies House Web Filing: http://ewf.companieshouse.gov.uk/
+
+HMRC
+----
+The HMRC PDF Package
+http://www.accountingweb.co.uk/anyanswers/hmrc-accounts-package/475021
+
+Corporation Tax Online: internet service technical pack for Software Developers
+http://www.hmrc.gov.uk/ebu/ct_techpack/index.htm
+
+XBRL UK
+-------
+http://www.xbrl.org/Home/
+http://www.xbrl.org/uk/TechSamples/
+
+Sage
+----
+http://www.xbrlwithsage.com/xbrl.php
+http://www.xbrlwithsage.com/sfs_learning_portal
+
+Absolute
+--------
+http://www.absolutetax.co.uk/
+http://www.accountingweb.co.uk/anyanswers/absolute-software-0
+
+IRFS
+----
+http://www.ifrs.org/
+http://www.ifrs.org/XBRL/Resources/Fundamentals.htm
+
+Accounting
+----------
+http://www.principlesofaccounting.com/chapter10/chapter10.html
+http://en.wikipedia.org/wiki/Depreciation#Declining-balance_method_.28or_Reducing_balance_method.29
+
+Fundamental Accounting Concepts
+http://fundamentalaccountingconcepts.wikispaces.com/
+
+WikiSystems
+-----------
+http://www.wiksys.org/index.php?title=Main_Page
+XBRL Charts of Accounts, Business Rules
+
+WikiAccounts
+WikiAccounts is a Web application that allows the community to assemble a library of: (1) General and industry/jurisdiction/purpose specific charts of accounts (COAs) that are expressed in the standardized XBRL GL format (2) Mappings, also expressed in XBRL GL format, from the COAs to end reporting XBRL taxonomies for internal or external reporting purposes
+
+WikiLogics
+WikiLogics is a free, community-based application for creating standardized business rules and controls expressed with XBRL Formula. The controls and rules can then be applied to a standardized representation expressed in XBRL GL format of common internal corporate data, such as journal entries, orders, invoices, payroll information, inventory, fixed assets etc. This process is suited to a broad range of purposes — beginning with data validation, extending to data monitoring and auditing, and, finally, providing input for executive dashboards or sales/financial analysis, BI/CPM, etc.

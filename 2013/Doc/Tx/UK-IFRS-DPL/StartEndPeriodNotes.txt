@@ -1,0 +1,214 @@
+UK-IFRS-DPL Start/End Period Notes started 30.06.13
+==================================
+
+
+Elements which have Start/End period arcs
+-----------------------------------------
+select ToId from Arcs Where PrefLabelRoleId In (3,4) Order by ToId, PrefLabelRoleId
+or
+select ToId from Arcs Where PrefLabelRoleId In (3,4) and ArcRoleId=1 Order by ToId, PrefLabelRoleId
+-> 30
+   S     E     v- select distinct ToId from Arcs Where PrefLabelRoleId In (3,4) order by ToId
+ 788,  788   788
+1070, 1070  1070
+1697, 1697  1697
+2235, 2235  2235
+2247, 2247  2247
+4626, 4626  4626
+4633, 4633  4633
+4742, 4742  4742
+4746, 4746  4746
+5783, 5783  5783
+6036, 6036  6036 |- 6036 twice
+6036, 6036       |
+      7910  7910
+7915, 7915  7915
+      8519  8519
+8524, 8524  8524
+
+=> 13 with SE (6036 once)
+
+ 788
+1070
+1697
+2235
+2247
+4626
+4633
+4742
+4746
+5783
+6036
+7915
+8524
+
+
+All are Presentation Tree arcs so no difference with or wo ArcRoleId=1
+
+Definition Tree Start/End Period Arcs via Priority Null and 1?
+--------------------------------------------------------------
+See Lists below.
+
+A = The "13" i.e. the Presentation Tree elements with Start/End period arcs
+
+B = Those of the "13" which also appear in Definition tree To arcs in pairs with the first arc as Null priority and the second as a 1 priority.
+    All of A is included except for 145,146,3090,3092,4403 = 69 elements, with two instances for 3278 = 70 entries in the B list.
+    Select A.ToId from Arcs A Join Arcs B on B.FromId=A.FromId and B.ToId=A.ToId where B.Id<>A.Id and A.ToId in (788, 1070, 1697, 2235, 2247, 4626, 4633, 4742, 4746, 5783, 6036, 7915, 8524) and A.ArcRoleId=6 and B.ArcRoleId=6 and A.priority is null and B.priority=1 order by A.ToId
+
+    1070, 1697, 2235, 4626, 4633, 4742, 4746, 5783, 7915, 8524
+    
+    or, using A as a sub query within B
+    Select A.ToId from Arcs A Join Arcs B on B.FromId=A.FromId and B.ToId=A.ToId where B.Id<>A.Id and A.ToId in (select distinct ToId from Arcs Where PrefLabelRoleId In (3,4)) and A.ArcRoleId=6 and B.ArcRoleId=6 and A.priority is null and B.priority=1 order by A.ToId
+
+    1070, 1697, 2235, 4626, 4633, 4742, 4746, 5783, 7915, 8524
+
+
+C = Elements in Definition tree To arcs in pairs with the first arc as Null priority and the second as a 1 priority.
+    Select A.ToId from Arcs A Join Arcs B on B.FromId=A.FromId and B.ToId=A.ToId where B.Id<>A.Id and A.ArcRoleId=6 and B.ArcRoleId=6 and A.priority is null and B.priority=1 order by A.ToId
+
+    1070, 1697, 2235, 4093, 4356, 4358, 4361, 4363, 4364, 4370, 4382, 4383, 4384, 4387, 4391, 4393, 4395, 4460, 4469, 4471, 4493, 4513, 4523, 4526, 4578, 4589, 4600, 4601, 4611, 4615, 4616, 4618, 4619, 4621, 4622, 4623, 4626, 4630, 4630, 4633, 4636, 4636, 4641, 4641, 4644, 4651, 4656, 4664, 4664, 4692, 4693, 4693, 4695, 4721, 4721, 4727, 4727, 4742, 4746, 4759, 4766, 4767, 4767, 4768, 4768, 4786, 4787, 5783, 7915, 8524
+
+   A     B    C
+ 788        not useful
+1070  1070
+1697  1697
+2235  2235
+2247
+4626  4626
+4633  4633
+4742  4742
+4746  4746
+5783  5783
+6036
+
+7915  7915
+
+8524  8524
+
+Conclusions:
+Use the A list as the list of elements which can have a StartEnd attribute:
+
+788, 1070, 1697, 2235, 2247, 4626, 4633, 4742, 4746, 5783, 6036, 7915, 8524
+
+Added to ConstantsTx.inc as $StartEndTxIdsGA
+
+Further Observations
+====================
+Six of the Elements with Start/End Periods have Definition Tree Children
+They are 542,2004,3465,4265,4536,5114
+They and their definition tree children, with the children having Start/End periods marked with an *, are::
+ 542: 575, 541                                   Hy 13 680 - Operating Activities
+2004: 1321, 4434                                 Hy  1 600 - Basic
+3465: 511*, 4239*, 2223*, 2467*, 4244, 3642*     Hy  1 600 - Basic
+4265: 4267*, 4269*                               Hy  1 600 - Basic
+4536: 4551*, 5092*, 2120*, 4546*                 Hy 13 680 - Operating Activities
+5114: 5157, 5121*, 5122, 5123, 5121*             Hy 38 900 - Entity Officers
+
+- all of the children for 4265 and 4536 have start/end periods
+- all except for one (4244) do for 3465
+- 5114 is the only which includes a child twice - 5121
+
+Extended 16.11.11 Following "Start/End Summing" email exchange with Charles
+---------------------------------------------------------------------------
+541 and 575 added to the list of elements with Start/End Periods giving:
+82,145,146,222,511,541,542,575,1110,1170,1172,1242,2002,2004,2120,2132,2155,2167,2223,2467,2805,2815,3019,3090,3092,3198,3278,3377,3379,3387,3388,3389,3465,3642,3696,3697,3984,4062,4239,4265,4267,4269,4397,4403,4536,4546,4551,4654,4655,4810,5022,5078,5092,5114,5121,5230,5234
+
+With this change, and excluding:
+1321 and 5157 as String type
+4434, 5122, 5123 as they are of Duration period
+only
+4244 is left
+plus
+1903 which shows as a child of 3465 in the presentation tree.
+
+Outstanding: 4244 and 1903 status.
+
+Bro References for Bro with Start/End
+-------------------------------------
+Handled via an extra final 'name' segment of '.start' or '.end' with none meaning '.end' to give End as the default.
+
+BrosStartEndWip.xlsx
+====================
+The BrosStartEndWip.xlsx SS and subsequent revisions also apply. (This is based on Charles's SS ConcreteElementsUK-Gaap2011-11-29v1.xlsx)
+The StartEnd tab defines what TxIds are summed to get from Start to End (or deducted to get from End to Start).
+This information is stored for a Bro in the BROs.SeBroIds list in BroId form.
+
+24.12.11 Extension
+==================
+Instant Tx Element Based Bros and Start/End Types
+-------------------------------------------------
+Following the 'Worked TB Answer 2 [III]' email of 24.12.11 we decided to have 3 Instant Types:
+
+1. Those that are Start End as per the Taxonomy. Have an SE sum list. Can be SumEnd or PostEnd.
+
+2. Those that are Start End in an accounting sense like 541 Cash at bank, 575 Cash in hand, and 3937 Prepayments etc = most of
+   the Instants that are not specifically SE via the Tx. 3937, 541, and 575 have no SE sum list. True for all Type 2s? Probably.
+   Must be PostEnd.
+
+3. Those that really have just one instant value, such as average number of staff. Assume for now that all these are Sch types.
+
+with the only difference between 1) and 2) as far as Braiins in concerned being to prevent the RG from generating a 'start' tag
+if a start balance from one of these is included in a report.
+
+For both 1) and 2) the Start value is set from the previous period End value.
+Further, 1) and 2) have a StartEnd type of one of the following:
+
+ SumEnd: End = Start + the Sum of the SE (SeBroIds) List of Bros, all of which have Duration Period (?? 136 for 3019 and 222 for 222 are Instant)
+         TB includes: Start balance AND the SE List Bros
+PostEnd: End is to be posted. For Type 1 Instants with an SE sum list the list provides a check, or means of calculating missing values.
+         TB includes: End balance but NOT the SE List Bros
+
+25.12.11 Extension; and again on 27.12.11 re Stock; revised 26.09.12 re wip changes
+==================
+Rather than use an instant type, an SE type, and an Instant bit, decided to extend the instant types to 4 and handle all via those.
+Internally bit settings in InBits are used to specify the differences:
+
+SEThe four Instant/StartEnd Types:
+SE
+Type    Bits
+No      InB_NotSE    Bro based on an Instant Tx element that is not StartEnd as per the Taxonomy, nor in an accounting sense
+                      i.e. a Bro that really has just One instant value, such as average number of staff.
+                     No SE List
+                     No Start = no use of DiMeId_Start = just End effectively
+                     Included in TB
+                     Tag: End (or a specific date??)
+
+SumEnd  InB_SE       Bro based on an Instant Tx element that is StartEnd as per the Taxonomy, listed in $StartEndTxIdsGA
+        InB_SumEnd   Has a SE List
+                     Start = previous period End and is RO unless for the first year of data in Braiins i.e. no prior year
+                     End = Start + the Sum of the SE List of Bros, all of which have Duration Period (?? 136 for 3019 and 222 are Instant)
+                     TB includes: Start balance AND the SE List Bros
+                     Tag: Start or End according to the Bro Reference
+                     Uses DiMeId_Start for Start handling, with End the default.
+
+PostEnd InB_SE       Bro based on an Instant Tx element that is StartEnd as per the Taxonomy, listed in $StartEndTxIdsGA
+        InB_PostEnd  Has a SE List
+                     Start = previous period End and is RO, wo the the first year of data in Braiins exception for SumEnd
+                     End is to be posted.
+                     The SE List provides a check, or means of calculating missing values.
+                     TB includes: End balance but NOT the SE List Bros.
+                     Tag: Start or End according to the Bro Reference
+                     Uses DiMeId_Start for Start handling, with End the default.
+
+Stock   InB_SE       Similar to PostEnd with the additional property of being a Stock Bro.
+        InB_PostEnd  Differences from PostEnd
+        InB_Stock    TB includes: P&L: Start and End with sign reversed
+                                   BS:  End
+                     Movement to be taken into account when checking that a posting journal balances.
+
+
+25.12.11 StartEnd Tx Id List Revised
+------------------------------------
+541 and 575, which were not SE by Tx but were added on 16.11.11 re their usage, removed as these now => Acc type SE Bros
+=> StartEnd Tx Id List for $StartEndTxIdsGA in /Com/inc/ConstantsTx.inc of:
+82,145,146,222,511,542,1110,1170,1172,1242,2002,2004,2120,2132,2155,2167,2223,2467,2805,2815,3019,3090,3092,3198,3278,3377,3379,3387,3388,3389,3465,3642,3696,3697,3984,4062,4239,4265,4267,4269,4397,4403,4536,4546,4551,4654,4655,4810,5022,5078,5092,5114,5121,5230,5234
+
+
+24.08.12 Both StartEnd and Tuple Member
+--------
+Non-slave Bro 4218 TxId 222 is both a StartEnd and Tuple Member Bro (TuMeId=360 of Tuple TupId=107)
+Non-slave Bro 7532 TxId 145 is both a StartEnd and Tuple Member Bro (TuMeId=181 of Tuple TupId=46)
+Non-slave Bro 7541 TxId 146 is both a StartEnd and Tuple Member Bro (TuMeId=187 of Tuple TupId=47)
+Non-slave Bro 8476 TxId 5230 is both a StartEnd and Tuple Member Bro (TuMeId=476 of Tuple TupId=145)
+Non-slave Bro 8511 TxId 5234 is both a StartEnd and Tuple Member Bro (TuMeId=486 of Tuple TupId=146)
+Non-slave Bro 8546 TxId 5121 is both a StartEnd and Tuple Member Bro (TuMeId=502 of Tuple TupId=150

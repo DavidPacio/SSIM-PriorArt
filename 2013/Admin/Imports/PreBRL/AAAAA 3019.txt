@@ -1,0 +1,7 @@
+﻿3019 test
+No DE Check
+ImportType:Replace
+
+StartEnd 3019 Summing Check
+Tx3019:start:TFAClasses.PlantMachinery:TFAOwnership.Leased		3019
+Tx136:TFAClasses.PlantMachinery:TFAOwnership.Leased	2 	1

@@ -1,0 +1,57 @@
+    <li><a href='Reg.htm' title='Register with Braiins'>Register</a></li>
+
+  <div id='LI' class='fr lilBox'>
+    <label for='Email'>Email:</label><input id='email' type=text size='30' maxlength='40'/><br>
+    <label for='PW' class='mt6'>Password:</label><input id='PW' name='PW' class='mt6' type=text size='12' maxlength='16'/>
+    <div id='LIB' class="btn fr" title='Member Login'><table><tr><td class=l></td><td class=c>Login</td><td class=r></td></tr></table></div>
+  </div>
+
+    <li class='DI' style='display:none'><a href='bdt/Start.htm' title='The Braiins Desktop: Produce Accounts, Reports, Support, Preferences, Account Maintenace, Buy Credits'>Braiins Desktop</a></li>
+    <li class='DO grey' title='Where it all happens - the Braiins Desktop for logged in site members'>Braiins Desktop</li>
+
+      <li><a href='FnB.htm' title='Braiins Features and Benefits'>Benefits</a></li>
+      <li><a href='Prices.htm' title='Braiins Prices'>Prices</a></li>
+      <li><a href='FAQs.htm' title='Frequently Asked Questions'>FAQs</a></li>
+      <li><a href='About.htm' title='About Us - About Braiins Ltd.'>About Us</a></li>
+      <li><a href='Policies.htm' title='Privacy and Security Policies'>Policies</a></li>
+      <li><a href='ToS.htm' title='Terms of Service'>Terms</a></li>
+      <li><a href='http://blog.Braiins.com/' title='The Braiins Blog'>Blog</a></li>
+      <li><a href='Sitemap.htm' title='Map of Braiins'>Sitemap</a></li>
+
+
+Footer section with full menu
+
+<div id='bottom'><div class='topB'>Back to top</div></div>
+<div id='footer'>
+<p class="pt05"><span class="lilBox"><a href='/' title='Home'>Home</a> <b>|</b> <a href="Sitemap.htm" title="Sitemap">Sitemap</a> <b>|</b> <a href="About.htm" title="About Us">About Us</a> <b>|</b> <a href='FnB.htm' title='Braiins Features and Benefits'>Benefits</a> <b>|</b> <a href='http://blog.Braiins.com/' title='The Braiins Blog'>Blog</a> <b>|</b> <a href="Contact.htm" title='Contact Us'>Contact Us</a> <b>|</b> <a href="FAQs.htm" title='Frequently Asked Questions'>FAQs</a> <b>|</b> <a href='Prices.htm' title='Braiins Prices'>Prices</a> <b>|</b> <a href="Policies.htm" title="Privacy and Security Policies">Policies</a> <b>|</b> <a href="ToS.htm" title="Terms of Service">Terms of Service</a></span></p>
+<p class='b mb0'>Copyright &copy; 2011 Braiins Limited, UK. All Rights Reserved.</p>
+</div>
+</div> <!-- /page -->
+</div> <!-- /wrapper -->
+<script type="text/javascript" src="js/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="js/Site.js"></script>
+</body>
+</html>
+
+============
+
+BDT.js topbar menu attempt as per jPolite but gave flashing problems
+  // topbar
+  /*
+  $('#topbar li').mouseenter(function(evt){
+    //if (!$(this).hasClass('on')) {
+      $(this).addClass('on')
+      //$(this).children('b').animate({opacity:0.9})
+      $(this).children('b').css({opacity:0.9})
+    //}else
+    //  evt.preventDefault();
+  })
+  $('#topbar li').mouseleave(function(evt){
+    //if ($(this).hasClass('on')) {
+      //$(this).children('b').animate({opacity:0})
+      $(this).children('b').css({opacity:0})
+      $(this).removeClass('on')
+    //}else
+    //  evt.preventDefault();
+  })
+  */

@@ -1,0 +1,320 @@
+Dimension Handling
+==================
+
+
+Consider a Hypercube 3 TangibleAssetDisposal BRO, with all these possible Dimensions:
+
+2    957    Consol    105 - Dimension - Consolidation
+3    4246    Restated    110 - Dimension - Restatements
+4    3397    OpActivities    120 - Dimension - Operating Activities
+5    1932    ExceptAdjusts    150 - Dimension - Exceptional Item Adjustments
+6    168    AmortAdjusts    160 - Dimension - Amortisation and Impairment Adjustments
+7    486    BizSegs    170 - Dimension - Business Segments
+10    4648    TFAClasses    210 - Dimension - Tangible Fixed Asset Classes
+11    4650    TFAOwnership    220 - Dimension - Tangible Fixed Asset Ownership
+39    5729    Countries
+
+Now, sure, global settings will knock out some, but we could still, in theory at least, end up with a long list of Dimension Members.
+
+Consider
+
+BS.Assets.TFAs.Disposals:TFAClasses.MotorCars:TFAOwnership.Leased:Consol.JV1:OpActivities.ContinuingOpsExclAcqs
+
+where BS.Assets.TFAs.Disposals is a BRO and the rest are four dimension members, just to make the point.
+
+Presumably a posting with that reference gets summed to all of
+
+1. 170 TFAClasses.MotorVehicles, 167 TFAClasses.Vehicles, 165 TFAClasses.VehiclesPlantMachinery, 159 TFAClasses [All]
+2. 184 TFAOwnership [TotalOwnedLeased]
+3. 7 Consol.ShareJVs, 6 Consol.ShareJVsAssocs, 5 Consol.GroupShareJVsExclAssocsTurnoverOnly
+4. 79 OpActivities.ContinuingOpsInclAcqs
+5. The BRO  base
+6. The BRO set
+
+so that the BRO ends up with Dimension Members of:
+
+TFAClasses.MotorCars
+TFAOwnership.Leased
+Consol.JV1:OpActivities
+ContinuingOpsExclAcqs
+TFAClasses.MotorVehicles
+TFAClasses.Vehicles
+TFAClasses.VehiclesPlantMachinery
+TFAClasses [All]
+TFAOwnership [TotalOwnedLeased]
+Consol.ShareJVs
+Consol.ShareJVsAssocs
+Consol.GroupShareJVsExclAssocsTurnoverOnly
+OpActivities.ContinuingOpsInclAcqs
+BRO base (no dimensions)
+
+all passed up for the set
+
+
+
+See also
+ Braiins RG DB.txt
+ ConstantsRg.inc
+ FuncsPost.inc    re packing/unpacking of BRO Idxs via PackBroIdx() and UnPackBroIdx()
+ BuildStructs.php re the setting dimeneion member types and building the dimension mapping arrays
+                  $DiMeMapA, $SetDiMeIdToDiMeIdMap, $SetDimOptsRangesA, $SetDimManPropDiMeIdsA
+ Dimension Map page at Utils
+
+Dimension Member Types
+======================
+Dimension Members as shown in the Dimensions Map have one of 4 types:
+0 or N Normal i.e. standard or default, not an S, P, or X special DiMe
+
+1 or S Set type for use in defining a 'dimension based set' e.g.
+       Officers.CoSec, Officers.Director1-Director40, Officers.PartnerLLP1-PartnerLLP20, TPAType.Accountants-Receivers
+
+2 or P Property type for use as a second dimension with a Set type first dimension
+       Officers.Chairman (419), Officers.CEO (420), Officers.ChairmanCEO (421),
+       Officers.ChiefPartnerLLP (422), Officers.CoSec (423),
+       Officers.CoSecretaryDirector (424), Officers.HighestPaidDirector (425),
+       OfficerType.Executive (487), OfficerType.Nonexecutive (488)
+
+3 or X Not ever user selectable being reserved for Braiins RG generation e.g. Officers.AllEntityOfficers
+
+Normal dims can also be used as a second dimension with a Set type first dimension
+
+Dimension Member Entity Types List
+==================================
+Dimension members can have an optional Entity Types list to restrict their use to the listed entity stypes.
+See Dimension 29, Officers, in the Dimensions Map.
+
+BRO References and Idxs
+=======================
+Braiins data is manipulated in arrays using BRO References (text/name references) which are converted to integer 'BroIdx' indices.
+
+A BRO Reference is a BRO Name followed by one or two dimension references in the form: ':DimensionShortName.MemberNormalisedName'
+  The Dimensions Map page lists these.
+  For the default dimension just ':DimensionShortName' is required
+  If DimensionShortName is the same as the first segment of the BRO name it may be ommitted
+  Examples: RevOp.Turnover                                 [No dims]
+            RevOp.Turnover:Restated.Amount                 [One dim]
+  Examples: SchInputEntity.ThirdPartyAgents.Properties:TPAType.Auditors:AddressType.Postal [Two dims]
+            RegisteredOffice.Properties:AddressType             [For default = MainAddress]
+            SchInputEntity.Officers.Name:.Director3                            [Short version of SchInputEntity.Officers.Name:Officers.Director3]
+
+A BroIdx or BRO Idx is the BroId (the BRO Id) + one or two dimension Ids packed into a single integer to be used as an array index.
+
+The two dimension Ids are DiMeId and SetDiMeId where:
+DiMeId    is the dimension member Id as shown in the DiMeId{,SetDiMeId} column of the Dimensions Map,
+          obtained from $DiMeMapA['DimensionShortName.MemberNormalisedName'][DiMeI_DiMeId]
+          e.g. Restated.Amount -> 74, IFAClasses.NetGoodwill -> 143, or Countries.UK -> 557
+
+SetDiMeId is the dimension member Id for a Set dimension as shown as the second Id in the DiMeId{,SetDiMeId} column of the Dimensions Map,
+          obtained from $DiMeMapA['DimensionShortName.MemberNormalisedName'][DiMeI_SetDiMeId]
+
+          They are called "Set Dimensions" because such dimensions define one of a group or set e.g. one of the possible 40 directors.
+
+          For Set dimensions to be used the BRO must have Set Dimension Options defined - see below.
+
+          DiMeI_SetDiMeId is a second mapping to a smaller number to assist with packing the three numbers (BroId, DiMeId, SetDiMeId) into a
+          single 32 bit int. Once 64 bit ints are in use this second level of mapping can be dispensed with and DiMeI_DiMeId used for both dims.
+          e.g. Officers.CoSec -> 49 mapped from 423, Officers.Director1 -> 50 mapped from 426 [As at 16.07.11. The mapped #s change as more dim sets get defined.]
+
+          The DiMeId of a SetDiMeId can be obtained via $SetDiMeIdToDiMeIdMap
+
+If a BRO ref has no dimensions then BroId == BroIdx and DiMeId = SetDiMeId = 0
+
+If a BRO ref has one dimension the dimension could be either a set dimension e.g. SchInputEntity.Officers.Name:.CoSec stored in SetDiMeId
+  or a normal dimension e.g. RevOp.Turnover:Restated.Amount stored in DiMeId
+  Note that it is NOT the case that dim 1 is held in DiMeId and dim 2 in SetDiMeId. Which is used depends on the type of dim it is.
+
+For a BRO ref to have two dimensions the first dimension must be a Set dimension type (stored in SetDiMeId),
+  and the second dimension (stored in DiMeId) must be a Property or Normal type dimension i.e. not a Set or X type.
+  Thus when a Bro Ref has two dimensions SetDiMeId is always dim 1 and DiMeId is always dim 2.
+  Examples: SchInputEntity.Officers.Properties:.Director1:OfficerType.Executive
+            Officers.DirectorRemuneration:.Director1:Restated.Amount
+
+Set Dimension Options
+---------------------
+Which Set dimensions can be used with a BRO are defined by its "Dimension Set Options" or "Dim Set Opts".
+See the notes at the top of a BROs List report for an up to date list of the options.
+
+Dimension Set Options are implemented via each BROs DimSetOpts field and the array $SetDimOptsRangesA which defines the range of DiMeIds
+which can be used for a given Dimension Set Option.
+
+Managed Second Dim
+------------------
+The second dimension of a BRO requiring/allowing a two dimension reference can be set to be 'managed', where which second dimensions are
+allowable varies (is managed) according to the first dimension choice, which itself is controlled by the Set Dimenion Options set for the BRO.
+As at 16.07.11 only one BRO uses this feature: SchInputEntity.Officers.Properties
+
+Using the SchInputEntity.Officers.Properties example:
+- If the first dim is Officers.Cosec then no second dim is allowed.
+- If the first dim is one of Officers.Director1-Director40 then the second dim can be one of:
+  Officers.Chairman (419), Officers.CEO (420), Officers.ChairmanCEO (421), Officers.CoSecretaryDirector (424),
+  Officers.HighestPaidDirector (425), OfficerType.Executive (487), or OfficerType.Nonexecutive (488)
+  [But Not the other Officers Property dims of Officers.AllEntityOfficers (418), Officers.ChiefPartnerLLP (422), or Officers.CoSec (423)]
+- If the first dim is one of Officers.PartnerLLP1-PartnerLLP20 then the second dim can only be Officers.ChiefPartnerLLP (422)
+
+For such BROs the Allowable Dims field in BROs List or BROs Edit is shown as '*'.
+
+Managed Second Dim is implemented via a BRO's BROs.Bit BroB_SetDimManProp and the array $SetDimManPropDiMeIdsA in conjunction with $SetDimOptsRangesA
+
+Entity Type
+===========
+An Entity type enum is to be set when the Entity is created, along with with other properties as per Charles' ideas
+in his "Zones vs Hypercubes and Dimensions" email of 29 May 2011:
+
+Example; if as part of the initial set up pages we know that there are no Restatements and or that this company is not
+ the parent company of a group then conditions can be restricted/made illegal right at the outset.
+
+In fact for some Dimensions it might be better not to control them within Zones at all, but make them Global in their inclusion or exclusion.
+Language
+Country
+Restated
+Group
+
+Global Settings
+===============
+Two values for each setting other than Entity Type:
+- In Use
+  set according to the existing data for the entity, taking all years into account i.e. recording if the dimension(s) are in use or not,
+  being set of Off if data exists, or On if no data exists, and  updated after every summing process i.e. after an import and after "posting"
+- Potential Use
+  entity settings for what is allowable in data entry, initially equal to the above In Use setting and set after the first import, but able to be edited via Entity Edit
+  Any Potential Use setting that is On can be turned Off i.e. the dimension(s) turned on
+  A Potential Use setting that is Off cannot be turned On i.e. the dimension(s) turned off if the In Use setting is Off
+
+To make it easier these could be presented to a user on an Inclusive rather than Exclusive basis.
+
+
+Setting            Dimensions Included if On, Excluded if Off  Comments
+EB_Group            1 Group, 2 Consol, 27 Subsidiaries         Parent of a group
+EB_Restated         3 Restated
+EB_BizSegs          7 BizSegs
+EB_IFAs             9 IFAClasses
+EB_FAIHoldings     12 FAIHoldings, 13 FAITypes
+EB_PensionSchemes  15 PensionSchemes, 16 ShareBasedPaymentSchemes
+EB_FinInstra       17 FinInstrValueType, 18 FinInstrCurrentNonCurrent, 19 FinInstrLevel, 20 FinInstrMvts
+EB_Maturities      21 Maturities
+EB_Acqs            22 Acqs, 23 AcqAssetsLiabilities
+EB_Disposals       24 Disposals
+EB_JVs             25 JVs
+EB_Assocs          26 Assocs
+EB_OtherInvests    28 OtherInterestsOrInvests
+EB_Countries       39 Countries                                Off: Base = UK for Wales, England etc
+EB_Currencies      40 Currencies                               Off: Base = GBP
+EB_Exchanges       41 Exchanges                                Can be set according to Entity Type
+EB_Languages       42 Languages                                Off: Base => English for Wales or Welsh?
+
+***   * *  ** **************          ****
+123456789012345678901234567890123456789012
+         1         2         3         4
+
+
+
+BROs DB Fields relating to Dimensions
+=====================================
+The BRO fields involved with dimension handling are:
+  TxId
+  HyId
+  DimSetOpts
+  ExInDims
+  Bits
+  ContextN
+  SignN
+  SortOrder
+  Zones
+
+See Braiins RG DB.txt for details.
+
+Restated Handling
+=================
+110 - Dimension - Restatements [3]                   Dimension Members
+  [A] 4245 Restated amount                           Restated.Amount
+    [A] 3965 Prior period increase (decrease)        Restated.PriorPeriodIncrDecr
+      [A] 50 Accounting policy increase (decrease)   Restated.AccountingPolicyIncrDecr
+      [A] 3178 Material error increase (decrease)    Restated.MaterialErrorIncrDecr
+    [A] 3463 Original amount [default]               Restated [OriginalAmount]
+
+Requirements:
+
+* If the global restated setting is off skip all of this. The rest of this applies when that setting is on.
+
+* Prohibit use in current year i.e. exclude 3 Restated from the current year
+
+* Allow posting in any prior year to Restated.AccountingPolicyIncrDecr or Restated.MaterialErrorIncrDecr but none of the others
+
+* Sum Restated.AccountingPolicyIncrDecr and Restated.MaterialErrorIncrDecr to Restated.PriorPeriodIncrDecr
+
+* Sum Restated [OriginalAmount] (from the year data) and Restated.PriorPeriodIncrDecr to Restated.Amount
+
+* Allow these restated dimensions to be used with any other valid valid Bro Ref in the prior year meaning that
+  Bro Refs will need to be able to handle 0, 1, 2, or 3 dimension members, versus 0, 1, or 2 now.
+
+* For a prior year with any restated posting(s) maintain and sum two sets of balances: original and restated
+
+* In the RG:
+
+  - for a normal ref to a prior year figure, whether a BRO, or a subtotal/total, use the restated set of balances
+    and compare each one against the original year value and use a Restated.Amount context if different. This means
+    that balance/column arithmetic in the RG will need to repeat all calcs for both the original and restated sets of balances.
+
+  - add "(Restated)" to the column heading for a section if any figure through to the next total involves restatement,
+    to be inserted on pass two via an Xref type mechanism.. (The RG makes three passes through the accounts.)
+
+  - for note use provide format access to all 5 restated dimension members, and when these are used, generate a
+    Restated [OriginalAmount], Restated.PriorPeriodIncrDecr etc context with the prior year period regardless of whether being outout
+    to this or previous year columns, as per section 5.6 of XBRL UK Detailed Tagging Information Version 1.0, dated 1 May 201
+
+Braiins Dimensions
+==================
+Dimension   Dimension Members
+Function    Admin
+            CoS
+            Distrib
+
+            with the sum of the dims = "Total Costs"
+
+Activity    Distrib
+            Farming
+            Manuf
+            Trading
+            Other
+
+Additional mapping required for Braiins Dimensions by Bro:
+ - TxId for each DiMe
+ - HyId to apply if different e.g. 13 for 2512 [9]
+
+Total Costs                                                               Admin                                                              CoS                Distrib
+[C] 2505 Hire and leasing of plant, equipment and vehicles, costs         [C] 2503 Hire and leasing of plant, equipment and vehicles         [C] 2504 Hire and  [C] 2507 Hire and
+  [C] 2512 [9,13] Hire and leasing of plant and machinery, costs            [C] 2510 Hire and leasing of plant and machinery                   [C] 2511 Hire a    [C] 2513 Hire a
+
+Handling of HighestPaidDirector and AllEntityOfficers Contexts
+--------------------------------------------------------------
+For BROs with context of RGC_Officer (Officers but not Officers.Aggregates)
+ and type Money
+ and where 'posting' with no dims is allowed via the BRO Dim Set Opt of '0' (DI_SetOpt_NoneOK):
+
+- If a dim is output e.g. for a specific Director
+  use RGC_Officer context unless the dim is for the director who has the HighestPaidDirector property set,
+  in which case use the HighestPaidDirector context that does not specify the director involved
+
+- If the total (no dims) is output -> RGC_AllOfficers context, whether it has dim balances or not
+
+BROs with context of RGC_AllOfficers (Officers.Aggregates) use the RGC_AllOfficers context in all cases.
+
+?? Restrict this HighestPaidDirector handling to Officers.DirectorRemuneration only?
+
+?? Will need to give the RG language a way of obtaining for a BRO:
+   - the biggest dim balance
+   - the sum of the other dim balances [Tho this could be obtained as the no dims balance - the biggest dim balance]
+
+Summing
+=======
+The summing algorithm checks
+
+ if such a BRO has child dims and if so:
+  * if a total (no dims) has been 'posted' check that the sum of the dim children = the total value
+  * if a total (no dims) has not been 'posted', set it to the sum of the dim children
+
+
+Zones
+=====
+All the above is to be subject to Zones override re allowable dimensions.
+

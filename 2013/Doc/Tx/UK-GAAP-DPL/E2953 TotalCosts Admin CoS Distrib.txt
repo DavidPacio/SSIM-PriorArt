@@ -1,0 +1,368 @@
+Total Costs                                                                   Admin                                                                              CoS                Distrib
+[A] 4765 Total costs [heading]                                                [A] 125 Administrative expenses [heading]                                          [A] 1032 Cost of   [A] 1742 Distribu
+[A] 1038 Costs, alternative subtotals [heading]                               [A] 124 Administrative expenses, alternative subtotals [heading]                   [A] 1029 Cost of   [A] 1741 Distribu
+  [C] 1667 Direct costs                                                         [C] 1668 Direct costs                                                              [C] 1669 Direct    [C] 1670 Direct
+  [C] 2764 Indirect costs                                                       [C] 2765 Indirect costs                                                            [C] 2766 Indire    [C] 2767 Indire
+  [C] 876 Cleaning and security                                                 [C] 877 Cleaning and security                                                      [C] 878 Cleanin    [C] 879 Cleanin
+  [C] 1853 Employment costs                                                     [C] 1854 Employment costs                                                          [C] 1855 Employ    [C] 1857 Employ
+    [C] 1671 Direct employment costs                                              [C] 1672 Direct employment costs                                                   [C] 1673 Dire      [C] 1674 Dire
+    [C] 2768 Indirect employment costs                                            [C] 2769 Indirect employment costs                                                 [C] 2770 Indi      [C] 2771 Indi
+  [C] 1914 Establishment costs                                                  [C] 1915 Establishment costs                                                       [C] 1916 Establ    [C] 1917 Establ
+  [C] 2377 General administration costs                                         [C] 2378 General administration costs                                              [C] 2379 Genera    [C] 2380 Genera
+  [C] 3022 Legal, accounting and other professional fees                        [C] 3023 Legal, accounting and other professional fees                             [C] 3024 Legal,    [C] 3025 Legal,
+  [C] 3518 Other direct costs                                                   [C] 3519 Other direct costs                                                        [C] 3520 Other     [C] 3521 Other
+  [C] 3559 Other indirect costs                                                 [C] 3560 Other indirect costs                                                      [C] 3561 Other     [C] 3562 Other
+  [C] 3911 Premises rent, rates and service costs                               [C] 3912 Premises rent, rates and service costs                                    [C] 3913 Premis    [C] 3914 Premis
+  [C] 4494 Staff training and recruitment costs                                 [C] 4492 Staff training and recruitment                                            [C] 4493 Staff     [C] 4495 Staff
+  [C] 4572 Subscriptions and donations                                          [C] 4573 Subscriptions and donations                                               [C] 4574 Subscr    [C] 4575 Subscr
+  [C] 4892 Transport costs                                                      [C] 4893 Transport costs                                                           [C] 4894 Transp    [C] 4895 Transp
+  [C] 4896 Transport and travel costs                                           [C] 4897 Transport and travel costs                                                [C] 4898 Transp    [C] 4899 Transp
+
+[C] 350 Bad debts written off costs                                           [C] 348 Bad debts written off                                                      [C] 349 Bad debts  [C] 351 Bad debts
+
+[C] 943 Computer software, IT consumables and maintenance costs               [C] 941 Computer software, IT consumables and maintenance                          [C] 942 Computer   [C] 944 Computer
+  [C] 937 Computer software costs                                               [C] 938 Computer software costs                                                    [C] 939 Compute    [C] 940 Compute
+  [C] 2545 IT and computer consumables costs                                    [C] 2543 IT and computer consumables                                               [C] 2544 IT and    [C] 2546 IT and
+* [C] 935 Computer and IT equipment repairs, renewals and maintenance costs     [C] 933 Computer and IT equipment repairs, renewals and maintenance                [C] 934 Compute    [C] 936 Compute
+*   [C] 931 Computer and IT equipment repairs and maintenance costs               [C] 929 Computer and IT equipment repairs and maintenance                          [C] 930 Compu      [C] 932 Compu
+*   [C] 927 Computer and IT equipment renewals and maintenance costs              [C] 925 Computer and IT equipment renewals and maintenance                         [C] 926 Compu      [C] 928 Compu
+* = also appears elsewhere. Added here, not there.
+
+
+[C] 964 Consumable items costs                                                [C] 962 Consumable items                                                           [C] 963 Consumabl  [C] 965 Consumabl
+[C] 1050 Courier services costs                                               [C] 1048 Courier services                                                          [C] 1049 Courier   [C] 1051 Courier
+
+[C] 1136 Data and telecommunications costs                                    [C] 1137 Data and telecommunications costs                                         [C] 1138 Data and  [C] 1139 Data and
+  [C] 1128 Data costs                                                           [C] 1129 Data costs                                                                [C] 1130 Data c    [C] 1131 Data c
+  [C] 4727 Telecommunications costs                                             [C] 4728 Telecommunications costs                                                  [C] 4729 Teleco    [C] 4730 Teleco
+
+[C] 1707 Discounts allowable                                                  [C] 1708 Discounts allowable                                                       [C] 1709 Discount  [C] 1710 Discount
+[C] 1711 Discounts receivable                                                 [C] 1712 Discounts receivable                                                      [C] 1713 Discount  [C] 1714 Discount
+
+[C] 1789 Donations costs                                                      [C] 1787 Donations                                                                 [C] 1788 Donation  [C] 1790 Donation
+  [C] 869 Charitable donations                                                  [C] 870 Charitable donations                                                       [C] 871 Charita    [C] 872 Charita
+  [C] 3882 Political donations, detailed P&L                                    [C] 3880 Political donations                                                       [C] 3881 Politi    [C] 3883 Politi
+
+[C] 2057 Fees and commissions payable                                         [C] 2058 Fees and commissions payable                                              [C] 2059 Fees and  [C] 2060 Fees and
+  [C] 895 Commissions payable                                                   [C] 896 Commissions payable                                                        [C] 897 Commiss    [C] 898 Commiss
+  [C] 3159 Management fees payable                                              [C] 3156 Management fees                                                           [C] 3157 Manage    [C] 3158 Manage
+  [C] 2384 General consultancy fees payable                                     [C] 2381 General consultancy fees                                                  [C] 2382 Genera    [C] 2383 Genera
+  [C] 3740 Patent registration fees payable                                     [C] 3737 Patent registration fees                                                  [C] 3738 Patent    [C] 3739 Patent
+  [C] 3029 Legal fees payable                                                   [C] 3026 Legal fees                                                                [C] 3027 Legal     [C] 3028 Legal
+  [C] 42 Accountancy fees payable                                               [C] 39 Accountancy fees                                                            [C] 40 Accounta    [C] 41 Accounta
+  [C] 3585 Other legal and professional fees payable                            [C] 3582 Other legal and professional fees                                         [C] 3583 Other     [C] 3584 Other
+
+Fixed Asset Expenses
+[A] 2193 For fixed asset expenses, see 'Operating costs related to fixed assets' note [cross-reference]
+[A] 4975 Use dimensions to distinguish individual classes of tangible and intangible assets, including goodwill, and owned and leased tangible assets [explanation]
+
+As per 2953: (No direct Total Costs equivalenets)
+Extended using hypercube 5 and 6 elements as below.
+                                                                              [A] 3406 Operating costs related to fixed assets [heading]                         [A] 3407 Operatin  [A] 3408 Operatin
+                                                                                [C] 172 [6,13] Amortisation and impairment (reversal) of intangible fixed assets   [C] 173 [6,13]     [C] 174 [6,13]
+                                                                                  [C] 175 Amortisation of intangible assets                                          [C] 176 Amort      [C] 177 Amort
+                                                                                  [C] 2577 Impairment loss (reversal) intangible fixed assets                        [C] 2578 Impa      [C] 2579 Impa
+                                                                                [C] 1260 [5,13] Depreciation and impairment (reversal) of tangible fixed assets    [C] 1261 [5,13]    [C] 1262 [5,13]
+                                                                                [C] 2431 Goodwill reversal on disposal of fixed assets                             [C] 2432 Goodwi    [C] 2433 Goodwi
+                                                                                [A] 4975 Use dimensions to distinguish individual classes of tangible ....         [A] 4975 Use di    [A] 4975 Use di
+
+615 - Hypercube - Intangible Asset Expenses [6]
+  [A] 2948 Items inheriting intangible asset expenses dimensions
+    [C] 171 [6] [Money Dr Duration] Amortisation and impairment (reversal) of intangible fixed assets
+      [C] 178 [6] [Money Dr Duration] Amortisation of intangible assets, expense
+      [C] 2576 [6] [Money Dr Duration] Impairment loss (reversal) intangible fixed assets
+        [C] 2556 [6] [Money Dr Duration] Impairment, intangible fixed assets
+        [C] 2590 [6] [Money Cr Duration] Impairment reversal, intangible fixed assets
+    [C] 172 [6,13] [Money Dr Duration] Amortisation and impairment (reversal) of intangible fixed assets, administrative expenses
+    x [C] 175 [13] [Money Dr Duration] Amortisation of intangible assets, administrative expenses
+    x [C] 2577 [13] [Money Dr Duration] Impairment loss (reversal) intangible fixed assets, administrative expenses
+    [C] 173 [6,13] [Money Dr Duration] Amortisation and impairment (reversal) of intangible fixed assets, cost of sales
+    x [C] 176 [13] [Money Dr Duration] Amortisation of intangible assets, cost of sales
+    x [C] 2578 [13] [Money Dr Duration] Impairment loss (reversal) intangible fixed assets, cost of sales
+    [C] 174 [6,13] [Money Dr Duration] Amortisation and impairment (reversal) of intangible fixed assets, distribution costs
+    x [C] 177 [13] [Money Dr Duration] Amortisation of intangible assets, distribution costs
+    x [C] 2579 [13] [Money Dr Duration] Impairment loss (reversal) intangible fixed assets, distribution costs
+    x = not included because of missing hypercube 6
+
+Lookup of 2948 on 03.03.12:
+615 - Hypercube - Intangible Asset Expenses [6]
+  [A] 2948 Items inheriting intangible asset expenses dimensions
+    [C] 171 [H 6] [Money Dr Duration] Amortisation and impairment (reversal) of intangible fixed assets
+      [C] 178 [H 6] [Money Dr Duration] Amortisation of intangible assets, expense
+      [C] 2576 [H 6] [Money Dr Duration] Impairment loss (reversal) intangible fixed assets
+        [C] 2556 [H 6] [Money Dr Duration] Impairment, intangible fixed assets
+        [C] 2590 [H 6] [Money Cr Duration] Impairment reversal, intangible fixed assets
+    [C] 173 [H 6,13] [Money Dr Duration] Amortisation and impairment (reversal) of intangible fixed assets, cost of sales
+      [C] 176 [H 6,13] [Money Dr Duration] Amortisation of intangible assets, cost of sales
+      [C] 2578 [H 6,13] [Money Dr Duration] Impairment loss (reversal) intangible fixed assets, cost of sales
+    [C] 174 [H 6,13] [Money Dr Duration] Amortisation and impairment (reversal) of intangible fixed assets, distribution costs
+      [C] 177 [H 6,13] [Money Dr Duration] Amortisation of intangible assets, distribution costs
+      [C] 2579 [H 6,13] [Money Dr Duration] Impairment loss (reversal) intangible fixed assets, distribution costs
+    [C] 172 [H 6,13] [Money Dr Duration] Amortisation and impairment (reversal) of intangible fixed assets, administrative expenses
+      [C] 175 [H 6,13] [Money Dr Duration] Amortisation of intangible assets, administrative expenses
+      [C] 2577 [H 6,13] [Money Dr Duration] Impairment loss (reversal) intangible fixed assets, administrative expenses
+
+Different from the above when the original 2953 work was done. ??
+Hypercube 6 now is included for all the x cases above. And the order is different. David, what changed?
+Anyway, it means that 175 etc should be included with BDs as Charles has done.
+
+==>
+
+[A] 3406 Operating costs related to fixed assets [heading]                    [A] 3407 Operatin  [A] 3408 Operatin
+[A] 3406 Fixed Assets Operating Costs]                                        [A] 3407           [A] 3408
+  [C] 171 [6] Amortisation and impairment (reversal) of intangible fixed assets [C] 172 [6,13] Amortisation and impairment (reversal) of intangible fixed assets   [C] 173 [6,13]     [C] 174 [6,13]
+    [C] 178 [6] Amortisation of intangible assets, expense          /- Without Braiins Function dim
+    [C] 2576 [6] Impairment loss (reversal) intangible fixed assets |
+      [C] 2556 [6] Impairment, intangible fixed assets              |
+      [C] 2590 [6] Impairment reversal, intangible fixed assets     |
+
+614 - Hypercube - Tangible Asset Expenses [5]
+  [A] 2959 Items inheriting tangible asset expenses dimensions
+    [C] 1259 [5] [Money Dr Duration] Depreciation and impairment (reversal) of tangible fixed assets
+      [C] 1268 [5] [Money Dr Duration] Depreciation of tangible fixed assets, expense
+      [C] 2581 [5] [Money Dr Duration] Impairment loss (reversal) of tangible fixed assets
+        [C] 2596 [5] [Money Dr Duration] Impairment of tangible fixed assets
+        [C] 2593 [5] [Money Cr Duration] Impairment reversal, tangible fixed assets
+    [C] 1260 [5,13] [Money Dr Duration] Depreciation and impairment (reversal) of tangible fixed assets, administrative expenses
+      [C] 1265 [5] [Money Dr Duration] Depreciation of tangible fixed assets, administrative expenses
+      [C] 2582 [5] [Money Dr Duration] Impairment loss (reversal) of tangible fixed assets, administrative expenses
+    [C] 1261 [5,13] [Money Dr Duration] Depreciation and impairment (reversal) of tangible fixed assets, cost of sales
+      [C] 1266 [5] [Money Dr Duration] Depreciation of tangible fixed assets, cost of sales
+      [C] 2583 [5] [Money Dr Duration] Impairment loss (reversal) of tangible fixed assets, cost of sales
+    [C] 1262 [5,13] [Money Dr Duration] Depreciation and impairment (reversal) of tangible fixed assets, distribution costs
+      [C] 1267 [5] [Money Dr Duration] Depreciation of tangible fixed assets, distribution costs
+      [C] 2584 [5] [Money Dr Duration] Impairment loss (reversal) of tangible fixed assets, distribution costs
+
+==>
+
+  [C] 1259 [5] Depreciation and impairment (reversal) of tangible fixed assets  [C] 1260 [5,13] Depreciation and impairment (reversal) of tangible fixed assets    [C] 1261 [5,13]    [C] 1262 [5,13]
+    [C] 1268 [5] Depreciation of tangible fixed assets, expense                   [C] 1265 [5] Depreciation of tangible fixed assets                                 [C] 1266 [5] D     [C] 1267 [5] D
+    [C] 2581 [5] Impairment loss (reversal) of tangible fixed assets              [C] 2582 [5] Impairment loss (reversal) of tangible fixed assets                   [C] 2583 [5] I     [C] 2584 [5] I
+      [C] 2596 [5] Impairment of tangible fixed assets         /- Without Braiins Function dim
+      [C] 2593 [5] Impairment reversal, tangible fixed assets  |
+  * [C] 2430 [9] Goodwill reversal on disposal of fixed assets                  [C] 2431 [13] Goodwill reversal on disposal of fixed assets                        [C] 2432 [13] Goodwi    [C] 2433 [13] Goodwi
+  * = added as hy 9 for main Bro, hy 13 for the Admin, CoA, Distrib DB Bros.
+
+
+[C] 2247 Freight and carriage costs                                           [C] 2245 Freight and carriage                                                      [C] 2246 Freight   [C] 2248 Freight
+
+The Admin, CoS, Distrib Gain (loss) elements do not have matching "Total Costs" element but they do have:
+
+[A] 3300 Net items, may be a credit or a cost [heading]
+  [C] 2277 [3,13] [Money Cr Duration] Gain (loss) from disposal of tangible fixed assets
+  [C] 2273 [4,13] [Money Cr Duration] Gain (loss) from disposal of intangible fixed assets
+  [C] 2220 [9,13] [Money Cr Duration] Foreign exchange gain (loss) recognised in profit and loss
+
+==>
+
+* [C] 2220 [9,13] Foreign exchange gain (loss) recognised in profit and loss    [C] 2319 [13] Gain (loss) on foreign currency transactions                         [C] 2320 [13] Gai  [C] 2321 [13] Gai
+  [C] 2273 [4,13] Gain (loss) from disposal of intangible fixed assets          [C] 2274 [4,13] Gain (loss) from disposal of intangible fixed assets               [C] 2275 [4,13] G  [C] 2276 [4,13] G
+  [C] 2277 [3,13] Gain (loss) from disposal of tangible fixed assets            [C] 2278 [3,13] Gain (loss) from disposal of tangible fixed assets                 [C] 2279 [3,13] G  [C] 2280 [3,13] G
+* = added as hy 9 for main Bro, hy 13 for the Admin, CoA, Distrib DB Bros.
+11.11.11 Main Bro changed to hy 13 as 2220[9] has def children
+
+[C] 2505 Hire and leasing of plant, equipment and vehicles, costs             [C] 2503 Hire and leasing of plant, equipment and vehicles                         [C] 2504 Hire and  [C] 2507 Hire and
+* [C] 2512 [9,13] Hire and leasing of plant and machinery, costs                [C] 2510 Hire and leasing of plant and machinery                                   [C] 2511 Hire a    [C] 2513 Hire a
+    [C] 2525 Hire of plant and machinery, operating leases, costs                 [C] 2523 Hire of plant and machinery, operating leases                             [C] 2524 Hire      [C] 2526 Hire
+    [C] 2529 Hire of plant and machinery, spot hire, costs                        [C] 2527 Hire of plant and machinery, spot hire                                    [C] 2528 Hire      [C] 2530 Hire
+  [C] 2492 Hire and leasing of computer and other equipment, costs              [C] 2490 Hire and leasing of computer and other equipment                          [C] 2491 Hire a    [C] 2493 Hire a
+    [C] 2480 Hire of computer and other equipment, operating leases, costs        [C] 2478 Hire of computer and other equipment, operating leases                    [C] 2479 Hire      [C] 2481 Hire
+    [C] 2484 Hire of computer and other equipment, spot hire, costs               [C] 2482 Hire of computer and other equipment, spot hire                           [C] 2483 Hire      [C] 2485 Hire
+  [C] 2496 Hire and leasing of motor vehicles, costs                            [C] 2494 Hire and leasing of motor vehicles                                        [C] 2495 Hire a    [C] 2497 Hire a
+    [C] 3012 Lease of motor vehicles, operating leases, costs                     [C] 3010 Lease of motor vehicles, operating leases                                 [C] 3011 Leas      [C] 3013 Leas
+    [C] 3016 Lease of motor vehicles, spot hire, costs                            [C] 3014 Lease of motor vehicles, spot hire                                        [C] 3015 Leas      [C] 3017 Leas
+    [C] 2488 Hire and leasing of cars, costs                                      [C] 2486 Hire and leasing of cars                                                  [C] 2487 Hire      [C] 2489 Hire
+      [C] 2472 Hire of cars, operating leases, costs                                [C] 2470 Hire of cars, operating leases                                            [C] 2471 Hi        [C] 2473 Hi
+      [C] 2476 Hire of cars, spot hire, costs                                       [C] 2474 Hire of cars, spot hire                                                   [C] 2475 Hi        [C] 2477 Hi
+  [C] 2500 Hire and leasing of other assets, costs                              [C] 2498 Hire and leasing of other assets                                          [C] 2499 Hire a    [C] 2501 Hire a
+    [C] 2516 Hire of other assets, operating leases, costs                        [C] 2514 Hire of other assets, operating leases                                    [C] 2515 Hire      [C] 2517 Hire
+    [C] 2520 Hire of other assets, spot hire, costs                               [C] 2518 Hire of other assets, spot hire                                           [C] 2519 Hire      [C] 2521 Hire
+* = added as hy 9 for main Bro, hy 13 for the Admin, CoA, Distrib DB Bros.
+
+[C] 2783 Insurance costs                                                      [C] 2781 Insurance                                                                 [C] 2782 Insuranc  [C] 2784 Insuranc
+- [C] 2791 Insurance on premises costs                                          [C] 2789 Insurance on premises                                                     [C] 2790 Insura    [C] 2792 Insura
+  [C] 2787 Insurance on plant, machinery and equipment costs                    [C] 2785 Insurance on plant, machinery and equipment                               [C] 2786 Insura    [C] 2788 Insura
+  [C] 3981 Professional indemnity insurance costs                               [C] 3979 Professional indemnity insurance                                          [C] 3980 Profes    [C] 3982 Profes
+- [C] 5032 Vehicle insurance costs                                              [C] 5030 Vehicle insurance                                                         [C] 5031 Vehicl    [C] 5033 Vehicl
+  [C] 3566 Other insurance costs                                                [C] 3564 Other insurance                                                           [C] 3565 Other     [C] 3567 Other
+- = also appear elsewhere. Added there, not here.
+
+[C] 3167 Marketing and advertising costs                                      [C] 3168 Marketing and advertising costs                                           [C] 3169 Marketin  [C] 3170 Marketin
+  [C] 3172 Marketing costs                                                      [C] 3173 Marketing costs                                                           [C] 3174 Market    [C] 3175 Market
+    [C] 882 Client training, including seminars, lectures and workshops costs     [C] 880 Client training, including seminars, lectures and workshops                [C] 881 Clien      [C] 883 Clien
+    [C] 3161 Market research costs                                                [C] 3162 Market research costs                                                     [C] 3163 Mark      [C] 3164 Mark
+    [C] 3717 PR expenses                                                          [C] 3718 PR expenses                                                               [C] 3719 PR e      [C] 3720 PR e
+    [C] 4328 Sales publications and videos costs                                  [C] 4326 Sales publications and videos                                             [C] 4327 Sale      [C] 4329 Sale
+    [C] 4839 Trade fairs and exhibitions costs                                    [C] 4837 Trade fairs and exhibitions                                               [C] 4838 Trad      [C] 4840 Trad
+    [C] 3589 Other marketing and sales costs                                      [C] 3590 Other marketing and sales costs                                           [C] 3591 Othe      [C] 3592 Othe
+  [C] 127 Advertising and promotional costs                                     [C] 128 Advertising and promotional costs                                          [C] 129 Adverti    [C] 130 Adverti
+
+[C] 3179 Materials costs                                                      [C] 3180 Materials costs                                                           [C] 3181 Material  [C] 3183 Material
+
+[C] 3602 Other office consumables costs                                       [C] 3600 Other office consumables                                                  [C] 3601 Other of  [C] 3603 Other of
+[C] 3604 Other office costs                                                   [C] 3605 Other office costs                                                        [C] 3606 Other of  [C] 3607 Other of
+
+[C] 3681 Other unexceptional operating costs                                  [C] 3612 Other operating costs                                                     [C] 3613 Other op  [C] 3614 Other op
+  [C] 213 Amount of other unexceptional operating cost                          [C] 205 Amount of other operating cost                                             [C] 206 Amount     [C] 207 Amount
+  [C] 1506 Description of other unexceptional operating cost                    [C] 1493 Description of other operating cost                                       [C] 1494 Descri    [C] 1495 Descri
+
+* [C] 3531 [11,13] [Money Ns Duration] Other exceptional operating costs      [C] 3532 Other exceptional operating costs                                         [C] 3533 Other ex  [C] 3534 Other ex
+    [C] 196 Amount of exceptional operating cost                                [C] 202 Amount of other exceptional operating cost                                 [C] 203 Amount     [C] 204 Amount
+    [C] 1393 Description of exceptional operating cost                          [C] 1484 Description of other exceptional operating cost                           [C] 1485 Descri    [C] 1486 Descri
+* = added as hy 11 for main Bro, hy 13 for the Admin, CoA, Distrib DB Bros.
+
+* [C] 3707 [10,13] Own work capitalised                                       [C] 3708 Own work capitalised                                                      [C] 3709 Own work  [C] 3711 Own work
+* = added as hy 10 for main Bro, hy 13 for the Admin, CoA, Distrib DB Bros.
+[C] 3721 Packaging material costs                                             [C] 3722 Packaging material costs                                                  [C] 3723 Packagin  [C] 3724 Packagin
+
+[C] 3902 Premises costs                                                       [C] 3903 Premises costs                                                            [C] 3904 Premises  [C] 3906 Premises
+* [C] 3900 Premises cleaning costs     [-> Cleaning]                            [C] 3898 Premises cleaning                                                         [C] 3899 Premis    [C] 3901 Premis
+* [C] 2791 Insurance on premises costs [-> Insurance                            [C] 2789 Insurance on premises                                                     [C] 2790 Insura    [C] 2792 Insura
+  [C] 4129 Rates on premises           [-> Rates]                               [C] 4130 Rates on premises                                                         [C] 4131 Rates     [C] 4132 Rates
+    [C] 447 Business rates on premises [-> Business rates]                        [C] 448 Business rates on premises                                                 [C] 449 Busin      [C] 450 Busin
+-   [C] 5067 Water rates                                                          [C] 5068 Water rates                                                               [C] 5069 Wate      [C] 5070 Wate
+  [C] 4202 Rent of premises            [-> Rent]                                [C] 4203 Rent of premises                                                          [C] 4204 Rent o    [C] 4205 Rent o
+* [C] 3925 Premises repairs, renewals and maintenance costs [-> Repairs...]     [C] 3923 Premises repairs, renewals and maintenance                                [C] 3924 Premis    [C] 3926 Premis
+*   [C] 3917 Premises repairs and maintenance costs         [-> Repairs...]       [C] 3915 Premises repairs and maintenance                                          [C] 3916 Prem      [C] 3918 Prem
+*   [C] 3921 Premises repairs and renewals costs            [-> Repairs...]       [C] 3919 Premises repairs and renewals                                             [C] 3920 Prem      [C] 3922 Prem
+  [C] 4336 Security costs                                                       [C] 4337 Security costs                                                            [C] 4338 Securi    [C] 4339 Securi
+  [C] 4348 Service charges on premises [-> Service charges]                     [C] 4349 Service charges on premises                                               [C] 4350 Servic    [C] 4351 Servic
+  [C] 4979 Use of residence for business purposes                               [C] 4980 Use of residence for business purposes                                    [C] 4981 Use of    [C] 4982 Use of
+  [C] 4990 Utility charges                                                      [C] 4991 Utility charges                                                           [C] 4992 Utilit    [C] 4993 Utilit
+    [C] 884 Coal charges                                                          [C] 885 Coal charges                                                               [C] 886 Coal       [C] 887 Coal
+    [C] 1810 Electricity charges                                                  [C] 1811 Electricity charges                                                       [C] 1812 Elec      [C] 1813 Elec
+    [C] 2251 Fuel oil charges                                                     [C] 2252 Fuel oil charges                                                          [C] 2253 Fuel      [C] 2254 Fuel
+    [C] 2373 Gas charges                                                          [C] 2374 Gas charges                                                               [C] 2375 Gas       [C] 2376 Gas
+    [C] 3060 Lighting, heating and power                                          [C] 3061 Lighting, heating and power                                               [C] 3062 Ligh      [C] 3063 Ligh
+    [C] 4356 Sewerage charges                                                     [C] 4357 Sewerage charges                                                          [C] 4358 Sewe      [C] 4359 Sewe
+*   [C] 5067 Water rates                                                          [C] 5068 Water rates                                                               [C] 5069 Wate      [C] 5070 Wate
+* = also appears elsewhere. Added here, not there.
+- = also appears elsewhere. Added there, not here.
+
+[C] 4107 Purchases                                                            [C] 4108 Purchases                                                                 [C] 4109 Purchase  [C] 4110 Purchase
+
+[C] 3963 Printing, postage and stationery costs                               [C] 3961 Printing, postage and stationery                                          [C] 3962 Printing  [C] 3964 Printing
+  [C] 3957 Printing and photocopying costs                                      [C] 3958 Printing and photocopying costs                                           [C] 3959 Printi    [C] 3960 Printi
+    [C] 3953 Printing costs                                                       [C] 3954 Printing costs                                                            [C] 3955 Prin      [C] 3956 Prin
+    [C] 3859 Photocopying costs                                                   [C] 3860 Photocopying costs                                                        [C] 3861 Phot      [C] 3862 Phot
+  [C] 3891 Postage costs                                                        [C] 3892 Postage costs                                                             [C] 3893 Postag    [C] 3894 Postag
+  [C] 4530 Stationery costs                                                     [C] 4528 Stationery                                                                [C] 4529 Statio    [C] 4531 Statio
+
+* [C] 4208 [9,13] Reorganisation and restructuring costs                        [C] 4209 Reorganisation and restructuring costs                                    [C] 4210 Reorgani  [C] 4211 Reorgani
+* = added as hy 9 for main Bro, hy 13 for the Admin, CoA, Distrib DB Bros.
+
+[C] 4216 Repairs, renewals and maintenance costs                              [C] 4214 Repairs, renewals and maintenance                                         [C] 4215 Repairs,  [C] 4218 Repairs,
+- [C] 3925 Premises repairs, renewals and maintenance costs                     [C] 3923 Premises repairs, renewals and maintenance                                [C] 3924 Premis    [C] 3926 Premis
+-   [C] 3917 Premises repairs and maintenance costs                               [C] 3915 Premises repairs and maintenance                                          [C] 3916 Prem      [C] 3918 Prem
+-   [C] 3921 Premises repairs and renewals costs                                  [C] 3919 Premises repairs and renewals                                             [C] 3920 Prem      [C] 3922 Prem
+- [C] 3900 Premises cleaning costs                                              [C] 3898 Premises cleaning                                                         [C] 3899 Premis    [C] 3901 Premis
+  [C] 3874 Plant and machinery repairs, renewals and maintenance costs          [C] 3872 Plant and machinery repairs, renewals and maintenance                     [C] 3873 Plant     [C] 3875 Plant
+    [C] 3866 Plant and machinery repairs and maintenance costs                    [C] 3864 Plant and machinery repairs and maintenance                               [C] 3865 Plan      [C] 3867 Plan
+    [C] 3870 Plant and machinery repairs and renewals costs                       [C] 3868 Plant and machinery repairs and renewals                                  [C] 3869 Plan      [C] 3871 Plan
+- [C] 5048 Vehicle repairs, renewals and maintenance costs                      [C] 5046 Vehicle repairs, renewals and maintenance                                 [C] 5047 Vehicl    [C] 5049 Vehicl
+-   [C] 5044 Vehicle repairs and maintenance costs                                [C] 5042 Vehicle repairs and maintenance                                           [C] 5043 Vehi      [C] 5045 Vehi
+-   [C] 5040 Vehicle renewals and maintenance costs                               [C] 5038 Vehicle renewals and maintenance                                          [C] 5039 Vehi      [C] 5041 Vehi
+- [C] 935 Computer and IT equipment repairs, renewals and maintenance costs     [C] 933 Computer and IT equipment repairs, renewals and maintenance                [C] 934 Compute    [C] 936 Compute
+-   [C] 931 Computer and IT equipment repairs and maintenance costs               [C] 929 Computer and IT equipment repairs and maintenance                          [C] 930 Compu      [C] 932 Compu
+-   [C] 927 Computer and IT equipment renewals and maintenance costs              [C] 925 Computer and IT equipment renewals and maintenance                         [C] 926 Compu      [C] 928 Compu
+  [C] 3008 Laundry costs                                                        [C] 3006 Laundry                                                                   [C] 3007 Laundr    [C] 3009 Laundr
+  [C] 2403 General maintenance costs                                            [C] 2401 General maintenance                                                       [C] 2402 Genera    [C] 2404 Genera
+- = also appears elsewhere. Added there, not here.
+
+* [C] 4231 [12,13] Research and development costs                               [C] 4232 Research and development costs                                            [C] 4233 Research  [C] 4234 Research
+* = added as hy 12 for main Bro, hy 13 for the Admin, CoA, Distrib DB Bros.
+11.11.11 Main Bro changed to hy 13 as 4231[12] has def children
+
+[C] 4298 Royalties payable, licence fees and similar charges                  [C] 4299 Royalties payable, licence fees and similar charges                       [C] 4300 Royaltie  [C] 4301 Royaltie
+
+[C] 4352 Services costs                                                       [C] 4353 Services costs                                                            [C] 4354 Services  [C] 4355 Services
+  [C] 59 Accreditation services costs                                           [C] 57 Accreditation services                                                      [C] 58 Accredit    [C] 60 Accredit
+  [C] 1013 Corporate finance services costs                                     [C] 1011 Corporate finance services                                                [C] 1012 Corpor    [C] 1014 Corpor
+  [C] 2906 Internal audit services costs                                        [C] 2904 Internal audit services                                                   [C] 2905 Intern    [C] 2907 Intern
+  [C] 3079 Litigation services costs                                            [C] 3077 Litigation services                                                       [C] 3078 Litiga    [C] 3080 Litiga
+  [C] 3646 Other services costs                                                 [C] 3644 Other services                                                            [C] 3645 Other     [C] 3647 Other
+  [C] 4169 Recruitment and remuneration services costs                          [C] 4167 Recruitment and remuneration services                                     [C] 4168 Recrui    [C] 4170 Recrui
+  [C] 4725 Technical services costs                                             [C] 4723 Technical services                                                        [C] 4724 Techni    [C] 4726 Techni
+    [C] 2549 IT services costs                                                    [C] 2547 IT services                                                               [C] 2548 IT s      [C] 2550 IT s
+  [C] 5004 Valuation and actuarial services costs                               [C] 5002 Valuation and actuarial services                                          [C] 5003 Valuat    [C] 5005 Valuat
+
+[A] 2190 For directors' remuneration totals and related figures - see 'Directors' Remuneration' in Directors' Report [cross-reference] i.e. the Hypercube 38 Directors Info section.
+Non Tx based main Bros (shown as [X]) used here for the "Total Costs" for Directors' Remuneration elements
+
+[C] 4453 Staff costs, detailed P&L                                            [C] 4451 Staff costs                                                               [C] 4452 Staff co  [C] 4455 Staff co
+  [C] 426 Bonuses                                                               [C] 427 Bonuses                                                                    [C] 428 Bonuses    [C] 429 Bonuses
+    [X] Directors' bonuses                                                        [C] 1687 Directors' bonuses                                                        [C] 1688 Dire      [C] 1689 Dire
+    [C] 430 Bonuses, staff                                                        [C] 4447 Staff bonuses                                                             [C] 4448 Staf      [C] 4449 Staf
+  [C] 494 Canteen costs                                                         [C] 495 Canteen costs                                                              [C] 496 Canteen    [C] 497 Canteen
+  [C] 899 Commissions payable to staff                                          [C] 900 Commissions payable to staff                                               [C] 901 Commiss    [C] 902 Commiss
+  [C] 917 Compensation for loss of office                                       [C] 918 Compensation for loss of office                                            [C] 919 Compens    [C] 920 Compens
+  [X] Directors' fees                                                           [C] 1690 Directors' fees                                                           [C] 1691 Direct    [C] 1692 Direct
+  [X] Directors' remuneration                                                   [C] 1694 Directors' remuneration                                                   [C] 1695 Direct    [C] 1696 Direct
+  [X] Directors' salaries                                                       [C] 1697 Directors' salaries                                                       [C] 1698 Direct    [C] 1699 Direct
+  [C] 1824 Employee benefit trust payments                                      [C] 1825 Employee benefit trust payments                                           [C] 1826 Employ    [C] 1827 Employ
+  [C] 1843 Employers' National Insurance costs                                  [C] 1841 Employers' National Insurance                                             [C] 1842 Employ    [C] 1848 Employ
+    [C] 1846 Employers' National Insurance, directors costs                       [C] 1844 Employers' National Insurance, directors                                  [C] 1845 Empl      [C] 1847 Empl
+    [C] 1851 Employers' National Insurance, staff costs                           [C] 1849 Employers' National Insurance, staff                                      [C] 1850 Empl      [C] 1852 Empl
+  [C] 1868 Entertaining of staff costs                                          [C] 1866 Entertaining of staff                                                     [C] 1867 Entert    [C] 1869 Entert
+  [C] 3661 Other staff general costs                                            [C] 3662 Other staff general costs                                                 [C] 3663 Other     [C] 3664 Other
+    [C] 209 Amount of other staff cost                                            [C] 210 Amount of other staff cost                                                 [C] 211 Amoun      [C] 212 Amoun
+    [C] 1501 Description of other staff cost                                      [C] 1502 Description of other staff cost                                           [C] 1503 Desc      [C] 1504 Desc
+  [C] 3796 Pensions costs, detailed P&L                                         [C] 3792 Pensions                                                                  [C] 3793 Pensio    [C] 3803 Pensio
+  * [C] 3794 [9,13] Pensions costs, defined benefit schemes                       [C] 3797 Pensions, defined benefit schemes                                         [C] 3798 Pens      [C] 3799 Pens
+  * = added as hy 9 for main Bro, hy 13 for the Admin, CoA, Distrib DB Bros.
+      [C] 1677 Director pensions, defined benefit schemes, costs                    [C] 1675 Director pensions, defined benefit schemes                                [C] 1676 Di        [C] 1678 Di
+      [C] 4474 Staff pensions, defined benefit schemes, costs                       [C] 4472 Staff pensions, defined benefit schemes                                   [C] 4473 St        [C] 4475 St
+  * [C] 3795 [9,13] Pensions costs, defined contribution schemes                  [C] 3800 Pensions, defined contribution schemes                                    [C] 3801 Pens      [C] 3802 Pens
+  * = added as hy 9 for main Bro, hy 13 for the Admin, CoA, Distrib DB Bros.
+      [C] 1681 Director pensions, defined contribution schemes, costs               [C] 1679 Director pensions, defined contribution schemes                           [C] 1680 Di        [C] 1682 Di
+      [C] 4478 Staff pensions, defined contribution schemes, costs                  [C] 4476 Staff pensions, defined contribution schemes                              [C] 4477 St        [C] 4479 St
+    [C] 3806 Pensions, other costs, detailed P&L                                  [C] 3804 Pensions, other costs                                                     [C] 3805 Pens      [C] 3807 Pens
+      [C] 1685 Director pensions, other costs, detailed P&L                         [C] 1683 Director pensions, other costs                                            [C] 1684 Di        [C] 1686 Di
+      [C] 4482 Staff pensions, other costs, detailed P&L                            [C] 4480 Staff pensions, other costs                                               [C] 4481 St        [C] 4483 St
+    [C] 3811 Pensions to former directors, costs                                  [C] 3809 Pensions to former directors                                              [C] 3810 Pens      [C] 3812 Pens
+  [C] 3968 Private health costs                                                 [C] 3969 Private health costs                                                      [C] 3970 Privat    [C] 3971 Privat
+* [C] 4190 [9,13] Redundancy costs                                              [C] 4191 Redundancy costs                                                          [C] 4192 Redund    [C] 4193 Redund
+* = added as hy 9 for main Bro, hy 13 for the Admin, CoA, Distrib DB Bros.
+  [C] 4443 Staff benefits in kind                                               [C] 4444 Staff benefits in kind                                                    [C] 4445 Staff     [C] 4446 Staff
+  [C] 4460 Staff expenses                                                       [C] 4461 Staff expenses                                                            [C] 4462 Staff     [C] 4463 Staff
+    [C] 4900 Travel and subsistence expenses                                      [C] 4901 Travel and subsistence expenses                                           [C] 4902 Trav      [C] 4903 Trav
+      [C] 2539 Hotel expenses                                                       [C] 2540 Hotel expenses                                                            [C] 2541 Ho        [C] 2542 Ho
+      [C] 4124 Rail, air, bus, taxi and related expenses                            [C] 4125 Rail, air, bus, taxi and related expenses                                 [C] 4126 Ra        [C] 4127 Ra
+      [C] 4464 Staff motor expenses                                                 [C] 4465 Staff motor expenses                                                      [C] 4466 St        [C] 4467 St
+      [C] 4468 Staff parking expenses                                               [C] 4469 Staff parking expenses                                                    [C] 4470 St        [C] 4471 St
+      [C] 4618 Subsistence expenses                                                 [C] 4619 Subsistence expenses                                                      [C] 4620 Su        [C] 4621 Su
+    [C] 1862 Entertaining expenses incurred by staff                              [C] 1863 Entertaining expenses incurred by staff                                   [C] 1864 Ente      [C] 1865 Ente
+    [C] 3657 Other staff expenses                                                 [C] 3658 Other staff expenses                                                      [C] 3659 Othe      [C] 3660 Othe
+  [C] 4484 Staff relocation costs                                               [C] 4485 Staff relocation costs                                                    [C] 4486 Staff     [C] 4487 Staff
+  [C] 4490 Staff training costs                                                 [C] 4488 Staff training                                                            [C] 4489 Staff     [C] 4491 Staff
+  [C] 4498 Staff welfare costs                                                  [C] 4496 Staff welfare                                                             [C] 4497 Staff     [C] 4499 Staff
+  [C] 4735 Temporary staff, casual wages and recruitment                        [C] 4736 Temporary staff, casual wages and recruitment                             [C] 4737 Tempor    [C] 4738 Tempor
+    [C] 4731 Temporary staff and casual wages                                     [C] 4732 Temporary staff and casual wages                                          [C] 4733 Temp      [C] 4734 Temp
+    [C] 4165 Recruitment costs                                                    [C] 4163 Recruitment                                                               [C] 4164 Recr      [C] 4166 Recr
+  [C] 5061 Wages and salaries, detailed P&L                                     [C] 5059 Wages and salaries                                                        [C] 5060 Wages     [C] 5062 Wages
+
+[C] 4557 Subcontractor costs                                                  [C] 4558 Subcontractor costs                                                       [C] 4559 Subcontr  [C] 4561 Subcontr
+
+[C] 4570 Subscriptions costs                                                  [C] 4568 Subscriptions                                                             [C] 4569 Subscrip  [C] 4571 Subscrip
+  [C] 4091 Publication and other information subscriptions costs                [C] 4089 Publication and other information subscriptions                           [C] 4090 Public    [C] 4092 Public
+  [C] 4578 Subscriptions to professional and trade bodies costs                 [C] 4576 Subscriptions to professional and trade bodies                            [C] 4577 Subscr    [C] 4579 Subscr
+
+[C] 4625 Sundry expenses                                                      [C] 4626 Sundry expenses                                                           [C] 4627 Sundry e  [C] 4628 Sundry e
+
+[C] 4629 Support and administration costs                                     [C] 4630 Support and administration costs                                          [C] 4631 Support   [C] 4632 Support
+  [C] 1134 Data processing costs                                                [C] 1132 Data processing                                                           [C] 1133 Data p    [C] 1135 Data p
+  [C] 2458 Health and safety costs                                              [C] 2459 Health and safety costs                                                   [C] 2460 Health    [C] 2461 Health
+  [C] 3756 Payroll processing costs                                             [C] 3754 Payroll processing                                                        [C] 3755 Payrol    [C] 3757 Payrol
+
+[C] 5050 Vehicle running costs                                                [C] 5051 Vehicle running costs                                                     [C] 5052 Vehicle   [C] 5054 Vehicle
+  [C] 5026 Vehicle fuel costs                              [-> Fuel]            [C] 5027 Vehicle fuel costs                                                        [C] 5028 Vehicl    [C] 5029 Vehicl
+* [C] 5032 Vehicle insurance costs                         [-> Insurance]       [C] 5030 Vehicle insurance                                                         [C] 5031 Vehicl    [C] 5033 Vehicl
+  [C] 3684 Other vehicle costs                             [-> Other]           [C] 3685 Other vehicle costs                                                       [C] 3686 Other     [C] 3687 Other
+  [C] 5036 Vehicle parking costs                           [-> Parking]         [C] 5034 Vehicle parking                                                           [C] 5035 Vehicl    [C] 5037 Vehicl
+* [C] 5048 Vehicle repairs, renewals and maintenance costs [-> Repairs...       [C] 5046 Vehicle repairs, renewals and maintenance                                 [C] 5047 Vehicl    [C] 5049 Vehicl
+*   [C] 5044 Vehicle repairs and maintenance costs         [-> Repairs...         [C] 5042 Vehicle repairs and maintenance                                           [C] 5043 Vehi      [C] 5045 Vehi
+*   [C] 5040 Vehicle renewals and maintenance costs        [-> Renewals...        [C] 5038 Vehicle renewals and maintenance                                          [C] 5039 Vehi      [C] 5041 Vehi
+* = also appears elsewhere. Added here, not there.
+
+[C] 5063 Warehouse and storage expenses                                       [C] 5064 Warehouse and storage expenses                                            [C] 5065 Warehous  [C] 5066 Warehous
+

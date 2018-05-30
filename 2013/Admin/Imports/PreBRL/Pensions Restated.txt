@@ -1,0 +1,12 @@
+Pensions Restated.txt
+StartYear: 4
+ImportType:Replace
+
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.DescrType,PensionSchemes.1,T.1	UK Gilts R	#Bro 6783
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,Restated.AcctPolicyIncr,T.1	10	#Bro 6784
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,Restated.AcctPolicyIncr,T.2	20	#Bro 6784
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.Type,PensionSchemes.1,T.1	34	#Bro 6785
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.Type,PensionSchemes.1,T.2	33	#Bro 6785
+
+# DE Balancing Posting
+Suspense,Restated.AcctPolicyIncr  	-30

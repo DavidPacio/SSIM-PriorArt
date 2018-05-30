@@ -1,0 +1,2222 @@
+• To Do Today started 13.10.13
+  ===========
+
+Eat more slowly - chew more.
+
+I am responsible. Don't gossip - be positive about others.
+
+Meditate a la Al Sears:
+Here’s the technique I gave Todd that the Marines and Special Forces use, and you can use too. One thing to remember is that the benefits come from being mindful and focusing your concentration.
+• Sit in a comfortable position, close your eyes.
+• Let your awareness settle on the movement of your breath.
+• Follow the in-breath and out-breath, perhaps by saying “breathing in, breathing out” quietly to yourself.
+• Sit upright, with spine straightened and chin tucked in, while you calmly observe your breath.
+• Do this for ten to fifteen minutes a day.
+
+Wednesday 02.04.14
+------------------
+  Veronica's at 1 pm for lunch, Facebook and Skype
+• Morning empty stomach supps
+• Walk
+  Exercises
+• WPC Supps
+  Water Maxine's plants
+  Check Update Goals doc and upload
+  Create Can Bigg and Histo [In progress]
+  Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress.]
+  Create Histo CansBiggerOnFlex.mq4
+  Create Histo BodsIncrOnFlex.mq4
+  Create Histo BodsBiggerOnFlex.mq4
+  Initialise all flex members
+  EoD
+   Meditate
+   Create Sam's WIP backup
+   Run eeBackup
+   Check junk email
+   Close Sam indicators
+   Eat/take any remaining Anatabloc and/or Chlorella tablets
+   Take melatonin
+   Brush teeth
+   Move cutting board off the bench top
+   Move clock to bathroom
+   Put plugs in kitchen and bathroom sinks plus ensure that bathroom shower and floor drains are covered, re cockroaches
+   Block door light
+   Shut down PC
+   Power off PC and phone handset-
+   Power off router
+
+Sunday 06.04.14
+---------------
+  Check for new MT4 build after setting up a new MQ account via demo.metaquotes.net:443
+  Saw off desk/table legs
+  Prepare for a week of bursting exercises
+
+Pending
+-------
+  To Kerry: Taboo broken re barefoot with red shorts to town; DHEA ordered
+  Order new keyboard, mouse, and earphones
+  Complain to NAB about international fees
+  Look at LEF CRWay
+  Ask for copy of Australian National Archives record for dad
+
+Each Sunday/Weekend
+===================
+  VPS: Stop POM
+       Download ticks
+       Windows Updates check
+       New build check
+       Any Bot/Indicator/Script updates
+       New Days file
+       Start Ticks running
+       Start POM
+  Check Centrelink for update of info ability
+  Check for new MT4 build locally
+
+============================================================================================================================
+
+Futures
+-------
+  Rent a car and take a trip to Smithfield/Cairns/Mossman re footrest, fridge, PC?
+  Order seaweed
+  Buy shorts and Ts online
+  Order "The Art of Being Free" by Wendy McElroy
+  Buy more $4 togs
+  Buy a spice grinder
+  Buy some towels and a blanket for the winter, the current blanket being in use as my blackout curtain
+  10 Kg dumbbells
+  http://naturepacific.com/ for next coconut oil order
+
+============================================================================================================================
+
+Tuesday 01.04.14
+----------------
+• Waking Supps
+• Walk
+  Exercises
+• WPC Supps
+• Water Maxine's plants
+• Update Goals doc
+• Pay Virgin
+• Hans and Anna at 5 pm
+  Create Can Bigg and Histo [In progress]
+  Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress.]
+  Create Histo CansBiggerOnFlex.mq4
+  Create Histo BodsIncrOnFlex.mq4
+  Create Histo BodsBiggerOnFlex.mq4
+  Initialise all flex members
+  EoD
+
+Monday 31.03.14
+---------------
+• Waking Supps
+• Walk
+  Exercises
+• WPC Supps
+• VPS: Check start of Ticks
+• Check for new MT4 build [Build 628 27 Mar 2014. MetaEditor Build 915 27 Mar 2014.
+                           Needed to use a new MQ account via demo.metaquotes.net:443 as the Beta one demo.metaquotes.net:444 appears to have shut down.]
+• Remove leaves from pool filter
+• Water Maxine's plants
+• Create News files from 1st Feb
+• Check local timezone calcs in VPS logs. [Calcs are correct. Reason for the 1 hour difference on the 2014.03.10 start was that I started Ticks running
+                                           at Local time: 2014.03.09 00:42:42 i.e. before the 2 am switch to DST on that day.]
+  Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress.]
+• Create Can Bigg and Histo [In progress]
+  Create Histo CansBiggerOnFlex.mq4
+  Create Histo BodsIncrOnFlex.mq4
+  Create Histo BodsBiggerOnFlex.mq4
+  Initialise all flex members
+• EoD
+
+Sunday 30.03.14
+---------------
+• Supps free day
+• Walk
+• Exercises [Well sort of - 1.5 hour walk in the sun with lots of wading, far out at low tide]
+• VPS: Create /Inputs/OpenDays_Default.ini
+•      Windows Updates check
+•      New build check
+•      Any Bot/Indicator/Script updates
+•      Start Ticks running
+•      Start POM
+• Unblock washbasin drain
+• Remove leaves from pool filter
+• Water Maxine's plants
+• Order DHEA from eVitamins
+• Renew LEF & order Astaxanthin + Melatonin to the extent of the $95 credit
+• Order Okinawa green tea from Okinawa Delight
+• Order tea infuser, Victorinox knife, pinch pots (for salt) from Home Depot
+• Bring copied Tennesha FB messages up to date
+• Email T re her mother
+• Harry's quote on entrepreneurs
+  Create News files from 1st Feb
+  Check local timezone calcs in VPS logs
+  Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress.]
+  Create Can Bigg and Histo
+  Create Histo CansBiggerOnFlex.mq4
+  Create Histo BodsIncrOnFlex.mq4
+  Create Histo BodsBiggerOnFlex.mq4
+  Initialise all flex members
+  EoD
+
+Saturday 29.03.14
+-----------------
+• Supps free day
+• Walk
+  Exercises
+• VPS: Stop POM
+•      Download ticks
+  To kerry: taboo broken re barefoot with red shorts to town
+• Remove leaves from pool filter
+• Water Anna's plants
+• Sweep out laundry
+• Tidy the drive
+• Water Maxine's plants
+• IGA shopping
+  Create News files from 1st Feb
+  Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress.]
+  Create Can Bigg and Histo
+  Create Histo CansBiggerOnFlex.mq4
+  Create Histo BodsIncrOnFlex.mq4
+  Create Histo BodsBiggerOnFlex.mq4
+  Initialise all flex members
+  EoD
+
+Friday 28.03.14
+---------------
+• Waking supps
+• Banking and pay rent [If get internet back!]
+• Walk
+  Exercises
+• WPC supps
+• Remove leaves from pool filter
+  Water Maxine's plants
+  Create News files from 1st Feb
+• Improve Can functions granulation and defines; SetCanInfoValues() -> CanInfo.mq4; EOD and CAN_PARTS added; more use made of NEWS;
+    NewDay.mq4 and NewWeek.mq4 retired; NEW_WEEK_OK -> MULTI_WEEK_RUN
+  Change VPS card
+  Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress.]
+  Create Can Bigg and Histo
+  Create Histo CansBiggerOnFlex.mq4
+  Create Histo BodsIncrOnFlex.mq4
+  Create Histo BodsBiggerOnFlex.mq4
+  Initialise all flex members
+  EoD
+
+
+Thursday 27.03.14 [No internet for the whole day!]
+-----------------
+• Waking supps
+• Walk
+  Exercises
+• WPC supps
+• Remove leaves from pool filter
+• Water Maxine's plants
+• Start creating News files
+• Update News.mq4
+• Fix: week times lines gone missing; news event descriptions wrong for prior weeks
+• Remove Trend and Sig calls from NE.mq4
+• Change SetWeekTimes() in Times.mq4 to read /Inputs/OpenDays_Default.ini if a week specific OpenDays ini file does not exist.
+  Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress.]
+  Create Can Bigg and Histo
+  Create Histo CansBiggerOnFlex.mq4
+  Create Histo BodsIncrOnFlex.mq4
+  Create Histo BodsBiggerOnFlex.mq4
+  Initialise all flex members
+• EoD
+
+Wednesday 26.03.14
+------------------
+• Waking supps
+• Walk
+• Exercises [Claps on walk]
+• WPC supps
+• Remove leaves from pool filter
+• Put bins out
+• Bring bins back in
+• Water Maxine's plants
+• Start creating News files [In progress]
+• Update News.mq4           [In progress]
+• Create NE.mq4 to draw News Event time lines
+  To fix tomorrow: week times lines gone missing; news event descriptions wrong for prior weeks
+  Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress.]
+  Create Can Bigg and Histo
+  Create Histo CansBiggerOnFlex.mq4
+  Create Histo BodsIncrOnFlex.mq4
+  Create Histo BodsBiggerOnFlex.mq4
+  Initialise all flex members
+• EoD
+
+Tuesday 25.03.14
+----------------
+• Waking supps
+• Walk
+  Exercises
+  WPC supps
+• Remove leaves from pool filter
+• Start creating News files [In progress]
+• Update News.mq4           [In progress]
+• Talk with Charles on Skype in the eveing [2 hours]
+  Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress.]
+  Create Can Bigg and Histo
+  Create Histo CansBiggerOnFlex.mq4
+  Create Histo BodsIncrOnFlex.mq4
+  Create Histo BodsBiggerOnFlex.mq4
+  Initialise all flex members
+  EoD
+
+Monday 24.03.14
+---------------
+• Waking supps
+• Walk
+• Dumbbell exercises [Small one + beach walk claps!]
+• WPC supps
+• Remove leaves from pool filter
+• VPS: Check Ticks start
+• Start creating News files [In progress]
+• Update News.mq4           [In progress]
+  Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress.]
+  Create Can Bigg and Histo
+  Create Histo CansBiggerOnFlex.mq4
+  Create Histo BodsIncrOnFlex.mq4
+  Create Histo BodsBiggerOnFlex.mq4
+  Initialise all flex members
+• EoD
+
+Sunday 23.03.14
+-----------------
+• Supps free day apart from Anatabloc
+• Walk
+• Beach exercises [Ride to town!]
+• Measure weight etc
+• VPS: Any Bot/Indicator/Script updates
+•      Start Ticks running incl for AUDUSD
+•      Start POM
+• Remove leaves from pool filter
+• Town trip for small Coles shop
+• Glue up the old fridge
+• Read the 7 day Abs E-Book [Well, the start of it as far as day 1]
+  Start creating News files
+• EoD
+
+Saturday 22.03.14
+-----------------
+• Supps free day
+• Walk
+• Beach exercises
+• VPS: Stop POM
+•      Download ticks
+•      Windows Updates check [None]
+•      New build check [Build 620 20 Mar 2014]
+•      New Days file
+• New build check locally [Build 620 20 Mar 2014, MetaEditor Build 912 20 Mar 2014]
+• Remove leaves from pool filter
+• Water plants
+• Sweep out laundry
+• Tidy drive
+• Fix Cans Trend plot problem [Movement on an empty Can fault]
+• Look at BO sites [http://en.demo.highlow.net/ looks interesting tho no 60 sec options (15 mins and one hour) - try demo when market is open.]
+• EoD
+
+Friday 21.03.14
+---------------
+• Waking supps
+• Pay rent
+• Walk
+• Beach exercises [Well, sort of. Claps]
+• WPC supps
+• Remove leaves from pool filter
+• Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress.]
+  Create Can Bigg and Histo
+  Create Histo CansBiggerOnFlex.mq4
+  Create Histo BodsIncrOnFlex.mq4
+  Create Histo BodsBiggerOnFlex.mq4
+  Initialise all flex members
+  EoD
+
+Thursday 20.03.14
+-----------------
+• Waking supps
+• Walk [Afternoon for 5 pm low tide]
+• Beach exercises [Dumbbell exercises on balcony due to rain]
+• WPC supps
+• Remove leaves from pool filter
+• Order Banaban coconut crunch
+• Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress.]
+  Create Histo CansBiggerOnFlex.mq4
+  Create Histo BodsIncrOnFlex.mq4
+  Create Histo BodsBiggerOnFlex.mq4
+  Initialise all flex members
+• EoD
+
+Wednesday 19.03.14
+------------------
+• Waking supps
+• Walk
+• Dumbbell exercises [Run on walk instead]
+• WPC supps
+• Remove leaves from pool filter
+• Take green bins out
+• Take bins in
+• Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress.]
+• Create Histo CansOnFlex.mq4
+  Create Histo CansBiggerOnFlex.mq4
+  Initialise all flex members
+• EoD
+
+
+Tuesday 18.03.14
+----------------
+• Waking supps
+• Walk
+  Dumbbell exercises
+• WPC supps
+• Remove leaves from pool filter
+• Water plants
+• Take yellow bins out
+• Send IBM follow-up email suggestion to Keith Cleland
+• IGA for extra power cables etc
+• Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress]
+• Create Histo CansIncrOnFlex.mq4
+  Initialise all flex members
+• EoD
+
+Monday 17.03.14
+---------------
+• Waking supps
+• Walk
+  Beach exercises [During afternoon sunny low tide walk]
+• WPC supps
+• VPS: Check that Ticks is running
+• Woolworths delivery due 9:00 to 12:00
+  Remove leaves from pool filter
+• Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress]
+  Initialise all flex members
+• EoD
+
+Sunday 16.03.14
+---------------
+• Waking supps
+• Walk
+• Beach exercises [During afternoon sunny low tide walk]
+• WPC supps
+• Remove leaves from pool filter
+• 7:30 return bar fridge from #4 to storeroom
+• VPS: New build check
+•      Start Ticks running
+•      Start POM
+•      Change password
+• Check for new MT4 build locally
+• Catch up on email
+  Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress]
+  Initialise all flex members
+• Change OpenDays input to ClosedDays default none? [Added to SamToDoAndThoughts.txt]
+  EoD
+
+Saturday 15.03.14
+-----------------
+• Waking supps
+• Walk
+  Beach exercises [Moving fridge from #4 instead. Now have a fridge, and a reorganised room.]
+• WPC supps
+• Remove leaves from pool filter
+• Sweep out laundry
+• Water plants
+• Adjust Ticks for IC Markets change to disable trading for a 4 minute rollover period from 23:58:59 to 00:03:00
+• IGA shopping
+• Do laundry
+• Woolworths online shopping
+• VPS: Stop POM
+•      Download ticks
+•      Windows Updates check [Yes, 5 updates installed]
+•      Any Bot/Indicator/Script updates
+•      New Days file
+• Check Centrelink for update of info ability [Now shown as divorced. Pension increased too. But still cannot update personal info.]
+  Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress]
+  Initialise all flex members
+  Change OpenDays input to ClosedDays default none?
+  EoD
+
+Friday 14.03.14
+---------------
+  Waking supps [Skipped]
+• Banking
+• Pay rent
+• Walk
+• Beach exercises [Run]
+• WPC supps
+• Remove leaves from pool filter
+• Try cansIncr and cansBigger in the trend dirn. Plus counts? [In progress]
+  Initialise all flex members
+• EoD
+
+Thursday 13.03.14
+-----------------
+  Waking supps [Skipped today]
+• Walk
+• Balcony dumbbell exercises. Do them, David!! [At last!]
+• WPC supps
+• Remove leaves from pool filter
+• Flat inspection 10 - 12
+• Ask Kualo about move
+• Try cansIncr and cansBigger in the same dirn only. [Done plus the four Histo indicators. Doesn't look useful. On trend better? But lagging issues. Decision tomorrow.]
+  Resume work on CanSig
+  EoD
+
+Wednesday 12.03.14
+------------------
+• Waking supps
+• Walk [Afternoon]
+  Balcony dumbbell exercises. Do them, David!!
+  WPC supps
+• Remove leaves from pool filter
+• Create Histo CanType.mq4
+• Create Histo Vol.mq4
+• Create Histo Volatility.mq4
+• Create Histo NumFlat.mq4
+• Create Histo CansIncr.mq4
+• Create Histo CansBigger.mq4
+• Create Histo BodsIncr.mq4
+• Create Histo BodsBigger.mq4
+  Resume work on CanSig
+  EoD
+
+Tuesday 11.03.14
+----------------
+• Waking supps [No supps day as didn't have one on Sunday]
+• Walk
+  Balcony dumbbell exercises
+• WPC supps
+• Remove leaves from pool filter
+• Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats? [Changed to keeping all ticks for the run in TicksRA[] which means no duplicate Tidx's in a run.]
+• Resume work on CanSig. Think about it!
+  EoD
+
+Monday 10.03.14
+---------------
+• Waking supps
+• Walk
+  Balcony dumbbell exercises
+• WPC supps
+• Check Centrelink for update of info ability
+• VPS: Check ticks start
+• MT4_2 Upgrade check [Build 616 6 Mar 2014, MetaEditor Build 904 6 Mar 2014]
+• Remove leaves from pool filter
+• Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt [Left as it is.]
+• Create Histo Volatility
+•        Histo CanSig
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+• Add colours to Can Trend via the inputs ini [No. Skip it. Not important.]
+• EoD
+
+Sunday 09.03.14
+---------------
+• Waking supps
+• Walk
+  Balcony dumbbell exercises
+• WPC supps
+• VPS: Windows Updates check
+•      MT4_2 Upgrade check [Build 616]
+•      New Days file
+•      Start Ticks running
+•      Start POM
+• Get CanTrend finished [Finally!]
+• Remove leaves from pool filter
+• Email catchup
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Add colours to Can Trend via the inputs ini
+  EoD
+
+Saturday 08.03.14
+-----------------
+• Waking supps
+• Walk
+  Balcony dumbbell exercises
+• WPC supps
+• VPS: Stop POM
+•      Download ticks
+•      Any Bot/Indicator/Script updates
+• Fix what went wrong with Ticks start at VPS on 03.03.14
+• Get CanTrend finished ! [Well, not quite, but close now...]
+• Remove leaves from pool filter
+• Water pot plants
+• Sweep out laundry
+• Tidy drive
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Add colours to Can Trend via the inputs ini
+  EoD
+
+Friday 07.03.14
+---------------
+• Waking supps
+• Pay rent
+- Walk [No! Day messed up by non-delivery of wine. Took a town trip to collect it, sent off the D blood sample, got watch battery replaced, bought new ear plugs.
+        Lodged complaint with Australia Post.]
+  Balcony dumbbell exercises
+• WPC supps
+• Continue to improve CanTrend [In progress.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Add colours to Can Trend via the inputs ini
+• EoD
+
+Thursday 06.03.14
+-----------------
+• Waking supps
+• Walk
+  Balcony dumbbell exercises
+• WPC supps
+• Continue to improve CanTrend [In progress. Started new approach using multiple Dn/Up TFs until one is chosen, with an in between NT section if required. No "Flat" Flexes.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Add colours to Can Trend via the inputs ini
+  EoD
+
+Wednesday 05.03.14
+------------------
+• Waking supps excl B6
+• Walk
+  Balcony dumbbell exercises
+• Check for new MT4 build
+• Continue to improve CanTrend [In progress. Started new approach using multiple Dn/Up TFs until one is chosen, with an in between NT section if required. No "Flat" Flexes.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Add colours to Can Trend via the inputs ini
+  EoD
+
+Tuesday 04.03.14 Birthday!
+----------------
+• Waking supps excl B6
+• Walk
+  Balcony dumbbell exercises
+• Check for new MT4 build [Build 614. 3 Mar 2014. MetaEditor Build 900 28 Feb 2014]
+  Continue to improve CanTrend [In progress]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Add colours to Can Trend via the inputs ini
+  EoD
+
+Monday 03.03.14
+---------------
+• Waking supps excl B6
+• Walk
+  Balcony dumbbell exercises
+• Check for new MT4 build
+• VPS: Check that Ticks has started running ok [A bit late - around 14:00 - and Ticks wasn't running damn. Ticks() error with time difference of -3601 seconds - NY was deduced
+  to be running on DST but the DST change isn't until next week. Recompiled to skip the test. Must check this out before next Monday.]
+• IGA/Pharmacy shopping and clean wax out of ears
+  Continue to improve CanTrend [In progress]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Add colours to Can Trend via the inputs ini
+  EoD
+
+Sunday 02.03.14
+---------------
+• Waking supps excl B6
+• No supps - a supps free day.
+• Walk
+• Beach exercises [2nd long afternoon walk at low tide]
+- VPS: MT4_2 Upgrade check [No! Not in view of local troubles with build 613]
+-      Any Bot/Indicator/Script updates [No]
+•      New Days file
+•      Start Ticks running
+•      Start POM
+• Check for new MT4 build [Build 613 27 Feb 2014, MetaEditor Build 893 27 Feb 2014]
+• Check Centrelink for update of info ability. [Not visible! No Home page.]
+• Email catchup
+  Continue to improve CanTrend [In progress]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Add colours to Can Trend via the inputs ini
+  Watch "Nothing" on SBS
+  EoD
+
+Saturday 01.03.14
+-----------------
+• Waking supps excl B6
+• Pre-walk supps
+• Walk
+• Beach exercises [2nd long afternoon walk at low tide]
+• WPC supps
+• Download the week's ticks
+• VPS: Stop POM
+•      Windows Updates check
+• Renew Kaspersky
+• Install new Kaspersky
+• Pay Virgin
+• Place Naked Wines Australia order
+• Place Coles online order
+  Continue to improve CanTrend [In progress]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Add colours to Can Trend via the inputs ini
+  EoD
+
+Friday 28.02.14
+---------------
+• Waking supps excl B6
+• Banking
+• Pay rent
+• WPC order
+- Pre-walk supps
+• Walk
+• Beach exercises [2nd long afternoon walk at low tide]
+• WPC supps
+• Continue to improve CanTrend [In progress]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+• Produce the on chart version of Can Trend [In progress with sections drawing incorrectly. See if can stop sections drawing by using just one EMPTY_VALUE wo having to draw them all. Could not get section drawing to work. Done by plotting points using line style.]
+  Add colours to Can Trend via the inputs ini
+• EoD
+
+Thursday 27.02.14
+-----------------
+• Waking supps
+  Pre-walk supps
+• Walk
+  Beach exercises
+• WPC supps
+• Continue to improve CanTrend [In progress]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+• Produce the on chart version of Can Trend [In progress with sections drawing incorrectly. See if can stop sections drawing by using just one EMPTY_VALUE wo having to draw them all.]
+• Bit, Indicator and Script name defines made to use the same name: NAME with NameS set to NAME in InitialiseGlobals()
+• LogFileNameS added to allow different names for CanTrend and Can Trend Histo while using the same inputs file, whose name was previously being used as the start of the log file name.
+  Add colours to Can Trend via the inputs ini
+  EoD
+
+Wednesday 26.02.14
+------------------
+• Waking supps
+• Check for new MT4 build
+• Pre-walk supps
+• Walk [Two today]
+- Beach exercises
+• WPC supps
+• Continue to improve CanTrend [In progress]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+• EoD
+
+Tuesday 25.02.14
+----------------
+• Waking supps
+• Check for new MT4 build
+• Pre-walk supps
+• Walk
+  Balcony exercises
+• WPC supps
+• Continue to improve CanTrend [In progress]
+• - take cumulative Flex values into account
+• - do the look back for best Flex point at tentFlex addition or move time rather than at New Flex time
+• - check the convert cases [Gone]
+• Get CanSig working and use that to improve the flex logic, including possibly a dynamic learning element to it all. [In progress. Plan changed. CanTrend based on just mvt and numFlat. Will use CanSig for a separate prediction.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+• EoD
+
+Monday 24.02.14
+---------------
+• Waking supps
+• Check for new MT4 build
+• Pre-walk supps
+  Walk
+  Balcony exercises
+• WPC supps
+• Check that Ticks is running at the VPS
+• Continue to improve CanTrend [In progress]
+  - take cumulative Flex values into account
+  - do the look back for best Flex point at tentFlex addition or move time rather than at New Flex time
+  - check the convert cases
+  Get CanSig working and use that to improve the flex logic, including possibly a dynamic learning element to it all. [In progress]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+• EoD
+
+Sunday 23.02.14
+---------------
+- Waking supps [No. Having a supps free day after being sick following Beach Shack tapas]
+• Walk
+• Post to LinkedIn for Marta
+• Respond to Diana with help for the English of her pages
+• VPS: Stop POM              [Done Sat 22.02.14]
+•      Windows Updates check [Done Sat 22.02.14]
+•      Windows clock sync    [Done Sat 22.02.14]
+•      MT4_2 Upgrade check
+•      Any Bot/Indicator/Script updates [Ticks 4C]
+•      New Days file
+•      Start Ticks running
+•      Start POM
+• Check Centrelink for update of info ability
+• Upload Divorce Order to Centrelink
+• Comment to Al Sears re Confidential Cures
+• Email catchup
+• EoD
+
+Saturday 22.02.14
+-----------------
+  Waking supps [No. Having a supps free day after being sick following Beach Shack tapas]
+• Check for new MT4 build
+  Pre-walk supps
+  Walk
+  Balcony exercises
+  WPC supps
+• Download the week's ticks from VPS
+• Fix Ticks re no EoD report
+  Continue to improve CanTrend [In progress]
+• - fix revisionsBits final when expected to be tentative error
+• - improve setting of final in current Flex
+• - apply changed definition for Can.dirnN to be D_FL if numFlat is set
+  - take cumulative Flex values into account
+  - do the look back for best Flex point at tentFlex addition or move time rather than at New Flex time
+  - check the convert cases
+  Get CanSig working and use that to improve the flex logic, including possibly a dynamic learning element to it all. [In progress]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+• EoD
+
+Friday 21.02.14
+---------------
+• Waking supps
+• Check for new MT4 build
+• Pay rent
+• Pre-walk supps
+• Walk
+  Balcony exercises
+• WPC supps
+• Drinks with Veronica at 16:00 [Was sick later! Vomited twice at around 9:30 pm and had a toilet session to get rid of the 'Tapas'. Then slept late, until 05:50. Shocked by V's revelation that she was being force injected monthly for BiPolar treatment under a mental Health order. She wants to get off it but can't. Thinks it is damaging her, as it probably is. Sisters were involved. Just awful.]
+• Handle the four cases of setting the revisionsBits after a Flex change
+• Continue to improve CanTrend. [In progress.]
+  Get CanSig working and use that to improve the flex logic, including possibly a dynamic learning element to it all. [In progress]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+  EoD
+
+Thursday 20.02.14
+-----------------
+• Waking supps
+• Check for new MT4 build
+• Pre-walk supps [part]
+• Walk
+- Balcony exercises
+• WPC supps
+• Look at MT4_2 tools becoming available: R, MySQL, HashMap; OnTrade() simulator, and create MT4_2 download directory
+• Continue to improve CanTrend. [In progress.]
+  Handle the three cases of setting the revisionsBits after a Flex change
+  Get CanSig working and use that to improve the flex logic, including possibly a dynamic learning element to it all. [In progress]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+• EoD
+
+Wednesday 19.02.14
+------------------
+• Waking supps
+• Check for new MT4 build
+- Pre-walk supps [part]
+• Walk
+• Beach exercises
+• WPC supps
+  Get CanSig working and use that to improve the flex logic, including possibly a dynamic learning element to it all. [In progress]
+• Work on CanTrend. [In progress.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+• EoD
+
+Tuesday 18.02.14
+----------------
+• Waking supps
+• Check for new MT4 build
+• Pre-walk supps
+• Walk
+• Dumbbell exercises
+• WPC supps
+  Get CanSig working and use that to improve the flex logic, including possibly a dynamic learning element to it all. [In progress]
+• Work on CanTrend. [In progress.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+• Reintroduce limited use globals for cidx and pidx? [Done for cidx via fCidx]
+• EoD
+
+Monday 17.02.14
+---------------
+• Waking supps
+• Check for new MT4 build
+• Pre-walk supps
+• Walk
+• Beach exercises [run]
+• Check that Ticks has started running at the VPS
+• WPC supps
+• Start next Magnesium bottle and go easy on the scoops this time
+• Place Coles Online order for free Wednesday delivery? [No. Unexpected WSD Insider sub renewal took A$88.10 = insufficient funds for a Coles order.]
+• Respond to Diana
+  Get CanSig working and use that to improve the flex logic, including possibly a dynamic learning element to it all. [In progress]
+• Work on CanTrend. [In progress.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+• Reintroduce limited use globals for cidx and pidx? [Done for pidx via fPidx]
+• EoD
+
+Sunday 16.02.14
+---------------
+• Waking supps
+• Check for new MT4 build
+- Pre-walk supps [Part]
+• Walk
+• Dumbbells etc on balcony after morning beach walk
+• WPC supps
+• Any Bot/Indicator/Script updates to VPS
+• New Days file locally and at VPS
+• Change VPS date format
+• Start Ticks running at VPS
+• Start POM at VPS
+• Renew ee.com
+• Restore David.Hartley@ElanElan.com
+• Get emails up to date
+  Get CanSig working and use that to improve the flex logic, including possibly a dynmaic learning element to it all. [In progress]
+• Work on CanTrend. [In progress.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+  Reintroduce limited use globals for cidx and pidx?
+• EoD
+
+Saturday 15.02.14
+-----------------
+• Waking supps
+• Check for new MT4 build [Build 606 13 Feb 2014, MetaEditor Build 887 13 Feb 2014; and then a second one detected via VPS: Build 610 14 feb 2014]
+• Start Ticks running
+• Pre-walk supps
+• Walk
+- Dumbbells etc on balcony after morning beach walk [T's fault! (Emails)]
+• End of week transfers from VPS
+• VPS Windows Updates check [13 of them installed]
+• WPC supps
+  Get CanSig working and use that to improve the flex logic, including possibly a dynmaic learning element to it all. [In progress]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+• Resolve why "Ticks 4B cannot run due to Time difference between first tick time in TST and TS time calculated from local time is -27 secs which is outside the expected range of -1 to +4 and probably indicates an error in Local or Trade Server time zones."
+  [09.02.14 Could not see reason. The VPS clock seconds appeared to be about 8 different from my local clock, but not 30 odd. Anyway I re-synced the VPS clock to see if that made a difference on the next start.]
+  [15.02.14 The clock re-sync did change things. Differences this time were -2 and -3 seconds. ]
+  Reintroduce limited use globals for cidx and pidx?
+• EoD
+
+Friday 14.02.14
+---------------
+• Waking supps
+• Check for new MT4 build
+• Start Ticks running
+• Pay day banking
+• Pay rent
+• Pre-walk supps
+• Walk
+• Squats etc on morning beach walk [Run]
+• WPC supps
+• Valentines Day card for Tennesha
+• IGA shopping
+• Wine Rosemount Estate Pinot Grigio
+- Look at 14.02.07 03:02 and 04:22 where Up -> Flat then -> Up with the Up Flex overwriting the Flat. Need to cancel both the Flat and the new Up, staying with just the original Up
+- Look at 14.02.13 03:19 which should continue the Up. Neither Can 14.02.13 03:20 nor 03:21 is enough the trigger the PossUp, but together they would i.e. need to consider MultiCans before as well as after a PossChange is in effect.
+- Consider Flex_CanSigForFullUpDirnChange etc values for MultiCans either per MultiCan or per can incl in a MultiCan
+• Consider using cumulative CanSig instead of counting passes with MultiCans [Yes. Trying this. In progress via CanTrend.mq4.]
+• Consider total movement since the flex, not just the current can [Covered by the above]
+  Get CanSig working and use that to improve the flex logic, including possibly a dynmaic learning element to it all. [In progress]
+• Consider MultiCan idea. Useful? [Replaced by cumulative canSig approach.]
+• Consider changing from terms T_ST, Short Term; T_MT, Medium Term; T_LT Long Term to just one trend per Can period; and use longer Can periods for the equivalent of T_MT and T_LT? [In progress. Made Can trend and Can MAs work for different can and chart periods -> promising result. worth pursuing further. 14.02.14 Change made.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Map Tidx's to Cidx's so that only one index (Tidx) need be kept for stats?
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+  Resolve why "Ticks 4B cannot run due to Time difference between first tick time in TST and TS time calculated from local time is -27 secs which is outside the expected range of -1 to +4 and probably indicates an error in Local or Trade Server time zones." [09.02.14 Could not see reason. The VPS clock seconds appeared to be about 8 different from my local clock, but not 30 odd. Anyway I resynced the VPS clock to see if that made a difference on the next start.]
+  Reintroduce limited use globals for cidx and pidx?
+• EoD
+
+Thursday 13.02.14
+-----------------
+• Waking supps
+• Check for new MT4 build [Build 605 12 Feb 2014, MetaEditor Build 886 12 Feb 2014]
+• Start Ticks running
+  Pre-walk supps
+• Walk
+  Squats etc on morning beach walk
+• WPC supps
+• Look at 14.02.07 23:06 where the Dn flex should have ended.
+   [09.02.14 Switched to using 3 trend states: Dn, Flat, Up. Debugging still needed: Dn possChangeCidx at 14353 14.02.07 23:13 should have been cancelled on the next Can.]
+   [10.02.14 Continued, tidying code up with more switch use and leg messages generalised. Above problem fixed. More debugging and message checking to go.]
+   [11.02.14 In progress]
+   [12.02.14 In progress]
+• Look at 14.02.07 18:39 onwards where the Dn flex should have ended sooner. [In progress. 10.02.14 Still wrong. Now the 14.02.07 18:39 Dn flex is followed by another Dn flex at 14.02.07 19:11]
+   [11.02.14 In progress]
+  Consider total movement since the flex, not just the current can
+  Get CanSig working and use that to improve the flex logic. [In progress]
+  Consider MultiCan idea. Useful?
+  Consider changing from terms T_ST, Short Term; T_MT, Medium Term; T_LT Long Term to just one trend per Can period; and use longer Can periods for the equivalent of T_MT and T_LT? [In progress. Made Can trend and Can MAs work for different can and chart periods -> promising result. worth pursuing further.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+  Resolve why "Ticks 4B cannot run due to Time difference between first tick time in TST and TS time calculated from local time is -27 secs which is outside the expected range of -1 to +4 and probably indicates an error in Local or Trade Server time zones." [09.02.14 Could not see reason. The VPS clock seconds appeared to be about 8 different from my local clock, but not 30 odd. Anyway I resynced the VPS clock to see if that made a difference on the next start.]
+  Reintroduce limited use globals for cidx and pidx?
+• EoD
+
+Wednesday 12.02.14
+------------------
+• Waking supps
+• Check for new MT4 build
+• Start Ticks running
+• Pre-walk supps
+• Walk
+- Squats etc on morning beach walk
+• WPC supps
+  Look at 14.02.07 23:06 where the Dn flex should have ended.
+   [09.02.14 Switched to using 3 trend states: Dn, Flat, Up. Debugging still needed: Dn possChangeCidx at 14353 14.02.07 23:13 should have been cancelled on the next Can.]
+   [10.02.14 Continued, tidying code up with more switch use and leg messages generalised. Above problem fixed. More debugging and message checking to go.]
+   [11.02.14 In progress]
+   [12.02.14 In progress]
+  Look at 14.02.07 18:39 onwards where the Dn flex should have ended sooner. [In progress. 10.02.14 Still wrong. Now the 14.02.07 18:39 Dn flex is followed by another Dn flex at 14.02.07 19:11]
+   [11.02.14 In progress]
+  Consider total movement since the flex, not just the current can
+  Get CanSig working and use that to improve the flex logic. [In progress]
+  Consider MultiCan idea. Useful?
+  Consider changing from terms T_ST, Short Term; T_MT, Medium Term; T_LT Long Term to just one trend per Can period; and use longer Can periods for the equivalent of T_MT and T_LT? [In progress. Made Can trend and Can MAs work for different can and chart periods -> promising result. worth pursuing further.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+  Resolve why "Ticks 4B cannot run due to Time difference between first tick time in TST and TS time calculated from local time is -27 secs which is outside the expected range of -1 to +4 and probably indicates an error in Local or Trade Server time zones." [09.02.14 Could not see reason. The VPS clock seconds appeared to be about 8 different from my local clock, but not 30 odd. Anyway I resynced the VPS clock to see if that made a difference on the next start.]
+• EoD
+
+Tuesday 11.02.14
+----------------
+• Waking supps
+• Check for new MT4 build
+• Start Ticks running
+• Pre-walk supps
+• Walk
+• Dumbbells etc on balcony after morning beach walk
+• WPC supps
+  Look at 14.02.07 23:06 where the Dn flex should have ended.
+   [09.02.14 Switched to using 3 trend states: Dn, Flat, Up. Debugging still needed: Dn possChangeCidx at 14353 14.02.07 23:13 should have been cancelled on the next Can.]
+   [10.02.14 Continued, tidying code up with more switch use and leg messages generalised. Above problem fixed. More debugging and message checking to go.]
+   [11.02.14 In progress]
+  Look at 14.02.07 18:39 onwards where the Dn flex should have ended sooner. [In progress. 10.02.14 Still wrong. Now the 14.02.07 18:39 Dn flex is followed by another Dn flex at 14.02.07 19:11]
+   [11.02.14 In progress]
+  Consider total movement since the flex, not just the current can
+  Get CanSig working and use that to improve the flex logic. [In progress]
+  Consider MultiCan idea. Useful?
+  Consider changing from terms T_ST, Short Term; T_MT, Medium Term; T_LT Long Term to just one trend per Can period; and use longer Can periods for the equivalent of T_MT and T_LT? [In progress. Made Can trend and Can MAs work for different can and chart periods -> promising result. worth pursuing further.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+  Resolve why "Ticks 4B cannot run due to Time difference between first tick time in TST and TS time calculated from local time is -27 secs which is outside the expected range of -1 to +4 and probably indicates an error in Local or Trade Server time zones." [09.02.14 Could not see reason. The VPS clock seconds appeared to be about 8 different from my local clock, but not 30 odd. Anyway I resynced the VPS clock to see if that made a difference on the next start.]
+• EoD
+
+Monday 10.02.14
+---------------
+• Waking supps
+• Check for new MT4 build
+• Start Ticks running
+• Pre-walk supps
+• Walk
+• Squats etc on morning beach walk. [Run as well.]
+• WPC supps
+• Check VPS Ticks start
+  Look at 14.02.07 23:06 where the Dn flex should have ended.
+   [09.02.14 Switched to using 3 trend states: Dn, Flat, Up. Debugging still needed: Dn possChangeCidx at 14353 14.02.07 23:13 should have been cancelled on the next Can.]
+   [10.02.14 Continued, tidying code up with more switch use and leg messages generalised. Above problem fixed. More debugging and message checking to go.]
+  Look at 14.02.07 18:39 onwards where the Dn flex should have ended sooner. [In progress. 10.02.14 Still wrong. Now the 14.02.07 18:39 Dn flex is followed by another Dn flex at 14.02.07 19:11]
+  Consider total movement since the flex, not just the current can
+  Get CanSig working and use that to improve the flex logic. [In progress]
+• Check the stSlope/CanSig iteration. [10.02.14 Problems with Can changes while iterating. Iteration removed.]
+  Consider MultiCan idea. Useful?
+  Consider changing from terms T_ST, Short Term; T_MT, Medium Term; T_LT Long Term to just one trend per Can period; and use longer Can periods for the equivalent of T_MT and T_LT? [In progress. Made Can trend and Can MAs work for different can and chart periods -> promising result. worth pursuing further.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+  Resolve why "Ticks 4B cannot run due to Time difference between first tick time in TST and TS time calculated from local time is -27 secs which is outside the expected range of -1 to +4 and probably indicates an error in Local or Trade Server time zones." [09.02.14 Could not see reason. The VPS clock seconds appeared to be about 8 different from my local clock, but not 30 odd. Anyway I resynced the VPS clock to see if that made a difference on the next start.]
+• EoD
+
+Sunday 09.02.14
+---------------
+• Waking supps
+• Check for new MT4 build [Build 604 7 Feb 2014]
+• Start Ticks running
+• Pre-walk supps
+• Walk
+• Dumbbells etc on balcony after morning beach walk
+• WPC supps
+• Weigh and measure self
+• VPS Windows Updates check
+• VPS MT4_2 Upgrade check [Build 604 7 Feb 2014]
+• Upload the revised Ticks bot
+• Upload or copy a New Days file
+• Start Ticks running for the new week.
+- Look at 14.02.07 23:06 where the Dn flex should have ended. [Switched to using 3 trend states: Dn, Flat, Up. Debugging still needed: Dn possChangeCidx at 14353 14.02.07 23:13 should have been cancelled on the next Can]
+- Look at 14.02.07 18:39 onwards where the Dn flex should have ended sooner. [In progress.]
+  Consider total movement since the flex, not just the current can
+  Get CanSig working and use that to improve the flex logic. [In progress]
+  Check the stSlope/CanSig iteration
+  Consider MultiCan idea. Useful?
+  Consider changing from terms T_ST, Short Term; T_MT, Medium Term; T_LT Long Term to just one trend per Can period; and use longer Can periods for the equivalent of T_MT and T_LT? [In progress. Made Can trend and Can MAs work for different can and chart periods -> promising result. worth pursuing further.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+- Resolve why "Ticks 4B cannot run due to Time difference between first tick time in TST and TS time calculated from local time is -27 secs which is outside the expected range of -1 to +4 and probably indicates an error in Local or Trade Server time zones." [09.02.14 Could not see reason. The VPS clock seconds appeared to be about 8 different from my local clock, but not 30 odd. Anyway I resynced the VPS clock to see if that made a difference on the next start.]
+• Frank Riethmuller history
+  Complain to NAB about international fees
+  Look at LEF CRWay
+• Get emails up to date
+• Delete E: drive backup copies of Caramia and Trading 2013 email folders that were moved.
+• EoD
+
+Saturday 08.02.14
+-----------------
+• Waking supps
+• Check for new MT4 build [Build 603 6 Feb 2014]
+• Start Ticks running
+• Pre-walk supps
+• Walk
+• Squats etc on morning beach walk [Did run instead in view of the rain.]
+• WPC supps
+• Place a Woolworths online order
+  Look at 14.02.07 23:06 where the Dn flex should have ended
+  Look at 14.02.07 18:39 onwards where the Dn flex should have ended sooner.
+  Consider total movement since the flex, not just the current can
+  Get CanSig working and use that to improve the flex logic. [In progress]
+  Check the stSlope/CanSig iteration
+  Consider MultiCan idea. Useful?
+  Consider changing from terms T_ST, Short Term; T_MT, Medium Term; T_LT Long Term to just one trend per Can period; and use longer Can periods for the equivalent of T_MT and T_LT? [In progress. Made Can trend and Can MAs work for different can and chart periods -> promising result. worth pursuing further.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Produce the on chart version of Can Trend
+  Add colours to Can Trend via the inputs ini
+• Download the tick data from the VPS and check it out.
+• Recompile Ticks wo NewWeek, plus abort after end of week as Ticks 4C
+• Add time to Rates Refreshed log entry
+  Resolve why "Ticks 4B cannot run due to Time difference between first tick time in TST and TS time calculated from local time is -27 secs which is outside the expected range of -1 to +4 and probably indicates an error in Local or Trade Server time zones."
+• EoD
+
+Friday 07.02.14
+---------------
+• Waking supps
+• Check for new MT4 build
+• Start Ticks running
+• Pay rent
+• Pre-walk supps
+• Walk
+• Dumbbells etc on balcony after morning beach walk [Sundays and Wednesdays?]
+• WPC supps
+  Consider changing from terms T_ST, Short Term; T_MT, Medium Term; T_LT Long Term to just one trend per Can period; and use longer Can periods for the equivalent of T_MT and T_LT? [In progress. Made Can trend and Can MAs work for different can and chart periods -> promising result. worth pursuing further.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Get CanSig working and use that to improve the flex logic. [In progress]
+  Check the stSlope/CanSig iteration
+• Check lack of an UP flex around 14.01.29 02:13 or a DN flex around 14.01.29 03:15. Or is a flat flex needed? [CanTrend_M5M1 gives a flex at 03:15.] [Tightened up cancellation of a possible flex -> these fixed.]
+• Patch 2014.01.27 ticks file
+• Write script to convert ticks log file to ticks binary file
+• Add History to eeBackup
+• Add VPS to eeBackup
+  Consider MultiCan idea. Useful?
+• Veronica's for PC help at 14:00
+• Wine Rosemount Estate Cab Sav
+• EoD
+
+Thursday 06.02.14
+-----------------
+• Waking supps
+• Check for new MT4 build [Build 602 5 Feb 2014!]
+• Start Ticks running
+• Pre-walk supps
+• Walk
+• Run
+• WPC supps
+• Allow for Can Trend's inputs file name to itself be an input. [Expected to be the case for all indicators re log file name as below.]
+• Change log names to differentiate same indicator with different inputs
+• For Can Trend make flex timeline drawing an input option
+  Consider changing from terms T_ST, Short Term; T_MT, Medium Term; T_LT Long Term to just one trend per Can period; and use longer Can periods for the equivalent of T_MT and T_LT? [In progress. Made Can trend and Can MAs work for different can and chart periods -> promising result. worth pursuing further.]
+  Consider alternative ways of organising CansRA[][] to improve efficiency. See SamToDoAndThoughts.txt
+  Get CanSig working and use that to improve the flex logic. [In progress]
+  Check the stSlope/CanSig iteration
+  Check lack of an UP flex around 14.01.29 02:13 or a DN flex around 14.01.29 03:15. Or is a flat flex needed? [CanTrend_M5M1 gives a flex at 03:15.]
+  Patch 2014.01.27 ticks file
+  Write script to convert ticks log file to ticks binary file
+  Resolve why "Ticks 4B cannot run due to Time difference between first tick time in TST and TS time calculated from local time is -27 secs which is outside the expected range of -1 to +4 and probably indicates an error in Local or Trade Server time zones."
+• EoD
+
+Wednesday 05.02.14
+------------------
+• Waking supps
+• Check for new MT4 build [Build 600 3 Feb 2014!]
+• Start Ticks running
+• Pre-walk supps
+• Walk
+• Squats etc on morning beach walk
+• WPC supps
+  Get CanSig working and use that to improve the flex logic. [In progress]
+  Check the stSlope/CanSig iteration
+  Consider changing from terms T_ST, Short Term; T_MT, Medium Term; T_LT Long Term to just one trend per Can period; and use longer Can periods for the equivalent of T_MT and T_LT?
+  Check lack of an UP flex around 14.01.29 02:13 or a DN flex around 14.01.29 03:15. Or is a flat flex needed?
+• Add a global RevisionsBits
+• Check real_volume vs tick_volume. [Real was always zero when tried in Test/Rates.mq4]
+  Patch 2014.01.27 ticks file
+  Resolve why "Ticks 4B cannot run due to Time difference between first tick time in TST and TS time calculated from local time is -27 secs which is outside the expected range of -1 to +4 and probably indicates an error in Local or Trade Server time zones."
+  Write script to convert ticks log file to ticks binary file
+• EoD
+
+Tuesday 04.02.14
+----------------
+• Waking supps
+• Check for new MT4 build
+• Pre-walk supps
+• Walk [incl 1 Km run]
+  Meditate during/after walk
+• Dumbbells etc on balcony after morning beach walk
+• WPC supps
+• Check VPS
+• Recompile MAs re the the change from use of global Cidx
+• Recompile Sam re the the change from use of global Cidx
+• Add plotting of timelines on flex changes, and improve log descriptions of flexes
+• Fix 14.01.29 04:08 again! Had come right, now wrong again following MultiCan, empty can, and Cidx corrections. [Fixed but is too "tweaky". CanSig is needed to improve robustness.]
+• Check the stSlope setting via Can Trend log, and adjust to improve it. [Next point added.]
+  Get CanSig working and use that to improve the flex logic.
+  Check lack of an UP flex around 14.01.29 02:13 or a DN flex around 14.01.29 03:15. Or is a flat flex needed?
+  Add a global RevisionsBits
+  Patch 2014.01.27 ticks file
+  Resolve why "Ticks 4B cannot run due to Time difference between first tick time in TST and TS time calculated from local time is -27 secs which is outside the expected range of -1 to +4 and probably indicates an error in Local or Trade Server time zones."
+  Write script to convert ticks log file to ticks binary file
+• EoD
+
+Monday 03.02.14
+---------------
+• Waking supps
+• Check for new MT4 build
+• Pre-walk supps
+• Walk
+- Dumbbells etc on balcony after morning beach walk [Longer walk via flats plus run instead. Also was running into 8 am, the time to watch Ticks start on the VPS.]
+• WPC supps
+• Check VPS Ticks start for EURUSD, GBPUSD, USDJPY [All apparently ok]
+• Check odd MultiCan results. [Fixed by rewriting IsChangeDirnMultiCan() and assigning rFirstCan to the temporary multiCan struct to kick things off. Not fully initialised before?]
+• Test FILE_SHARE_WRITE as advised by MetaQuotes re the TicksLog file read open problem.
+• Change from use of global Cidx which contributed to a 'repeating cans' issue with empty Cans.
+• Fix the stSlope problem. [Was to do with empty cans.]
+  Fix 14.01.29 04:08 again! (Had come right, now wrong again following MultiCan, empty can, and Cidx corrections. In progress.)
+  Check the stSlope setting via Can Trend log, and adjust to improve it. [In progress]
+  Add a global RevisionsBits
+  Patch 2014.01.27 ticks file
+  Resolve why "Ticks 4B cannot run due to Time difference between first tick time in TST and TS time calculated from local time is -27 secs which is outside the expected range of -1 to +4 and probably indicates an error in Local or Trade Server time zones."
+  Write script to convert ticks log file to ticks binary file
+• EoD
+
+Sunday 02.02.14
+---------------
+• Waking supps
+• Check for new MT4 build [Build 584 1 Feb 2014]
+• Pre-walk supps
+• Walk
+• Squats etc on morning beach walk
+• WPC supps
+• Pay Midway
+• Pay Virgin
+• Email Orna
+• Order wine? [No. Can't afford it this pay with the MS payment of $119 due on 6 Feb.]
+• Do a Coles online shop? [No. Plan a mid week town trip to post of the D sample, get watch battery replaced, and do a shop.]
+• Cancel scribd? [Yes]
+• Reduce Anatabloc sub from 45 days to 60 days
+• Upgrade VPS to build 584
+• Run Windows Update check on VPS
+• Upload new days file
+• Configure POM on the VPS to automatically start MT4
+• Start Ticks running for EURUSD, GBPUSD, USDJPY
+• Catch up on emails
+  Patch 2014.01.27 ticks file
+  Resolve why "Ticks 4B cannot run due to Time difference between first tick time in TST and TS time calculated from local time is -27 secs which is outside the expected range of -1 to +4 and probably indicates an error in Local or Trade Server time zones."
+  Test FILE_SHARE_WRITE as advised by MetaQuotes re the TicksLog file read open problem.
+  Fix the stSlope problem
+  Check the stSlope setting via Can Trend log, and adjust to improve it. [In progress]
+  Add a global RevisionsBits
+  Write script to convert ticks log file to ticks binary file
+• SBS Black Holes programme
+• D3 [Package checked. Do on day of going to town to post samples off.]
+• EoD
+
+Saturday 01.02.14
+-----------------
+• Waking supps
+• Check for new MT4 build [Buld 583 31 Jan 14]
+• Start Ticks running
+- Pre-walk supps
+• Walk
+- Squats etc on morning beach walk
+• WPC supps
+• Decide on time zone for VPS and change accordingly. [Left it on NY time.]
+• Install MT4_2 and Ticks on the VPS.
+• Check VPS ticks vs local ticks [Local had stopped at 2014.01.31 23:39:10 at around the time the VPS was starting. Due to compile with temporary return in Tick()? But why no restart with the next compile with it removed?]
+  Fix the stSlope problem
+  Check the stSlope setting via Can Trend log, and adjust to improve it. [In progress]
+  Add a global RevisionsBits
+• Defrost fridge
+• IGA shopping
+• Email Helen re Peter's writing, gardening, and Veronica
+  EoD
+
+Friday 31.01.14
+---------------
+• Waking supps
+• Check for new MT4 build
+• Start Ticks running
+• Pay rent
+• Order VPS
+• Updated VPS FireFox and Windows Updates [16? of them. Windows Update had never been run.]
+• Pre-walk supps
+• Walk
+- Dumbbells etc on balcony after morning beach walk [Nope. Wimped out. Sunday and Wednesday for dumbbells??]
+• WPC supps [part]
+• RCidx re PN gap bit settings
+  Check the stSlope setting via Can Trend log, and adjust to improve it. [In progress]
+• "New Year" drinks with Veronica at 6pm
+  EoD
+
+Thursday 30.01.14
+-----------------
+• Waking supps
+• Check for new MT4 build
+• Start Ticks running
+• Pre-walk supps [part]
+• Walk
+• Squats etc on morning beach walk
+• WPC supps [part]
+  Check the stSlope setting via Can Trend log, and adjust to improve it. [In progress]
+• EoD
+
+Wednesday 29.01.14
+------------------
+• Waking supps
+• Check for new MT4 build [Build 579 28 Jan 2014]
+• Start Ticks running
+• Pre-walk supps
+• Walk
+• Dumbbells etc on balcony after morning beach walk
+• WPC supps
+  Check the stSlope setting via Can Trend log, and adjust to improve it. [In progress]
+• EoD
+
+Tuesday 28.01.14
+----------------
+• Waking supps
+• Check for new MT4 build [Build 577 24 Jan 2014, Editor 883 24 Jan 2014]
+• Recompile Ticks
+• Start Ticks running
+• Pre-walk supps
+• Walk
+- Squats etc on morning beach walk [No because of weather.]
+• WPC supps
+• Add an EoD() call for the final "Can average sizes:" log entry of an initialisation week
+  Add stTrend, mtTrend, and ltTrend [In progress]
+  Implement trailing update system  [In progress]
+• EoD
+
+Monday 27.01.14
+---------------
+• Waking supps
+• Check for new MT4 build
+• Start Ticks running
+• Pre-walk supps
+• Walk
+• Dumbbells etc on balcony after morning beach walk
+• WPC supps
+• Rename CansMas to Can MAs and CTrend Histo to Can Histo
+• Change Cans to skip market closed Cans so that there is no need for pmoCidx Previous market open Can's Cidx used when looking back in setting properties. Empty Cans are not skipped. -1 = there is none = the initial value  in Can 0.
+  Add stTrend, mtTrend, and ltTrend [In progress]
+  Implement trailing update system  [In progress]
+• Merge bits and gapBits? [No. Leave them separate.]
+• Fix the initial M1 tick in the week problem re Ticks
+• Check GB_WOG etc re first tick not being at time zero. [Yes, they were ok as they used startTidx of T not TickT]
+• Look at ZigZagZug
+• EoD
+
+Sunday 26.01.14
+---------------
+• Waking supps
+• Thoughts to Keith re Watson and TARI
+• Pre-walk supps
+• Walk
+• Squats etc on morning beach walk
+• WPC supps
+• Second sandal glue job, with shoe glue this time!
+• How Big is The Universe
+• Email catchup
+• More to Orna
+• Second round to Keith - suggested edits of his letter
+• Work on Can patternN etc [patternN removed. Instead plan to build "patterns" into the logic of CanSig()]
+  Add stTrend, mtTrend, and ltTrend [Started]
+
+Saturday 25.01.14
+-----------------
+• Waking supps
+• Check for new MT4 build
+• Pre-walk supps
+• Walk
+• Dumbbells etc on balcony after morning beach walk
+• WPC supps
+• Complete adding Cans info values re gaps
+• Add more to CanDescr()
+• Fix use of idx-- and idx-1 in calculating numFlat to use PreviousMarketOpenCan(). Or add pmoCidx to the Can struct?? [pmoCidx added to struct]
+• Check all other Can property derivations re use of idx-- and idx-1
+• Remove MotpsFactorD from the CTrend.mq4 log
+• Remove tick skipping, at least when tick capture is in force [All ticks kept but apparent repeats logged]
+  Work on Can patternN etc
+
+Friday 24.01.14
+---------------
+• Waking supps
+• Check for new MT4 build
+• Update SS re LEF delivery dates and add Thunderbird reminder re Brain Shield switch from 2 to 1 pd after 30 days
+• Pay rent
+• Pre-walk supps
+• Walk
+• Squats etc on morning beach walk
+• WPC supps
+• Limit the bodsBigger and cansBigger counts? Values get to be hundreds and thousands. 12,083 on 2014.01.23 09:58 from a 2014.01.13 start. [Limited to 240.]
+• Add Cans info measure of tick volatility
+• Change looking back to previous Cans from skipping empty Cans to skipping market closed ones
+  Add Cans info values re gaps [Started]
+  Work on Can patternN etc
+
+Thursday 23.01.14
+-----------------
+• Check for new MT4 build
+• Pre-walk supps
+• Walk
+• Dumbbells etc on balcony after morning beach walk
+• Improve the numFlat algorithm and add runaway protection. Look at Cans around 14.01.12 04:10. 04:06 to 04:13 should be "flat".
+• Check the temp CansMA body calcs for Cans 14.01.22 04:51 10340 and 04:52 10341 where the body ave looks to be high. [They were correct. M1 derived values -> higher result than ticks as received. Calc in Averages tab of Forex.xlsx]
+• Remove the temporary CansMA changes re vwAveBid to Bod rather than Can
+• Add Cans info values bodsIncr, cansIncr, bodsBigger, cansBigger,
+• Add more to CanDescr()
+• Check why 2014.01.23 09:48 bodsBigger was -2 rather than -1 and 09:53 -1 rather than +1.  M1 vs tick differences!
+  Work on Can patternN etc
+
+Wednesday 22.01.14
+------------------
+• Check for new MT4 build
+• Pre-walk supps
+• Walk
+• Squats etc on morning beach walk
+• Check all uses of N_Size and adjust as necessary, including in comments, following the addition of the extra Mini and Huge enums
+• Change size averaging base to a day rather than a week
+• Complete AreCansSimilar()
+• Add a function to build a description of a Can
+• Change Point to _Point throughout
+• Remove auto timestamping from Log, and the globals plus control function to do with this, leaving it to modules to add their own timestamp if required instead. This removed some TickT restraints..
+  Work on Can patternN etc
+
+Tuesday 21.01.14
+----------------
+• Check for new MT4 build
+• Pre-walk supps
+• Walk
+- Squats etc on morning beach walk [A miss due to misplaced worry about the fan overheating following my DIY job on it.]
+• Fix no extra 'like' Cans
+• Contact the fan man about the noisy fan. [No. Did a DIY repair on it myself, removed dust and dirt, and screwed the electrics cover into place higher up as it had been scraping on the fan body as it revolved.]
+• Work on Can patternN etc [Wip]
+- Post a LEF review about the magnesium powder [No. The one posted about MIX powder will do.]
+• Email Keith re Watson
+
+Monday 20.01.14
+---------------
+• Check for new MT4 build
+• Pre-walk supps
+• Walk
+• Dumbbells etc on balcony after morning beach walk
+• WPC drink and supps
+• Make bank transfer to cover interest and IINet
+• Move CanCalcFns protection to a module array rather than via CansRA?
+• Get to understand difference between ArrayGetAsSeries(gSMA10AF)=true and ArrayIsSeries(gSMA10AF)=false
+• Work on Can patternN etc [Wip]
+  Post a LEF review about the magnesium powder
+  Email Keith re Watson
+
+Sunday 19.01.14
+---------------
+• Squats etc on morning beach walk
+• Prepare supplements use plan and group the bottles according to when they are to be used
+• Sears report incl upload
+• Repair sandals
+• Wash mould off railings
+• Email Orna
+• View SBS science documentaries in email from Chris
+• Get email up to date
+
+Saturday 18.01.14
+-----------------
+• Check for new MT4 build
+• Dumbbells etc on balcony after morning beach walk
+  For CansMA:
+  - add volume weighted EMA?
+• - make the relative sizes, Can types etc calcs work like the MA calcs with protection to ensure that these calcs are done only once per tick
+• In skipped ticks checking add log entry if all but the spread
+• Test reading ticks binary file via local array vs the global one [No measurable speed difference on a 90,000 tick read. Changed to use local array to avoid complication in TickProcess()]
+  Get to understand difference between ArrayGetAsSeries(gSMA10AF)=true and ArrayIsSeries(gSMA10AF)=false
+  Work on Can patternN etc
+
+Friday 17.01.14
+---------------
+• Check for new MT4 build
+• Pay rent and make bank transfers
+• Squats etc on morning beach walk
+  Open ticks log in shared mode when writing [Waiting on fix from MQ][Moved to SamToDoAndThoughts.txt]
+• Make M1 close time change to TickHistory.mq4 as per TicksAndCansInit.mq4 as thought of in bed at 1 am!
+  For CansMA:
+  - add volume weighted EMA?
+  - make the relative sizes, Can types etc calcs work like the MA calcs with protection to ensure that these calcs are done only once per tick
+  In skipped ticks checking add log entry if all but the spread
+• Test speed of calcs involving array indices via a function with a "pointer" versus inline. [Yep, faster. See F:\Doc\MT4\MT4_2 Coding.txt]
+  Test reading ticks binary file via local array vs the global one
+  Get to understand difference between ArrayGetAsSeries(gSMA10AF)=true and ArrayIsSeries(gSMA10AF)=false
+  Work on Can patternN etc
+  Work on trend as per FPAS (Forex Price Action Scalping by Bob Volman) and Can patterns.
+• Visit optometrist re frames choice
+• Bank for $20 worth of dollar coins for the washing machine
+• Coles shopping
+
+Thursday 16.01.14
+-----------------
+• Check for new MT4 build
+• Dumbbells etc on balcony after morning beach walk
+  Open ticks log in shared mode when writing [Waiting on fix from MQ]
+  For CansMA:
+• - tidy up/fix the work of the 15th
+  - add volume weighted EMA?
+• - adjust sidx for empty Cans re relative size calcs?
+• - make calculating MAs happen only for tick events i.e. not automatically as cans progress [All done. yesterday's problems fixed.]
+  - make the relative sizes, Can types etc calcs work like the MA calcs with protection to ensure that these calcs are done only once per tick
+  In skipped ticks checking add log entry if all but the spread
+  Test reading ticks binary file via local array vs the global one
+  Get to understand difference between ArrayGetAsSeries(gSMA10AF)=true and ArrayIsSeries(gSMA10AF)=false
+  Work on Can patternN etc
+
+Wednesday 15.01.14
+------------------
+• Check for new MT4 build
+  Dumbbells etc on balcony after morning beach walk
+  Open ticks log in shared mode when writing [Waiting on fix from MQ]
+  For CansMA:
+• - add current Can tick processing of MAs
+  - add volume weighted EMA?
+  - adjust sidx for empty Cans re relative size calcs?
+• - add a Cans close tick event and drop the the "in last 5 seconds" idea
+• - add news event open and close tick events
+• - improve adding tick events for a tick
+  - make calculating MAs happen only for tick events i.e. not automatically as cans progress [Done but there is a problem to be fixed with missing bars and the EMAs.]
+  - make the relative sizes, Can types etc calcs work like the MA calcs with protection to ensure that these calcs are done only once per tick
+• Add spread check to skipping repeated ticks in Ticks() given the number happening
+  In skipped ticks checking add log entry if all but the spread
+  Test reading ticks binary file via local array vs the global one
+  Get to understand difference between ArrayGetAsSeries(gSMA10AF)=true and ArrayIsSeries(gSMA10AF)=false
+  Work on Can patternN etc
+  Visit optometrist re frames choice /- [Skipped because of rain. Did a bit of IGA shopping instead]
+  Coles shopping                     |
+
+Tuesday 14.01.14
+----------------
+• Check for new MT4 build
+  Dumbbells etc on balcony after morning beach walk [Wet morning is my poor excuse]
+  Open ticks log in shared mode when writing [Waiting on fix from MQ]
+  For CansMA:
+• - remove unused period calcs struct members
+• - use doubles for the MA results for a smoother plot?
+• - add vwAveBid as an output option for vwAveBid
+• - fix the EMA problem
+• - fix the ini read problem on editing inputs [StratCases = 0 missing from CanInputs.mq4. But still no go => statics -> globals and InitialseGlobals() as MT4 does not reset on a restart.]
+  - add current Can tick processing
+  - add volume weighted EMA?
+  - adjust sidx for empty Cans re relative size calcs?
+• - investigate why there were gaps in the MA plots around 2014.01.13 hours 9-10 which weren't present on re-running on the 14th [MI/tick differences when live, not when being loaded from m1 history next day]
+• Improve skipping repeated ticks in Ticks()
+  Get to understand difference between ArrayGetAsSeries(gSMA10AF)=true and ArrayIsSeries(gSMA10AF)=false
+  Work on Can patternN etc
+  Visit optometrist re frames choice /- [Skipped because of rain]
+  Coles shopping                     |
+
+Monday 13.01.14
+---------------
+• Check for new MT4 build
+  Open ticks log in shared mode when writing [Waiting on fix from MQ]
+  Fix problem noticed with Monday startup of Ticks where the first tick was at 41 secs bot a time 0 M1 open tick was added
+  Add MAs to Cans [Well into it]
+  Work on Can patternN etc
+  Visit optometrist re frames choice /- [Skipped because of rain]
+  Coles shopping                     |
+
+Sunday 12.01.14
+---------------
+• Check for new MT4 build [Build 574 10 Jan 2014]
+• Start another Carbonite another E drive directory going. [Done for Back 090815 after deleting some marketing, music, tools, other software directories, also from 080518.]
+• Dumbbells etc on balcony after morning beach walk
+• Email Charles
+• Email catchup
+• Order Natural News Chlorella http://store.naturalnews.com/Clean-Chlorella-200mg-Tablets-64oz-1814g-9070-tablets_p_264.html
+  Add EMAs to Cans [Started]
+
+Saturday 11.01.14
+-----------------
+• Check for new MT4 build [Build 573]
+  Dumbbells etc on balcony after morning beach walk [A miss due to T comms on FB.]
+• Test Ticks end of week detection [Yes, it worked.]
+  Open ticks log in shared mode when writing [Waiting on fix from MQ]
+• Test and debug the Can type work.
+•   Why no Micro sized tops? 1 pt min > 0.10 of ave size of 7.xxx pts. [Test changed so that 1 point also == Micro]
+•   2014.01.08 09:43 bar on chart has o=136176, h=136176 but log showed o=136174, h=136174. Add a debug test of tick values versus M1 values. [Added M1 Fixup code. Opps Crashed on 14.01.10 10:20 bar.]
+•   Check the Can type setting- Doji etc.
+  Work on Can patternN etc
+  Start another Carbonite another E drive directory going
+
+Friday 10.01.14
+---------------
+• Check for new MT4 build
+• Pay rent
+• Squats etc on morning beach walk
+  Open ticks log in shared mode when writing [Waiting on fix from MQ]
+  Test and debug the Can type work.
+    Why no Micro sized tops? 1 pt min > 0.10 of ave size of 7.xxx pts. What to do?
+    2014.01.08 09:43 bar on chart has o=136176, h=136176 but log showed o=136174, h=136174. Add a debug test of tick values versus M1 values. [Added M1 Fixup code. Opps Crashed on 14.01.10 10:20 bar.]
+•   2014.01.08 09:48 should be DoJi but was Standard
+• Get the older Trend indicators, Trend PA 4 and Trend PA 4 Histo working again under MT4_2 for comparison purposes. [Done though without compiler warnings attended to.]
+  Work on Can patternN etc
+  Start another Carbonite another E drive directory going once the current move finishes
+
+Thursday 09.01.14
+-----------------
+• Check for new MT4 build
+• Dumbbells etc on balcony after morning beach walk
+  Open ticks log in shared mode when writing [Waiting on fix from MQ]
+  Test and debug the Can type work.
+    Why no Micro sized tops? 1 pt min > 0.10 of ave size of 7.xxx pts. What to do?
+    2014.01.08 09:43 bar on chart has o=136176, h=136176 but log showed o=136174, h=136174. Add a debug test of tick values versus M1 values.
+    2014.01.08 09:48 should be DoJi but was Standard
+•   Got both periods in SetCanType() calls even though had indicator strategies for only one. [Correct. Because Cans ini specified both. Fixed by creating an M1 ini.]
+  Get the older Trend indicators, Trend PA 4, Trend PA 4 Histo...) working again under MT4_2 for comparison purposes.
+  Work on Can patternN etc
+  Start another Carbonite another E drive directory going once the current move finishes
+• IGA shopping
+
+Wednesday 08.01.14
+------------------
+• Check for new MT4 build
+• Squats etc on morning beach walk
+  Open ticks log in shared mode when writing [Waiting on fix from MQ]
+• Detect end of week and act accordingly. [08.01.14 Done for Sam and Ticks subject to testing through actual week ends.]
+• Set Can type, Doji etc
+  Start another Carbonite another E drive directory going once the current move finishes
+
+Tuesday 07.01.14
+----------------
+• Check for new MT4 build [6 Jan 14 build 569 installed]
+• Dumbbells etc on balcony after morning beach walk
+  Open ticks log in shared mode when writing [07.01.14 Code changed and file can now be opened in NP++ while being written, but the CTrend Histo read open fails. Replicated as a bug Scripts\MT4Bug4.mq4 and reported.]
+• Fix ClosedB error. [if -. while on the NewDay check in Cans() re whole days skipped]
+• Check Error() re the init abort case. Use abort directly?
+• Check Carbonite for green dots and start another E drive directory going [Moved Backup 080518 My Documents/djh Archive to Archive. Silly Carbonite had to upload again!]
+• Add a market closed bool to Cans
+• Calculate parts relative sizes based on volume weighted weekly sums, rather than the whole run by Can numbers not weighted for volume.
+  Continue with SamToDo items from SamToDoAndThoughts.txt
+  Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns.
+
+Monday 06.01.14
+---------------
+• Squats etc on morning beach walk
+• Check for new MT4 build
+• Archive Cans2Bot.mq4 and move its functions into Cans.mq4 in a TRADING_BOT CC block
+• Sync Kaulo once Carbonite catches up
+  Add a market closed bool to Cans and process it [In progress]
+  Calculate parts relative sizes based on volume weighted weekly sums, rather than the whole run by Can numbers not weighted for volume [In progress]
+  Continue with SamToDo items from SamToDoAndThoughts.txt
+  Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns.
+
+Sunday 05.01.14
+---------------
+• Complete the switch to use of volume with ticks rather than Tidx and contiguous entries in TicksRA
+• Make a Mozilla donation US$25
+• Renew djh.com to get the 31% off price
+• Get beach "a year later" pic taken
+• Email Charles
+• Create the 30 Dec 13 Ticks binary file
+• Get up to date with emails. [Inboxes down to zero]
+  Continue with SamToDo items from SamToDoAndThoughts.txt
+  Sync Kaulo once Carbonite catches up
+  Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns.
+
+Saturday 04.01.14
+-----------------
+• Check for new MT4 build
+• Pay Virgin
+• Pay Antigua storage
+  Make a Mozilla donation
+  Sync Kaulo once Carbonite catches up
+  Get beach "a year later" pic taken
+  Complete the switch to use of volume with ticks rather than Tidx and contiguous entries in TicksRA
+  Continue with SamToDo items from SamToDoAndThoughts.txt
+  Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns.
+
+Friday 03.01.14
+---------------
+• Check for new MT4 build
+• Pay rent
+• Fund IC account
+• Place new LEF order
+• Charge phone
+  Make a Mozilla donation
+  Sync Kaulo once Carbonaite catches up
+  Get beach "a year later" pic taken
+  Complete the switch to use of volume with ticks rather than Tidx and contiguous entries in TicksRA
+  Continue with SamToDo items from SamToDoAndThoughts.txt
+  Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns.
+
+Wednesday 01.01.14 and Thursday 02.01.14
+----------------------------------------
+• Update Goals.txt including adding "fall apart ferry" idea to Goals.txt
+• Update SamToDoAndThoughts.txt with 01.01.14 thoughts
+• Update the Vista laptop
+• Make end of year backups to Carbonite, and tidy up files, backups and archives incl of emails
+• [13.12.31 Backup copy made. Settings updated for ini, ico, flv, swf files. Small amount of file tidying done. Could do heaps more. Some email reorg done. Could do heaps more...]
+• Backup Tat and Sam wip to memory stick and Skydrive
+• Review supplements choices
+• Get up to date with emails
+• Open live IC Markets Account
+  Sync Kaulo - waiting for Carbonaite to catch up.
+• Update djh.com and LinkedIn
+
+Tuesday 31.12.13
+----------------
+• Switch to use of volume with ticks rather than Tidx and contiguous entries in TicksRA [Completed as far as ticks and tick files are concerned. Can calcs still to go.]
+  Keep ticks for a Can and then calc volumes for the parts?                     [Yes. In progress at 31.12.13] /- Transferred to SamToDoAndThoughts.txt on 01.01.14
+  Detect end of week to do a proper closedown, and write the ticks binary file. [In progress at 31.12.13]      |
+  Weighted run sums?                                                                                           |
+  Open ticks log in shared mode when writing                                                                   |
+  Resolve timing issues for calcs and opens on ticks during progress of the can...                             |
+
+Monday 30.12.13
+---------------
+• Fix spread in creating ticks history from M1 history
+• Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns.
+  [Added roll back of CloseWeekT for NY end of week holidays, OnTimer(), and improved week start function flow. TickI -> Tidx]
+• Shopping re $10 off chlorophyll
+
+Sunday 29.12.13
+---------------
+• Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns. [Added TicksRA holding a week's ticks in memory.]
+
+Saturday 28.12.13
+-----------------
+• Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns. [Cans working with structs.]
+
+Friday 27.12.13
+---------------
+• Pay rent
+• Remove IndicatorB use in favour of the CC INDICATOR
+  Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns.
+
+Thursday 26.12.13
+-----------------
+• Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns. [CTrend is running with random data as the first Cans indicator.]
+
+Wednesday 25.12.13
+------------------
+• Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns.
+  [Build 566 fixed the CC problems. Module #s reduced further thanks to CC. All return ()s gone. Own Ternary fns gone. CTrend starting to run...]
+
+Tuesday 24.12.13
+----------------
+• Continue with the switch to the new MT4 beta
+  ['/' compiler crash fixed by builds 565/882 but another bug introduced - indented #ifdef #endif blocks cause spurious errors. Reported. Resuming CTrend work.]
+
+Monday 23.12.13
+---------------
+• Continue with the switch to the new MT4 beta
+
+Sunday 22.12.13
+---------------
+• Email Tamara
+• Email Charles
+• Christmas cards to Charles, Keith & carolyn, Helen & Peter, Chris, Caramia, Miss Walker, Amy & Billy
+• Birthday card to C?
+• Email Miss Walker
+• Cancel Scribd sub (new one month free one started 25.11.13 using CBA card as per previous one) or change card if continuing. [Card changed.]
+• Continue with the switch to the new MT4 beta
+  Write to ABIB
+  Email Keith re Carolyn and Vit D
+
+Saturday 21.12.13
+-----------------
+• Continue with the switch to the new MT4 beta [Slowed down by compiler crash on '/' in code excluded by conditional compilation. See http://forum.mql4.com/59477/page11#883368]
+  Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns.
+
+Friday 20.12.13
+---------------
+• Banking and pay rent
+• Optometrist at 11:30
+• Continue with the switch to the new MT4 beta
+  Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns.
+
+Thursday 19.12.13
+-----------------
+• Try out new MT4 beta at IC Markets with Ticks. [Decision: Yes, go for it.]
+  Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns.
+
+Wednesday 18.12.13
+------------------
+• Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns.
+
+Tuesday 17.12.13
+----------------
+• Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns.
+
+Monday 16.12.13
+---------------
+• Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns.
+
+Sunday 15.12.13
+---------------
+• Decide about cash allocation and orders [Done. Ordered water filter to take advantage of Christmas 10% discount.]
+• Email Charles
+• IGA shopping
+• Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns. [A bit!]
+  Cancel Scribd sub (new one month free one started 25.11.13 using CBA card as per previous one) or change card if continuing
+  Write to ABIB
+  Email Keith re Carolyn and Vit D
+
+Saturday 14.12.13
+-----------------
+• Check out CurrencySecrets' trend related functions and the bot framework
+• Continue with Sam 3 re trend, close, candlesticks, FPAS (Forex Price Action Scalping by Bob Volman) patterns. [Well, a start was made...]
+
+Friday 13.12.13
+---------------
+• Pay rent
+• Make final transfer to T
+• Continue with Sam 3. Fix problem that more than 3 orders were opened. Continue with tests. Work on close.
+  Check out CurrencySecrets' trend related functions and the bot framework
+
+Thursday 12.12.13
+------------------
+• Continue with Sam 3. CloseTrade() and first test run
+  Check out CurrencySecrets' trend related functions and the bot framework
+
+Wednesday 11.12.13
+------------------
+• Continue with Sam 3. CloseTrade()
+  Check out CurrencySecrets' trend related functions and the bot framework
+
+Tuesday 10.12.13
+---------------
+• Continue with Sam 3. OpenTrade()
+  Check out CurrencySecrets' trend related functions and the bot framework
+
+Monday 09.12.13
+---------------
+• Continue with Sam 3. Money management.
+• Email T
+
+Sunday 08.12.13
+---------------
+• Emails
+• Continue checking out T's story
+  Try XYPlorer [No. Forget it.]
+
+Saturday 07.12.13
+-----------------
+• Send birthday greetings to Keith
+• Change ETrade orders to sell all and initiate withdrawal. [Done with aggravation due to my account being blocked.]
+• Continue with Sam 3
+  Continue checking out T's story
+
+Friday 06.12.13
+---------------
+• Pay Midway Storage
+• Make transfer to T
+• Pay rent
+• Change ETrade orders
+• Start checking out T's story
+• Continue with Sam 3
+• Shopping
+• Post the St Mary's By The Sea postcard to Keith & Carolyn
+
+Thursday 05.12.13
+-----------------
+• Continue with Sam 3. Open and money management.
+
+Wednesday 04.12.13
+------------------
+• Continue with Sam 3. ScalpEMA calcs and open.
+
+Tuesday 03.12.13
+---------------
+• Continue with Sam 3. ScalpEMA calcs and open.
+
+Monday 02.12.13
+---------------
+• Phone 2nd hand place about the chair. [Not available!]
+• Continue with Sam 3.
+
+Sunday 01.12.13
+---------------
+• Emails day...
+• Pay Virgin phone bill
+• Continue with Sam 3.
+
+Saturday 30.11.13
+-----------------
+• Start with Sam 3. Back to multiple periods with provision for strategies to be executed at different periods. [Waking thought.]
+• Send birthday greetings to Paul.
+• Had big Skype chat with Tennesha
+
+Friday 29.11.13
+---------------
+• Pay rent
+• Make transfer to T
+• Continue with Sam 2
+
+Thursday 28.11.13
+-----------------
+• Sam 2 programming to implement the 5 minute scalping method incl short term use of Trend PA, to be extended a la Bob Volman's "Forex price Action Scalping", plus pin bars and VSA
+
+Wednesday 27.11.13
+------------------
+• Liver and tongue cookup 2 of 2
+• Resume Sam programming to implement the 5 minute scalping method incl short term use of Trend PA, to be extended a la Bob Volman's "Forex price Action Scalping", plus pin bars and VSA
+
+Tuesday 26.11.13
+----------------
+• Resume Sam programming to implement the 5 minute scalping method incl short term use of Trend PA, to be extended a la Bob Volman's "Forex price Action Scalping", plus pin bars and VSA
+• Liver and tongue cookup 1 of 2
+
+Monday 25.11.13
+---------------
+• Continue reading Constance Brown's Fibonacci Analysis
+• Consider approach for Sam, SR, Constance Brown, Naked Forex, pin bars etc vs Bob Volman's "Forex price Action Scalping".
+
+Sunday 24.11.13
+---------------
+• Market and town shopping to prepare for next cookup
+• Email catchup
+• Continue reading Constance Brown's Fibonacci Analysis
+
+Saturday 23.11.13
+-----------------
+• Sleep in to speed recovery from cold. [To 5 am. Feeling much better. Try to change to this as more normal rising time?]
+• Work on S&R with the aim of wrapping it up this week. [Done for now. Constance brown's Fibonacci Analysis book throws new light on the subject.]
+• Watch ETrade orders and consider change
+• Start reading Constance Brown's Fibonacci Analysis
+
+Friday 22.11.13
+---------------
+• Pay rent
+• Make transfer to T
+• Sleep to speed recovery from cold
+• Work on S&R with the aim of wrapping it up this week. [A tiny bit only]
+• Watch ETrade orders and consider change
+• Repeat the ABIB email
+• Cancel the FID (Forex Insider Daily) trial subscription
+
+Thursday 21.11.13
+----------------
+• Work on S&R with the aim of wrapping it up this week.
+• Watch ETrade orders and consider change
+• Repeat the ABIB email
+
+Wednesday 20.11.13
+------------------
+• Complete the rework of Trend PA
+  Work on S&R with the aim of wrapping it up this week.
+  Watch ETrade orders and consider change
+
+Tuesday 19.11.13
+----------------
+  Complete the rework of Trend PA
+  Work on S&R with the aim of wrapping it up this week.
+  Watch ETrade orders and consider change
+• Repeat the ABIB email
+
+Monday 18.11.13
+---------------
+• Complete the rework of Trend PA
+  Work on S&R with the aim of wrapping it up this week.
+• Watch ETrade orders and consider change
+
+Sunday 17.11.13
+---------------
+• Continue Trend PA work on trying for the start of a alternative direction run instead. [Coding completed. Not tested]]
+• Do shopping
+• Email people - Sunday email catchup.
+
+Saturday 16.11.13
+-----------------
+• Remove retrace pips value from Trend PA and just use %? [Didn't work well. Started on trying for the start of a alternative direction run instead.]
+  Work on S&R with the aim of wrapping it up this week.
+
+Friday 15.11.13
+---------------
+• Pay rent
+• Make transfer to T
+• Work on S&R [More Trend PA improvements...]
+  Watch ETrade orders and consider change
+
+Thursday 14.11.13
+------------------
+• Work on S&R with the aim of wrapping it up this week. [Improved Trend PA with envelope gap checking added.]
+• Watch ETrade orders and consider change
+
+Wednesday 13.11.13
+------------------
+• Work on S&R
+• Watch ETrade orders and consider change
+
+Tuesday 12.11.13
+----------------
+• Work on S&R
+• Watch ETrade orders and consider change
+
+Monday 11.11.13
+---------------
+• Work on S&R
+• Watch ETrade orders and consider change
+
+Sunday 10.11.13
+-----------------
+• Back to working on S&R [after some further tweaks of Trend PA/Histo re starting bars for a trend and run length]
+• Write to ABIB to change address, and request account re-activation.
+• Check ETrade orders and change if there has not been any movement. [Watch this week]
+
+Saturday 09.11.13
+-----------------
+• Really wrap up the new improved Histo and the bring Trend PA 4 up to the same standard! [At last. Was it worth all this effort? We shall see.]
+  Write to ABIB to change address
+
+Friday 08.11.13
+---------------
+• Pay rent
+• Send transfer to T
+• Really wrap up the new improved Histo and the bring Trend PA 4 up to the same standard! [Nearly but not quite...]
+  Write to ABIB to change address
+
+Thursday 07.11.13
+-----------------
+• Finalise the new improved Histo and the bring Trend PA 4 up to the same standard [still more...]
+  Write to ABIB to change address
+
+Wednesday 06.11.13
+------------------
+• Bring Trend PA 4 up to Trend PA Histo standard [Ended up as yet another improving Histo day,]
+  Write to ABIB to change address
+
+Tuesday 05.11.13
+----------------
+• Improve Trend PA 4 and Trend PA Histo re adjacent trend segments further as the final tweak [Done for Histo]
+  Write to ABIB to change address
+
+Monday 04.11.13
+---------------
+• Email and Yahoo with T
+  Improve Trend PA 4 and Trend PA Histo re adjacent trend segments further as the final tweak
+  Write to ABIB to change address
+
+Sunday 03.11.13
+---------------
+• Write review of Keith's book
+• Improve Trend PA 4 and Trend PA Histo re adjacent trend segments
+  Write to ABIB to change address
+
+Saturday 02.11.13
+-----------------
+  Improve Trend PA 4 and Trend PA Histo re adjacent trend segments
+• Cancel Scribd subscription? Renewal failed as had used CBA card. Tried to cancel sub but couldn't. Cancel button showed Renew.
+• Check ETrade orders and change if there has not been any movement. [Prices close. Leave another week.]
+  Write to ABIB to change address
+  Write review of Keith's book
+
+Friday 01.11.13
+---------------
+• Pay rent
+• Send some help to Tennesha
+• Trend PA 4 wrap up and Trend PA Histo
+  Cancel Scribd subscription?
+  Check ETrade orders and change if there has not been any movement
+  Write to ABIB to change address
+
+Thursday 31.10.13
+-----------------
+• Trend PA 4
+• Read the Forex Insider Daily stuff
+  Cancel Scribd subscription?
+
+Wednesday 30.10.13
+---------------
+• Trend PA - progress!
+• Skype and email with TAG
+  Read the Forex Insider Daily stuff
+  Cancel Scribd subscription?
+
+Monday 28.10.13
+---------------
+• Trend PA - better
+• Email with TAG
+  Read the Forex Insider Daily stuff
+  Cancel Scribd subscription?
+
+Monday 28.10.13
+---------------
+• Trend PA - a bit! Mostly the day went on food prep, shopping, and emailing Tennesha!
+  Read the Forex Insider Daily stuff
+  Cancel Scribd subscription?
+
+
+Sunday 27.10.13
+---------------
+• Email Charles
+• Checkout Nordic walking poles. Yes!
+    www.slashsport.com/shop/product/gymstick-pro-walker-silver-blue $79
+    www.slashsport.com/shop/product/gymstick-health-nordic-walking-poles-with-workout-dvd $99
+• Change mouse due to Logitech mouse single click -> double click often
+• Check ETrade orders - no action.
+• Return LinkedIn endorsements
+• Email David Watt
+  Write to ABIB to change address
+  Order "The Art of Being Free" by Wendy McElroy
+  Read the Forex Insider Daily stuff
+  Cancel Scribd subscription?
+
+Saturday 25.10.13
+-----------------
+• Finish Trend PA 1/2/3 [Well, sort of finished Finish Trend PA 1/2/3 by starting on Trend PA 4 using envelopes!]
+
+Friday 25.10.13
+---------------
+Pay day!
+• Pay rent
+• Make NAB transfers
+• Order WPC
+• Finish Trend PA 1 [Well, sort of finished Finish Trend PA 1 by starting on Trend PA 2 and Trend PA 3!]
+
+Thursday 24.10.13
+-----------------
+• Continue with Trend PA 1
+
+Wednesday 23.10.13
+------------------
+• Continue with Trend PA 1
+
+Tuesday 22.10.13
+----------------
+• Continue with Trend PA 1
+• Reactivate Antigua Tagged account and look for Deniquq which was not there though most others I remember were still there.
+
+Monday 21.10.13
+---------------
+• Continue with Trend PA 1
+• Shopping: fruit (pears, water melon half, apples 1kg, limes x 2, lemons x 2), eggs x 18, avos x 2, kale, tomatoes, Italian spice, coffee org x 2, garlic x 2, shopping bag, Braggs ACV.
+  Options not bought: peach, plum, grapes, broccoli, nuts, shampoo
+
+Sunday 20.10.13
+---------------
+• Order Al Sears telomere stuff
+  Buy a bedside clock online
+  Buy shorts and Ts online
+• Email Miss Walker [No, as David Watt replied on Saturday. Email Miss Walker for Christmas.]
+  Shopping: Aloe vera, fruit (peach, pear, plum, melon, apples, grapes), eggs, kale, broccoli, tomatoes, spices, coffee, nuts, shampoo, Braggs, garlic
+• Email Charles
+   - not great week
+   - DataTables: http://www.naturalnews.com/042564_Obamacare_software_piracy_computer_code.html
+   - coconut oil
+   - US shares
+   - USD etc
+   - Al Sears Telomere and Telomerase stuff
+
+Saturday 19.10.13
+-----------------
+• Continue with Trend PA 1
+  Continue with Support & resistance work
+• Copy Skype "Sam is Braiins" chat to email
+• Check ETrade sell orders
+• Remove the 6447 card from PayPal
+
+Friday 18.10.13
+-----------------
+• Pay rent
+• Defrost fridge
+• Start on Trend PA 1 - a price action lagging indicator for analysis use e.g. re SR
+  Continue with Support & resistance work
+
+Thursday 17.10.13
+-----------------
+• Continue with Support & resistance work
+• Tidy npp backup directory
+• Write MA Histo 7 taking trend changes and magnitude into account re the trending decision plus zap if only 1 bar
+• Envelope ANZ and CBA docs
+• Place sell orders on US shares
+  Defrost fridge
+
+Wednesday 16.10.13
+------------------
+• Continue with Support & resistance work
+• Email Charles re
+    InstaForex fee
+    Lot size
+    1 million....
+• Decide what to do about tick history data. [Wait and fund Oanda when Sam is ready for tick testing.]
+  Defrost fridge
+
+Tuesday 15.10.13
+---------------
+• Write up the waking "fall apart ferry" idea. [Done in emails to Kerry, Chris T and Charles]
+• Resume Support & resistance work with trend done
+• Tidy up Trend work and archive non-current versions
+  Decide what to do about tick history data
+  Defrost fridge
+  Email Charles re
+    InstaForex fee
+    Lot size
+    1 million....
+
+Monday 14.10.13
+---------------
+• Email Instaforex
+• Finalise trend indicators
+  Defrost fridge
+
+Sunday 13.10.13
+---------------
+• Switch Centreleink payments back to NAB
+• Switch ReConnebt back to NAB
+• Produce a Goals document
+• Add Thunderbird reminders for quarterly update of the Goals doc
+• Place LEF order
+• Order CircO2 from AdvancedBionutritionals
+• Order togs
+• Order aloe vera from Biovea
+• Order 600 ml coffee press
+• Email Neil
+• Do IGA shop for eggs, paper towels, fruit, frozen blueberries
+• Email David Watt
+• Email Charles
+• Upload the Goals doc plus Sam wip to K
+  Defrost fridge
+  Email Instaforex

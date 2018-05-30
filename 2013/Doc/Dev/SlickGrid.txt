@@ -1,0 +1,701 @@
+SlickGrid.txt
+=============
+
+https://github.com/mleibman/SlickGrid/wiki
+https://groups.google.com/forum/?fromgroups#!forum/slickgrid
+https://github.com/mleibman/SlickGrid/wiki/Getting-Started
+
+Grid Options: https://github.com/mleibman/SlickGrid/wiki/Grid-Options    
+
+API Reference which includes column options: https://github.com/mleibman/SlickGrid/wiki/API-Reference
+
+Grid Events: https://github.com/mleibman/SlickGrid/wiki/Grid-Events    
+
+Selection: https://github.com/mleibman/SlickGrid/wiki/Handling-selection
+
+Providing data to the grid: https://github.com/mleibman/SlickGrid/wiki/Providing-data-to-the-grid
+
+-
+Navigate cells with <- -> keys
+https://groups.google.com/forum/?fromgroups#!topic/slickgrid/ejGxWpcs2Ek
+
+31 Aug 2012
+https://github.com/mleibman/SlickGrid/commit/62bc8bfaab02229ab32529bb49694156cdec391b
+New events:
++ onBeforeHeaderRowCellDestroy
++ onHeaderRowCellRendered
+
+Renamed events:
+  onHeaderRendered -> onHeaderCellRendered
+  onBeforeHeaderDestroy -> onBeforeHeaderCellDestroy
+
+New methods:
+- setTopPanelVisibility
+- setHeaderRowVisibility
+
+Removed methods:
+- showTopPanel
+- hideTopPanel
+- showHeaderRowColumns
+- hideHeaderRowColumns
+
+https://groups.google.com/forum/?fromgroups#!topic/slickgrid/gSxYirE5fdo
+New grid events:
+- onHeaderRendered
+- onBeforeHeaderDestroy
+- onHeaderMouseEnter
+- onHeaderMouseLeave
+
+New plugins:
+- Slick.Plugins.HeaderButtons.  Demo - http://t.co/Ey8gS9SF.
+- Slick.Plugins.HeaderMenu.  Demo - http://t.co/vImMoVtT.
+
+
+===
+
+Own Doc
+=======
+SlickGrid does not use html tables. All cells are divs.
+
+There are djh?? sections:
+
+Header corresponding to a table head
+HeaderRow for filtering by column
+TopPanel for whatever the app needs
+The body
+Paging row djh??
+Filtering row djh??
+
+djh??
+Dataview vs data? http://stackoverflow.com/questions/11610781/slickgrid-simple-example-of-using-dataview-rather-than-raw-data
+difference between focusable and selectable
+
+
+
+Options
+=======
+Booleans: (The description field describes the true setting)
+  Property                   Default Description
+  asyncEditorLoading         false   Cell editors load asynchronously after a small delay (options.asyncEditorLoadDelay). This greatly increases keyboard navigation speed.
+  autoEdit                   true    Cell automatically goes into edit mode when focused
+  autoHeight                 false   Grid vertically resizes to fit all rows
+  editable                   false   Grid cells with an editor defined can be edited
+  enableAddRow               false   A blank row will be displayed at the bottom of the grid - typing values in that row will add a new row/record
+  enableAsyncPostRender      false   Async post rendering occurs and asyncPostRender delegates on columns are called
+  enableCellNavigation       true    Allows movement to cells. If false, no cells are selectable or editable. focusable??
+  enableColumnReorder        false   Allows user to reorder columns. djh changed from true
+  enableTextSelectionOnCells false   IE specific to enable (allow) text selection in grid cells other than input and textarea ones.
+                                     If not supporting IE (djh?? What about IE10?) best to set to true to avoid a selectstart.ui viewport bind.
+  explicitInitialization     false   Defer grid initialization to a subsequent init() call when grid container is in the DOM and participating in layout.
+                                     (Can be 'visibility:hidden' but not 'display:none'.) Useful for a dynamically created container.
+                                     See http://mleibman.github.com/SlickGrid/examples/example-explicit-initialization.html
+  forceFitColumns            false   Force column sizes to fit into the viewport (avoid horizontal scrolling).
+  fullWidthRows              false   Canvas width = viewport width
+  leaveSpaceForNewRows       false   Adds numVisibleRows-1 to the grid's number of rows. Not used by any example. djh??
+  multiSelect                true    Option for slick.rowselectionmodel.js    djh??
+  multiColumnSort            false   See http://mleibman.github.com/SlickGrid/examples/example-multi-column-sort.html
+  showHeaderRow              false   Adds a row under the table head row for column filtering. See example-header-row.html
+  showTopPanel               false   Show top panel
+  forceSyncScrolling         false
+  
+Others:
+  Property                     Default Description
+  rowHeight                    25      Row height in pixels
+  defaultColumnWidth           80      Default column width in pixels
+  asyncEditorLoadDelay         100     Delay before cell editor is loaded when options.asyncEditorLoading is true
+  asyncPostRenderDelay         50      Delay before async post renderer delegate is called when enableAsyncPostRender is true
+  editorLock                   Slick.GlobalEditorLock A lock object for controlling concurrent data edits
+  headerRowHeight              25                     Header row height in pixels
+  topPanelHeight               25                     Top panel height in pixels
+  formatterFactory             null                   A factory object to create a formatter for a given cell. Must implement getFormatter(column).
+  editorFactory                null                   A factory object to create an editor for a given cell. Must implement getEditor(column).
+  cellFlashingCssClass         'flashing'             CSS class to be applied to flashing cells via flashCell()
+  selectedCellCssClass         'selected'             CSS class to be applied to selected cells
+  dataItemColumnValueExtractor null                   Function to return column data value for (item, columnDef) as options.dataItemColumnValueExtractor(item, columnDef)
+                                                      Otherwise item[columnDef.field]
+  defaultFormatter             defaultFormatter       Default function to render the contents of a cell
+                                                      Signature: function formatter(row, cell, value, columnDef, dataContext) { ... return "..."; }
+                                                      defaultFormatter() gives '' or value as a string with &<> converted to html entities
+  editCommandHandler                                  Function to invoke edit with signature options.editCommandHandler(item, column, editCommand);
+
+
+Columns
+=======
+Columns is an array of objects per column, each having at least id and field:
+
+Booleans: (The description field describes the true setting)
+  Property            Default                    * Description
+  cannotTriggerInsert false                        Column cell in the add new record row is not editable i.e. an edit cannot be done to trigger a DB insert
+  focusable           true                       * Column cells can be focused i.e. become active
+  rerenderOnResize    false                        Rerender the column when it is resized (useful for columns relying on cell width or adaptive formatters).
+  resizable           true                         The column can be resized
+  selectable          true                       * Column cells can be selected   
+  sortable            false                        The column can be sorted by clicking the column header which triggers the onSort event
+  defaultSortAsc      true
+
+Others:
+  Property            Default                    * Description
+  id                                               A unique identifier for each column in the model, allowing more than one column to access the same data field.
+                                                   In most cases field and id will have the same value
+  field                                            The property (name) in the data row objects for the column values
+  name                ''                           The name to be displayed in the view (table header)
+           
+  width               options.defaultColumnWidth   Width of the column in pixels. Default options.defaultColumnWidth = 80
+  minWidth            30                           Minimum allowed column width for resizing
+  maxLength                                        Maximum number of characters for text input. Required if editable using Slick.Editors.Text. [djh addition]
+  maxWidth                                         Maximum allowed column width for resizing.
+  headerCssClass      null
+  toolTip                                          Header ToolTip (title attr)
+  cssClass                                         A CSS class to add to each cell
+  formatter           options.defaultFormatter   F Function to render the contents of a cell
+                                                   Signature: function formatter(row, cell, value, columnDef, dataContext) { ... return "..."; }
+  editor                                         E Editor class (djh?? class or function?) to edit the value of a cell
+  validator                                        An extra validation function to be used by the editor
+  asyncPostRender                                  Function to manipulate the cell DOM node after it has been rendered, called in the background via a timer
+                                                   Applies if options.enableAsyncPostRender is set.
+  behavior                                         Configures the column with one of several available predefined behaviors: "select", "move", "selectAndMove"
+
+  
+* = can be overridden by meta data
+F = can be overridden by meta data and can be supplied via options.formatterFactory
+E = can be overridden by meta data and can be supplied via options.editorFactory
+
+Re Metadata see https://github.com/mleibman/SlickGrid/wiki/Providing-data-to-the-grid
+Can have row as well as column metadata
+
+Events
+======
+  onScroll
+  onSort                             grid.onSort.subscribe(function(e, args) {} //args = {grid, multiColumnSort:false, sortAsc, sortCol} or {grid, multiColumnSort:true, sortCols map} 
+  onHeaderMouseEnter
+  onHeaderMouseLeave
+  onHeaderContextMenu
+  onHeaderClick
+  onHeaderCellRendered
+  onBeforeHeaderCellDestroy
+  onHeaderRowCellRendered
+  onBeforeHeaderRowCellDestroy
+  onMouseEnter
+  onMouseLeave
+  onClick
+  onDblClick
+  onContextMenu
+  onKeyDown
+  onAddNewRow
+  onValidationError
+  onViewportChanged
+  onColumnsReordered
+  onColumnsResized
+  onCellChange
+  onBeforeEditCell
+  onBeforeCellEditorDestroy
+  onBeforeDestroy
+  onActiveCellChanged
+  onActiveCellPositionChanged
+  onDragInit
+  onDragStart
+  onDrag
+  onDragEnd
+  onSelectedRowsChanged
+  onCellCssStylesChanged
+  
+ 
+You can subscribe to the above events using a syntax similar to:
+
+gridInstance.onXYZEvent.subscribe(function(e,args){
+    //event handling code.
+});
+
+Event handlers can also be removed with
+
+gridInstance.onXYZEvent.unsubscribe(fn);
+  
+  onInvalidatedRows in https://github.com/mleibman/SlickGrid/wiki/Grid-Events doc not implemented
+
+Methods See also API Reference
+=======
+  "registerPlugin": registerPlugin,
+  "unregisterPlugin": unregisterPlugin,
+  "getColumns": getColumns,
+  "setColumns": setColumns,
+  "getColumnIndex": getColumnIndex,
+  "updateColumnHeader": updateColumnHeader,
+  "setSortColumn": setSortColumn,
+  "setSortColumns": setSortColumns,
+  "getSortColumns": getSortColumns,
+  "autosizeColumns": autosizeColumns,
+  "getOptions": getOptions,
+  "setOptions": setOptions,
+  "getData": getData,
+  "getDataLength": getDataLength,
+  "getDataItem": getDataItem,
+  "setData": setData,
+  "getSelectionModel": getSelectionModel,
+  "setSelectionModel": setSelectionModel,
+  "getSelectedRows": getSelectedRows,
+  "setSelectedRows": setSelectedRows,
+
+  "render": render,
+  "invalidate": invalidate,
+  "invalidateRow": invalidateRow,
+  "invalidateRows": invalidateRows,
+  "invalidateAllRows": invalidateAllRows,
+  "updateCell": updateCell,
+  "updateRow": updateRow,
+  "getViewport": getVisibleRange,
+  "getRenderedRange": getRenderedRange,
+  "resizeCanvas": resizeCanvas,
+  "updateRowCount": updateRowCount,
+  "scrollRowIntoView": scrollRowIntoView,
+  "scrollRowToTop": scrollRowToTop,
+  "scrollCellIntoView": scrollCellIntoView,
+  "getCanvasNode": getCanvasNode,
+  "focus": setFocus,
+
+  "getCellFromPoint": getCellFromPoint,
+  "getCellFromEvent": getCellFromEvent,
+  "getActiveCell": getActiveCell,
+  "setActiveCell": setActiveCell,
+  "getActiveCellNode": getActiveCellNode,
+  "getActiveCellPosition": getActiveCellPosition,
+  "resetActiveCell": resetActiveCell,
+  "editActiveCell": makeActiveCellEditable,
+  "getCellEditor": getCellEditor,
+  "getCellNode": getCellNode,
+  "getCellNodeBox": getCellNodeBox,
+  "canCellBeSelected": canCellBeSelected,
+  "canCellBeActive": canCellBeActive,
+  "navigatePrev": navigatePrev,
+  "navigateNext": navigateNext,
+  "navigateUp": navigateUp,
+  "navigateDown": navigateDown,
+  "navigateLeft": navigateLeft,
+  "navigateRight": navigateRight,
+  "gotoCell": gotoCell,
+  "getTopPanel": getTopPanel,
+  "getHeaderRow": getHeaderRow,
+  "getHeaderRowColumn": getHeaderRowColumn,
+  "getGridPosition": getGridPosition,
+  "flashCell": flashCell,
+  "addCellCssStyles": addCellCssStyles,
+  "setCellCssStyles": setCellCssStyles,
+  "removeCellCssStyles": removeCellCssStyles,
+  "getCellCssStyles": getCellCssStyles,
+
+  "init": finishInitialization,
+  "destroy": destroy,
+
+  // IEditor implementation
+  "getEditorLock": getEditorLock,
+  "getEditController": getEditController
+
+  "setTopPanelVisibility": setTopPanelVisibility,
+  "setHeaderRowVisibility": setHeaderRowVisibility,
+
+
+API Reference
+
+Model API:
+
+Instead of passing SlickGrid an array of row objects, you can pass an object that holds (and updates!) all your rows. This object, which SlickGrid calls a Model, only needs to respond to a simple API:
+
+model.getItem(i) // Returns the ith row
+model.getLength() // Returns the number of items
+
+Row API
+
+If you modify the nth row, you will need to tell the grid that the row is invalid, and then call render() to update it:
+
+grid.invalidateRow(n)
+grid.render()
+
+You can also call grid.invalidateRows() to invalidate a lot of rows at once, and, if you just want to re-draw the whole grid, call grid.invalidate() (which would do a render() automatically.)
+
+grid.scrollRowIntoView(rowIndex) - scroll the grid until a row is visible.
+grid.scrollRowIntoView(100)
+
+Column API
+
+grid.getColumnIndex(columnName) - Returns the numeric index of the given column. Useful when a column index is required by the API.
+grid.getColumnIndex('first_name')
+
+
+Grid's Selection API
+
+Get the list of selected grid rows:
+grid.getSelectedRows() // returns [0,1] if the first two rows are selected.
+
+Set the rows at the following indexes as selected:
+grid.setSelectedRows([0,10])
+
+Cell API
+
+grid.addCellCssStyles(key, hash) - The add-only sibling to grid.setCellCssStyles(key, hash). Will throw an exception if you try to set the same key twice without calling removeCellCssStyles(). Use setColumnCssStyles() instead if you don't want that.
+
+grid.canCellBeActive(row, cell) - returns a boolean.
+grid.canCellBeSelected(row, cell) - returns a boolean.
+grid.editActiveCell(editor) -
+grid.flashCell(row, cell, speed) - flashes the cell twice by toggling the CSS class 4 times. Waits speed ms between toggles.
+grid.getActiveCell() - gets an object representing the coordinates of the currently active cell {row: activeRow, cell: activeCell}
+grid.getActiveCellPosition() -
+grid.getCellEditor() - gets the cell editor for the currently active cell.
+grid.removeCellCssStyles(key) - Removes styles under key from the grid.
+grid.resetActiveCell() -
+grid.setActiveCell(row, cell) -
+
+grid.setCellCssStyles(key, hash) - Sets CSS classes to specific grid cells. key is name for this set of styles so you can reference it later - to modify it or remove it, for example. hash is a per-row-index, per-column-name nested hash of CSS classes to apply.
+
+Since all that sounds complicated, and mleibman can probably explain it better, here is an example. Suppose you have a grid with columns:
+
+["login", "name", "birthday", "age", "likes_icecream", "favorite_cake"]
+
+...and you'd like to highlight the "birthday" and "age" columns for people whose birthday is today, in this case, rows at index 0 and 9. (The first and tenth row in the grid).
+
+ .highlight{ background: yellow } 
+
+grid.setCellCssStyles("birthday_highlight", {
+   0: {
+        birthday: "highlight", 
+        age: "highlight" 
+       },
+
+   9: {
+         birthday: "highlight",
+         age: "highlight"
+       }
+})
+
+grid.updateCell(row, cell) -
+Custom Field Accessor
+
+By default field values are access via item[columnDef.field]. To have a custom field accessor, overwrite the default dataItemColumnValueExtractor option.
+
+var options = {
+dataItemColumnValueExtractor: function(item, colDef) {
+  return item.get(colDef.id);
+}
+};
+
+  
+  
+  
+=======
+
+Grid Options: https://github.com/mleibman/SlickGrid/wiki/Grid-Options    
+Booleans:
+
+    autoEdit Cell will not automatically go into edit mode when selected. [djh?? Back to front]
+    autoHeight
+    editable
+    enableAddRow If true, a blank row will be displayed at the bottom - typing values in that row will add a new one.
+    enableAsyncPostRender If true, async post rendering will occur and asyncPostRender delegates on columns will be called.
+    enableCellNavigation
+    enableColumnReorder
+    enableRowReordering                                                   [djh?? Not implemented even tho used in example 9]
+    forceFitColumns Force column sizes to fit into the viewport (avoid horizontal scrolling).
+    showHeaderRow
+    leaveSpaceForNewRows
+    enableCellRangeSelection                                              [djh?? Not implemented and not used in any example]
+    asyncEditorLoading Makes cell editors load asynchronously after a small delay. This greatly increases keyboard navigation speed.
+    multiSelect
+    enableTextSelectionOnCells
+    explicitInitialization (http://mleibman.github.com/SlickGrid/examples/example-explicit-initialization.html)
+    multiColumnSort (http://mleibman.github.com/SlickGrid/examples/example-multi-column-sort.html)
+
+Others (with sample values)
+
+    cellFlashingCssClass: "flashing" A CSS class to apply to flashing cells via flashCell().
+    cellHighlightCssClass: "selected" A CSS class to apply to cells highlighted via setHighlightedCells(). [djh"" Not implemented]
+    editCommandHandler: queueAndExecuteCommand
+    rowHeight: 140
+    topPanelHeight: 25
+    defaultColumnWidth: 80
+    asyncEditorLoadDelay: 100 Delay after which cell editor is loaded. Ignored unless asyncEditorLoading is true.
+    asyncPostRenderDelay: 60 Delay after which async post renderer delegate is called.
+    editorLock: A Slick.EditorLock instance to use for controlling concurrent data edits.
+    headerRowHeight: 25
+    formatterFactory: A factory object responsible to creating a formatter for a given cell. Must implement getFormatter(column).
+    editorFactory: A factory object responsible to creating an editor for a given cell. Must implement getEditor(column).
+
+--
+
+Column options: https://github.com/mleibman/SlickGrid/wiki/API-Reference
+
+Booleans
+
+    sortable
+    resizable
+    rerenderOnResize
+    focusable
+    selectable
+
+Other
+
+    id A unique identifier for the column within the grid
+    name The display text
+    field The name of the data object property to pull content from
+    editor _The editor for cell edits {TextEditor, IntegerEditor, DateEditor...} See slick.editors.js
+    cssClass
+    headerCssClass
+    width
+    minWidth
+    maxWidth
+    toolTip
+
+    
+
+Andrew Child's fork with some more doc
+https://github.com/andrewchilds/SlickGrid
+Column Definitions
+    name    - Required. Column name to put in the header.
+    field   - Property of the data context to bind to. If missing, this will use the column ID, or the column name.
+    id      - Column ID. If missing, this will use the column field, or the column name.
+    toolTip - Tooltip (if different from name).
+    width - Width of the column in pixels.
+    minWidth - Minimum allowed column width for resizing.
+    maxWidth - Maximum allowed column width for resizing.
+    sortable - (default false) If true, the column can be sorted (onSort will be called).
+*   forceSortType - Override automatic sort detection to use a particular sort type.
+    resizable - (default true) If false, the column cannot be resized. Should be used sparingly.
+    cssClass - A CSS class to add to the cell.
+*   visible - (default true) If false, the column will be hidden by default, to be made available in a ColumnPicker or other UI element.
+*   filter - Which filter method to use for filtering this column. Currently can be set to "text" or "range".
+*   presets - An array containing the human-readable column preset(s) this column is part of. "Default" and "All Columns" are implied, assuming showColumnPresets is true.
+*   total - (default 'sum') Used to determine how totals are calculated. Currently can only be set to "sum" or "average".
+    formatter - (default 'return value || ""') Function responsible for rendering the contents of a cell. Signature: function formatter(row, cell, value, columnDef, dataContext) { ... return "..."; }
+    editor - An Editor class.
+    validator - An extra validation function to be passed to the editor.
+*   unselectable - If true, the cell cannot be selected (and therefore edited).
+    cannotTriggerInsert - If true, a new row cannot be created from just the value of this cell.
+    rerenderOnResize - Rerender the column when it is resized (useful for columns relying on cell width or adaptive formatters).
+    asyncPostRender - Function responsible for manipulating the cell DOM node after it has been rendered (called in the background).
+    behavior - Configures the column with one of several available predefined behaviors: "select", "move", "selectAndMove".
+*   defaultToAscending - (default true) If false, the column sorting will default to descending.
+*   alwaysDisplay - (default false) If true, the column will not appear in the ColumnPicker and will always be displayed on all presets.
+
+---
+
+Some doc from http://www.developerfusion.com/project/18821/slickgrid/
+Column definition options:
+
+Column definition option 	Description 	Default
+id 	Column ID. 	-
+name 	Column name to put in the header. 	-
+field 	Property of the data context to bind to. 	-
+formatter 	Function responsible for rendering the contents of a cell. 	defaultFormatter
+editor 	An Editor class responsible for editing the value of a cell. 	-
+validator 	An extra validation function to be passed to the editor. 	-
+unselectable 	If true, the cell cannot be selected (and therefore edited). 	false
+cannotTriggerInsert 	If true, a new row cannot be created from just the value of this cell. 	false
+setValueHandler 	A custom function to be called to set field value instead of setting contextfield 	-
+width 	Width of the column in pixels. 	Options.defaultColumnWidth
+resizable 	If false, the column cannot be resized. 	true
+minWidth 	Minimum allowed column width for resizing. 	-
+maxWidth 	Maximum allowed column width for resizing. 	-
+cssClass 	A CSS class to add to the cell. 	-
+rerenderOnResize 	Rerender the column when it is resized (useful for columns relying on cell width or adaptive formatters). 	false
+
+Options:
+
+Options 	Description 	Default
+enableAddRow 	If true, a blank row will be displayed at the bottom - typing values in that row will add a new one. 	true
+manualScrolling 	Disable automatic rerender on scroll. Client will take care of calling SlickGrid.scroll(). 	false
+editable 	If false, no cells will be switched into edit mode. 	true
+editOnDoubleClick 	Cells will be switched into edit mode on double-click instead of a single click. Single click will select a cell. 	false
+enableCellNavigation 	If false, no cells will be selectable. This also disables editing. 	true
+defaultColumnWidth 	Default column width in pixels. 	80
+enableColumnReorder 	Allows the user to reorder columns. 	true
+asyncEditorLoading 	Makes cell editors load asynchronously after a small delay. This greatly increases keyboard navigation speed. 	true
+
+Methods:
+
+|
+Method 	Description
+destroy 	Destroys the grid and cleans up.
+getViewport 	Gets the visible portion of the grid.
+render 	Makes sure all visible rows are rendered.
+resizeViewport 	Resizes the virtual canvas to match the size of the datasource.
+scroll 	If manualScrolling option is enabled, makes the grid respond to the new scroll position.
+updateRow 	Updates a given row.
+updateCell 	Updates a given cell.
+removeRow 	Removes a given row.
+removeAllRows 	Removes all rows.
+gotoCell 	Makes a given sell active.
+editCurrentCell 	Switches the active cell into edit mode.
+getSelectedRows 	Returns the indexes of selected rows.
+setSelectedRows 	Selects given rows.
+setColumnHeaderCssClass 	Updates a CSS class on a given column header (mostly used to indicated a sort column).
+getColumnIndex 	Gets an ordinal index of a column (since it may have been changed by the user).
+commitCurrentEdit 	Commits the current edit and switches the cell into normal mode.
+cancelCurrentEdit 	Cancels the current edit and switches the cell into normal mode.
+
+Events:
+
+Event 	Description
+onColumnHeaderClick 	
+onClick 	
+onKeyDown 	
+onAddNewRow 	
+onValidationError 	
+onViewportChanged 	
+onSelectedRowsChanged 	
+onColumnsReordered 	
+
+
+---
+
+Some Doc from http://industrialdashboard.codeplex.com/wikipage?title=IndustrialSlickGrid&version=7
+
+SlickGrid original options (all optional, must be includede insde "Attributes" object)
+
+* editable - (default false) If false, no cells will be switched into edit mode.
+* autoEdit - (default true) Cell will not automatically go into edit mode when selected.
+
+* rowHeight - (default 25px) Row height in pixels.
+* enableAddRow - (default false) If true, a blank row will be displayed at the bottom - typing values in that row will add a new one.
+* leaveSpaceForNewRows - (default false)
+* enableCellNavigation - (default true) If false, no cells will be selectable.
+* defaultColumnWidth - (default 80px) Default column width in pixels (if columnscell.width is not specified).
+* enableColumnReorder - (default true) Allows the user to reorder columns.
+* asyncEditorLoading - (default false) Makes cell editors load asynchronously after a small delay.
+* asyncEditorLoadDelay - (default 100msec) Delay after which cell editor is loaded. Ignored unless asyncEditorLoading is true.
+* forceFitColumns - (default false) Force column sizes to fit into the viewport (avoid horizontal scrolling).
+* enableAsyncPostRender - (default false) If true, async post rendering will occur and asyncPostRender delegates on columns will be called.
+* asyncPostRenderDelay - (default 60msec) Delay after which async post renderer delegate is called.
+* autoHeight - (default false) If true, vertically resizes to fit all rows.
+* editorLock - (default Slick.GlobalEditorLock) A Slick.EditorLock instance to use for controlling concurrent data edits.
+* showSecondaryHeaderRow - (default false) If true, an extra blank (to be populated externally) row will be displayed just below the header columns.
+* secondaryHeaderRowHeight - (default 25px) The height of the secondary header row.
+* syncColumnCellResize - (default false) Synchronously resize column cells when column headers are resized
+* rowCssClasses - (default null) A function which (given a row's data item as an argument) returns a space-delimited string of CSS classes that will be applied to the slick-row element. Note that this should be fast, as it is called every time a row is displayed.
+
+
+Column properties (set from the stored procedures, all optional)
+
+In order to set properties to a whole column, arguments can be set from the Stored Procedures, with a "!" and the desired property.
+
+For example:
+The column "Name!rq" will set that column as required.
+
+*!id: Indicates the widget that that column contains the necessary IDs to update, copy and delete data. The ID column won't be shown. If no ID column is indicated, no database modifications will be made.
+*!ac
+(Align Center) Centers the contents of the cell.
+*!al
+(Align Left ) Aligns the cell's contents to the left.
+*!ar
+(Align Right ) Aligns the cell's contents to the right.
+*!wd:Number
+Sets the width of that column in pixels. Eg.: "Email!wd:120"
+*!rq (Required)
+Makes that value required. Consequently, when editing, that cell will not be able to be blank.
+
+*!pc
+Indicates that that column will contain percentages.
+
+*!{type:"ddp",data:"PROCEDURE_NAME"}
+Makes that column's cells editable by a DropDownPicker. The procedure name must contain two columns: the first one must contain the text to show to the user, and the second the values to set in the database. Eg:
+
+----
+Some doc from GridNic http://nicblue.com/gridnic/
+
+
+/**
+ * @license
+ * (c) 2009-2010 Michael Leibman (michael.leibman@gmail.com)
+ * All rights reserved.
+
+ * GridNicGrid v1.0.0
+ *
+ * TODO:
+ * - frozen columns
+ * - consistent events (EventHelper?  jQuery events?)
+ *
+ *
+ * OPTIONS:
+ *     rowHeight                - (default 25px) Row height in pixels.
+ *     enableAddRow             - (default false) If true, a blank row will be displayed at the bottom - typing values in that row will add a new one.
+ *     leaveSpaceForNewRows     - (default false)
+ *     editable                 - (default false) If false, no cells will be switched into edit mode.
+ *     autoEdit                 - (default true) Cell will not automatically go into edit mode when selected.
+ *     enableCellNavigation     - (default true) If false, no cells will be selectable.
+ *     defaultColumnWidth       - (default 80px) Default column width in pixels (if columns[cell].width is not specified).
+ *     enableColumnReorder      - (default true) Allows the user to reorder columns.
+ *     asyncEditorLoading       - (default false) Makes cell editors load asynchronously after a small delay.
+ *                                This greatly increases keyboard navigation speed.
+ *     asyncEditorLoadDelay     - (default 100msec) Delay after which cell editor is loaded. Ignored unless asyncEditorLoading is true.
+ *     forceFitColumns          - (default false) Force column sizes to fit into the viewport (avoid horizontal scrolling).
+ *     enableAsyncPostRender    - (default false) If true, async post rendering will occur and asyncPostRender delegates on columns will be called.
+ *     asyncPostRenderDelay     - (default 60msec) Delay after which async post renderer delegate is called.
+ *     autoHeight               - (default false) If true, vertically resizes to fit all rows.
+ *     editorLock               - (default GridNic.GlobalEditorLock) A GridNic.EditorLock instance to use for controlling concurrent data edits.
+ *     showSecondaryHeaderRow   - (default false) If true, an extra blank (to be populated externally) row will be displayed just below the header columns.
+ *     secondaryHeaderRowHeight - (default 25px) The height of the secondary header row.
+ *     syncColumnCellResize     - (default false) Synchronously resize column cells when column headers are resized
+ *
+ *
+ * COLUMN DEFINITION (columns) OPTIONS:
+ *     id                  - Column ID.
+ *     name                - Column name to put in the header.
+ *     toolTip             - Tooltip (if different from name).
+ *     field               - Property of the data context to bind to.
+ *     formatter           - (default 'return value || ""') Function responsible for rendering the contents of a cell. Signature: function formatter(row, cell, value, columnDef, dataContext) { ... return "..."; }
+ *     editor              - An Editor class.
+ *     validator           - An extra validation function to be passed to the editor.
+ *     unselectable        - If true, the cell cannot be selected (and therefore edited).
+ *     cannotTriggerInsert - If true, a new row cannot be created from just the value of this cell.
+ *     setValueHandler     - If true, this handler will be called to set field value instead of context[field].
+ *     width               - Width of the column in pixels.
+ *     resizable           - (default true) If false, the column cannot be resized.
+ *     sortable            - (default false) If true, the column can be sorted (onSort will be called).
+ *     minWidth            - Minimum allowed column width for resizing.
+ *     maxWidth            - Maximum allowed column width for resizing.
+ *     cssClass            - A CSS class to add to the cell.
+ *     rerenderOnResize    - Rerender the column when it is resized (useful for columns relying on cell width or adaptive formatters).
+ *     asyncPostRender     - Function responsible for manipulating the cell DOM node after it has been rendered (called in the background).
+ *     behavior            - Configures the column with one of several available predefined behaviors:  "select", "move", "selectAndMove".
+ *
+ *
+ * EVENTS:
+ *     onSort                -
+ *     onHeaderContextMenu   -
+ *     onClick               -
+ *     onDblClick            -
+ *     onContextMenu         -
+ *     onKeyDown             -
+ *     onAddNewRow           -
+ *     onValidationError     -
+ *     onViewportChanged     -
+ *     onSelectedRowsChanged -
+ *     onColumnsReordered    -
+ *     onColumnsResized      -
+ *     onBeforeMoveRows      -
+ *     onMoveRows            -
+ *     onCellChange          -  Raised when cell has been edited.   Args: row,cell,dataContext.
+ *     onBeforeEditCell      -  Raised before a cell goes into edit mode.  Return false to cancel.  Args: row,cell,dataContext.
+ *     onBeforeDestroy       -  Raised just before the grid control is destroyed (part of the destroy() method).
+ *
+ *
+ * NOTES:
+ *     Cell/row DOM manipulations are done directly bypassing jQuery's DOM manipulation methods.
+ *     This increases the speed dramatically, but can only be done safely because there are no event handlers
+ *     or data associated with any cell/row DOM nodes.  Cell editors must make sure they implement .destroy()
+ *     and do proper cleanup.
+ *
+ *
+ * @param {jQuery}            $container  Container object to create the grid in.
+ * @param {Array} or {Object} data        An array of objects for databinding.
+ * @param {Array}             columns     An array of column definitions.
+ * @param {Object}            options     Grid options.
+ */
+
+
+SlickGrid Use in BDT
+--------------------
+Class SGcontainer sets the outer borders which can be selectively removed using using notb etc.
+There is no width element in SGcontainer, not even width:100%, so that the container incl its borders fills the Jwindow width.
+
+For a full width grid the width if it were to be set is is Tao.p.w-2 (2 for the 1px l/r borders) or Jwindow width-42
+
+e.g. $('.SGcontainer').css({width:(Tao.p.w-2)+'px'});
+
+For a full width grid the widths of the columns set in sg constructor should sum to w-42 i.e. 558 for a default 600 wide window.

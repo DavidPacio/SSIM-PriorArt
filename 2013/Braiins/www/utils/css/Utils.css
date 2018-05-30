@@ -1,0 +1,37 @@
+/* Braiins.com Utils css
+
+Global */
+* {margin:0;padding:0}
+img {border:none}
+body {font:normal 10pt Arial,"Helvetica Neue",Helvetica,sans-serif;color:#000;background:#fff;padding:8px}
+
+p {margin:0 0 1em}
+
+h1, h2, h3, h4, label {font-family:Verdana,Tahoma,Arial,Helvetica,Geneva,sans-serif}
+
+h1 {font-size:135%;color:#007AA3;margin:0 0 0.75em}
+h2 {font-size:120%;color:#007AA3;margin:0 0 0.5em}
+h3 {font-size:110%;color:#db7800;margin:0 0 0.4em}
+h4 {font-size:105%;color:#069}
+
+a:link    {color: #0000CD}
+a:active  {color: #0000FF}
+a:visited {color: Navy}
+a:hover   {color: #483D8B}
+
+.fl {float:left}
+.fr {float:right}
+.hide{display:none}
+
+.clr{clear:both}
+.b {font-weight:bold}
+.c {text-align:center}
+.mc{margin-left:auto;margin-right:auto}
+.mt10{margin-top:1em}
+
+.topl {position:absolute;top:8px;left:8px}
+.topr {position:absolute;top:8px;right:20px}
+
+button{padding:1px 0.5em;background: #f7f7f7;border: 1px solid #7F9DFF;border-radius:6px}
+button.on:hover {color:#00f;box-shadow:0 0 0 1px #7FBBFF inset;background:#f0ffff}
+

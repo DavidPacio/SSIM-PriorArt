@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<title>RG Zones Edit</title>
+<meta charset=utf-8>
+<link rel='shortcut icon' href=../favicon.png>
+<link rel=stylesheet type=text/css href=css/Utils.css>
+</head>
+<body>
+<h1 class=c>Braiins RG Zones Edit</h1>
+<p class=c>Any field in a box can be edited. The changed value is saved on leaving the field.<br>Allowable Dimensions should be enetred as a comma separated list of dimension Ids. Up to 12 may be input.<br>No allowable dimensions list means that all are OK, subject to global (Entity Type, Restated, Countries, Language, Group) and BRO restrictions.<br>To add a new Zone complete fields in the final row (at least Ref) and click 'Go'.
+</p>
+<form>
+<table class=mc>
+<thead>
+<tr class='b bg0'><td>Id</td><td>Ref</td><td>Sign</td><td>Allowable Dimensions</td><td>Description</td></tr>
+</thead>
+<tbody id=ETbody>
+</tbody>
+</table>
+</form>
+<p class=c><a href=./>Home</a></p>
+<div class=topl><a href=./>Home</a></div>
+<div class=topr><a href=./>Home</a></div>
+<script src=//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js></script>
+<script src=js/Utils.js></script>
+<script src=js/ZonesEdit.js></script>
+</body>
+</html>

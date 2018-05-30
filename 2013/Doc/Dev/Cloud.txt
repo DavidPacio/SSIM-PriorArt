@@ -1,0 +1,11 @@
+Cloud Related Stuff started 229.01.12
+===================
+
+DBs
+===
+MySQL DB with 100% uptime SLA
+http://www.cleardb.com/home.view
+
+Infographic on SaaS, IaaS, PaaS
+www.linkedin.com/groups/Cloud-Jargon-Unwound-Distinguishing-Saas-61513.S.241574690
+http://readwrite.com/2013/05/08/explained-saas-iaas-paas-infographic?goback=.gde_61513_member_241574690

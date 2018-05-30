@@ -1,0 +1,28 @@
+Braiins.com email details for Charles
+-------------------------------------
+Email: charles@braiins.com
+pw: VKW6ZPR~gdLu
+
+
+Kualo Server settings:
+
+Incoming: edgar.secure.kualo.net POP3S (SSL/TLS) Port 995
+Outgoing: edgar.secure.kualo.net (SSL/TLS) Port 465
+
+Webmail:
+https://edgar.secure.kualo.net:2096/login.php
+
+Of the three webmail options I suggest you use Roundcube.
+
+---
+
+Old (Hostgator):
+Mail Server Username: charles+braiins.com
+Incoming Mail Server: mail.braiins.com
+Incoming Mail Server: (SSL) shared-image.hostgator.com or secure142.hostgator.com or gator142.hostgator.com [Try alternatives if you have a problem]
+Outgoing Mail Server: mail.braiins.com (server requires authentication) port 26
+Outgoing Mail Server: (SSL) secure142.hostgator.com or gator142.hostgator.com (server requires authentication) port 465 [Try alternatives if you have a problem]
+Supported Incoming Mail Protocols: POP3, POP3S (SSL/TLS), IMAP, IMAPS (SSL/TLS)
+Supported Outgoing Mail Protocols: SMTP, SMTPS (SSL/TLS)
+
+WebMail: http://braiins.com/webmail

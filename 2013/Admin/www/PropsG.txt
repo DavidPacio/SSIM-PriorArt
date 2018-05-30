@@ -1,0 +1,44 @@
+1	Entity	Entity	01 - Entity Information
+2	Superior	Superior Entity	01 - Entity Information
+3	Subord	Subordinate Entity	01 - Entity Information
+4	TPA	Third Party Agent	332 - Property - Third Party Agents
+5	Person	Person	01 - Entity Information
+6	Officer	Officer	500 - Property - Entity Officers
+7	Address	Address	01 - Entity Information
+8	Contact	Contact	01 - Entity Information
+9	Group	Group and company	100 - Property - Group and Company
+10	Restated	Restatements	110 - Property - Restatements
+11	OpActivs	Operating activities	120 - Property - Operating Activities
+12	BizSegs	Business segments	170 - Property - Business Segments
+13	ProvisionClasses	Provisions classes	190 - Property - Provisions Classes
+14	IFAClasses	Intangible fixed asset classes	200 - Property - Intangible Fixed Asset Classes
+15	TFAClasses	Tangible fixed asset classes	210 - Property - Tangible Fixed Asset Classes
+16	FAIHoldings	Fixed asset investment holdings	230 - Property - Fixed Asset Investment Holdings
+17	Dividends	Dividends	250 - Property - Dividends
+18	PensionSchemes	Pension schemes	260 - Property - PensionSchemes
+19	ShareSchemes	Share based payment schemes	265 - Property - Share Based Payment Schemes
+20	FIValueType	Financial instrument value type	270 - Property - Financial Instrument Value Type
+21	FIs	Financial instrument current and non-current	271 - Property - Financial Instrument Current and Non-Current
+22	FILevel	Financial instrument level	272 - Property - Financial Instrument Level
+23	FIMvts	Financial instrument movements	273 - Property - Financial Instrument Movements
+24	MPeriods	Maturities	275 - Property - Maturities or Expiration Periods
+25	Acqs	Acquisitions	300 - Property - Acquisitions
+26	AcqAssetsLiabs	Acquisition assets and liabilities	305 - Property - Acquisition Assets and Liabilities
+27	Disposals	Disposals	310 - Property - Disposals
+28	OtherInterests	Other participating interests or investments	336 - Property - Other Interests - Investments
+29	ShareClasses	Share classes	502 - Property - Share Classes
+30	ShareTypes	Share types	503 - Property - Share Types
+31	Region	Region	520 - Property - Countries and Regions
+32	Country	Country	520 - Property - Countries and Regions
+33	Currency	Currency	521 - Property - Currencies
+34	StockEx	Stock Exchange	522 - Property - Stock Exchanges
+35	Language	Language	523 - Property - Languages
+36	Activity	Activity	550 - Property - Activity
+37	ExpenseType	Expense type	551 - Property - Expense Type
+38	ExceptNon	Exceptional and non-exceptional items	552 - Property - Exceptional and Non-Exceptional Items
+39	Analysis	Detailed analysis	553 - Property - Detailed Analysis
+40	GroupTrans	Intra / extra group transactions	554 - Property - Intra / extra group transactions
+41	Ageing	Ageing	122 - Property - Ageing
+42	Instance	Instance	120 - Property - Operating Activities
+43	None	None	120 - Property - Operating Activities
+44	Unallocated	Unallocated	120 - Property - Operating Activities

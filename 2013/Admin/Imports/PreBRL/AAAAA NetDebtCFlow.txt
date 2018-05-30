@@ -1,0 +1,14 @@
+Cash and Net Debt test
+No DE Check
+ImportType:Replace
+
+Cash and OverDrafts
+Tx541	60,000 	30,000
+Tx575	6,330 	5,082
+Tx382	-331,701	-241,815
+#Tx1170:start	-1,170	-170
+#Tx1172:start	-1,172	-172
+Tx1001	-1,001	-1	#Convertible debt
+#Tx3387:start	-3,387	-387	#HP & FinLease Obligations Total
+#Tx3389Hy13:start	-462,838	-429,504	#HP & FinLease Obligations < 1yr
+#Tx3388:start	-592,949	-959,560	#HP & FinLease Obligations > 1 y

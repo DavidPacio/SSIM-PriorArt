@@ -1,0 +1,106 @@
+/* Global */
+* {margin:0;padding:0}
+img {border:none}
+body {font:normal 9pt Verdana,Arial,Helvetica,sans-serif;color:#000;background:#fff;padding:8px}
+
+p {margin:0 0 1em}
+h1 {font-size:135%;color:#007AA3;margin:0 0 0.75em}
+h2 {font-size:120%;color:#007AA3;margin:0 0 0.5em}
+h3 {font-size:110%;color:#db7800;margin:0 0 0.4em}
+h4 {font-size:105%;color:#069}
+
+a:link    {color: #0000CD}
+a:active  {color: #0000FF}
+a:visited {color: Navy}
+a:hover   {color: #483D8B}
+
+.fl {float:left}
+.fr {float:right}
+.hide{display:none}
+.inlb{display:inline-block}
+
+.b {font-weight:bold}
+.c {text-align:center}
+.clr{clear:both}
+.r {text-align:right}
+.l {text-align:left}
+.L {font-size:1.2em}
+.s {font-size:0.8em}
+.u {text-decoration:underline}
+.mc {margin-left:auto;margin-right:auto}
+.m05{margin:0.5em}
+.m10{margin:1em}
+.mt05{margin-top:.5em}
+.mt10{margin-top:1em}
+.mb0 {margin-bottom:0}
+.mb05{margin-bottom:.5em}
+.ml10{margin-left:1em}
+.pt03{padding-top:.3em}
+.pt04{padding-top:.4em}
+.pt05{padding-top:.5em}
+.grey7{color:#777}
+.navy{color:navy}
+.w50x{width:50px}
+.w100x{width:100px}
+.w50pc{max-width:50%;overflow:hidden}
+.wball {word-break:break-all}
+
+ul {margin:0 0 1em 20px;list-style-image:url(BlueDot.gif)}
+li {margin:0 0 0.5em}
+p + ul {margin-top: -0.5em}
+ul li, ul li ul, li p {margin-bottom:0.5em}
+ul.circle {list-style-type:circle;list-style-image:none}
+
+.topl {position:absolute;top:8px;left:8px}
+.topr {position:absolute;top:8px;right:20px}
+
+/* Buttons */
+.topB {margin:0 auto;width:27px;height:12px;padding-top:14px;font-size:8.5pt;font-weight:bold;color:#333;background-image:url(TopBtn.png);background-repeat:no-repeat;background-position:50% 0}
+.topB:hover {background-position:50% -30px;color:#f00}
+button{padding:1px 0.5em;background: #e7f7ff;border: 1px solid #7F9DFF;border-radius:6px}
+button.on:hover {color:#00f;box-shadow:0 0 0 1px #7FBBFF inset;background:#e0ffff}
+
+/* tables and inputs
+table.itran {background:transparent;border:none;margin-bottom:0}
+table.itran td {border:none} */
+input,textarea,select {font-size:1em;color:#000;background:#fff;border:1px solid #7F9DFF;padding:0 2px 1px 2px;margin-top:2px}
+input.radio {position:relative;top:1px;margin-left:.5em}
+td > input.radio:first-child {margin-left:0}
+select {padding:0}
+
+/*
+table {font-size:1em;background:#ffe;border:2px solid #066;border-collapse:collapse;margin-bottom:1em}
+table.inner {background:#fafafa;border:1px solid #00c;margin:0}
+table.inner,table.itran {background:transparent;border:none;margin:0}
+table.innerb {background:transparent;border:1px solid #00c;margin:0}
+*/
+table {font-size:1em;background:#FEFCF5;border:2px solid #098;border-collapse:collapse;margin-bottom:1em}
+table.itran {background:transparent;border:none}
+
+td     {padding:2px 3px 3px;border:1px solid #00c}
+td p {margin:0}
+td.mid {vertical-align:middle}
+td.top {vertical-align:top}
+td.bot {vertical-align:bottom}
+.brdt2 {border-top:2px solid #00c}
+table.itran td {padding:0 3px 0;border:none}
+table.inner td {padding:3px;border:none}
+table.innerb td {padding:3px;border:1px solid #00c}
+
+/* Table alternate row colours */
+.bg0 {background:#f0ffff}
+.bg1 {background:#ffffea}
+.bgw {background:#fff}
+.bgg {background:#f7f7f7}
+.inf {background:#f0f5dd} /* prev: f0f5f0 EAF1DD in C's SS */
+
+.sinf{display:inline-block;background:#f0f5f0;border:1px solid #7F9DFF;padding:0 2px 1px 2px;margin-top:2px}
+
+/* ElementsInfo */
+table.ElementsInfo td.Ref span {display:inline-block;width:145px}
+/* Edit Tables */
+#ETbody td {max-width:850px}
+/*#ETbody input,#ETbody textarea {background:#fff} */
+
+#Td750 td {max-width:750px}
+

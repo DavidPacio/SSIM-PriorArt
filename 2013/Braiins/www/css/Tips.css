@@ -1,0 +1,56 @@
+/* djh tip-yellowsimple.css renamed to Tips.css with
+class name chamged from tip-yellowsimple to tip-yellow, the default
+moz and webkit border-raduius removed
+image name changed from tip-yellowsimple_arrows.gif to TipArrows.gif
+max-width increased from 300
+color changed from #000 to navy
+tip-yellow .tip-inner changed from font:12px/16px arial,helvetica,sans-serif;
+bottom arrow left changed from 50% to 5%
+padding changed from 6px 8px
+Removed top and bottom as unused
+bg-image stuff removed
+bold removed 20.10.12
+*/
+.tip-yellow {
+  z-index:1000;
+  text-align:left;
+  border:1px solid #c7bf93;
+  border-radius:4px;
+  padding:4px 6px;
+  min-width:50px;
+  max-width:500px;
+  color:navy;
+  background-color:#fff9c9;
+  /**
+   * - If you set a background-image, border/padding/background-color will be ingnored.
+   *   You can set any padding to .tip-inner instead if you need.
+   * - If you want a tiled background-image and border/padding for the tip,
+   *   set the background-image to .tip-inner instead.
+   */
+}
+.tip-yellow .tip-inner {font-size:9pt}
+
+.tip-yellow .tip-arrow-right {
+  margin-top:-4px; /* approx. half the height to center it */
+  margin-left:0;
+  top:50%;
+  left:100%;
+  width:6px;
+  height:9px;
+  background:url(TipArrows.gif) no-repeat -9px 0;
+}
+.tip-yellow .tip-arrow-left {
+  margin-top:-4px; /* approx. half the height to center it */
+  margin-left:-6px;
+  top:50%;
+  left:0;
+  width:6px;
+  height:9px;
+  background:url(TipArrows.gif) no-repeat -27px 0;
+}
+
+div.tip-yellow{opacity:0;position:absolute;top:0;left:0;}
+div.tip-yellow table, div.tip-yellow td{margin:0;font-family:inherit;font-size:inherit;font-weight:inherit;font-style:inherit;font-variant:inherit;}
+div.tip-yellow td.tip-right{background-position:100% 0;}
+div.tip-yellow td.tip-left{background-position:0 100%;}
+div.tip-yellow div.tip-arrow{position:absolute;overflow:hidden;font:1px/1px sans-serif;}

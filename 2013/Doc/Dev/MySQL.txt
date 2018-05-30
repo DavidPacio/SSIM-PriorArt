@@ -1,0 +1,153 @@
+eySQL Snippets
+==============
+
+Integer Types
+-------------
+http://dev.mysql.com/doc/refman/5.5/en/numeric-types.html
+
+Type   Storage   Minimum Value       Maximum Value
+       (Bytes)   (Signed/Unsigned)   Signed/Unsigned)
+TINYINT   1     -128                 127
+                   0                 255
+SMALLINT  2     -32768               32767
+                   0                 65535
+MEDIUMINT 3     -8388608             8388607
+                   0                 16777215
+INT       4     -2147483648          2147483647
+                   0                 4294967295
+BIGINT    8   -9223372036854775808   9223372036854775807
+                   0                 18446744073709551615
+
+Text Types
+----------
+http://dev.mysql.com/doc/refman/5.5/en/storage-requirements.html
+
+TINYTEXT   - 255 bytes
+TEXT       - 65535 bytes
+MEDIUMTEXT - 16,777,215 bytes (2^24 - 1) = 16MB - 1
+LONGTEXT   - 4G bytes (2^32 – 1)
+
+TINYBLOB   - 255 bytes
+BLOB       - 65535 bytes
+MEDIUMBLOB - 16,777,215 bytes (2^24 - 1)
+LONGBLOB   - 4G bytes (2^32 – 1)
+
+Timestamps
+----------
+MySQL stores timestamp fields internally in unix UTC seconds adjusted from the server/MySQL timezone.
+
+Timestamp Output:
+The manual at http://dev.mysql.com/doc/refman/5.5/en/datetime.html says
+MySQL converts TIMESTAMP values from the current time zone to UTC for storage, and back from UTC to the current time zone for retrieval.
+
+However, the retrieval conversion does not appear to happen. Queries on timestamp fields show the UTC value. ??
+
+However, if UNIX_TIMESTAMP() is used to get timestamp field values, a conversion does happen.
+
+According to http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_unix-timestamp
+If UNIX_TIMESTAMP() is called with a date argument, it returns the value of the argument as seconds since '1970-01-01 00:00:00' UTC.
+date may be a DATE string, a DATETIME string, a TIMESTAMP, or a number in the format YYMMDD or YYYYMMDD.
+The server interprets date as a value in the current time zone and converts it to an internal value in UTC.
+
+Thus a timestamp field retrieved by UNIX_TIMESTAMP has the UTC value of the timestamp converted by server time a second time.
+The constant SERVER_TZOS (Server Time Zone Offset in seconds using the JavaScript sign convention) is used to adjust for this:
+  timestamp in UTC (GMT) = UNIX_TIMESTAMP(timestamp field) - SERVER_TZOS
+This UTC time stamp can be converted to a visitor's time for use with gmstrftime()
+  by subtracting TZO*60 where TZO is the client time zone offset as reported by JavaScript
+
+visitor's local time of a timestamp = gmstrftime(UNIX_TIMESTAMP(timestamp field) - SERVER_TZOS - TZO*60)
+
+See also SetTime() in Com/inc/ClassBDB.inc for more.
+
+Simplified 05.01.13 by setting both MySql and Php to use UTC -> SERVER_TZOS = 0 -> SERVER_TZOS OoS
+
+Time Zones
+----------
+MySQL Server Time Zone Support
+http://dev.mysql.com/doc/refman/5.5/en/time-zone-support.html
+
+The current values of the global and client-specific time zones can be retrieved like this:
+
+SELECT @@global.time_zone, @@session.time_zone;
+
+-> SYSTEM  SYSTEM for both K and Local 03.01.13
+
+The value 'SYSTEM' indicates that the time zone should be the same as the system time zone. 
+
+SYSTEM 03.01.13
+K     system time zone 	UTC
+Local system time zone 	E. Australia Standard Time 	Documentation for local
+
+05.01.13
+Added
+default-time-zone = '+0:00'
+to my.ini [mysqld] section
+then
+SELECT @@global.time_zone, @@session.time_zone;
+-> +00:00   +00:00
+
+'+0:00' not UTC because, as per http://forum.wampserver.com/read.php?2,84332,84610
+Named time zones can be used only if the time zone information tables in the mysql database have been created and populated.
+Population is not done automatically!!!
+
+See also See /Doc/Doc.txt Server Config and Class BDB SetTime().
+
+Null
+====
+In InnoDB tables 'Storage size is the same for NULL and NOT NULL columns.' http://dev.mysql.com/doc/refman/5.5/en/column-count-limit.html
+(MyIsam requires extra space for NULL columns.)
+
+See also IFNULL() and NULLIF() http://dev.mysql.com/doc/refman/5.6/en/control-flow-functions.html
+plus IS NULL and IS NOT NULL
+
+Working with NULL Values
+http://dev.mysql.com/doc/refman/5.6/en/working-with-null.html
+
+Problems with NULL Values
+http://dev.mysql.com/doc/refman/5.6/en/problems-with-null.html
+
+
+Storage Requirements
+---------------------
+http://dev.mysql.com/doc/refman/5.5/en/storage-requirements.html
+
+TINYBLOB, TINYTEXT   L + 1 bytes, where L < 2^8 < 256
+BLOB, TEXT   L + 2 bytes, where L < 2^16 < 65536
+
+Prepared Statements
+-------------------
+http://net.tutsplus.com/tutorials/other/top-20-mysql-best-practices/
+item 12
+
+Foreign key constraints
+-----------------------
+http://www.sitepoint.com/mysql-foreign-keys-quicker-database-development/
+
+Triggers
+========
+http://phpmaster.com/action-automation-with-mysql-triggers/
+
+
+Joins
+=====
+http://dev.mysql.com/doc/refman/5.6/en/join.html
+http://www.w3schools.com/sql/sql_join.asp
+
+join and inner join are the same in MySQL
+
+* JOIN: Return rows when there is at least one match in both tables
+* LEFT JOIN: Return all rows from the left table, even if there are no matches in the right table
+* RIGHT JOIN: Return all rows from the right table, even if there are no matches in the left table
+* FULL JOIN: Return rows when there is a match in one of the tables
+
+Union and Union All
+===================
+The SQL UNION operator combines two or more SELECT statements.
+
+http://www.w3schools.com/sql/sql_union.asp
+
+Remember Union!
+
+Return Multiple Values from Select Sub-query using Concat_WS()
+--------------------------------------------------------------
+Select V.Id,(select Concat_WS(',',T.Id,T.AddT) From VisitTrans T Where T.VisId=V.Id Order by T.Id Desc Limit 1) From Visits V Where V.LoginN=3 and (select T.PageN From VisitTrans T Where T.VisId=V.Id Order by T.Id Desc Limit 1)=301

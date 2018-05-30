@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Dimensions Map: UK-GAAP-DPL</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="http://localhost/Admin/www/favicon.png">
+<link rel="stylesheet" type="text/css" href="css/Utils.css">
+</head>
+<body><h2 class="c">UK-GAAP-DPL Dimensions Map Short Listing</h2>
+<p class="c">For a simple list of Dimensions without the Dimension Members and Map info see <a href="http://localhost/Admin/www/UK-GAAP-DPL/DimensionsList.php">Dimensions List</a>.<br>For Notes on the meaning of the columns and codes see the end of the report.</p>
+<table class="mc">
+<tbody><tr class="b bg0"><td>Id</td><td>Braiins Name / TxId Label / Tx Name / Role</td><td>Dimension{.Dimension Member} Reference</td><td class="c">Lev<br>el</td><td class="c">DiMe<br>Type</td><td class="c">DiMe<br>Id</td><td class="c">Sum</td><td class="c">Mux List</td><td class="c">Entity<br>Types</td><td class="c">E.Id</td></tr>
+<tr class="c brdt2"><td rowspan="2" class="top">1<br>1</td><td rowspan="2" class="l top">Group<br>2454 Group and company [Dimension]<br>GroupCompanyDimension<br>100 - Group and Company</td><td class="l">Group.Consol</td><td>0</td><td>R,S</td><td>1</td><td>Kids</td><td></td><td>5,6,7,8,9</td><td class="r">955</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Group [Co]</td><td>1</td><td>D</td><td>2</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">913</td></tr>
+<tr class="c brdt2"><td rowspan="14" class="top">2<br>2</td><td rowspan="14" class="l top">Consol<br>957 Consolidation [Dimension]<br>ConsolidationDimension<br>105 - Dimension - Consolidation</td><td class="l">Consol [Co]</td><td>0</td><td>D</td><td>3</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">913</td></tr>
+<tr class="c"><td class="l">Consol.Consol</td><td>0</td><td></td><td>4</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">955</td></tr>
+<tr class="c"><td class="l">Consol.GroupShareJVsExclAssocsTurnoverOnly</td><td>0</td><td>R,S</td><td>5</td><td>3,4,7</td><td></td><td>5,6,7,8,9</td><td class="r">2455</td></tr>
+<tr class="c"><td class="l">Consol.ShareJVsAssocs</td><td>0</td><td>R,S</td><td>6</td><td>7,40</td><td></td><td>5,6,7,8,9</td><td class="r">4390</td></tr>
+<tr class="c"><td class="l">Consol.ShareJVs</td><td>0</td><td>R,S</td><td>7</td><td>Kids</td><td></td><td>5,6,7,8,9</td><td class="r">4389</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Consol.OtherJVs</td><td>1</td><td></td><td>8</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">3581</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Consol.JV1</td><td>1</td><td></td><td>9</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">2962</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Consol.JV2</td><td>1</td><td></td><td>10</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">2973</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Consol.JV3</td><td>1</td><td></td><td>11</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">2984</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Consol.JV4</td><td>1</td><td></td><td>12</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">2986</td></tr>
+<tr class="c"><td class="l" colspan="9">&nbsp;&nbsp;&nbsp;....</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Consol.Assoc29</td><td>1</td><td></td><td>70</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">321</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Consol.Assoc30</td><td>1</td><td></td><td>71</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">323</td></tr>
+<tr class="c"><td class="l">Consol.GroupBeforeAssocsJVs</td><td>0</td><td>R,S</td><td>72</td><td>3,4</td><td></td><td>5,6,7,8,9</td><td class="r">2453</td></tr>
+<tr class="c brdt2"><td rowspan="5" class="top">3<br>3</td><td rowspan="5" class="l top">Restated<br>4246 Restatements [Dimension]<br>RestatementsDimension<br>110 - Dimension - Restatements</td><td class="l">Restated.Amount</td><td>0</td><td>R,S,Y</td><td>73</td><td>Kids</td><td></td><td>All</td><td class="r">4245</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Restated.PriorPeriodIncr</td><td>1</td><td>R,S,Y</td><td>74</td><td>Kids</td><td></td><td>All</td><td class="r">3965</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Restated.AcctPolicyIncr</td><td>2</td><td>Y</td><td>75</td><td></td><td></td><td>All</td><td class="r">50</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Restated.MaterialErrorIncr</td><td>2</td><td>Y</td><td>76</td><td></td><td></td><td>All</td><td class="r">3178</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Restated [OriginalAmount]</td><td>1</td><td>D,R,Y</td><td>77</td><td></td><td></td><td>All</td><td class="r">3463</td></tr>
+<tr class="c brdt2"><td rowspan="5" class="top">4<br>4</td><td rowspan="5" class="l top">OpActivs<br>3397 Operating activities [Dimension]<br>OperatingActivitiesDimension<br>120 - Dimension - Operating Activities</td><td class="l">OpActivs [Total]</td><td>0</td><td>D</td><td>78</td><td></td><td></td><td>All</td><td class="r">4787</td></tr>
+<tr class="c"><td class="l">OpActivs.ContinuingInclAcqs</td><td>0</td><td>R,S</td><td>79</td><td>80,81</td><td></td><td>All</td><td class="r">977</td></tr>
+<tr class="c"><td class="l">OpActivs.Acqs</td><td>0</td><td></td><td>80</td><td></td><td></td><td>All</td><td class="r">90</td></tr>
+<tr class="c"><td class="l">OpActivs.Continuing</td><td>0</td><td></td><td>81</td><td></td><td></td><td>All</td><td class="r">976</td></tr>
+<tr class="c"><td class="l">OpActivs.Discontinued</td><td>0</td><td></td><td>82</td><td></td><td></td><td>All</td><td class="r">1703</td></tr>
+<tr class="c brdt2"><td rowspan="3" class="top">5<br>5</td><td rowspan="3" class="l top">ExceptAdjusts<br>1932 Exceptional items adjustments [Dimension]<br>ExceptionalItemsAdjustmentsDimension<br>150 - Dimension - Exceptional Item Adjustments</td><td class="l">ExceptAdjusts [NotApplicable]</td><td>0</td><td>D,Z</td><td>83</td><td></td><td></td><td>All</td><td class="r">5339</td></tr>
+<tr class="c"><td class="l">ExceptAdjusts.After</td><td>0</td><td>R</td><td>84</td><td></td><td></td><td>All</td><td class="r">132</td></tr>
+<tr class="c"><td class="l">ExceptAdjusts.Before</td><td>0</td><td>R</td><td>85</td><td></td><td></td><td>All</td><td class="r">409</td></tr>
+<tr class="c brdt2"><td rowspan="3" class="top">6<br>6</td><td rowspan="3" class="l top">AmortAdjusts<br>168 Amortisation and impairment adjustments [Dimension]<br>AmortisationImpairmentAdjustmentsDimension<br>160 - Dimension - Amortisation and Impairment Adjustments</td><td class="l">AmortAdjusts [NotApplicable]</td><td>0</td><td>D,Z</td><td>86</td><td></td><td></td><td>All</td><td class="r">5339</td></tr>
+<tr class="c"><td class="l">AmortAdjusts.After</td><td>0</td><td>R</td><td>87</td><td></td><td></td><td>All</td><td class="r">131</td></tr>
+<tr class="c"><td class="l">AmortAdjusts.Before</td><td>0</td><td>R</td><td>88</td><td></td><td></td><td>All</td><td class="r">408</td></tr>
+<tr class="c brdt2"><td rowspan="14" class="top">7<br>7</td><td rowspan="14" class="l top">BizSegs<br>486 Business segments [Dimension]<br>BusinessSegmentsDimension<br>170 - Dimension - Business Segments</td><td class="l">BizSegs [NotApplicable]</td><td>0</td><td>D,Z</td><td>89</td><td></td><td></td><td>All</td><td class="r">5339</td></tr>
+<tr class="c"><td class="l">BizSegs.Total</td><td>0</td><td>R,S</td><td>90</td><td>Kids</td><td></td><td>All</td><td class="r">4754</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;BizSegs.Others</td><td>1</td><td></td><td>91</td><td></td><td></td><td>All</td><td class="r">3478</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;BizSegs.1</td><td>1</td><td></td><td>92</td><td></td><td></td><td>All</td><td class="r">451</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;BizSegs.2</td><td>1</td><td></td><td>93</td><td></td><td></td><td>All</td><td class="r">462</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;BizSegs.3</td><td>1</td><td></td><td>94</td><td></td><td></td><td>All</td><td class="r">473</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;BizSegs.4</td><td>1</td><td></td><td>95</td><td></td><td></td><td>All</td><td class="r">475</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;BizSegs.5</td><td>1</td><td></td><td>96</td><td></td><td></td><td>All</td><td class="r">476</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;BizSegs.6</td><td>1</td><td></td><td>97</td><td></td><td></td><td>All</td><td class="r">477</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;BizSegs.7</td><td>1</td><td></td><td>98</td><td></td><td></td><td>All</td><td class="r">478</td></tr>
+<tr class="c"><td class="l" colspan="9">&nbsp;&nbsp;&nbsp;....</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;BizSegs.28</td><td>1</td><td></td><td>119</td><td></td><td></td><td>All</td><td class="r">471</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;BizSegs.29</td><td>1</td><td></td><td>120</td><td></td><td></td><td>All</td><td class="r">472</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;BizSegs.30</td><td>1</td><td></td><td>121</td><td></td><td></td><td>All</td><td class="r">474</td></tr>
+<tr class="c brdt2"><td rowspan="20" class="top">8<br>8</td><td rowspan="20" class="l top">ProvisionClasses<br>4040 Provisions classes [Dimension]<br>ProvisionsClassesDimension<br>190 - Dimension - Provisions Classes</td><td class="l">ProvisionClasses [All]</td><td>0</td><td>D,R,S</td><td>122</td><td>Kids</td><td></td><td>All</td><td class="r">158</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.PensionsSimilarObligations</td><td>1</td><td></td><td>123</td><td></td><td></td><td>All</td><td class="r">4067</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.DBPensionSchemes</td><td>1</td><td></td><td>124</td><td></td><td></td><td>All</td><td class="r">4057</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.DCPensionSchemes</td><td>1</td><td></td><td>125</td><td></td><td></td><td>All</td><td class="r">4058</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.PostRetireBenefitsNonPension</td><td>1</td><td></td><td>126</td><td></td><td></td><td>All</td><td class="r">4068</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.TaxationInclDeferred</td><td>1</td><td></td><td>127</td><td></td><td></td><td>All</td><td class="r">4072</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.DeferredTaxation</td><td>1</td><td></td><td>128</td><td></td><td></td><td>All</td><td class="r">4055</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.RestructuringOrReorg</td><td>1</td><td></td><td>129</td><td></td><td></td><td>All</td><td class="r">4071</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.ProductGuarantees</td><td>1</td><td></td><td>130</td><td></td><td></td><td>All</td><td class="r">4069</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.LegalProceedings</td><td>1</td><td></td><td>131</td><td></td><td></td><td>All</td><td class="r">4061</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.OnerousContracts</td><td>1</td><td></td><td>132</td><td></td><td></td><td>All</td><td class="r">4066</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.DecommissionRestorationRehab</td><td>1</td><td></td><td>133</td><td></td><td></td><td>All</td><td class="r">4053</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.EnvironmentalCosts</td><td>1</td><td></td><td>134</td><td></td><td></td><td>All</td><td class="r">4060</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.Remediation</td><td>1</td><td></td><td>135</td><td></td><td></td><td>All</td><td class="r">4070</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.Maintenance</td><td>1</td><td></td><td>136</td><td></td><td></td><td>All</td><td class="r">4065</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.Dilapidations</td><td>1</td><td></td><td>137</td><td></td><td></td><td>All</td><td class="r">4059</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.BadDebts</td><td>1</td><td></td><td>138</td><td></td><td></td><td>All</td><td class="r">4052</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.DeferredConsids</td><td>1</td><td></td><td>139</td><td></td><td></td><td>All</td><td class="r">4054</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.VacantProperties</td><td>1</td><td></td><td>140</td><td></td><td></td><td>All</td><td class="r">4073</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ProvisionClasses.Others</td><td>1</td><td></td><td>141</td><td></td><td></td><td>All</td><td class="r">3638</td></tr>
+<tr class="b bg0"><td>Id</td><td>Braiins Name / TxId Label / Tx Name / Role</td><td>Dimension{.Dimension Member} Reference</td><td class="c">Lev<br>el</td><td class="c">DiMe<br>Type</td><td class="c">DiMe<br>Id</td><td class="c">Sum</td><td class="c">Mux List</td><td class="c">Entity<br>Types</td><td class="c">E.Id</td></tr>
+<tr class="c brdt2"><td rowspan="17" class="top">9<br>9</td><td rowspan="17" class="l top">IFAClasses<br>2800 Intangible fixed asset classes [Dimension]<br>IntangibleFixedAssetClassesDimension<br>200 - Dimension - Intangible Fixed Asset Classes</td><td class="l">IFAClasses [All]</td><td>0</td><td>D,R,S</td><td>142</td><td>Kids</td><td></td><td>All</td><td class="r">155</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;IFAClasses.NetGoodwill</td><td>1</td><td>M0,S,X</td><td>143</td><td>Kids</td><td>144,145</td><td>All</td><td class="r">3282</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IFAClasses.PositiveGoodwill</td><td>2</td><td>M0,X</td><td>144</td><td></td><td>143</td><td>All</td><td class="r">3884</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IFAClasses.NegativeGoodwill</td><td>2</td><td>M0,X</td><td>145</td><td></td><td>143</td><td>All</td><td class="r">3245</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;IFAClasses.OtherThanGoodwill</td><td>1</td><td>M0</td><td>146</td><td></td><td></td><td>All</td><td class="r">2798</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;IFAClasses.DevelopmentCostsPatentsSimilar</td><td>1</td><td>M0,S,X</td><td>147</td><td>Kids</td><td>148,149,150,151</td><td>All</td><td class="r">1629</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IFAClasses.DevelopmentCosts</td><td>2</td><td>M0,X</td><td>148</td><td></td><td>147</td><td>All</td><td class="r">1627</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IFAClasses.PatentsConcessionsLicencesTradeMarksSimilar</td><td>2</td><td>M0,S,X</td><td>149</td><td>Kids</td><td>147,150,151</td><td>All</td><td class="r">3741</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IFAClasses.ConcessionsLicencesFranchises</td><td>3</td><td>M0,X</td><td>150</td><td></td><td>147,149</td><td>All</td><td class="r">945</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IFAClasses.PatentsCopyrightsTrademarksSimilar</td><td>3</td><td>M0,X</td><td>151</td><td></td><td>147,149</td><td>All</td><td class="r">3742</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;IFAClasses.IntellectualProperty</td><td>1</td><td>M0</td><td>152</td><td></td><td></td><td>All</td><td class="r">2829</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;IFAClasses.OtherExploitationRights</td><td>1</td><td>M0</td><td>153</td><td></td><td></td><td>All</td><td class="r">3535</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;IFAClasses.MastheadsPublishingTitles</td><td>1</td><td>M0</td><td>154</td><td></td><td></td><td>All</td><td class="r">3177</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;IFAClasses.BrandNames</td><td>1</td><td>M0</td><td>155</td><td></td><td></td><td>All</td><td class="r">442</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;IFAClasses.CustomerRelationships</td><td>1</td><td>M0</td><td>156</td><td></td><td></td><td>All</td><td class="r">1127</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;IFAClasses.PaymentsOnAcct</td><td>1</td><td>M0</td><td>157</td><td></td><td></td><td>All</td><td class="r">3749</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;IFAClasses.Others</td><td>1</td><td>M0</td><td>158</td><td></td><td></td><td>All</td><td class="r">3568</td></tr>
+<tr class="c brdt2"><td rowspan="25" class="top">10<br>:</td><td rowspan="25" class="l top">TFAClasses<br>4648 Tangible fixed asset classes [Dimension]<br>TangibleFixedAssetClassesDimension<br>210 - Dimension - Tangible Fixed Asset Classes</td><td class="l">TFAClasses [All]</td><td>0</td><td>D,R,S</td><td>159</td><td>Kids</td><td></td><td>All</td><td class="r">160</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TFAClasses.LandBuildings</td><td>1</td><td>M2,S,X</td><td>160</td><td>Kids</td><td>161,162</td><td>All</td><td class="r">3001</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TFAClasses.Land</td><td>2</td><td>M2,X</td><td>161</td><td></td><td>160</td><td>All</td><td class="r">3000</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TFAClasses.Buildings</td><td>2</td><td>M2,X</td><td>162</td><td></td><td>160</td><td>All</td><td class="r">445</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TFAClasses.InvestProperties</td><td>1</td><td>M2</td><td>163</td><td></td><td></td><td>All</td><td class="r">2918</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TFAClasses.PropertiesUnderConstruction</td><td>1</td><td>M2</td><td>164</td><td></td><td></td><td>All</td><td class="r">4000</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TFAClasses.VehiclesPlantMachinery</td><td>1</td><td>M3,S,X</td><td>165</td><td>Kids</td><td>166,167,168,169,170,171,172,173</td><td>All</td><td class="r">5056</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TFAClasses.PlantMachinery</td><td>2</td><td>M3,X</td><td>166</td><td></td><td>165</td><td>All</td><td class="r">3863</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TFAClasses.Vehicles</td><td>2</td><td>M3,S,X</td><td>167</td><td>Kids</td><td>165,168,169,170,171,172,173</td><td>All</td><td class="r">5055</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TFAClasses.Aircraft</td><td>3</td><td>M3,X</td><td>168</td><td></td><td>165,167</td><td>All</td><td class="r">150</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TFAClasses.Boats</td><td>3</td><td>M3,X</td><td>169</td><td></td><td>165,167</td><td>All</td><td class="r">418</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TFAClasses.MotorVehicles</td><td>3</td><td>M3,S,X</td><td>170</td><td>Kids</td><td>165,167,171,172</td><td>All</td><td class="r">3213</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TFAClasses.CommercialMotorVehicles</td><td>4</td><td>M3,X</td><td>171</td><td></td><td>165,167,170</td><td>All</td><td class="r">894</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TFAClasses.MotorCars</td><td>4</td><td>M3,X</td><td>172</td><td></td><td>165,167,170</td><td>All</td><td class="r">3212</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TFAClasses.OtherVehicles</td><td>3</td><td>M3,X</td><td>173</td><td></td><td>165,167</td><td>All</td><td class="r">3688</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TFAClasses.FixturesFittingsToolsEquipment</td><td>1</td><td>M3,S,X</td><td>174</td><td>Kids</td><td>175,176</td><td>All</td><td class="r">2173</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TFAClasses.FixturesFittings</td><td>2</td><td>M3,X</td><td>175</td><td></td><td>174</td><td>All</td><td class="r">2172</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TFAClasses.ToolsEquipment</td><td>2</td><td>M3,X</td><td>176</td><td></td><td>174</td><td>All</td><td class="r">4747</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TFAClasses.OfficeEquipment</td><td>1</td><td>M3</td><td>177</td><td></td><td></td><td>All</td><td class="r">3395</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TFAClasses.ComputerEquipment</td><td>1</td><td>M3</td><td>178</td><td></td><td></td><td>All</td><td class="r">924</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TFAClasses.PaymentsOnAccountAssetsUnderDevelopment</td><td>1</td><td>M3,S,X</td><td>179</td><td>Kids</td><td>180,181</td><td>All</td><td class="r">3748</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TFAClasses.PaymentsOnAcct</td><td>2</td><td>M3,X</td><td>180</td><td></td><td>179</td><td>All</td><td class="r">3747</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TFAClasses.ImprovementOrDevelopmentAssets</td><td>2</td><td>M3,X</td><td>181</td><td></td><td>179</td><td>All</td><td class="r">2597</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TFAClasses.ExplorationOrEvaluationAssets</td><td>1</td><td>M3</td><td>182</td><td></td><td></td><td>All</td><td class="r">4647</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TFAClasses.Others</td><td>1</td><td>M3</td><td>183</td><td></td><td></td><td>All</td><td class="r">3667</td></tr>
+<tr class="c brdt2"><td rowspan="5" class="top">11<br>;</td><td rowspan="5" class="l top">TFAOwnership<br>4650 Tangible fixed asset ownership [Dimension]<br>TangibleFixedAssetOwnershipDimension<br>220 - Dimension - Tangible Fixed Asset Ownership</td><td class="l">TFAOwnership [Total]</td><td>0</td><td>D,R,S</td><td>184</td><td>Kids</td><td></td><td>All</td><td class="r">4807</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TFAOwnership.OwnedOrFreehold</td><td>1</td><td>P</td><td>185</td><td></td><td></td><td>All</td><td class="r">3716</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TFAOwnership.Leased</td><td>1</td><td>P</td><td>186</td><td></td><td></td><td>All</td><td class="r">3020</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TFAOwnership.ShortLeaseholdProperties</td><td>1</td><td>P</td><td>187</td><td></td><td></td><td>All</td><td class="r">4417</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TFAOwnership.LongLeaseholdProperties</td><td>1</td><td>P</td><td>188</td><td></td><td></td><td>All</td><td class="r">3132</td></tr>
+<tr class="c brdt2"><td rowspan="9" class="top">12<br>&lt;</td><td rowspan="9" class="l top">FAIHoldings<br>2126 Fixed asset investment holdings [Dimension]<br>FixedAssetInvestmentHoldingsDimension<br>230 - Dimension - Fixed Asset Investment Holdings</td><td class="l">FAIHoldings [All]</td><td>0</td><td>D,R,S</td><td>189</td><td>Kids</td><td></td><td>All</td><td class="r">154</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FAIHoldings.GroupUndertakingsOtherInterests</td><td>1</td><td>M1</td><td>190</td><td></td><td></td><td>All</td><td class="r">2457</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FAIHoldings.GroupBeforeAssocsJVs</td><td>1</td><td>M1</td><td>191</td><td></td><td></td><td>All</td><td class="r">2453</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FAIHoldings.ShareJVsAssocs</td><td>1</td><td>M1</td><td>192</td><td></td><td></td><td>All</td><td class="r">4390</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FAIHoldings.InvestInJVs</td><td>1</td><td>M1</td><td>193</td><td></td><td></td><td>All</td><td class="r">2923</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FAIHoldings.InvestInAssocs</td><td>1</td><td>M1</td><td>194</td><td></td><td></td><td>All</td><td class="r">2921</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FAIHoldings.InvestInSubsids</td><td>1</td><td>M1</td><td>195</td><td></td><td></td><td>All</td><td class="r">2913</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FAIHoldings.InvestInOtherInterests</td><td>1</td><td>M1</td><td>196</td><td></td><td></td><td>All</td><td class="r">2912</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FAIHoldings.Others</td><td>1</td><td>M1</td><td>197</td><td></td><td></td><td>All</td><td class="r">4806</td></tr>
+<tr class="b bg0"><td>Id</td><td>Braiins Name / TxId Label / Tx Name / Role</td><td>Dimension{.Dimension Member} Reference</td><td class="c">Lev<br>el</td><td class="c">DiMe<br>Type</td><td class="c">DiMe<br>Id</td><td class="c">Sum</td><td class="c">Mux List</td><td class="c">Entity<br>Types</td><td class="c">E.Id</td></tr>
+<tr class="c brdt2"><td rowspan="8" class="top">13<br>=</td><td rowspan="8" class="l top">FAITypes<br>2128 Fixed asset investment types [Dimension]<br>FixedAssetInvestmentTypesDimension<br>240 - Dimension - Fixed Asset Investment Types</td><td class="l">FAITypes [All]</td><td>0</td><td>D,R,S</td><td>198</td><td>Kids</td><td></td><td>All</td><td class="r">161</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FAITypes.Shares</td><td>1</td><td>R,S</td><td>199</td><td>Kids</td><td></td><td>All</td><td class="r">4406</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAITypes.SharesListed</td><td>2</td><td>P</td><td>200</td><td></td><td></td><td>All</td><td class="r">4411</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAITypes.SharesUnlisted</td><td>2</td><td>P</td><td>201</td><td></td><td></td><td>All</td><td class="r">4413</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FAITypes.Loans</td><td>1</td><td>P</td><td>202</td><td></td><td></td><td>All</td><td class="r">3109</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FAITypes.OtherThanSharesInclLoans</td><td>1</td><td>P</td><td>203</td><td></td><td></td><td>All</td><td class="r">2152</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FAITypes.OtherThanSharesNotInclLoans</td><td>1</td><td>P</td><td>204</td><td></td><td></td><td>All</td><td class="r">2153</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FAITypes.OtherThanLoans</td><td>1</td><td>P</td><td>205</td><td></td><td></td><td>All</td><td class="r">2151</td></tr>
+<tr class="c brdt2"><td rowspan="3" class="top">14<br>&gt;</td><td rowspan="3" class="l top">Dividends<br>1754 Dividends [Dimension]<br>DividendsDimension<br>250 - Dimension - Dividends</td><td class="l">Dividends [PaidProposed]</td><td>0</td><td>D,R,S</td><td>206</td><td>Kids</td><td></td><td>5,6,7,8,9</td><td class="r">1776</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Dividends.Paid</td><td>1</td><td></td><td>207</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">1774</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Dividends.Proposed</td><td>1</td><td></td><td>208</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">1780</td></tr>
+<tr class="c brdt2"><td rowspan="14" class="top">15<br>?</td><td rowspan="14" class="l top">PensionSchemes<br>3787 Pension schemes [Dimension]<br>PensionSchemesDimension<br>260 - Dimension - PensionSchemes</td><td class="l">PensionSchemes [Total]</td><td>0</td><td>D,R,S</td><td>209</td><td>Kids</td><td></td><td>All</td><td class="r">4789</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;PensionSchemes.TotalThisTypeExclMedical</td><td>1</td><td>R,S</td><td>210</td><td>Kids</td><td></td><td>All</td><td class="r">4788</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PensionSchemes.1</td><td>2</td><td></td><td>211</td><td></td><td></td><td>All</td><td class="r">3775</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PensionSchemes.2</td><td>2</td><td></td><td>212</td><td></td><td></td><td>All</td><td class="r">3776</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PensionSchemes.3</td><td>2</td><td></td><td>213</td><td></td><td></td><td>All</td><td class="r">3777</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PensionSchemes.4</td><td>2</td><td></td><td>214</td><td></td><td></td><td>All</td><td class="r">3778</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PensionSchemes.5</td><td>2</td><td></td><td>215</td><td></td><td></td><td>All</td><td class="r">3779</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PensionSchemes.6</td><td>2</td><td></td><td>216</td><td></td><td></td><td>All</td><td class="r">3780</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PensionSchemes.7</td><td>2</td><td></td><td>217</td><td></td><td></td><td>All</td><td class="r">3781</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PensionSchemes.8</td><td>2</td><td></td><td>218</td><td></td><td></td><td>All</td><td class="r">3782</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;PensionSchemes.PostEmploymentMedical1</td><td>1</td><td></td><td>219</td><td></td><td></td><td>All</td><td class="r">3886</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;PensionSchemes.PostEmploymentMedical2</td><td>1</td><td></td><td>220</td><td></td><td></td><td>All</td><td class="r">3887</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;PensionSchemes.PostEmploymentMedical3</td><td>1</td><td></td><td>221</td><td></td><td></td><td>All</td><td class="r">3888</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;PensionSchemes.PostEmploymentMedical4</td><td>1</td><td></td><td>222</td><td></td><td></td><td>All</td><td class="r">3889</td></tr>
+<tr class="c brdt2"><td rowspan="9" class="top">16<br>@</td><td rowspan="9" class="l top">ShareSchemes<br>4362 Share-based payment schemes [Dimension]<br>Share-basedPaymentSchemesDimension<br>265 - Dimension - Share-based Payment Schemes</td><td class="l">ShareSchemes [Total]</td><td>0</td><td>D,R,S</td><td>223</td><td>Kids</td><td></td><td>All</td><td class="r">4790</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ShareSchemes.1</td><td>1</td><td></td><td>224</td><td></td><td></td><td>All</td><td class="r">4366</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ShareSchemes.2</td><td>1</td><td></td><td>225</td><td></td><td></td><td>All</td><td class="r">4367</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ShareSchemes.3</td><td>1</td><td></td><td>226</td><td></td><td></td><td>All</td><td class="r">4368</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ShareSchemes.4</td><td>1</td><td></td><td>227</td><td></td><td></td><td>All</td><td class="r">4369</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ShareSchemes.5</td><td>1</td><td></td><td>228</td><td></td><td></td><td>All</td><td class="r">4370</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ShareSchemes.6</td><td>1</td><td></td><td>229</td><td></td><td></td><td>All</td><td class="r">4371</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ShareSchemes.7</td><td>1</td><td></td><td>230</td><td></td><td></td><td>All</td><td class="r">4372</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ShareSchemes.8</td><td>1</td><td></td><td>231</td><td></td><td></td><td>All</td><td class="r">4373</td></tr>
+<tr class="c brdt2"><td rowspan="7" class="top">17<br>A</td><td rowspan="7" class="l top">FIValueType<br>2103 Financial instrument value type [Dimension]<br>FinancialInstrumentValueTypeDimension<br>270 - Dimension - Financial Instrument Value Type</td><td class="l">FIValueType [CarryingAmount]</td><td>0</td><td>D</td><td>232</td><td></td><td></td><td>All</td><td class="r">520</td></tr>
+<tr class="c"><td class="l">FIValueType.Value</td><td>0</td><td></td><td>233</td><td></td><td></td><td>All</td><td class="r">2000</td></tr>
+<tr class="c"><td class="l">FIValueType.PastDueOrImpaired</td><td>0</td><td>R,S</td><td>234</td><td>Kids</td><td></td><td>All</td><td class="r">3734</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FIValueType.PastDueButNotImpaired</td><td>1</td><td></td><td>235</td><td></td><td></td><td>All</td><td class="r">3733</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FIValueType.Impaired</td><td>1</td><td></td><td>236</td><td></td><td></td><td>All</td><td class="r">2553</td></tr>
+<tr class="c"><td class="l">FIValueType.NeitherPastDueNorImpaired</td><td>0</td><td></td><td>237</td><td></td><td></td><td>All</td><td class="r">3248</td></tr>
+<tr class="c"><td class="l">FIValueType.NotionalAmount</td><td>0</td><td></td><td>238</td><td></td><td></td><td>All</td><td class="r">3362</td></tr>
+<tr class="c brdt2"><td rowspan="3" class="top">18<br>B</td><td rowspan="3" class="l top">FIs<br>2095 Financial instrument current and non-current [Dimension]<br>FinancialInstrumentCurrentNon-currentDimension<br>271 - Dimension - Financial Instrument Current and Non-Current</td><td class="l">FIs [Total]</td><td>0</td><td>D,R,S</td><td>239</td><td>Kids</td><td></td><td>All</td><td class="r">4770</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FIs.Current</td><td>1</td><td></td><td>240</td><td></td><td></td><td>All</td><td class="r">1122</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FIs.NonCurrent</td><td>1</td><td></td><td>241</td><td></td><td></td><td>All</td><td class="r">3335</td></tr>
+<tr class="c brdt2"><td rowspan="4" class="top">19<br>C</td><td rowspan="4" class="l top">FILevel<br>2099 Financial instrument level [Dimension]<br>FinancialInstrumentLevelDimension<br>272 - Dimension - Financial Instrument Level</td><td class="l">FILevel [Total]</td><td>0</td><td>D,R,S</td><td>242</td><td>Kids</td><td></td><td>All</td><td class="r">4748</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FILevel.1</td><td>1</td><td></td><td>243</td><td></td><td></td><td>All</td><td class="r">3051</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FILevel.2</td><td>1</td><td></td><td>244</td><td></td><td></td><td>All</td><td class="r">3052</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FILevel.3</td><td>1</td><td></td><td>245</td><td></td><td></td><td>All</td><td class="r">3053</td></tr>
+<tr class="c brdt2"><td rowspan="11" class="top">20<br>D</td><td rowspan="11" class="l top">FIMvts<br>2100 Financial instrument movements [Dimension]<br>FinancialInstrumentMovementsDimension<br>273 - Dimension - Financial Instrument Movements</td><td class="l">FIMvts.TransferLevel1To2</td><td>0</td><td></td><td>246</td><td></td><td></td><td>All</td><td class="r">4854</td></tr>
+<tr class="c"><td class="l">FIMvts.TransferLevel2To1</td><td>0</td><td></td><td>247</td><td></td><td></td><td>All</td><td class="r">4855</td></tr>
+<tr class="c"><td class="l">FIMvts.ValueGainRecordedInIncomeStatement</td><td>0</td><td></td><td>248</td><td></td><td></td><td>All</td><td class="r">2030</td></tr>
+<tr class="c"><td class="l">FIMvts.GainRecordedInEquity</td><td>0</td><td></td><td>249</td><td></td><td></td><td>All</td><td class="r">2357</td></tr>
+<tr class="c"><td class="l">FIMvts.NetIncrLevel3PurchasesSalesSettlements</td><td>0</td><td>S,X</td><td>250</td><td>Kids</td><td>251,252,253</td><td>All</td><td class="r">3286</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FIMvts.NetIncrLevel3Purchases</td><td>1</td><td>X</td><td>251</td><td></td><td>250</td><td>All</td><td class="r">3285</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FIMvts.NetIncrLevel3Sales</td><td>1</td><td>X</td><td>252</td><td></td><td>250</td><td>All</td><td class="r">3287</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;FIMvts.NetIncrLevel3Settlements</td><td>1</td><td>X</td><td>253</td><td></td><td>250</td><td>All</td><td class="r">3288</td></tr>
+<tr class="c"><td class="l">FIMvts.ReclassifiedToLoansReceivables</td><td>0</td><td></td><td>254</td><td></td><td></td><td>All</td><td class="r">4149</td></tr>
+<tr class="c"><td class="l">FIMvts.TransferLevel12To3</td><td>0</td><td></td><td>255</td><td></td><td></td><td>All</td><td class="r">4853</td></tr>
+<tr class="c"><td class="l">FIMvts.TransferLevel3To12</td><td>0</td><td></td><td>256</td><td></td><td></td><td>All</td><td class="r">4856</td></tr>
+<tr class="b bg0"><td>Id</td><td>Braiins Name / TxId Label / Tx Name / Role</td><td>Dimension{.Dimension Member} Reference</td><td class="c">Lev<br>el</td><td class="c">DiMe<br>Type</td><td class="c">DiMe<br>Id</td><td class="c">Sum</td><td class="c">Mux List</td><td class="c">Entity<br>Types</td><td class="c">E.Id</td></tr>
+<tr class="c brdt2"><td rowspan="13" class="top">21<br>E</td><td rowspan="13" class="l top">MPeriods<br>3188 Maturities [Dimension]<br>MaturitiesDimension<br>275 - Dimension - Maturities or Expiration Periods</td><td class="l">MPeriods [NotApplicable]</td><td>0</td><td>D,Z</td><td>257</td><td></td><td></td><td>All</td><td class="r">5339</td></tr>
+<tr class="c"><td class="l">MPeriods.All</td><td>0</td><td>R,S</td><td>258</td><td>Kids</td><td></td><td>All</td><td class="r">157</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;MPeriods.&lt;1</td><td>1</td><td>S,X</td><td>259</td><td>Kids</td><td>260,261,262,263,264</td><td>All</td><td class="r">5091</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPeriods.30Days</td><td>2</td><td>X</td><td>260</td><td></td><td>259</td><td>All</td><td class="r">5089</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPeriods.30To60Days</td><td>2</td><td>X</td><td>261</td><td></td><td>259</td><td>All</td><td class="r">2249</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPeriods.60To90Days</td><td>2</td><td>X</td><td>262</td><td></td><td>259</td><td>All</td><td class="r">2250</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPeriods.6Months</td><td>2</td><td>X</td><td>263</td><td></td><td>259</td><td>All</td><td class="r">5090</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPeriods.6MonthsOneYear</td><td>2</td><td>X</td><td>264</td><td></td><td>259</td><td>All</td><td class="r">411</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;MPeriods.&gt;1</td><td>1</td><td>S,X</td><td>265</td><td>Kids</td><td>267,268,269</td><td>All</td><td class="r">133</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPeriods.1-5</td><td>2</td><td>R,S</td><td>266</td><td>Kids</td><td></td><td>All</td><td class="r">412</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPeriods.1-2</td><td>3</td><td>X</td><td>267</td><td></td><td>265</td><td>All</td><td class="r">413</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPeriods.2-5</td><td>3</td><td>X</td><td>268</td><td></td><td>265</td><td>All</td><td class="r">414</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPeriods.&gt;5</td><td>2</td><td>X</td><td>269</td><td></td><td>265</td><td>All</td><td class="r">3205</td></tr>
+<tr class="c brdt2"><td rowspan="11" class="top">22<br>F</td><td rowspan="11" class="l top">Acqs<br>91 Acquisitions [Dimension]<br>AcquisitionsDimension<br>300 - Dimension - Acquisitions</td><td class="l">Acqs.All</td><td>0</td><td>R,S</td><td>270</td><td>Kids</td><td></td><td>All</td><td class="r">151</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Acqs.1</td><td>1</td><td></td><td>271</td><td></td><td></td><td>All</td><td class="r">71</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Acqs.2</td><td>1</td><td></td><td>272</td><td></td><td></td><td>All</td><td class="r">73</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Acqs.3</td><td>1</td><td></td><td>273</td><td></td><td></td><td>All</td><td class="r">74</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Acqs.4</td><td>1</td><td></td><td>274</td><td></td><td></td><td>All</td><td class="r">75</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Acqs.5</td><td>1</td><td></td><td>275</td><td></td><td></td><td>All</td><td class="r">76</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Acqs.6</td><td>1</td><td></td><td>276</td><td></td><td></td><td>All</td><td class="r">77</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Acqs.7</td><td>1</td><td></td><td>277</td><td></td><td></td><td>All</td><td class="r">78</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Acqs.8</td><td>1</td><td></td><td>278</td><td></td><td></td><td>All</td><td class="r">79</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Acqs.9</td><td>1</td><td></td><td>279</td><td></td><td></td><td>All</td><td class="r">80</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Acqs.10</td><td>1</td><td></td><td>280</td><td></td><td></td><td>All</td><td class="r">72</td></tr>
+<tr class="c brdt2"><td rowspan="10" class="top">23<br>G</td><td rowspan="10" class="l top">AcqAssetsLiabs<br>81 Acquisition assets and liabilities [Dimension]<br>AcquisitionAssetsLiabilitiesDimension<br>305 - Dimension - Acquisition Assets and Liabilities</td><td class="l">AcqAssetsLiabs [Total]</td><td>0</td><td>D,R,S</td><td>281</td><td>Kids</td><td></td><td>All</td><td class="r">4786</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;AcqAssetsLiabs.AllSubsids</td><td>1</td><td></td><td>282</td><td></td><td></td><td>All</td><td class="r">159</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;AcqAssetsLiabs.ShareJVs</td><td>1</td><td></td><td>283</td><td></td><td></td><td>All</td><td class="r">4389</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;AcqAssetsLiabs.ShareAssocs</td><td>1</td><td></td><td>284</td><td></td><td></td><td>All</td><td class="r">4377</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;AcqAssetsLiabs.BookValue</td><td>1</td><td></td><td>285</td><td></td><td></td><td>All</td><td class="r">435</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;AcqAssetsLiabs.ProvisionalValue</td><td>1</td><td></td><td>286</td><td></td><td></td><td>All</td><td class="r">4028</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;AcqAssetsLiabs.ValueAdjustIncr</td><td>1</td><td></td><td>287</td><td></td><td></td><td>All</td><td class="r">2001</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;AcqAssetsLiabs.RevaluationIncr</td><td>1</td><td></td><td>288</td><td></td><td></td><td>All</td><td class="r">4257</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;AcqAssetsLiabs.AcctPolicyAlignIncr</td><td>1</td><td></td><td>289</td><td></td><td></td><td>All</td><td class="r">48</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;AcqAssetsLiabs.OtherSigAdjustsIncr</td><td>1</td><td></td><td>290</td><td></td><td></td><td>All</td><td class="r">3648</td></tr>
+<tr class="c brdt2"><td rowspan="11" class="top">24<br>H</td><td rowspan="11" class="l top">Disposals<br>1733 Disposals [Dimension]<br>DisposalsDimension<br>310 - Dimension - Disposals</td><td class="l">Disposals [All]</td><td>0</td><td>D,R,S</td><td>291</td><td>Kids</td><td></td><td>All</td><td class="r">153</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Disposals.1</td><td>1</td><td></td><td>292</td><td></td><td></td><td>All</td><td class="r">1715</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Disposals.2</td><td>1</td><td></td><td>293</td><td></td><td></td><td>All</td><td class="r">1717</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Disposals.3</td><td>1</td><td></td><td>294</td><td></td><td></td><td>All</td><td class="r">1718</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Disposals.4</td><td>1</td><td></td><td>295</td><td></td><td></td><td>All</td><td class="r">1719</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Disposals.5</td><td>1</td><td></td><td>296</td><td></td><td></td><td>All</td><td class="r">1720</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Disposals.6</td><td>1</td><td></td><td>297</td><td></td><td></td><td>All</td><td class="r">1721</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Disposals.7</td><td>1</td><td></td><td>298</td><td></td><td></td><td>All</td><td class="r">1722</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Disposals.8</td><td>1</td><td></td><td>299</td><td></td><td></td><td>All</td><td class="r">1723</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Disposals.9</td><td>1</td><td></td><td>300</td><td></td><td></td><td>All</td><td class="r">1724</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Disposals.10</td><td>1</td><td></td><td>301</td><td></td><td></td><td>All</td><td class="r">1716</td></tr>
+<tr class="c brdt2"><td rowspan="14" class="top">25<br>I</td><td rowspan="14" class="l top">JVs<br>2996 Joint-ventures [Dimension]<br>Joint-venturesDimension<br>320 - Dimension - Joint-Ventures</td><td class="l">JVs.All</td><td>0</td><td>R,S</td><td>302</td><td>Kids</td><td></td><td>All</td><td class="r">156</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;JVs.Others</td><td>1</td><td></td><td>303</td><td></td><td></td><td>All</td><td class="r">3581</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;JVs.1</td><td>1</td><td></td><td>304</td><td></td><td></td><td>All</td><td class="r">2962</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;JVs.2</td><td>1</td><td></td><td>305</td><td></td><td></td><td>All</td><td class="r">2973</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;JVs.3</td><td>1</td><td></td><td>306</td><td></td><td></td><td>All</td><td class="r">2984</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;JVs.4</td><td>1</td><td></td><td>307</td><td></td><td></td><td>All</td><td class="r">2986</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;JVs.5</td><td>1</td><td></td><td>308</td><td></td><td></td><td>All</td><td class="r">2987</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;JVs.6</td><td>1</td><td></td><td>309</td><td></td><td></td><td>All</td><td class="r">2988</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;JVs.7</td><td>1</td><td></td><td>310</td><td></td><td></td><td>All</td><td class="r">2989</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;JVs.8</td><td>1</td><td></td><td>311</td><td></td><td></td><td>All</td><td class="r">2990</td></tr>
+<tr class="c"><td class="l" colspan="9">&nbsp;&nbsp;&nbsp;....</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;JVs.28</td><td>1</td><td></td><td>331</td><td></td><td></td><td>All</td><td class="r">2982</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;JVs.29</td><td>1</td><td></td><td>332</td><td></td><td></td><td>All</td><td class="r">2983</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;JVs.30</td><td>1</td><td></td><td>333</td><td></td><td></td><td>All</td><td class="r">2985</td></tr>
+<tr class="b bg0"><td>Id</td><td>Braiins Name / TxId Label / Tx Name / Role</td><td>Dimension{.Dimension Member} Reference</td><td class="c">Lev<br>el</td><td class="c">DiMe<br>Type</td><td class="c">DiMe<br>Id</td><td class="c">Sum</td><td class="c">Mux List</td><td class="c">Entity<br>Types</td><td class="c">E.Id</td></tr>
+<tr class="c brdt2"><td rowspan="14" class="top">26<br>J</td><td rowspan="14" class="l top">Assocs<br>334 Associates [Dimension]<br>AssociatesDimension<br>325 - Dimension - Associates</td><td class="l">Assocs.All</td><td>0</td><td>R,S</td><td>334</td><td>Kids</td><td></td><td>All</td><td class="r">152</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Assocs.Others</td><td>1</td><td></td><td>335</td><td></td><td></td><td>All</td><td class="r">3475</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Assocs.1</td><td>1</td><td></td><td>336</td><td></td><td></td><td>All</td><td class="r">300</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Assocs.2</td><td>1</td><td></td><td>337</td><td></td><td></td><td>All</td><td class="r">311</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Assocs.3</td><td>1</td><td></td><td>338</td><td></td><td></td><td>All</td><td class="r">322</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Assocs.4</td><td>1</td><td></td><td>339</td><td></td><td></td><td>All</td><td class="r">324</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Assocs.5</td><td>1</td><td></td><td>340</td><td></td><td></td><td>All</td><td class="r">325</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Assocs.6</td><td>1</td><td></td><td>341</td><td></td><td></td><td>All</td><td class="r">326</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Assocs.7</td><td>1</td><td></td><td>342</td><td></td><td></td><td>All</td><td class="r">327</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Assocs.8</td><td>1</td><td></td><td>343</td><td></td><td></td><td>All</td><td class="r">328</td></tr>
+<tr class="c"><td class="l" colspan="9">&nbsp;&nbsp;&nbsp;....</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Assocs.28</td><td>1</td><td></td><td>363</td><td></td><td></td><td>All</td><td class="r">320</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Assocs.29</td><td>1</td><td></td><td>364</td><td></td><td></td><td>All</td><td class="r">321</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Assocs.30</td><td>1</td><td></td><td>365</td><td></td><td></td><td>All</td><td class="r">323</td></tr>
+<tr class="c brdt2"><td rowspan="14" class="top">27<br>K</td><td rowspan="14" class="l top">Subsids<br>4580 Subsidiaries [Dimension]<br>SubsidiariesDimension<br>330 - Dimension - Subsidiaries</td><td class="l">Subsids.All</td><td>0</td><td>R,S</td><td>366</td><td>Kids</td><td></td><td>5,6,7,8,9</td><td class="r">159</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Subsids.Others</td><td>1</td><td></td><td>367</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">3665</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Subsids.1</td><td>1</td><td></td><td>368</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">4583</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Subsids.2</td><td>1</td><td></td><td>369</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">4594</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Subsids.3</td><td>1</td><td></td><td>370</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">4605</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Subsids.4</td><td>1</td><td></td><td>371</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">4607</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Subsids.5</td><td>1</td><td></td><td>372</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">4608</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Subsids.6</td><td>1</td><td></td><td>373</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">4609</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Subsids.7</td><td>1</td><td></td><td>374</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">4610</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Subsids.8</td><td>1</td><td></td><td>375</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">4611</td></tr>
+<tr class="c"><td class="l" colspan="9">&nbsp;&nbsp;&nbsp;....</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Subsids.Quasi8</td><td>1</td><td></td><td>405</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">4119</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Subsids.Quasi9</td><td>1</td><td></td><td>406</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">4120</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Subsids.Quasi10</td><td>1</td><td></td><td>407</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">4112</td></tr>
+<tr class="c brdt2"><td rowspan="10" class="top">28<br>L</td><td rowspan="10" class="l top">OtherInterests<br>3630 Other participating interests or investments [Dimension]<br>OtherParticipatingInterestsOrInvestmentsDimension<br>336 - Dimension - Other Interests - Investments</td><td class="l">OtherInterests.Partic1</td><td>0</td><td></td><td>408</td><td></td><td></td><td>All</td><td class="r">3622</td></tr>
+<tr class="c"><td class="l">OtherInterests.Partic2</td><td>0</td><td></td><td>409</td><td></td><td></td><td>All</td><td class="r">3623</td></tr>
+<tr class="c"><td class="l">OtherInterests.Partic3</td><td>0</td><td></td><td>410</td><td></td><td></td><td>All</td><td class="r">3624</td></tr>
+<tr class="c"><td class="l">OtherInterests.Partic4</td><td>0</td><td></td><td>411</td><td></td><td></td><td>All</td><td class="r">3625</td></tr>
+<tr class="c"><td class="l">OtherInterests.Partic5</td><td>0</td><td></td><td>412</td><td></td><td></td><td>All</td><td class="r">3626</td></tr>
+<tr class="c"><td class="l">OtherInterests.Invest1</td><td>0</td><td></td><td>413</td><td></td><td></td><td>All</td><td class="r">3572</td></tr>
+<tr class="c"><td class="l">OtherInterests.Invest2</td><td>0</td><td></td><td>414</td><td></td><td></td><td>All</td><td class="r">3573</td></tr>
+<tr class="c"><td class="l">OtherInterests.Invest3</td><td>0</td><td></td><td>415</td><td></td><td></td><td>All</td><td class="r">3574</td></tr>
+<tr class="c"><td class="l">OtherInterests.Invest4</td><td>0</td><td></td><td>416</td><td></td><td></td><td>All</td><td class="r">3575</td></tr>
+<tr class="c"><td class="l">OtherInterests.Invest5</td><td>0</td><td></td><td>417</td><td></td><td></td><td>All</td><td class="r">3576</td></tr>
+<tr class="c brdt2"><td rowspan="14" class="top">29<br>M</td><td rowspan="14" class="l top">Officers<br>5485 Entity officers [Dimension]<br>EntityOfficersDimension<br>500 - Dimension - Entity Officers</td><td class="l">Officers.All</td><td>0</td><td>Z</td><td>418</td><td></td><td></td><td>All</td><td class="r">5347</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Officers.Chairman</td><td>1</td><td>P</td><td>419</td><td></td><td></td><td>All</td><td class="r">5365</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Officers.CEO</td><td>1</td><td>P</td><td>420</td><td></td><td></td><td>All</td><td class="r">5367</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Officers.ChairmanCEO</td><td>1</td><td>P</td><td>421</td><td></td><td></td><td>All</td><td class="r">5366</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Officers.ChiefPartnerLLP</td><td>1</td><td>P</td><td>422</td><td></td><td></td><td>3</td><td class="r">5368</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Officers.CoSec</td><td>1</td><td>M0</td><td>423</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5371</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Officers.CoSecDirector</td><td>1</td><td>P</td><td>424</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5372</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Officers.HighestPaidDirector</td><td>1</td><td></td><td>425</td><td></td><td></td><td>All</td><td class="r">5503</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Officers.Director1</td><td>1</td><td>M4</td><td>426</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5417</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Officers.Director2</td><td>1</td><td>M4</td><td>427</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5428</td></tr>
+<tr class="c"><td class="l" colspan="9">&nbsp;&nbsp;&nbsp;....</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Officers.PartnerLLP18</td><td>1</td><td>M5</td><td>483</td><td></td><td></td><td>3</td><td class="r">5552</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Officers.PartnerLLP19</td><td>1</td><td>M5</td><td>484</td><td></td><td></td><td>3</td><td class="r">5553</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Officers.PartnerLLP20</td><td>1</td><td>M5</td><td>485</td><td></td><td></td><td>3</td><td class="r">5555</td></tr>
+<tr class="b bg0"><td>Id</td><td>Braiins Name / TxId Label / Tx Name / Role</td><td>Dimension{.Dimension Member} Reference</td><td class="c">Lev<br>el</td><td class="c">DiMe<br>Type</td><td class="c">DiMe<br>Id</td><td class="c">Sum</td><td class="c">Mux List</td><td class="c">Entity<br>Types</td><td class="c">E.Id</td></tr>
+<tr class="c brdt2"><td rowspan="3" class="top">30<br>N</td><td rowspan="3" class="l top">OfficerType<br>5484 Entity officer type [Dimension]<br>EntityOfficerTypeDimension<br>501 - Dimension - Entity Officer Type</td><td class="l">OfficerType [All]</td><td>0</td><td>D,Z</td><td>486</td><td></td><td></td><td>All</td><td class="r">5346</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;OfficerType.Exec</td><td>1</td><td>P</td><td>487</td><td></td><td></td><td>All</td><td class="r">5496</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;OfficerType.Nonexec</td><td>1</td><td>P</td><td>488</td><td></td><td></td><td>All</td><td class="r">5532</td></tr>
+<tr class="c brdt2"><td rowspan="13" class="top">31<br>O</td><td rowspan="13" class="l top">ShareClasses<br>5586 Share classes [Dimension]<br>ShareClassesDimension<br>502 - Dimension - Share Classes</td><td class="l">ShareClasses [All]</td><td>0</td><td>D,R,S</td><td>489</td><td>Kids</td><td></td><td>5,6,7,8,9</td><td class="r">5350</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ShareClasses.AllOrdinary</td><td>1</td><td>R,S</td><td>490</td><td>Kids</td><td></td><td>5,6,7,8,9</td><td class="r">5348</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ShareClasses.Ordinary1</td><td>2</td><td></td><td>491</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5535</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ShareClasses.Ordinary2</td><td>2</td><td></td><td>492</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5536</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ShareClasses.Ordinary3</td><td>2</td><td></td><td>493</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5537</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ShareClasses.Ordinary4</td><td>2</td><td></td><td>494</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5538</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ShareClasses.Ordinary5</td><td>2</td><td></td><td>495</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5539</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ShareClasses.AllPreference</td><td>1</td><td>R,S</td><td>496</td><td>Kids</td><td></td><td>5,6,7,8,9</td><td class="r">5349</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ShareClasses.Preference1</td><td>2</td><td></td><td>497</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5569</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ShareClasses.Preference2</td><td>2</td><td></td><td>498</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5570</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ShareClasses.Preference3</td><td>2</td><td></td><td>499</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5571</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ShareClasses.Preference4</td><td>2</td><td></td><td>500</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5572</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ShareClasses.Preference5</td><td>2</td><td></td><td>501</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5573</td></tr>
+<tr class="c brdt2"><td rowspan="8" class="top">32<br>P</td><td rowspan="8" class="l top">ShareTypes<br>5587 Share types [Dimension]<br>ShareTypesDimension<br>503 - Dimension - Share Types</td><td class="l">ShareTypes [All]</td><td>0</td><td>D,R,S</td><td>502</td><td>Kids</td><td></td><td>5,6,7,8,9</td><td class="r">5351</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ShareTypes.Cum</td><td>1</td><td>R,S</td><td>503</td><td>Kids</td><td></td><td>5,6,7,8,9</td><td class="r">5380</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ShareTypes.CumRedeemable</td><td>2</td><td></td><td>504</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5379</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ShareTypes.CumNonRedeemable</td><td>2</td><td></td><td>505</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5378</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ShareTypes.NonCum</td><td>1</td><td>R,S</td><td>506</td><td>Kids</td><td></td><td>5,6,7,8,9</td><td class="r">5531</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ShareTypes.NonCumRedeemable</td><td>2</td><td></td><td>507</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5530</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ShareTypes.NonCumNonRedeemable</td><td>2</td><td></td><td>508</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5529</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ShareTypes.Others</td><td>1</td><td></td><td>509</td><td></td><td></td><td>5,6,7,8,9</td><td class="r">5542</td></tr>
+<tr class="c brdt2"><td rowspan="12" class="top">33<br>Q</td><td rowspan="12" class="l top">ContactType<br>5467 Entity contact type [Dimension]<br>EntityContactTypeDimension<br>505 - Dimension - Entity Contact Type</td><td class="l">ContactType [HeadOffice]</td><td>0</td><td>D</td><td>510</td><td></td><td></td><td>All</td><td class="r">5502</td></tr>
+<tr class="c"><td class="l">ContactType.RegisteredOffice</td><td>0</td><td></td><td>511</td><td></td><td></td><td>All</td><td class="r">5582</td></tr>
+<tr class="c"><td class="l">ContactType.MainBiz</td><td>0</td><td></td><td>512</td><td></td><td></td><td>All</td><td class="r">5516</td></tr>
+<tr class="c"><td class="l">ContactType.PublicRelations</td><td>0</td><td></td><td>513</td><td></td><td></td><td>All</td><td class="r">5580</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ContactType.InvestorRelations</td><td>1</td><td></td><td>514</td><td></td><td></td><td>All</td><td class="r">5505</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ContactType.MediaRelations</td><td>1</td><td></td><td>515</td><td></td><td></td><td>All</td><td class="r">5521</td></tr>
+<tr class="c"><td class="l">ContactType.SalesMarketing</td><td>0</td><td></td><td>516</td><td></td><td></td><td>All</td><td class="r">5584</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ContactType.Sales</td><td>1</td><td></td><td>517</td><td></td><td></td><td>All</td><td class="r">5583</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ContactType.Marketing</td><td>1</td><td></td><td>518</td><td></td><td></td><td>All</td><td class="r">5519</td></tr>
+<tr class="c"><td class="l">ContactType.ProductInfo</td><td>0</td><td></td><td>519</td><td></td><td></td><td>All</td><td class="r">5579</td></tr>
+<tr class="c"><td class="l">ContactType.TechnicalInfo</td><td>0</td><td></td><td>520</td><td></td><td></td><td>All</td><td class="r">5594</td></tr>
+<tr class="c"><td class="l">ContactType.BizReport</td><td>0</td><td></td><td>521</td><td></td><td></td><td>All</td><td class="r">5357</td></tr>
+<tr class="c brdt2"><td rowspan="9" class="top">34<br>R</td><td rowspan="9" class="l top">TPAType<br>5596 Third party agent type [Dimension]<br>ThirdPartyAgentTypeDimension<br>508 - Dimension - Third Party Agent Type</td><td class="l">TPAType.Accountants</td><td>0</td><td>M1</td><td>522</td><td></td><td></td><td>All</td><td class="r">5461</td></tr>
+<tr class="c"><td class="l">TPAType.Auditors</td><td>0</td><td>M1</td><td>523</td><td></td><td></td><td>All</td><td class="r">5461</td></tr>
+<tr class="c"><td class="l">TPAType.Bankers</td><td>0</td><td>M1</td><td>524</td><td></td><td></td><td>All</td><td class="r">5465</td></tr>
+<tr class="c"><td class="l">TPAType.LegalAdvisors</td><td>0</td><td>M1</td><td>525</td><td></td><td></td><td>All</td><td class="r">5481</td></tr>
+<tr class="c"><td class="l">TPAType.PublicRelationsAdvisers</td><td>0</td><td>M1</td><td>526</td><td></td><td></td><td>All</td><td class="r">5489</td></tr>
+<tr class="c"><td class="l">TPAType.RegistrationAgents</td><td>0</td><td>M1</td><td>527</td><td></td><td></td><td>All</td><td class="r">5490</td></tr>
+<tr class="c"><td class="l">TPAType.Underwriters</td><td>0</td><td>M1</td><td>528</td><td></td><td></td><td>All</td><td class="r">5495</td></tr>
+<tr class="c"><td class="l">TPAType.Administrators</td><td>0</td><td>M1</td><td>529</td><td></td><td></td><td>All</td><td class="r">5345</td></tr>
+<tr class="c"><td class="l">TPAType.Receivers</td><td>0</td><td>M1</td><td>530</td><td></td><td></td><td>All</td><td class="r">5581</td></tr>
+<tr class="c brdt2"><td rowspan="5" class="top">35<br>S</td><td rowspan="5" class="l top">TPAStatus<br>5595 Third party agent status [Dimension]<br>ThirdPartyAgentStatusDimension<br>509 - Dimension - Third Party Agent Status</td><td class="l">TPAStatus [Total]</td><td>0</td><td>D,R,S</td><td>531</td><td>Kids</td><td></td><td>All</td><td class="r">5599</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TPAStatus.PrincipalAgent</td><td>1</td><td>P</td><td>532</td><td></td><td></td><td>All</td><td class="r">5574</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TPAStatus.JointAgent1</td><td>1</td><td>P</td><td>533</td><td></td><td></td><td>All</td><td class="r">5507</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TPAStatus.JointAgent2</td><td>1</td><td>P</td><td>534</td><td></td><td></td><td>All</td><td class="r">5508</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;TPAStatus.JointAgent3</td><td>1</td><td>P</td><td>535</td><td></td><td></td><td>All</td><td class="r">5509</td></tr>
+<tr class="b bg0"><td>Id</td><td>Braiins Name / TxId Label / Tx Name / Role</td><td>Dimension{.Dimension Member} Reference</td><td class="c">Lev<br>el</td><td class="c">DiMe<br>Type</td><td class="c">DiMe<br>Id</td><td class="c">Sum</td><td class="c">Mux List</td><td class="c">Entity<br>Types</td><td class="c">E.Id</td></tr>
+<tr class="c brdt2"><td rowspan="12" class="top">36<br>T</td><td rowspan="12" class="l top">Contact<br>5500 Form of contact [Dimension]<br>FormContactDimension<br>511 - Dimension - Form of Contact</td><td class="l">Contact [Main]</td><td>0</td><td>D</td><td>536</td><td></td><td></td><td>All</td><td class="r">5517</td></tr>
+<tr class="c"><td class="l">Contact.Direct</td><td>0</td><td></td><td>537</td><td></td><td></td><td>All</td><td class="r">5416</td></tr>
+<tr class="c"><td class="l">Contact.Switchboard</td><td>0</td><td></td><td>538</td><td></td><td></td><td>All</td><td class="r">5592</td></tr>
+<tr class="c"><td class="l">Contact.Office</td><td>0</td><td></td><td>539</td><td></td><td></td><td>All</td><td class="r">5533</td></tr>
+<tr class="c"><td class="l">Contact.Personal</td><td>0</td><td></td><td>540</td><td></td><td></td><td>All</td><td class="r">5564</td></tr>
+<tr class="c"><td class="l">Contact.Home</td><td>0</td><td></td><td>541</td><td></td><td></td><td>All</td><td class="r">5504</td></tr>
+<tr class="c"><td class="l">Contact.Day</td><td>0</td><td></td><td>542</td><td></td><td></td><td>All</td><td class="r">5385</td></tr>
+<tr class="c"><td class="l">Contact.Night</td><td>0</td><td></td><td>543</td><td></td><td></td><td>All</td><td class="r">5528</td></tr>
+<tr class="c"><td class="l">Contact.Emergency</td><td>0</td><td></td><td>544</td><td></td><td></td><td>All</td><td class="r">5458</td></tr>
+<tr class="c"><td class="l">Contact.Alternative1</td><td>0</td><td></td><td>545</td><td></td><td></td><td>All</td><td class="r">5352</td></tr>
+<tr class="c"><td class="l">Contact.Alternative2</td><td>0</td><td></td><td>546</td><td></td><td></td><td>All</td><td class="r">5353</td></tr>
+<tr class="c"><td class="l">Contact.Alternative3</td><td>0</td><td></td><td>547</td><td></td><td></td><td>All</td><td class="r">5354</td></tr>
+<tr class="c brdt2"><td rowspan="3" class="top">37<br>U</td><td rowspan="3" class="l top">AddressType<br>5344 Address type [Dimension]<br>AddressTypeDimension<br>512 - Dimension - Address Type</td><td class="l">AddressType [Main]</td><td>0</td><td>D</td><td>548</td><td></td><td></td><td>All</td><td class="r">5515</td></tr>
+<tr class="c"><td class="l">AddressType.Postal</td><td>0</td><td></td><td>549</td><td></td><td></td><td>All</td><td class="r">5567</td></tr>
+<tr class="c"><td class="l">AddressType.Street</td><td>0</td><td></td><td>550</td><td></td><td></td><td>All</td><td class="r">5591</td></tr>
+<tr class="c brdt2"><td rowspan="4" class="top">38<br>V</td><td rowspan="4" class="l top">TelNumType<br>5566 Phone number type [Dimension]<br>PhoneNumberTypeDimension<br>513 - Dimension - Phone Number Type</td><td class="l">TelNumType [NotApplicable]</td><td>0</td><td>D,Z</td><td>551</td><td></td><td></td><td>All</td><td class="r">5339</td></tr>
+<tr class="c"><td class="l">TelNumType.Landline</td><td>0</td><td></td><td>552</td><td></td><td></td><td>All</td><td class="r">5510</td></tr>
+<tr class="c"><td class="l">TelNumType.Mobile</td><td>0</td><td></td><td>553</td><td></td><td></td><td>All</td><td class="r">5522</td></tr>
+<tr class="c"><td class="l">TelNumType.Fax</td><td>0</td><td></td><td>554</td><td></td><td></td><td>All</td><td class="r">5498</td></tr>
+<tr class="c brdt2"><td rowspan="14" class="top">39<br>W</td><td rowspan="14" class="l top">Countries<br>5708 Countries [Dimension]<br>CountriesDimension<br>520 - Dimension - Countries and Regions</td><td class="l">Countries [NotApplicable]</td><td>0</td><td>D,Z</td><td>555</td><td></td><td></td><td>All</td><td class="r">5339</td></tr>
+<tr class="c"><td class="l">Countries.All</td><td>0</td><td>R,S</td><td>556</td><td>Kids</td><td></td><td>All</td><td class="r">5652</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Countries.UK</td><td>1</td><td></td><td>557</td><td></td><td></td><td>All</td><td class="r">5902</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Countries.England</td><td>1</td><td></td><td>558</td><td></td><td></td><td>All</td><td class="r">5722</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Countries.Scotland</td><td>1</td><td></td><td>559</td><td></td><td></td><td>All</td><td class="r">5862</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Countries.Wales</td><td>1</td><td></td><td>560</td><td></td><td></td><td>All</td><td class="r">5912</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Countries.NorthernIreland</td><td>1</td><td></td><td>561</td><td></td><td></td><td>All</td><td class="r">5829</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Countries.IsleMan</td><td>1</td><td></td><td>562</td><td></td><td></td><td>All</td><td class="r">5767</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Countries.Jersey</td><td>1</td><td></td><td>563</td><td></td><td></td><td>All</td><td class="r">5772</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Countries.Guernsey</td><td>1</td><td></td><td>564</td><td></td><td></td><td>All</td><td class="r">5750</td></tr>
+<tr class="c"><td class="l" colspan="9">&nbsp;&nbsp;&nbsp;....</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Countries.Yemen</td><td>1</td><td></td><td>819</td><td></td><td></td><td>All</td><td class="r">5915</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Countries.Zambia</td><td>1</td><td></td><td>820</td><td></td><td></td><td>All</td><td class="r">5916</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Countries.Zimbabwe</td><td>1</td><td></td><td>821</td><td></td><td></td><td>All</td><td class="r">5917</td></tr>
+<tr class="c brdt2"><td rowspan="14" class="top">40<br>X</td><td rowspan="14" class="l top">Currencies<br>5956 Currencies [Dimension]<br>CurrenciesDimension<br>521 - Dimension - Currencies</td><td class="l">Currencies [NotApplicable]</td><td>0</td><td>D,Z</td><td>822</td><td></td><td></td><td>All</td><td class="r">5339</td></tr>
+<tr class="c"><td class="l">Currencies.All</td><td>0</td><td>R,S</td><td>823</td><td>Kids</td><td></td><td>All</td><td class="r">5920</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Currencies.PoundSterling</td><td>1</td><td></td><td>824</td><td></td><td></td><td>All</td><td class="r">6050</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Currencies.USDollar</td><td>1</td><td></td><td>825</td><td></td><td></td><td>All</td><td class="r">6089</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Currencies.Euro</td><td>1</td><td></td><td>826</td><td></td><td></td><td>All</td><td class="r">5971</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Currencies.Yen</td><td>1</td><td></td><td>827</td><td></td><td></td><td>All</td><td class="r">6101</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Currencies.CanadianDollar</td><td>1</td><td></td><td>828</td><td></td><td></td><td>All</td><td class="r">5944</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Currencies.Afghani</td><td>1</td><td></td><td>829</td><td></td><td></td><td>All</td><td class="r">5918</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Currencies.AlgerianDinar</td><td>1</td><td></td><td>830</td><td></td><td></td><td>All</td><td class="r">5919</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Currencies.ArgentinePeso</td><td>1</td><td></td><td>831</td><td></td><td></td><td>All</td><td class="r">5921</td></tr>
+<tr class="c"><td class="l" colspan="9">&nbsp;&nbsp;&nbsp;....</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Currencies.YuanRenminbi</td><td>1</td><td></td><td>1003</td><td></td><td></td><td>All</td><td class="r">6102</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Currencies.ZimbabweDollar</td><td>1</td><td></td><td>1004</td><td></td><td></td><td>All</td><td class="r">6103</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Currencies.Zloty</td><td>1</td><td></td><td>1005</td><td></td><td></td><td>All</td><td class="r">6104</td></tr>
+<tr class="c brdt2"><td rowspan="14" class="top">41<br>Y</td><td rowspan="14" class="l top">StockExs<br>6150 Exchanges [Dimension]<br>ExchangesDimension<br>522 - Dimension - Stock Exchanges</td><td class="l">StockExs.UKLSE</td><td>0</td><td></td><td>1006</td><td></td><td></td><td>9</td><td class="r">6268</td></tr>
+<tr class="c"><td class="l">StockExs.UKAIM</td><td>0</td><td></td><td>1007</td><td></td><td></td><td>9</td><td class="r">6266</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;StockExs.USNYSE</td><td>1</td><td></td><td>1008</td><td></td><td></td><td>9</td><td class="r">6275</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;StockExs.USNASDAQ</td><td>1</td><td></td><td>1009</td><td></td><td></td><td>9</td><td class="r">6273</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;StockExs.JapanTokyo</td><td>1</td><td></td><td>1010</td><td></td><td></td><td>9</td><td class="r">6188</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;StockExs.GermanyDeutsche</td><td>1</td><td></td><td>1011</td><td></td><td></td><td>9</td><td class="r">6159</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;StockExs.France</td><td>1</td><td></td><td>1012</td><td></td><td></td><td>9</td><td class="r">6153</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;StockExs.Sweden</td><td>1</td><td></td><td>1013</td><td></td><td></td><td>9</td><td class="r">6253</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;StockExs.Netherlands</td><td>1</td><td></td><td>1014</td><td></td><td></td><td>9</td><td class="r">6212</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;StockExs.SpainMercado</td><td>1</td><td></td><td>1015</td><td></td><td></td><td>9</td><td class="r">6247</td></tr>
+<tr class="c"><td class="l" colspan="9">&nbsp;&nbsp;&nbsp;....</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;StockExs.VietNam</td><td>1</td><td></td><td>1180</td><td></td><td></td><td>9</td><td class="r">6283</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;StockExs.Zambia</td><td>1</td><td></td><td>1181</td><td></td><td></td><td>9</td><td class="r">6284</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;StockExs.Zimbabwe</td><td>1</td><td></td><td>1182</td><td></td><td></td><td>9</td><td class="r">6285</td></tr>
+<tr class="b bg0"><td>Id</td><td>Braiins Name / TxId Label / Tx Name / Role</td><td>Dimension{.Dimension Member} Reference</td><td class="c">Lev<br>el</td><td class="c">DiMe<br>Type</td><td class="c">DiMe<br>Id</td><td class="c">Sum</td><td class="c">Mux List</td><td class="c">Entity<br>Types</td><td class="c">E.Id</td></tr>
+<tr class="c brdt2"><td rowspan="14" class="top">42<br>Z</td><td rowspan="14" class="l top">Languages<br>6337 Languages [Dimension]<br>LanguagesDimension<br>523 - Dimension - Languages</td><td class="l">Languages [NotApplicable]</td><td>0</td><td>D</td><td>1183</td><td></td><td></td><td>All</td><td class="r">5339</td></tr>
+<tr class="c"><td class="l">Languages.English</td><td>0</td><td></td><td>1184</td><td></td><td></td><td>All</td><td class="r">6308</td></tr>
+<tr class="c"><td class="l">Languages.All</td><td>0</td><td></td><td>1185</td><td></td><td></td><td>All</td><td class="r">6289</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Languages.Abkhazian</td><td>1</td><td></td><td>1186</td><td></td><td></td><td>All</td><td class="r">6286</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Languages.Afrikaans</td><td>1</td><td></td><td>1187</td><td></td><td></td><td>All</td><td class="r">6287</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Languages.Albanian</td><td>1</td><td></td><td>1188</td><td></td><td></td><td>All</td><td class="r">6288</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Languages.Amharic</td><td>1</td><td></td><td>1189</td><td></td><td></td><td>All</td><td class="r">6290</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Languages.Arabic</td><td>1</td><td></td><td>1190</td><td></td><td></td><td>All</td><td class="r">6291</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Languages.Armenian</td><td>1</td><td></td><td>1191</td><td></td><td></td><td>All</td><td class="r">6292</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Languages.Assamese</td><td>1</td><td></td><td>1192</td><td></td><td></td><td>All</td><td class="r">6293</td></tr>
+<tr class="c"><td class="l" colspan="9">&nbsp;&nbsp;&nbsp;....</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Languages.Welsh</td><td>1</td><td></td><td>1284</td><td></td><td></td><td>All</td><td class="r">6389</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Languages.Yiddish</td><td>1</td><td></td><td>1285</td><td></td><td></td><td>All</td><td class="r">6390</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Languages.Zulu</td><td>1</td><td></td><td>1286</td><td></td><td></td><td>All</td><td class="r">6391</td></tr>
+<tr class="c brdt2"><td rowspan="14" class="top">43<br>[</td><td rowspan="14" class="l top">Activity<br>6415 Activity [Dimension]<br>ActivityDimension<br>550 - Dimension - Activity</td><td class="l">Activity [Total]</td><td>0</td><td>D,R,S</td><td>1287</td><td>Kids</td><td></td><td>All</td><td class="r">6600</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Activity.AgriForestryFishing</td><td>1</td><td></td><td>1288</td><td></td><td></td><td>All</td><td class="r">6414</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Activity.MiningQuarrying</td><td>1</td><td></td><td>1289</td><td></td><td></td><td>All</td><td class="r">6423</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Activity.Manufacturing</td><td>1</td><td></td><td>1290</td><td></td><td></td><td>All</td><td class="r">6429</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Activity.ElectricGasSteamAirCon</td><td>1</td><td></td><td>1291</td><td></td><td></td><td>All</td><td class="r">6438</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Activity.WaterSewerageWasteMngmt</td><td>1</td><td></td><td>1292</td><td></td><td></td><td>All</td><td class="r">6449</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Activity.Construction</td><td>1</td><td></td><td>1293</td><td></td><td></td><td>All</td><td class="r">6455</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Activity.WholesaleRetailTradeRepairMotors</td><td>1</td><td></td><td>1294</td><td></td><td></td><td>All</td><td class="r">6470</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Activity.TransportStorage</td><td>1</td><td></td><td>1295</td><td></td><td></td><td>All</td><td class="r">6474</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Activity.AccommodationFoodService</td><td>1</td><td></td><td>1296</td><td></td><td></td><td>All</td><td class="r">6477</td></tr>
+<tr class="c"><td class="l" colspan="9">&nbsp;&nbsp;&nbsp;....</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Activity.OtherSpecific3</td><td>1</td><td></td><td>1315</td><td></td><td></td><td>All</td><td class="r">6554</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Activity.OtherSpecific4</td><td>1</td><td></td><td>1316</td><td></td><td></td><td>All</td><td class="r">6555</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Activity.OtherSpecific5</td><td>1</td><td></td><td>1317</td><td></td><td></td><td>All</td><td class="r">6556</td></tr>
+<tr class="c brdt2"><td rowspan="4" class="top">44<br>\</td><td rowspan="4" class="l top">ExpenseType<br>6453 Expense type [Dimension]<br>ExpenseTypeDimension<br>551 - Dimension - Expense Type</td><td class="l">ExpenseType [Total]</td><td>0</td><td>D,R,S</td><td>1318</td><td>Kids</td><td></td><td>All</td><td class="r">6602</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ExpenseType.CoS</td><td>1</td><td></td><td>1319</td><td></td><td></td><td>All</td><td class="r">6437</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ExpenseType.Distrib</td><td>1</td><td></td><td>1320</td><td></td><td></td><td>All</td><td class="r">6448</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ExpenseType.Admin</td><td>1</td><td></td><td>1321</td><td></td><td></td><td>All</td><td class="r">6416</td></tr>
+<tr class="c brdt2"><td rowspan="3" class="top">45<br>]</td><td rowspan="3" class="l top">ExceptNon<br>6452 Exceptional and non-exceptional items [Dimension]<br>ExceptionalNon-exceptionalItemsDimension<br>552 - Dimension - Exceptional and Non-Exceptional Items</td><td class="l">ExceptNon [Total]</td><td>0</td><td>D,R,S</td><td>1322</td><td>Kids</td><td></td><td>All</td><td class="r">6603</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ExceptNon.Nonexcept</td><td>1</td><td></td><td>1323</td><td></td><td></td><td>All</td><td class="r">6538</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;ExceptNon.Except</td><td>1</td><td></td><td>1324</td><td></td><td></td><td>All</td><td class="r">6451</td></tr>
+<tr class="c brdt2"><td rowspan="14" class="top">46<br>^</td><td rowspan="14" class="l top">Analysis<br>6443 Detailed analysis [Dimension]<br>DetailedAnalysisDimension<br>553 - Dimension - Detailed Analysis</td><td class="l">Analysis [Total]</td><td>0</td><td>D,R,S</td><td>1325</td><td>Kids</td><td></td><td>All</td><td class="r">6604</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Analysis.1</td><td>1</td><td></td><td>1326</td><td></td><td></td><td>All</td><td class="r">6486</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Analysis.2</td><td>1</td><td></td><td>1327</td><td></td><td></td><td>All</td><td class="r">6497</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Analysis.3</td><td>1</td><td></td><td>1328</td><td></td><td></td><td>All</td><td class="r">6508</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Analysis.4</td><td>1</td><td></td><td>1329</td><td></td><td></td><td>All</td><td class="r">6519</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Analysis.5</td><td>1</td><td></td><td>1330</td><td></td><td></td><td>All</td><td class="r">6521</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Analysis.6</td><td>1</td><td></td><td>1331</td><td></td><td></td><td>All</td><td class="r">6522</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Analysis.7</td><td>1</td><td></td><td>1332</td><td></td><td></td><td>All</td><td class="r">6523</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Analysis.8</td><td>1</td><td></td><td>1333</td><td></td><td></td><td>All</td><td class="r">6524</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Analysis.9</td><td>1</td><td></td><td>1334</td><td></td><td></td><td>All</td><td class="r">6525</td></tr>
+<tr class="c"><td class="l" colspan="9">&nbsp;&nbsp;&nbsp;....</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Analysis.38</td><td>1</td><td></td><td>1363</td><td></td><td></td><td>All</td><td class="r">6517</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Analysis.39</td><td>1</td><td></td><td>1364</td><td></td><td></td><td>All</td><td class="r">6518</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Analysis.40</td><td>1</td><td></td><td>1365</td><td></td><td></td><td>All</td><td class="r">6520</td></tr>
+<tr class="c brdt2"><td rowspan="8" class="top">47<br>_</td><td rowspan="8" class="l top">GroupTrans<br>6484 Intra / extra group transactions [Dimension]<br>IntraExtraGroupTransactionsDimension<br>554 - Dimension - Intra / extra group transactions</td><td class="l">GroupTrans [Total]</td><td>0</td><td>D,R,S</td><td>1366</td><td>Kids</td><td></td><td>All</td><td class="r">6605</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;GroupTrans.Undertakings</td><td>1</td><td>R,S</td><td>1367</td><td>Kids</td><td></td><td>All</td><td class="r">6473</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GroupTrans.Parent</td><td>2</td><td></td><td>1368</td><td></td><td></td><td>All</td><td class="r">6562</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GroupTrans.SubsidUndertakings</td><td>2</td><td></td><td>1369</td><td></td><td></td><td>All</td><td class="r">6596</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;GroupTrans.JVs</td><td>1</td><td></td><td>1370</td><td></td><td></td><td>All</td><td class="r">6528</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;GroupTrans.Assocs</td><td>1</td><td></td><td>1371</td><td></td><td></td><td>All</td><td class="r">6418</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;GroupTrans.ParticInterests</td><td>1</td><td></td><td>1372</td><td></td><td></td><td>All</td><td class="r">6563</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;GroupTrans.TPs</td><td>1</td><td></td><td>1373</td><td></td><td></td><td>All</td><td class="r">6599</td></tr>
+<tr class="b bg0"><td>Id</td><td>Braiins Name / TxId Label / Tx Name / Role</td><td>Dimension{.Dimension Member} Reference</td><td class="c">Lev<br>el</td><td class="c">DiMe<br>Type</td><td class="c">DiMe<br>Id</td><td class="c">Sum</td><td class="c">Mux List</td><td class="c">Entity<br>Types</td><td class="c">E.Id</td></tr>
+<tr class="c brdt2"><td rowspan="7" class="top">48<br>`</td><td rowspan="7" class="l top">Ageing<br>Braiins Ageing Dimension<br>Ageing<br>122 - Dimension - Ageing</td><td class="l">Ageing.All</td><td>0</td><td>B,R,S</td><td>1374</td><td>Kids</td><td></td><td>All</td><td class="r">5339</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Ageing.&lt;1</td><td>1</td><td>B</td><td>1375</td><td></td><td></td><td>All</td><td class="r">5339</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;Ageing.&gt;1</td><td>1</td><td>B,S,X</td><td>1376</td><td>Kids</td><td>1378,1379,1380</td><td>All</td><td class="r">5339</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ageing.1-5</td><td>2</td><td>B,R,S</td><td>1377</td><td>Kids</td><td></td><td>All</td><td class="r">5339</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ageing.1-2</td><td>3</td><td>B,X</td><td>1378</td><td></td><td>1376</td><td>All</td><td class="r">5339</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ageing.2-5</td><td>3</td><td>B,X</td><td>1379</td><td></td><td>1376</td><td>All</td><td class="r">5339</td></tr>
+<tr class="c"><td class="l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ageing.&gt;5</td><td>2</td><td>B,X</td><td>1380</td><td></td><td>1376</td><td>All</td><td class="r">5339</td></tr>
+<tr class="c"><td></td><td></td><td class="l">Unallocated (Pseudo Dimension Member)</td><td></td><td>Z</td><td>9999</td><td></td><td></td><td>All</td><td></td></tr>
+</tbody></table>
+<div class="mc" style="width:1215px">
+<h3>Notes</h3>
+<p>The Dimension{.Dimension Member} References in the third column above
+ are used in formats and imports if a dimension is involved,<br>
+by appending them to a Bro name after a comma e.g. PL.Revenue.GeoSeg.ByDestination,Countries.UK</p>
+<p>The first part of the reference is the Dimension short name. The 2nd
+part, if included, is the normalised, short version of the Dimension
+Member Taxonomy Name.<br>
+Entries with no {.Dimension Member} component to their references are
+defaults, where just the Dimension short name gives the default. The
+actual default name is shown in []s.</p>
+<p class="mb0"><b>Dimension Member Type Codes</b>, if present, mean:</p>
+<table class="itran">
+<tbody><tr><td>D</td><td>Default in Taxonomy</td></tr>
+<tr><td>B</td><td>Braiins dimension (member)</td></tr>
+
+<tr><td class="top">M#</td><td>If a Dim includes M# Dimension Members
+and that Dim is one of the Allowable Dims of a Bro, inclusion of one of
+the M# members is Mandatory when posting to that Bro, except in the
+special case of Dim 29 Officers when an M# choice can be omitted if the
+Bro's DataType is Money and the Bro excludes DiMe 423 CoSec. This
+exception allows for aggregate postings for Officers e.g. for Directors
+Remuneration.<br> There are 6 types of M# DiMe Types which define
+whether a Property Dimension is also required, or is optional, and if
+applicable, the allowable choices, as follows:
+
+<table class="inner" style="margin-left:3px">
+<tbody><tr><td>M0</td><td>No property type DiMe is required. M0 types are used with Dim 9 IFAClasses and DiMe 423 Cosec.</td></tr>
+
+<tr><td class="top">M1</td><td>A Property DiMe from the next Dim is
+required if that Dim is an Allowed Dim of the Bro. M1 types are used
+with Dim 12 FAIHoldings and Dim 34 TPAType. For a particular Bro the M1
+need for a Property DiMe from the next Dim might be negated by its
+Hypercube excluding the Dim, as Hypercube 25 does for FAI Loans (no Dim
+13 FAITypes), or by adding the Property Dim (13 FAITypes or 35 TPAStatus
+ as appropriate) to the Bro's Excl Dims list.</td></tr>
+
+<tr><td class="top">M2</td><td>A Property DiMe is required with the
+choice restricted to: TFAOwnership.OwnedOrFreehold,
+ShortLeaseholdProperties, and LongLeaseholdProperties (185, 187, 188).
+M2 types are used only with Dim 10 TFAClasses. The M2 list comprises
+only Dim 11 TFAOwnership DiMes. Thus Dim 11 must always be an Allowed
+Dim of a Bro which allows Dim 10. Bros Import ensures this.</td></tr>
+
+<tr><td class="top">M3</td><td>A Property DiMe is required with the
+choice restricted to: TFAOwnership.OwnedOrFreehold, Leased (185, 186).
+As for M2, M3 types are used only with Dim 10 TFAClasses, and the same
+Dim 11 rule applies.</td></tr>
+
+<tr><td class="top">M4</td><td>A Property DiMe may optionally be used
+with an M4 DiMe with the Property DiMe choice restricted to:
+Officers.Chairman, CEO, ChairmanCEO, CoSecDirector,
+OfficerType.Executive, OfficerType.Nonexecutive (419, 420, 421, 424,
+487, 488). M4 types are used only with Dim 29 Officers. The M4 list
+includes Property DiMes from two Dims, 29 Oficers and 30 OfficerType.
+For a particular Bro, the Dim 30 OfficerType members of the M4 list,
+OfficerType.Executive, OfficerType.Nonexecutive (487, 488), can be
+excluded by adding Dim 30  OfficerType to the Bro's Excl Dims list.</td></tr>
+
+<tr><td class="top">M5</td><td>A Property DiMe may optionally be used
+with an M5 DiMe with the Property DiMe choice restricted to
+Officers.ChiefPartnerLLP (422). M5 types are used only with Dim 29
+Officers. The M5 Property DiMe is also part of Dim 29 Oficers.</td></tr>
+</tbody></table>
+
+M# Type Usage is as follows:
+<table class="innerb" style="margin:.5em 0">
+<tbody><tr class="b"><td>Dim</td><td>M&nbsp;Type</td><td>Prop Dim(s)</td><td>Comments</td></tr>
+
+<tr><td> 9 IFAClasses</td><td>M0</td><td></td><td>M0 type DiMe required, no property</td></tr>
+
+<tr><td class="top">10 TFAClasses</td><td class="top">M2/3</td><td class="top">11&nbsp;TFAOwnership</td><td>M2/3
+ type DiMe + property from M2/M3 list as per the M* DiMe chosen. Both
+the M2/M3 lists comprise only Dim 11 TFAOwnership DiMes. Dim 11
+TFAOwnership is always in Usable Dims list if 10 TFAClasses is, and is
+the only property type Dim involved.</td></tr>
+
+<tr><td class="top">12&nbsp;FAIHoldings</td><td class="top">M1</td><td class="top">13 FAITypes</td><td>M1
+ type DiMe + property from Dim 13 FAITypes if the Bro's hypercube
+includes Dim 13  FAITypes and Dim 13  FAITypes has not been excluded
+from the Bro's Usable Dims list.</td></tr>
+
+<tr><td class="top">29 Officers</td><td class="top">M0/4/5</td><td class="top">29 Officers,<br>30 OfficerType</td><td>M0/4/5
+ type DiMe + no property (for M0, CoSec), or optional property from M4/5
+ lists as per the M* DiMe chosen, with the exception that if the Bro
+DataType is Money and the Bro excludes DiMe 423 CoSec no M* type DiMe is
+ required. This exception allows for aggregate postings e.g. for
+Directors Remuneration.<br>The M4 list includes properties from both
+Dims 29 Officers and 30 OfficerType. The ones from Dim 30 OfficerType
+can be excluded by excluding Dim 30 OfficerType from the Bro.</td></tr>
+
+<tr><td>34 TPAType</td><td>M1</td><td>35 TPAStatus</td><td>M1 type DiMe + property from Dim 35 TPAStatus if Dim 35 TPAStatus has not been excluded from the Bro's Usable Dims list.</td></tr>
+</tbody></table></td></tr>
+
+<tr><td>P</td><td>Property type for use as another dimension member with an M# type DiMe</td></tr>
+<tr><td>R</td><td>Report type - only for Reporting use e.g. of summed values. Thus is Non-Posting</td></tr>
+<tr><td>S</td><td>Summing applies with this DiMe being the target of a
+summing operation, for its children (if any), and/or the DiMes in the
+Sum List column</td></tr>
+<tr><td>X</td><td>mutually eXclusive conditions apply - see MUX List column</td></tr>
+<tr><td>Y</td><td>prior Year adjustment (Restated) type</td></tr>
+<tr><td>Z</td><td>Reserved for Braiins internal use</td></tr>
+</tbody></table>
+
+<p class="mt05">Dimension members without  DiMe and Prop Type codes may
+be used with any Bro whose Hypercube includes the Dim in question,
+unless excluded by other settings.</p>
+
+<p><b>Sum</b>: 'Kids' or list of DiMeIds to be summed. Kids means the
+children of this Dimension Member i.e. those below it that have a higher
+ level number and are indented.</p>
+
+<p><b>Mux List</b>: List of mutually exclusive DiMeIds i.e. a DiMe with a
+ Mux List can't be used if one the DiMes in the Mux List is already in
+use.</p>
+
+<p><b>The Entity Types</b> column lists the Entity Types with which the
+Dimension Member may be used, or 'All' if there are no Entity Type
+restrictions. The Entity Type numbers mean:
+<br>&nbsp;1 Sole Proprietorship<br>&nbsp;2 Partnership<br>&nbsp;3 Limited Liability Partnership<br>&nbsp;4 Charity<br>&nbsp;5 Private Limited Company<br>&nbsp;6 Private Unlimited Company<br>&nbsp;7 Private Limited by Guarantee Company<br>&nbsp;8 Community Interest Company<br>&nbsp;9 Public Limited Company</p>
+</div>
+<div class="mc" style="width:430px">
+<form method="post">
+<input id="i1" class="radio" name="Sel" value="1" checked="checked" type="radio"> <label for="i1">Short Listing with Dimension Members in Shortened List form</label><br>
+<input id="i2" class="radio" name="Sel" value="2" type="radio"> <label for="i2">Full Listing including All Dimension Members</label><br>
+<input id="i3" class="radio" name="Notes" value="1" checked="checked" type="checkbox"> <label for="i3">Include Notes</label><br>
+<p class="c mb0"><button class="on m05">Dimensions Map</button></p>
+</form>
+</div>
+<p class="c">Done in 46 msecs</p>
+<div class="topB" onclick="scroll(0,0)">Top</div><br>
+<p class="c"><a href="http://localhost/Admin/www/UK-GAAP-DPL/">Home</a></p>
+<br><br>
+<div class="topl"><a href="http://localhost/Admin/www/UK-GAAP-DPL/">Home</a></div>
+<div class="topr"><a href="http://localhost/Admin/www/UK-GAAP-DPL/">Home</a></div>
+
+
+</body></html

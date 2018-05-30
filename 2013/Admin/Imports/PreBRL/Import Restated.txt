@@ -1,0 +1,24 @@
+Agent Braiins Limited
+Date  2012.11.24
+StartYear: 4
+ImportType:Replace
+
+Restated Postings
+PLRev.TradingIncome.TurnoverGrossOpRevenue,Restated.AcctPolicyIncr 	-1                               	# Bro 1002
+PLRev.NonOperatIncome,Restated.AcctPolicyIncr 	-1                                                   	# Bro 1007 no Year 1 value
+SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Countries.UK,Restated.AcctPolicyIncr	1	# Bro 6020
+
+Donations - Political
+SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.NameOrDescrRecipientOrg,T.21 	EU Party One R	#Bro 5755
+SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg,Restated.AcctPolicyIncr,T.21  	1	#Bro 5756
+
+Pensions
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.DescrType,PensionSchemes.1,T.1	UK Gilts R	#Bro 6783
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,Restated.AcctPolicyIncr,T.1	10	#Bro 6784
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,Restated.AcctPolicyIncr,T.2	20	#Bro 6784
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.Type,PensionSchemes.1,T.1	34	#Bro 6785
+SchInputPensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.Type,PensionSchemes.1,T.2	33	#Bro 6785
+
+
+# DE Balancing Postings
+Suspense,Restated.AcctPolicyIncr  	-28	# Bro 2702

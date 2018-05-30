@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Example using a single Web Worker</title>
+<script>
+// display messages from the worker
+function displayMessage(msg) {
+    var section = document.getElementsByTagName('section')[0];
+    if (section === null){return};
+    var par = document.createElement('p');
+    par.setAttribute('class', 'worker_message');
+    par.appendChild(document.createTextNode(msg));
+    section.appendChild(par);
+}
+
+// create the web worker
+var worker = new Worker('worker1.js');
+
+// get messages from the web worker
+worker.onmessage = function(e) {
+    displayMessage(e.data);
+}
+
+// send a couple of messages to the web worker
+worker.postMessage('Hello worker 1, how are you doing?');
+worker.postMessage('Things are pretty busy over here.');  
+</script>
+<style>
+body {
+    padding: 0;
+    margin: 0;
+    background: #0c1e74;
+    font: 0.8em Arial, Helvetica, sans-serif;
+    color: #000;
+}
+h1 {
+    font-weight: normal;
+    font-size: 2.1em;
+    color: #0c1e74;
+}
+h2 {
+   font-weight: normal;
+   font-size: 1.8em;
+   color: #0c1e74;
+}
+p {
+    margin: 0 0 15px 0;
+}
+#wrapper {
+    width: 920px;
+    margin: 0 auto;
+    background: #fff;
+}
+header, section, footer {
+    display: block;
+    padding: 15px;
+}
+.worker_message {
+    color: #00f;
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Using JavaScript Web Workers</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor commodo risus, et ultrices sapien vestibulum non. Maecenas scelerisque quam a nulla mattis tincidunt. Etiam massa libero, pharetra vel laoreet et, ultrices non leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ullamcorper lacus et sollicitudin. Morbi ultrices condimentum lacus, sit amet venenatis purus bibendum sit amet.</p>
+    </header>
+    <section>
+        <h2>Worker message section</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor commodo risus, et ultrices sapien vestibulum non. Maecenas scelerisque quam a nulla mattis tincidunt. Etiam massa libero, pharetra vel laoreet et, ultrices non leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ullamcorper lacus et sollicitudin. Morbi ultrices condimentum lacus, sit amet venenatis purus bibendum sit amet.</p>
+    </section>
+    <footer>
+        <h2>Footer section</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor commodo risus, et ultrices sapien vestibulum non. Maecenas scelerisque quam a nulla mattis tincidunt. Etiam massa libero, pharetra vel laoreet et, ultrices non leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ullamcorper lacus et sollicitudin. Morbi ultrices condimentum lacus, sit amet venenatis purus bibendum sit amet.</p> 
+    </footer>
+</div>
+</body>
+</html>

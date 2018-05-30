@@ -1,0 +1,6 @@
+﻿Audit Fees Check, posting to Broes made unique via Mandatory/Exclude DiMes
+No DE Check
+ImportType:Replace
+
+Tx5284:ExpenseType.Admin	16,500 	16,500
+Tx5284Oth:ExpenseType.Admin:TPAType.Accountants	20 	10

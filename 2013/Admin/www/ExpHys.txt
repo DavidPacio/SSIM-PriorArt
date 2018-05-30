@@ -1,0 +1,43 @@
+BasicData	Base	Base data	600 - Hypercube - Basic	Group,Restated
+IncomeData	Income	Income data	610 - Hypercube - Income - Cash - Data	Group,ConDis,Restated,Excepts,OpSegs,ProdsServs,MajCusts,Countries
+BalanceCashMainData	BS	Balance and cash main data	612 - Hypercube - Balance Sheet Data	Group,ConDis,Restated,OpSegs,ProdsServs,MajCusts,Countries
+Equity	Equity	Equity	620 - Hypercube - Equity	Group,ConDis,Restated,EquityClasses
+ContinuingDiscontinuedOperations	ConDis	Continuing and discontinued operations	625 - Hypercube - Continuing Discontinued Operations	Group,ConDis,Restated
+Segments	OpSegs	Segments	630 - Hypercube - Operating Segments	Group,Restated,OpSegs
+ProductServicesSegments	ProdServSegs	Product and services segments	631 - Hypercube - Product and Services Segments	Group,Restated,ProdsServs
+MajorCustomerSegments	MajCustSegs	Major customer segments	632 - Hypercube - Major Customer Segments	Group,Restated,MajCusts
+BusinessCombinations	BizCombos	Business combinations	640 - Hypercube - Business Combinations	Group,Restated,BizCombos
+BusinessCombinations-Intangibles	BizCombosIntan	Business combinations - intangibles	641 - Hypercube - Business Combinations - Intangibles	Group,Restated,BizCombos,IFAClasses,IFAGType
+BusinessCombinations-PPE	BizCombosPPE	Business combinations - PPE	642 - Hypercube - Business Combinations - PPE	Group,Restated,BizCombos,PPEClasses
+BusinessCombinations-Provisions	BizCombosProvs	Business combinations - Provisions	643 - Hypercube - Business Combinations - Provisions	Group,Restated,BizCombos,ProvClasses
+BusinessCombinations-ContingentLiabilities	BizCombosContLiabs	Business combinations - Contingent liabilities	644 - Hypercube - Business Combinations - Contingent Liabilities	Group,Restated,BizCombos,ContLiabClasses
+PPECostItems	IncomePPE	PPE cost items	650 - Hypercube - PPE Income Items	Group,ConDis,Restated,Excepts,OpSegs,ProdsServs,MajCusts,PPEClasses,Countries
+IntangiblesCostItems	IncomeIntan	Intangibles cost items	651 - Hypercube - Intangibles Income Items	Group,ConDis,Restated,Excepts,OpSegs,ProdsServs,MajCusts,IFAClasses,IFAGType,Countries
+PropertyPlantEquipment	PPEs	Property, plant and equipment	660 - Hypercube - Property, Plant and Equipment	Group,ConDis,Restated,PPEClasses
+IntangibleAssets	IFAs	Intangible assets	665 - Hypercube - Intangible Assets	Group,ConDis,Restated,IFAClasses,IFAGType
+ImpairmentAllowanceAccount	ImpairAllow	Impairment allowance account	667 - Hypercube - Impairment Allowance Account	Group,Restated,ImpairAllowType
+FinancialInstruments	FIs	Financial instruments	670 - Hypercube - Financial Instruments	Group,Restated,FIValueType,FIs,FILevel,MPeriods,Currencies
+FinancialInstrumentsConcentrationRisk	FICRisk	Financial instruments concentration risk	671 - Hypercube - Financial Instruments Concentration Risk	Group,Restated,FIValueType,ICRisk,Countries,Currencies
+FinancialInstrumentMovements	FIMvts	Financial instrument movements	672 - Hypercube - Financial Instrument Movements	Group,Restated,FIMvts
+CreditRatings	CrRatings	Credit ratings	674 - Hypercube - Credit Ratings	Group,Restated,CrRatings
+Maturities	Maturities	Maturities	675 - Hypercube - Maturities	Group,Restated,MPeriods
+DeferredTaxAssetsLiabilities	DefTaxAssets	Deferred tax assets and liabilities	680 - Hypercube - Deferred Tax Assets and Liabilities	Group,ConDis,Restated,DefTaxClasses
+Provisions	Provs	Provisions	690 - Hypercube - Provisions	Group,Restated,ProvClasses
+ContingentLiabilities	ContLiabs	Contingent liabilities	700 - Hypercube - Contingent Liabilities	Group,Restated,ContLiabClasses
+PensionSchemes	Pensions	Pension schemes	730 - Hypercube - Pension Schemes	Group,Restated,PensionSchemes
+Share-basedPaymentSchemes	SharePayment	Share-based payment schemes	740 - Hypercube - Share-based Payment Schemes	Group,Restated,SharePayment
+ShareCapitalDividends	ShareDividend	Share capital and dividends	750 - Hypercube - Share Capital and Dividends	Group,Restated,ShareClasses,ShareTypes
+RelatedParties	RelParties	Related parties	760 - Hypercube - Related Parties	Group,Restated,RelatedParties,RPTranType
+Subsidiaries	Subsids	Subsidiaries	770 - Hypercube - Subsidiaries	Group,Restated,Subsids
+Associates	Assocs	Associates	780 - Hypercube - Associates	Group,Restated,Assocs
+Joint-ventures	JVs	Joint-ventures	790 - Hypercube - Joint-Ventures	Group,Restated,JVs
+DetailedProfitLoss	DPL	Detailed profit and loss	850 - Hypercube - Detailed Profit and Loss	ConDis,Restated,Countries,Activity,ExpenseType,ExceptNon,Analysis,GroupTrans
+DataNotForUse	DataNot	Data not for use	899 - Hypercube - Data Not For Use	DataNot
+EntityOfficers	Officers	Entity officers	900 - Hypercube - Entity Officers	Group,Restated,Officers,OfficerType
+Shares	Shares	Shares	901 - Hypercube - Shares	Group,Restated,ShareClasses,ShareTypes
+EntityContactInfo	ContactInfo	Entity contact info	905 - Hypercube - Entity Contact Info	Group,ContactType,Contact,AddressType,TelNumType,Countries,Languages
+ThirdPartyAgents	TPAs	Third party agents	906 - Hypercube - Third Party Agents	Group,Restated,TPAType,TPAStatus,Contact,AddressType,TelNumType,Countries,Languages
+Countries	Countries	Countries	910 - Hypercube - Countries	Group,Restated,Countries
+Currencies	Currencies	Currencies	911 - Hypercube - Currencies	Group,Currencies
+StockExchanges	Exchanges	Stock exchanges	912 - Hypercube - Stock Exchanges	Group,Exchanges
+Languages	Languages	Languages	913 - Hypercube - Languages	Group,Languages

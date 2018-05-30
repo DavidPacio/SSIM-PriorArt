@@ -1,0 +1,55 @@
+M2
+midx=24853, 1930 02.12 16:20 ST 129613; ohlca 135645 135657 135623 135627 135641; Type: None; Colour: DN; Dirn: FL; NumFlat: 0, Sig: 0, Mvt: -2, Gap: none; Sizes: Can 34 Big, Body 18 Big, Top 12 Ave, Bot 4 Mini; Volatility: Vol: 158, Tick 213, Tick/Vol 1, Nums: CansIncreasing 0, BodsIncreasing 0, CansBigger 0, BodsBigger 0, Equal 0, Like 0
+midx=24851, 1931 02.12 16:22 ST 129747; ohlca 135627 135660 135624 135651 135646; Type: None; Colour: UP; Dirn: FL; NumFlat: 0, Sig: 0, Mvt: 5, Gap: none; Sizes: Can 36 Large, Body 24 Large, Top 9 Ave, Bot 3 Mini; Volatility: Vol: 200, Tick 279, Tick/Vol 1, Nums: CansIncreasing 0, BodsIncreasing 0, CansBigger 0, BodsBigger 0, Equal 0, Like 0
+
+M1
+midx=24853, 3860 02.12 16:20 ST 129613; ohlca 135645 135657 135645 135646 135652; Type: None; Colour: UP; Dirn: FL; NumFlat: 0, Sig: 0, Mvt: 10, Gap: none; Sizes: Can 12 Ave, Body 1 Micro, Top 11 Ave, Bot 0 Zero; Volatility: Vol: 77, Tick 84, Tick/Vol 1, Nums: CansIncreasing 0, BodsIncreasing 0, CansBigger 0, BodsBigger 0, Equal 0, Like 0
+midx=24852, 3861 02.12 16:21 ST 129678; ohlca 135647 135647 135623 135627 135630; Type: None; Colour: DN; Dirn: FL; NumFlat: 0, Sig: 0, Mvt: -22, Gap: none; Sizes: Can 24 Large, Body 20 Large, Top 0 Zero, Bot 4 Mini; Volatility: Vol: 81, Tick 129, Tick/Vol 1, Nums: CansIncreasing 0, BodsIncreasing 0, CansBigger 0, BodsBigger 0, Equal 0, Like 0
+
+midx=24851, 3862 02.12 16:22 ST 129747; ohlca 135627 135650 135624 135649 135638; Type: None; Colour: UP; Dirn: FL; NumFlat: 0, Sig: 0, Mvt: 8, Gap: none; Sizes: Can 26 Large, Body 22 Large, Top 1 Micro, Bot 3 Mini; Volatility: Vol: 70, Tick 99, Tick/Vol 1, Nums: CansIncreasing 0, BodsIncreasing 0, CansBigger 0, BodsBigger 0, Equal 0, Like 0
+midx=24850, 3863 02.12 16:23 ST 129808; ohlca 135651 135660 135646 135651 135651; Type: None; Colour: FL; Dirn: FL; NumFlat: 0, Sig: 0, Mvt: 13, Gap: none; Sizes: Can 14 Ave, Body 0 Zero, Top 9 Ave, Bot 5 Small; Volatility: Vol: 130, Tick 180, Tick/Vol 1, Nums: CansIncreasing 0, BodsIncreasing 0, CansBigger 0, BodsBigger 0, Equal 0, Like 0
+
+
+698 02.10 11:38 flexMvt 0 Tent; lastFinal 686; numFlat 4, mvt -1, dirn NT; Dn Curr 688 02.10 11:28 mnx 1.36353 cumMvt -13 mnxMvt 12; Up TF 690 02.10 11:30 mnx 1.36367, cumMvt 13
+699 02.10 11:39 flexMvt 0 Tent; lastFinal 686; numFlat 0, mvt -4, dirn Dn; Dn Curr 688 02.10 11:28 mnx 1.36353 cumMvt -17 mnxMvt 9; Up TF 690 02.10 11:30 mnx 1.36367, cumMvt 9
+700 02.10 11:40 Up TF 690 02.10 11:30 cancelled as the TF cumMvt 0 has become < 3 (F_CanMvtForUpChangeTent); Revisions to process for Cans 687 to 699, with flexCidx 669, lastFinal: BidC 1.36363, flexDirn Dn, Curr flexCidx 688, Curr Dirn Dn
+686 02.10 11:26 Up Flex skipped as only 2 Cans from start of Current Flex which does run for at least 3 (F_MinCansInFlex) Cans
+687 02.10 11:27 flexMvt 0 Tent -> final
+688 02.10 11:28 flexMvt 0 Tent -> final
+689 02.10 11:29 flexMvt 0 Tent -> final
+690 02.10 11:30 flexMvt 0 revised to -10
+691 02.10 11:31 flexMvt 0 Tent -> final
+692 02.10 11:32 flexMvt 0 Tent -> final
+693 02.10 11:33 flexMvt 0 Tent -> final
+694 02.10 11:34 flexMvt 0 Tent -> final
+695 02.10 11:35 flexMvt 0 Tent -> final
+696 02.10 11:36 flexMvt 0 Tent -> final
+697 02.10 11:37 flexMvt 0 Tent -> final
+698 02.10 11:38 flexMvt 0 Tent -> final
+699 02.10 11:39 flexMvt 0 Tent -> final
+700             flexMvt -1; numFlat 0, mvt -9, dirn Dn; Dn Curr 688 02.10 11:28 mnx 1.36353 cumMvt -26 mnxMvt -1
+701 02.10 11:41 Up TF 700 02.10 11:40 started as mnxMvt 3 >= 3 (F_CanMvtForUpChangeTent)
+
+
+697 02.10 11:37 flexMvt 0 Tent; lastFinal 686; numFlat 2, mvt 0, dirn NT; Dn Curr 688 02.10 11:28 mnx 1.36353 cumMvt -12 mnxMvt 13; Up TF 690 02.10 11:30 mnx 1.36367, cumMvt 14
+698 02.10 11:38 flexMvt 0 Tent; lastFinal 686; numFlat 4, mvt -1, dirn NT; Dn Curr 688 02.10 11:28 mnx 1.36353 cumMvt -13 mnxMvt 12; Up TF 690 02.10 11:30 mnx 1.36367, cumMvt 13
+699 02.10 11:39 Up TF 690 02.10 11:30 cancelled as the Curr cumMvt -17 is <= -15 (F_CanMvtForDnChange)
+699             flexMvt 0 Tent; lastFinal 686; numFlat 0, mvt -4, dirn Dn; Dn Curr 688 02.10 11:28 mnx 1.36353 cumMvt -17 mnxMvt 9
+700 02.10 11:40 Revisions to process for Cans 687 to 699, with flexCidx 669, lastFinal: BidC 1.36363, flexDirn Dn, Curr flexCidx 688, Curr Dirn Dn
+686 02.10 11:26 Up Flex skipped as only 2 Cans from start of Current Flex which does run for at least 3 (F_MinCansInFlex) Cans
+687 02.10 11:27 flexMvt 0 Tent -> final
+688 02.10 11:28 flexMvt 0 Tent -> final
+689 02.10 11:29 flexMvt 0 Tent -> final
+690 02.10 11:30 flexMvt 0 revised to -10
+691 02.10 11:31 flexMvt 0 Tent -> final
+692 02.10 11:32 flexMvt 0 Tent -> final
+693 02.10 11:33 flexMvt 0 Tent -> final
+694 02.10 11:34 flexMvt 0 Tent -> final
+695 02.10 11:35 flexMvt 0 Tent -> final
+696 02.10 11:36 flexMvt 0 Tent -> final
+697 02.10 11:37 flexMvt 0 Tent -> final
+698 02.10 11:38 flexMvt 0 Tent -> final
+699 02.10 11:39 flexMvt 0 Tent -> final
+700             flexMvt -1; numFlat 0, mvt -9, dirn Dn; Dn Curr 688 02.10 11:28 mnx 1.36353 cumMvt -26 mnxMvt -1
+701 02.10 11:41 Up TF 700 02.10 11:40 started as mnxMvt 3 >= 3 (F_CanMvtForUpChangeTent)
+701             flexMvt 0 Tent; lastFinal 700; numFlat 1, mvt 2, dirn NT; Dn Curr 688 02.10 11:28 mnx 1.36353 cumMvt -24 mnxMvt 3; Up TF 700 02.10 11:40 mnx 1.36355, cumMvt 3

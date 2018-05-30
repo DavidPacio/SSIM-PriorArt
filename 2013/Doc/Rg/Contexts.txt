@@ -1,0 +1,551 @@
+Contexts.txt
+============
+
+PeriodY#
+--------
+<xbrli:context>
+  <xbrli:entity>
+    <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">[RegistrationNumber]</xbrli:identifier>
+  </xbrli:entity>
+  <xbrli:period>
+    <xbrli:startDate>[Y#StartD]</xbrli:startDate>
+    <xbrli:endDate>[Y#EndD]</xbrli:endDate>
+  </xbrli:period>
+</xbrli:context>
+
+PeriodEndY#
+-----------
+<xbrli:context>
+  <xbrli:entity>
+    <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">[RegistrationNumber]</xbrli:identifier>
+  </xbrli:entity>
+  <xbrli:period>
+    <xbrli:instant>[Y#EndD]</xbrli:instant>
+  </xbrli:period>
+</xbrli:context>
+
+RegisteredOfficeY#
+------------------
+<xbrli:context>
+  <xbrli:entity>
+    <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">[RegistrationNumber]</xbrli:identifier>
+    <xbrli:segment>
+      <xbrldi:explicitMember dimension="uk-bus:EntityContactTypeDimension">uk-bus:RegisteredOffice</xbrldi:explicitMember>
+    </xbrli:segment>
+  </xbrli:entity>
+  <xbrli:period>
+    <xbrli:startDate>[Y#StartD]</xbrli:startDate>
+    <xbrli:endDate>[Y#EndD]</xbrli:endDate>
+  </xbrli:period>
+</xbrli:context>
+
+Director#Y#
+-----------
+<xbrli:context>
+  <xbrli:entity>
+    <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">[RegistrationNumber]</xbrli:identifier>
+    <xbrli:segment>
+      <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director#</xbrldi:explicitMember>
+    </xbrli:segment>
+  </xbrli:entity>
+  <xbrli:period>
+    <xbrli:startDate>[Y#StartD]</xbrli:startDate>
+    <xbrli:endDate>[Y#EndD]</xbrli:endDate>
+  </xbrli:period>
+</xbrli:context>
+
+DirectorExec#Y#
+---------------
+<xbrli:context>
+  <xbrli:entity>
+    <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">[RegistrationNumber]</xbrli:identifier>
+    <xbrli:segment>
+      <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director#</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="uk-bus:EntityOfficerTypeDimension">uk-bus:ExecutiveOfficers</xbrldi:explicitMember>
+    </xbrli:segment>
+  </xbrli:entity>
+  <xbrli:period>
+    <xbrli:startDate>[Y#StartD]</xbrli:startDate>
+    <xbrli:endDate>[Y#EndD]</xbrli:endDate>
+  </xbrli:period>
+</xbrli:context>
+
+DirectorNonExec#Y#
+------------------
+<xbrli:context>
+  <xbrli:entity>
+    <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">[RegistrationNumber]</xbrli:identifier>
+    <xbrli:segment>
+      <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director#</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="uk-bus:EntityOfficerTypeDimension">uk-bus:Non-executiveOfficers</xbrldi:explicitMember>
+    </xbrli:segment>
+  </xbrli:entity>
+  <xbrli:period>
+    <xbrli:startDate>[Y#StartD]</xbrli:startDate>
+    <xbrli:endDate>[Y#EndD]</xbrli:endDate>
+  </xbrli:period>
+</xbrli:context>
+
+CompanySecretaryY#
+------------------
+<xbrli:context>
+  <xbrli:entity>
+    <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">[RegistrationNumber]</xbrli:identifier>
+    <xbrli:segment>
+      <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:CompanySecretary</xbrldi:explicitMember>
+    </xbrli:segment>
+  </xbrli:entity>
+  <xbrli:period>
+    <xbrli:startDate>[Y#StartD]</xbrli:startDate>
+    <xbrli:endDate>[Y#EndD]</xbrli:endDate>
+  </xbrli:period>
+</xbrli:context>
+
+UkCountry[Country]Y#
+--------------------
+<xbrli:context>
+  <xbrli:entity>
+    <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">[RegistrationNumber]</xbrli:identifier>
+    <xbrli:segment>
+      <xbrldi:explicitMember dimension="uk-countries:CountriesDimension">uk-countries:[Country]</xbrldi:explicitMember>
+    </xbrli:segment>
+  </xbrli:entity>
+  <xbrli:period>
+    <xbrli:startDate>[Y#StartD]</xbrli:startDate>
+    <xbrli:endDate>[Y#EndD]</xbrli:endDate>
+  </xbrli:period>
+</xbrli:context>
+
+
+################
+
+HMRC:
+<xbrli:context id="FY2009_Registered_Office">
+  <xbrli:entity>
+    <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+    <xbrli:segment>
+      <xbrldi:explicitMember dimension="uk-bus:EntityContactTypeDimension">uk-bus:RegisteredOffice</xbrldi:explicitMember>
+    </xbrli:segment>
+  </xbrli:entity>
+  <xbrli:period>
+    <xbrli:startDate>2008-04-01</xbrli:startDate>
+    <xbrli:endDate>2009-03-31</xbrli:endDate>
+  </xbrli:period>
+</xbrli:context>
+
+TT:
+<xbrli:context id="FY1_uk-bus-RegisteredOffice_uk-bus-Postal">
+  <xbrli:entity>
+    <xbrli:identifier scheme="http://www.xbrl.org/uk/gaap/core/2009-09-01/uk-gaap-full-2009-09-01.xsd">uk-bus:EntityCurrentLegalOrRegisteredName</xbrli:identifier>
+    <xbrli:segment>
+      <xbrldi:explicitMember dimension="uk-bus:EntityContactTypeDimension">uk-bus:RegisteredOffice</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="uk-bus:AddressTypeDimension">uk-bus:Postal</xbrldi:explicitMember>
+    </xbrli:segment>
+  </xbrli:entity>
+  <xbrli:period>
+    <xbrli:startDate>2008-01-01</xbrli:startDate>
+    <xbrli:endDate>2008-12-31</xbrli:endDate>
+  </xbrli:period>
+</xbrli:context>
+
+T:
+<!-- ***** Context: Entity: Registered Office ***** -->
+<xbrli:context id="RegisteredOffice_Period_TMinusZero">
+  <xbrli:entity>
+    <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">88888888</xbrli:identifier>
+    <xbrli:segment>
+      <xbrldi:explicitMember dimension="uk-bus:EntityContactTypeDimension">uk-bus:RegisteredOffice</xbrldi:explicitMember>
+    </xbrli:segment>
+  </xbrli:entity>
+  <xbrli:period>
+    <xbrli:startDate>2007-11-01</xbrli:startDate>
+    <xbrli:endDate>2008-10-31</xbrli:endDate>
+  </xbrli:period>
+</xbrli:context>
+
+===========
+
+
+RG to know:
+ c:RegisteredOffice = uk-bus:EntityContactTypeDimension=uk-bus:RegisteredOffice and brings in uk-bus:AddressLine1,2,3, uk-bus:PrincipalLocation-CityOrTown, uk-bus:PostalCodeZip
+ c:Directors        = uk-bus:EntityOfficersDimension=uk-bus:Director1 for as many directors as there are directors
+ c:CompanySecretary = uk-bus:EntityOfficersDimension=uk-bus:CompanySecretary
+ c:Auditors         = uk-bus:ThirdPartyAgentTypeDimension=uk-bus:EntityAccountantsOrAuditors
+
+<html xmlns:ix="http://www.xbrl.org/2008/inlineXBRL" xmlns:ixt="http://www.xbrl.org/2008/inlineXBRL/transformation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:uk-bus="http://www.xbrl.org/uk/cd/business/2009-09-01" xmlns:uk-gaap="http://www.xbrl.org/uk/gaap/core/2009-09-01" xmlns:uk-countries="http://www.xbrl.org/uk/cd/countries/2009-09-01" xmlns="http://www.w3.org/1999/xhtml">
+
+Contexts
+========
+TH
+--
+<xbrli:context id="CountryEngland_Period_TMinusZero">      <!-- ***** Context: Country of Incorpn ***** -->
+<xbrli:context id="Chairman_Period_TMinusZero">            <!-- ***** Context: Officers: Chairman, Non-executive ***** -->
+<xbrli:context id="Director1_Period_TMinusZero">           <!-- ***** Context: Officers: Director, Executive ***** -->
+<xbrli:context id="Director2_Period_TMinusZero">           <!-- ***** Context: Officers: Director, Executive ***** -->
+<xbrli:context id="Director3_Period_TMinusZero">           <!-- ***** Context: Officers: Director, Executive ***** -->
+<xbrli:context id="Director4_Period_TMinusZero">           <!-- ***** Context: Officers: Director, Non-executive ***** -->
+<xbrli:context id="AllEntityOfficers_Period_TMinusOne">    <!-- ***** Context: All directors, Change for LY, Duration ***** -->
+<xbrli:context id="AllEntityOfficers_Period_TMinusZero">   <!-- ***** Context: All directors, Change for TY, Duration ***** -->
+<xbrli:context id="HighestPaidDirector_Period_TMinusOne">  <!-- ***** Context: Highest paid director, Change for LY, Duration ***** -->
+<xbrli:context id="HighestPaidDirector_Period_TMinusZero"> <!-- ***** Context: Highest paid director, Change for TY, Duration ***** -->
+<xbrli:context id="CompanySecretary_Period_TMinusZero">    <!-- ***** Context: Officers: Company secretary ***** -->
+<xbrli:context id="RegisteredOffice_Period_TMinusZero">    <!-- ***** Context: Entity: Registered Office ***** -->
+<xbrli:context id="EntityAccountantsOrAuditors_Period_TMinusOne">     <!-- ***** Context: Third Party: Auditor, Change for LY, Duration ***** -->
+<xbrli:context id="EntityAccountantsOrAuditors_Period_TMinusZero">    <!-- ***** Context: Third Party: Auditor, Change for TY, Duration ***** -->
+<xbrli:context id="EntityAccountantsOrAuditors_PeriodEnd_TMinusZero"> <!-- ***** Context: Third Party: Auditor, TY, Instant ***** -->
+<xbrli:context id="EntityBankers_Period_TMinusZero">                  <!-- ***** Context: Third Party: Banker ***** -->
+<xbrli:context id="EntityLawyersOrLegalAdvisers_Period_TMinusZero">   <!-- ***** Context: Third Party: Solicitor ***** -->
+<xbrli:context id="PYA_OriginalAmount_PeriodStart_TMinusZero">        <!-- ***** Context: PYA: Original Op Bal, TY, Instant ***** -->
+<xbrli:context id="PYA_MaterialErrorIncreaseDecrease_Period_TMinusZero">    <!-- ***** Context: PYA: Charge/credit from Material error, Change for TY, Duration ***** -->
+<xbrli:context id="PYA_AccountingPolicyIncreaseDecrease_Period_TMinusZero"> <!-- ***** Context: PYA: Charge/credit from Acctg change, Change for TY, Duration ***** -->
+<xbrli:context id="PYA_RestatedAmount_TMinusZero">                    <!-- ***** Context: PYA: Adjusted Op Bal, TY, Instant ***** -->
+<xbrli:context id="AdminExesBeforeExceptionals_Period_TMinusZero">    <!-- ***** Context: Admin exes before Exceptionals: Change for TY, Duration ***** -->
+<xbrli:context id="AdminExesBeforeExceptionals_Period_TMinusOne">     <!-- ***** Context: Admin exes before Exceptionals: Change for LY, Duration ***** -->
+<xbrli:context id="AdminExesAfterExceptionals_Period_TMinusZero">     <!-- ***** Context: Admin exes after Exceptionals: Change for TY, Duration ***** -->
+<xbrli:context id="AdminExesAfterExceptionals_Period_TMinusOne">      <!-- ***** Context: Admin exes after Exceptionals: Change for LY, Duration ***** -->
+<xbrli:context id="NetGoodwill_Period_TMinusOne">                     <!-- ***** Context: IFA, NetGoodwill, Change for LY, Duration ***** -->
+<xbrli:context id="NetGoodwill_PeriodEnd_TMinusOne">                  <!-- ***** Context: IFA, Net Goodwill, Cl Bal, LY, Instant ***** -->
+<xbrli:context id="NetGoodwill_Period_TMinusZero">                    <!-- ***** Context: IFA, NetGoodwill, Change for TY, Duration ***** -->
+<xbrli:context id="NetGoodwill_PeriodEnd_TMinusZero">                 <!-- ***** Context: IFA, NetGoodwill, Cl Bal, TY, Instant ***** -->
+<xbrli:context id="PatentsCopyrightsTrademarksSimilar_Period_TMinusOne">     <!-- ***** Context: IFA, PatentsCopyrightsTrademarksSimilar, Change for LY, Duration ***** -->
+<xbrli:context id="PatentsCopyrightsTrademarksSimilar_PeriodEnd_TMinusOne">  <!-- ***** Context: IFA, PatentsCopyrightsTrademarksSimilar, Cl Bal, LY, Instant ***** -->
+<xbrli:context id="PatentsCopyrightsTrademarksSimilar_Period_TMinusZero">    <!-- ***** Context: IFA, PatentsCopyrightsTrademarksSimilar, Change for TY, Duration ***** -->
+<xbrli:context id="PatentsCopyrightsTrademarksSimilar_PeriodEnd_TMinusZero"> <!-- ***** Context: IFA, PatentsCopyrightsTrademarksSimilar, Cl Bal, TY, Instant ***** -->
+<xbrli:context id="LandBuildings_OwnedOrFreeholdTangibleFixedAssets_PeriodEnd_TMinusOne">  <!-- ***** Context: TFA, Owned freehold prop, Cl Bal for LY, Instant ***** -->
+<xbrli:context id="LandBuildings_OwnedOrFreeholdTangibleFixedAssets_Period_TMinusZero">    <!-- ***** Context: TFA, Owned freehold prop, Change for TY, Duration ***** -->
+<xbrli:context id="LandBuildings_OwnedOrFreeholdTangibleFixedAssets_PeriodEnd_TMinusZero"> <!-- ***** Context: TFA, Owned freehold prop, Cl Bal for TY, Instant ***** -->
+<xbrli:context id="LandBuildings_LongLeaseholdProperties_PeriodEnd_TMinusOne">   <!-- ***** Context: TFA, Long lease prop, Cl Bal for LY, Instant ***** -->
+<xbrli:context id="LandBuildings_LongLeaseholdProperties_Period_TMinusZero">     <!-- ***** Context: TFA, Long lease prop, Change for TY, Duration ***** -->
+<xbrli:context id="LandBuildings_LongLeaseholdProperties_PeriodEnd_TMinusZero">  <!-- ***** Context: TFA, Long lease prop, Cl Bal for TY, Instant ***** -->
+<xbrli:context id="LandBuildings_ShortLeaseholdProperties_PeriodEnd_TMinusOne">  <!-- ***** Context: TFA, Short lease prop, Cl Bal for LY, Instant ***** -->
+<xbrli:context id="LandBuildings_ShortLeaseholdProperties_Period_TMinusZero">    <!-- ***** Context: TFA, Short lease prop, Change for TY, Duration ***** -->
+<xbrli:context id="LandBuildings_ShortLeaseholdProperties_PeriodEnd_TMinusZero"> <!-- ***** Context: TFA, Short lease prop, Cl Bal for TY, Instant ***** -->
+<xbrli:context id="PlantMachinery_PeriodEnd_TMinusOne">    <!-- ***** Context: TFA, Plant & Machinery, Cl Bal for LY, Instant ***** -->
+<xbrli:context id="PlantMachinery_Period_TMinusZero">      <!-- ***** Context: TFA, Plant & Machinery, Change for TY, Duration ***** -->
+<xbrli:context id="PlantMachinery_PeriodEnd_TMinusZero">   <!-- ***** Context: TFA, Plant & Machinery, Cl Bal for TY, Instant ***** -->
+<xbrli:context id="MotorVehicles_PeriodEnd_TMinusOne">     <!-- ***** Context: TFA, Motor Vehicles, Cl Bal for LY, Instant ***** -->
+<xbrli:context id="MotorVehicles_Period_TMinusZero">       <!-- ***** Context: TFA, Motor Vehicles, Change for TY, Duration ***** -->
+<xbrli:context id="MotorVehicles_PeriodEnd_TMinusZero">    <!-- ***** Context: TFA, Motor Vehicles, Cl Bal for TY, Instant ***** -->
+<xbrli:context id="FixturesFittings_PeriodEnd_TMinusOne">  <!-- ***** Context: TFA, Fixtures Fittings, Cl Bal for LY, Instant ***** -->
+<xbrli:context id="FixturesFittings_Period_TMinusZero">    <!-- ***** Context: TFA, Fixtures Fittings, Change for TY, Duration ***** -->
+<xbrli:context id="FixturesFittings_PeriodEnd_TMinusZero"> <!-- ***** Context: TFA, Fixtures Fittings, Cl Bal for TY, Instant ***** -->
+<xbrli:context id="OwnedOrFreeholdTangibleFixedAssets_Period_TMinusOne">  <!-- ***** Context: TFA, Owned assets, Change for LY, Duration ***** -->
+<xbrli:context id="OwnedOrFreeholdTangibleFixedAssets_Period_TMinusZero"> <!-- ***** Context: TFA, Owned assets, Change for TY, Duration ***** -->
+<xbrli:context id="LeasedTangibleFixedAssets_Period_TMinusOne">   <!-- ***** Context: TFA, HP/FL assets, Change for LY, Duration ***** -->
+<xbrli:context id="LeasedTangibleFixedAssets_Period_TMinusZero">  <!-- ***** Context: TFA, HP/FL assets, Change for TY, Duration ***** -->
+<xbrli:context id="InvestmentInSubsidiaries_PeriodEnd_TMinusOne"> <!-- ***** Context: FAI, Investment In Subsidiaries, Cl Bal, LY, Instant ***** -->
+<xbrli:context id="InvestmentInSubsidiaries_Period_TMinusZero">   <!-- ***** Context: FAI, Investment In Subsidiaries, Change for TY, Duration ***** -->
+<xbrli:context id="InvestmentInSubsidiaries_PeriodEnd_TMinusZero"> <!-- ***** Context: IFA, Investment In Subsidiaries, Cl Bal, TY, Instant ***** -->
+<xbrli:context id="LoansHeldAsFixedAssetInvestments_PeriodEnd_TMinusOne"> <!-- ***** Context: FAI, Loans Held As Fixed Asset Investments, Cl Bal, LY, Instant ***** -->
+<xbrli:context id="LoansHeldAsFixedAssetInvestments_Period_TMinusZero">   <!-- ***** Context: FAI, Loans Held As Fixed Asset Investments, Change for TY, Duration ***** -->
+<xbrli:context id="LoansHeldAsFixedAssetInvestments_PeriodEnd_TMinusZero"> <!-- ***** Context: IFA, Loans Held As Fixed Asset Investments, Cl Bal, TY, Instant ***** -->
+<xbrli:context id="Subsidiary1_Period_TMinusZero">        <!-- ***** Context: FAI, Subsidiary One, Change for TY, Duration ***** -->
+<xbrli:context id="Subsidiary1_PeriodEnd_TMinusZero">     <!-- ***** Context: FAI, Subsidiary One, Cl Bal, TY, Instant ***** -->
+<xbrli:context id="Subsidiary1England_Period_TMinusZero"> <!-- ***** Context: FAI, Subsidiary One, Incorpn, Change for TY, Duration ***** -->
+<xbrli:context id="Subsidiary2_Period_TMinusZero">        <!-- ***** Context: FAI, Subsidiary Two, Change for TY, Duration ***** -->
+<xbrli:context id="Subsidiary2_PeriodEnd_TMinusZero">     <!-- ***** Context: FAI, Subsidiary Two, Cl Bal, TY, Instant ***** -->
+<xbrli:context id="Subsidiary2England_Period_TMinusZero"> <!-- ***** Context: FAI, Subsidiary Two, Incorpn, Change for TY, Duration ***** -->
+<xbrli:context id="ProvisionsForDeferredTaxation_PeriodEnd_TMinusTwo">  <!-- ***** Context: Provisions, Deferred Tax, Op Bal for LY, Instant ***** -->
+<xbrli:context id="ProvisionsForDeferredTaxation_Period_TMinusOne">     <!-- ***** Context: Provisions, Deferred Tax, Change for LY, Duration ***** -->
+<xbrli:context id="ProvisionsForDeferredTaxation_PeriodEnd_TMinusOne">  <!-- ***** Context: Provisions, Deferred Tax, Cl Bal for LY, Instant ***** -->
+<xbrli:context id="ProvisionsForDeferredTaxation_Period_TMinusZero">    <!-- ***** Context: Provisions, Deferred Tax, Change for TY, Duration ***** -->
+<xbrli:context id="ProvisionsForDeferredTaxation_PeriodEnd_TMinusZero"> <!-- ***** Context: Provisions, Deferred Tax, Cl Bal for TY, Instant ***** -->
+<xbrli:context id="ProvisionsForMaintenance_PeriodEnd_TMinusTwo">  <!-- ***** Context: Provisions, Maintenance, Op Bal for LY, Instant ***** -->
+<xbrli:context id="ProvisionsForMaintenance_Period_TMinusOne">     <!-- ***** Context: Provisions, Maintenance, Change for LY, Duration ***** -->
+<xbrli:context id="ProvisionsForMaintenance_PeriodEnd_TMinusOne">  <!-- ***** Context: Provisions, Maintenance, Cl Bal for LY, Instant ***** -->
+<xbrli:context id="ProvisionsForMaintenance_Period_TMinusZero">    <!-- ***** Context: Provisions, Maintenance, Change for TY, Duration ***** -->
+<xbrli:context id="ProvisionsForMaintenance_PeriodEnd_TMinusZero"> <!-- ***** Context: Provisions, Maintenance, Cl Bal for TY, Instant ***** -->
+<xbrli:context id="OrdinaryShareClass1_PeriodEnd_TMinusOne">  <!-- ***** Context: Shares, Ordinary, Type 1, Cl Bal for LY, Instant ***** -->
+<xbrli:context id="OrdinaryShareClass1_Period_TMinusZero">    <!-- ***** Context: Shares, Ordinary, Type 1, Change for TY, Duration ***** -->
+<xbrli:context id="OrdinaryShareClass1_PeriodEnd_TMinusZero"> <!-- ***** Context: Shares, Ordinary, Type 1, Cl Bal for TY, Instant ***** -->
+<xbrli:context id="PreferenceShareClass1_PeriodEnd_TMinusOne">  <!-- ***** Context: Shares, Preference, Type 1, Cl Bal for LY, Instant ***** -->
+<xbrli:context id="PreferenceShareClass1_Period_TMinusZero">    <!-- ***** Context: Shares, Preference, Type 1, Change for TY, Duration ***** -->
+<xbrli:context id="PreferenceShareClass1_PeriodEnd_TMinusZero"> <!-- ***** Context: Shares, Preference, Type 1, Cl Bal for TY, Instant ***** -->
+<xbrli:context id="DividendsPaid_Period_TMinusOne">  <!-- ***** Context: Dividends paid, Change for LY, Duration ***** -->
+<xbrli:context id="DividendsPaid_Period_TMinusZero"> <!-- ***** Context: Dividends paid, Change for TY, Duration ***** -->
+<xbrli:context id="DividendsProposed_Period_TMinusOne">  <!-- ***** Context: Dividends proposed, Change for LY, Duration ***** -->
+<xbrli:context id="DividendsProposed_Period_TMinusZero"> <!-- ***** Context: Dividends proposed, Change for TY, Duration ***** -->
+<xbrli:context id="BusinessSegment1_Period_TMinusZero"> <!-- ***** Context: Business segment 1, Change for TY, Duration ***** -->
+<xbrli:context id="BusinessSegment1_Period_TMinusOne">  <!-- ***** Context: Business segment1, Change for LY, Duration ***** -->
+<xbrli:context id="BusinessSegment2_Period_TMinusZero"> <!-- ***** Context: Business segment 2, Change for TY, Duration ***** -->
+<xbrli:context id="BusinessSegment2_Period_TMinusOne">  <!-- ***** Context: Business segment 2, Change for LY, Duration ***** -->
+<xbrli:context id="GeographicSegment_UnitedKingdom_Period_TMinusOne">  <!-- ***** Context: Geographical segment, UK, Change for LY, Duration ***** -->
+<xbrli:context id="GeographicSegment_UnitedKingdom_Period_TMinusZero"> <!-- ***** Context: Geographical segment, UK, Change for TY, Duration ***** -->
+<xbrli:context id="GeographicSegment_RestEuropeOutsideUK_Period_TMinusOne">  <!-- ***** Context: Geographical segment, Rest of Europe, Change for LY, Duration ***** -->
+<xbrli:context id="GeographicSegment_RestEuropeOutsideUK_Period_TMinusZero"> <!-- ***** Context: Geographical segment, Rest of Europe, Change for TY, Duration ***** -->
+<xbrli:context id="Period_TMinusTwo">     <!-- ***** Context: General, Change for Year before last, Duration ***** -->
+<xbrli:context id="PeriodEnd_TMinusTwo">  <!-- ***** Context: General, Cl Bal for Year before last, Instant ***** -->
+<xbrli:context id="Period_TMinusOne">     <!-- ***** Context: General, Change for LY, Duration ***** -->
+<xbrli:context id="PeriodEnd_TMinusOne">  <!-- ***** Context: General, Cl Bal for LY, Instant ***** -->
+<xbrli:context id="Period_TMinusZero">    <!-- ***** Context: General, Change for TY, Duration ***** -->
+<xbrli:context id="PeriodEnd_TMinusZero"> <!-- ***** Context: General, Cl Bal for TY, Instant ***** -->
+
+D AP
+----
+<xbrli:context id="FY1">
+<xbrli:context id="FY1.END">
+<xbrli:context id="FY1.END.segment.uk-bus-EntityAccountantsOrAuditors">
+<xbrli:context id="FY1.END.segment.uk-bus-OrdinaryShareClass1">
+<xbrli:context id="FY1.END.segment.uk-gaap-CurrentFinancialInstruments">
+<xbrli:context id="FY1.END.segment.uk-gaap-DevelopmentCosts">
+<xbrli:context id="FY1.END.segment.uk-gaap-FixturesFittingsToolsEquipment">
+<xbrli:context id="FY1.END.segment.uk-gaap-LandBuildings.uk-gaap-OwnedOrFreeholdTangibleFixedAssets">
+<xbrli:context id="FY1.END.segment.uk-gaap-PlantMachinery">
+<xbrli:context id="FY1.END.segment.uk-gaap-ProvisionsForDeferredTaxation">
+<xbrli:context id="FY1.segment.uk-bus-AllEntityOfficers">
+<xbrli:context id="FY1.segment.uk-bus-CompanySecretary">
+<xbrli:context id="FY1.segment.uk-bus-Director1">
+<xbrli:context id="FY1.segment.uk-bus-Director2">
+<xbrli:context id="FY1.segment.uk-bus-EntityAccountantsOrAuditors">
+<xbrli:context id="FY1.segment.uk-bus-HighestPaidDirector">
+<xbrli:context id="FY1.segment.uk-bus-OrdinaryShareClass1">
+<xbrli:context id="FY1.segment.uk-bus-RegisteredOffice">
+<xbrli:context id="FY1.segment.uk-countries-AllCountries">
+<xbrli:context id="FY1.segment.uk-countries-RestEuropeOutsideUK">
+<xbrli:context id="FY1.segment.uk-countries-RestWorldOutsideUK">
+<xbrli:context id="FY1.segment.uk-countries-UnitedKingdom">
+<xbrli:context id="FY1.segment.uk-gaap-BusinessSegment1">
+<xbrli:context id="FY1.segment.uk-gaap-ComputerEquipment">
+<xbrli:context id="FY1.segment.uk-gaap-DevelopmentCosts">
+<xbrli:context id="FY1.segment.uk-gaap-DividendsPaid.uk-bus-AllOrdinaryShares">
+<xbrli:context id="FY1.segment.uk-gaap-FixturesFittingsToolsEquipment">
+<xbrli:context id="FY1.segment.uk-gaap-LandBuildings">
+<xbrli:context id="FY1.segment.uk-gaap-LandBuildings.uk-gaap-OwnedOrFreeholdTangibleFixedAssets">
+<xbrli:context id="FY1.segment.uk-gaap-LeasedTangibleFixedAssets">
+<xbrli:context id="FY1.segment.uk-gaap-OwnedOrFreeholdTangibleFixedAssets">
+<xbrli:context id="FY1.segment.uk-gaap-PlantMachinery">
+<xbrli:context id="FY1.segment.uk-gaap-Vehicles">
+<xbrli:context id="FY1.START">
+<xbrli:context id="FY1.START.segment.uk-gaap-DevelopmentCosts">
+<xbrli:context id="FY1.START.segment.uk-gaap-FixturesFittingsToolsEquipment">
+<xbrli:context id="FY1.START.segment.uk-gaap-LandBuildings.uk-gaap-OwnedOrFreeholdTangibleFixedAssets">
+<xbrli:context id="FY1.START.segment.uk-gaap-PlantMachinery">
+<xbrli:context id="FY1.START.segment.uk-gaap-ProvisionsForDeferredTaxation">
+<xbrli:context id="FY2">
+<xbrli:context id="FY2.END">
+<xbrli:context id="FY2.END.segment.uk-bus-OrdinaryShareClass1">
+<xbrli:context id="FY2.END.segment.uk-gaap-CurrentFinancialInstruments">
+<xbrli:context id="FY2.END.segment.uk-gaap-DevelopmentCosts">
+<xbrli:context id="FY2.END.segment.uk-gaap-FixturesFittingsToolsEquipment">
+<xbrli:context id="FY2.END.segment.uk-gaap-LandBuildings.uk-gaap-OwnedOrFreeholdTangibleFixedAssets">
+<xbrli:context id="FY2.END.segment.uk-gaap-PlantMachinery">
+<xbrli:context id="FY2.segment.uk-bus-AllEntityOfficers">
+<xbrli:context id="FY2.segment.uk-bus-EntityAccountantsOrAuditors">
+<xbrli:context id="FY2.segment.uk-bus-HighestPaidDirector">
+<xbrli:context id="FY2.segment.uk-countries-AllCountries">
+<xbrli:context id="FY2.segment.uk-countries-RestEuropeOutsideUK">
+<xbrli:context id="FY2.segment.uk-countries-RestWorldOutsideUK">
+<xbrli:context id="FY2.segment.uk-countries-UnitedKingdom">
+<xbrli:context id="FY2.segment.uk-gaap-BusinessSegment1">
+<xbrli:context id="FY2.segment.uk-gaap-DividendsPaid.uk-bus-AllOrdinaryShares">
+<xbrli:context id="FY2.segment.uk-gaap-LeasedTangibleFixedAssets">
+<xbrli:context id="FY2.segment.uk-gaap-OwnedOrFreeholdTangibleFixedAssets">
+<xbrli:context id="FY2.START">
+
+XBRL-UK
+-------
+<xbrli:context id='c_0' xmlns:xbrli='http://www.xbrl.org/2003/instance'>
+  <xbrli:entity>
+    <xbrli:identifier scheme='http://www.companieshouse.gov.uk/'>12345678</xbrli:identifier>
+  </xbrli:entity>
+  <xbrli:period>
+    <xbrli:startDate>2009-01-01</xbrli:startDate>
+    <xbrli:endDate>2009-12-31</xbrli:endDate>
+  </xbrli:period>
+</xbrli:context>
+<xbrli:context id='c_1' xmlns:xbrli='http://www.xbrl.org/2003/instance'>
+  <xbrli:entity>
+    <xbrli:identifier scheme='http://www.companieshouse.gov.uk/'>12345678</xbrli:identifier>
+    <xbrli:segment>
+      <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director1</xbrldi:explicitMember>
+    </xbrli:segment>
+  </xbrli:entity>
+
+  through to
+
+<xbrli:context id='c_64' xmlns:xbrli='http://www.xbrl.org/2003/instance'>
+  <xbrli:entity>
+    <xbrli:identifier scheme='http://www.companieshouse.gov.uk/'>12345678</xbrli:identifier>
+    <xbrli:segment>
+      <xbrldi:explicitMember dimension="uk-ifrs:RelatedPartyTransactionTypeDimension">uk-ifrs:SaleOrPurchaseGoods</xbrldi:explicitMember>
+    </xbrli:segment>
+  </xbrli:entity>
+  <xbrli:period>
+    <xbrli:startDate>2008-04-01</xbrli:startDate>
+    <xbrli:endDate>2008-12-31</xbrli:endDate>
+  </xbrli:period>
+</xbrli:context>
+
+Dimensions
+==========
+81	  uk-gaap	AcquisitionAssetsLiabilitiesDimension	      Acquisition assets and liabilities [Dimension]
+91	  uk-gaap	AcquisitionsDimension	                      Acquisitions [Dimension]
+5344	uk-bus	AddressTypeDimension	                      Address type [Dimension]
+168	  uk-gaap	AmortisationImpairmentAdjustmentsDimension	Amortisation and impairment adjustments [Dimension]
+334	  uk-gaap	AssociatesDimension	                        Associates [Dimension]
+486	  uk-gaap	BusinessSegmentsDimension	                  Business segments [Dimension]
+957	  uk-gaap	ConsolidationDimension	                    Consolidation [Dimension]
+5729	uk-countries	CountriesDimension	                  Countries [Dimension]
+5977	uk-curr	CurrenciesDimension	                        Currencies [Dimension]
+1733	uk-gaap	DisposalsDimension	                        Disposals [Dimension]
+1754	uk-gaap	DividendsDimension	                        Dividends [Dimension]
+5467	uk-bus	EntityContactTypeDimension	Entity contact type [Dimension]
+5485	uk-bus	EntityOfficersDimension	Entity officers [Dimension]
+5484	uk-bus	EntityOfficerTypeDimension	Entity officer type [Dimension]
+1932	uk-gaap	ExceptionalItemsAdjustmentsDimension	Exceptional items adjustments [Dimension]
+6171	uk-exch	ExchangesDimension	Exchanges [Dimension]
+2095	uk-gaap	FinancialInstrumentCurrentNon-currentDimension	Financial instrument current and non-current [Dimension]
+2099	uk-gaap	FinancialInstrumentLevelDimension	Financial instrument level [Dimension]
+2100	uk-gaap	FinancialInstrumentMovementsDimension	Financial instrument movements [Dimension]
+2103	uk-gaap	FinancialInstrumentValueTypeDimension	Financial instrument value type [Dimension]
+2126	uk-gaap	FixedAssetInvestmentHoldingsDimension	Fixed asset investment holdings [Dimension]
+2128	uk-gaap	FixedAssetInvestmentTypesDimension	Fixed asset investment types [Dimension]
+5500	uk-bus	FormContactDimension	Form of contact [Dimension]
+2454	uk-gaap	GroupCompanyDimension	Group and company [Dimension]
+2800	uk-gaap	IntangibleFixedAssetClassesDimension	Intangible fixed asset classes [Dimension]
+2996	uk-gaap	Joint-venturesDimension	Joint-ventures [Dimension]
+6358	uk-lang	LanguagesDimension	Languages [Dimension]
+3188	uk-gaap	MaturitiesDimension	Maturities [Dimension]
+3397	uk-gaap	OperatingActivitiesDimension	Operating activities [Dimension]
+3630	uk-gaap	OtherParticipatingInterestsOrInvestmentsDimension	Other participating interests or investments [Dimension]
+3787	uk-gaap	PensionSchemesDimension	Pension schemes [Dimension]
+5566	uk-bus	PhoneNumberTypeDimension	Phone number type [Dimension]
+4040	uk-gaap	ProvisionsClassesDimension	Provisions classes [Dimension]
+4246	uk-gaap	RestatementsDimension	Restatements [Dimension]
+4362	uk-gaap	Share-basedPaymentSchemesDimension	Share-based payment schemes [Dimension]
+5586	uk-bus	ShareClassesDimension	Share classes [Dimension]
+5587	uk-bus	ShareTypesDimension	Share types [Dimension]
+4580	uk-gaap	SubsidiariesDimension	Subsidiaries [Dimension]
+4648	uk-gaap	TangibleFixedAssetClassesDimension	Tangible fixed asset classes [Dimension]
+4650	uk-gaap	TangibleFixedAssetOwnershipDimension	Tangible fixed asset ownership [Dimension]
+5595	uk-bus	ThirdPartyAgentStatusDimension	Third party agent status [Dimension]
+5596	uk-bus	ThirdPartyAgentTypeDimension	Third party agent type [Dimension]
+
+
+Turnover
+--------
+4907 uk-gaap:TurnoverGrossOperatingRevenue
+Hypercube(s)
+610
+
+610 - Hypercube - Income Data All Dimensions
+  [A] 2932 Items inheriting all income data dimensions
+    [C] 3998 Profit (loss) on ordinary activities before tax
+    [C] 2066 Finance charges (income)
+    [C] 3299 Net interest payable (receivable)
+    [C] 2864 Interest payable and similar charges
+    [C] 3571 Other interest receivable and similar income
+    [C] 3538 Other finance charges
+    [C] 3540 Other finance income
+    [C] 3283 Net income from fixed asset investments, subtotal
+    [C] 3997 Profit (loss) on ordinary activities before finance charges and interest
+    [C] 1928 Exceptional gain (loss) reported after operating profit (loss), subtotal
+    [C] 2341 Gain (loss) on sale or termination of operations
+    [C] 4987 Utilisation of earlier provisions for sale or termination of operations
+    [C] 4024 Provision for loss on sale or termination of operation
+    [C] 4025 Provision for operating loss on discontinued operations
+    [C] 1041 Costs (gains) from fundamental restructuring or reorganisation
+    [C] 2272 Gain (loss) from disposal of fixed assets
+    [C] 3525 Other exceptional gain (loss) reported after operating profit (loss)
+    [C] 3422 Operating profit (loss)
+    [C] 1929 Exceptional gain (loss) reported before operating profit (loss), subtotal
+~   [C] 4907 Turnover / gross operating revenue
+
+610 - Hypercube - Income Data All Dimensions
+~ [A] 2601 Income data all dimensions [Hypercube]
+    [A] 957 Consolidation [Dimension] (105 - Dimension - Consolidation)
+    [A] 4246 Restatements [Dimension] (110 - Dimension - Restatements)
+    [A] 3397 Operating activities [Dimension] (120 - Dimension - Operating Activities)
+    [A] 1932 Exceptional items adjustments [Dimension] (150 - Dimension - Exceptional Item Adjustments)
+    [A] 168 Amortisation and impairment adjustments [Dimension] (160 - Dimension - Amortisation and Impairment Adjustments)
+    [A] 486 Business segments [Dimension] (170 - Dimension - Business Segments)
+    [A] 5729 Countries [Dimension] (520 - Dimension - Countries and Regions)
+
+Definition: Dimension default member (dimension-default)	
+105 - Dimension - Consolidation
+~ [A] 957 Consolidation [Dimension]
+    [A] 913 Company [default]
+Definition: Dimensionhas only target domain as its domain (dimension-domain)	
+105 - Dimension - Consolidation
+~ [A] 957 Consolidation [Dimension]
+    [A] 955 Consolidated
+
+Definition: Dimension has only target domain as its domain (dimension-domain)	
+100 - Group and Company
+  [A] 2454 Group and company [Dimension]
+~   [A] 955 Consolidated
+105 - Dimension - Consolidation
+  [A] 957 Consolidation [Dimension]
+~   [A] 955 Consolidated
+Definition: Domain contains member (domain-member)	
+105 - Dimension - Consolidation
+~ [A] 955 Consolidated
+    [A] 2455 Group and share of joint-ventures, excluding associates [turnover only]
+    [A] 4390 Share of joint-ventures and associates
+    [A] 4389 Share of joint-ventures
+      [A] 3581 Other joint-ventures
+      [A] 2962 Joint-venture 1
+      [A] 2973 Joint-venture 2
+      [A] 2984 Joint-venture 3
+      [A] 2986 Joint-venture 4
+      [A] 2987 Joint-venture 5
+      [A] 2988 Joint-venture 6
+      [A] 2989 Joint-venture 7
+      [A] 2990 Joint-venture 8
+      [A] 2991 Joint-venture 9
+      [A] 2963 Joint-venture 10
+      [A] 2964 Joint-venture 11
+      [A] 2965 Joint-venture 12
+      [A] 2966 Joint-venture 13
+      [A] 2967 Joint-venture 14
+      [A] 2968 Joint-venture 15
+      [A] 2969 Joint-venture 16
+      [A] 2970 Joint-venture 17
+      [A] 2971 Joint-venture 18
+      [A] 2972 Joint-venture 19
+      [A] 2974 Joint-venture 20
+      [A] 2975 Joint-venture 21
+      [A] 2976 Joint-venture 22
+      [A] 2977 Joint-venture 23
+      [A] 2978 Joint-venture 24
+      [A] 2979 Joint-venture 25
+      [A] 2980 Joint-venture 26
+      [A] 2981 Joint-venture 27
+      [A] 2982 Joint-venture 28
+      [A] 2983 Joint-venture 29
+      [A] 2985 Joint-venture 30
+    [A] 2452 Group after associates, before joint-ventures
+    [A] 4377 Share of associates
+      [A] 3475 Other associates
+      [A] 300 Associate 1
+      [A] 311 Associate 2
+      [A] 322 Associate 3
+      [A] 324 Associate 4
+      [A] 325 Associate 5
+      [A] 326 Associate 6
+      [A] 327 Associate 7
+      [A] 328 Associate 8
+      [A] 329 Associate 9
+      [A] 301 Associate 10
+      [A] 302 Associate 11
+      [A] 303 Associate 12
+      [A] 304 Associate 13
+      [A] 305 Associate 14
+      [A] 306 Associate 15
+      [A] 307 Associate 16
+      [A] 308 Associate 17
+      [A] 309 Associate 18
+      [A] 310 Associate 19
+      [A] 312 Associate 20
+      [A] 313 Associate 21
+      [A] 314 Associate 22
+      [A] 315 Associate 23
+      [A] 316 Associate 24
+      [A] 317 Associate 25
+      [A] 318 Associate 26
+      [A] 319 Associate 27
+      [A] 320 Associate 28
+      [A] 321 Associate 29
+      [A] 323 Associate 30
+    [A] 2453 Group before associates and joint-ventures
+    [A] 913 Company [default]

@@ -1,0 +1,11 @@
+﻿Comment before the BroSet statement
+BroSet Type: In-Main, Name: In Test 1 By Includes, Descr: Same as In Test 1 via Includes, SortKey: D5 # A comment on a BroSet row
+Comment before an Include statement
+Include BroSet In Revenue # Comment on an Include row
+Comment between two Include statements
+Include BroSet In CoS
+Blank row after this
+
+Blank row before this
+Include BroSet In The Rest
+Comment at the end

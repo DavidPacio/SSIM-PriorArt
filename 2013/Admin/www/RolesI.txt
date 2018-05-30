@@ -1,0 +1,112 @@
+Info	01 - Entity Information
+BizReportInfo	02 - Business Report Information
+DirectorsReport	05 - Directors' Report
+AuditorsReport	06 - Auditor's Report
+IncomeStatement	10 - Income Statement
+SCI	11 - Statement of Comprehensive Income
+SFP	12 - Statement of Financial Position / Balance Sheet
+ChangesInEquity	13 - Statement of Changes in Equity
+CashFlow	14 - Cash Flow Statement
+Notes	20 - Notes and Detailed Disclosures
+DPL	31 - Full Detailed Profit and Loss
+AdditionalIndustrySectorData	50 - Additional Industry Sector Data
+CountriesAndRegions	94 - Countries and Regions
+StockExchanges	95 - Stock Exchanges
+Currencies	96 - Currencies
+Languages	97 - Languages
+General-Purpose-Contact-Information	98 - General Purpose Contact Information
+XBRL-Document-Information	99 - XBRL Document Information
+PropGroupAndCompany	100 - Property - Group and Company
+PropContinuingAndDiscontinued	105 - Property - Continuing and Discontinued
+PropRestatements	110 - Property - Restatements
+PropExceptionals	120 - Property - Exceptionals
+PropEquityClasses	130 - Property - Equity Classes
+PropOperatingSegments	150 - Property - Operating Segments
+PropProductsAndServices	170 - Property - Products And Services
+PropMajorCustomers	180 - Property - Major Customers
+PropBusinessCombinations	190 - Property - Business Combinations
+PropPPEClasses	200 - Property - PPE Classes
+PropIntangibleAssetClasses	210 - Property - Intangible Asset Classes
+PropIntangibleAssetsGenerationType	220 - Property - Intangible Assets Generation Type
+PropImpairmentAllowanceAccountType	225 - Property - Impairment Allowance Account Type
+PropFinancialInstrumentValueType	230 - Property - Financial Instrument Value Type
+PropFICurrent-Non-Current	232 - Property - Financial Instrument Current and Non-Current
+PropFinancialInstrumentLevel	233 - Property - Financial Instrument Level
+PropFinInstrumentMovements	234 - Property - Financial Instrument Movements
+PropIndustryConcentrationRisk	235 - Property - Industry Concentration Risk
+PropCreditRatings	238 - Property - Credit Ratings
+PropMaturitiesOrExpirationPeriods	240 - Property - Maturities Or Expiration Periods
+PropDeferredTaxClasses	250 - Property - Deferred Tax Classes
+PropProvisionsClasses	260 - Property - Provisions Classes
+PropPensionSchemes	270 - Property - Pension Schemes
+PropShare-basedPaymentSchemes	280 - Property - Share-based Payment Schemes
+PropContingentLiabilitiesClasses	290 - Property - Contingent Liabilities Classes
+PropRelatedParties	300 - Property - Related Parties
+PropRelatedPartyTransactionType	310 - Property - Related Party Transaction Type
+PropSubsidiaries	320 - Property - Subsidiaries
+PropAssociates	330 - Property - Associates
+PropJoint-Ventures	340 - Property - Joint-Ventures
+PropDataNotForUse	399 - Property - Data Not For Use
+PropEntityOfficers	500 - Property - Entity Officers
+PropEntityOfficerType	501 - Property - Entity Officer Type
+PropShareClasses	502 - Property - Share Classes
+PropShareTypes	503 - Property - Share Types
+PropEntityContactType	505 - Property - Entity Contact Type
+PropThirdPartyAgentType	508 - Property - Third Party Agent Type
+PropThirdPartyAgentStatus	509 - Property - Third Party Agent Status
+PropFormOfContact	511 - Property - Form of Contact
+PropAddressType	512 - Property - Address Type
+PropPhoneNumberType	513 - Property - Phone Number Type
+PropCountriesAndRegions	520 - Property - Countries and Regions
+PropCurrencies	521 - Property - Currencies
+PropStockExchanges	522 - Property - Stock Exchanges
+PropLanguages	523 - Property - Languages
+PropActivity	550 - Property - Activity
+PropExpenseType	551 - Property - Expense Type
+PropExceptionalNonExceptionaltems	552 - Property - Exceptional and Non-Exceptional Items
+PropDetailedAnalysis	553 - Property - Detailed Analysis
+PropIntraExtraGroupTransactions	554 - Property - Intra / extra group transactions
+FolioBasic	600 - Folio - Basic
+FolioIncome-Cash-Data	610 - Folio - Income - Cash - Data
+FolioBalanceSheetData	612 - Folio - Balance Sheet Data
+FolioEquity	620 - Folio - Equity
+FolioContinuingDiscontinued	625 - Folio - Continuing Discontinued Operations
+FolioOperatingSegments	630 - Folio - Operating Segments
+FolioProductsServicesSegments	631 - Folio - Product and Services Segments
+FolioMajorCustomerSegments	632 - Folio - Major Customer Segments
+FolioBusinessCombinations	640 - Folio - Business Combinations
+FolioBusinessCombinationsIntangibles	641 - Folio - Business Combinations - Intangibles
+FolioBusinessCombinationsPPE	642 - Folio - Business Combinations - PPE
+FolioBusinessCombinationsProvisions	643 - Folio - Business Combinations - Provisions
+FolioBusinessCombinationsContingentLiabilities	644 - Folio - Business Combinations - Contingent Liabilities
+FolioPPEIncomeItems	650 - Folio - PPE Income Items
+FolioIntangiblesIncomeItems	651 - Folio - Intangibles Income Items
+FolioPropertyPlantEquipment	660 - Folio - Property, Plant and Equipment
+FolioIntangibleAssets	665 - Folio - Intangible Assets
+FolioImpairmentAllowanceAccount	667 - Folio - Impairment Allowance Account
+FolioFinancialInstruments	670 - Folio - Financial Instruments
+FolioFinancialInstrumentsConcentrationRisk	671 - Folio - Financial Instruments Concentration Risk
+FolioFinancialInstrumentMovements	672 - Folio - Financial Instrument Movements
+FolioCreditRatings	674 - Folio - Credit Ratings
+FolioMaturities	675 - Folio - Maturities
+FolioDeferredTaxAssetsLiabilities	680 - Folio - Deferred Tax Assets and Liabilities
+FolioProvisions	690 - Folio - Provisions
+FolioContingentLiabilities	700 - Folio - Contingent Liabilities
+FolioPensionSchemes	730 - Folio - Pension Schemes
+FolioShare-basedPaymentSchemes	740 - Folio - Share-based Payment Schemes
+FolioShareCapitalAndDividends	750 - Folio - Share Capital and Dividends
+FolioRelatedParties	760 - Folio - Related Parties
+FolioSubsidiaries	770 - Folio - Subsidiaries
+FolioAssociates	780 - Folio - Associates
+FolioJoint-Ventures	790 - Folio - Joint-Ventures
+FolioDetailedProfitAndLoss	850 - Folio - Detailed Profit and Loss
+FolioDataNotForUse	899 - Folio - Data Not For Use
+FolioEntityOfficers	900 - Folio - Entity Officers
+FolioShares	901 - Folio - Shares
+FolioEntityContactInfo	905 - Folio - Entity Contact Info
+FolioThirdPartyAgents	906 - Folio - Third Party Agents
+FolioCountries	910 - Folio - Countries
+FolioCurrencies	911 - Folio - Currencies
+FolioStockExchanges	912 - Folio - Stock Exchanges
+FolioLanguages	913 - Folio - Languages
+FolioEmpty	999 - Folio - Empty

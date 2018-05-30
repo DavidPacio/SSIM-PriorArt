@@ -1,0 +1,551 @@
+Importing Data
+File Import Restated.txt read.
+StartYear: 4
+ImportType: Replace
+Import is for year: Year 1 (Restated)
+Data Import Row	DE Running Balances	Processed BroRef if different	Comments
+BroRef	
+Year 1 (Restated)
+	Year 1 (Restated)
+PLRev.TradingIncome.TurnoverGrossOpRevenue,Restated.AcctPolicyIncr	-1	-1		Bro 1002
+PLRev.NonOperatIncome,Restated.AcctPolicyIncr	-1	-2		Bro 1007 no Year 1 value
+SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Countries.UK,Restated.AcctPolicyIncr	1			Bro 6640
+Suspense,Restated.AcctPolicyIncr	2	0		Bro 4687
+
+Summing Money Year 1 (Restated)
+
+Summing Money Year 0
+
+Data Import and Summing Results
+Ref	Short Bro Name	Bro Reference	PT	Src	Year 0	Year 1	Year 1 (Restated)
+1000		PLRev	DE	S,S,b	-16,613,551	-19,195,013	-19,195,015
+1000,73		PLRev,Restated.Amount	DE	d			-19,195,015
+1000,74		PLRev,Restated.PriorPeriodIncr	DE	d			-2
+1000,75		PLRev,Restated.AcctPolicyIncr	DE	S			-2
+1000,77		PLRev,Restated.OriginalAmount	DE	R			-19,195,013
+1001		PLRev.TradingIncome	DE	S,S,b	-16,613,551	-19,195,013	-19,195,014
+1001,73		PLRev.TradingIncome,Restated.Amount	DE	d			-19,195,014
+1001,74		PLRev.TradingIncome,Restated.PriorPeriodIncr	DE	d			-1
+1001,75		PLRev.TradingIncome,Restated.AcctPolicyIncr	DE	S			-1
+1001,77		PLRev.TradingIncome,Restated.OriginalAmount	DE	R			-19,195,013
+1002	Tx4907	PLRev.TradingIncome.TurnoverGrossOpRevenue	DE	P,P,b	-16,613,551	-19,195,013	-19,195,014
+1002,73	Tx4907	PLRev.TradingIncome.TurnoverGrossOpRevenue,Restated.Amount	DE	d			-19,195,014
+1002,74	Tx4907	PLRev.TradingIncome.TurnoverGrossOpRevenue,Restated.PriorPeriodIncr	DE	d			-1
+1002,75	Tx4907	PLRev.TradingIncome.TurnoverGrossOpRevenue,Restated.AcctPolicyIncr	DE	P			-1
+1002,77	Tx4907	PLRev.TradingIncome.TurnoverGrossOpRevenue,Restated.OriginalAmount	DE	R			-19,195,013
+1007		PLRev.NonOperatIncome	DE	b			-1
+1007,73		PLRev.NonOperatIncome,Restated.Amount	DE	d			-1
+1007,74		PLRev.NonOperatIncome,Restated.PriorPeriodIncr	DE	d			-1
+1007,75		PLRev.NonOperatIncome,Restated.AcctPolicyIncr	DE	P			-1
+1007,77		PLRev.NonOperatIncome,Restated.OriginalAmount	DE	r			0
+2701		Suspense	DE	P,P,b	16,613,923	19,196,889	19,196,891
+2701,73		Suspense,Restated.Amount	DE	d			19,196,891
+2701,74		Suspense,Restated.PriorPeriodIncr	DE	d			2
+2701,75		Suspense,Restated.AcctPolicyIncr	DE	P			2
+2701,77		Suspense,Restated.OriginalAmount	DE	R			19,196,889
+2729	Expenses	Exp	DE	S	-372	-1,876	-1,876
+2848		Exp.Financial	DE	S	-372	-1,876	-1,876
+2878	InterestPayableSimilarCharges	Exp.Financial.InterestPayableSimilarCharges	DE	S	-372	-1,876	-1,876
+2879	Tx2066Hy2	Exp.Financial.InterestPayableSimilarCharges.FinanceIncome	DE	S	-372	-1,876	-1,876
+2880	Tx3299Hy2	Exp.Financial.InterestPayableSimilarCharges.FinanceIncome.NetReceivable	DE	S	-372	-1,876	-1,876
+2881	Tx3571Hy2	Exp.Financial.InterestPayableSimilarCharges.FinanceIncome.NetReceivable.Other	DE	P	-372	-1,876	-1,876
+3021		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax	Sch	S,S,b	-16,613,923	-19,196,889	-19,196,890
+3021,73		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax,Restated.Amount	Sch	d			-19,196,890
+3021,74		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax,Restated.PriorPeriodIncr	Sch	d			-1
+3021,75		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax,Restated.AcctPolicyIncr	Sch	S			-1
+3021,77		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax,Restated.OriginalAmount	Sch	R			-19,196,889
+3022		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.FinanceChargesIncome	Sch	mS	-372	-1,876	-1,876
+3023		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.ProfitOnOrdinaryActivitiesBeforeFinanceChargesAndInterest	Sch	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+3023,73		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.ProfitOnOrdinaryActivitiesBeforeFinanceChargesAndInterest,Restated.Amount	Sch	md			-19,195,014
+3023,74		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.ProfitOnOrdinaryActivitiesBeforeFinanceChargesAndInterest,Restated.PriorPeriodIncr	Sch	md			-1
+3023,75		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.ProfitOnOrdinaryActivitiesBeforeFinanceChargesAndInterest,Restated.AcctPolicyIncr	Sch	mS			-1
+3023,77		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.ProfitOnOrdinaryActivitiesBeforeFinanceChargesAndInterest,Restated.OriginalAmount	Sch	mR			-19,195,013
+3024		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit	Sch	S,S,b	-16,613,551	-19,195,013	-19,195,014
+3024,73		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit,Restated.Amount	Sch	d			-19,195,014
+3024,74		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit,Restated.PriorPeriodIncr	Sch	d			-1
+3024,75		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit,Restated.AcctPolicyIncr	Sch	S			-1
+3024,77		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit,Restated.OriginalAmount	Sch	R			-19,195,013
+Data Import and Summing Results
+Ref	Short Bro Name	Bro Reference	PT	Src	Year 0	Year 1	Year 1 (Restated)
+3025		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit.Turnover	Sch	mP,mP,mb	-16,613,551	-19,195,013	-19,195,014
+3025,73		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit.Turnover,Restated.Amount	Sch	md			-19,195,014
+3025,74		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit.Turnover,Restated.PriorPeriodIncr	Sch	md			-1
+3025,75		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit.Turnover,Restated.AcctPolicyIncr	Sch	mP			-1
+3025,77		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit.Turnover,Restated.OriginalAmount	Sch	mR			-19,195,013
+3027		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit.GrossProfit	Sch	S,S,b	-16,613,551	-19,195,013	-19,195,014
+3027,73		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit.GrossProfit,Restated.Amount	Sch	d			-19,195,014
+3027,74		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit.GrossProfit,Restated.PriorPeriodIncr	Sch	d			-1
+3027,75		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit.GrossProfit,Restated.AcctPolicyIncr	Sch	S			-1
+3027,77		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit.GrossProfit,Restated.OriginalAmount	Sch	R			-19,195,013
+3028		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit.GrossProfit.Turnover	Sch	mP,mP,mb	-16,613,551	-19,195,013	-19,195,014
+3028,73		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit.GrossProfit.Turnover,Restated.Amount	Sch	md			-19,195,014
+3028,74		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit.GrossProfit.Turnover,Restated.PriorPeriodIncr	Sch	md			-1
+3028,75		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit.GrossProfit.Turnover,Restated.AcctPolicyIncr	Sch	mP			-1
+3028,77		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit.GrossProfit.Turnover,Restated.OriginalAmount	Sch	mR			-19,195,013
+3030		PLTotals.ProfitLossOnOrdinaryActivitiesBeforeFinanceChargesInterest	Sch	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+3030,73		PLTotals.ProfitLossOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.Amount	Sch	md			-19,195,014
+3030,74		PLTotals.ProfitLossOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.PriorPeriodIncr	Sch	md			-1
+3030,75		PLTotals.ProfitLossOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.AcctPolicyIncr	Sch	mS			-1
+3030,77		PLTotals.ProfitLossOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.OriginalAmount	Sch	mR			-19,195,013
+5000		CF	DE	S,S,b	-16,613,551	-19,195,013	-19,195,014
+5000,73		CF,Restated.Amount	DE	d			-19,195,014
+5000,74		CF,Restated.PriorPeriodIncr	DE	d			-1
+5000,75		CF,Restated.AcctPolicyIncr	DE	S			-1
+5000,77		CF,Restated.OriginalAmount	DE	R			-19,195,013
+5036		CF.ReconciliationCashFlowsOperatingActivities	DE	S,S,b	-16,613,551	-19,195,013	-19,195,014
+5036,73		CF.ReconciliationCashFlowsOperatingActivities,Restated.Amount	DE	d			-19,195,014
+5036,74		CF.ReconciliationCashFlowsOperatingActivities,Restated.PriorPeriodIncr	DE	d			-1
+5036,75		CF.ReconciliationCashFlowsOperatingActivities,Restated.AcctPolicyIncr	DE	S			-1
+5036,77		CF.ReconciliationCashFlowsOperatingActivities,Restated.OriginalAmount	DE	R			-19,195,013
+5037		CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom	DE	S,S,b	-16,613,551	-19,195,013	-19,195,014
+5037,73		CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom,Restated.Amount	DE	d			-19,195,014
+5037,74		CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom,Restated.PriorPeriodIncr	DE	d			-1
+5037,75		CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom,Restated.AcctPolicyIncr	DE	S			-1
+5037,77		CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom,Restated.OriginalAmount	DE	R			-19,195,013
+5038		CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom.ProfitLoss	DE	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+5038,73		CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom.ProfitLoss,Restated.Amount	DE	md			-19,195,014
+5038,74		CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom.ProfitLoss,Restated.PriorPeriodIncr	DE	md			-1
+5038,75		CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom.ProfitLoss,Restated.AcctPolicyIncr	DE	mS			-1
+5038,77		CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom.ProfitLoss,Restated.OriginalAmount	DE	mR			-19,195,013
+5430	Tx4523	STRGL.StatementThatThereWereNoGainsInPeriodOtherThanThoseInPL	Sch	P	true
+6248	Tx5469	SchInputEntity.Names.CurrentLegalOrRegistered	Sch	P	AAAAA Limited
+6254	Tx5600	SchInputEntity.IdentifyingCodes.UKCompaniesHouseRegisteredNumber	Sch	P	87654321
+6264,558	Tx5376	SchInputEntity.LegalForm.CountryFormationOrIncorporation,Countries.England	Sch	P	true
+6279		SchInputEntity.OfficialOperationalStatus.Audited	Sch	P	true
+6281	Tx5492	SchInputEntity.OfficialOperationalStatus.Trading	Sch	P	true
+Data Import and Summing Results
+Ref	Short Bro Name	Bro Reference	PT	Src	Year 0	Year 1	Year 1 (Restated)
+6290,426,419		SchInputEntity.Officers.Properties,Officers.Director1,Officers.Chairman	Sch	P	true
+6290,426,487		SchInputEntity.Officers.Properties,Officers.Director1,OfficerType.Exec	Sch	P	true
+6290,427,424		SchInputEntity.Officers.Properties,Officers.Director2,Officers.CoSecDirector	Sch	P	true
+6290,427,425		SchInputEntity.Officers.Properties,Officers.Director2,Officers.HighestPaidDirector	Sch	P	true
+6290,427,487		SchInputEntity.Officers.Properties,Officers.Director2,OfficerType.Exec	Sch	P	true
+6290,428,488		SchInputEntity.Officers.Properties,Officers.Director3,OfficerType.Nonexec	Sch	P	true
+6291,423	Tx5524	SchInputEntity.Officers.Name,Officers.CoSec	Sch	P	C C Smith
+6291,426	Tx5524	SchInputEntity.Officers.Name,Officers.Director1	Sch	P	A A Green
+6291,427	Tx5524	SchInputEntity.Officers.Name,Officers.Director2	Sch	P	B B Black
+6291,428	Tx5524	SchInputEntity.Officers.Name,Officers.Director3	Sch	P	T T Three
+6292,426	Tx3227	SchInputEntity.Officers.DirectorSigningAccounts,Officers.Director1	Sch	P	true
+6292,427	Tx3227	SchInputEntity.Officers.DirectorSigningAccounts,Officers.Director2	Sch	P	true
+6292,428	Tx3227	SchInputEntity.Officers.DirectorSigningAccounts,Officers.Director3	Sch	P	true
+6295,511	Tx5341Hy40	SchInputEntity.MeansContact.Address.Line1,ContactType.RegisteredOffice	Sch	P	Sample £ £ ¥ € & "O'Reilly House" s & d quotes
+6298,511	Tx5576Hy40	SchInputEntity.MeansContact.Address.CityOrTown,ContactType.RegisteredOffice	Sch	P	Sample Town
+6300,511	Tx5568Hy40	SchInputEntity.MeansContact.Address.PostCode,ContactType.RegisteredOffice	Sch	P	ST9 9ZY
+6316		SchInputEntity.ThirdPartyAgents.AccountantsAndAuditors	Sch	P	true
+6317,523	Tx5527	SchInputEntity.ThirdPartyAgents.Name,TPAType.Auditors	Sch	P	DEF LLP
+6324,523,549	Tx5341Hy41	SchInputEntity.ThirdPartyAgents.MeansContact.Address.Line1,TPAType.Auditors,AddressType.Postal	Sch	P	DEF House
+6327,523,549	Tx5576Hy41	SchInputEntity.ThirdPartyAgents.MeansContact.Address.CityOrTown,TPAType.Auditors,AddressType.Postal	Sch	P	Sample Town
+6329,523,549	Tx5568Hy41	SchInputEntity.ThirdPartyAgents.MeansContact.Address.PostCode,TPAType.Auditors,AddressType.Postal	Sch	P	ST12 0ZZ
+6347	Tx5356	SchInputBRI.DatesPeriods.BS	Sch	e	2009-12-31
+6348	Tx1141	SchInputBRI.DatesPeriods.ApprovalAccounts	Sch	e	2010-01-30
+6350	Tx5589	SchInputBRI.DatesPeriods.Start	Sch	P	2009-01-01	2008-01-01	2008-01-01
+6351	Tx5460	SchInputBRI.DatesPeriods.End	Sch	P	2009-12-31	2008-12-31	2008-12-31
+6361,423		SchInputDirRep.DescrSignificantChangeInActivitiesDuringPeriod.Name,Officers.CoSec	Sch	mP	C C Smith
+6361,426		SchInputDirRep.DescrSignificantChangeInActivitiesDuringPeriod.Name,Officers.Director1	Sch	mP	A A Green
+6361,427		SchInputDirRep.DescrSignificantChangeInActivitiesDuringPeriod.Name,Officers.Director2	Sch	mP	B B Black
+6361,428		SchInputDirRep.DescrSignificantChangeInActivitiesDuringPeriod.Name,Officers.Director3	Sch	mP	T T Three
+6517		SchInputDirRep.Statements.Trading	Sch	mP	true
+6524,423	Tx5170	SchInputDirRep.DirectorSigningReport,Officers.CoSec	Sch	P	true
+6525	Tx5139	SchInputDirRep.DateSigningDirectorsReport	Sch	P	2010-03-04
+Data Import and Summing Results
+Ref	Short Bro Name	Bro Reference	PT	Src	Year 0	Year 1	Year 1 (Restated)
+6574		SchInputPL.SegAnalysisRevCostsProfits	Sch	b	-199,365,960	-230,357,040	-230,357,050
+6574,73		SchInputPL.SegAnalysisRevCostsProfits,Restated.Amount	Sch	d			-230,357,050
+6574,74		SchInputPL.SegAnalysisRevCostsProfits,Restated.PriorPeriodIncr	Sch	d			-10
+6574,75		SchInputPL.SegAnalysisRevCostsProfits,Restated.AcctPolicyIncr	Sch	Si			-10
+6574,77		SchInputPL.SegAnalysisRevCostsProfits,Restated.OriginalAmount	Sch	r			-230,357,040
+6574,556		SchInputPL.SegAnalysisRevCostsProfits,Countries.All	Sch	d	-16,613,551	-19,195,013	-19,195,012
+6574,556,73		SchInputPL.SegAnalysisRevCostsProfits,Countries.All,Restated.Amount	Sch	d			-19,195,012
+6574,556,74		SchInputPL.SegAnalysisRevCostsProfits,Countries.All,Restated.PriorPeriodIncr	Sch	d			1
+6574,556,75		SchInputPL.SegAnalysisRevCostsProfits,Countries.All,Restated.AcctPolicyIncr	Sch	d			1
+6574,556,77		SchInputPL.SegAnalysisRevCostsProfits,Countries.All,Restated.OriginalAmount	Sch	r			-19,195,013
+6574,557		SchInputPL.SegAnalysisRevCostsProfits,Countries.UK	Sch	S,S,Si	-16,509,371	-18,012,026	-18,012,025
+6574,557,73		SchInputPL.SegAnalysisRevCostsProfits,Countries.UK,Restated.Amount	Sch	d			-18,012,025
+6574,557,74		SchInputPL.SegAnalysisRevCostsProfits,Countries.UK,Restated.PriorPeriodIncr	Sch	d			1
+6574,557,75		SchInputPL.SegAnalysisRevCostsProfits,Countries.UK,Restated.AcctPolicyIncr	Sch	S			1
+6574,557,77		SchInputPL.SegAnalysisRevCostsProfits,Countries.UK,Restated.OriginalAmount	Sch	r			-18,012,026
+6574,568		SchInputPL.SegAnalysisRevCostsProfits,Countries.OtherRegions	Sch	S	-22,324	-291,306	-291,306
+6574,570		SchInputPL.SegAnalysisRevCostsProfits,Countries.Europe	Sch	S	-81,856	-13,084	-13,084
+6574,572		SchInputPL.SegAnalysisRevCostsProfits,Countries.NorthAmerica	Sch	S		-878,597	-878,597
+6574,9999		SchInputPL.SegAnalysisRevCostsProfits,Unallocated	Sch	S	-182,752,409	-211,162,027	-211,162,027
+6576		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates	Sch	S,S,b	-66,454,948	-76,783,804	-76,783,808
+6576,73		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates,Restated.Amount	Sch	d			-76,783,808
+6576,74		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates,Restated.PriorPeriodIncr	Sch	d			-4
+6576,75		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates,Restated.AcctPolicyIncr	Sch	S			-4
+6576,77		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates,Restated.OriginalAmount	Sch	R			-76,783,804
+6578		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.LossOnOrdinaryActivitiesAfterTax	Sch	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+6578,73		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.LossOnOrdinaryActivitiesAfterTax,Restated.Amount	Sch	md			-19,195,014
+6578,74		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.LossOnOrdinaryActivitiesAfterTax,Restated.PriorPeriodIncr	Sch	md			-1
+6578,75		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.LossOnOrdinaryActivitiesAfterTax,Restated.AcctPolicyIncr	Sch	mS			-1
+6578,77		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.LossOnOrdinaryActivitiesAfterTax,Restated.OriginalAmount	Sch	mR			-19,195,013
+6580		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.LossOnOrdinaryActivitiesBeforeTax	Sch	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+6580,73		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.LossOnOrdinaryActivitiesBeforeTax,Restated.Amount	Sch	md			-19,195,014
+6580,74		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.LossOnOrdinaryActivitiesBeforeTax,Restated.PriorPeriodIncr	Sch	md			-1
+6580,75		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.LossOnOrdinaryActivitiesBeforeTax,Restated.AcctPolicyIncr	Sch	mS			-1
+6580,77		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.LossOnOrdinaryActivitiesBeforeTax,Restated.OriginalAmount	Sch	mR			-19,195,013
+6581		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.FinanceChargesIncome	Sch	S	-744	-3,752	-3,752
+6582		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.FinanceChargesIncome.NetInterestPayableReceivable	Sch	S	-744	-3,752	-3,752
+6583		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.FinanceChargesIncome.NetInterestPayableReceivable.Similar	Sch	mS	-372	-1,876	-1,876
+6584		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.FinanceChargesIncome.NetInterestPayableReceivable.OtherSimilar	Sch	mP	-372	-1,876	-1,876
+6592		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.OpLoss	Sch	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+6592,73		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.OpLoss,Restated.Amount	Sch	md			-19,195,014
+6592,74		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.OpLoss,Restated.PriorPeriodIncr	Sch	md			-1
+6592,75		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.OpLoss,Restated.AcctPolicyIncr	Sch	mS			-1
+6592,77		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.OpLoss,Restated.OriginalAmount	Sch	mR			-19,195,013
+6593		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.TurnoverGrossOpRevenue	Sch	mP,mP,mb	-16,613,551	-19,195,013	-19,195,014
+6593,73		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.TurnoverGrossOpRevenue,Restated.Amount	Sch	md			-19,195,014
+6593,74		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.TurnoverGrossOpRevenue,Restated.PriorPeriodIncr	Sch	md			-1
+6593,75		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.TurnoverGrossOpRevenue,Restated.AcctPolicyIncr	Sch	mP			-1
+6593,77		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.TurnoverGrossOpRevenue,Restated.OriginalAmount	Sch	mR			-19,195,013
+Data Import and Summing Results
+Ref	Short Bro Name	Bro Reference	PT	Src	Year 0	Year 1	Year 1 (Restated)
+6595		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity	Sch	S,S,b	-66,456,064	-76,789,432	-76,789,436
+6595,73		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity,Restated.Amount	Sch	d			-76,789,436
+6595,74		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity,Restated.PriorPeriodIncr	Sch	d			-4
+6595,75		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity,Restated.AcctPolicyIncr	Sch	S			-4
+6595,77		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity,Restated.OriginalAmount	Sch	R			-76,789,432
+6596		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.Revenue	Sch	S,S,b	-16,613,551	-19,195,013	-19,195,014
+6596,73		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.Revenue,Restated.Amount	Sch	d			-19,195,014
+6596,74		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.Revenue,Restated.PriorPeriodIncr	Sch	d			-1
+6596,75		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.Revenue,Restated.AcctPolicyIncr	Sch	S			-1
+6596,77		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.Revenue,Restated.OriginalAmount	Sch	R			-19,195,013
+6598		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.Revenue.TurnoverGrossOp	Sch	mP,mP,mb	-16,613,551	-19,195,013	-19,195,014
+6598,73		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.Revenue.TurnoverGrossOp,Restated.Amount	Sch	md			-19,195,014
+6598,74		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.Revenue.TurnoverGrossOp,Restated.PriorPeriodIncr	Sch	md			-1
+6598,75		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.Revenue.TurnoverGrossOp,Restated.AcctPolicyIncr	Sch	mP			-1
+6598,77		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.Revenue.TurnoverGrossOp,Restated.OriginalAmount	Sch	mR			-19,195,013
+6607		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss	Sch	S,S,b	-49,842,513	-57,594,419	-57,594,422
+6607,73		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss,Restated.Amount	Sch	d			-57,594,422
+6607,74		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss,Restated.PriorPeriodIncr	Sch	d			-3
+6607,75		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss,Restated.AcctPolicyIncr	Sch	S			-3
+6607,77		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss,Restated.OriginalAmount	Sch	R			-57,594,419
+6609		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.OrdinaryActivitiesBeforeTax	Sch	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+6609,73		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.OrdinaryActivitiesBeforeTax,Restated.Amount	Sch	md			-19,195,014
+6609,74		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.OrdinaryActivitiesBeforeTax,Restated.PriorPeriodIncr	Sch	md			-1
+6609,75		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.OrdinaryActivitiesBeforeTax,Restated.AcctPolicyIncr	Sch	mS			-1
+6609,77		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.OrdinaryActivitiesBeforeTax,Restated.OriginalAmount	Sch	mR			-19,195,013
+6610		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.FinanceChargesIncome	Sch	S	-744	-3,752	-3,752
+6611		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.FinanceChargesIncome.NetInterestPayableReceivable	Sch	S	-744	-3,752	-3,752
+6612		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.FinanceChargesIncome.NetInterestPayableReceivable.Similar	Sch	mS	-372	-1,876	-1,876
+6613		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.FinanceChargesIncome.NetInterestPayableReceivable.OtherSimilar	Sch	mP	-372	-1,876	-1,876
+6616		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.NetInterestPayableReceivable	Sch	mS	-372	-1,876	-1,876
+6617		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.InterestPayableSimilarCharges	Sch	mS	-372	-1,876	-1,876
+6618		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.OtherInterestReceivableSimilarIncome	Sch	mP	-372	-1,876	-1,876
+6622		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.OrdinaryActivitiesBeforeFinanceChargesInterest	Sch	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+6622,73		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.OrdinaryActivitiesBeforeFinanceChargesInterest,Restated.Amount	Sch	md			-19,195,014
+6622,74		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.OrdinaryActivitiesBeforeFinanceChargesInterest,Restated.PriorPeriodIncr	Sch	md			-1
+6622,75		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.OrdinaryActivitiesBeforeFinanceChargesInterest,Restated.AcctPolicyIncr	Sch	mS			-1
+6622,77		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.OrdinaryActivitiesBeforeFinanceChargesInterest,Restated.OriginalAmount	Sch	mR			-19,195,013
+6629		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.Op	Sch	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+6629,73		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.Op,Restated.Amount	Sch	md			-19,195,014
+6629,74		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.Op,Restated.PriorPeriodIncr	Sch	md			-1
+6629,75		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.Op,Restated.AcctPolicyIncr	Sch	mS			-1
+6629,77		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.Op,Restated.OriginalAmount	Sch	mR			-19,195,013
+Data Import and Summing Results
+Ref	Short Bro Name	Bro Reference	PT	Src	Year 0	Year 1	Year 1 (Restated)
+6633		SchInputPL.SegAnalysisRevCostsProfits.Geography	Sch	b	-66,454,948	-76,783,804	-76,783,806
+6633,73		SchInputPL.SegAnalysisRevCostsProfits.Geography,Restated.Amount	Sch	d			-76,783,806
+6633,74		SchInputPL.SegAnalysisRevCostsProfits.Geography,Restated.PriorPeriodIncr	Sch	d			-2
+6633,75		SchInputPL.SegAnalysisRevCostsProfits.Geography,Restated.AcctPolicyIncr	Sch	Si			-2
+6633,77		SchInputPL.SegAnalysisRevCostsProfits.Geography,Restated.OriginalAmount	Sch	r			-76,783,804
+6633,556		SchInputPL.SegAnalysisRevCostsProfits.Geography,Countries.All	Sch	d	-16,613,551	-19,195,013	-19,195,012
+6633,556,73		SchInputPL.SegAnalysisRevCostsProfits.Geography,Countries.All,Restated.Amount	Sch	d			-19,195,012
+6633,556,74		SchInputPL.SegAnalysisRevCostsProfits.Geography,Countries.All,Restated.PriorPeriodIncr	Sch	d			1
+6633,556,75		SchInputPL.SegAnalysisRevCostsProfits.Geography,Countries.All,Restated.AcctPolicyIncr	Sch	d			1
+6633,556,77		SchInputPL.SegAnalysisRevCostsProfits.Geography,Countries.All,Restated.OriginalAmount	Sch	r			-19,195,013
+6633,557		SchInputPL.SegAnalysisRevCostsProfits.Geography,Countries.UK	Sch	S,S,Si	-16,509,371	-18,012,026	-18,012,025
+6633,557,73		SchInputPL.SegAnalysisRevCostsProfits.Geography,Countries.UK,Restated.Amount	Sch	d			-18,012,025
+6633,557,74		SchInputPL.SegAnalysisRevCostsProfits.Geography,Countries.UK,Restated.PriorPeriodIncr	Sch	d			1
+6633,557,75		SchInputPL.SegAnalysisRevCostsProfits.Geography,Countries.UK,Restated.AcctPolicyIncr	Sch	S			1
+6633,557,77		SchInputPL.SegAnalysisRevCostsProfits.Geography,Countries.UK,Restated.OriginalAmount	Sch	r			-18,012,026
+6633,568		SchInputPL.SegAnalysisRevCostsProfits.Geography,Countries.OtherRegions	Sch	S	-22,324	-291,306	-291,306
+6633,570		SchInputPL.SegAnalysisRevCostsProfits.Geography,Countries.Europe	Sch	S	-81,856	-13,084	-13,084
+6633,572		SchInputPL.SegAnalysisRevCostsProfits.Geography,Countries.NorthAmerica	Sch	S		-878,597	-878,597
+6633,9999		SchInputPL.SegAnalysisRevCostsProfits.Geography,Unallocated	Sch	S	-49,841,397	-57,588,791	-57,588,791
+6639		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination	Sch	b	-16,613,551	-19,195,013	-19,195,012
+6639,73		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Restated.Amount	Sch	d			-19,195,012
+6639,74		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Restated.PriorPeriodIncr	Sch	d			1
+6639,75		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Restated.AcctPolicyIncr	Sch	i			1
+6639,77		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Restated.OriginalAmount	Sch	r			-19,195,013
+6639,556		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Countries.All	Sch	d	-16,613,551	-19,195,013	-19,195,012
+6639,556,73		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Countries.All,Restated.Amount	Sch	d			-19,195,012
+6639,556,74		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Countries.All,Restated.PriorPeriodIncr	Sch	d			1
+6639,556,75		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Countries.All,Restated.AcctPolicyIncr	Sch	d			1
+6639,556,77		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Countries.All,Restated.OriginalAmount	Sch	r			-19,195,013
+6639,557		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Countries.UK	Sch	S,S,Si	-16,509,371	-18,012,026	-18,012,025
+6639,557,73		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Countries.UK,Restated.Amount	Sch	d			-18,012,025
+6639,557,74		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Countries.UK,Restated.PriorPeriodIncr	Sch	d			1
+6639,557,75		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Countries.UK,Restated.AcctPolicyIncr	Sch	S			1
+6639,557,77		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Countries.UK,Restated.OriginalAmount	Sch	r			-18,012,026
+6639,568		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Countries.OtherRegions	Sch	S	-22,324	-291,306	-291,306
+6639,570		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Countries.Europe	Sch	S	-81,856	-13,084	-13,084
+6639,572		SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination,Countries.NorthAmerica	Sch	S		-878,597	-878,597
+Data Import and Summing Results
+Ref	Short Bro Name	Bro Reference	PT	Src	Year 0	Year 1	Year 1 (Restated)
+6640	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo	Sch	b	-16,613,551	-19,195,013	-19,195,012
+6640,73	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Restated.Amount	Sch	d			-19,195,012
+6640,74	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Restated.PriorPeriodIncr	Sch	d			1
+6640,75	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Restated.AcctPolicyIncr	Sch	i			1
+6640,77	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Restated.OriginalAmount	Sch	r			-19,195,013
+6640,556	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Countries.All	Sch	d	-16,613,551	-19,195,013	-19,195,012
+6640,556,73	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Countries.All,Restated.Amount	Sch	d			-19,195,012
+6640,556,74	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Countries.All,Restated.PriorPeriodIncr	Sch	d			1
+6640,556,75	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Countries.All,Restated.AcctPolicyIncr	Sch	d			1
+6640,556,77	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Countries.All,Restated.OriginalAmount	Sch	r			-19,195,013
+6640,557	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Countries.UK	Sch	P,P,Pi	-16,509,371	-18,012,026	-18,012,025
+6640,557,73	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Countries.UK,Restated.Amount	Sch	d			-18,012,025
+6640,557,74	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Countries.UK,Restated.PriorPeriodIncr	Sch	d			1
+6640,557,75	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Countries.UK,Restated.AcctPolicyIncr	Sch	P			1
+6640,557,77	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Countries.UK,Restated.OriginalAmount	Sch	r			-18,012,026
+6640,568	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Countries.OtherRegions	Sch	P	-22,324	-291,306	-291,306
+6640,570	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Countries.Europe	Sch	P	-81,856	-13,084	-13,084
+6640,572	Tx2409	SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo,Countries.NorthAmerica	Sch	P		-878,597	-878,597
+6646		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss	Sch	S,S,b	-49,841,397	-57,588,791	-57,588,794
+6646,73		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss,Restated.Amount	Sch	d			-57,588,794
+6646,74		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss,Restated.PriorPeriodIncr	Sch	d			-3
+6646,75		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss,Restated.AcctPolicyIncr	Sch	S			-3
+6646,77		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss,Restated.OriginalAmount	Sch	R			-57,588,791
+6648		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.OrdinaryActivitiesBeforeTax	Sch	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+6648,73		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.OrdinaryActivitiesBeforeTax,Restated.Amount	Sch	md			-19,195,014
+6648,74		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.OrdinaryActivitiesBeforeTax,Restated.PriorPeriodIncr	Sch	md			-1
+6648,75		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.OrdinaryActivitiesBeforeTax,Restated.AcctPolicyIncr	Sch	mS			-1
+6648,77		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.OrdinaryActivitiesBeforeTax,Restated.OriginalAmount	Sch	mR			-19,195,013
+6649		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.FinanceChargesIncome	Sch	S	-744	-3,752	-3,752
+6650		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.FinanceChargesIncome.NetInterestPayableReceivable	Sch	S	-744	-3,752	-3,752
+6651		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.FinanceChargesIncome.NetInterestPayableReceivable.Similar	Sch	mS	-372	-1,876	-1,876
+6652		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.FinanceChargesIncome.NetInterestPayableReceivable.OtherSimilar	Sch	mP	-372	-1,876	-1,876
+6656		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.OrdinaryActivitiesBeforeFinanceChargesInterest	Sch	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+6656,73		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.OrdinaryActivitiesBeforeFinanceChargesInterest,Restated.Amount	Sch	md			-19,195,014
+6656,74		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.OrdinaryActivitiesBeforeFinanceChargesInterest,Restated.PriorPeriodIncr	Sch	md			-1
+6656,75		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.OrdinaryActivitiesBeforeFinanceChargesInterest,Restated.AcctPolicyIncr	Sch	mS			-1
+6656,77		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.OrdinaryActivitiesBeforeFinanceChargesInterest,Restated.OriginalAmount	Sch	mR			-19,195,013
+6663		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.Op	Sch	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+6663,73		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.Op,Restated.Amount	Sch	md			-19,195,014
+6663,74		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.Op,Restated.PriorPeriodIncr	Sch	md			-1
+6663,75		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.Op,Restated.AcctPolicyIncr	Sch	mS			-1
+6663,77		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.Op,Restated.OriginalAmount	Sch	mR			-19,195,013
+7544		CalcPLTotals.GrossProfit	DE	S,S,b	-16,613,551	-19,195,013	-19,195,014
+7544,73		CalcPLTotals.GrossProfit,Restated.Amount	DE	d			-19,195,014
+7544,74		CalcPLTotals.GrossProfit,Restated.PriorPeriodIncr	DE	d			-1
+7544,75		CalcPLTotals.GrossProfit,Restated.AcctPolicyIncr	DE	S			-1
+7544,77		CalcPLTotals.GrossProfit,Restated.OriginalAmount	DE	R			-19,195,013
+Data Import and Summing Results
+Ref	Short Bro Name	Bro Reference	PT	Src	Year 0	Year 1	Year 1 (Restated)
+7545		CalcPLTotals.GrossProfit.TradingIncome	DE	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+7545,73		CalcPLTotals.GrossProfit.TradingIncome,Restated.Amount	DE	md			-19,195,014
+7545,74		CalcPLTotals.GrossProfit.TradingIncome,Restated.PriorPeriodIncr	DE	md			-1
+7545,75		CalcPLTotals.GrossProfit.TradingIncome,Restated.AcctPolicyIncr	DE	mS			-1
+7545,77		CalcPLTotals.GrossProfit.TradingIncome,Restated.OriginalAmount	DE	mR			-19,195,013
+7547	Tx3422	CalcPLTotals.OperatingProfit	DE	S,S,b	-16,613,551	-19,195,013	-19,195,014
+7547,73	Tx3422	CalcPLTotals.OperatingProfit,Restated.Amount	DE	d			-19,195,014
+7547,74	Tx3422	CalcPLTotals.OperatingProfit,Restated.PriorPeriodIncr	DE	d			-1
+7547,75	Tx3422	CalcPLTotals.OperatingProfit,Restated.AcctPolicyIncr	DE	S			-1
+7547,77	Tx3422	CalcPLTotals.OperatingProfit,Restated.OriginalAmount	DE	R			-19,195,013
+7548		CalcPLTotals.OperatingProfit.TradingIncome	DE	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+7548,73		CalcPLTotals.OperatingProfit.TradingIncome,Restated.Amount	DE	md			-19,195,014
+7548,74		CalcPLTotals.OperatingProfit.TradingIncome,Restated.PriorPeriodIncr	DE	md			-1
+7548,75		CalcPLTotals.OperatingProfit.TradingIncome,Restated.AcctPolicyIncr	DE	mS			-1
+7548,77		CalcPLTotals.OperatingProfit.TradingIncome,Restated.OriginalAmount	DE	mR			-19,195,013
+7550	Tx3997	CalcPLTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest	DE	S,S,b	-16,613,551	-19,195,013	-19,195,014
+7550,73	Tx3997	CalcPLTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.Amount	DE	d			-19,195,014
+7550,74	Tx3997	CalcPLTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.PriorPeriodIncr	DE	d			-1
+7550,75	Tx3997	CalcPLTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.AcctPolicyIncr	DE	S			-1
+7550,77	Tx3997	CalcPLTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.OriginalAmount	DE	R			-19,195,013
+7551		CalcPLTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest.OperatingProfit	DE	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+7551,73		CalcPLTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest.OperatingProfit,Restated.Amount	DE	md			-19,195,014
+7551,74		CalcPLTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest.OperatingProfit,Restated.PriorPeriodIncr	DE	md			-1
+7551,75		CalcPLTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest.OperatingProfit,Restated.AcctPolicyIncr	DE	mS			-1
+7551,77		CalcPLTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest.OperatingProfit,Restated.OriginalAmount	DE	mR			-19,195,013
+7553	Tx3998	CalcPLTotals.ProfitLossOnOrdinaryActivitiesBeforeTax	DE	S,S,b	-16,613,551	-19,195,013	-19,195,014
+7553,73	Tx3998	CalcPLTotals.ProfitLossOnOrdinaryActivitiesBeforeTax,Restated.Amount	DE	d			-19,195,014
+7553,74	Tx3998	CalcPLTotals.ProfitLossOnOrdinaryActivitiesBeforeTax,Restated.PriorPeriodIncr	DE	d			-1
+7553,75	Tx3998	CalcPLTotals.ProfitLossOnOrdinaryActivitiesBeforeTax,Restated.AcctPolicyIncr	DE	S			-1
+7553,77	Tx3998	CalcPLTotals.ProfitLossOnOrdinaryActivitiesBeforeTax,Restated.OriginalAmount	DE	R			-19,195,013
+7554		CalcPLTotals.ProfitLossOnOrdinaryActivitiesBeforeTax.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest	DE	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+7554,73		CalcPLTotals.ProfitLossOnOrdinaryActivitiesBeforeTax.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.Amount	DE	md			-19,195,014
+7554,74		CalcPLTotals.ProfitLossOnOrdinaryActivitiesBeforeTax.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.PriorPeriodIncr	DE	md			-1
+7554,75		CalcPLTotals.ProfitLossOnOrdinaryActivitiesBeforeTax.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.AcctPolicyIncr	DE	mS			-1
+7554,77		CalcPLTotals.ProfitLossOnOrdinaryActivitiesBeforeTax.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.OriginalAmount	DE	mR			-19,195,013
+7556	Tx3996	CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax	DE	S,S,b	-16,613,551	-19,195,013	-19,195,014
+7556,73	Tx3996	CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax,Restated.Amount	DE	d			-19,195,014
+7556,74	Tx3996	CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax,Restated.PriorPeriodIncr	DE	d			-1
+7556,75	Tx3996	CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax,Restated.AcctPolicyIncr	DE	S			-1
+7556,77	Tx3996	CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax,Restated.OriginalAmount	DE	R			-19,195,013
+7557		CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax.ProfitLossOnOrdinaryActivitiesBeforeTax	DE	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+7557,73		CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax.ProfitLossOnOrdinaryActivitiesBeforeTax,Restated.Amount	DE	md			-19,195,014
+7557,74		CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax.ProfitLossOnOrdinaryActivitiesBeforeTax,Restated.PriorPeriodIncr	DE	md			-1
+7557,75		CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax.ProfitLossOnOrdinaryActivitiesBeforeTax,Restated.AcctPolicyIncr	DE	mS			-1
+7557,77		CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax.ProfitLossOnOrdinaryActivitiesBeforeTax,Restated.OriginalAmount	DE	mR			-19,195,013
+7561		CalcPLTotals.ExtraordinaryProfitLossAfterTaxation.ProfitLossOnOrdinaryActivitiesAfterTax	DE	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+7561,73		CalcPLTotals.ExtraordinaryProfitLossAfterTaxation.ProfitLossOnOrdinaryActivitiesAfterTax,Restated.Amount	DE	md			-19,195,014
+7561,74		CalcPLTotals.ExtraordinaryProfitLossAfterTaxation.ProfitLossOnOrdinaryActivitiesAfterTax,Restated.PriorPeriodIncr	DE	md			-1
+7561,75		CalcPLTotals.ExtraordinaryProfitLossAfterTaxation.ProfitLossOnOrdinaryActivitiesAfterTax,Restated.AcctPolicyIncr	DE	mS			-1
+7561,77		CalcPLTotals.ExtraordinaryProfitLossAfterTaxation.ProfitLossOnOrdinaryActivitiesAfterTax,Restated.OriginalAmount	DE	mR			-19,195,013
+Data Import and Summing Results
+Ref	Short Bro Name	Bro Reference	PT	Src	Year 0	Year 1	Year 1 (Restated)
+7739		ReportDPL	DE	S,S,b	-16,613,551	-19,195,013	-19,195,014
+7739,73		ReportDPL,Restated.Amount	DE	d			-19,195,014
+7739,74		ReportDPL,Restated.PriorPeriodIncr	DE	d			-1
+7739,75		ReportDPL,Restated.AcctPolicyIncr	DE	S			-1
+7739,77		ReportDPL,Restated.OriginalAmount	DE	R			-19,195,013
+7740		ReportDPL.TradingIncome	DE	S,S,b	-16,613,551	-19,195,013	-19,195,014
+7740,73		ReportDPL.TradingIncome,Restated.Amount	DE	d			-19,195,014
+7740,74		ReportDPL.TradingIncome,Restated.PriorPeriodIncr	DE	d			-1
+7740,75		ReportDPL.TradingIncome,Restated.AcctPolicyIncr	DE	S			-1
+7740,77		ReportDPL.TradingIncome,Restated.OriginalAmount	DE	R			-19,195,013
+7741		ReportDPL.TradingIncome.TurnoverGrossOpRevenue	DE	mP,mP,mb	-16,613,551	-19,195,013	-19,195,014
+7741,73		ReportDPL.TradingIncome.TurnoverGrossOpRevenue,Restated.Amount	DE	md			-19,195,014
+7741,74		ReportDPL.TradingIncome.TurnoverGrossOpRevenue,Restated.PriorPeriodIncr	DE	md			-1
+7741,75		ReportDPL.TradingIncome.TurnoverGrossOpRevenue,Restated.AcctPolicyIncr	DE	mP			-1
+7741,77		ReportDPL.TradingIncome.TurnoverGrossOpRevenue,Restated.OriginalAmount	DE	mR			-19,195,013
+7897		ReportDPL.ProfitTaxTotals.GrossProfit	Sch	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+7897,73		ReportDPL.ProfitTaxTotals.GrossProfit,Restated.Amount	Sch	md			-19,195,014
+7897,74		ReportDPL.ProfitTaxTotals.GrossProfit,Restated.PriorPeriodIncr	Sch	md			-1
+7897,75		ReportDPL.ProfitTaxTotals.GrossProfit,Restated.AcctPolicyIncr	Sch	mS			-1
+7897,77		ReportDPL.ProfitTaxTotals.GrossProfit,Restated.OriginalAmount	Sch	mR			-19,195,013
+7898		ReportDPL.ProfitTaxTotals.OperatingProfit	Sch	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+7898,73		ReportDPL.ProfitTaxTotals.OperatingProfit,Restated.Amount	Sch	md			-19,195,014
+7898,74		ReportDPL.ProfitTaxTotals.OperatingProfit,Restated.PriorPeriodIncr	Sch	md			-1
+7898,75		ReportDPL.ProfitTaxTotals.OperatingProfit,Restated.AcctPolicyIncr	Sch	mS			-1
+7898,77		ReportDPL.ProfitTaxTotals.OperatingProfit,Restated.OriginalAmount	Sch	mR			-19,195,013
+7899		ReportDPL.ProfitTaxTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest	DE	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+7899,73		ReportDPL.ProfitTaxTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.Amount	DE	md			-19,195,014
+7899,74		ReportDPL.ProfitTaxTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.PriorPeriodIncr	DE	md			-1
+7899,75		ReportDPL.ProfitTaxTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.AcctPolicyIncr	DE	mS			-1
+7899,77		ReportDPL.ProfitTaxTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest,Restated.OriginalAmount	DE	mR			-19,195,013
+7900		ReportDPL.ProfitTaxTotals.ProfitLossOnOrdinaryActivitiesBeforeTax	Sch	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+7900,73		ReportDPL.ProfitTaxTotals.ProfitLossOnOrdinaryActivitiesBeforeTax,Restated.Amount	Sch	md			-19,195,014
+7900,74		ReportDPL.ProfitTaxTotals.ProfitLossOnOrdinaryActivitiesBeforeTax,Restated.PriorPeriodIncr	Sch	md			-1
+7900,75		ReportDPL.ProfitTaxTotals.ProfitLossOnOrdinaryActivitiesBeforeTax,Restated.AcctPolicyIncr	Sch	mS			-1
+7900,77		ReportDPL.ProfitTaxTotals.ProfitLossOnOrdinaryActivitiesBeforeTax,Restated.OriginalAmount	Sch	mR			-19,195,013
+7901		ReportDPL.ProfitTaxTotals.ProfitLossOnOrdinaryActivitiesAfterTax	Sch	mS,mS,mb	-16,613,551	-19,195,013	-19,195,014
+7901,73		ReportDPL.ProfitTaxTotals.ProfitLossOnOrdinaryActivitiesAfterTax,Restated.Amount	Sch	md			-19,195,014
+7901,74		ReportDPL.ProfitTaxTotals.ProfitLossOnOrdinaryActivitiesAfterTax,Restated.PriorPeriodIncr	Sch	md			-1
+7901,75		ReportDPL.ProfitTaxTotals.ProfitLossOnOrdinaryActivitiesAfterTax,Restated.AcctPolicyIncr	Sch	mS			-1
+7901,77		ReportDPL.ProfitTaxTotals.ProfitLossOnOrdinaryActivitiesAfterTax,Restated.OriginalAmount	Sch	mR			-19,195,013
+8172		ReportSTRGL.StatementThatThereWereNoGainsInPeriodOtherThanThoseInPL	Sch	mP	true
+
+Where the 'Src' column shows the Source of the values as follows:
+•	P	Posting or Import
+•	PE	Prior year End value as Start for a startend Bro
+•	R	Restated Orignal Value - included in 'b' Base Sum and 'd' Restated Amount Sum
+•	S	Summed
+•	SE	Sum End calculation for a startend Bro of type SumEnd
+•	b	Base (no dims) value = sum of the primary dimension values for the Bro
+•	t	Base (no dims) value for a Tuple
+•	d	Dimension summing value as per the Dimensions Map
+•	e	dErived or dEduced value
+•	i	Intermediate dimension for a posting with multiple dimensions
+•	r	Restated Orignal Value - included in 'd' Restated Amount Sum
+
+An upper case Source code indicates that this is a Primary entry. In the case of Summing Bros a Primary entry is one which contributes to the Bro's Base total i.e. its no dimensions value. Lower case codes are for information values derived from the primary values.
+A prefix of 'm' means that the value has been copied from the Master, which also means that the Bro in question is a Slave Bro.
+'i' and 't' codes can appear after a Primary code when a combination is involved.
+If different Source codes apply in different years, the column contains a comma separated list for all years, otherwise a single code is shown which applies to all years.
+
+Summing Warnings for Money Year 1 (Restated)
+
+Bro Equivalence checks gave:
+
+3019 PLTotals.ProfitOrdinaryActivitiesAfterTax has a balance of 'undefined' (no posting) which is required to Equal the 7556 CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax balance but that is -19,195,014.
+
+3021 PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax has a balance of -19,196,890 which is required to Equal the 7553 CalcPLTotals.ProfitLossOnOrdinaryActivitiesBeforeTax balance but that is -19,195,014.
+
+3035 PLTotals.ProfitOnOrdinaryActivitiesAfterTax has a balance of 'undefined' (no posting) which is required to Equal the 7556 CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax balance but that is -19,195,014.
+
+5003 CF.CashFlowStatement.OutflowBeforeManagementLiquidResourcesFinancing.FromOpActivities has a balance of 'undefined' (no posting) which is required to Equal the 5037 CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom balance but that is -19,195,014.
+
+5037 CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom has a balance of -19,195,014 which is required to Equal the 5003 CF.CashFlowStatement.OutflowBeforeManagementLiquidResourcesFinancing.FromOpActivities balance but that is 'undefined' (no posting).
+
+6581 SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.FinanceChargesIncome has a balance of -3,752 which is required to Equal the 2879 Exp.Financial.InterestPayableSimilarCharges.FinanceIncome balance but that is -1,876.
+
+6582 SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.FinanceChargesIncome.NetInterestPayableReceivable has a balance of -3,752 which is required to Equal the 2880 Exp.Financial.InterestPayableSimilarCharges.FinanceIncome.NetReceivable balance but that is -1,876.
+
+6610 SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.FinanceChargesIncome has a balance of -3,752 which is required to Equal the 2879 Exp.Financial.InterestPayableSimilarCharges.FinanceIncome balance but that is -1,876.
+
+6611 SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.FinanceChargesIncome.NetInterestPayableReceivable has a balance of -3,752 which is required to Equal the 2880 Exp.Financial.InterestPayableSimilarCharges.FinanceIncome.NetReceivable balance but that is -1,876.
+
+6649 SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.FinanceChargesIncome has a balance of -3,752 which is required to Equal the 2879 Exp.Financial.InterestPayableSimilarCharges.FinanceIncome balance but that is -1,876.
+
+6650 SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.FinanceChargesIncome.NetInterestPayableReceivable has a balance of -3,752 which is required to Equal the 2880 Exp.Financial.InterestPayableSimilarCharges.FinanceIncome.NetReceivable balance but that is -1,876.
+
+7564 CalcPLTotals.ProfitLossForPeriod.ProfitLossOnOrdinaryActivitiesAfterTax has a balance of 'undefined' (no posting) which is required to Equal the 7556 CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax balance but that is -19,195,014.
+
+Summing Warnings for Money Year 0
+
+Bro Equivalence checks gave:
+
+3019 PLTotals.ProfitOrdinaryActivitiesAfterTax has a balance of 'undefined' (no posting) which is required to Equal the 7556 CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax balance but that is -16,613,551.
+
+3021 PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax has a balance of -16,613,923 which is required to Equal the 7553 CalcPLTotals.ProfitLossOnOrdinaryActivitiesBeforeTax balance but that is -16,613,551.
+
+3035 PLTotals.ProfitOnOrdinaryActivitiesAfterTax has a balance of 'undefined' (no posting) which is required to Equal the 7556 CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax balance but that is -16,613,551.
+
+5003 CF.CashFlowStatement.OutflowBeforeManagementLiquidResourcesFinancing.FromOpActivities has a balance of 'undefined' (no posting) which is required to Equal the 5037 CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom balance but that is -16,613,551.
+
+5037 CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom has a balance of -16,613,551 which is required to Equal the 5003 CF.CashFlowStatement.OutflowBeforeManagementLiquidResourcesFinancing.FromOpActivities balance but that is 'undefined' (no posting).
+
+6581 SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.FinanceChargesIncome has a balance of -744 which is required to Equal the 2879 Exp.Financial.InterestPayableSimilarCharges.FinanceIncome balance but that is -372.
+
+6582 SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.FinanceChargesIncome.NetInterestPayableReceivable has a balance of -744 which is required to Equal the 2880 Exp.Financial.InterestPayableSimilarCharges.FinanceIncome.NetReceivable balance but that is -372.
+
+6610 SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.FinanceChargesIncome has a balance of -744 which is required to Equal the 2879 Exp.Financial.InterestPayableSimilarCharges.FinanceIncome balance but that is -372.
+
+6611 SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.FinanceChargesIncome.NetInterestPayableReceivable has a balance of -744 which is required to Equal the 2880 Exp.Financial.InterestPayableSimilarCharges.FinanceIncome.NetReceivable balance but that is -372.
+
+6649 SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.FinanceChargesIncome has a balance of -744 which is required to Equal the 2879 Exp.Financial.InterestPayableSimilarCharges.FinanceIncome balance but that is -372.
+
+6650 SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.FinanceChargesIncome.NetInterestPayableReceivable has a balance of -744 which is required to Equal the 2880 Exp.Financial.InterestPayableSimilarCharges.FinanceIncome.NetReceivable balance but that is -372.
+
+7564 CalcPLTotals.ProfitLossForPeriod.ProfitLossOnOrdinaryActivitiesAfterTax has a balance of 'undefined' (no posting) which is required to Equal the 7556 CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax balance but that is -16,613,551.
+
+
+The import has been processed but there were 24 warnings issued. See above. These should be investigated.
+Data Import
+
+Select the File to import OR paste the Import Data below and click Import
+AAAAA 222.txt
+AAAAA 3019.txt
+AAAAA AuditFees.txt
+AAAAA Cash.txt
+AAAAA CashDims.txt
+AAAAA CashMove.txt
+AAAAA CashMove2648.txt
+AAAAA CashMoveDims.txt
+AAAAA CashMoveNotEqual.txt
+AAAAA CashODraft.txt
+AAAAA Creditors.txt
+AAAAA IFA.txt
+AAAAA NetDebtCFlow.txt
+AAAAA Stock 1.txt
+AAAAA Stock 2.txt
+AAAAA Stock 3.txt
+AAAAA Test.txt
+AAAAA Worked TB.txt
+ADIErrors.txt
+ATest.txt
+DE Stock Test.txt
+Donations Restated.txt
+Donations.txt
+Import 120622.txt
+Import 120813.txt
+Import 120818.txt
+Import 120823.txt
+Import Complete.txt
+Import Restated.txt
+Import.txt
+Pensions Restated.txt
+Pensions.txt
+StartEndDESch-TB+Duration.txt
+StartEndDESch-TB.txt
+
+Debug option: (Nothing to use import comammnd setting, 0-3 to override the import setting.)
+
+Done in 280 msecs
+Top
+
+Home
+
+
+Home
+Home

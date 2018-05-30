@@ -1,0 +1,478 @@
+Id	Standard Label	HyId	TupId	Type	Comments
+61	Accruals, acquisition	31		Money	
+65	Accruals disposed of with subsidiaries	33		Money	
+85	Acquisition operating profit	16		Money	HyIds 15,31 done out of 15,16,31
+92	Acquisitions free-text comment	31		String	
+111	Adjusted number of shares after dilution	39		Share	
+112	Adjusted number of shares after non-vested shares	39		Share	
+121	Administration and support, average number of employees	1		Decimal	
+122	Administration and support, number of employees at date	1	70	Decimal	
+162	Allowances for credit losses, financial assets [grouping]		3	Tuple	Tuple Members remaining: 4152
+184	Amount of barter payments (receipts) for advertising	1		Money	
+185	Amount of barter payments (receipts) including in turnover	1		Money	
+191	Amount of charge on assets of entity in order to secure third party liabilities	1	13	Money	
+192	Amount of contingent purchase consideration	31	20	Money	
+195	Amount due from (to) related party	1	109	Money	
+197	Amount guaranteed	1	126	Money	
+202	Amount of other exceptional operating cost, administrative expenses	13	78	Money	
+203	Amount of other exceptional operating cost, cost of sales	13	79	Money	
+204	Amount of other exceptional operating cost, distribution costs	13	80	Money	
+205	Amount of other operating cost, administrative expenses	13	86	Money	
+206	Amount of other operating cost, cost of sales	13	87	Money	
+207	Amount of other operating cost, distribution costs	13	88	Money	
+208	Amount of other specific exceptional gain (loss) reported after operating profit (loss)	1	32	Money	
+210	Amount of other staff cost, administrative expenses	13	93	Money	
+211	Amount of other staff cost, cost of sales	13	94	Money	
+212	Amount of other staff cost, distribution costs	13	95	Money	
+214	Amount outstanding on guaranteed overdrafts of subsidiaries	1		Money	
+228	Amount written off in period in respect of debt due from related party	1	109	Money	
+277	Amounts written off (back) investments	10		Money	HyId 1 done out of 1,10 but 1 is a subset of 10
+279	Amounts written off investments free-text comment	1		String	
+293	Assets (liabilities) by business segment free-text comment	1		String	
+295	Assets (liabilities) by geography free-text comment	1		String	
+299	Assets with non-recourse finance arrangements [grouping]		6	Tuple	All Tuple Members to go: 1309, 2450, 2075, 2867, 1998, 3555, 4516, 4520
+343	Average capital employed	17		Money	HyId 1 done out of 1,17,18 but 1 is a subset of 17
+"	"	18		Money	"
+344	Average number of employees, analysis by specific department	1	90	Decimal	
+346	Average number of employees during the period	11		Decimal	
+352	Balance sheet adjustments free-text comment	1		String	
+355	Balance sheet free-text comment	1		String	
+376	Bank charges, detailed P&L	13		Money	
+384	Bank overdrafts, acquisition	31		Money	
+385	Bank overdrafts disposed of with subsidiaries	33		Money	
+392	Barter payment (receipt) from specific transaction	1	125	Money	
+395	Basic earnings (loss)	1		Money	
+488	Called up share capital	1		Money	
+493	Called up share capital not paid, not expressed as current asset	13		Money	
+500	Capital commitment [grouping]		8	Tuple	All Tuple Members to go: 503, 2079, 3479, 4617
+501	Capital commitments free-text comment	1		String	
+503	Capital commitments, total contracted but not provided for	1	8	Money	
+506	Capital employed	17		Money	All 17,18 HyIds to go
+"	"	18		Money	"
+539	Cash, acquisition	31		Money	
+544	Cash disposed of with subsidiaries	33		Money	
+590	Central / Unallocated assets, geographic segment analysis	1		Money	
+591	Central / unallocated net assets (liabilities), excluding goodwill, business segment analysis	1		Money	
+592	Central / unallocated net assets (liabilities), excluding goodwill, geographic segment analysis	1		Money	
+593	Central / unallocated net assets (liabilities), geographic segment analysis	1		Money	
+594	Central / unallocated net assets (liabilities), including goodwill, business segment analysis	1		Money	
+595	Central / unallocated non-interest bearing net assets (liabilities), business segment analysis	1		Money	
+596	Central / unallocated non-interest bearing net assets (liabilities), geographic segment analysis	1		Money	
+597	Central / unallocated total assets, business segment analysis	1		Money	
+868	Charges on assets of entity in order to secure third party liabilities [grouping]		13	Tuple	All Tuple Members to go: 1339, 191, 4617
+906	Commitments under non-cancellable operating leases, land and buildings	1		Money	
+907	Commitments under non-cancellable operating leases, other items	1		Money	
+908	Commitments under non-cancellable operating leases, total	1		Money	
+923	Compound financial instruments with multiple embedded derivatives [grouping]		16	Tuple	All Tuple Members to go: 1348
+972	Contingent purchase considerations [grouping]		20	Tuple	All Tuple Members to go: 1310, 192
+973	Continuing and discontinued operations free-text comment	1		String	All 1,13 HyIds to go
+"	"	13		String	"
+988	Conversion of convertible debt, number of shares issuable	39		Share	
+992	Conversion of preference shares, number of shares issuable	39		Share	
+1042	Country in which parent of largest group is incorporated	42	99	Fixed	
+1043	Country in which parent of smallest group is incorporated	42	100	Fixed	
+1053	Credit card charges, detailed P&L	13		Money	
+1063	Credit risk on financial assets [grouping]		22	Tuple	Tuple Members remaining: 1563
+1064	Creditors, acquisition	31		Money	
+1068	Creditors disposed of with subsidiaries	33		Money	
+1077	Creditors and provisions, not including taxation credit, acquisition	31		Money	
+1079	Cumulative goodwill for acquisition written off but not charged against profit	31		Money	HyId 1 done out of 1,31 but 1 is a subset of 31
+1111	Current asset investments, acquisition	31		Money	
+1112	Current asset investments disposed of with subsidiaries	33		Money	
+1117	Current assets, acquisition	31		Money	
+1118	Current assets disposed of with subsidiaries	33		Money	
+1123	Current liabilities, acquisition	31		Money	
+1125	Current taxation, acquisition	31		Money	
+1140	Date of acquisition	31		Date	
+1141	Date of approval of accounts	1		Date	
+1142	Date of disposal	33		Date	
+1152	Date at which number of employees measured	1	70	Date	
+1203	Debtors, acquisition	31		Money	
+1204	Debtors disposed of with subsidiaries	33		Money	
+1222	Deduction from aggregate dividends for dividends for ESOP trusts	26		Money	
+1225	Deferred consideration, disposal of subsidiaries	33		Money	
+1236	Deferred tax liability	21		Money	
+1238	Deferred taxation, acquisition	31		Money	
+1292	Description of analysis of income and expense from securitisation	1	120	String	
+1293	Description of analysis of profit (loss) from loan transfer arrangement	1	59	String	
+1308	Description of asset or liabilities to which provisional fair values apply and why fair values are provisional	31	106	String	
+1309	Description of asset with non-recourse finance arrangement	1	6	String	
+1310	Description of assets or liabilities affected by the contingent purchase consideration	31	20	String	
+1311	Description of assets securitised	1	120	String	
+1314	Description of barter transaction	1	125	String	
+1315	Description of basis of apportionment of tax between extraordinary and exceptional items	1		Money	
+1317	Description of body authorising accounts for issue	1		String	
+1318	Description of business segment	19		String	
+1323	Description of change in price index over the period	1		String	
+1324	Description of change in valuation technique	1	47	String	
+1339	Description of charges on assets of entity in order to secure third party liabilities	1	13	String	
+1347	Description of commitments to make additional pension payments over a number of years	1	102	String	
+1377	Description of effect and reasons for any change in methods of amortisation of intangible fixed assets	22		String	
+1379	Description of effect of specific revision to useful life of intangible fixed assets	22	33	String	
+1410	Description of gain or loss in net monetary position arising from presentation in hyperinflationary currency	1		String	
+1412	Description of geographic segment	20		String	
+1413	Description of goodwill and intangible asset amortisation method and periods	22		String	
+1415	Description of guarantee	1	126	String	
+1428	Description of income item affected by asset with non-recourse finance arrangement	1	84	String	
+1429	Description of individual extraordinary item	1	56	String	
+1433	Description of interest rate swap or cap arrangements related to the securitisation	1	120	String	
+1439	Description of main terms of loan transfer arrangement	1	59	String	
+1443	Description of material adjustments to provisional fair values and goodwill relating to acquisition	31		String	
+1445	Description of method of allocation of interest between continuing and discontinued operations	13		String	
+1448	Description of method and assumptions used in determining financial instrument fair values	1	47	String	
+1450	Description of method used in accounting for hyperinflationary currency	1		String	
+1460	Description of nature of particular inflow, assets concerned and possible financial effect	1	103	String	
+1473	Description of off balance sheet arrangement and its financial impact	1	71	String	
+1475	Description of options for repurchase or transfer of securitised assets	1	120	String	
+1482	Description of other disclosure relevant to the loan transfer	1	59	String	
+1483	Description of other disclosure relevant to the securitisation	1	120	String	
+1484	Description of other exceptional operating cost, administrative expenses	13	78	String	
+1485	Description of other exceptional operating cost, cost of sales	13	79	String	
+1486	Description of other exceptional operating cost, distribution costs	13	80	String	
+1488	Description of other financial commitments not provided for in the accounts	1	82	String	
+1489	Description of other government assistance	9	83	String	All 9,13 HyIds to go
+"	"	13	83	String	"
+1493	Description of other operating cost, administrative expenses	13	86	String	
+1494	Description of other operating cost, cost of sales	13	87	String	
+1495	Description of other operating cost, distribution costs	13	88	String	
+1499	Description of other specific exceptional gain (loss reported after operating profit (loss)	1	32	String	
+1502	Description of other staff cost, administrative expenses	13	93	String	
+1503	Description of other staff cost, cost of sales	13	94	String	
+1504	Description of other staff cost, distribution costs	13	95	String	
+1508	Description of ownership of issuer	1	120	String	
+1509	Description of partially transferred asset and uncertainty over gain and loss	1	101	String	
+1511	Description of pension commitments	1	102	String	
+1522	Description of post balance sheet event and estimate of its financial effect	1	104	String	
+1523	Description of priority and amount of claims on proceeds from securitised assets	1	120	String	
+1524	Description of probable contingent assets	1		String	
+1539	Description of the relationship between the parties	1	109	String	
+1540	Description of restatements to figures for previous periods	1		String	
+1543	Description of retained ownership interests, if any	33		String	
+1544	Description of right, obligation, guarantee or commitment not recognised as asset or liability	1	115	String	
+1549	Description of sale and repurchase arrangement based on a secured loan	1	117	String	
+1550	Description of sale and repurchase arrangement under which seller has a different asset	1	118	String	
+1551	Description of sale and repurchase arrangement which is not a financing transaction	1	119	String	
+1552	Description of security for guarantee, if required	1	126	String	
+1563	Description of specific class of financial asset	1	22	String	
+"	"	1	46	String	
+"	"	1	51	String	
+"	"	1	52	String	
+1597	Description of the transaction and general amounts involved	1	109	String	
+1598	Description of a transaction underlying the financial statements and its commercial effect	1	134	String	
+1607	Description of type and means of measurement of rate against sterling	1		String	
+1608	Description of type of other asset held in pension scheme	27	130	String	
+1611	Description of unusual asset or liability	1	143	String	
+1618	Detailed profit and loss statement free-text comment	13		String	
+1626	Details of other exceptional gains (loss) reported after operating profit (loss) [grouping]		32	Tuple	All Tuple Members to go: 1499, 208, 2737, 2630
+1633	Diluted earnings (loss)	1		Money	
+1726	Disposal operating profit	16		Money	HyId 15 done out of 15,16
+1734	Disposals free-text comment	33		String	
+1738	Distribution, average number of employees	1		Decimal	
+1743	Distribution, number of employees at date	1	70	Decimal	
+1759	Dividends free-text comment	26		String	
+1779	Dividends previously appropriated	26		Money	HyId 1 done out of 1,26 but 1 is a subset of 26
+1787	Donations, administrative expenses	13		Money	
+1788	Donations, cost of sales	13		Money	
+1789	Donations costs	13		Money	
+1790	Donations, distribution costs	13		Money	
+1793	Double taxation relief on tax on extraordinary profit (loss)	1		Money	
+1802	Effect of revisions to useful life of intangible fixed assets [grouping]		33	Tuple	All Tuple Members to go: 1379
+1830	Employee information free-text comment	1		String	
+1936	Exceptional items free-text comment	1		String	
+1945	Exchange rate used against sterling	1		Decimal	
+1946	Exercise of options, number of shares issuable	39		Share	
+1988	Explanatory statement if it is not possible to ascertain attributable goodwill	33		String	
+1990	Extraordinary items free-text comment	1		String	
+1996	Factoring charges, detailed P&L	13		Money	
+1998	Factoring and other charges for asset with non-recourse finance arrangement	1	6	Money	
+2061	Final dividend per share	26		PerShare	
+2062	Final other dividend payment	26		Money	
+2063	Final participating dividend payment	26		Money	
+2064	Final payment	26		Money	HyId 1 done out of 1,26 but 1 is a subset of 26
+2065	Finance charges, detailed P&L	13		Money	
+2075	Finance deducted for asset with non-recourse finance arrangement	1	6	Money	
+2077	Finance and investment free-text comment	1		String	
+2079	Finance lease and hire purchase contract commitments not provided for	1	8	Money	
+2093	Financial assets valuation [grouping]		46	Tuple	Tuple Members remaining: 1563, 2742
+2118	Financial liabilities value [grouping]		47	Tuple	Tuple Members remaining: 1448, 1324, 3878, 2743
+2130	Fixed asset investments, acquisition	31		Money	
+2134	Fixed asset investments disposed of with subsidiaries	33		Money	
+2169	Fixed assets, acquisition	31		Money	
+2170	Fixed assets disposed of with subsidiaries	33		Money	
+2221	Foreign exchange transaction charges, detailed P&L	13		Money	
+2258	Further information on the contingent liability, including uncertainties over amount, timing and possibility of reimbursement	1	126	String	
+2316	Gain (loss) on financial assets and liabilities free-text comment	1		String	
+2317	Gain (loss) on financial assets and liabilities, recognised in profit or loss, free-text comment	1		String	
+2358	Gains and losses from sale or termination of operations free-text comment	1		String	
+2416	Goodwill, acquisition	31		Money	
+2422	Goodwill created on acquisition of associates	1		Money	
+2423	Goodwill created on acquisition of joint-ventures	1		Money	
+2429	Goodwill resurrected (lost) on disposal of subsidiaries	33		Money	HyId 1 done out of 1,33 but 1 is a subset of 33
+2450	Gross value of asset with non-recourse finance arrangement	1	6	Money	
+2562	Impairment loss, fixed asset investments	10		Money	HyId 1 done out of 1,10 but 1 is a subset of 10
+2574	Impairment loss (reversal), fixed asset investments	10		Money	HyId 1 done out of 1,10 but 1 is a subset of 10
+2585	Impairment losses on financial assets, income statement [grouping]		51	Tuple	Tuple Members remaining: 1563, 2199
+2588	Impairment reversal, fixed asset investments	10		Money	HyId 1 done out of 1,10 but 1 is a subset of 10
+2595	Impairment reversals on financial assets, statement of recognised gains and losses [grouping]		52	Tuple	Tuple Members remaining: 1563
+2599	Income (charge) from individual extraordinary item	1	56	Money	
+2603	Income (expense) recognised from securitisation in period	1	120	Money	
+2619	Income statement adjustments free-text comment	1		String	
+2620	Income statement free-text comment	1		String	
+2625	Increase (decrease) in the amounts charged to minority interests due to disposal of tangible fixed assets	1		Money	
+2626	Increase (decrease) in the amounts charged to minority interests due to fundamental restructuring / reorganisation	1		Money	
+2627	Increase (decrease) in the amounts charged to minority interests due to non-operating exceptional items	1		Money	
+2628	Increase (decrease) in the amounts charged to minority interests due to other non-operating exceptional gains (losses)	1		Money	
+2629	Increase (decrease) in the amounts charged to minority interests due to sale or termination of operation	1		Money	
+2630	Increase (decrease) in the amounts charged to minority interests due to specific non-operating exceptional item	1	32	Money	
+2696	Increase (decrease) in income item affected by asset with non-recourse finance arrangement	1	84	Money	
+2732	Increase (decrease) in tax on profit on ordinary activities due to disposal of tangible fixed assets	1		Money	
+2733	Increase (decrease) in tax on profit on ordinary activities due to fundamental restructuring / reorganisation	1		Money	
+2734	Increase (decrease) in tax on profit on ordinary activities due to non-operating exceptional items	1		Money	
+2735	Increase (decrease) in tax on profit on ordinary activities due to other non-operating exceptional gains (losses)	1		Money	
+2736	Increase (decrease) in tax on profit on ordinary activities due to sale or termination of operation	1		Money	
+2737	Increase (decrease) in tax on profit on ordinary activities due to specific non-operating exceptional item	1	32	Money	
+2772	Individual acquisition free-text comment	31		String	
+2773	Individual disposal free-text comment	33		String	
+2778	Information on individual extraordinary items [grouping]		56	Tuple	All Tuple Members to go: 1429, 2599
+2795	Intangible assets, acquisition	31		Money	
+2796	Intangible assets disposed of with subsidiaries	33		Money	
+2799	Intangible assets policy	22		String	
+2865	Interest payable and similar charges free-text comment	13		String	
+2867	Interest payments for asset with non-recourse finance arrangement	1	6	Money	
+2898	Interest saved on conversion of debt, basic earnings analysis	1		Money	
+2899	Interest saved on conversion of debt, diluted earnings	1		Money	
+2900	Interim dividend per share	26		PerShare	
+2901	Interim other dividend payment	26		Money	
+2902	Interim participating dividend payment	26		Money	
+2903	Interim payment	26		Money	HyId 1 done out of 1,26 but 1 is a subset of 26
+2916	Investment income free-text comment	1		String	
+2927	Investments not carried on an historical cost basis [grouping]		57	Tuple	Tuple Members remaining: 4941
+2929	Irrecoverable VAT, detailed P&L	13		Money	
+3002	Land and buildings operating leases expiring after five years	1		Money	
+3003	Land and buildings operating leases expiring between two and five years	1		Money	
+3004	Land and buildings operating leases expiring within one year	1		Money	
+3005	Late payment of tax, charges	13		Money	
+3055	Liabilities disposed of with subsidiaries	33		Money	
+3081	Loan notes received, disposal of subsidiaries	33		Money	
+3082	Loan transfer reported under linked presentation [grouping]		59	Tuple	All Tuple Members to go: 1439, 3127, 3994, 1293, 1482
+3087	Loans and finance leases, acquisition	31		Money	
+3088	Loans and finance leases disposed of with subsidiaries	33		Money	
+3113	Loans outstanding subject to loan transfer arrangements	1		Money	
+3127	Loans transferred and outstanding, gross	1	59	Money	
+3131	Long-term liabilities, acquisition	31		Money	
+3171	Marketing, average number of employees	1		Decimal	
+3176	Marketing, number of employees at date	1	70	Decimal	
+3200	Minority interests, acquisition	31		Money	
+3201	Minority interests, disposal of subsidiaries	33		Money	
+3219	Name of acquisition	31		String	
+3221	Name of business segment	19		String	
+3225	Name of department, average number of employees analysis	1	90	String	
+3226	Name of department, number of employees at date analysis	1	91	String	
+3227	Name of director signing accounts	38		Fixed	
+3230	Name of geographic segment	20		String	
+3232	Name or description of disposal	33		String	
+3237	Name and qualifications of valuer or valuer's organisation	23	111	String	HyId 22 done out of 22,23,24
+"	"	24	111	String	"
+"	"	22	113	String	HyId 23 done out of 22,23,24
+"	"	24	113	String	"
+"	"	22	140	String	HyId 24 done out of 22,23,24
+"	"	23	140	String	"
+3244	Names of the related parties involved in the transaction	1	109	String	
+3253	Net assets disposed of with subsidiaries, including goodwill and minority interests	33		Money	
+3254	Net assets disposed of with subsidiaries, not including goodwill and minority interests	33		Money	
+3255	Net assets (liabilities) of acquisition, before goodwill	31		Money	
+3256	Net assets (liabilities) of acquisition before minority interests	31		Money	
+3257	Net assets (liabilities) of acquisitions, by segment	19		Money	All 19,20,31 HyIds to go
+"	"	20		Money	"
+"	"	31		Money	"
+3258	Net assets (liabilities) of disposals, by segment	19		Money	All 19,20 HyIds to go
+"	"	20		Money	"
+3259	Net assets (liabilities), excluding goodwill, segmental breakdown	17		Money	HyId 12 done out of 12,17,18 but 12 is a subset of 17
+"	"	18		Money	"
+3260	Net assets (liabilities), including goodwill, segmental breakdown	17		Money	HyId 12 done out of 12,17,18 but 12 is a subset of 17
+"	"	18		Money	"
+3261	Net assets (liabilities), including pension asset (liability)	13		Money	
+3262	Net assets (liability) excluding pension asset (liability)	13		Money	
+3277	Net current assets (liabilities)	13		Money	
+3343	Non-interest bearing net assets (liabilities), segmental breakdown	17		Money	HyId 12 done out of 12,17,18 but 12 is a subset of 17
+"	"	18		Money	"
+3355	Non-vested shares held by employee share ownership trusts	39		Share	
+3364	Number of employees at date	1	70	Decimal	All 1,11 HyIds to go
+"	"	11	70	Decimal	"
+3365	Number of employees at date, analysis by specific department	1	91	Decimal	
+3367	Number of employees at specific date [grouping]		70	Tuple	All Tuple Members to go: 1152, 3364, 3366, 122, 3978, 4236, 4325, 4346, 3176, 1743, 3511, 3651
+3378	Number of shares acquired	32		Share	
+3382	Number of shares covered by option	39	44	Share	HyId 28 done out of 28,39
+"	"	28	122	Share	HyId 39 done out of 28,39
+3394	Off balance sheet arrangement [grouping]		71	Tuple	All Tuple Members to go: 1473
+3403	Operating costs and credits free-text comment	1		String	
+3413	Operating leases expiring after five years	1		Money	
+3414	Operating leases expiring between two and five years	1		Money	
+3415	Operating leases expiring within one year	1		Money	
+3427	Operating profit, utilisation of prior year provisions related to discontinued operations	1		Money	
+3479	Other capital commitments not provided for	1	8	Money	
+3502	Other current assets, acquisition	31		Money	
+3510	Other departments, average number of employees	1		Decimal	
+3511	Other departments, number of employees at date	1	70	Decimal	
+3525	Other exceptional gain (loss) reported after operating profit (loss)	1		Money	All 1,2 HyIds to go
+"	"	2		Money	"
+3527	Other exceptional operating cost, administrative expenses [grouping]		78	Tuple	All Tuple Members to go: 1484, 202
+3528	Other exceptional operating cost, cost of sales [grouping]		79	Tuple	All Tuple Members to go: 1485, 203
+3529	Other exceptional operating cost, distribution costs [grouping]		80	Tuple	All Tuple Members to go: 1486, 204
+3536	Other external charges	10		Money	
+3546	Other financial commitments not provided for in the accounts [grouping]		82	Tuple	All Tuple Members to go: 1488, 4617
+3551	Other government assistance [grouping]		83	Tuple	Tuple Members remaining: 1489
+3555	Other income items affected by asset with non-recourse finance arrangement [grouping]		84	Tuple	All Tuple Members to go: 1428, 2696
+3609	Other operating cost, administrative expenses [grouping]		86	Tuple	All Tuple Members to go: 1493, 205
+3610	Other operating cost, cost of sales [grouping]		87	Tuple	All Tuple Members to go: 1494, 206
+3611	Other operating cost, distribution costs [grouping]		88	Tuple	All Tuple Members to go: 1495, 207
+3617	Other operating leases expiring after five years	1		Money	
+3618	Other operating leases expiring between two and five years	1		Money	
+3619	Other operating leases expiring within one year	1		Money	
+3639	Other provisions, acquisition	31		Money	
+3640	Other provisions disposed of with subsidiaries	33		Money	
+3650	Other specific departments, average number of employees [grouping]		90	Tuple	All Tuple Members to go: 3225, 344
+3651	Other specific departments, number of employees at date [grouping]		91	Tuple	All Tuple Members to go: 3226, 3365
+3653	Other staff cost, administrative expenses [grouping]		93	Tuple	All Tuple Members to go: 1502, 210
+3654	Other staff cost, cost of sales [grouping]		94	Tuple	All Tuple Members to go: 1503, 211
+3655	Other staff cost, distribution costs [grouping]		95	Tuple	All Tuple Members to go: 1504, 212
+3730	Parent of largest group in which results are consolidated [grouping]		99	Tuple	Tuple Members remaining: 1042
+3731	Parent of smallest group in which results are consolidated [grouping]		100	Tuple	Tuple Members remaining: 1043
+3732	Partially transferred assets [grouping]		101	Tuple	All Tuple Members to go: 1509
+3743	Payment is included in turnover	1	125	Boolean	
+3759	Pension asset in respect of schemes in surplus	13		Money	
+3760	Pension asset (liability)	13		Money	
+3761	Pension commitments [grouping]		102	Tuple	All Tuple Members to go: 1347, 3763, 3762, 3764, 1511, 4617
+3762	Pension commitments not provided for in the accounts	1	102	Money	
+3763	Pension commitments provided for in the accounts	1	102	Money	
+3764	Pension commitments related to pensions payable to past directors	1	102	Money	
+3768	Pension fund asset, acquisition	31		Money	
+3769	Pension fund asset disposed of with subsidiaries	33		Money	
+3770	Pension liability in respect of schemes in deficit	13		Money	
+3771	Pension provisions, acquisition	31		Money	
+3772	Pension provisions disposed of with subsidiaries	33		Money	
+3846	Percentage share of share capital sold	33		Percent	
+3847	Percentage of shares acquired	32		Percent	
+3857	Period for writing off of goodwill	31		String	
+3878	Policy on recognising difference between fair value at initial recognition and value established by valuation technique at that date	1	47	String	
+3885	Possible inflows of economic benefits [grouping]		103	Tuple	All Tuple Members to go: 1460
+3890	Post balance sheet event [grouping]		104	Tuple	All Tuple Members to go: 1522
+3938	Prepayments and accrued income, not expressed within current asset subtotal	1		Money	
+3966	Prior period and policy change adjustments general free-text comment	1		String	
+3972	Proceeds from disposal of subsidiaries	33		Money	
+3977	Production, average number of employees	1		Decimal	
+3978	Production, number of employees at date	1	70	Decimal	
+3986	Profit and loss account reserve adjustments free-text comment	1		String	
+3991	Profit (loss) for period, diluted earnings	1		Money	
+3994	Profit (loss) from loan transfer arrangement	1	59	Money	
+3995	Profit (loss) on disposal of subsidiaries	33		Money	
+4023	Provision for doubtful debt due from related party	1	109	Money	
+4029	Provisional fair values of acquisitions [grouping]		106	Tuple	All Tuple Members to go: 1308
+4032	Provisions, acquisition	31		Money	
+4044	Provisions disposed of with subsidiaries	33		Money	
+4084	Provisions or cost accruals for acquisition released unused	31		Money	
+4085	Provisions or cost accruals for acquisition used for purpose intended	31		Money	
+4158	Reconciliation of operating profit to cash flows free-text comment	13		String	
+4200	Related party transactions [grouping]		109	Tuple	All Tuple Members to go: 3244, 1539, 1597, 195, 4023, 228
+4230	Research and development, average number of employees	1		Decimal	
+4236	Research and development, number of employees at date	1	70	Decimal	
+4248	Restructuring provisions disposed of with subsidiaries	33		Money	
+4249	Restructuring provisions prior to acquisition, acquisition	31		Money	
+4282	Revenue of acquisitions free-text comment	31		String	HyId 15 done out of 15,31
+4293	Rights, obligations, guarantees and commitments not recognised as assets or liabilities [grouping]		115	Tuple	All Tuple Members to go: 1544, 4617
+4314	Sale and repurchase arrangements based on a secured loan [grouping]		117	Tuple	All Tuple Members to go: 1549
+4315	Sale and repurchase arrangements under which seller has a different asset [grouping]		118	Tuple	All Tuple Members to go: 1550
+4316	Sale and repurchase arrangements which are not financing transactions [grouping]		119	Tuple	All Tuple Members to go: 1551
+4324	Sales, marketing and distribution, average number of employees	1		Decimal	
+4325	Sales, marketing and distribution, number of employees at date	1	70	Decimal	
+4333	Securitisation reported under linked presentation [grouping]		120	Tuple	All Tuple Members to go: 1311, 2603, 1292, 1475, 1433, 1523, 1508, 1483
+4335	Securitised assets, gross	1		Money	
+4345	Selling, average number of employees	1		Decimal	
+4346	Selling, number of employees at date	1	70	Decimal	
+4380	Share of capital commitments of associates and joint-ventures	1		Money	
+4381	Share of contingent liabilities of associates and joint-ventures	1		Money	
+4385	Share of finance lease and hire purchase contract commitments of associates and joint-ventures	1		Money	
+4394	Share of other capital commitments of associates and joint-ventures	1		Money	
+4407	Shares in issue	39		Share	
+4429	Specific barter transaction [grouping]		125	Tuple	All Tuple Members to go: 1314, 392, 3743
+4433	Specific guarantees, contingent liabilities [grouping]		126	Tuple	All Tuple Members to go: 1415, 4617, 197, 1552, 2258
+4440	Specific type of other asset held in pension scheme, expected rate of return [grouping]		130	Tuple	Tuple Members remaining: 1608
+4516	Statement that the company is not obliged to support any losses nor does it intend to do so	1	6	String	
+4520	Statement that the financier has confirmed it will seek repayment only from funds from the specific asset if financed	1	6	String	
+4521	Statement that power exists to amend accounts after issue	1		String	
+4532	Stocks, acquisition	31		Money	
+4533	Stocks disposed of with subsidiaries	33		Money	
+4613	Subsidiary context identifier scheme URL	36		Uri	
+4617	Subsidiary or parent entity covered, if applicable	1	8	String	
+"	"	1	13	String	
+"	"	1	82	String	
+"	"	1	102	String	
+"	"	1	115	String	
+"	"	1	126	String	
+4622	Substance of transactions [grouping]		134	Tuple	All Tuple Members to go: 1598
+4645	Tangible assets, acquisition	31		Money	
+4646	Tangible assets disposed of with subsidiaries	33		Money	
+4673	Tangible fixed assets policy	23		String	
+4686	Tax expense (credit) on net hedge of investments in foreign operation, in statement of total recognised gains and losses	1		Money	
+4695	Tax on extraordinary profit (loss) arising from foreign tax	1		Money	
+4696	Tax on extraordinary profit (loss) arising from UK corporation tax	1		Money	
+4697	Tax on extraordinary profit (loss) arising from UK income tax	1		Money	
+4698	Tax on extraordinary profit (loss), including adjustments to tax on earlier extraordinary items	1		Money	
+4700	Tax on non-operating exceptional items	1		Money	
+4701	Tax on operating exceptional items	1		Money	
+4710	Taxation, acquisition	31		Money	
+4711	Taxation creditors disposed of with subsidiaries	33		Money	
+4713	Taxation and deferred taxation provisions, acquisition	31		Money	
+4714	Taxation and deferred taxation provisions disposed of with subsidiaries	33		Money	
+4719	Taxation related to disposal of subsidiaries	33		Money	
+4750	Total assets, acquisition	31		Money	
+4752	Total assets less current liabilities	13		Money	
+4753	Total assets, segmental breakdown	17		Money	All 17,18 HyIds to go
+"	"	18		Money	"
+4756	Total cash, acquisition	31		Money	
+4761	Total consideration for acquisition	31		Money	
+4762	Total cost of existing investment transferred from fixed assets	31		Money	
+4771	Total current tax on exceptional items	1		Money	
+4772	Total deferred consideration, acquisition	31		Money	
+4773	Total deferred tax on exceptional items	1		Money	
+4776	Total dividend payment	26		Money	HyId 1 done out of 1,26 but 1 is a subset of 26
+4777	Total dividend per share	26		PerShare	
+4779	Total exceptional gain (loss) for operating and non-operating items after tax	1		Money	
+4780	Total exceptional gain (loss) for operating and non-operating items before tax	1		Money	
+4783	Total extraordinary charges	1		Money	
+4784	Total extraordinary income	1		Money	
+4793	Total interest bearing net assets (liabilities)	17		Money	HyId 12 done out of 12,17,18 but 12 is a subset of 17
+"	"	18		Money	"
+4799	Total liabilities, acquisition	31		Money	
+4801	Total loan notes, acquisition	31		Money	
+4804	Total non-interest bearing net assets (liabilities)	17		Money	HyId 12 done out of 12,17,18 but 12 is a subset of 17
+"	"	18		Money	"
+4805	Total other dividend payment	26		Money	
+4808	Total participating dividend payment	26		Money	
+4821	Total shares issued, acquisition	31		Money	
+4823	Total tax expense (credit) on cash flow hedges in statement of total recognised gains and losses	1		Money	
+4824	Total tax on exceptional items	1		Money	
+4830	Trade creditors, acquisition	31		Money	
+4832	Trade creditors disposed of with subsidiaries	33		Money	
+4966	Unsecured guarantees by subsidiaries to third parties	1		Money	
+4967	Unusual assets and liabilities [grouping]		143	Tuple	All Tuple Members to go: 1611
+5000	Vacant property provisions, acquisition	31		Money	
+5001	Vacant property provisions disposed of with subsidiaries	33		Money	
+5165	Details of specific options, directors [grouping]		146	Tuple	Tuple Members remaining: 5162
+5186	Exercise price of option	38	44	Money	HyId 28 done out of 28,38,39
+"	"	39	44	Money	"
+"	"	28	122	Money	HyId 39 done out of 28,38,39
+"	"	38	122	Money	"
+"	"	28	146	Money	HyId 38 done out of 28,38,39
+"	"	39	146	Money	"
+5315	Name of individual auditor or accountant	41		String	
+5316	Name or location of office performing audit	41		String	
+5317	Name of senior statutory auditor	41		String	
+5370	Companies House document authentication	1		String	
+5383	Date of revision	1	158	Date	
+5391	Description or title of author	1	157	String	
+5395	Description of revision	1	158	String	
+5523	Name of author	1	157	String	
+5526	Name of revision author	1	158	String	
+5578	Is principle document author	1	157	Boolean	
+5611	Version number of revision	1	158	String	

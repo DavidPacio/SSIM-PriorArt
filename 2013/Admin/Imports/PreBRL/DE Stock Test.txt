@@ -1,0 +1,10 @@
+﻿DE Test
+No DE Check
+Debug:0
+Tx5469	AAAAA Limited
+ImportType:Replace
+Tx5589	2009.01.01
+Tx5460	2009.12.31
+Tx4551	150 	100	# Bro 2133
+Tx4107	100	100	# Bro 4272
+Tx575	-200	-100	# Bro 2246

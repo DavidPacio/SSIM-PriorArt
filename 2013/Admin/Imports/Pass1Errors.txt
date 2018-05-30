@@ -1,0 +1,39 @@
+﻿AAAAA
+Agent Braiins Limited
+Date  2013.05.13
+BroSet: DataImport Test2
+ImportType: Replace
+Bro name wrong
+EntityInfo.OfficialOperationalStatus.AuditedE         	1
+Ref missing
+PLSch.Rev.Seg.Geo.Destination,Country           	-16,509,371 	-18,012,026
+ADO Ref wrong
+EntityInfo.Officers,Officer.WoodgateD,Exec,Chairman,SignAccounts 	1
+Attempts to add a PropPMemRef to a Bro using Info Folio
+EntityInfo.Dates.PeriodStart,Ageing.<1       	2009-01-01	2008-01-01
+EntityInfo.Dates.PeriodStart,None.None       	2009-01-01	2008-01-01
+Duplicate Item
+EntityInfo.Officers,Officer.WoodgateC,HighestPaidOfficer,HighestPaidOfficer 	1
+Item that is Additional To used without its dad
+EntityInfo.Officers,Officer.WoodgateC,Exec,Chairman,SignAccounts 	1
+Item that is Additional To used without any of its multiple dads
+EntityInfo.Officers,Officer.WoodgateC,SignDirRep,Chairman 	1
+Item used without a member of its +RL1 Required List, when the Required List is only one Item
+EntityInfo.Officers,Officer.WoodgateC,Chairman 	1
+Item used without a member of its +RL1 Required List, when the Required List is more than one Item
+EntityInfo.Officers,Officer.WoodgateC,Director 	1
+Item used without a member of its +RLn Required List, when the Required List is more than one Item
+EntityInfo.Officers,Officer.WoodgateC 	1
+Item used without > 1 members of its +RL1 Required List
+EntityInfo.Officers,Officer.WoodgateC,Director,Exec,NonExec 	1
+Second Item without an Additional To or Required List
+PLSch.Rev.Seg.Geo.Destination,Country.UK,Country.England           	-16,509,371 	-18,012,026
+PLSch.Rev.Seg.Geo.Destination,Country.UK,England           	-16,509,371 	-18,012,026
+Use of a PI which has been excluded by allowing a different one a:Group.Co
+PLSch.Rev.Seg.Geo.Destination,Group.Consol,Country.UK           	-16,509,371 	-18,012,026
+This one should be ok
+PLSch.Rev.Seg.Geo.Destination,Group.Co,Country.UK           	-16,509,371 	-18,012,026
+Non # Ref Item of an ADO Property used with a non ADO Bro
+PL.Exp.OfficerRemuneration,Officer.WoodgateC,CoSec	25000	20000
+
+

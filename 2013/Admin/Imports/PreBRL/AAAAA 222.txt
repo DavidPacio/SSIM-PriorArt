@@ -1,0 +1,6 @@
+﻿222 StartEnd SumEnd of Tuple -> Tuple Test
+No DE Check
+Debug:0
+ImportType:Replace
+
+Tx222Tu107:start		222

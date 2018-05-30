@@ -1,0 +1,16 @@
+Bugs
+====
+
+Public Site
+===========
+
+
+
+BDT
+===
+ 1.           Context menu gets left open on leaving a window on first use after minimise and restore
+
+
+Server Side
+===========
+

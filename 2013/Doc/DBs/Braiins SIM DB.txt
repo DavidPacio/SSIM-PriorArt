@@ -1,0 +1,559 @@
+/doc/Braiins SIM DB.txt
+
+Braiins SIM DB (Braiins Dimension etc equivalents = SIM beginning)
+==============
+
+15.03.13 Started
+03.07.13 B R L -> SIM
+07.08.13 Bro AcctTypes col removed
+
+ToDo
+====
+
+Tables
+======
+Taxonomies
+EntityTypes
+EntitySizes
+Regions
+Countries
+Currencies
+StockExchanges
+Languages
+Industries
+Roles
+Folios
+Properties
+PMembers
+BroInfo
+Zones
+
+CREATE TABLE IF NOT EXISTS Taxonomies (
+  Id      tinyint unsigned not null auto_increment, # = TaxnId to keep usage clear re use of TxId with Bros
+  Name    varchar(20)      not null, # Name of Taxonomy as used in short form, no spaces e.g. UK-GAAP-DPL. Verbose name is held in Descr
+  Bits    tinyint unsigned not null, # Bit settings for the Taxonomy
+  Data    text             not null, # The jsonised data as below, retrieved via EntityType($o) as an Object
+  Primary Key (Id)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Max length Name = 11
+
+Bits
+  TaxnB_DB      = 1; # 0 DB for the Taxonomy is Live
+
+Data =
+  EntityTypesA  [] of ETypeIds which apply to the Taxonomy
+  HeadingsAA    AA of Braiins Master Headings    for the Taxonomy
+  PreferencesAA AA of Braiins Master Preferences for the Taxonomy
+  Descr         string  Description of the Taxonomy
+
+# Taxonomies.Data indices
+const TDI_EntityTypesA  = 0;
+const TDI_HeadingsAA    = 1;
+const TDI_PreferencesAA = 2;
+const TDI_Descr         = 3;
+
+Initial values:
+  HeadingsA = [
+    'AccountsFullUnauditedH'     => 'Report of the Directors and Unaudited Financial Statements',
+    'AccountsFullAuditedH'       => 'Report of the Directors and Audited Financial Statements',
+    'AccountsShortH'             => 'Financial Statements',
+    'AccountsPeriodH'            => 'Period of Accounts',
+    'CompanyInformationH'        => 'Company Information',
+    'CompanyRegistrationNumberH' => 'Company Registration Number',
+    'RegisteredOfficeH'          => 'Registered Office Address',
+    'RestatedH'                  => '(Restated)'
+  ]
+  PreferencesA = [
+    'RealZero'  => '&#8211;', # en dash
+    'Undefined' => '',        # for a false balance
+    'ThisYearColCss' => 'b',
+    'PriorYearColCss' => ''
+  ]
+
+
+#################
+## EntityTypes ## Entity Types
+#################
+
+CREATE TABLE IF NOT EXISTS EntityTypes (
+  Id      tinyint  unsigned not null auto_increment, # = ETypeId
+  Data    text              not null, # The jsonised data as below
+  Primary Key (Id)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Data =
+  Credits     int      Credits for the Entity Type - one set of financial statement credits charge
+  Bits        int      Bit settings for the Entity Type: ETB_Incorporated, ETB_CoSecDirRpt
+  Name        string   Full name of entity type
+  SName       string   Short name of entity type
+  IdentURL    string   Identifier Scheme URL
+  CtryIdsA    int i [] of CtryIds for Countries to which this Entity Type applies
+  TaxnIdsA    int i [] of TaxnIds for Taxonomies the Entity Type applies to; 0 not defined yet. Should cross check with Taxonomies.EntityTypes
+  SizeIdsA    int i [] of ESizeIds which apply to the Entity Type; 0 = none
+  Comment     string   Comment
+  # Terms
+  Generic     string   Generic name for the entity type e.g. Proprietorship, Partnership, Company
+  Chairman    string   Chairman name e.g. Chairman or Chief Partner; no plural
+  Officer     string   Singular Officer name e.g. Director
+  Officers    string   Plural Officer names e.g. Directors
+  Ceo         string   Singular CEO name
+  Ceos        string   Plural CEO names
+  CeoJoint    string   One of two CEO names e.g. Joint Managing Director
+  CoSec       string   Name for Company Secretary; null = no such role
+  Ident       string   Name for entity context identifier e.g. registration number e.g. Company Registration Number, Australian Business Number
+  SIdent      string   Short Name for entity context identifier e.g. ABN
+  TaxNum      string   Name for entity corporate/income tax registration number e.g. Corporate Tax Number, Business Tax File Number
+  STaxNum     string   Short Name for entity corporate/income tax registration number e.g. CTN, TFN
+  VatNum      string   Name for entity VAT/GST/ST registration number e.g. VAT Number, GST Number
+  SVatNum     string   Short Name for entity registration number e.g. VN, GTN
+
+State tax numbers?
+
+const ETI_Credits  = 0;
+const ETI_Bits     = 1;
+const ETI_Name     = 2;
+const ETI_SName    = 3;
+const ETI_IdentURL = 4;
+const ETI_CtryIdsA = 5;
+const ETI_TaxnIdsA = 6;
+const ETI_SizeIdsA = 7;
+const ETI_Comment  = 8;
+# Terms
+const ETI_Generic  =  9;
+const ETI_Chairman = 10;
+const ETI_Officer  = 11;
+const ETI_Officers = 12;
+const ETI_Ceo      = 13;
+const ETI_Ceos     = 14;
+const ETI_CeoJoint = 15;
+const ETI_CoSec    = 16;
+const ETI_Ident    = 17;
+const ETI_SIdent   = 18;
+const ETI_TaxNum   = 19;
+const ETI_STaxNum  = 20;
+const ETI_VatNum   = 21;
+const ETI_SVatNum  = 22;
+
+#################
+## EntitySizes ## Entity Sizes
+#################
+CREATE TABLE IF NOT EXISTS EntitySizes (
+  Id        tinyint unsigned not null auto_increment, # = ESizeId
+  Name      varchar(40)      not null, # Full name of entity size   e.g. Small FRSSE
+  SName     varchar(20)      not null, # Short name of entity size  e.g. FRSSE
+  Credits   tinyint unsigned not null, # Credits for the Entity Size - in addition to the Entity Type Credits
+  Bits      tinyint unsigned not null, # Bit settings for the Entity Size
+  Comment   varchar(250)         null, # Comment free text
+  Primary Key (Id)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Max length Name = 11
+Max length SName = 6
+Max length Comment = 16
+
+
+
+###########
+## Roles ##
+###########
+CREATE TABLE IF NOT EXISTS Roles (
+  Id      tinyint unsigned not null auto_increment,
+  Role    varchar(70)      not null, #
+  RoleN   tinyint unsigned not null, # Role_Report, Role_Note, Role_Prop, Role_Folio
+  Primary Key (Id),
+  Unique Key (Role)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Max length Role = 61
+
+#############
+## Regions ## Regions
+#############
+CREATE TABLE IF NOT EXISTS Regions (
+  Id       tinyint unsigned not null auto_increment, # = RegionId
+  Name     varchar(40)      not null, # Full name of region
+  Ref      varchar(30)      not null, # Short name of region if in use e.g. EU, o'wise Name stripped of spaces, used as the # Ref of Property Region
+  SortKey  char(4)          not null, #
+  AliasId  tinyint unsigned     null, # Regions.Id of full form of the region's name. Used for common 'nicknames' for regions
+  PartOf   char(4)              null, # Chr list of RegionIds if also part of another region/other regions
+ #Bits     tinyint unsigned not null, # Bit settings. None as of 26.04.13
+  Primary Key (Id),     # unique
+   Unique Key (Ref)
+   #      Key (SortKey) Only used when listing regions, which will be rare vs use as a Property Ref so there is no need for this index
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Max length Name = 38
+Max length Ref = 24
+Max length Sortkey = 3
+Max length PartOf = 3
+
+###############
+## Countries ## Countries
+###############
+CREATE TABLE IF NOT EXISTS Countries (
+  Id       smallint unsigned not null auto_increment, # = CountryId or CtryId
+  Name     varchar(40)       not null, # Full name of country
+  Ref      varchar(32)       not null, # Short name of country if in use e.g. UK, o'wise Name stripped of spaces, used as the # Ref of Property Country
+  SortKey  char(10)          not null, #
+  ISOnum   smallint unsigned     null, # ISO 31661-1 number. Can be undefined as for Kosovo in 2013
+  AliasId  smallint unsigned     null, # CountryId of official form of the country name. Used for common 'nicknames' for countries
+  PartOfId smallint unsigned     null, # CountryId of another country the country is part of e.g. England is part of the UK
+  AssocId  smallint unsigned     null, # CountryId of another country the country is associated with e.g. Isle of Man is not part of the UK but is 'associated' with it.
+  Regions  char(4)               null, # Chr list of up to 4 RegionIds the country is a part of
+  Bits     tinyint  unsigned     null, # Bit settings. 1 = Break before in listing
+  Primary Key (Id),
+   Unique Key (Ref)
+   #      Key (SortKey) Only used when listing countries, which will be rare vs use as a Property Ref so there is no need for this index
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Max length Name = 38
+Max length Ref = 32
+Max length Sortkey = 3
+Max length Regions = 2
+
+################
+## Currencies ## Currencies
+################
+CREATE TABLE IF NOT EXISTS Currencies (
+  Id      smallint unsigned not null auto_increment, # = CurrencyId or CurrId
+  Name    varchar(60)       not null, #
+  Ref     char(3)           not null, # ISO 4217 Code
+  SortKey char(4)           not null, #
+  Bits    tinyint  unsigned     null, # Bit settings. 1 = Break before in listing
+  Primary Key (Id),
+   Unique Key (Ref)
+   #      Key (SortKey) Only used when listing currencies which will be rare vs use as a Property Ref so there is no need for this index
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Max length Name = 58
+
+###############
+## Exchanges ## Stock Exchanges
+###############
+CREATE TABLE IF NOT EXISTS Exchanges (
+  Id      smallint unsigned not null auto_increment,
+  Name    varchar(70)       not null, #
+  Ref     char(20)          not null, #
+  SortKey char(4)           not null, #
+  Bits    tinyint  unsigned     null, # Bit settings. 1 = Break before in listing
+  Primary Key (Id),
+   Unique Key (Ref)
+   #      Key (SortKey) Only used when listing exchanges which will be rare vs use as a Property Ref so there is no need for this index
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Max length Name = 47 or 68 when importing the full UK-GAAP list
+Max length Ref = 17
+
+###############
+## Languages ## Languages
+###############
+CREATE TABLE IF NOT EXISTS Languages (
+  Id      smallint unsigned not null auto_increment,
+  Name    varchar(20)       not null, #
+  Ref     char(3)           not null, # ISO 639-1 Code (2 char code)
+  SortKey char(4)           not null, #
+  Bits    tinyint  unsigned     null, # Bit settings. 1 = Break before in listing
+  Primary Key (Id),
+   Unique Key (Ref)
+   #      Key (SortKey) Only used when listing languages which will be rare vs use as a Property Ref so there is no need for this index
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Max length Name = 10
+
+################
+## Industries ## Industries - SIC Codes
+################
+CREATE TABLE IF NOT EXISTS Industries (
+  Id      smallint unsigned not null auto_increment,
+  Ref     char(8)           not null, # SIC Code
+  Descr   varchar(210)      not null, #
+  Primary Key (Id),
+   Unique Key (Ref)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Max length Ref   = 8
+Max length Descr = 206
+
+
+############
+## Folios ## Folios of Properties
+############
+CREATE TABLE IF NOT EXISTS Folios (
+  Id        tinyint unsigned not null auto_increment,
+  Name      varchar(20)      not null, #
+  Label     varchar(80)      not null, #
+  Props     char(20)         not null, # List of properties for this folio as Properties.Id in chr list form
+  PMemsA    varchar(20)          null, # [i => [PMemsA as for BroInfo.PMemDiMesA below]] PMem overrides per property, stored in json form
+  RoleId    tinyint unsigned not null, # Roles.Id foreign key
+  Primary Key (Id),
+  Unique Key (Name)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Max length Name = 20
+Max length Label = 72
+Max Length Props = 13
+Max Length PMemsA = 8
+
+
+################
+## Properties ##
+################
+CREATE TABLE IF NOT EXISTS Properties (
+  Id        tinyint unsigned not null auto_increment,
+  Name      varchar(20)      not null, #
+  Label     varchar(50)      not null, #
+  RoleId    tinyint unsigned     null, # Roles.Id foreign key
+  Primary Key (Id),
+  Unique Key (Name)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Max length Name  = 16
+Max length Label = 44
+
+
+##############
+## PMembers ##
+##############
+CREATE TABLE IF NOT EXISTS PMembers (
+  Id      smallint unsigned not null auto_increment, # Used as PMemId
+  PropId  tinyint  unsigned not null, # Properties.Id foreign key
+  Name    varchar(50)       not null, # Includes Property "Name." prefix
+  Label   varchar(120)      not null, #
+  Break   varchar(75)           null, # Name	Label of a break or separator row stored with next PMem
+  Bits    smallint unsigned not null, # Property Member bits: PMemB_... defined in ConstantsSIM.inc
+  Level   tinyint  unsigned not null, # Level of the PMem from 0 upwards
+  SumList varchar(8)            null, # Sum List in SS form with Kids reduced to K
+  MuxList varchar(12)           null, # Sum List in SS form with Kids reduced to K
+  AddList varchar(8)            null, # Additional To list in SS form
+  ReqList varchar(16)           null, # Required List in SS form
+  Comment varchar(100)          null, # Comment free text
+  Primary Key (Id),
+  Unique Key (Name)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+Max length PMem Name = 45
+Max length Label   = 112
+Max length Break   = 50
+Max length SumList = 5
+Max length MuxList = 11
+Max length AddList = 7
+Max length ReqList = 11
+Max length Comment = 89
+
+# PMembers.Bits# PMembers.Bits
+# -------------              Bit
+const PMemB_D       =    1; #  0 D  DBO Ref
+const PMemB_H       =    2; #  1 H  inHerited  DBO Ref
+const PMemB_Ei      =    4; #  2 Ei Entity specific Instance
+const PMemB_Ee      =    8; #  3 Ee Entity specific Extension
+const PMemB_O       =   16; #  4 O  Override of DBO property
+const PMemB_RO      =   32; #  5 RO Report Only = usable for reporting but not for posting
+const PMemB_pYa     =   64; #  6 Y  PYA (Restated)
+const PMemB_Zilch   =  128; #  7 Z  Not ever user selectable being reserved for Braiins operation e..g. Unallocated
+const PMemB_Break   =  256; #  8    Break = start of a Group within the Property Member listing, shown by a different style row with Name and Label captions stored in the Break col of PMembers
+const PMemB_Sim     =  512; #  9 ?  SIM type with specific one as per PropId: PropId_Regionss, PropId_Countries, PropId_Currencies, PropId_Exchanges, PropId_Languages, PropId_Industries
+# Member Use Bits
+const PMemB_UseM   =  1024; # 10 M  Properties with 'M" Member Use Codes always have multiple members with an 'M' code. It is Mandatory to include one of the 'M' members. 'M' codes can be followed by '+RL1' or '+RLn' codes.
+const PMemB_UseRL1 =  2048; # 11 +RL1  If the member is included, one additional member chosen from the related list is mandatory
+const PMemB_UseRLn =  4096; # 12 +RLn  If the member is included. one or more additional members chosen from the related list are mandatory
+# Member Excl Rule Codes
+const PMemB_IER_N  =  8192; # 13 N  The member cannot be excluded from use with a Bro via its Member x: attribute unless the member is an 'A' Member Use member for which all members in its Required List have been excluded. All 'RO' (Read Only) Type members are also 'N' Member Excl Rule members.
+const PMemB_IER_1  = 16384; # 14 1  '1' Member Excl Rule codes apply only to members with 'A' Member Use codes. A group of such members can be reduced in number, potentially to 1, but not to zero unless all members in its Required List have been excluded.
+const PMemB_IER_ET = 32768; # 15 ET The member is automatically excluded if the Entity's Entity Type excludes use of the member.
+
+
+#############
+## BroInfo ## Braiins Report Object Info
+#############
+# Type: Master but does not use the std master bits, no EdiT
+CREATE TABLE IF NOT EXISTS BroInfo (
+  Id mediumint unsigned not null auto_increment,
+  BroSetId       smallint unsigned not null, # BroSets.Id
+  InclBroSetId   smallint unsigned     null, # BroSets.Id of an included BroSet, if set. The rest of record is not used apart from the Comment fields.
+                                             #     S E s V
+  BroId         mediumint unsigned not null, #     x x x x BroId set by Bros Import - can have gaps, but must be unique within a BroSet including includes.
+  Name           varchar(300)      not null, #     m m m m Full Bro Name including dot sections for levels > 0. Must be unique for the BroSet including includes - enforced by Bros Import
+  Level          tinyint  unsigned not null, #     x x x x 0 for top level Set, +1 for each additional level derived from name. Can be different for a Slave from its Master
+  DadId         mediumint unsigned not null, #     - x x x BroId of Parent if Bro has a parent = all except Level 0 Sets
+  Bits           smallint unsigned not null, #     x x x x Bits as per the BroB_ constants
+# Type                                                     Stored using Bits BroB_Set, BroB_Ele, BroB_Slave, BroB_Master, BroB_Out
+# PostType                                         b b b p Stored for Money Bros using Bit BroB_DE. Set if is a DE (double entry) type. Unset = Schedule
+# RO                                           I   o o o R Stored using Bit BroB_RO. Default is Off = Posting Bro. Set for a Report Only Bro usable for reporting but not for posting i.e. is Non-Posting
+# NoTags                                       O t o o o o Stored using Bit BroB_NoTags. Can be set for a Bro with TxId to tell RG not to generate tags for this Bro = duplicate TxId.HyId{.TupId} allowed
+  DataTypeN      tinyint  unsigned not null, #     g m g I Bro DataType enum DT_String | DT_Money etc Can be DT_None for Non TxId set.
+  DboFieldN      tinyint  unsigned     null, #     - o - - DboField enum. DataType must match.
+  SignN          tinyint  unsigned     null, #     b b b I null/0 = not Money, o'wise BS_Dr | BS_Cr | BS_Either if Money
+  SumUp          tinyint  unsigned     null, #     n n n n null/0 = not a summing Bro, o'wise | BroSumUp_Yes | BroSumUp_No | BroSumUp_NA. Default is BroSumUp_Yes for a summing Bro with a Dad of same type.
+  PeriodSEN      tinyint  unsigned     null, #     o o o o null/0 = not defined -> BPT_Duration by default if a PeriodSEN is needed, o'wise Period and StartEnd enum: BPT_Duration | BPT_Instant | BPT_InstSumEnd | BPT_InstPostEnd | BPT_InstStock
+  SortOrder      tinyint  unsigned     null, #     - o o o Optional listing order within a set - 1 to 255, Id order o'wise
+  FolioHys       char(4)               null, # B   o o o s Chr list of folio (single) or hypercube (can be plural for a set) Ids for <members of this set|this element>. Can have wo TxId for a Out-BroSet. Required if Bro has TxId. Can only be more than 1 for a Tx Set Bro.
+  ExclPropDims   char(20)              null, # B f o o o f Chr list of up to 20 Prop/Dim Ids that the Bro cannot use. Usable list = FolioHy Props/Dims - ExclPropDims /- Mux
+  AllowPropDims  char(20)              null, # B   o o o f Chr list of up to 20 Prop/Dim Ids that the Bro can use. Forms the Usable list for such Bros.               |
+  PMemDiMesA     varchar(100)          null, # B   o o o f Bro PMem/DiMe overrides stored in json form, details below.
+  UsablePropDims varchar(20)           null, # B   x x x x Chr list of the Usable Props or Dims for the Bro
+                                             #             Is unset for an Ele Slave unless slave filtering by Usable list (not just PMemDiMesA) is in use. Usable rather than FolioHys, ExclPropDims, AllowPropDims because a Folio/Hy subset e.g. Hy 1 vs 13 could be cancelled out by ExclPropDims 3,48 use in the Master -> no filtering.
+                                             #             Remains set for a Set Slave re summing and SumUsablePropDims of any non-slave set members.
+  Related        char(6)               null, # I   - o - - TrelatedBroId as described below
+  SeSumList      varchar(120)          null, # I f - x - - CS list of BroIds of StartEnd SumList Bros which must be Ele Bros. Sets can be StartEnd but not with a SumList - their SE values come from summing their SE Eles.
+ #SlaveIds       varchar(120)          null, #     x x x - CS list of BroIds of Slaves of this Bro. Allows for up to 20. Only applicable to Masters. 29.03.13 OoS as affected by includes. Built by BuildBroStructs.inc for the BroInfoA struct.
+  TxId           smallint unsigned     null, # O h o o o = Tx Elements.Id
+  TupId          tinyint  unsigned     null, # O t u u u = TupId (TuplePairs.TupId) which can be used with the Bro
+  ManDims        char(8)               null, # O h - m - - Chr list of up to 8 DimIds, use of one of which is mandatory if the TxId has more than 1 hypercube.
+  MasterId      mediumint unsigned     null, #     - - - m BroId of a Master Bro of which this Bro is a Slave.
+  SlaveYear      tinyint  unsigned     null, #           o Year for a Slave 1-3 or nothing if not an Ele Slave Bro. Only applicable to Ele Slaves.
+  CheckTest      char(8)               null, #     o o o o TPYtargetBroId as described below
+  Zones          char(10)              null, #     o o o p Chr list of up to 10 Zones.Ids of Zones where Bro use allowed
+  ShortName      varchar(48)           null, #     o o o o Bro short name. Must be unique - to be enforced by BrosImport.php
+  Ref            varchar(48)           null, #     o o o p Reference as to source in user's AP system e.g. NL, Memo or ReportPad name for SAPA users; to be extended to cover other AP systems as we add them.
+  Descr          varchar(400)          null, #     o o o p Text or Braiins master description for output in accounts. Std label for Out-BroSet Bro if null
+  Scratch        varchar(500)          null, #     o o o o Comment free text not played back in Bros List or Lookup. Just for temporary Import/Export use.
+  Comment        varchar(500)          null, #     o o o o Comment free text
+  RowComments    text                  null, #     o o o o Preceeding SS comment rows incl blank ones  separated. Plus  separated set of row comments if last Bro in the import for trailing SS comment rows.
+  Data           text                  null, #             Additional jsonised data as below. Some of the above fields could be moved into Data
+  Primary Key (Id),                          #             row comment{row comment...}{row comment{row comment...}}
+          Key (BroSetId)                     # | | |   | |- = can be input as part of Tx master matching or not; R means fixed RO for slave
+) Engine = InnoDB DEFAULT CHARSET=utf8;      # | | |---| |- s means can be input as part of matching or otherwise & can be a subset Hy of the Master
+                                             # | | |usage as below
+                                             # | |- f = Folio/Hys required; h = Hys (FolioHys) rquired; t = requires a TxId
+                                             # |- B = Both BroSet types with differences as indicated by having both two prop name in the col name
+                                             # |- I = In-BroSets only
+                                             # |- O = Out-BroSets only
+PMem/DiMe Overrides                          # |- blank = both with no differences in use/operation and thus only one prop in the col name
+-------------------
+PMemDiMesA = Bro PMems/DiMes Overrides array [i => MandatsA, DefaultsA, ExcludesA, AllowsA]
+MandatsA  = i array of Mandatory PMems/DiMes, Prop/Dim in Bro Usable Props/Dims or PMem/DiMe in AllowsA, only one per Prop/Dim, Mux with Defaults and Excludes
+DefaultsA = i array of Default   PMems/DiMes, Prop/Dim in Bro Usable Props/Dims or PMem/DiMe in AllowsA, only one per Prop/Dim, Mux with Mandats  and Excludes
+ExcludesA = i array of Exclude   PMems/DiMes, Prop/Dim in Bro Usable Props/Dims, Mux with Mandats, Defaults, and Allows
+AllowsA   = i array of Allow     PMems/DiMes, No Usable Props/Dims, or Prop/Dim in Bro ExclPropDims, Mux with Excludes
+
+ExcludesA and AllowsA are allowable for Slave filter use.
+
+Related
+-------
+Format:
+ TrelatedBroId = 6 chars long max
+where
+ T is a one letter code to define the Type of 'relationship' for this Bro as per the UK-GAAP-DPL Tuple codes
+  M : Mandatory once
+  O : Optional once
+  U : optional Unbounded
+ relatedBroId is the BroId of the related Bro.
+
+The Related Bros should form a loop.
+e.g. Using charitable donation as an example. (UK-GAAP-DPL TuMeId 475 and 476):
+
+For BroId = 12345 Description of purpose of specific charitable donation  => Related = M12346
+and BroId = 12346 Amount of specific charitable donation                  => Related = M12345
+
+In source form: <M | O | U> Related <BroName | BroShortName>
+
+CheckTest
+---------
+Format:
+ TPYtargetBroId = 8 chars long max
+where
+ T is a one letter code to define the Type of check:
+  E : Test is Equal
+  O : Test is equal and Opposite
+ P is a one letter code to define when the check is to be Performed:
+  E : if Either Bro has a value (was always this before 07.09.12)
+  B : if Both Bros have a value
+  C : if the Check Bro has a value
+  T : if the Target BroRef has a value
+ Y is digit 0-3 to indicate the relative year, default 0
+ targetBroId is the BroId of the target
+In source form:
+TargetBroId <Equal To | Equal & Opp To>{ <Either | Both | Check | Target>}{ Year#} <TargetBroName | TargetBroShortName>
+with no P part defaulting to Either.
+
+Data
+----
+  TaxnIdsA    int i [] of Taxonomies  that the Bro applies to. OK if in this list || not in this list and not in NotTaxnIdsA
+  CtryIdsA    int i [] of Countries   that the Bro applies to. OK if in this list || not in this list and not in NotCtryIdsA
+  ETypesA     int i [] of EntityTypes that the Bro applies to. OK if in this list || not in this list and not in NotETypesA
+  NotTaxnIdsA int i [] of Taxonomies  that the Bro does not apply to
+  NotCtryIdsA int i [] of Countries   that the Bro does not apply to
+  NotETypesA  int i [] of EntityTypes that the Bro does not apply to
+
+# BroInfo.Data indices
+const BII_TaxnIdsA     = 0;
+const BII_CtryIdsA     = 1;
+const BII_ETypeIdsA    = 2;
+const BII_NotTaxnIdsA  = 3;
+const BII_NotCtryIdsA  = 4;
+const BII_NotETypeIdsA = 5;
+
+
+where
+Top Row:
+ S = Set
+ E = Element
+ s = Set member of a Set
+ V = slaVe - can be Ele or Set
+Rows:
+b = Mandatory for a balance (money) type i.e. DataTypeN = DT_Money
+f = optional as a slave Filter
+m = Mandatory or inherited from Master in case of slave col
+n = Mandatory for DB but optional for import - set to default if not supplied
+g = Can be only a summinG type or none
+I = Inherited from Master for a Slave
+i = Inherited from Dad if not supplied or obtainable from Tx (SignN). Warning issued if different in Context case.
+o = Optional
+p = oPtional, inherited from Master in case of slave if not defined for slave
+s = Required for slave
+x = Set by Import
+y = Set by Import for a TxId Bro
+u = TupId which is mandatory if the TxId is a member of a tuple i.e. TxId = one or more TuplePairs.MemTxId's
+    In the cases where there is only one tuple member (TuplePairs.MemTxId) with TxId (most) then TupId can be an x property set by Import.
+    In the cases where the TxId/HyId pair indentifies one tuple member (TuplePairs.MemTxId) as per $TupIdsByMemberTxIdAndHyIdGA then TupId can be an x property set by Import.
+    Only in the remaining cases will TupId have to be input to uniquely identify the Bro. The cases are:
+    TxId Tuples TupId/TupTxId       Hypercubes
+    1324   46,  47                     1
+         2093,2118                     1
+    1448   46,  47                     1
+         2093,2118                     1
+    1563    3,  22,  46,  51,  52      1
+          162,1063,2093,2585,2595      1
+    1608  130, 131                     27
+         4440,4441                     27
+    3878   46,  47                     1
+         2093,2118                     1
+    4617    8,  13,  82, 192, 115, 126 1
+          500, 868,3546,3761,4293,4433 1
+
+
+Bits as per ConstantsRg.inc
+
+Level 0 names must be in NCname form i.e. start with a letter
+Level 1 and lower names may start with a digit or be purely numeric
+
+See also
+
+Bros re Dimensions: See doc Dimensionhandling.txt
+
+Example
+Total Costs                          Admin                                                   CoS                                           Distrib
+[C] 350 Bad debts written off costs  [C] 348 Bad debts written off, administrative expenses  [C] 349 Bad debts written off, cost of sales  [C] 351 Bad debts written off, distribution costs
+
+PL.Expenses.BadDebts
+PL.Expenses.BadDebts:ExpenseType.Admin
+PL.Expenses.BadDebts:Function.Cos
+PL.Expenses.BadDebts:ExpenseType.Distrib
+
+###########
+## Zones ## Braiins Report Zones which are referenced by Bros to define where Bros are usable ++
+###########
+# Type: Master, no Bits
+CREATE TABLE IF NOT EXISTS Zones (
+  Id        smallint unsigned not null auto_increment,
+  Ref       varchar(15)       not null,
+  SignN     tinyint  unsigned     null, # Expected sign of the zone - BS_None (null) | BS_Dr | BS_Cr
+  Descr     varchar(80)           null, # A description of the zone. Not used by the RG
+ #AllowPropDims char(12)              null, # Dimensions allowed chr list. No list = no restriction apart from the global ones and of any Bro being used. 29.03.13 Removed
+  # sys stuff
+  EditT   timestamp not null default 0,
+  AddT    timestamp not null default 0,
+  Primary Key (Id),   # unique
+   Unique Key (Ref)   # unique
+) Engine = InnoDB DEFAULT CHARSET=utf8;

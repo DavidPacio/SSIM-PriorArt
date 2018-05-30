@@ -1,0 +1,156 @@
+Importing Data
+File Pensions Restated.txt read.
+StartYear: 4
+ImportType: Replace
+Import is for year: Year 1 (Restated)
+Data Import Row	DE Running Balances	Processed BroRef if different	Comments
+BroRef	
+Year 1 (Restated)
+	Year 1 (Restated)
+PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.DescrType,PensionSchemes.1,T.1	UK Gilts R			Bro 6135
+PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,Restated.AcctPolicyIncr,T.1	10	10		Bro 6136
+PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.Type,PensionSchemes.1,T.1	46			Bro 6137
+PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.Type,PensionSchemes.1,T.2	64			
+Suspense,Restated.AcctPolicyIncr	-10	0		
+
+Summing Money Year 1 (Restated)
+
+Summing Money Year 0
+
+Data Import and Summing Results
+Ref	Short Bro Name	Bro Reference	PT	Src	Year 0	Year 1	Year 1 (Restated)
+2701		Suspense	DE	P,P,b	-100,000	-110,000	-110,010
+2701,73		Suspense,Restated.Amount	DE	d			-110,010
+2701,74		Suspense,Restated.PriorPeriodIncr	DE	d			-10
+2701,75		Suspense,Restated.AcctPolicyIncr	DE	P			-10
+2701,77		Suspense,Restated.OriginalAmount	DE	R			-110,000
+6135,211,T.1	Tx1608Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.DescrType,PensionSchemes.1,T.1	Sch	P	UK Gilts	UK Gilts	UK Gilts R
+6135,211,T.2	Tx1608Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.DescrType,PensionSchemes.1,T.2	Sch	P	UK Stocks	UK Stocks	UK Stocks
+6136	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType	DE	b	100,000	110,000	110,010
+6136,73	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,Restated.Amount	DE	d			110,010
+6136,74	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,Restated.PriorPeriodIncr	DE	d			10
+6136,75	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,Restated.AcctPolicyIncr	DE	i			10
+6136,77	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,Restated.OriginalAmount	DE	r			110,000
+6136,209	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.Total	DE	d,d,di	100,000	110,000	10
+6136,209,73	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.Total,Restated.Amount	DE	d			110,010
+6136,209,74	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.Total,Restated.PriorPeriodIncr	DE	d			10
+6136,209,75	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.Total,Restated.AcctPolicyIncr	DE	d			10
+6136,209,77	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.Total,Restated.OriginalAmount	DE	r			110,000
+6136,210	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.TotalThisTypeExclMedical	DE	d,d,di	100,000	110,000	10
+6136,210,73	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.TotalThisTypeExclMedical,Restated.Amount	DE	d			110,010
+6136,210,74	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.TotalThisTypeExclMedical,Restated.PriorPeriodIncr	DE	d			10
+6136,210,75	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.TotalThisTypeExclMedical,Restated.AcctPolicyIncr	DE	d			10
+6136,210,77	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.TotalThisTypeExclMedical,Restated.OriginalAmount	DE	r			110,000
+6136,211	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1	DE	i			10
+6136,T.1	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,T.1	DE	t	50,000	45,000	45,010
+6136,211,T.1	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,T.1	DE	P,P,Pt	50,000	45,000	45,010
+6136,211,73,T.1	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,Restated.Amount,T.1	DE	d			45,010
+6136,211,74,T.1	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,Restated.PriorPeriodIncr,T.1	DE	d			10
+6136,211,75,T.1	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,Restated.AcctPolicyIncr,T.1	DE	P			10
+6136,211,77,T.1	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,Restated.OriginalAmount,T.1	DE	r			45,000
+6136,T.2	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,T.2	DE	t	50,000	65,000	65,000
+6136,211,T.2	Tx2048Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,T.2	DE	P	50,000	65,000	65,000
+6137,211,T.1	Tx3854Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.Type,PensionSchemes.1,T.1	Sch	P	50.00	45.00	46.00
+6137,211,T.2	Tx3854Tu131	PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.Type,PensionSchemes.1,T.2	Sch	P	50.00	65.00	64.00
+6157,211,T.1		PensionSchemes.DefinedBenefit.ReturnOnAssets.PrincipalActuarialAssumptions.ExpectedRatesReturnOnAssets.OtherHeldIn.DescrType,PensionSchemes.1,T.1	Sch	mP	UK Gilts	UK Gilts	UK Gilts R
+6157,211,T.2		PensionSchemes.DefinedBenefit.ReturnOnAssets.PrincipalActuarialAssumptions.ExpectedRatesReturnOnAssets.OtherHeldIn.DescrType,PensionSchemes.1,T.2	Sch	mP	UK Stocks	UK Stocks	UK Stocks
+6248	Tx5469	SchInputEntity.Names.CurrentLegalOrRegistered	Sch	P	AAAAA Limited
+6347	Tx5356	SchInputBRI.DatesPeriods.BS	Sch	e	2009-12-31
+6348	Tx1141	SchInputBRI.DatesPeriods.ApprovalAccounts	Sch	e	2010-01-30
+6350	Tx5589	SchInputBRI.DatesPeriods.Start	Sch	P	2009-01-01	2008-01-01	2008-01-01
+6351	Tx5460	SchInputBRI.DatesPeriods.End	Sch	P	2009-12-31	2008-12-31	2008-12-31
+
+Where the 'Src' column shows the Source of the values as follows:
+•	P	Posting or Import
+•	PE	Prior year End value as Start for a startend Bro
+•	R	Restated Orignal Value - included in 'b' Base Sum and 'd' Restated Amount Sum
+•	S	Summed
+•	SE	Sum End calculation for a startend Bro of type SumEnd
+•	b	Base (no dims) value = sum of the primary dimension values for the Bro
+•	t	Base (no dims) value for a Tuple
+•	d	Dimension summing value as per the Dimensions Map
+•	e	dErived or dEduced value
+•	i	Intermediate dimension for a posting with multiple dimensions
+•	r	Restated Orignal Value - included in 'd' Restated Amount Sum
+
+An upper case Source code indicates that this is a Primary entry. In the case of Summing Bros a Primary entry is one which contributes to the Bro's Base total i.e. its no dimensions value. Lower case codes are for information values derived from the primary values.
+A prefix of 'm' means that the value has been copied from the Master, which also means that the Bro in question is a Slave Bro.
+'i' and 't' codes can appear after a Primary code when a combination is involved.
+If different Source codes apply in different years, the column contains a comma separated list for all years, otherwise a single code is shown which applies to all years.
+
+
+The import has been completed without errors or warnings.
+Bro 6136 PostType DE, Element, Summing, Tuple, has Base, has 21 DiMes, includes Primary data
+NormaBase Dat= 110010
+Key=3 Dat=110010 Dat2=, Srce=b Ref=6136 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType
+Key=4,73 Dat=110010 Dat2=, Srce=d Ref=6136,73 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,Restated.Amount
+Key=4,74 Dat=10 Dat2=, Srce=d Ref=6136,74 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,Restated.PriorPeriodIncr
+Key=4,75 Dat=10 Dat2=, Srce=i Ref=6136,75 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,Restated.AcctPolicyIncr
+Key=4,77 Dat=110000 Dat2=, Srce=r Ref=6136,77 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,Restated.OriginalAmount
+Key=4,209 Dat=110010 Dat2=10, Srce=di Ref=6136,209 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.Total
+Key=4,209,73 Dat=110010 Dat2=, Srce=d Ref=6136,209,73 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.Total,Restated.Amount
+Key=4,209,74 Dat=10 Dat2=, Srce=d Ref=6136,209,74 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.Total,Restated.PriorPeriodIncr
+Key=4,209,75 Dat=10 Dat2=, Srce=d Ref=6136,209,75 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.Total,Restated.AcctPolicyIncr
+Key=4,209,77 Dat=110000 Dat2=, Srce=r Ref=6136,209,77 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.Total,Restated.OriginalAmount
+Key=4,210 Dat=110010 Dat2=10, Srce=di Ref=6136,210 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.TotalThisTypeExclMedical
+Key=4,210,73 Dat=110010 Dat2=, Srce=d Ref=6136,210,73 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.TotalThisTypeExclMedical,Restated.Amount
+Key=4,210,74 Dat=10 Dat2=, Srce=d Ref=6136,210,74 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.TotalThisTypeExclMedical,Restated.PriorPeriodIncr
+Key=4,210,75 Dat=10 Dat2=, Srce=d Ref=6136,210,75 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.TotalThisTypeExclMedical,Restated.AcctPolicyIncr
+Key=4,210,77 Dat=110000 Dat2=, Srce=r Ref=6136,210,77 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.TotalThisTypeExclMedical,Restated.OriginalAmount
+Key=4,211 Dat=10 Dat2=, Srce=i Ref=6136,211 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1
+Key=1001,3 Dat=45010 Dat2=, Srce=t Ref=6136,T.1 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,T.1
+Key=1001,4,211 Dat=45000 Dat2=45010, Srce=Pt Ref=6136,211,T.1 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,T.1
+Key=1001,4,211,73 Dat=45010 Dat2=, Srce=d Ref=6136,211,73,T.1 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,Restated.Amount,T.1
+Key=1001,4,211,74 Dat=10 Dat2=, Srce=d Ref=6136,211,74,T.1 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,Restated.PriorPeriodIncr,T.1
+Key=1001,4,211,75 Dat=10 Dat2=10, Srce=P Ref=6136,211,75,T.1 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,Restated.AcctPolicyIncr,T.1
+Key=1001,4,211,77 Dat=45000 Dat2=, Srce=r Ref=6136,211,77,T.1 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,Restated.OriginalAmount,T.1
+Key=1002,3 Dat=65000 Dat2=, Srce=t Ref=6136,T.2 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,T.2
+Key=1002,4,211 Dat=65000 Dat2=65000, Srce=P Ref=6136,211,T.2 PensionSchemes.DefinedBenefit.ComponentsAssets.OtherAssetsHeld.InPercentage.ValueType,PensionSchemes.1,T.2
+Data Import
+
+Select the File to import OR paste the Import Data below and click Import
+AAAAA 222.txt
+AAAAA 3019.txt
+AAAAA AuditFees.txt
+AAAAA Cash.txt
+AAAAA CashDims.txt
+AAAAA CashMove.txt
+AAAAA CashMove2648.txt
+AAAAA CashMoveDims.txt
+AAAAA CashMoveNotEqual.txt
+AAAAA CashODraft.txt
+AAAAA Creditors.txt
+AAAAA IFA.txt
+AAAAA NetDebtCFlow.txt
+AAAAA Stock 1.txt
+AAAAA Stock 2.txt
+AAAAA Stock 3.txt
+AAAAA Test.txt
+AAAAA Worked TB.txt
+ADIErrors.txt
+ATest.txt
+DE Stock Test.txt
+Donations Restated.txt
+Donations.txt
+Import 120622.txt
+Import 120813.txt
+Import 120818.txt
+Import 120823.txt
+Import Complete.txt
+Import Restated.txt
+Import.txt
+Pensions Restated.txt
+Pensions.txt
+StartEndDESch-TB+Duration.txt
+StartEndDESch-TB.txt
+
+Debug option: (Nothing to use import comammnd setting, 0-3 to override the import setting.)
+
+Done in 135 msecs
+Top
+
+Home
+
+
+Home
+Home

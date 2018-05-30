@@ -1,0 +1,225 @@
+/Doc/DBs/Braiins RG DB.txt
+==========================
+
+Report Generator Tables
+=======================
+
+29.03.11 Started
+03.05.11 RgImportNames dropped. Table replaced by ImportName in RgNames
+19.05.11 RgNames Context -> enum, RgContexts and RgSapaRefs tables dropped
+28.05.11 RgNames: Added Hypercubes, removed Level key
+01.06.11 Removed RgNames.Hypercubes following addition of Elements.Hypercubes
+04.06.11 RgNames renamed Bros - Braiins Report Objects
+         RgNamesToZones renamed BROsToZones
+08.06.11 Dropped RgTupleNames and BroInfo.TupleNameId
+         Dropped BROsToZones and changed BroInfo.Zones to string to store Zones.Id's
+         Renamed RgZones to Zones
+xx.07.11 BroInfo changes re inheritance and dimensions handling
+18.07.11 Added Zones.AllowPropDims
+xx.10.11 BroInfo revised for removal of inheritance, addition of TupleID, Bits made not null
+xx.11.11 Bros revised for Tuples rework and switch to SS maintenance system
+03.12.11 BroInfo.TupleTxIds reduced to just Ids, with TupleUCNs and TupleOrds added
+17.12.11 BroInfo.SeTypeN and BroInfo.SeBroIds added
+25.12.11 BroInfo.SeTypeN -> BroInfo.InTypeN
+27.12.11 BroInfo.InTypeN -> BroInfo.InBits
+01.03.12 BroInfo.ShortName and BroInfo.Ref added
+02.03.12 BroInfo.ShortName removed
+24.05.12 Slave related cols added and comments expanded
+01.06.12 Scratch and RowComments cols added
+         TupIds -> TupId and moved to after Hys so that three items now involved in determining a bros uniqueness (TxId, Hys, TupId) are together.
+24.06.12 ShortName restored
+20.08.12 ExclPropDims,InclDims,DiMeId removed from Slave inherited properties. Now always null.
+08.09.12 CheckId -> CheckTest
+26.09.12 Removed InBits - bits now in Bits
+25.10.12 BROs table renamed BroInfo
+06.02.13 Extended ExclPropDims and AllowPropDims length from 6 to 9 and then again to 20 on 07.02.13
+15.02.13 Removed BDMaps
+15.02.13 ContextN -> PeriodSEN, SeBroIds removed
+
+Tables are part of the applicable Taxonomy DB
+
+Tables
+------
+BroInfo
+Zones
+
+#############
+## BroInfo ## Braiins Report Object Info
+#############
+# Type: Master but does not use the std master bits, no EdiT
+CREATE TABLE IF NOT EXISTS BroInfo (     #   S E s V
+Id mediumint unsigned not null auto_increment,#xxx x Id set by Bros Import - can have gaps.
+  Name       varchar(300)      not null, #   m m m m Full BRO Name including dot sections for levels > 0.
+  Level      tinyint  unsigned not null, #   x x x x 0 for top level BT_Set, +1 for each additional level derived from name. Can be different for a Slave from its Master
+  DadId     mediumint unsigned not null, #   - x x x BroInfo.Id of Parent if Bro has a parent = all except Level 0 Sets
+  Bits      mediumint unsigned not null, #   x x x x Bits as per the BroB_ constants
+# Type                                               Stored using Bits BroB_Set, BroB_Ele, BroB_Slave, BroB_Master
+# PostType                                   b b b p Stored for Money Bros using Bit BroB_DE. Set if is a DE or CoA type. Unset = Schedule
+# RO                                         n n n R Stored using Bit BroB_RO. Default is Off = Posting Bro. Set for a Report Only Bro usable for reporting but not for posting i.e. is Non-Posting
+# NoTags                                   t o o o o Stored using Bit BroB_NoTags. Can be set for a Bro with TxId to tell RG not to generate tags for this Bro = duplicate TxId.HyId{.TupId} allowed
+# Except                                   h b b b I Stored using Bit BroB_Except. Set if is for an exceptional item re Dim 5 ExceptionalItemsAdjustmentsDimension
+# Amort                                    h b b b I Stored using Bit BroB_Amort.  Set if is for amortisation etc    re Dim 6 AmortisationImpairmentAdjustmentsDimension
+  DataTypeN  tinyint  unsigned not null, #   m m m I BRO Data Type enum DT_String | DT_Money etc Can be DT_None for Non Tx set.
+  AcctTypes  char(4)           not null, #   m m m p List of Account Type enums in chr list form. Max # per Bro = 4.
+  SumUp      tinyint  unsigned not null, #   n n n n BroSumUp_None (not a summing Bro) | BroSumUp_Yes | BroSumUp_No | BroSumUp_NA. Default is BroSumUp_Yes for a summing Bro with a dad of same type.
+  TxId       smallint unsigned     null, # t o o o = Tx Elements.Id - null = non taxonomy based Bro.
+  Hys        char(4)               null, # h o o o s Chr list of hypercube Ids for <members of this set|this element>. Can have wo TxId. Required if Tx based. Can only be more than 1 for a Set Bro.
+  TupId      tinyint  unsigned     null, # t u u u = TupId (TuplePairs.TupId) which can be used with the Bro. 1 to 158
+  SignN      tinyint  unsigned     null, #   b b b I BS_* enum  - BS_None (null) if not Money; BS_Dr | BS_Cr | BS_Either if Money
+  ShortName  varchar(48)           null, #   o o o o Bro short name. Name if null. Must be unique - to be enforced by BrosImport.php
+  Ref        varchar(48)           null, #   o o o p Beference as to source in user's AP system e.g. NL, Memo or ReportPad name for SAPA users; to be extended to cover other AP systems as we add them.
+  PeriodSEN  tinyint  unsigned     null, #   y y y y Period and StartEnd enum, blank -> BPT_Duration. BPT_Duration, BPT_Instant, BPT_InstSumEnd, BPT_InstPostEnd, BPT_InstStock
+  ExclPropDims   char(20)              null, # h o o o f Chr list of dimension Ids that the Bro cannot use. Requires HyId. Usable Dims list = Hy Dims - ExclPropDims /- Mux
+  AllowPropDims  char(20)              null, #   o o o f Chr list of dimension Ids that Tx or non-Tx Bros can use. Forms the Usable Dims list for such Bros.     |
+  PMemDiMesA  varchar(100)          null, #   o o o f Bro DiMe overrides in PMemDiMesA stored in json form, details below.
+  MasterId  mediumint unsigned     null, #   - - - m BroInfo.Id of a Master Bro of which this Bro is a Slave.
+  CheckTest  varchar(12)           null, #   o o o o TPYtargetBroId as described below
+  SortOrder  tinyint  unsigned     null, #   - o o o Optional listing order within a set - 1 to 255, Id order o'wise
+  Zones      char(10)              null, #   o o o p List of Zones.Id's of Zones where Bro use allowed, in chr list form. Max # per Bro = 2
+  Descr      varchar(400)          null, #   o o o p Text or Braiins master description for output in accounts. Std label if null
+  Scratch    varchar(500)          null, #   o o o o Comment free text not played back in Bros List or Lookup. Just for temporary Import/Export use.
+  Comment    varchar(500)          null, #   o o o o Comment free text
+  SlaveIds   varchar(120)          null, #   x x x - CS list of BroInfo.Ids of Slaves of this Bro. Allows for up to 20. Only applicable to Masters.
+  SlaveYear  tinyint  unsigned     null, #         o Year for a Slave 1-3 or nothing if not an Ele Slave Bro. Only applicable to Ele Slaves.
+  UsableDims varchar(20)           null, # h x x x x Chr list of the Usable or Allowable or Permitted Dims for the Bro
+                                         #           Is unset for an Ele Slave unless slave filtering by UsableDims (not just DiMes) is in use. UsableDims rather than Hy, ExclPropDims, AllowPropDims because an Hy subset e.g. 1 vs 13 could be cancelled out by ExclPropDims 3,48 use in the Master -> no filtering.
+                                         #           Remains set for a Set Slave re summing and SumUsablePropDims of any non-slave set members.
+  RowComments text                 null, #   o o o o Preceeding SS comment rows incl blank ones  separated. Plus  separated set of row comments if last Bro in the import for trailing SS comment rows.
+                                         #           row comment{row comment...}{row comment{row comment...}}
+                                         # | |   | |- = can be input as part of matching or not; s means can be input as part of matching or otherwise & can be a subset Hy of the Master; R means fixed RO for slave
+                                         # | |---|
+  Primary Key (Id),  # Unique              | |usage as below
+   Unique Key (Name) # Uniqueness of Bro names is checked by BrosImport.
+) Engine = InnoDB DEFAULT CHARSET=utf8;  # |- t if Tx based requiring a TxId, h if at least hys are required
+
+
+Bro DiMe Overrides as of 13.09.12
+------------------
+PMemDiMesA =  Bro DiMes Overrides array [i => MandatsA, DefaultsA, ExcludesA, AllowsA]
+MandatsA  = i array of Mandatory DiMes, Dim in Bro Usable Dims or DiMe in AllowsA, only one per Dim, Mux with Defaults and Excludes
+DefaultsA = i array of Default   DiMes, Dim in Bro Usable Dims or DiMe in AllowsA, only one per Dim, Mux with Mandats  and Excludes
+ExcludesA = i array of Exclude   DiMes,  Dim in Bro Usable Dims, Mux with Mandats, Defaults, and Allows
+AllowsA   = i array of Allow     DiMes, Dim in Bro ExclPropDims,  Mux with Excludes
+
+ExcludesA and AllowsA are allowable for Slave filter use.
+
+DiMeId in use prior to 13.09.12
+
+  DiMeId     smallint              null, #   o o o p - Fixed (Mandatory): If +ve is a fixed DiMeId that the element must use e.g. 148 IFAClasses.DevelopmentCosts for IFAs, stored in DB and in $BroInfoA as the +ve DiMeId
+                                         #             Default: If have leading d in source means default DiMeId stored in DB and in $BroInfoA as the -ve DiMeId
+                                         #             Exclude: If -ve in source and the DiMe does not have a Mux List = DiMe that the Bro cannot use e.g. -423 CoSec for Directors and PartnerLLPs
+                                         #                      "  "   "  "      "   "   "    does have a Mux List then it is the Mux List which the Bro cannot use e.g. -1293 excludes 1295,1296,1297
+                                         #                      Stored in DB as the -ve DiMeId - 10000 and in $BroInfoA as an array of either the single +ve DiMeId or the mux list.
+                                         #             Only the exclude case for Tx DiMes is valid for a BD Map, Fixed, Default, and BD Exclude applying to Main and not inherited by the BD Map.
+                                         #             Actually if a Main Bro excludes a BD there is no need for the BD Map at all, but that would be such an unusual case there is no need to enforce it.
+
+CheckTest
+---------
+Format:
+ TPYtargetBroId
+where
+ T is a one letter code to define the Type of check:
+  E : Test is Equal
+  O : Test is equal and Opposite
+ P is a one letter code to define when the check is to be Performed:
+  E : if Either Bro(Ref) has a value (was always this before 07.09.12)
+  B : if Both Bro(Ref)s have a value
+  C : if the Check Bro has a value
+  T : if the Target BroRef has a value
+ Y is digit 0-3 to indicate the relative year, default 0
+ targetBroId is the BroId of the target
+  (Prior to 06.11.12 a targetBroRef to include a BD DiMeId for a BD Map reference e.g. bbbb,1292 was allowed.)
+In source form:
+TargetBroId <Equal To | Equal & Opp To>{ <Either | Both | Check | Target>}{ Year#} TargetBroId Name
+with no P part defaulting to Either.
+
+
+where
+Map = Braiins Dimension Bro Map
+Top Row:
+ S = Set
+ E = Element
+ s = Set member of a Set
+ V = slaVe - can be Ele or Set
+Rows:
+b = Mandatory for a balance (money) type i.e. DataTypeN = DT_Money
+f = optional as a slave Filter
+m = Mandatory or inherited from Master in case of sLave col
+n = Mandatory for DB but optional for import - set to default if not supplied.
+I = Inherited from Master for a Slave
+i = Inherited from Dad if not supplied or obtainable from Tx (SignN). Warning issued if different in Context case.
+o = Optional
+p = oPtional, inherited from Main   in case of Map   if not defined for Map
+p = oPtional, inherited from Master in case of slave if not defined for slave
+s = Required for slave
+x = Set by Import
+y = Set by Import for a TxId Bro
+u = TupId which is mandatory if the TxId is a member of a tuple i.e. TxId = one or more TuplePairs.MemTxId's
+    In the cases where there is only one tuple member (TuplePairs.MemTxId) with TxId (most) then TupId can be an x property set by Import.
+    In the cases where the TxId/HyId pair indentifies one tuple member (TuplePairs.MemTxId) as per $TupIdsByMemberTxIdAndHyIdGA then TupId can be an x property set by Import.
+    Only in the remaining cases will TupId have to be input to uniquely identify the Bro. The cases are:
+    TxId Tuples TupId/TupTxId       Hypercubes
+    1324   46,  47                     1
+         2093,2118                     1
+    1448   46,  47                     1
+         2093,2118                     1
+    1563    3,  22,  46,  51,  52      1
+          162,1063,2093,2585,2595      1
+    1608  130, 131                     27
+         4440,4441                     27
+    3878   46,  47                     1
+         2093,2118                     1
+    4617    8,  13,  82, 192, 115, 126 1
+          500, 868,3546,3761,4293,4433 1
+
+
+Bits as per ConstantsRg.inc
+
+Level 0 names must be in NCname form i.e. start with a letter
+Level 1 and lower names may start with a digit or be purely numeric
+
+See also
+
+Bros re Dimensions: See doc Dimensionhandling.txt
+
+Example
+Total Costs                          Admin                                                   CoS                                           Distrib
+[C] 350 Bad debts written off costs  [C] 348 Bad debts written off, administrative expenses  [C] 349 Bad debts written off, cost of sales  [C] 351 Bad debts written off, distribution costs
+
+PL.Expenses.BadDebts
+PL.Expenses.BadDebts:ExpenseType.Admin
+PL.Expenses.BadDebts:Function.Cos
+PL.Expenses.BadDebts:ExpenseType.Distrib
+
+###########
+## Zones ## Braiins Report Zones which are referenced by Bros to define where Bros are usable ++
+###########
+# Type: Master, no Bits
+CREATE TABLE IF NOT EXISTS Zones (
+  Id        smallint unsigned not null auto_increment,
+  Ref       varchar(15)       not null,
+  SignN     tinyint  unsigned     null, # Expected sign of the zone - BS_None (null) | BS_Dr | BS_Cr
+  Descr     varchar(80)           null, # A description of the zone. Not used by the RG
+  AllowPropDims char(12)              null, # Dimensions allowed chr list. No list = no restriction apart from the global ones and of any BRO being used.
+  # sys stuff
+  EditT   timestamp not null default 0,
+  AddT    timestamp not null default 0,
+  Primary Key (Id),   # unique
+   Unique Key (Ref)   # unique
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+
+###########
+## DBLog ## As per Braiins.DBLog with MId reduced from mediumint to smallint
+###########
+CREATE TABLE IF NOT EXISTS DBLog (
+  Id    mediumint unsigned not null auto_increment,
+  AppN  tinyint   unsigned not null, # Enum of Application making the change: APP_Admin, APP_Braiins, APP_BDT
+  TypeN tinyint   unsigned not null, # Record type: DBLOG_Insert, DBLOG_Update, DBLOG_Delete, DBLOG_Delete_GarbageCollect
+  MemId smallint  unsigned not null, # Id of the Member making the change, 0 for a system op or when not logged in
+  MId   smallint  unsigned not null, # Id of the Master record in Mensa being changed
+  Mensa varchar(20)        not null, # Name of the Table involved
+  `Set` text                   null, # The Set portion of the insert/update query as a single entry per insert/update
+  AddT  timestamp not null default 0,
+  Primary Key (Id)
+) Engine = InnoDB DEFAULT CHARSET=utf8;
+

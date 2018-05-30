@@ -1,0 +1,106 @@
+; sr32.dtx
+
+; UK Gaap Taxonomy
+
+; Notes
+; =====
+
+; File format:
+; - The parameter file can have any name but must be a text file.
+; - Blank lines or lines which start with ';' or '//' are ignored.
+; - All active lines other than search/replace list lines start with a key that ends with a ':' to define their
+;   purpose.
+; - The parameters may occur in any order, except that 'base dir:' and 'mask:' options apply only to file
+;   and/or directory lines that follow them in the parameter file.
+; - Multiple items on a line are separated by 2 or more spaces.
+; - Comments may be added at the end of a line, after a gap of 2 or more spaces.
+; - Quotes can be used to surround items that contain 2 or more spaces, and/or have leading/trailing spaces.
+; - Leading and trailing spaces are ignored, unless the item is enclosed in quotes.
+;
+; Options
+; -------
+; - All options are optional i.e. the default is used if the option is not specified.
+; - Case is not significant, except in masks when accessing a Linux/Unix machine.
+; - All masks may be composed of multiple comma separated masks e.g. *.php,*.htm of up to 80 characters in total.
+;
+; Option     Valid   Def  Comments
+;            Values  ault
+; base dir:  dddddd   ""  Specifies a base (or root) directory which is prepended to subsequent file names
+;                         in File Lines and to directory names in Directory Lines which start with ".".
+;                         Sr32 adds or removes '/' or '\' characters as necessary. This option can be used
+;                         multiple times to apply to different groups of files or directories.
+; case:      y/n      y   y causes a case sensitive search, n a case insensitive search. The case of replace
+;                           items is not affected - they are applied as in the search/replace list.
+; corp:      y/n      y   re :c: or :n: search lines intended for use with H.A (FAPP) formats - see below.
+; file type: s/w/u/m  a   Specifies how individial lines are terminated in a modified file.
+;                          s = Same as the input file type, automatically detected during reading
+;                          w = Windows/DOS i.e. CRLF pair
+;                          u = Unix/Linux i.e. LF
+;                          m = Mac i.e. CR
+; mask:      mmmmmm   *.* This wildcard mask of up to 80 characters is applied to any directories in the list
+;                         of directories following the option, unless the directory line includes its own mask.
+;                         This option can be used multiple times to apply to different groups of directories.
+; prompt:    y/n      n   y causes prompting for each replace. (There is always a prompt re saving of modified
+;                           files.)
+; save ftc:  y/n      n   y causes the save file option to be provided even if the only change to the file
+;                           is to the file type. 'ftc' stands for 'file type change'.
+; skip //:   y/n      n   y causes search/replace operations to be skipped in '//' type comments
+; word:      y/n      y   y causes the search to be on a whole 'word' basis, with 'words' delineated by:
+;                           - start: start of line, or if the previous character is a non alnum character
+;                                    except for '_', or if the first search character is non alnum
+;                           - end:   end of line, or if the next character is a non alnum character
+;                                    except for '_', or if the last search character is non alnum
+
+; File Lines
+; ----------
+; file: file name
+
+; - If the file name starts with "." the current base directory (see base dir: option above) is prepended to
+;   the file name in place of the ".".
+; - Files named individually are processed before files found via the directories list. They are not processed
+;   a second time if they are also found via the directories list.
+
+; Directory Lines
+; ---------------
+; dir: directory  {optional mask, *.* or current 'mask:' option used o'wise. Must be included if a comment is to follow on the line}
+
+; - If the directory name starts with "." the current base directory (see base dir: option above) is prepended
+;   to the directory name in place of the ".".
+
+; Search/Replace List Lines
+; -------------------------
+; search item  replace text  optional comment
+
+; - 'replace' text is always inserted as in these lines i.e. with case preserved.
+; - Search/Replace List Lines which start :c: are Corporate only and are skipped if the 'corp' option is 'n'
+; - Search/Replace List Lines which start :n: are uNincorp  only and are skipped if the 'corp' option is 'y'
+
+case:      y
+word:      y
+mask:      *.xsd,*.xml
+skip //:   n
+prompt:    n  
+file type: u
+save ftc:  y
+
+base dir: B:/Admin/Taxonomies/uk-gaap
+dir: .
+dir: ./all
+dir: ./all/common
+dir: ./all/gaap-ref
+dir: ./all/ref
+dir: ./all/types
+dir: ./cd/business
+dir: ./cd/countries-regions
+dir: ./cd/currencies
+dir: ./cd/exchanges
+dir: ./cd/languages
+dir: ./gaap/core
+dir: ./reports/aurep
+dir: ./reports/direp
+
+; 21.03.11
+/2009-09-01/  /
+/2009-09-01"  """
+-2009-09-01-  -
+-2009-09-01.  .

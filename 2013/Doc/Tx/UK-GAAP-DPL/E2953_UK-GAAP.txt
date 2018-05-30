@@ -1,0 +1,1958 @@
+Element Lookup for 2953 UK GAAP
+===============================
+Property	  Value
+Elements.Id	2953
+Name	      ItemsInheritingOperatingActivitiesDimension
+Type	      Abstract
+Namespace	  uk-gaap (http://www.xbrl.org/uk/gaap/core/2009-09-01)
+Data Type	  String
+Substitution Group	Item
+Period	    Duration
+Balance   	Not set
+Nillable	  true
+Labels
+Standard Label	Items inheriting Operating Activities dimension
+Documentation	  Groups items inheriting particular dimensions. Not for use in reporting.
+References
+Reference	     Name  Dimensions grouping item
+Trees
+Type
+Definition: Hypercube dimension members required by source (dimension-all)	
+680 - Hypercube - Operating Activities [13]
+  [A] 2953 Items inheriting Operating Activities dimension
+    [A] 3400 Operating activities [Hypercube]
+
+Definition: Domain contains member (domain-member)
+680 - Hypercube - Operating Activities [13]
+  [A] 2953 Items inheriting Operating Activities dimension
+    [A] 2618 Income items inheriting Operating Activities dimension
+      [C] 3681 [13] [Money Dr Duration] Other unexceptional operating costs
+        [C] 1506 [13] [String Duration] Description of other unexceptional operating cost
+        [C] 213 [13] [Money Dr Duration] Amount of other unexceptional operating cost
+      [C] 973 [1,13] [String Duration] Continuing and discontinued operations free-text comment
+    [A] 551 Cash flow items inheriting Operating Activities dimension
+      [C] 560 [13] [Money Ns Duration] Cash flow (outflow) from operating activities
+        [C] 4774 [13] [Money Dr Duration] Total depreciation, amortisation and impairment charges
+        [C] 4775 [13] [Money Dr Duration] Total depreciation charges, net of profit or loss on disposals
+        [C] 1221 [13] [Money Ns Duration] Decrease (increase) in stocks
+        [C] 1214 [13] [Money Ns Duration] Decrease (increase) in debtors
+        [C] 1220 [13] [Money Ns Duration] Decrease (increase) in provisions
+        [C] 2654 [13] [Money Ns Duration] Increase (decrease) in creditors
+        [C] 583 [13] [Money Ns Duration] Cash surplus (deficit) from difference between pension charge and cash contribution
+        [C] 552 [13] [Money Ns Duration] Cash flow (outflow) arising from restructuring
+        [C] 170 [13] [Money Ns Duration] Amortisation / impairment of interests in own shares
+        [C] 561 [13] [Money Ns Duration] Cash flow (outflow) from other sources
+        [C] 2277 [3,13] [Money Cr Duration] Gain (loss) from disposal of tangible fixed assets
+        [C] 2273 [4,13] [Money Cr Duration] Gain (loss) from disposal of intangible fixed assets
+        [C] 4158 [13] [String Duration] Reconciliation of operating profit to cash flows free-text comment
+      [A] 570 Cash flow statement items [heading]
+        [A] 3264 Net cash flow (outflow) from management of liquid resources [heading]
+          [C] 3315 [13] [Money Ns Duration] Net reduction (increase) in short-term deposits
+            [C] 3316 [13] [Money Ns Duration] Net reduction (increase) in term deposits
+              [C] 2914 [13] [Money Ns Duration] Investment in term deposits
+              [C] 5087 [13] [Money Ns Duration] Withdrawal from term deposits
+            [C] 3313 [13] [Money Ns Duration] Net reduction (increase) in certificates of deposits
+              [C] 4093 [13] [Money Ns Duration] Purchase of certificates of deposit
+              [C] 4306 [13] [Money Ns Duration] Sale of certificates of deposit
+            [C] 3314 [13] [Money Ns Duration] Net reduction (increase) in other deposits
+              [C] 2911 [13] [Money Ns Duration] Investment in other deposits
+              [C] 5086 [13] [Money Ns Duration] Withdrawal from other deposits
+          [C] 3319 [13] [Money Ns Duration] Net sale (purchase) of listed securities
+            [C] 4099 [13] [Money Ns Duration] Purchase of listed securities
+              [C] 4097 [13] [Money Ns Duration] Purchase of government securities
+              [C] 4094 [13] [Money Ns Duration] Purchase of corporate bonds
+            [C] 4312 [13] [Money Ns Duration] Sale of listed securities
+              [C] 4310 [13] [Money Ns Duration] Sale of government securities
+              [C] 4307 [13] [Money Ns Duration] Sale of corporate bonds
+          [C] 3321 [13] [Money Ns Duration] Net sale (purchase) of unlisted securities
+            [C] 4106 [13] [Money Ns Duration] Purchase of unlisted securities
+            [C] 4320 [13] [Money Ns Duration] Sale of unlisted securities
+          [A] 164 Alternative subtotals [heading]
+            [C] 4323 [13] [Money Ns Duration] Sales of current asset investments / Disposals and redemptions of liquid resources
+              [C] 4317 [13] [Money Ns Duration] Sale of securities
+              [C] 4189 [13] [Money Ns Duration] Reduction in short-term deposits
+            [C] 4095 [13] [Money Ns Duration] Purchase of current asset investments / Acquisition of liquid resources
+              [C] 4103 [13] [Money Ns Duration] Purchase of securities
+              [C] 2759 [13] [Money Ns Duration] Increase in short-term deposits
+            [C] 3320 [13] [Money Ns Duration] Net sale (purchase) of securities
+              [C] 4103 [13] [Money Ns Duration] Purchase of securities
+              [C] 4317 [13] [Money Ns Duration] Sale of securities
+            [C] 3305 [13] [Money Ns Duration] Net other cash flows (outflows) from management of liquid resources
+              [C] 3621 [13] [Money Ns Duration] Other outflows from management of liquid resources
+              [C] 3563 [13] [Money Ns Duration] Other inflows from management of liquid resources
+          [C] 1613 [13] [String Duration] Description of what is included in liquid resources and any change of policy
+          [C] 3263 [13] [String Duration] Net cash flow (outflow) from management of liquid resources free-text comment
+        [C] 557 [13] [Money Ns Duration] Cash flow (outflow) from financing
+          [C] 3308 [13] [Money Cr Duration] Net proceeds from issue of debentures, loans, notes, bonds and other long term instruments
+          [C] 3309 [13] [Money Cr Duration] Net proceeds from issue of shares and other equity instruments, excluding shares issued to minority interests
+            [C] 3973 [13] [Money Cr Duration] Proceeds from issue of shares and other equity instruments, excluding shares issued to minority interests
+            [C] 1975 [13] [Money Dr Duration] Expenses or commissions on issue of shares and other equity instruments, excluding shares issued to minority interests
+          [C] 3974 [13] [Money Cr Duration] Proceeds from issue of shares to minority interests
+          [C] 3284 [13] [Money Cr Duration] Net increase (decrease) in borrowings
+            [C] 2757 [13] [Money Cr Duration] Increase in borrowings
+            [C] 4223 [13] [Money Dr Duration] Repayment of borrowings
+            [C] 3298 [13] [Money Cr Duration] Net increase (decrease) in short-term borrowings
+              [C] 3326 [13] [Money Cr Duration] New short-term borrowings
+              [C] 4228 [13] [Money Dr Duration] Repayment of short-term borrowings
+            [C] 3289 [13] [Money Cr Duration] Net increase (decrease) in long-term borrowings
+              [C] 3323 [13] [Money Cr Duration] New long-term borrowings
+                [C] 3324 [13] [Money Cr Duration] New secured loans
+                  [C] 1468 [13] [String Duration] Description of new secured loan
+                  [C] 5014 [13] [Money Cr Instant] Value of new secured loan
+                [C] 3327 [13] [Money Cr Duration] New unsecured loans
+                  [C] 1469 [13] [String Duration] Description of new unsecured loan
+                  [C] 5015 [13] [Money Cr Instant] Value of new unsecured loan
+              [C] 4226 [13] [Money Dr Duration] Repayment of long-term borrowings
+                [C] 4227 [13] [Money Dr Duration] Repayment of secured loans
+                [C] 4229 [13] [Money Dr Duration] Repayment of unsecured loans
+          [C] 505 [13] [Money Dr Duration] Capital element of finance lease rental payments
+          [C] 3975 [13] [Money Cr Duration] Proceeds (outgoings) on sale and lease back of plant and machinery
+          [C] 3307 [1,13] [Money Dr Duration] Net payments for reacquisition or redemption of shares
+          [C] 4181 [13] [Money Dr Duration] Redemption of debentures, loans, notes, bonds and other long term instruments
+          [C] 4182 [13] [Money Dr Duration] Redemption of minority interests
+          [C] 4256 [1,13] [Money Dr Duration] Return of surplus capital to shareholders
+          [C] 3637 [13] [Money Ns Duration] Other proceeds which contribute to cash flow from financing
+          [C] 3635 [13] [Money Ns Duration] Other payments which contribute to cash outflow from financing
+        [C] 554 [13] [Money Ns Duration] Cash flow (outflow) from acquisitions and disposals
+          [C] 3306 [13] [Money Ns Duration] Net payments for acquisitions
+            [C] 577 [13] [Money Ns Duration] Cash payments
+            [C] 576 [13] [Money Ns Duration] Cash (overdrafts) acquired
+          [C] 3312 [13] [Money Ns Duration] Net receipts from disposals
+          [C] 3274 [13] [Money Ns Duration] Net cash receipts (payments) from purchase and sale of subsidiaries
+            [C] 3269 [13] [Money Ns Duration] Net cash payments to acquire subsidiaries
+              [C] 2931 [13] [Money Ns Duration] Issue of shares of subsidiaries to minority interests
+              [C] 3265 [13] [Money Dr Duration] Net cash (overdrafts) acquired with subsidiaries
+                [C] 537 [13] [Money Ns Duration] Cash acquired with subsidiaries, cash flow
+                [C] 383 [13] [Money Ns Duration] Bank overdrafts acquired with subsidiaries, cash flow
+            [C] 3272 [13] [Money Ns Duration] Net cash receipts on sale of subsidiaries
+              [C] 3267 [13] [Money Cr Duration] Net cash (overdrafts) disposed of with subsidiaries
+                [C] 545 [13] [Money Ns Duration] Cash disposed of with subsidiaries, cash flow
+                [C] 386 [13] [Money Ns Duration] Bank overdrafts disposed of with subsidiaries, cash flow
+          [C] 3273 [13] [Money Ns Duration] Net cash receipts (payments) from purchase and sale of joint-ventures and associates
+            [C] 4757 [13] [Money Ns Duration] Total cash payments to acquire joint-ventures and associates
+            [C] 4758 [13] [Money Ns Duration] Total cash receipts on sale of joint-ventures and associates
+              [C] 580 [13] [Money Ns Duration] Cash receipts on sale of joint-ventures
+              [C] 579 [13] [Money Ns Duration] Cash receipts on sale of associates
+          [C] 3275 [13] [Money Ns Duration] Net cash receipts (payments) from purchase and sale of trades and businesses
+            [C] 3270 [13] [Money Ns Duration] Net cash payments to acquire trade or business
+              [C] 578 [13] [Money Ns Duration] Cash payments to acquire trades or businesses
+              [C] 3266 [13] [Money Dr Duration] Net cash (overdrafts) acquired with trades and businesses
+                [C] 538 [13] [Money Dr Duration] Cash acquired with trades and businesses
+                [C] 3692 [13] [Money Cr Duration] Overdrafts acquired with trades and businesses
+            [C] 3271 [13] [Money Ns Duration] Net cash receipts from sale of trade or business
+              [C] 581 [13] [Money Ns Duration] Cash receipts on sale of trades or businesses
+              [C] 3268 [13] [Money Cr Duration] Net cash (overdrafts) disposed of with trades or businesses
+                [C] 546 [13] [Money Cr Duration] Cash disposed of with trades or businesses
+                [C] 3693 [13] [Money Dr Duration] Overdrafts disposed of with trades or businesses
+          [C] 1040 [13] [Money Ns Duration] Costs of disposals
+          [C] 1037 [13] [Money Ns Duration] Costs of acquisitions
+          [C] 1229 [13] [Money Ns Duration] Deferred payments for acquisitions in prior periods
+          [C] 1230 [13] [Money Ns Duration] Deferred receipts for sales in prior periods
+          [C] 3595 [13] [Money Ns Duration] Other net cash payments for acquisitions
+          [C] 3596 [13] [Money Ns Duration] Other net cash receipts from disposals
+        [C] 555 [13] [Money Ns Duration] Cash flow (outflow) from capital expenditure and financial investment
+          [C] 4096 [13] [Money Ns Duration] Purchase of fixed asset investments
+          [C] 4309 [13] [Money Ns Duration] Sale of fixed asset investments
+          [C] 4104 [13] [Money Ns Duration] Purchase of tangible fixed assets
+          [C] 4318 [13] [Money Ns Duration] Sale of tangible fixed assets
+          [C] 4098 [13] [Money Ns Duration] Purchase of intangible fixed assets
+          [C] 4311 [13] [Money Ns Duration] Sale of intangible fixed assets
+          [C] 4105 [13] [Money Ns Duration] Purchase of trade investments
+          [C] 4319 [13] [Money Ns Duration] Sale of trade investments
+          [C] 3125 [13] [Money Ns Duration] Loans to other entities
+          [C] 4308 [13] [Money Ns Duration] Sale of debt of other entities
+          [C] 3753 [13] [Money Ns Duration] Payments to acquire debt of other entities
+          [C] 4225 [13] [Money Ns Duration] Repayment of loans advanced to other entities
+          [C] 4095 [13] [Money Ns Duration] Purchase of current asset investments / Acquisition of liquid resources
+            [C] 4103 [13] [Money Ns Duration] Purchase of securities
+            [C] 2759 [13] [Money Ns Duration] Increase in short-term deposits
+          [C] 4323 [13] [Money Ns Duration] Sales of current asset investments / Disposals and redemptions of liquid resources
+            [C] 4317 [13] [Money Ns Duration] Sale of securities
+            [C] 4189 [13] [Money Ns Duration] Reduction in short-term deposits
+          [C] 3480 [13] [Money Ns Duration] Other capital expenditure and financial investment payments
+          [C] 3481 [13] [Money Ns Duration] Other capital expenditure and financial investment receipts
+        [C] 4716 [13] [Money Ns Duration] Taxation paid
+          [C] 4915 [13] [Money Ns Duration] UK corporation tax paid
+          [C] 2226 [13] [Money Ns Duration] Foreign tax paid
+          [C] 3679 [13] [Money Ns Duration] Other UK tax paid
+        [C] 4706 [13] [Money Ns Duration] Tax receipts
+          [C] 4924 [13] [Money Ns Duration] UK tax receipts
+          [C] 2227 [13] [Money Ns Duration] Foreign tax receipts
+        [C] 562 [13] [Money Ns Duration] Cash flow (outflow) from returns on investments and servicing of finance
+          [C] 2861 [13] [Money Ns Duration] Interest and other investment income received
+            [C] 2896 [13] [Money Ns Duration] Interest received
+            [C] 3578 [13] [Money Ns Duration] Other investment income received
+          [C] 1784 [13] [Money Ns Duration] Dividends received
+          [C] 2862 [13] [Money Ns Duration] Interest paid
+          [C] 2930 [13] [Money Ns Duration] Issue costs of new finance
+          [C] 2831 [13] [Money Ns Duration] Interest element of finance lease rental payments
+          [C] 1775 [1,13] [Money Dr Duration] Dividends paid and payable to minority interests
+          [C] 3896 [13] [Money Ns Duration] Preference dividends paid, cash flow
+          [C] 3634 [13] [Money Ns Duration] Other payments made on investments and servicing of finance
+        [C] 1761 [13] [Money Cr Duration] Dividends from associates and joint-ventures
+          [C] 1760 [13] [Money Cr Duration] Dividends from associates
+          [C] 1762 [13] [Money Cr Duration] Dividends from joint-ventures
+        [A] 982 Contribution to cash flow from companies bought and sold in the period [heading]
+          [A] 70 Acquired companies contribution to cash flow (outflow) [heading]
+            [C] 3301 [13] [Money Ns Duration] Net operating cash flow (outflow), acquired companies
+            [C] 3317 [13] [Money Ns Duration] Net returns on investment and servicing of finance, acquired companies
+            [C] 4717 [13] [Money Ns Duration] Taxation paid, acquired companies
+            [C] 4985 [13] [Money Ns Duration] Utilisation of capital expenditure, acquired companies
+          [A] 4421 Sold companies contribution to cash flow (outflow) [heading]
+            [C] 3302 [13] [Money Ns Duration] Net operating cash flow (outflow), sold companies
+            [C] 3318 [13] [Money Ns Duration] Net returns on investment and servicing of finance, sold companies
+            [C] 4718 [13] [Money Ns Duration] Taxation paid, sold companies
+            [C] 4986 [13] [Money Ns Duration] Utilisation of capital expenditure, sold companies
+          [C] 981 [13] [String Duration] Contribution to cash flow from companies bought and sold in the period free-text comment
+          [A] 2202 For more details on acquisitions and disposals, see 'Acquisitions' and 'Disposals' notes [cross-reference]
+        [C] 566 [13] [Money Ns Duration] Cash flow (outflow) relating to exceptional items
+          [C] 565 [13] [Money Ns Duration] Cash flow (outflow) related to reorganisation
+          [C] 563 [13] [Money Ns Duration] Cash flow (outflow) related to product remediation
+          [C] 564 [13] [Money Ns Duration] Cash flow (outflow) related to provision for disposal of discontinued operations
+          [C] 567 [13] [String Duration] Cash flow (outflow) relating to exceptional items free-text comment
+          [C] 1391 [13] [String Duration] Description of exceptional item impacting cash flow
+          [C] 5011 [13] [Money Ns Duration] Value of exceptional item
+          [C] 1390 [13] [String Duration] Description of exceptional cash flow not related to exceptional or extraordinary items
+      [A] 3280 Net debt (funds) [heading]
+        [A] 536 Cash - movement analysis [heading]
+          [C] 2646 [13] [Money Ns Duration] Increase (decrease) in cash at bank and in hand, excluding exchange adjustments
+          [C] 2648 [13] [Money Ns Duration] Increase (decrease) in cash at bank and in hand from exchange adjustments
+          [C] 2647 [13] [Money Ns Duration] Increase (decrease) in cash at bank and in hand from acquisitions and disposals
+          [C] 2649 [13] [Money Ns Duration] Increase (decrease) in cash at bank and in hand from other non-cash changes
+          [C] 542 [13] [Money Dr Instant] Cash at bank and in hand
+            [C] 575 [13] [Money Dr Instant] Cash in hand
+            [C] 541 [13] [Money Dr Instant] Cash at bank
+        [A] 3691 Overdrafts - movement analysis [heading]
+          [C] 2636 [13] [Money Cr Duration] Increase (decrease) in bank overdrafts, excluding exchange adjustments
+            [C] 2638 [13] [Money Cr Duration] Increase (decrease) in bank overdrafts, excluding exchange adjustments, within one year
+            [C] 2637 [13] [Money Cr Duration] Increase (decrease) in bank overdrafts, excluding exchange adjustments, after one year
+          [C] 2640 [13] [Money Cr Duration] Increase (decrease) in bank overdrafts from exchange adjustments
+            [C] 2642 [13] [Money Cr Duration] Increase (decrease) in bank overdrafts from exchange adjustments, within one year
+            [C] 2641 [13] [Money Cr Duration] Increase (decrease) in bank overdrafts from exchange adjustments, after on year
+          [C] 2639 [13] [Money Cr Duration] Increase (decrease) in bank overdrafts from acquisitions and disposals
+          [C] 2643 [13] [Money Cr Duration] Increase (decrease) in bank overdrafts from other non-cash changes
+          [A] 2175 For amount of overdrafts, see 'Borrowings' note under 'Creditors and Borrowings' [cross-reference]
+        [A] 1171 Debt due after one year - movement analysis [heading]
+          [C] 2663 [13] [Money Cr Duration] Increase (decrease) in debt due after one year, reflected in cash outflow (inflow)
+          [C] 2660 [13] [Money Cr Duration] Increase (decrease) in debt due after one year from acquisitions and disposals
+          [C] 2662 [13] [Money Cr Duration] Increase (decrease) in debt due after one year from other non-cash changes
+          [C] 2661 [13] [Money Cr Duration] Increase (decrease) in debt due after one year from exchange adjustments
+          [C] 1170 [13] [Money Cr Instant] Debt due after one year
+        [A] 1173 Debt due within one year - movement analysis [heading]
+          [C] 2667 [13] [Money Cr Duration] Increase (decrease) in debt due within one year, reflected in cash outflow (inflow)
+          [C] 2664 [13] [Money Cr Duration] Increase (decrease) in debt due within one year from acquisitions and disposals
+          [C] 2666 [13] [Money Cr Duration] Increase (decrease) in debt due within one year from other non-cash changes
+          [C] 2665 [13] [Money Cr Duration] Increase (decrease) in debt due within one year from exchange adjustments
+          [C] 1172 [13] [Money Cr Instant] Debt due within one year
+        [A] 1003 Convertible debt - movement analysis [heading]
+          [C] 2653 [13] [Money Cr Duration] Increase (decrease) in convertible debt, reflected in cash outflow (inflow)
+          [C] 2650 [13] [Money Cr Duration] Increase (decrease) in convertible debt from acquisitions and disposals
+          [C] 2652 [13] [Money Cr Duration] Increase (decrease) in convertible debt from other non-cash changes
+          [C] 2651 [13] [Money Cr Duration] Increase (decrease) in convertible debt from exchange adjustments
+          [A] 2174 For amount of convertible debt, see 'Borrowings' note under 'Creditors and Borrowings' [cross-reference]
+        [A] 4785 Total finance leases and hire purchase contracts - movement analysis [heading]
+          [C] 505 [13] [Money Dr Duration] Capital element of finance lease rental payments
+          [C] 2681 [13] [Money Cr Duration] Increase (decrease) in finance lease and hire purchase contracts from acquisitions and disposals
+          [C] 3322 [13] [Money Cr Duration] New finance leases
+          [C] 2738 [13] [Money Cr Duration] Increase (decrease) in total finance leases and hire purchase contracts from exchange adjustments
+          [C] 3387 [13] [Money Cr Instant] Obligations under finance lease and hire purchase contracts
+        [A] 2082 Finance leases and hire purchase contracts due within one year - movement analysis [heading]
+          [C] 2687 [13] [Money Cr Duration] Increase (decrease) in finance leases and hire purchase contracts due within one year, reflected in cash outflow (inflow)
+          [C] 2680 [13] [Money Cr Duration] Increase (decrease) in finance lease and hire purchase contracts due within one year from acquisitions and disposals
+          [C] 2686 [13] [Money Cr Duration] Increase (decrease) in finance leases and hire purchase contracts due within one year from other non-cash changes
+          [C] 2685 [13] [Money Cr Duration] Increase (decrease) in finance leases and hire purchase contracts due within one year from exchange adjustments
+          [C] 3389 [1,13] [Money Cr Instant] Obligations under finance lease and hire purchase contracts within one year
+        [A] 2081 Finance leases and hire purchase contracts due after one year - movement analysis [heading]
+          [C] 2684 [13] [Money Cr Duration] Increase (decrease) in finance leases and hire purchase contracts due after one year, reflected in cash outflow (inflow)
+          [C] 2679 [13] [Money Cr Duration] Increase (decrease) in finance lease and hire purchase contracts due after one year from acquisitions and disposals
+          [C] 2683 [13] [Money Cr Duration] Increase (decrease) in finance leases and hire purchase contracts due after one year from other non-cash changes
+          [C] 2682 [13] [Money Cr Duration] Increase (decrease) in finance leases and hire purchase contracts due after one year from exchange adjustments
+          [C] 3388 [13] [Money Cr Instant] Obligations under finance lease and hire purchase contracts after one year
+        [A] 1115 Current asset investments / Liquid resources - movement analysis [heading]
+          [C] 558 [13] [Money Cr Duration] Cash flow (outflow) from management of liquid resources
+          [C] 2655 [13] [Money Dr Duration] Increase (decrease) in current asset investments from acquisitions and disposals
+          [C] 2657 [13] [Money Dr Duration] Increase (decrease) in current asset investments from other non-cash changes
+          [C] 2656 [13] [Money Dr Duration] Increase (decrease) in current asset investments from exchange adjustments
+          [C] 1110 [13] [Money Dr Instant] Current asset investments
+        [A] 4803 Total net debt (funds) - movement analysis [heading]
+          [C] 1219 [13] [Money Ns Duration] Decrease (increase) in net debt resulting from cash flows
+            [C] 558 [13] [Money Cr Duration] Cash flow (outflow) from management of liquid resources
+            [C] 556 [13] [Money Ns Duration] Cash flow (outflow) from change in debt and lease financing
+          [C] 2256 [13] [Money Ns Duration] Funds (debts) arising from acquisitions and disposals
+            [C] 2255 [13] [Money Ns Duration] Funds (debts) acquired with subsidiaries
+            [C] 2257 [13] [Money Ns Duration] (Funds) debts disposed of with subsidiaries
+          [C] 1218 [13] [Money Ns Duration] Decrease (increase) in net debt from exchange adjustments
+          [C] 1217 [13] [Money Ns Duration] Decrease (increase) in net debt from changes recognised in market value
+          [C] 3597 [13] [Money Ns Duration] Other non-cash movements serving to decrease (increase) net debt
+        [C] 3279 [13] [String Duration] Net debt (funds) free-text comment
+      [C] 1470 [13] [String Duration] Description of non-cash transaction
+      [C] 1541 [13] [String Duration] Description of restrictions preventing transfer of cash between parts of business and group and amounts involved
+    [A] 1616 Detailed P&L items inheriting Operating Activities dimension [heading]
+      [A] 4908 Turnover [heading]
+        [C] 398 [11,13] [Money Cr Duration] Basic sales revenue
+        [C] 903 [13] [Money Cr Duration] Commissions received
+        [C] 2447 [13] [Money Cr Duration] Grants and subsidies received, contributing to turnover
+        [C] 134 [9,13] [Money Cr Duration] Agency and management earnings - Gross
+        [C] 4207 [13] [Money Cr Duration] Rental and other income from property, contributing to turnover
+        [C] 1930 [13] [Money Cr Duration] Exceptional income contributing to turnover
+        [C] 3678 [13] [Money Cr Duration] Other trading income contributing to turnover
+      [A] 3616 Other operating income [heading]
+        [C] 4206 [13] [Money Cr Duration] Rental and other income from property, contributing to other operating income
+          [C] 2451 [13] [Money Cr Duration] Ground rent received, contributing to other operating income
+        [C] 2446 [13] [Money Cr Duration] Grants and subsidies received, contributing to other operating income
+        [C] 2440 [9,13] [Money Cr Duration] Government grant receipts - Net
+          [C] 1489 [9,13] [String Duration] Description of other government assistance
+          [C] 3281 [9,13] [Money Cr Duration] Net gain from other government assistance
+        [C] 4302 [9,13] [Money Cr Duration] Royalty, licence and similar receivables
+        [C] 4196 [9,13] [Money Cr Duration] Reimbursement of costs
+        [C] 3552 [13] [Money Cr Duration] Other income, contributing to other operating income
+        [A] 2206 For other items, including finance and investment, see 'Notes to Profit and Loss' [cross-reference]
+      [A] 4541 Stocks / inventory [heading]
+        [C] 2722 [13] [Money Dr Duration] Increase (decrease) in stocks / inventory
+        [C] 4536 [13] [Money Dr Instant] Stocks / inventory
+          [C] 4551 [13] [Money Dr Instant] Stocks of raw materials and consumables
+          [C] 5092 [13] [Money Dr Instant] Work in progress
+          [C] 2120 [13] [Money Dr Instant] Finished goods and goods for resale
+          [C] 4546 [13] [Money Dr Instant] Stocks, payments on account
+        [C] 2727 [13] [Money Dr Duration] Increase (decrease) in stocks of raw materials and consumables
+        [C] 4551 [13] [Money Dr Instant] Stocks of raw materials and consumables
+        [C] 2744 [13] [Money Dr Duration] Increase (decrease) in work in progress
+        [C] 5092 [13] [Money Dr Instant] Work in progress
+        [C] 2688 [13] [Money Dr Duration] Increase (decrease) in finished goods and goods for resale
+        [C] 2120 [13] [Money Dr Instant] Finished goods and goods for resale
+        [C] 2705 [13] [Money Dr Duration] Increase (decrease) in payments on account for stocks
+        [C] 4546 [13] [Money Dr Instant] Stocks, payments on account
+      [A] 4322 Sales, costs and profit by type of activity [heading]
+        [A] 4849 Trading activities [heading]
+          [C] 4912 [13] [Money Cr Duration] Turnover, trading activities
+            [C] 403 [13] [Money Cr Duration] Basic sales revenue, trading activities
+            [C] 3558 [13] [Money Cr Duration] Other income, trading activities
+          [A] 4545 Stocks / inventory, trading activities [heading]
+            [C] 2726 [13] [Money Dr Duration] Increase (decrease) in stocks / inventory, trading activities
+            [C] 4544 [13] [Money Dr Instant] Stocks / inventory, trading activities
+            [C] 2731 [13] [Money Dr Duration] Increase (decrease) in stocks of raw materials and consumables, trading activities
+            [C] 4555 [13] [Money Dr Instant] Stocks of raw materials and consumables, trading activities
+            [C] 2748 [13] [Money Dr Duration] Increase (decrease) in work in progress, trading activities
+            [C] 5097 [13] [Money Dr Instant] Work in progress, trading activities
+            [C] 2692 [13] [Money Dr Duration] Increase (decrease) in finished goods and goods for resale, trading activities
+            [C] 2124 [13] [Money Dr Instant] Finished goods and goods for resale, trading activities
+            [C] 2709 [13] [Money Dr Duration] Increase (decrease) in payments on account for stocks, trading activities
+            [C] 4550 [13] [Money Dr Duration] Stocks, payments on account, trading activities
+          [C] 1035 [13] [Money Dr Duration] Cost of sales, trading activities
+            [C] 1861 [13] [Money Dr Duration] Employment costs, trading activities
+              [C] 4459 [13] [Money Dr Duration] Staff costs, trading activities
+              [C] 4565 [13] [Money Dr Duration] Subcontractor costs, trading activities
+            [C] 3187 [13] [Money Dr Duration] Materials costs, trading activities
+            [C] 3910 [13] [Money Dr Duration] Premises costs, trading activities
+            [C] 2522 [13] [Money Dr Duration] Hire of plant and equipment, trading activities
+            [C] 4222 [13] [Money Dr Duration] Repairs, renewals and maintenance, trading activities
+            [C] 3715 [13] [Money Dr Duration] Own work capitalised, trading activities
+          [C] 3493 [13] [Money Dr Duration] Other costs, trading activities
+            [C] 1481 [13] [String Duration] Description of other cost, trading activities
+            [C] 5020 [13] [Money Dr Duration] Value of other cost, trading activities
+          [C] 4768 [13] [Money Dr Duration] Total costs, trading activities
+          [C] 3421 [13] [Money Dr Duration] Operating profit before tax, trading activities
+        [A] 3160 Manufacturing activities [heading]
+          [C] 4909 [13] [Money Cr Duration] Turnover, manufacturing activities
+            [C] 401 [13] [Money Cr Duration] Basic sales revenue, manufacturing activities
+            [C] 3556 [13] [Money Cr Duration] Other income, manufacturing activities
+          [A] 4543 Stocks / inventory, manufacturing activities [heading]
+            [C] 2725 [13] [Money Dr Duration] Increase (decrease) in stocks / inventory, manufacturing activities
+            [C] 4542 [13] [Money Dr Instant] Stocks / inventory, manufacturing activities
+            [C] 2730 [13] [Money Dr Duration] Increase (decrease) in stocks of raw materials and consumables, manufacturing activities
+            [C] 4554 [13] [Money Dr Instant] Stocks of raw materials and consumables, manufacturing activities
+            [C] 2747 [13] [Money Dr Duration] Increase (decrease) in work in progress, manufacturing activities
+            [C] 5096 [13] [Money Dr Instant] Work in progress, manufacturing activities
+            [C] 2691 [13] [Money Dr Duration] Increase (decrease) in finished goods and goods for resale, manufacturing activities
+            [C] 2123 [13] [Money Dr Instant] Finished goods and goods for resale, manufacturing activities
+            [C] 2708 [13] [Money Dr Duration] Increase (decrease) in payments on account for stocks, manufacturing activities
+            [C] 4549 [13] [Money Dr Duration] Stocks, payments on account, manufacturing activities
+          [C] 1033 [13] [Money Dr Duration] Cost of sales, manufacturing activities
+            [C] 1859 [13] [Money Dr Duration] Employment costs, manufacturing activities
+              [C] 4457 [13] [Money Dr Duration] Staff costs, manufacturing activities
+              [C] 4563 [13] [Money Dr Duration] Subcontractor costs, manufacturing activities
+            [C] 1999 [13] [Money Dr Duration] Factory costs, manufacturing activities
+              [C] 3908 [13] [Money Dr Duration] Premises costs, manufacturing activities
+              [C] 2502 [13] [Money Dr Duration] Hire and leasing of plant and equipment, manufacturing activities
+              [C] 4220 [13] [Money Dr Duration] Repairs, renewals and maintenance, manufacturing activities
+            [C] 3185 [13] [Money Dr Duration] Materials costs, manufacturing activities
+            [C] 3713 [13] [Money Dr Duration] Own work capitalised, manufacturing activities
+          [C] 3491 [13] [Money Dr Duration] Other costs, manufacturing activities
+            [C] 1479 [13] [String Duration] Description of other cost, manufacturing activities
+            [C] 5018 [13] [Money Dr Duration] Value of other cost, manufacturing activities
+          [C] 4766 [13] [Money Dr Duration] Total costs, manufacturing activities
+          [C] 3419 [13] [Money Dr Duration] Operating profit before tax, manufacturing activities
+        [A] 2050 Farming activities [heading]
+          [C] 4906 [13] [Money Cr Duration] Turnover, farming activities
+            [C] 400 [13] [Money Cr Duration] Basic sales revenue, farming activities
+            [C] 3554 [13] [Money Cr Duration] Other income, farming activities
+          [A] 4540 Stocks / inventory, farming activities [heading]
+            [C] 2724 [13] [Money Dr Duration] Increase (decrease) in stocks / inventory, farming activities
+            [C] 4539 [13] [Money Dr Instant] Stocks / inventory, farming activities
+            [C] 2729 [13] [Money Dr Duration] Increase (decrease) in stocks of raw materials and consumables, farming activities
+            [C] 4553 [13] [Money Dr Instant] Stocks of raw materials and consumables, farming activities
+            [C] 2746 [13] [Money Dr Duration] Increase (decrease) in work in progress, farming activities
+            [C] 5094 [13] [Money Dr Instant] Work in progress, farming activities
+            [C] 2690 [13] [Money Dr Duration] Increase (decrease) in finished goods and goods for resale, farming activities
+            [C] 2122 [13] [Money Dr Instant] Finished goods and goods for resale, farming activities
+            [C] 2707 [13] [Money Dr Duration] Increase (decrease) in payments on account for stocks, farming activities
+            [C] 4548 [13] [Money Dr Duration] Stocks, payments on account, farming activities
+          [C] 1031 [13] [Money Dr Duration] Cost of sales, farming activities
+            [C] 1858 [13] [Money Dr Duration] Employment costs, farming activities
+              [C] 4456 [13] [Money Dr Duration] Staff costs, farming activities
+              [C] 4562 [13] [Money Dr Duration] Subcontractor costs, farming activities
+            [C] 3907 [13] [Money Dr Duration] Premises costs, farming activities
+            [C] 3184 [13] [Money Dr Duration] Materials costs, farming activities
+              [C] 4342 [13] [Money Dr Duration] Seeds and fertilisers costs, farming activities
+              [C] 2056 [13] [Money Dr Duration] Feed and bedding costs, farming activities
+              [C] 3594 [13] [Money Dr Duration] Other materials costs, farming activities
+                [C] 1492 [13] [String Duration] Description of other materials cost, farming activities
+                [C] 5021 [13] [Money Dr Duration] Value of other materials cost, farming activities
+            [C] 2508 [13] [Money Dr Duration] Hire and leasing of plant, equipment and vehicles, farming activities
+            [C] 4219 [13] [Money Dr Duration] Repairs, renewals and maintenance, farming activities
+            [C] 3712 [13] [Money Dr Duration] Own work capitalised, farming activities
+          [C] 3490 [13] [Money Dr Duration] Other costs, farming activities
+            [C] 1478 [13] [String Duration] Description of other cost, farming activities
+            [C] 5017 [13] [Money Dr Duration] Value of other cost, farming activities
+          [C] 4764 [13] [Money Dr Duration] Total costs, farming activities
+          [C] 3418 [13] [Money Dr Duration] Operating profit before tax, farming activities
+        [A] 1737 Distribution activities [heading]
+          [C] 4905 [13] [Money Cr Duration] Turnover, distribution activities
+            [C] 399 [13] [Money Cr Duration] Basic sales revenue, distribution activities
+            [C] 3553 [13] [Money Cr Duration] Other income, distribution activities
+          [A] 4538 Stocks / inventory, distribution activities [heading]
+            [C] 2723 [13] [Money Dr Duration] Increase (decrease) in stocks / inventory, distribution activities
+            [C] 4537 [13] [Money Dr Instant] Stocks / inventory, distribution activities
+            [C] 2728 [13] [Money Dr Duration] Increase (decrease) in stocks of raw materials and consumables, distribution activities
+            [C] 4552 [13] [Money Dr Instant] Stocks of raw materials and consumables, distribution activities
+            [C] 2745 [13] [Money Dr Duration] Increase (decrease) in work in progress, distribution activities
+            [C] 5093 [13] [Money Dr Instant] Work in progress, distribution activities
+            [C] 2689 [13] [Money Dr Duration] Increase (decrease) in finished goods and goods for resale, distribution activities
+            [C] 2121 [13] [Money Dr Instant] Finished goods and goods for resale, distribution activities
+            [C] 2706 [13] [Money Dr Duration] Increase (decrease) in payments on account for stocks, distribution activities
+            [C] 4547 [13] [Money Dr Duration] Stocks, payments on account, distribution activities
+          [C] 1030 [13] [Money Dr Duration] Cost of sales, distribution activities
+            [C] 1856 [13] [Money Dr Duration] Employment costs, distribution activities
+              [C] 4454 [13] [Money Dr Duration] Staff costs, distribution activities
+              [C] 4560 [13] [Money Dr Duration] Subcontractor costs, distribution activities
+            [C] 3905 [13] [Money Dr Duration] Premises costs, distribution activities
+            [C] 3182 [13] [Money Dr Duration] Materials costs, distribution activities
+            [C] 2506 [13] [Money Dr Duration] Hire and leasing of plant, equipment and vehicles, distribution activities
+            [C] 5053 [13] [Money Dr Duration] Vehicle running costs, distribution activities
+            [C] 4217 [13] [Money Dr Duration] Repairs, renewals and maintenance, distribution activities
+            [C] 3710 [13] [Money Dr Duration] Own work capitalised, distribution activities
+          [C] 3489 [13] [Money Dr Duration] Other costs, distribution activities
+            [C] 1477 [13] [String Duration] Description of other cost, distribution activities
+            [C] 5016 [13] [Money Dr Duration] Value of other cost, distribution activities
+          [C] 4763 [13] [Money Dr Duration] Total costs, distribution activities
+          [C] 3417 [13] [Money Dr Duration] Operating profit before tax, distribution activities
+        [A] 3464 Other activities [heading]
+          [C] 4910 [13] [Money Cr Duration] Turnover, other activities
+            [C] 402 [13] [Money Cr Duration] Basic sales revenue, other activities
+            [C] 3557 [13] [Money Cr Duration] Other income, other activities
+          [C] 1034 [13] [Money Dr Duration] Cost of sales, other activities
+            [C] 1860 [13] [Money Dr Duration] Employment costs, other activities
+              [C] 4458 [13] [Money Dr Duration] Staff costs, other activities
+              [C] 4564 [13] [Money Dr Duration] Subcontractor costs, other activities
+            [C] 3909 [13] [Money Dr Duration] Premises costs, other activities
+            [C] 3186 [13] [Money Dr Duration] Materials costs, other activities
+            [C] 2509 [13] [Money Dr Duration] Hire and leasing of plant, equipment and vehicles, other activities
+            [C] 4221 [13] [Money Dr Duration] Repairs, renewals and maintenance, other activities
+            [C] 3714 [13] [Money Dr Duration] Own work capitalised, other activities
+          [C] 3492 [13] [Money Dr Duration] Other costs, other activities
+            [C] 1480 [13] [String Duration] Description of other cost, other activities
+            [C] 5019 [13] [Money Dr Duration] Value of other cost, other activities
+          [C] 4767 [13] [Money Dr Duration] Total costs, other activities
+          [C] 3420 [13] [Money Dr Duration] Operating profit before tax, other activities
+      [A] 1032 Cost of sales [heading]
+        [A] 1029 Cost of sales, alternative subtotals [heading]
+          [C] 1669 [13] [Money Dr Duration] Direct costs, cost of sales
+          [C] 2766 [13] [Money Dr Duration] Indirect costs, cost of sales
+          [C] 1855 [13] [Money Dr Duration] Employment costs, cost of sales
+            [C] 1673 [13] [Money Dr Duration] Direct employment costs, cost of sales
+            [C] 2770 [13] [Money Dr Duration] Indirect employment costs, cost of sales
+          [C] 4493 [13] [Money Dr Duration] Staff training and recruitment, cost of sales
+          [C] 1916 [13] [Money Dr Duration] Establishment costs, cost of sales
+          [C] 3913 [13] [Money Dr Duration] Premises rent, rates and service costs, cost of sales
+          [C] 2379 [13] [Money Dr Duration] General administration costs, cost of sales
+          [C] 3024 [13] [Money Dr Duration] Legal, accounting and other professional fees, cost of sales
+          [C] 4894 [13] [Money Dr Duration] Transport costs, cost of sales
+          [C] 4898 [13] [Money Dr Duration] Transport and travel costs, cost of sales
+          [C] 4574 [13] [Money Dr Duration] Subscriptions and donations, cost of sales
+          [C] 878 [13] [Money Dr Duration] Cleaning and security, cost of sales
+          [C] 3520 [13] [Money Dr Duration] Other direct costs, cost of sales
+          [C] 3561 [13] [Money Dr Duration] Other indirect costs, cost of sales
+        [C] 4109 [13] [Money Dr Duration] Purchases, cost of sales
+        [C] 3181 [13] [Money Dr Duration] Materials costs, cost of sales
+        [C] 5065 [13] [Money Dr Duration] Warehouse and storage expenses, cost of sales
+        [C] 4559 [13] [Money Dr Duration] Subcontractor costs, cost of sales
+        [C] 3709 [13] [Money Dr Duration] Own work capitalised, cost of sales
+        [C] 1713 [13] [Money Cr Duration] Discounts receivable, cost of sales
+        [C] 1709 [13] [Money Dr Duration] Discounts allowable, cost of sales
+        [C] 4452 [13] [Money Dr Duration] Staff costs, cost of sales
+          [C] 5060 [13] [Money Dr Duration] Wages and salaries, cost of sales
+          [C] 1695 [13] [Money Dr Duration] Directors' remuneration, cost of sales
+          [C] 1698 [13] [Money Dr Duration] Directors' salaries, cost of sales
+          [C] 1842 [13] [Money Dr Duration] Employers' National Insurance, cost of sales
+            [C] 1850 [13] [Money Dr Duration] Employers' National Insurance, staff, cost of sales
+            [C] 1845 [13] [Money Dr Duration] Employers' National Insurance, directors, cost of sales
+          [C] 3793 [13] [Money Dr Duration] Pensions, cost of sales
+            [C] 3801 [13] [Money Dr Duration] Pensions, defined contribution schemes, cost of sales
+              [C] 4477 [13] [Money Dr Duration] Staff pensions, defined contribution schemes, cost of sales
+              [C] 1680 [13] [Money Dr Duration] Director pensions, defined contribution schemes, cost of sales
+            [C] 3798 [13] [Money Dr Duration] Pensions, defined benefit schemes, cost of sales
+              [C] 4473 [13] [Money Dr Duration] Staff pensions, defined benefit schemes, cost of sales
+              [C] 1676 [13] [Money Dr Duration] Director pensions, defined benefit schemes, cost of sales
+            [C] 3805 [13] [Money Dr Duration] Pensions, other costs, cost of sales
+              [C] 4481 [13] [Money Dr Duration] Staff pensions, other costs, cost of sales
+              [C] 1684 [13] [Money Dr Duration] Director pensions, other costs, cost of sales
+            [C] 3810 [13] [Money Dr Duration] Pensions to former directors, cost of sales
+          [C] 3970 [13] [Money Dr Duration] Private health costs, cost of sales
+          [C] 1826 [13] [Money Dr Duration] Employee benefit trust payments, cost of sales
+          [C] 1691 [13] [Money Dr Duration] Directors' fees, cost of sales
+          [C] 428 [13] [Money Dr Duration] Bonuses, cost of sales
+            [C] 4448 [13] [Money Dr Duration] Staff bonuses, cost of sales
+            [C] 1688 [13] [Money Dr Duration] Directors' bonuses, cost of sales
+          [C] 901 [13] [Money Dr Duration] Commissions payable to staff, cost of sales
+          [C] 4737 [13] [Money Dr Duration] Temporary staff, casual wages and recruitment, cost of sales
+            [C] 4733 [13] [Money Dr Duration] Temporary staff and casual wages, cost of sales
+            [C] 4164 [13] [Money Dr Duration] Recruitment, cost of sales
+          [C] 4489 [13] [Money Dr Duration] Staff training, cost of sales
+          [C] 4462 [13] [Money Dr Duration] Staff expenses, cost of sales
+            [C] 4902 [13] [Money Dr Duration] Travel and subsistence expenses, cost of sales
+              [C] 2541 [13] [Money Dr Duration] Hotel expenses, cost of sales
+              [C] 4126 [13] [Money Dr Duration] Rail, air, bus, taxi and related expenses, cost of sales
+              [C] 4466 [13] [Money Dr Duration] Staff motor expenses, cost of sales
+              [C] 4620 [13] [Money Dr Duration] Subsistence expenses, cost of sales
+              [C] 4470 [13] [Money Dr Duration] Staff parking expenses, cost of sales
+            [C] 1864 [13] [Money Dr Duration] Entertaining expenses incurred by staff, cost of sales
+            [C] 3659 [13] [Money Dr Duration] Other staff expenses, cost of sales
+          [C] 4497 [13] [Money Dr Duration] Staff welfare, cost of sales
+          [C] 496 [13] [Money Dr Duration] Canteen costs, cost of sales
+          [C] 1867 [13] [Money Dr Duration] Entertaining of staff, cost of sales
+          [C] 919 [13] [Money Dr Duration] Compensation for loss of office, cost of sales
+          [C] 4192 [13] [Money Dr Duration] Redundancy costs, cost of sales
+          [C] 4486 [13] [Money Dr Duration] Staff relocation costs, cost of sales
+          [C] 4445 [13] [Money Dr Duration] Staff benefits in kind, cost of sales
+          [C] 3663 [13] [Money Dr Duration] Other staff general costs, cost of sales
+            [C] 1503 [13] [String Duration] Description of other staff cost, cost of sales
+            [C] 211 [13] [Money Dr Duration] Amount of other staff cost, cost of sales
+        [C] 3904 [13] [Money Dr Duration] Premises costs, cost of sales
+          [C] 4204 [13] [Money Dr Duration] Rent of premises, cost of sales
+          [C] 4131 [13] [Money Dr Duration] Rates on premises, cost of sales
+            [C] 449 [13] [Money Dr Duration] Business rates on premises, cost of sales
+            [C] 5069 [13] [Money Dr Duration] Water rates, cost of sales
+          [C] 4350 [13] [Money Dr Duration] Service charges on premises, cost of sales
+          [C] 4992 [13] [Money Dr Duration] Utility charges, cost of sales
+            [C] 3062 [13] [Money Dr Duration] Lighting, heating and power, cost of sales
+            [C] 5069 [13] [Money Dr Duration] Water rates, cost of sales
+            [C] 1812 [13] [Money Dr Duration] Electricity charges, cost of sales
+            [C] 2375 [13] [Money Dr Duration] Gas charges, cost of sales
+            [C] 2253 [13] [Money Dr Duration] Fuel oil charges, cost of sales
+            [C] 886 [13] [Money Dr Duration] Coal charges, cost of sales
+            [C] 4358 [13] [Money Dr Duration] Sewerage charges, cost of sales
+          [C] 3924 [13] [Money Dr Duration] Premises repairs, renewals and maintenance, cost of sales
+            [C] 3916 [13] [Money Dr Duration] Premises repairs and maintenance, cost of sales
+            [C] 3920 [13] [Money Dr Duration] Premises repairs and renewals, cost of sales
+          [C] 3899 [13] [Money Dr Duration] Premises cleaning, cost of sales
+          [C] 4338 [13] [Money Dr Duration] Security costs, cost of sales
+          [C] 2790 [13] [Money Dr Duration] Insurance on premises, cost of sales
+          [C] 4981 [13] [Money Dr Duration] Use of residence for business purposes, cost of sales
+        [C] 2504 [13] [Money Dr Duration] Hire and leasing of plant, equipment and vehicles, cost of sales
+          [C] 2511 [13] [Money Dr Duration] Hire and leasing of plant and machinery, cost of sales
+            [C] 2524 [13] [Money Dr Duration] Hire of plant and machinery, operating leases, cost of sales
+            [C] 2528 [13] [Money Dr Duration] Hire of plant and machinery, spot hire, cost of sales
+          [C] 2491 [13] [Money Dr Duration] Hire and leasing of computer and other equipment, cost of sales
+            [C] 2479 [13] [Money Dr Duration] Hire of computer and other equipment, operating leases, cost of sales
+            [C] 2483 [13] [Money Dr Duration] Hire of computer and other equipment, spot hire, cost of sales
+          [C] 2495 [13] [Money Dr Duration] Hire and leasing of motor vehicles, cost of sales
+            [C] 3011 [13] [Money Dr Duration] Lease of motor vehicles, operating leases, cost of sales
+            [C] 3015 [13] [Money Dr Duration] Lease of motor vehicles, spot hire, cost of sales
+            [C] 2487 [13] [Money Dr Duration] Hire and leasing of cars, cost of sales
+              [C] 2471 [13] [Money Dr Duration] Hire of cars, operating leases, cost of sales
+              [C] 2475 [13] [Money Dr Duration] Hire of cars, spot hire, cost of sales
+          [C] 2499 [13] [Money Dr Duration] Hire and leasing of other assets, cost of sales
+            [C] 2515 [13] [Money Dr Duration] Hire of other assets, operating leases, cost of sales
+            [C] 2519 [13] [Money Dr Duration] Hire of other assets, spot hire, cost of sales
+        [C] 5052 [13] [Money Dr Duration] Vehicle running costs, cost of sales
+          [C] 5028 [13] [Money Dr Duration] Vehicle fuel costs, cost of sales
+          [C] 5031 [13] [Money Dr Duration] Vehicle insurance, cost of sales
+          [C] 5035 [13] [Money Dr Duration] Vehicle parking, cost of sales
+          [C] 5047 [13] [Money Dr Duration] Vehicle repairs, renewals and maintenance, cost of sales
+            [C] 5043 [13] [Money Dr Duration] Vehicle repairs and maintenance, cost of sales
+            [C] 5039 [13] [Money Dr Duration] Vehicle renewals and maintenance, cost of sales
+          [C] 3686 [13] [Money Dr Duration] Other vehicle costs, cost of sales
+        [C] 942 [13] [Money Dr Duration] Computer software, IT consumables and maintenance, cost of sales
+          [C] 939 [13] [Money Dr Duration] Computer software costs, cost of sales
+          [C] 2544 [13] [Money Dr Duration] IT and computer consumables, cost of sales
+          [C] 934 [13] [Money Dr Duration] Computer and IT equipment repairs, renewals and maintenance, cost of sales
+            [C] 930 [13] [Money Dr Duration] Computer and IT equipment repairs and maintenance, cost of sales
+            [C] 926 [13] [Money Dr Duration] Computer and IT equipment renewals and maintenance, cost of sales
+        [C] 4215 [13] [Money Dr Duration] Repairs, renewals and maintenance, cost of sales
+          [C] 3924 [13] [Money Dr Duration] Premises repairs, renewals and maintenance, cost of sales
+            [C] 3916 [13] [Money Dr Duration] Premises repairs and maintenance, cost of sales
+            [C] 3920 [13] [Money Dr Duration] Premises repairs and renewals, cost of sales
+          [C] 3899 [13] [Money Dr Duration] Premises cleaning, cost of sales
+          [C] 3873 [13] [Money Dr Duration] Plant and machinery repairs, renewals and maintenance, cost of sales
+            [C] 3865 [13] [Money Dr Duration] Plant and machinery repairs and maintenance, cost of sales
+            [C] 3869 [13] [Money Dr Duration] Plant and machinery repairs and renewals, cost of sales
+          [C] 5047 [13] [Money Dr Duration] Vehicle repairs, renewals and maintenance, cost of sales
+            [C] 5043 [13] [Money Dr Duration] Vehicle repairs and maintenance, cost of sales
+            [C] 5039 [13] [Money Dr Duration] Vehicle renewals and maintenance, cost of sales
+          [C] 934 [13] [Money Dr Duration] Computer and IT equipment repairs, renewals and maintenance, cost of sales
+            [C] 930 [13] [Money Dr Duration] Computer and IT equipment repairs and maintenance, cost of sales
+            [C] 926 [13] [Money Dr Duration] Computer and IT equipment renewals and maintenance, cost of sales
+          [C] 3007 [13] [Money Dr Duration] Laundry, cost of sales
+          [C] 2402 [13] [Money Dr Duration] General maintenance, cost of sales
+        [C] 2782 [13] [Money Dr Duration] Insurance, cost of sales
+          [C] 2790 [13] [Money Dr Duration] Insurance on premises, cost of sales
+          [C] 2786 [13] [Money Dr Duration] Insurance on plant, machinery and equipment, cost of sales
+          [C] 5031 [13] [Money Dr Duration] Vehicle insurance, cost of sales
+          [C] 3980 [13] [Money Dr Duration] Professional indemnity insurance, cost of sales
+          [C] 3565 [13] [Money Dr Duration] Other insurance, cost of sales
+        [C] 2059 [13] [Money Dr Duration] Fees and commissions payable, cost of sales
+          [C] 897 [13] [Money Dr Duration] Commissions payable, cost of sales
+          [C] 3157 [13] [Money Dr Duration] Management fees, cost of sales
+          [C] 2382 [13] [Money Dr Duration] General consultancy fees, cost of sales
+          [C] 3738 [13] [Money Dr Duration] Patent registration fees, cost of sales
+          [C] 3027 [13] [Money Dr Duration] Legal fees, cost of sales
+          [C] 40 [13] [Money Dr Duration] Accountancy fees, cost of sales
+          [C] 3583 [13] [Money Dr Duration] Other legal and professional fees, cost of sales
+        [C] 3169 [13] [Money Dr Duration] Marketing and advertising costs, cost of sales
+          [C] 3174 [13] [Money Dr Duration] Marketing costs, cost of sales
+            [C] 4327 [13] [Money Dr Duration] Sales publications and videos, cost of sales
+            [C] 4838 [13] [Money Dr Duration] Trade fairs and exhibitions, cost of sales
+            [C] 881 [13] [Money Dr Duration] Client training, including seminars, lectures and workshops, cost of sales
+            [C] 3163 [13] [Money Dr Duration] Market research costs, cost of sales
+            [C] 3719 [13] [Money Dr Duration] PR expenses, cost of sales
+            [C] 3591 [13] [Money Dr Duration] Other marketing and sales costs, cost of sales
+          [C] 129 [13] [Money Dr Duration] Advertising and promotional costs, cost of sales
+        [C] 4354 [13] [Money Dr Duration] Services costs, cost of sales
+          [C] 4724 [13] [Money Dr Duration] Technical services, cost of sales
+            [C] 2548 [13] [Money Dr Duration] IT services, cost of sales
+          [C] 2905 [13] [Money Dr Duration] Internal audit services, cost of sales
+          [C] 5003 [13] [Money Dr Duration] Valuation and actuarial services, cost of sales
+          [C] 3078 [13] [Money Dr Duration] Litigation services, cost of sales
+          [C] 4168 [13] [Money Dr Duration] Recruitment and remuneration services, cost of sales
+          [C] 1012 [13] [Money Dr Duration] Corporate finance services, cost of sales
+          [C] 58 [13] [Money Dr Duration] Accreditation services, cost of sales
+          [C] 3645 [13] [Money Dr Duration] Other services, cost of sales
+        [C] 4631 [13] [Money Dr Duration] Support and administration costs, cost of sales
+          [C] 3755 [13] [Money Dr Duration] Payroll processing, cost of sales
+          [C] 1133 [13] [Money Dr Duration] Data processing, cost of sales
+          [C] 2460 [13] [Money Dr Duration] Health and safety costs, cost of sales
+        [C] 1138 [13] [Money Dr Duration] Data and telecommunications costs, cost of sales
+          [C] 4729 [13] [Money Dr Duration] Telecommunications costs, cost of sales
+          [C] 1130 [13] [Money Dr Duration] Data costs, cost of sales
+        [C] 963 [13] [Money Dr Duration] Consumable items, cost of sales
+        [C] 3723 [13] [Money Dr Duration] Packaging material costs, cost of sales
+        [C] 2246 [13] [Money Dr Duration] Freight and carriage, cost of sales
+        [C] 1049 [13] [Money Dr Duration] Courier services, cost of sales
+        [C] 3962 [13] [Money Dr Duration] Printing, postage and stationery, cost of sales
+          [C] 3959 [13] [Money Dr Duration] Printing and photocopying costs, cost of sales
+            [C] 3955 [13] [Money Dr Duration] Printing costs, cost of sales
+            [C] 3861 [13] [Money Dr Duration] Photocopying costs, cost of sales
+          [C] 3893 [13] [Money Dr Duration] Postage costs, cost of sales
+          [C] 4529 [13] [Money Dr Duration] Stationery, cost of sales
+        [C] 3601 [13] [Money Dr Duration] Other office consumables, cost of sales
+        [C] 4210 [13] [Money Dr Duration] Reorganisation and restructuring costs, cost of sales
+        [C] 4233 [13] [Money Dr Duration] Research and development costs, cost of sales
+        [C] 4300 [13] [Money Dr Duration] Royalties payable, licence fees and similar charges, cost of sales
+        [C] 4569 [13] [Money Dr Duration] Subscriptions, cost of sales
+          [C] 4090 [13] [Money Dr Duration] Publication and other information subscriptions, cost of sales
+          [C] 4577 [13] [Money Dr Duration] Subscriptions to professional and trade bodies, cost of sales
+        [C] 1788 [13] [Money Dr Duration] Donations, cost of sales
+          [C] 871 [13] [Money Dr Duration] Charitable donations, cost of sales
+          [C] 3881 [13] [Money Dr Duration] Political donations, cost of sales
+        [C] 349 [13] [Money Dr Duration] Bad debts written off, cost of sales
+        [C] 2320 [13] [Money Cr Duration] Gain (loss) on foreign currency transactions, cost of sales
+        [C] 2279 [3,13] [Money Cr Duration] Gain (loss) from disposal of tangible fixed assets, cost of sales
+        [C] 2275 [4,13] [Money Cr Duration] Gain (loss) from disposal of intangible fixed assets, cost of sales
+        [A] 3407 Operating costs related to fixed assets, cost of sales [heading]
+          [C] 173 [6,13] [Money Dr Duration] Amortisation and impairment (reversal) of intangible fixed assets, cost of sales
+            [C] 176 [13] [Money Dr Duration] Amortisation of intangible assets, cost of sales
+            [C] 2578 [13] [Money Dr Duration] Impairment loss (reversal) intangible fixed assets, cost of sales
+          [C] 1261 [5,13] [Money Dr Duration] Depreciation and impairment (reversal) of tangible fixed assets, cost of sales
+          [C] 2432 [13] [Money Dr Duration] Goodwill reversal on disposal of fixed assets, cost of sales
+          [A] 4975 Use dimensions to distinguish individual classes of tangible and intangible assets, including goodwill, and owned and leased tangible assets [explanation]
+        [C] 4627 [13] [Money Dr Duration] Sundry expenses, cost of sales
+        [C] 3606 [13] [Money Dr Duration] Other office costs, cost of sales
+        [C] 3613 [13] [Money Dr Duration] Other operating costs, cost of sales
+          [C] 1494 [13] [String Duration] Description of other operating cost, cost of sales
+          [C] 206 [13] [Money Dr Duration] Amount of other operating cost, cost of sales
+        [C] 3533 [13] [Money Dr Duration] Other exceptional operating costs, cost of sales
+          [C] 1485 [13] [String Duration] Description of other exceptional operating cost, cost of sales
+          [C] 203 [13] [Money Dr Duration] Amount of other exceptional operating cost, cost of sales
+      [A] 1742 Distribution costs [heading]
+        [A] 1741 Distribution costs, alternative subtotals [heading]
+          [C] 1670 [13] [Money Dr Duration] Direct costs, distribution costs
+          [C] 2767 [13] [Money Dr Duration] Indirect costs, distribution costs
+          [C] 1857 [13] [Money Dr Duration] Employment costs, distribution costs
+            [C] 1674 [13] [Money Dr Duration] Direct employment costs, distribution costs
+            [C] 2771 [13] [Money Dr Duration] Indirect employment costs, distribution costs
+          [C] 4495 [13] [Money Dr Duration] Staff training and recruitment, distribution costs
+          [C] 1917 [13] [Money Dr Duration] Establishment costs, distribution costs
+          [C] 3914 [13] [Money Dr Duration] Premises rent, rates and service costs, distribution costs
+          [C] 2380 [13] [Money Dr Duration] General administration costs, distribution costs
+          [C] 3025 [13] [Money Dr Duration] Legal, accounting and other professional fees, distribution costs
+          [C] 4895 [13] [Money Dr Duration] Transport costs, distribution costs
+          [C] 4899 [13] [Money Dr Duration] Transport and travel costs, distribution costs
+          [C] 4575 [13] [Money Dr Duration] Subscriptions and donations, distribution costs
+          [C] 879 [13] [Money Dr Duration] Cleaning and security, distribution costs
+          [C] 3521 [13] [Money Dr Duration] Other direct costs, distribution costs
+          [C] 3562 [13] [Money Dr Duration] Other indirect costs, distribution costs
+        [C] 4110 [13] [Money Dr Duration] Purchases, distribution costs
+        [C] 3183 [13] [Money Dr Duration] Materials costs, distribution costs
+        [C] 5066 [13] [Money Dr Duration] Warehouse and storage expenses, distribution costs
+        [C] 4561 [13] [Money Dr Duration] Subcontractor costs, distribution costs
+        [C] 3711 [13] [Money Dr Duration] Own work capitalised, distribution costs
+        [C] 1714 [13] [Money Cr Duration] Discounts receivable, distribution costs
+        [C] 1710 [13] [Money Dr Duration] Discounts allowable, distribution costs
+        [C] 4455 [13] [Money Dr Duration] Staff costs, distribution costs
+          [C] 5062 [13] [Money Dr Duration] Wages and salaries, distribution costs
+          [C] 1696 [13] [Money Dr Duration] Directors' remuneration, distribution costs
+          [C] 1699 [13] [Money Dr Duration] Directors' salaries, distribution costs
+          [C] 1848 [13] [Money Dr Duration] Employers' National Insurance, distribution costs
+            [C] 1852 [13] [Money Dr Duration] Employers' National Insurance, staff, distribution costs
+            [C] 1847 [13] [Money Dr Duration] Employers' National Insurance, directors, distribution costs
+          [C] 3803 [13] [Money Dr Duration] Pensions, distribution costs
+            [C] 3802 [13] [Money Dr Duration] Pensions, defined contribution schemes, distribution costs
+              [C] 4479 [13] [Money Dr Duration] Staff pensions, defined contribution schemes, distribution costs
+              [C] 1682 [13] [Money Dr Duration] Director pensions, defined contribution schemes, distribution costs
+            [C] 3799 [13] [Money Dr Duration] Pensions, defined benefit schemes, distribution costs
+              [C] 4475 [13] [Money Dr Duration] Staff pensions, defined benefit schemes, distribution costs
+              [C] 1678 [13] [Money Dr Duration] Director pensions, defined benefit schemes, distribution costs
+            [C] 3807 [13] [Money Dr Duration] Pensions, other costs, distribution costs
+              [C] 4483 [13] [Money Dr Duration] Staff pensions, other costs, distribution costs
+              [C] 1686 [13] [Money Dr Duration] Director pensions, other costs, distribution costs
+            [C] 3812 [13] [Money Dr Duration] Pensions to former directors, distribution costs
+          [C] 3971 [13] [Money Dr Duration] Private health costs, distribution costs
+          [C] 1827 [13] [Money Dr Duration] Employee benefit trust payments, distribution costs
+          [C] 1692 [13] [Money Dr Duration] Directors' fees, distribution costs
+          [C] 429 [13] [Money Dr Duration] Bonuses, distribution costs
+            [C] 4449 [13] [Money Dr Duration] Staff bonuses, distribution costs
+            [C] 1689 [13] [Money Dr Duration] Directors' bonuses, distribution costs
+          [C] 902 [13] [Money Dr Duration] Commissions payable to staff, distribution costs
+          [C] 4738 [13] [Money Dr Duration] Temporary staff, casual wages and recruitment, distribution costs
+            [C] 4734 [13] [Money Dr Duration] Temporary staff and casual wages, distribution costs
+            [C] 4166 [13] [Money Dr Duration] Recruitment, distribution costs
+          [C] 4491 [13] [Money Dr Duration] Staff training, distribution costs
+          [C] 4463 [13] [Money Dr Duration] Staff expenses, distribution costs
+            [C] 4903 [13] [Money Dr Duration] Travel and subsistence expenses, distribution costs
+              [C] 2542 [13] [Money Dr Duration] Hotel expenses, distribution costs
+              [C] 4127 [13] [Money Dr Duration] Rail, air, bus, taxi and related expenses, distribution costs
+              [C] 4467 [13] [Money Dr Duration] Staff motor expenses, distribution costs
+              [C] 4621 [13] [Money Dr Duration] Subsistence expenses, distribution costs
+              [C] 4471 [13] [Money Dr Duration] Staff parking expenses, distribution costs
+            [C] 1865 [13] [Money Dr Duration] Entertaining expenses incurred by staff, distribution costs
+            [C] 3660 [13] [Money Dr Duration] Other staff expenses, distribution costs
+          [C] 4499 [13] [Money Dr Duration] Staff welfare, distribution costs
+          [C] 497 [13] [Money Dr Duration] Canteen costs, distribution costs
+          [C] 1869 [13] [Money Dr Duration] Entertaining of staff, distribution costs
+          [C] 920 [13] [Money Dr Duration] Compensation for loss of office, distribution costs
+          [C] 4193 [13] [Money Dr Duration] Redundancy costs, distribution costs
+          [C] 4487 [13] [Money Dr Duration] Staff relocation costs, distribution costs
+          [C] 4446 [13] [Money Dr Duration] Staff benefits in kind, distribution costs
+          [C] 3664 [13] [Money Dr Duration] Other staff general costs, distribution costs
+            [C] 1504 [13] [String Duration] Description of other staff cost, distribution costs
+            [C] 212 [13] [Money Dr Duration] Amount of other staff cost, distribution costs
+        [C] 3906 [13] [Money Dr Duration] Premises costs, distribution costs
+          [C] 4205 [13] [Money Dr Duration] Rent of premises, distribution costs
+          [C] 4132 [13] [Money Dr Duration] Rates on premises, distribution costs
+            [C] 450 [13] [Money Dr Duration] Business rates on premises, distribution costs
+            [C] 5070 [13] [Money Dr Duration] Water rates, distribution costs
+          [C] 4351 [13] [Money Dr Duration] Service charges on premises, distribution costs
+          [C] 4993 [13] [Money Dr Duration] Utility charges, distribution costs
+            [C] 3063 [13] [Money Dr Duration] Lighting, heating and power, distribution costs
+            [C] 5070 [13] [Money Dr Duration] Water rates, distribution costs
+            [C] 1813 [13] [Money Dr Duration] Electricity charges, distribution costs
+            [C] 2376 [13] [Money Dr Duration] Gas charges, distribution costs
+            [C] 2254 [13] [Money Dr Duration] Fuel oil charges, distribution costs
+            [C] 887 [13] [Money Dr Duration] Coal charges, distribution costs
+            [C] 4359 [13] [Money Dr Duration] Sewerage charges, distribution costs
+          [C] 3926 [13] [Money Dr Duration] Premises repairs, renewals and maintenance, distribution costs
+            [C] 3918 [13] [Money Dr Duration] Premises repairs and maintenance, distribution costs
+            [C] 3922 [13] [Money Dr Duration] Premises repairs and renewals, distribution costs
+          [C] 3901 [13] [Money Dr Duration] Premises cleaning, distribution costs
+          [C] 4339 [13] [Money Dr Duration] Security costs, distribution costs
+          [C] 2792 [13] [Money Dr Duration] Insurance on premises, distribution costs
+          [C] 4982 [13] [Money Dr Duration] Use of residence for business purposes, distribution costs
+        [C] 2507 [13] [Money Dr Duration] Hire and leasing of plant, equipment and vehicles, distribution costs
+          [C] 2513 [13] [Money Dr Duration] Hire and leasing of plant and machinery, distribution costs
+            [C] 2526 [13] [Money Dr Duration] Hire of plant and machinery, operating leases, distribution costs
+            [C] 2530 [13] [Money Dr Duration] Hire of plant and machinery, spot hire, distribution costs
+          [C] 2493 [13] [Money Dr Duration] Hire and leasing of computer and other equipment, distribution costs
+            [C] 2481 [13] [Money Dr Duration] Hire of computer and other equipment, operating leases, distribution costs
+            [C] 2485 [13] [Money Dr Duration] Hire of computer and other equipment, spot hire, distribution costs
+          [C] 2497 [13] [Money Dr Duration] Hire and leasing of motor vehicles, distribution costs
+            [C] 3013 [13] [Money Dr Duration] Lease of motor vehicles, operating leases, distribution costs
+            [C] 3017 [13] [Money Dr Duration] Lease of motor vehicles, spot hire, distribution costs
+            [C] 2489 [13] [Money Dr Duration] Hire and leasing of cars, distribution costs
+              [C] 2473 [13] [Money Dr Duration] Hire of cars, operating leases, distribution costs
+              [C] 2477 [13] [Money Dr Duration] Hire of cars, spot hire, distribution costs
+          [C] 2501 [13] [Money Dr Duration] Hire and leasing of other assets, distribution costs
+            [C] 2517 [13] [Money Dr Duration] Hire of other assets, operating leases, distribution costs
+            [C] 2521 [13] [Money Dr Duration] Hire of other assets, spot hire, distribution costs
+        [C] 5054 [13] [Money Dr Duration] Vehicle running costs, distribution costs
+          [C] 5029 [13] [Money Dr Duration] Vehicle fuel costs, distribution costs
+          [C] 5033 [13] [Money Dr Duration] Vehicle insurance, distribution costs
+          [C] 5037 [13] [Money Dr Duration] Vehicle parking, distribution costs
+          [C] 5049 [13] [Money Dr Duration] Vehicle repairs, renewals and maintenance, distribution costs
+            [C] 5045 [13] [Money Dr Duration] Vehicle repairs and maintenance, distribution costs
+            [C] 5041 [13] [Money Dr Duration] Vehicle renewals and maintenance, distribution costs
+          [C] 3687 [13] [Money Dr Duration] Other vehicle costs, distribution costs
+        [C] 944 [13] [Money Dr Duration] Computer software, IT consumables and maintenance, distribution costs
+          [C] 940 [13] [Money Dr Duration] Computer software costs, distribution costs
+          [C] 2546 [13] [Money Dr Duration] IT and computer consumables, distribution costs
+          [C] 936 [13] [Money Dr Duration] Computer and IT equipment repairs, renewals and maintenance, distribution costs
+            [C] 932 [13] [Money Dr Duration] Computer and IT equipment repairs and maintenance, distribution costs
+            [C] 928 [13] [Money Dr Duration] Computer and IT equipment renewals and maintenance, distribution costs
+        [C] 4218 [13] [Money Dr Duration] Repairs, renewals and maintenance, distribution costs
+          [C] 3926 [13] [Money Dr Duration] Premises repairs, renewals and maintenance, distribution costs
+            [C] 3918 [13] [Money Dr Duration] Premises repairs and maintenance, distribution costs
+            [C] 3922 [13] [Money Dr Duration] Premises repairs and renewals, distribution costs
+          [C] 3901 [13] [Money Dr Duration] Premises cleaning, distribution costs
+          [C] 3875 [13] [Money Dr Duration] Plant and machinery repairs, renewals and maintenance, distribution costs
+            [C] 3867 [13] [Money Dr Duration] Plant and machinery repairs and maintenance, distribution costs
+            [C] 3871 [13] [Money Dr Duration] Plant and machinery repairs and renewals, distribution costs
+          [C] 5049 [13] [Money Dr Duration] Vehicle repairs, renewals and maintenance, distribution costs
+            [C] 5045 [13] [Money Dr Duration] Vehicle repairs and maintenance, distribution costs
+            [C] 5041 [13] [Money Dr Duration] Vehicle renewals and maintenance, distribution costs
+          [C] 936 [13] [Money Dr Duration] Computer and IT equipment repairs, renewals and maintenance, distribution costs
+            [C] 932 [13] [Money Dr Duration] Computer and IT equipment repairs and maintenance, distribution costs
+            [C] 928 [13] [Money Dr Duration] Computer and IT equipment renewals and maintenance, distribution costs
+          [C] 3009 [13] [Money Dr Duration] Laundry, distribution costs
+          [C] 2404 [13] [Money Dr Duration] General maintenance, distribution costs
+        [C] 2784 [13] [Money Dr Duration] Insurance, distribution costs
+          [C] 2792 [13] [Money Dr Duration] Insurance on premises, distribution costs
+          [C] 2788 [13] [Money Dr Duration] Insurance on plant, machinery and equipment, distribution costs
+          [C] 5033 [13] [Money Dr Duration] Vehicle insurance, distribution costs
+          [C] 3982 [13] [Money Dr Duration] Professional indemnity insurance, distribution costs
+          [C] 3567 [13] [Money Dr Duration] Other insurance, distribution costs
+        [C] 2060 [13] [Money Dr Duration] Fees and commissions payable, distribution costs
+          [C] 898 [13] [Money Dr Duration] Commissions payable, distribution costs
+          [C] 3158 [13] [Money Dr Duration] Management fees, distribution costs
+          [C] 2383 [13] [Money Dr Duration] General consultancy fees, distribution costs
+          [C] 3739 [13] [Money Dr Duration] Patent registration fees, distribution costs
+          [C] 3028 [13] [Money Dr Duration] Legal fees, distribution costs
+          [C] 41 [13] [Money Dr Duration] Accountancy fees, distribution costs
+          [C] 3584 [13] [Money Dr Duration] Other legal and professional fees, distribution costs
+        [C] 3170 [13] [Money Dr Duration] Marketing and advertising costs, distribution costs
+          [C] 3175 [13] [Money Dr Duration] Marketing costs, distribution costs
+            [C] 4329 [13] [Money Dr Duration] Sales publications and videos, distribution costs
+            [C] 4840 [13] [Money Dr Duration] Trade fairs and exhibitions, distribution costs
+            [C] 883 [13] [Money Dr Duration] Client training, including seminars, lectures and workshops, distribution costs
+            [C] 3164 [13] [Money Dr Duration] Market research costs, distribution costs
+            [C] 3720 [13] [Money Dr Duration] PR expenses, distribution costs
+            [C] 3592 [13] [Money Dr Duration] Other marketing and sales costs, distribution costs
+          [C] 130 [13] [Money Dr Duration] Advertising and promotional costs, distribution costs
+        [C] 4355 [13] [Money Dr Duration] Services costs, distribution costs
+          [C] 4726 [13] [Money Dr Duration] Technical services, distribution costs
+            [C] 2550 [13] [Money Dr Duration] IT services, distribution costs
+          [C] 2907 [13] [Money Dr Duration] Internal audit services, distribution costs
+          [C] 5005 [13] [Money Dr Duration] Valuation and actuarial services, distribution costs
+          [C] 3080 [13] [Money Dr Duration] Litigation services, distribution costs
+          [C] 4170 [13] [Money Dr Duration] Recruitment and remuneration services, distribution costs
+          [C] 1014 [13] [Money Dr Duration] Corporate finance services, distribution costs
+          [C] 60 [13] [Money Dr Duration] Accreditation services, distribution costs
+          [C] 3647 [13] [Money Dr Duration] Other services, distribution costs
+        [C] 4632 [13] [Money Dr Duration] Support and administration costs, distribution costs
+          [C] 3757 [13] [Money Dr Duration] Payroll processing, distribution costs
+          [C] 1135 [13] [Money Dr Duration] Data processing, distribution costs
+          [C] 2461 [13] [Money Dr Duration] Health and safety costs, distribution costs
+        [C] 1139 [13] [Money Dr Duration] Data and telecommunications costs, distribution costs
+          [C] 4730 [13] [Money Dr Duration] Telecommunications costs, distribution costs
+          [C] 1131 [13] [Money Dr Duration] Data costs, distribution costs
+        [C] 965 [13] [Money Dr Duration] Consumable items, distribution costs
+        [C] 3724 [13] [Money Dr Duration] Packaging material costs, distribution costs
+        [C] 2248 [13] [Money Dr Duration] Freight and carriage, distribution costs
+        [C] 1051 [13] [Money Dr Duration] Courier services, distribution costs
+        [C] 3964 [13] [Money Dr Duration] Printing, postage and stationery, distribution costs
+          [C] 3960 [13] [Money Dr Duration] Printing and photocopying costs, distribution costs
+            [C] 3956 [13] [Money Dr Duration] Printing costs, distribution costs
+            [C] 3862 [13] [Money Dr Duration] Photocopying costs, distribution costs
+          [C] 3894 [13] [Money Dr Duration] Postage costs, distribution costs
+          [C] 4531 [13] [Money Dr Duration] Stationery, distribution costs
+        [C] 3603 [13] [Money Dr Duration] Other office consumables, distribution costs
+        [C] 4211 [13] [Money Dr Duration] Reorganisation and restructuring costs, distribution costs
+        [C] 4234 [13] [Money Dr Duration] Research and development costs, distribution costs
+        [C] 4301 [13] [Money Dr Duration] Royalties payable, licence fees and similar charges, distribution costs
+        [C] 4571 [13] [Money Dr Duration] Subscriptions, distribution costs
+          [C] 4092 [13] [Money Dr Duration] Publication and other information subscriptions, distribution costs
+          [C] 4579 [13] [Money Dr Duration] Subscriptions to professional and trade bodies, distribution costs
+        [C] 1790 [13] [Money Dr Duration] Donations, distribution costs
+          [C] 872 [13] [Money Dr Duration] Charitable donations, distribution costs
+          [C] 3883 [13] [Money Dr Duration] Political donations, distribution costs
+        [C] 351 [13] [Money Dr Duration] Bad debts written off, distribution costs
+        [C] 2321 [13] [Money Cr Duration] Gain (loss) on foreign currency transactions, distribution costs
+        [C] 2280 [3,13] [Money Cr Duration] Gain (loss) from disposal of tangible fixed assets, distribution costs
+        [C] 2276 [4,13] [Money Cr Duration] Gain (loss) from disposal of intangible fixed assets, distribution costs
+        [A] 3408 Operating costs related to fixed assets, distribution costs [heading]
+          [C] 174 [6,13] [Money Dr Duration] Amortisation and impairment (reversal) of intangible fixed assets, distribution costs
+            [C] 177 [13] [Money Dr Duration] Amortisation of intangible assets, distribution costs
+            [C] 2579 [13] [Money Dr Duration] Impairment loss (reversal) intangible fixed assets, distribution costs
+          [C] 1262 [5,13] [Money Dr Duration] Depreciation and impairment (reversal) of tangible fixed assets, distribution costs
+          [C] 2433 [13] [Money Dr Duration] Goodwill reversal on disposal of fixed assets, distribution costs
+          [A] 4975 Use dimensions to distinguish individual classes of tangible and intangible assets, including goodwill, and owned and leased tangible assets [explanation]
+        [C] 4628 [13] [Money Dr Duration] Sundry expenses, distribution costs
+        [C] 3607 [13] [Money Dr Duration] Other office costs, distribution costs
+        [C] 3614 [13] [Money Dr Duration] Other operating costs, distribution costs
+          [C] 1495 [13] [String Duration] Description of other operating cost, distribution costs
+          [C] 207 [13] [Money Dr Duration] Amount of other operating cost, distribution costs
+        [C] 3534 [13] [Money Dr Duration] Other exceptional operating costs, distribution costs
+          [C] 1486 [13] [String Duration] Description of other exceptional operating cost, distribution costs
+          [C] 204 [13] [Money Dr Duration] Amount of other exceptional operating cost, distribution costs
+      [A] 125 Administrative expenses [heading]
+        [A] 124 Administrative expenses, alternative subtotals [heading]
+          [C] 1668 [13] [Money Dr Duration] Direct costs, administrative expenses
+          [C] 2765 [13] [Money Dr Duration] Indirect costs, administrative expenses
+          [C] 1854 [13] [Money Dr Duration] Employment costs, administrative expenses
+            [C] 1672 [13] [Money Dr Duration] Direct employment costs, administrative expenses
+            [C] 2769 [13] [Money Dr Duration] Indirect employment costs, administrative expenses
+          [C] 4492 [13] [Money Dr Duration] Staff training and recruitment, administrative expenses
+          [C] 1915 [13] [Money Dr Duration] Establishment costs, administrative expenses
+          [C] 3912 [13] [Money Dr Duration] Premises rent, rates and service costs, administrative expenses
+          [C] 2378 [13] [Money Dr Duration] General administration costs, administrative expenses
+          [C] 3023 [13] [Money Dr Duration] Legal, accounting and other professional fees, administrative expenses
+          [C] 4893 [13] [Money Dr Duration] Transport costs, administrative expenses
+          [C] 4897 [13] [Money Dr Duration] Transport and travel costs, administrative expenses
+          [C] 4573 [13] [Money Dr Duration] Subscriptions and donations, administrative expenses
+          [C] 877 [13] [Money Dr Duration] Cleaning and security, administrative expenses
+          [C] 3519 [13] [Money Dr Duration] Other direct costs, administrative expenses
+          [C] 3560 [13] [Money Dr Duration] Other indirect costs, administrative expenses
+        [C] 4108 [13] [Money Dr Duration] Purchases, administrative expenses
+        [C] 3180 [13] [Money Dr Duration] Materials costs, administrative expenses
+        [C] 5064 [13] [Money Dr Duration] Warehouse and storage expenses, administrative expenses
+        [C] 4558 [13] [Money Dr Duration] Subcontractor costs, administrative expenses
+        [C] 3708 [13] [Money Dr Duration] Own work capitalised, administrative expenses
+        [C] 1712 [13] [Money Cr Duration] Discounts receivable, administrative expenses
+        [C] 1708 [13] [Money Dr Duration] Discounts allowable, administrative expenses
+        [C] 4451 [13] [Money Dr Duration] Staff costs, administrative expenses
+          [C] 5059 [13] [Money Dr Duration] Wages and salaries, administrative expenses
+          [C] 1694 [13] [Money Dr Duration] Directors' remuneration, administrative expenses
+          [C] 1697 [13] [Money Dr Duration] Directors' salaries, administrative expenses
+          [C] 1841 [13] [Money Dr Duration] Employers' National Insurance, administrative expenses
+            [C] 1849 [13] [Money Dr Duration] Employers' National Insurance, staff, administrative expenses
+            [C] 1844 [13] [Money Dr Duration] Employers' National Insurance, directors, administrative expenses
+          [C] 3792 [13] [Money Dr Duration] Pensions, administrative expenses
+            [C] 3800 [13] [Money Dr Duration] Pensions, defined contribution schemes, administrative expenses
+              [C] 4476 [13] [Money Dr Duration] Staff pensions, defined contribution schemes, administrative expenses
+              [C] 1679 [13] [Money Dr Duration] Director pensions, defined contribution schemes, administrative expenses
+            [C] 3797 [13] [Money Dr Duration] Pensions, defined benefit schemes, administrative expenses
+              [C] 4472 [13] [Money Dr Duration] Staff pensions, defined benefit schemes, administrative expenses
+              [C] 1675 [13] [Money Dr Duration] Director pensions, defined benefit schemes, administrative expenses
+            [C] 3804 [13] [Money Dr Duration] Pensions, other costs, administrative expenses
+              [C] 4480 [13] [Money Dr Duration] Staff pensions, other costs, administrative expenses
+              [C] 1683 [13] [Money Dr Duration] Director pensions, other costs, administrative expenses
+            [C] 3809 [13] [Money Dr Duration] Pensions to former directors, administrative expenses
+          [C] 3969 [13] [Money Dr Duration] Private health costs, administrative expenses
+          [C] 1825 [13] [Money Dr Duration] Employee benefit trust payments, administrative expenses
+          [C] 1690 [13] [Money Dr Duration] Directors' fees, administrative expenses
+          [C] 427 [13] [Money Dr Duration] Bonuses, administrative expenses
+            [C] 4447 [13] [Money Dr Duration] Staff bonuses, administrative expenses
+            [C] 1687 [13] [Money Dr Duration] Directors' bonuses, administrative expenses
+          [C] 900 [13] [Money Dr Duration] Commissions payable to staff, administrative expenses
+          [C] 4736 [13] [Money Dr Duration] Temporary staff, casual wages and recruitment, administrative expenses
+            [C] 4732 [13] [Money Dr Duration] Temporary staff and casual wages, administrative expenses
+            [C] 4163 [13] [Money Dr Duration] Recruitment, administrative expenses
+          [C] 4488 [13] [Money Dr Duration] Staff training, administrative expenses
+          [C] 4461 [13] [Money Dr Duration] Staff expenses, administrative expenses
+            [C] 4901 [13] [Money Dr Duration] Travel and subsistence expenses, administrative expenses
+              [C] 2540 [13] [Money Dr Duration] Hotel expenses, administrative expenses
+              [C] 4125 [13] [Money Dr Duration] Rail, air, bus, taxi and related expenses, administrative expenses
+              [C] 4465 [13] [Money Dr Duration] Staff motor expenses, administrative expenses
+              [C] 4619 [13] [Money Dr Duration] Subsistence expenses, administrative expenses
+              [C] 4469 [13] [Money Dr Duration] Staff parking expenses, administrative expenses
+            [C] 1863 [13] [Money Dr Duration] Entertaining expenses incurred by staff, administrative expenses
+            [C] 3658 [13] [Money Dr Duration] Other staff expenses, administrative expenses
+          [C] 4496 [13] [Money Dr Duration] Staff welfare, administrative expenses
+          [C] 495 [13] [Money Dr Duration] Canteen costs, administrative expenses
+          [C] 1866 [13] [Money Dr Duration] Entertaining of staff, administrative expenses
+          [C] 918 [13] [Money Dr Duration] Compensation for loss of office, administrative expenses
+          [C] 4191 [13] [Money Dr Duration] Redundancy costs, administrative expenses
+          [C] 4485 [13] [Money Dr Duration] Staff relocation costs, administrative expenses
+          [C] 4444 [13] [Money Dr Duration] Staff benefits in kind, administrative expenses
+          [C] 3662 [13] [Money Dr Duration] Other staff general costs, administrative expenses
+            [C] 1502 [13] [String Duration] Description of other staff cost, administrative expenses
+            [C] 210 [13] [Money Dr Duration] Amount of other staff cost, administrative expenses
+        [C] 3903 [13] [Money Dr Duration] Premises costs, administrative expenses
+          [C] 4203 [13] [Money Dr Duration] Rent of premises, administrative expenses
+          [C] 4130 [13] [Money Dr Duration] Rates on premises, administrative expenses
+            [C] 448 [13] [Money Dr Duration] Business rates on premises, administrative expenses
+            [C] 5068 [13] [Money Dr Duration] Water rates, administrative expenses
+          [C] 4349 [13] [Money Dr Duration] Service charges on premises, administrative expenses
+          [C] 4991 [13] [Money Dr Duration] Utility charges, administrative expenses
+            [C] 3061 [13] [Money Dr Duration] Lighting, heating and power, administrative expenses
+            [C] 5068 [13] [Money Dr Duration] Water rates, administrative expenses
+            [C] 1811 [13] [Money Dr Duration] Electricity charges, administrative expenses
+            [C] 2374 [13] [Money Dr Duration] Gas charges, administrative expenses
+            [C] 2252 [13] [Money Dr Duration] Fuel oil charges, administrative expenses
+            [C] 885 [13] [Money Dr Duration] Coal charges, administrative expenses
+            [C] 4357 [13] [Money Dr Duration] Sewerage charges, administrative expenses
+          [C] 3923 [13] [Money Dr Duration] Premises repairs, renewals and maintenance, administrative expenses
+            [C] 3915 [13] [Money Dr Duration] Premises repairs and maintenance, administrative expenses
+            [C] 3919 [13] [Money Dr Duration] Premises repairs and renewals, administrative expenses
+          [C] 3898 [13] [Money Dr Duration] Premises cleaning, administrative expenses
+          [C] 4337 [13] [Money Dr Duration] Security costs, administrative expenses
+          [C] 2789 [13] [Money Dr Duration] Insurance on premises, administrative expenses
+          [C] 4980 [13] [Money Dr Duration] Use of residence for business purposes, administrative expenses
+        [C] 2503 [13] [Money Dr Duration] Hire and leasing of plant, equipment and vehicles, administrative expenses
+          [C] 2510 [13] [Money Dr Duration] Hire and leasing of plant and machinery, administrative expenses
+            [C] 2523 [13] [Money Dr Duration] Hire of plant and machinery, operating leases, administrative expenses
+            [C] 2527 [13] [Money Dr Duration] Hire of plant and machinery, spot hire, administrative expenses
+          [C] 2490 [13] [Money Dr Duration] Hire and leasing of computer and other equipment, administrative expenses
+            [C] 2478 [13] [Money Dr Duration] Hire of computer and other equipment, operating leases, administrative expenses
+            [C] 2482 [13] [Money Dr Duration] Hire of computer and other equipment, spot hire, administrative expenses
+          [C] 2494 [13] [Money Dr Duration] Hire and leasing of motor vehicles, administrative expenses
+            [C] 3010 [13] [Money Dr Duration] Lease of motor vehicles, operating leases, administrative expenses
+            [C] 3014 [13] [Money Dr Duration] Lease of motor vehicles, spot hire, administrative expenses
+            [C] 2486 [13] [Money Dr Duration] Hire and leasing of cars, administrative expenses
+              [C] 2470 [13] [Money Dr Duration] Hire of cars, operating leases, administrative expenses
+              [C] 2474 [13] [Money Dr Duration] Hire of cars, spot hire, administrative expenses
+          [C] 2498 [13] [Money Dr Duration] Hire and leasing of other assets, administrative expenses
+            [C] 2514 [13] [Money Dr Duration] Hire of other assets, operating leases, administrative expenses
+            [C] 2518 [13] [Money Dr Duration] Hire of other assets, spot hire, administrative expenses
+        [C] 5051 [13] [Money Dr Duration] Vehicle running costs, administrative expenses
+          [C] 5027 [13] [Money Dr Duration] Vehicle fuel costs, administrative expenses
+          [C] 5030 [13] [Money Dr Duration] Vehicle insurance, administrative expenses
+          [C] 5034 [13] [Money Dr Duration] Vehicle parking, administrative expenses
+          [C] 5046 [13] [Money Dr Duration] Vehicle repairs, renewals and maintenance, administrative expenses
+            [C] 5042 [13] [Money Dr Duration] Vehicle repairs and maintenance, administrative expenses
+            [C] 5038 [13] [Money Dr Duration] Vehicle renewals and maintenance, administrative expenses
+          [C] 3685 [13] [Money Dr Duration] Other vehicle costs, administrative expenses
+        [C] 941 [13] [Money Dr Duration] Computer software, IT consumables and maintenance, administrative expenses
+          [C] 938 [13] [Money Dr Duration] Computer software costs, administrative expenses
+          [C] 2543 [13] [Money Dr Duration] IT and computer consumables, administrative expenses
+          [C] 933 [13] [Money Dr Duration] Computer and IT equipment repairs, renewals and maintenance, administrative expenses
+            [C] 929 [13] [Money Dr Duration] Computer and IT equipment repairs and maintenance, administrative expenses
+            [C] 925 [13] [Money Dr Duration] Computer and IT equipment renewals and maintenance, administrative expenses
+        [C] 4214 [13] [Money Dr Duration] Repairs, renewals and maintenance, administrative expenses
+          [C] 3923 [13] [Money Dr Duration] Premises repairs, renewals and maintenance, administrative expenses
+            [C] 3915 [13] [Money Dr Duration] Premises repairs and maintenance, administrative expenses
+            [C] 3919 [13] [Money Dr Duration] Premises repairs and renewals, administrative expenses
+          [C] 3898 [13] [Money Dr Duration] Premises cleaning, administrative expenses
+          [C] 3872 [13] [Money Dr Duration] Plant and machinery repairs, renewals and maintenance, administrative expenses
+            [C] 3864 [13] [Money Dr Duration] Plant and machinery repairs and maintenance, administrative expenses
+            [C] 3868 [13] [Money Dr Duration] Plant and machinery repairs and renewals, administrative expenses
+          [C] 5046 [13] [Money Dr Duration] Vehicle repairs, renewals and maintenance, administrative expenses
+            [C] 5042 [13] [Money Dr Duration] Vehicle repairs and maintenance, administrative expenses
+            [C] 5038 [13] [Money Dr Duration] Vehicle renewals and maintenance, administrative expenses
+          [C] 933 [13] [Money Dr Duration] Computer and IT equipment repairs, renewals and maintenance, administrative expenses
+            [C] 929 [13] [Money Dr Duration] Computer and IT equipment repairs and maintenance, administrative expenses
+            [C] 925 [13] [Money Dr Duration] Computer and IT equipment renewals and maintenance, administrative expenses
+          [C] 3006 [13] [Money Dr Duration] Laundry, administrative expenses
+          [C] 2401 [13] [Money Dr Duration] General maintenance, administrative expenses
+        [C] 2781 [13] [Money Dr Duration] Insurance, administrative expenses
+          [C] 2789 [13] [Money Dr Duration] Insurance on premises, administrative expenses
+          [C] 2785 [13] [Money Dr Duration] Insurance on plant, machinery and equipment, administrative expenses
+          [C] 5030 [13] [Money Dr Duration] Vehicle insurance, administrative expenses
+          [C] 3979 [13] [Money Dr Duration] Professional indemnity insurance, administrative expenses
+          [C] 3564 [13] [Money Dr Duration] Other insurance, administrative expenses
+        [C] 2058 [13] [Money Dr Duration] Fees and commissions payable, administrative expenses
+          [C] 896 [13] [Money Dr Duration] Commissions payable, administrative expenses
+          [C] 3156 [13] [Money Dr Duration] Management fees, administrative expenses
+          [C] 2381 [13] [Money Dr Duration] General consultancy fees, administrative expenses
+          [C] 3737 [13] [Money Dr Duration] Patent registration fees, administrative expenses
+          [C] 3026 [13] [Money Dr Duration] Legal fees, administrative expenses
+          [C] 39 [13] [Money Dr Duration] Accountancy fees, administrative expenses
+          [C] 3582 [13] [Money Dr Duration] Other legal and professional fees, administrative expenses
+        [C] 3168 [13] [Money Dr Duration] Marketing and advertising costs, administrative expenses
+          [C] 3173 [13] [Money Dr Duration] Marketing costs, administrative expenses
+            [C] 4326 [13] [Money Dr Duration] Sales publications and videos, administrative expenses
+            [C] 4837 [13] [Money Dr Duration] Trade fairs and exhibitions, administrative expenses
+            [C] 880 [13] [Money Dr Duration] Client training, including seminars, lectures and workshops, administrative expenses
+            [C] 3162 [13] [Money Dr Duration] Market research costs, administrative expenses
+            [C] 3718 [13] [Money Dr Duration] PR expenses, administrative expenses
+            [C] 3590 [13] [Money Dr Duration] Other marketing and sales costs, administrative expenses
+          [C] 128 [13] [Money Dr Duration] Advertising and promotional costs, administrative expenses
+        [C] 4353 [13] [Money Dr Duration] Services costs, administrative expenses
+          [C] 4723 [13] [Money Dr Duration] Technical services, administrative expenses
+            [C] 2547 [13] [Money Dr Duration] IT services, administrative expenses
+          [C] 2904 [13] [Money Dr Duration] Internal audit services, administrative expenses
+          [C] 5002 [13] [Money Dr Duration] Valuation and actuarial services, administrative expenses
+          [C] 3077 [13] [Money Dr Duration] Litigation services, administrative expenses
+          [C] 4167 [13] [Money Dr Duration] Recruitment and remuneration services, administrative expenses
+          [C] 1011 [13] [Money Dr Duration] Corporate finance services, administrative expenses
+          [C] 57 [13] [Money Dr Duration] Accreditation services, administrative expenses
+          [C] 3644 [13] [Money Dr Duration] Other services, administrative expenses
+        [C] 4630 [13] [Money Dr Duration] Support and administration costs, administrative expenses
+          [C] 3754 [13] [Money Dr Duration] Payroll processing, administrative expenses
+          [C] 1132 [13] [Money Dr Duration] Data processing, administrative expenses
+          [C] 2459 [13] [Money Dr Duration] Health and safety costs, administrative expenses
+        [C] 1137 [13] [Money Dr Duration] Data and telecommunications costs, administrative expenses
+          [C] 4728 [13] [Money Dr Duration] Telecommunications costs, administrative expenses
+          [C] 1129 [13] [Money Dr Duration] Data costs, administrative expenses
+        [C] 962 [13] [Money Dr Duration] Consumable items, administrative expenses
+        [C] 3722 [13] [Money Dr Duration] Packaging material costs, administrative expenses
+        [C] 2245 [13] [Money Dr Duration] Freight and carriage, administrative expenses
+        [C] 1048 [13] [Money Dr Duration] Courier services, administrative expenses
+        [C] 3961 [13] [Money Dr Duration] Printing, postage and stationery, administrative expenses
+          [C] 3958 [13] [Money Dr Duration] Printing and photocopying costs, administrative expenses
+            [C] 3954 [13] [Money Dr Duration] Printing costs, administrative expenses
+            [C] 3860 [13] [Money Dr Duration] Photocopying costs, administrative expenses
+          [C] 3892 [13] [Money Dr Duration] Postage costs, administrative expenses
+          [C] 4528 [13] [Money Dr Duration] Stationery, administrative expenses
+        [C] 3600 [13] [Money Dr Duration] Other office consumables, administrative expenses
+        [C] 4209 [13] [Money Dr Duration] Reorganisation and restructuring costs, administrative expenses
+        [C] 4232 [13] [Money Dr Duration] Research and development costs, administrative expenses
+        [C] 4299 [13] [Money Dr Duration] Royalties payable, licence fees and similar charges, administrative expenses
+        [C] 4568 [13] [Money Dr Duration] Subscriptions, administrative expenses
+          [C] 4089 [13] [Money Dr Duration] Publication and other information subscriptions, administrative expenses
+          [C] 4576 [13] [Money Dr Duration] Subscriptions to professional and trade bodies, administrative expenses
+        [C] 1787 [13] [Money Dr Duration] Donations, administrative expenses
+          [C] 870 [13] [Money Dr Duration] Charitable donations, administrative expenses
+          [C] 3880 [13] [Money Dr Duration] Political donations, administrative expenses
+        [C] 348 [13] [Money Dr Duration] Bad debts written off, administrative expenses
+        [C] 2319 [13] [Money Cr Duration] Gain (loss) on foreign currency transactions, administrative expenses
+        [C] 2278 [3,13] [Money Cr Duration] Gain (loss) from disposal of tangible fixed assets, administrative expenses
+        [C] 2274 [4,13] [Money Cr Duration] Gain (loss) from disposal of intangible fixed assets, administrative expenses
+        [A] 3406 Operating costs related to fixed assets, administrative expenses [heading]
+          [C] 172 [6,13] [Money Dr Duration] Amortisation and impairment (reversal) of intangible fixed assets, administrative expenses
+            [C] 175 [13] [Money Dr Duration] Amortisation of intangible assets, administrative expenses
+            [C] 2577 [13] [Money Dr Duration] Impairment loss (reversal) intangible fixed assets, administrative expenses
+          [C] 1260 [5,13] [Money Dr Duration] Depreciation and impairment (reversal) of tangible fixed assets, administrative expenses
+          [C] 2431 [13] [Money Dr Duration] Goodwill reversal on disposal of fixed assets, administrative expenses
+          [A] 4975 Use dimensions to distinguish individual classes of tangible and intangible assets, including goodwill, and owned and leased tangible assets [explanation]
+        [C] 4626 [13] [Money Dr Duration] Sundry expenses, administrative expenses
+        [C] 3605 [13] [Money Dr Duration] Other office costs, administrative expenses
+        [C] 3612 [13] [Money Dr Duration] Other operating costs, administrative expenses
+          [C] 1493 [13] [String Duration] Description of other operating cost, administrative expenses
+          [C] 205 [13] [Money Dr Duration] Amount of other operating cost, administrative expenses
+        [C] 3532 [13] [Money Dr Duration] Other exceptional operating costs, administrative expenses
+          [C] 1484 [13] [String Duration] Description of other exceptional operating cost, administrative expenses
+          [C] 202 [13] [Money Dr Duration] Amount of other exceptional operating cost, administrative expenses
+      [A] 4624 Subtotals and other general items, costs [heading]
+        [C] 1740 [13] [Money Dr Duration] Distribution costs and administrative costs, subtotal
+      [A] 4765 Total costs [heading]
+        [A] 1038 Costs, alternative subtotals [heading]
+          [C] 1667 [13] [Money Dr Duration] Direct costs
+          [C] 2764 [13] [Money Dr Duration] Indirect costs
+          [C] 1853 [13] [Money Dr Duration] Employment costs
+            [C] 1671 [13] [Money Dr Duration] Direct employment costs
+            [C] 2768 [13] [Money Dr Duration] Indirect employment costs
+          [C] 4494 [13] [Money Dr Duration] Staff training and recruitment costs
+          [C] 1914 [13] [Money Dr Duration] Establishment costs
+          [C] 3911 [13] [Money Dr Duration] Premises rent, rates and service costs
+          [C] 2377 [13] [Money Dr Duration] General administration costs
+          [C] 3022 [13] [Money Dr Duration] Legal, accounting and other professional fees
+          [C] 4892 [13] [Money Dr Duration] Transport costs
+          [C] 4896 [13] [Money Dr Duration] Transport and travel costs
+          [C] 4572 [13] [Money Dr Duration] Subscriptions and donations
+          [C] 876 [13] [Money Dr Duration] Cleaning and security
+          [C] 3518 [13] [Money Dr Duration] Other direct costs
+          [C] 3559 [13] [Money Dr Duration] Other indirect costs
+        [C] 4107 [13] [Money Dr Duration] Purchases
+        [C] 3179 [13] [Money Dr Duration] Materials costs
+        [C] 5063 [13] [Money Dr Duration] Warehouse and storage expenses
+        [C] 4557 [13] [Money Dr Duration] Subcontractor costs
+        [C] 3707 [10,13] [Money Cr Duration] Own work capitalised
+        [C] 1711 [13] [Money Cr Duration] Discounts receivable
+        [C] 1707 [13] [Money Dr Duration] Discounts allowable
+        [C] 4453 [13] [Money Dr Duration] Staff costs, detailed P&L
+          [C] 5061 [13] [Money Dr Duration] Wages and salaries, detailed P&L
+          [A] 2190 For directors' remuneration totals and related figures - see 'Directors' Remuneration' in Directors' Report [cross-reference]
+          [C] 1843 [13] [Money Dr Duration] Employers' National Insurance costs
+            [C] 1851 [13] [Money Dr Duration] Employers' National Insurance, staff costs
+            [C] 1846 [13] [Money Dr Duration] Employers' National Insurance, directors costs
+          [C] 3796 [13] [Money Dr Duration] Pensions costs, detailed P&L
+            [C] 3795 [9,13] [Money Dr Duration] Pensions costs, defined contribution schemes
+              [C] 4478 [13] [Money Dr Duration] Staff pensions, defined contribution schemes, costs
+              [C] 1681 [13] [Money Dr Duration] Director pensions, defined contribution schemes, costs
+            [C] 3794 [9,13] [Money Dr Duration] Pensions costs, defined benefit schemes
+              [C] 4474 [13] [Money Dr Duration] Staff pensions, defined benefit schemes, costs
+              [C] 1677 [13] [Money Dr Duration] Director pensions, defined benefit schemes, costs
+            [C] 3806 [13] [Money Dr Duration] Pensions, other costs, detailed P&L
+              [C] 4482 [13] [Money Dr Duration] Staff pensions, other costs, detailed P&L
+              [C] 1685 [13] [Money Dr Duration] Director pensions, other costs, detailed P&L
+            [C] 3811 [13] [Money Dr Duration] Pensions to former directors, costs
+          [C] 3968 [13] [Money Dr Duration] Private health costs
+          [C] 1824 [13] [Money Dr Duration] Employee benefit trust payments
+          [C] 426 [13] [Money Dr Duration] Bonuses
+            [C] 430 [13] [Money Dr Duration] Bonuses, staff
+          [C] 899 [13] [Money Dr Duration] Commissions payable to staff
+          [C] 4735 [13] [Money Dr Duration] Temporary staff, casual wages and recruitment
+            [C] 4731 [13] [Money Dr Duration] Temporary staff and casual wages
+            [C] 4165 [13] [Money Dr Duration] Recruitment costs
+          [C] 4490 [13] [Money Dr Duration] Staff training costs
+          [C] 4460 [13] [Money Dr Duration] Staff expenses
+            [C] 4900 [13] [Money Dr Duration] Travel and subsistence expenses
+              [C] 2539 [13] [Money Dr Duration] Hotel expenses
+              [C] 4124 [13] [Money Dr Duration] Rail, air, bus, taxi and related expenses
+              [C] 4464 [13] [Money Dr Duration] Staff motor expenses
+              [C] 4618 [13] [Money Dr Duration] Subsistence expenses
+              [C] 4468 [13] [Money Dr Duration] Staff parking expenses
+            [C] 1862 [13] [Money Dr Duration] Entertaining expenses incurred by staff
+            [C] 3657 [13] [Money Dr Duration] Other staff expenses
+          [C] 4498 [13] [Money Dr Duration] Staff welfare costs
+          [C] 494 [13] [Money Dr Duration] Canteen costs
+          [C] 1868 [13] [Money Dr Duration] Entertaining of staff costs
+          [C] 917 [13] [Money Dr Duration] Compensation for loss of office
+          [C] 4190 [9,13] [Money Dr Duration] Redundancy costs
+          [C] 4484 [13] [Money Dr Duration] Staff relocation costs
+          [C] 4443 [13] [Money Dr Duration] Staff benefits in kind
+          [C] 3661 [13] [Money Dr Duration] Other staff general costs
+            [C] 1501 [13] [String Duration] Description of other staff cost
+            [C] 209 [13] [Money Dr Duration] Amount of other staff cost
+        [C] 3902 [13] [Money Dr Duration] Premises costs
+          [C] 4202 [13] [Money Dr Duration] Rent of premises
+          [C] 4129 [13] [Money Dr Duration] Rates on premises
+            [C] 447 [13] [Money Dr Duration] Business rates on premises
+            [C] 5067 [13] [Money Dr Duration] Water rates
+          [C] 4348 [13] [Money Dr Duration] Service charges on premises
+          [C] 4990 [13] [Money Dr Duration] Utility charges
+            [C] 3060 [13] [Money Dr Duration] Lighting, heating and power
+            [C] 5067 [13] [Money Dr Duration] Water rates
+            [C] 1810 [13] [Money Dr Duration] Electricity charges
+            [C] 2373 [13] [Money Dr Duration] Gas charges
+            [C] 2251 [13] [Money Dr Duration] Fuel oil charges
+            [C] 884 [13] [Money Dr Duration] Coal charges
+            [C] 4356 [13] [Money Dr Duration] Sewerage charges
+          [C] 3925 [13] [Money Dr Duration] Premises repairs, renewals and maintenance costs
+            [C] 3917 [13] [Money Dr Duration] Premises repairs and maintenance costs
+            [C] 3921 [13] [Money Dr Duration] Premises repairs and renewals costs
+          [C] 3900 [13] [Money Dr Duration] Premises cleaning costs
+          [C] 4336 [13] [Money Dr Duration] Security costs
+          [C] 2791 [13] [Money Dr Duration] Insurance on premises costs
+          [C] 4979 [13] [Money Dr Duration] Use of residence for business purposes
+        [C] 2505 [13] [Money Dr Duration] Hire and leasing of plant, equipment and vehicles, costs
+          [C] 2512 [9,13] [Money Dr Duration] Hire and leasing of plant and machinery, costs
+            [C] 2525 [13] [Money Dr Duration] Hire of plant and machinery, operating leases, costs
+            [C] 2529 [13] [Money Dr Duration] Hire of plant and machinery, spot hire, costs
+          [C] 2492 [13] [Money Dr Duration] Hire and leasing of computer and other equipment, costs
+            [C] 2480 [13] [Money Dr Duration] Hire of computer and other equipment, operating leases, costs
+            [C] 2484 [13] [Money Dr Duration] Hire of computer and other equipment, spot hire, costs
+          [C] 2496 [13] [Money Dr Duration] Hire and leasing of motor vehicles, costs
+            [C] 3012 [13] [Money Dr Duration] Lease of motor vehicles, operating leases, costs
+            [C] 3016 [13] [Money Dr Duration] Lease of motor vehicles, spot hire, costs
+            [C] 2488 [13] [Money Dr Duration] Hire and leasing of cars, costs
+              [C] 2472 [13] [Money Dr Duration] Hire of cars, operating leases, costs
+              [C] 2476 [13] [Money Dr Duration] Hire of cars, spot hire, costs
+          [C] 2500 [13] [Money Dr Duration] Hire and leasing of other assets, costs
+            [C] 2516 [13] [Money Dr Duration] Hire of other assets, operating leases, costs
+            [C] 2520 [13] [Money Dr Duration] Hire of other assets, spot hire, costs
+        [C] 5050 [13] [Money Dr Duration] Vehicle running costs
+          [C] 5026 [13] [Money Dr Duration] Vehicle fuel costs
+          [C] 5032 [13] [Money Dr Duration] Vehicle insurance costs
+          [C] 5036 [13] [Money Dr Duration] Vehicle parking costs
+          [C] 5048 [13] [Money Dr Duration] Vehicle repairs, renewals and maintenance costs
+            [C] 5044 [13] [Money Dr Duration] Vehicle repairs and maintenance costs
+            [C] 5040 [13] [Money Dr Duration] Vehicle renewals and maintenance costs
+          [C] 3684 [13] [Money Dr Duration] Other vehicle costs
+        [C] 943 [13] [Money Dr Duration] Computer software, IT consumables and maintenance costs
+          [C] 937 [13] [Money Dr Duration] Computer software costs
+          [C] 2545 [13] [Money Dr Duration] IT and computer consumables costs
+          [C] 935 [13] [Money Dr Duration] Computer and IT equipment repairs, renewals and maintenance costs
+            [C] 931 [13] [Money Dr Duration] Computer and IT equipment repairs and maintenance costs
+            [C] 927 [13] [Money Dr Duration] Computer and IT equipment renewals and maintenance costs
+        [C] 4216 [13] [Money Dr Duration] Repairs, renewals and maintenance costs
+          [C] 3925 [13] [Money Dr Duration] Premises repairs, renewals and maintenance costs
+            [C] 3917 [13] [Money Dr Duration] Premises repairs and maintenance costs
+            [C] 3921 [13] [Money Dr Duration] Premises repairs and renewals costs
+          [C] 3900 [13] [Money Dr Duration] Premises cleaning costs
+          [C] 3874 [13] [Money Dr Duration] Plant and machinery repairs, renewals and maintenance costs
+            [C] 3866 [13] [Money Dr Duration] Plant and machinery repairs and maintenance costs
+            [C] 3870 [13] [Money Dr Duration] Plant and machinery repairs and renewals costs
+          [C] 5048 [13] [Money Dr Duration] Vehicle repairs, renewals and maintenance costs
+            [C] 5044 [13] [Money Dr Duration] Vehicle repairs and maintenance costs
+            [C] 5040 [13] [Money Dr Duration] Vehicle renewals and maintenance costs
+          [C] 935 [13] [Money Dr Duration] Computer and IT equipment repairs, renewals and maintenance costs
+            [C] 931 [13] [Money Dr Duration] Computer and IT equipment repairs and maintenance costs
+            [C] 927 [13] [Money Dr Duration] Computer and IT equipment renewals and maintenance costs
+          [C] 3008 [13] [Money Dr Duration] Laundry costs
+          [C] 2403 [13] [Money Dr Duration] General maintenance costs
+        [C] 2783 [13] [Money Dr Duration] Insurance costs
+          [C] 2791 [13] [Money Dr Duration] Insurance on premises costs
+          [C] 2787 [13] [Money Dr Duration] Insurance on plant, machinery and equipment costs
+          [C] 5032 [13] [Money Dr Duration] Vehicle insurance costs
+          [C] 3981 [13] [Money Dr Duration] Professional indemnity insurance costs
+          [C] 3566 [13] [Money Dr Duration] Other insurance costs
+        [C] 2057 [13] [Money Dr Duration] Fees and commissions payable
+          [C] 895 [13] [Money Dr Duration] Commissions payable
+          [C] 3159 [13] [Money Dr Duration] Management fees payable
+          [C] 2384 [13] [Money Dr Duration] General consultancy fees payable
+          [C] 3740 [13] [Money Dr Duration] Patent registration fees payable
+          [C] 3029 [13] [Money Dr Duration] Legal fees payable
+          [C] 42 [13] [Money Dr Duration] Accountancy fees payable
+          [C] 3585 [13] [Money Dr Duration] Other legal and professional fees payable
+        [C] 3167 [13] [Money Dr Duration] Marketing and advertising costs
+          [C] 3172 [13] [Money Dr Duration] Marketing costs
+            [C] 4328 [13] [Money Dr Duration] Sales publications and videos costs
+            [C] 4839 [13] [Money Dr Duration] Trade fairs and exhibitions costs
+            [C] 882 [13] [Money Dr Duration] Client training, including seminars, lectures and workshops costs
+            [C] 3161 [13] [Money Dr Duration] Market research costs
+            [C] 3717 [13] [Money Dr Duration] PR expenses
+            [C] 3589 [13] [Money Dr Duration] Other marketing and sales costs
+          [C] 127 [13] [Money Dr Duration] Advertising and promotional costs
+        [C] 4352 [13] [Money Dr Duration] Services costs
+          [C] 4725 [13] [Money Dr Duration] Technical services costs
+            [C] 2549 [13] [Money Dr Duration] IT services costs
+          [C] 2906 [13] [Money Dr Duration] Internal audit services costs
+          [C] 5004 [13] [Money Dr Duration] Valuation and actuarial services costs
+          [C] 3079 [13] [Money Dr Duration] Litigation services costs
+          [C] 4169 [13] [Money Dr Duration] Recruitment and remuneration services costs
+          [C] 1013 [13] [Money Dr Duration] Corporate finance services costs
+          [C] 59 [13] [Money Dr Duration] Accreditation services costs
+          [C] 3646 [13] [Money Dr Duration] Other services costs
+        [C] 4629 [13] [Money Dr Duration] Support and administration costs
+          [C] 3756 [13] [Money Dr Duration] Payroll processing costs
+          [C] 1134 [13] [Money Dr Duration] Data processing costs
+          [C] 2458 [13] [Money Dr Duration] Health and safety costs
+        [C] 1136 [13] [Money Dr Duration] Data and telecommunications costs
+          [C] 4727 [13] [Money Dr Duration] Telecommunications costs
+          [C] 1128 [13] [Money Dr Duration] Data costs
+        [C] 964 [13] [Money Dr Duration] Consumable items costs
+        [C] 3721 [13] [Money Dr Duration] Packaging material costs
+        [C] 2247 [13] [Money Dr Duration] Freight and carriage costs
+        [C] 1050 [13] [Money Dr Duration] Courier services costs
+        [C] 3963 [13] [Money Dr Duration] Printing, postage and stationery costs
+          [C] 3957 [13] [Money Dr Duration] Printing and photocopying costs
+            [C] 3953 [13] [Money Dr Duration] Printing costs
+            [C] 3859 [13] [Money Dr Duration] Photocopying costs
+          [C] 3891 [13] [Money Dr Duration] Postage costs
+          [C] 4530 [13] [Money Dr Duration] Stationery costs
+        [C] 3602 [13] [Money Dr Duration] Other office consumables costs
+        [C] 4208 [9,13] [Money Dr Duration] Reorganisation and restructuring costs
+        [C] 4231 [12,13] [Money Dr Duration] Research and development costs
+        [C] 4298 [13] [Money Dr Duration] Royalties payable, licence fees and similar charges
+        [C] 4570 [13] [Money Dr Duration] Subscriptions costs
+          [C] 4091 [13] [Money Dr Duration] Publication and other information subscriptions costs
+          [C] 4578 [13] [Money Dr Duration] Subscriptions to professional and trade bodies costs
+        [C] 1789 [13] [Money Dr Duration] Donations costs
+          [C] 869 [13] [Money Dr Duration] Charitable donations
+          [C] 3882 [13] [Money Dr Duration] Political donations, detailed P&L
+        [C] 350 [13] [Money Dr Duration] Bad debts written off costs
+        [A] 2193 For fixed asset expenses, see 'Operating costs related to fixed assets' note [cross-reference]
+        [C] 4625 [13] [Money Dr Duration] Sundry expenses
+        [C] 3604 [13] [Money Dr Duration] Other office costs
+        [C] 3681 [13] [Money Dr Duration] Other unexceptional operating costs
+          [C] 1506 [13] [String Duration] Description of other unexceptional operating cost
+          [C] 213 [13] [Money Dr Duration] Amount of other unexceptional operating cost
+        [C] 3531 [11,13] [Money Ns Duration] Other exceptional operating costs
+          [C] 1393 [13] [String Duration] Description of exceptional operating cost
+          [C] 196 [13] [Money Dr Duration] Amount of exceptional operating cost
+      [A] 3300 Net items, may be a credit or a cost [heading]
+        [C] 2277 [3,13] [Money Cr Duration] Gain (loss) from disposal of tangible fixed assets
+        [C] 2273 [4,13] [Money Cr Duration] Gain (loss) from disposal of intangible fixed assets
+        [C] 2220 [9,13] [Money Cr Duration] Foreign exchange gain (loss) recognised in profit and loss
+      [A] 2612 Income from other fixed asset investments - further analysis [heading]
+        [C] 1765 [13] [Money Cr Duration] Dividends from other fixed asset investments, listed
+        [C] 2836 [13] [Money Cr Duration] Interest from other fixed asset investments, listed
+        [C] 1766 [13] [Money Cr Duration] Dividends from other fixed asset investments, unlisted
+        [C] 2837 [13] [Money Cr Duration] Interest from other fixed asset investments, unlisted
+      [A] 2610 Income from other current asset investments - further analysis [heading]
+        [C] 1763 [13] [Money Cr Duration] Dividends from other current asset investments, listed
+        [C] 2834 [13] [Money Cr Duration] Interest from other current asset investments, listed
+        [C] 1764 [13] [Money Cr Duration] Dividends from other current asset investments, unlisted
+        [C] 2835 [13] [Money Cr Duration] Interest from other current asset investments, unlisted
+      [C] 2065 [13] [Money Dr Duration] Finance charges, detailed P&L
+        [C] 376 [13] [Money Dr Duration] Bank charges, detailed P&L
+        [C] 1996 [13] [Money Dr Duration] Factoring charges, detailed P&L
+        [C] 1053 [13] [Money Dr Duration] Credit card charges, detailed P&L
+        [C] 3021 [13] [Money Dr Duration] Leases and hire purchase contracts, finance charges
+          [C] 3416 [13] [Money Dr Duration] Operating leases, finance charges
+          [C] 2532 [13] [Money Dr Duration] Hire purchase contracts, finance charges
+          [C] 2080 [13] [Money Dr Duration] Finance leases, finance charges
+          [C] 2857 [13] [Money Dr Duration] Interest on obligations under finance leases and hire purchase contracts
+            [C] 2856 [13] [Money Dr Duration] Interest on obligations under finance leases
+            [C] 2858 [13] [Money Dr Duration] Interest on obligations under hire purchase contracts
+        [C] 2221 [13] [Money Dr Duration] Foreign exchange transaction charges, detailed P&L
+        [C] 3005 [13] [Money Dr Duration] Late payment of tax, charges
+        [C] 2929 [13] [Money Dr Duration] Irrecoverable VAT, detailed P&L
+      [C] 1618 [13] [String Duration] Detailed profit and loss statement free-text comment
+    [A] 569 Cash flow statement [heading]
+      [C] 553 [13] [Money Ns Duration] Cash flow (outflow) before management of liquid resources and financing
+        [C] 560 [13] [Money Ns Duration] Cash flow (outflow) from operating activities
+          [C] 4774 [13] [Money Dr Duration] Total depreciation, amortisation and impairment charges
+          [C] 4775 [13] [Money Dr Duration] Total depreciation charges, net of profit or loss on disposals
+          [C] 1221 [13] [Money Ns Duration] Decrease (increase) in stocks
+          [C] 1214 [13] [Money Ns Duration] Decrease (increase) in debtors
+          [C] 1220 [13] [Money Ns Duration] Decrease (increase) in provisions
+          [C] 2654 [13] [Money Ns Duration] Increase (decrease) in creditors
+          [C] 583 [13] [Money Ns Duration] Cash surplus (deficit) from difference between pension charge and cash contribution
+          [C] 552 [13] [Money Ns Duration] Cash flow (outflow) arising from restructuring
+          [C] 170 [13] [Money Ns Duration] Amortisation / impairment of interests in own shares
+          [C] 561 [13] [Money Ns Duration] Cash flow (outflow) from other sources
+          [C] 2277 [3,13] [Money Cr Duration] Gain (loss) from disposal of tangible fixed assets
+          [C] 2273 [4,13] [Money Cr Duration] Gain (loss) from disposal of intangible fixed assets
+          [C] 4158 [13] [String Duration] Reconciliation of operating profit to cash flows free-text comment
+        [C] 1761 [13] [Money Cr Duration] Dividends from associates and joint-ventures
+          [C] 1760 [13] [Money Cr Duration] Dividends from associates
+          [C] 1762 [13] [Money Cr Duration] Dividends from joint-ventures
+        [C] 562 [13] [Money Ns Duration] Cash flow (outflow) from returns on investments and servicing of finance
+          [C] 2861 [13] [Money Ns Duration] Interest and other investment income received
+            [C] 2896 [13] [Money Ns Duration] Interest received
+            [C] 3578 [13] [Money Ns Duration] Other investment income received
+          [C] 1784 [13] [Money Ns Duration] Dividends received
+          [C] 2862 [13] [Money Ns Duration] Interest paid
+          [C] 2930 [13] [Money Ns Duration] Issue costs of new finance
+          [C] 2831 [13] [Money Ns Duration] Interest element of finance lease rental payments
+          [C] 1775 [1,13] [Money Dr Duration] Dividends paid and payable to minority interests
+          [C] 3896 [13] [Money Ns Duration] Preference dividends paid, cash flow
+          [C] 3634 [13] [Money Ns Duration] Other payments made on investments and servicing of finance
+        [C] 4715 [13] [Money Ns Duration] Taxation expense (credit)
+        [C] 555 [13] [Money Ns Duration] Cash flow (outflow) from capital expenditure and financial investment
+          [C] 4096 [13] [Money Ns Duration] Purchase of fixed asset investments
+          [C] 4309 [13] [Money Ns Duration] Sale of fixed asset investments
+          [C] 4104 [13] [Money Ns Duration] Purchase of tangible fixed assets
+          [C] 4318 [13] [Money Ns Duration] Sale of tangible fixed assets
+          [C] 4098 [13] [Money Ns Duration] Purchase of intangible fixed assets
+          [C] 4311 [13] [Money Ns Duration] Sale of intangible fixed assets
+          [C] 4105 [13] [Money Ns Duration] Purchase of trade investments
+          [C] 4319 [13] [Money Ns Duration] Sale of trade investments
+          [C] 3125 [13] [Money Ns Duration] Loans to other entities
+          [C] 4308 [13] [Money Ns Duration] Sale of debt of other entities
+          [C] 3753 [13] [Money Ns Duration] Payments to acquire debt of other entities
+          [C] 4225 [13] [Money Ns Duration] Repayment of loans advanced to other entities
+          [C] 4095 [13] [Money Ns Duration] Purchase of current asset investments / Acquisition of liquid resources
+            [C] 4103 [13] [Money Ns Duration] Purchase of securities
+            [C] 2759 [13] [Money Ns Duration] Increase in short-term deposits
+          [C] 4323 [13] [Money Ns Duration] Sales of current asset investments / Disposals and redemptions of liquid resources
+            [C] 4317 [13] [Money Ns Duration] Sale of securities
+            [C] 4189 [13] [Money Ns Duration] Reduction in short-term deposits
+          [C] 3480 [13] [Money Ns Duration] Other capital expenditure and financial investment payments
+          [C] 3481 [13] [Money Ns Duration] Other capital expenditure and financial investment receipts
+        [C] 554 [13] [Money Ns Duration] Cash flow (outflow) from acquisitions and disposals
+          [C] 3306 [13] [Money Ns Duration] Net payments for acquisitions
+            [C] 577 [13] [Money Ns Duration] Cash payments
+            [C] 576 [13] [Money Ns Duration] Cash (overdrafts) acquired
+          [C] 3312 [13] [Money Ns Duration] Net receipts from disposals
+          [C] 3274 [13] [Money Ns Duration] Net cash receipts (payments) from purchase and sale of subsidiaries
+            [C] 3269 [13] [Money Ns Duration] Net cash payments to acquire subsidiaries
+              [C] 2931 [13] [Money Ns Duration] Issue of shares of subsidiaries to minority interests
+              [C] 3265 [13] [Money Dr Duration] Net cash (overdrafts) acquired with subsidiaries
+                [C] 537 [13] [Money Ns Duration] Cash acquired with subsidiaries, cash flow
+                [C] 383 [13] [Money Ns Duration] Bank overdrafts acquired with subsidiaries, cash flow
+            [C] 3272 [13] [Money Ns Duration] Net cash receipts on sale of subsidiaries
+              [C] 3267 [13] [Money Cr Duration] Net cash (overdrafts) disposed of with subsidiaries
+                [C] 545 [13] [Money Ns Duration] Cash disposed of with subsidiaries, cash flow
+                [C] 386 [13] [Money Ns Duration] Bank overdrafts disposed of with subsidiaries, cash flow
+          [C] 3273 [13] [Money Ns Duration] Net cash receipts (payments) from purchase and sale of joint-ventures and associates
+            [C] 4757 [13] [Money Ns Duration] Total cash payments to acquire joint-ventures and associates
+            [C] 4758 [13] [Money Ns Duration] Total cash receipts on sale of joint-ventures and associates
+              [C] 580 [13] [Money Ns Duration] Cash receipts on sale of joint-ventures
+              [C] 579 [13] [Money Ns Duration] Cash receipts on sale of associates
+          [C] 3275 [13] [Money Ns Duration] Net cash receipts (payments) from purchase and sale of trades and businesses
+            [C] 3270 [13] [Money Ns Duration] Net cash payments to acquire trade or business
+              [C] 578 [13] [Money Ns Duration] Cash payments to acquire trades or businesses
+              [C] 3266 [13] [Money Dr Duration] Net cash (overdrafts) acquired with trades and businesses
+                [C] 538 [13] [Money Dr Duration] Cash acquired with trades and businesses
+                [C] 3692 [13] [Money Cr Duration] Overdrafts acquired with trades and businesses
+            [C] 3271 [13] [Money Ns Duration] Net cash receipts from sale of trade or business
+              [C] 581 [13] [Money Ns Duration] Cash receipts on sale of trades or businesses
+              [C] 3268 [13] [Money Cr Duration] Net cash (overdrafts) disposed of with trades or businesses
+                [C] 546 [13] [Money Cr Duration] Cash disposed of with trades or businesses
+                [C] 3693 [13] [Money Dr Duration] Overdrafts disposed of with trades or businesses
+          [C] 1040 [13] [Money Ns Duration] Costs of disposals
+          [C] 1037 [13] [Money Ns Duration] Costs of acquisitions
+          [C] 1229 [13] [Money Ns Duration] Deferred payments for acquisitions in prior periods
+          [C] 1230 [13] [Money Ns Duration] Deferred receipts for sales in prior periods
+          [C] 3595 [13] [Money Ns Duration] Other net cash payments for acquisitions
+          [C] 3596 [13] [Money Ns Duration] Other net cash receipts from disposals
+        [C] 1877 [1,13] [Money Ns Duration] Equity dividends paid
+      [C] 559 [13] [Money Cr Duration] Cash flow (outflow) from management liquid resources and financing
+        [C] 558 [13] [Money Cr Duration] Cash flow (outflow) from management of liquid resources
+        [C] 557 [13] [Money Ns Duration] Cash flow (outflow) from financing
+          [C] 3308 [13] [Money Cr Duration] Net proceeds from issue of debentures, loans, notes, bonds and other long term instruments
+          [C] 3309 [13] [Money Cr Duration] Net proceeds from issue of shares and other equity instruments, excluding shares issued to minority interests
+            [C] 3973 [13] [Money Cr Duration] Proceeds from issue of shares and other equity instruments, excluding shares issued to minority interests
+            [C] 1975 [13] [Money Dr Duration] Expenses or commissions on issue of shares and other equity instruments, excluding shares issued to minority interests
+          [C] 3974 [13] [Money Cr Duration] Proceeds from issue of shares to minority interests
+          [C] 3284 [13] [Money Cr Duration] Net increase (decrease) in borrowings
+            [C] 2757 [13] [Money Cr Duration] Increase in borrowings
+            [C] 4223 [13] [Money Dr Duration] Repayment of borrowings
+            [C] 3298 [13] [Money Cr Duration] Net increase (decrease) in short-term borrowings
+              [C] 3326 [13] [Money Cr Duration] New short-term borrowings
+              [C] 4228 [13] [Money Dr Duration] Repayment of short-term borrowings
+            [C] 3289 [13] [Money Cr Duration] Net increase (decrease) in long-term borrowings
+              [C] 3323 [13] [Money Cr Duration] New long-term borrowings
+                [C] 3324 [13] [Money Cr Duration] New secured loans
+                  [C] 1468 [13] [String Duration] Description of new secured loan
+                  [C] 5014 [13] [Money Cr Instant] Value of new secured loan
+                [C] 3327 [13] [Money Cr Duration] New unsecured loans
+                  [C] 1469 [13] [String Duration] Description of new unsecured loan
+                  [C] 5015 [13] [Money Cr Instant] Value of new unsecured loan
+              [C] 4226 [13] [Money Dr Duration] Repayment of long-term borrowings
+                [C] 4227 [13] [Money Dr Duration] Repayment of secured loans
+                [C] 4229 [13] [Money Dr Duration] Repayment of unsecured loans
+          [C] 505 [13] [Money Dr Duration] Capital element of finance lease rental payments
+          [C] 3975 [13] [Money Cr Duration] Proceeds (outgoings) on sale and lease back of plant and machinery
+          [C] 3307 [1,13] [Money Dr Duration] Net payments for reacquisition or redemption of shares
+          [C] 4181 [13] [Money Dr Duration] Redemption of debentures, loans, notes, bonds and other long term instruments
+          [C] 4182 [13] [Money Dr Duration] Redemption of minority interests
+          [C] 4256 [1,13] [Money Dr Duration] Return of surplus capital to shareholders
+          [C] 3637 [13] [Money Ns Duration] Other proceeds which contribute to cash flow from financing
+          [C] 3635 [13] [Money Ns Duration] Other payments which contribute to cash outflow from financing
+      [C] 2703 [13] [Money Ns Duration] Increase (decrease) in net cash for the period
+      [A] 4157 Reconciliation of net cash flow to movement in net debt [heading]
+        [C] 2703 [13] [Money Ns Duration] Increase (decrease) in net cash for the period
+        [C] 1216 [13] [Money Ns Duration] Decrease (increase) in net debt during period
+          [C] 3322 [13] [Money Cr Duration] New finance leases
+          [C] 4187 [13] [Money Ns Duration] Redemption premium on equity instruments
+          [C] 1217 [13] [Money Ns Duration] Decrease (increase) in net debt from changes recognised in market value
+          [C] 2256 [13] [Money Ns Duration] Funds (debts) arising from acquisitions and disposals
+            [C] 2255 [13] [Money Ns Duration] Funds (debts) acquired with subsidiaries
+            [C] 2257 [13] [Money Ns Duration] (Funds) debts disposed of with subsidiaries
+          [C] 1219 [13] [Money Ns Duration] Decrease (increase) in net debt resulting from cash flows
+            [C] 558 [13] [Money Cr Duration] Cash flow (outflow) from management of liquid resources
+            [C] 556 [13] [Money Ns Duration] Cash flow (outflow) from change in debt and lease financing
+          [C] 1218 [13] [Money Ns Duration] Decrease (increase) in net debt from exchange adjustments
+          [C] 3597 [13] [Money Ns Duration] Other non-cash movements serving to decrease (increase) net debt
+        [C] 3278 [13] [Money Ns Instant] Net debt (funds)
+    [A] 2895 Interest receivable and similar income [heading]
+      [C] 2893 [13] [Money Cr Duration] Interest receivable on short-term investments, loans and deposits
+        [C] 2888 [13] [Money Cr Duration] Interest receivable on bank deposits
+          [C] 2892 [13] [Money Cr Duration] Interest receivable on short-term bank deposits
+          [C] 2891 [13] [Money Cr Duration] Interest receivable on long-term bank deposits
+      [C] 3076 [13] [Money Cr Duration] Listed investments interest
+      [C] 4940 [13] [Money Cr Duration] Unlisted investments interest
+      [C] 2889 [13] [Money Cr Duration] Interest receivable on financial assets that are not at fair value through profit or loss
+        [C] 2841 [13] [Money Cr Duration] Interest income on available-for-sale financial assets
+          [C] 2846 [13] [Money Cr Duration] Interest income on unimpaired available-for-sale financial assets
+          [C] 2843 [13] [Money Cr Duration] Interest income on impaired available- for- sale financial assets
+        [C] 2842 [13] [Money Cr Duration] Interest income on held-to-maturity investments
+          [C] 2847 [13] [Money Cr Duration] Interest income on unimpaired held-to-maturity investments
+          [C] 2844 [13] [Money Cr Duration] Interest income on impaired held-to-maturity investments
+        [C] 2890 [13] [Money Cr Duration] Interest receivable on impaired financial assets accrued in accordance with FRS 26
+        [C] 2897 [13] [Money Cr Duration] Interest received from related parties
+          [C] 2606 [13] [Money Cr Duration] Income from loans to joint-ventures
+          [C] 2887 [13] [Money Cr Duration] Interest receivable from subsidiaries/group undertakings
+          [C] 2605 [13] [Money Cr Duration] Income from loans to associates
+        [C] 2845 [13] [Money Cr Duration] Interest income on other loans
+      [C] 2052 [13] [Money Cr Duration] Fee income from financial assets that are not at fair value through profit or loss
+        [C] 2054 [13] [Money Cr Duration] Fee income on available-for-sale financial assets
+        [C] 2055 [13] [Money Cr Duration] Fee income on held-to-maturity investments
+      [C] 2053 [13] [Money Cr Duration] Fee income from trust and other fiduciary activities resulting in holding of assets
+        [C] 3155 [13] [Money Cr Duration] Management Fee income
+        [C] 3537 [13] [Money Cr Duration] Other fee income
+        [C] 444 [13] [Money Cr Duration] Brokerage Fee income
+      [C] 3570 [13] [Money Cr Duration] Other interest receivable
+      [C] 2894 [13] [String Duration] Interest receivable and similar income free-text comment
+    [A] 2866 Interest payable and similar charges [heading]
+      [C] 2066 [2,13] [Money Dr Duration] Finance charges (income)
+        [C] 3299 [2,13] [Money Dr Duration] Net interest payable (receivable)
+          [C] 2864 [2,13] [Money Dr Duration] Interest payable and similar charges
+          [C] 3571 [2,13] [Money Cr Duration] Other interest receivable and similar income
+        [C] 3538 [2,13] [Money Dr Duration] Other finance charges
+        [C] 3540 [2,13] [Money Cr Duration] Other finance income
+      [C] 2067 [13] [Money Dr Duration] Finance costs
+        [C] 2832 [13] [Money Dr Duration] Interest expense
+        [C] 3539 [13] [Money Dr Duration] Other finance costs
+          [C] 3569 [13] [Money Dr Duration] Other interest expense
+        [C] 2071 [13] [String Duration] Finance costs free-text comment
+      [C] 179 [13] [Money Dr Duration] Amortisation of issue costs of debt issue costs
+      [C] 381 [13] [Money Dr Duration] Bank loans and overdrafts, finance charges
+        [C] 378 [13] [Money Dr Duration] Bank loans, finance charges
+          [C] 380 [13] [Money Dr Duration] Bank loans, interest payments
+          [C] 377 [13] [Money Dr Duration] Bank loans, charges
+        [C] 387 [13] [Money Dr Duration] Bank overdrafts, finance charges
+      [C] 1158 [13] [Money Dr Duration] Debentures, finance charges
+        [C] 2853 [13] [Money Dr Duration] Interest on debentures and other loans
+      [C] 3021 [13] [Money Dr Duration] Leases and hire purchase contracts, finance charges
+        [C] 3416 [13] [Money Dr Duration] Operating leases, finance charges
+        [C] 2532 [13] [Money Dr Duration] Hire purchase contracts, finance charges
+        [C] 2080 [13] [Money Dr Duration] Finance leases, finance charges
+        [C] 2857 [13] [Money Dr Duration] Interest on obligations under finance leases and hire purchase contracts
+          [C] 2856 [13] [Money Dr Duration] Interest on obligations under finance leases
+          [C] 2858 [13] [Money Dr Duration] Interest on obligations under hire purchase contracts
+      [C] 3111 [13] [Money Dr Duration] Loans other than banks loans and overdrafts, finance charges
+      [C] 3104 [13] [Money Dr Duration] Loans from joint-ventures, associates and group undertakings, finance charges
+        [C] 3105 [13] [Money Dr Duration] Loans from joint-ventures, finance charges
+        [C] 3098 [13] [Money Dr Duration] Loans from associates, finance charges
+        [C] 3107 [13] [Money Dr Duration] Loans from subsidiaries / group undertakings, finance charges
+      [C] 3121 [13] [Money Dr Duration] Loans repayable within five years, finance charges
+        [C] 3122 [13] [Money Dr Duration] Loans repayable within one year, finance charges
+        [C] 3123 [13] [Money Dr Duration] Loans repayable within two to five years, finance charges
+      [C] 3120 [13] [Money Dr Duration] Loans repayable after five years, finance charges
+      [C] 3897 [13] [Money Dr Duration] Preference shares classified as debt, finance charges
+        [C] 2855 [13] [Money Dr Duration] Interest on non-redeemable preference shares classified as debt
+        [C] 2860 [13] [Money Dr Duration] Interest on redeemable preference shares classified as debt
+        [C] 3632 [13] [Money Dr Duration] Other payable in respect of redeemable preference shares
+          [C] 1758 [13] [Money Dr Duration] Dividends for redeemable preference shares
+          [C] 4186 [13] [Money Dr Duration] Redemption premium for redeemable preference shares
+      [C] 4415 [13] [Money Dr Duration] Short-term borrowing charges, including bank interest
+        [C] 4414 [13] [Money Dr Duration] Short-term borrowing charges, excluding bank interest
+      [C] 1997 [13] [Money Dr Duration] Factoring, finance charges
+      [C] 3928 [13] [Money Dr Duration] Premium on repayment of loans, finance charges
+      [C] 2863 [13] [Money Dr Duration] Interest payable on other financial liabilities that are not at fair value through profit or loss
+        [C] 2852 [13] [Money Dr Duration] Interest on convertible borrowings
+        [C] 2854 [13] [Money Dr Duration] Interest on deferred consideration
+        [C] 2833 [13] [Money Dr Duration] Interest expense on other financing liabilities
+        [C] 3477 [13] [Money Dr Duration] Other borrowings, interest payments and similar charges
+          [C] 2869 [13] [Money Dr Duration] Interest payments and similar charges on other borrowings due within one year
+          [C] 2870 [13] [Money Dr Duration] Interest payments and similar charges on other borrowings due within two to five years
+          [C] 2868 [13] [Money Dr Duration] Interest payments and similar charges on other borrowings due after five years
+      [C] 2051 [13] [Money Dr Duration] Fee expense on financial liabilities that are not at fair value
+      [C] 2677 [13] [Money Dr Duration] Increase (decrease) in finance costs due to fair value adjustment of financiall liabilities attributable to credit risk
+        [C] 2302 [13] [Money Cr Duration] Gain (loss) on bank borrowings attributable to interest rate risk
+      [C] 2678 [13] [Money Dr Duration] Increase (decrease) in finance costs due to redemption and extinguishment of debt
+      [C] 2676 [13] [Money Dr Duration] Increase (decrease) in finance costs due to adjustments for provisions-unwinding of discount
+    [C] 1445 [13] [String Duration] Description of method of allocation of interest between continuing and discontinued operations
+    [C] 2865 [13] [String Duration] Interest payable and similar charges free-text comment
+    [C] 2069 [13] [Money Dr Duration] Finance costs capitalised
+      [C] 2068 [13] [Percent Duration] Finance costs capitalisation rate
+      [C] 2073 [13] [Money Dr Duration] Finance costs payable to subsidiaries / group undertakings
+      [C] 2070 [13] [Money Dr Duration] Finance costs capitalised in period for tangible fixed assets
+      [C] 167 [13] [Money Dr Duration] Amortisation of discounts or premiums relating to borrowings
+      [C] 165 [13] [Money Dr Duration] Amortisation of ancillary costs related to borrowing arrangements
+    [A] 3541 Other finance income and charges [heading]
+      [C] 2600 [13] [Money Cr Duration] Income (charge) on pension schemes - Net
+        [C] 1954 [13] [Money Cr Duration] Expected return on pension schemes assets
+        [C] 2859 [13] [Money Dr Duration] Interest on pension schemes liabilities
+      [C] 1706 [13] [Money Cr Duration] Discounted provisions
+        [C] 4970 [13] [Money Dr Duration] Unwinding of discount on provisions serving to decrease (increase) discounted provisions
+        [C] 1798 [13] [Money Cr Duration] Effect of change in discount rate serving to increase (decrease) discounted provisions
+    [C] 3261 [13] [Money Dr Instant] Net assets (liabilities), including pension asset (liability)
+      [C] 3760 [13] [Money Dr Instant] Pension asset (liability)
+        [C] 3759 [13] [Money Dr Instant] Pension asset in respect of schemes in surplus
+        [C] 3770 [13] [Money Cr Instant] Pension liability in respect of schemes in deficit
+      [C] 3262 [13] [Money Dr Instant] Net assets (liability) excluding pension asset (liability)
+      [C] 62 [13] [Money Cr Instant] Accruals and deferred income
+      [C] 1069 [13] [Money Cr Instant] Creditors due after one year
+        [A] 2176 For borrowings, loans, debt and preference shares, see 'Borrowings' note in this section [cross-reference]
+        [C] 1085 [13] [Money Cr Instant] Cumulative preference share dividends unpaid after one year
+        [C] 3388 [13] [Money Cr Instant] Obligations under finance lease and hire purchase contracts after one year
+        [C] 3751 [13] [Money Cr Instant] Payments received on account after one year
+        [C] 4831 [13] [Money Cr Instant] Trade creditors after one year
+        [C] 416 [13] [Money Cr Instant] Bills of exchange after one year
+        [C] 253 [13] [Money Cr Instant] Amounts owed to group undertakings and other participating interests after one year
+        [C] 271 [13] [Money Cr Instant] Amounts owed to subsidiaries after one year
+        [C] 265 [13] [Money Cr Instant] Amounts owed to parent undertaking after one year
+        [C] 259 [13] [Money Cr Instant] Amounts owed to joint-ventures after one year
+        [C] 250 [13] [Money Cr Instant] Amounts owed to associates after one year
+        [C] 262 [13] [Money Cr Instant] Amounts owed to other participating interests after one year
+        [C] 268 [13] [Money Cr Instant] Amounts owed to related parties after one year
+        [C] 4721 [13] [Money Cr Instant] Taxation and social security due after one year
+          [C] 1016 [13] [Money Cr Instant] Corporation tax due after one year
+          [C] 4997 [13] [Money Cr Instant] VAT due after one year
+          [C] 2224 [13] [Money Cr Instant] Foreign tax due after one year
+          [C] 3672 [13] [Money Cr Instant] Other taxation and social security due after one year
+        [C] 2442 [13] [Money Cr Instant] Government grants after one year
+        [C] 63 [13] [Money Cr Instant] Accruals and deferred income after one year
+        [C] 1227 [13] [Money Cr Instant] Deferred consideration for acquisitions after one year
+        [C] 3128 [13] [Money Cr Instant] Long-term borrowings, book value
+        [C] 3101 [13] [Money Cr Instant] Loans from directors after one year
+        [C] 3495 [13] [Money Cr Instant] Other creditors after one year
+        [C] 3497 [13] [Money Cr Instant] Other creditors including taxation and social security after one year, subtotal
+        [C] 255 [13] [Money Cr Instant] Amounts owed to group undertakings and participating interests after one year, subtotal
+        [C] 1070 [13] [String Duration] Creditors due after one year free-text comment
+      [C] 4752 [13] [Money Dr Instant] Total assets less current liabilities
+      [C] 3277 [13] [Money Dr Instant] Net current assets (liabilities)
+        [C] 4536 [13] [Money Dr Instant] Stocks / inventory
+          [C] 4551 [13] [Money Dr Instant] Stocks of raw materials and consumables
+          [C] 5092 [13] [Money Dr Instant] Work in progress
+          [C] 2120 [13] [Money Dr Instant] Finished goods and goods for resale
+          [C] 4546 [13] [Money Dr Instant] Stocks, payments on account
+        [C] 1202 [13] [Money Dr Instant] Debtors
+          [C] 4834 [13] [Money Dr Instant] Trade debtors
+          [C] 237 [13] [Money Dr Instant] Amounts owed by group undertakings and other participating interests
+          [C] 246 [13] [Money Dr Instant] Amounts owed by subsidiaries
+          [C] 240 [13] [Money Dr Instant] Amounts owed by joint-ventures
+          [C] 234 [13] [Money Dr Instant] Amounts owed by associates
+          [C] 243 [13] [Money Dr Instant] Amounts owed by other participating interests
+          [C] 273 [13] [Money Dr Instant] Amounts recoverable on contracts
+          [C] 3507 [13] [Money Dr Instant] Other debtors
+          [C] 491 [13] [Money Dr Instant] Called up share capital not-paid, current asset
+          [C] 3935 [13] [Money Dr Instant] Prepayments and accrued income, current asset
+          [C] 3789 [13] [Money Dr Instant] Pension schemes prepayments
+          [C] 230 [13] [Money Dr Instant] Amounts due on sale of subsidiary
+          [C] 1755 [13] [Money Dr Instant] Dividends due from subsidiaries
+          [C] 1018 [13] [Money Dr Instant] Corporation tax recoverable, current asset
+          [C] 4994 [13] [Money Dr Instant] VAT, current asset
+          [C] 1993 [13] [Money Dr Instant] Factored debts outstanding
+          [C] 3045 [13] [Money Dr Instant] Lessors: net investment in finance leases
+          [C] 3048 [13] [Money Dr Instant] Lessors: net investment in hire purchase contracts
+          [C] 3042 [13] [Money Dr Instant] Lessors: cost of assets acquired for letting under finance leases
+          [C] 3039 [13] [Money Dr Instant] Lessors: aggregate rentals receivable for finance leases
+          [C] 1209 [13] [String Duration] Debtors free-text comment
+          [C] 1207 [13] [Money Dr Instant] Debtors due within one year
+            [C] 4836 [13] [Money Dr Instant] Trade debtors within one year
+            [C] 239 [13] [Money Dr Instant] Amounts owed by group undertakings and other participating interests within one year
+            [C] 248 [13] [Money Dr Instant] Amounts owed by subsidiaries within one year
+            [C] 242 [13] [Money Dr Instant] Amounts owed by joint-ventures within one year
+            [C] 236 [13] [Money Dr Instant] Amounts owed by associates within one year
+            [C] 245 [13] [Money Dr Instant] Amounts owed by other participating interests within one year
+            [C] 275 [13] [Money Dr Instant] Amounts recoverable on contracts within one year
+            [C] 3509 [13] [Money Dr Instant] Other debtors within one year
+            [C] 492 [13] [Money Dr Instant] Called up share capital not-paid, current asset due within one year
+            [C] 3937 [13] [Money Dr Instant] Prepayments and accrued income, current asset due within one year
+            [C] 3791 [13] [Money Dr Instant] Pension schemes prepayments due within one year
+            [C] 232 [13] [Money Dr Instant] Amounts due on sale of subsidiary within one year
+            [C] 1757 [13] [Money Dr Instant] Dividends due from subsidiaries within one year
+            [C] 1020 [13] [Money Dr Instant] Corporation tax recoverable, current asset due within one year
+            [C] 1235 [13] [Money Dr Instant] Deferred tax, current asset due within one year
+              [C] 1533 [13] [String Duration] Description of reasons why deferred tax asset due within one year should be recognised
+            [C] 4996 [13] [Money Dr Instant] VAT, current asset due within one year
+            [C] 1995 [13] [Money Dr Instant] Factored debts outstanding, due within one year
+            [C] 3047 [13] [Money Dr Instant] Lessors: net investment in finance leases due within one year
+            [C] 3050 [13] [Money Dr Instant] Lessors: net investment in hire purchase contracts due within one year
+            [C] 3044 [13] [Money Dr Instant] Lessors: cost of assets acquired for letting under finance leases due within one year
+            [C] 3041 [13] [Money Dr Instant] Lessors: aggregate rentals receivable for finance leases due within one year
+            [C] 1208 [13] [String Duration] Debtors due within one year free-text comment
+          [C] 1205 [13] [Money Dr Instant] Debtors due after one year
+            [C] 4835 [13] [Money Dr Instant] Trade debtors after one year
+            [C] 238 [13] [Money Dr Instant] Amounts owed by group undertakings and other participating interests after one year
+            [C] 247 [13] [Money Dr Instant] Amounts owed by subsidiaries after one year
+            [C] 241 [13] [Money Dr Instant] Amounts owed by joint-ventures after one year
+            [C] 235 [13] [Money Dr Instant] Amounts owed by associates after one year
+            [C] 244 [13] [Money Dr Instant] Amounts owed by other participating interests after one year
+            [C] 274 [13] [Money Dr Instant] Amounts recoverable on contracts after one year
+            [C] 3508 [13] [Money Dr Instant] Other debtors due after one year
+            [C] 3936 [13] [Money Dr Instant] Prepayments and accrued income, current asset due after one year
+            [C] 3790 [13] [Money Dr Instant] Pension schemes prepayments due after one year
+            [C] 231 [13] [Money Dr Instant] Amounts due on sale of subsidiary after one year
+            [C] 1756 [13] [Money Dr Instant] Dividends due from subsidiaries after one year
+            [C] 1019 [13] [Money Dr Instant] Corporation tax recoverable, current asset due after one year
+            [C] 1234 [13] [Money Dr Instant] Deferred tax, current asset due after one year
+              [C] 1532 [13] [String Duration] Description of reasons why deferred tax asset due after one year should be recognised
+            [C] 4995 [13] [Money Dr Instant] VAT, current asset due after one year
+            [C] 1994 [13] [Money Dr Instant] Factored debts outstanding, due after one year
+            [C] 3046 [13] [Money Dr Instant] Lessors: net investment in finance leases due after one year
+            [C] 3049 [13] [Money Dr Instant] Lessors: net investment in hire purchase contracts due after one year
+            [C] 3043 [13] [Money Dr Instant] Lessors: cost of assets acquired for letting under finance leases due after one year
+            [C] 3040 [13] [Money Dr Instant] Lessors: aggregate rentals receivable for finance leases due after one year
+            [C] 1206 [13] [String Duration] Debtors due after one year free-text comment
+        [C] 1110 [13] [Money Dr Instant] Current asset investments
+        [C] 542 [13] [Money Dr Instant] Cash at bank and in hand
+          [C] 575 [13] [Money Dr Instant] Cash in hand
+          [C] 541 [13] [Money Dr Instant] Cash at bank
+        [C] 1072 [13] [Money Cr Instant] Creditors due within one year
+          [A] 2176 For borrowings, loans, debt and preference shares, see 'Borrowings' note in this section [cross-reference]
+          [C] 1086 [13] [Money Cr Instant] Cumulative preference share dividends unpaid within one year
+          [C] 3389 [1,13] [Money Cr Instant] Obligations under finance lease and hire purchase contracts within one year
+          [C] 3752 [13] [Money Cr Instant] Payments received on account within one year
+          [C] 4833 [13] [Money Cr Instant] Trade creditors within one year
+          [C] 417 [13] [Money Cr Instant] Bills of exchange within one year
+          [C] 254 [13] [Money Cr Instant] Amounts owed to group undertakings and other participating interests within one year
+          [C] 272 [13] [Money Cr Instant] Amounts owed to subsidiaries within one year
+          [C] 266 [13] [Money Cr Instant] Amounts owed to parent undertaking within one year
+          [C] 260 [13] [Money Cr Instant] Amounts owed to joint-ventures within one year
+          [C] 251 [13] [Money Cr Instant] Amounts owed to associates within one year
+          [C] 263 [13] [Money Cr Instant] Amounts owed to other participating interests within one year
+          [C] 269 [13] [Money Cr Instant] Amounts owed to related parties within one year
+          [C] 4722 [13] [Money Cr Instant] Taxation and social security due within one year
+            [C] 1017 [13] [Money Cr Instant] Corporation tax due within one year
+            [C] 4999 [13] [Money Cr Instant] VAT due within one year
+            [C] 2225 [13] [Money Cr Instant] Foreign tax due within one year
+            [C] 3673 [13] [Money Cr Instant] Other taxation and social security within one year
+          [C] 2443 [13] [Money Cr Instant] Government grants within one year
+          [C] 64 [13] [Money Cr Instant] Accruals and deferred income within one year
+          [C] 4943 [13] [Money Cr Instant] Unpaid contributions to pension schemes within one year
+          [C] 1781 [13] [Money Cr Instant] Dividends proposed, creditors due within one year
+            [C] 1783 [13] [Money Cr Instant] Dividends proposed, ordinary shares, creditors due within one year
+            [C] 1782 [13] [Money Cr Instant] Dividends proposed, cumulative preference shares, creditors due within one year
+          [C] 3102 [13] [Money Cr Instant] Loans from directors within one year
+          [C] 3496 [13] [Money Cr Instant] Other creditors due within one year
+          [C] 3499 [13] [Money Cr Instant] Other creditors including taxation and social security within one year, subtotal
+          [C] 257 [13] [Money Cr Instant] Amounts owed to group undertakings and participating interests within one year, subtotal
+          [C] 1073 [13] [String Duration] Creditors due within one year free-text comment
+      [C] 493 [13] [Money Dr Instant] Called up share capital not paid, not expressed as current asset
+    [A] 1120 Current assets [heading]
+      [C] 4536 [13] [Money Dr Instant] Stocks / inventory
+        [C] 4551 [13] [Money Dr Instant] Stocks of raw materials and consumables
+        [C] 5092 [13] [Money Dr Instant] Work in progress
+        [C] 2120 [13] [Money Dr Instant] Finished goods and goods for resale
+        [C] 4546 [13] [Money Dr Instant] Stocks, payments on account
+      [A] 4535 Stocks [heading]
+        [C] 5095 [13] [Money Dr Instant] Work in progress in respect of long-term contracts
+          [C] 3129 [13] [Money Dr Instant] Long-term contracts: net cost less foreseeable losses
+          [C] 3130 [13] [Money Cr Instant] Long-term contracts: payments on account received and receivable, not matched with turnover
+        [C] 1938 [13] [Money Dr Instant] Excess of replacement costs over balance sheet values
+          [C] 1940 [13] [Money Dr Instant] Excess of replacement costs, raw materials and consumables
+          [C] 1941 [13] [Money Dr Instant] Excess of replacement costs, work in progress
+          [C] 1937 [13] [Money Dr Instant] Excess of replacement costs, finished goods and goods for resale
+          [C] 1939 [13] [Money Dr Instant] Excess of replacement costs, payments on account
+        [C] 953 [13] [Money Dr Instant] Consignment stock held
+          [C] 954 [13] [Money Dr Instant] Consignment stock included in balance sheet
+            [C] 1510 [13] [String Duration] Description of particular consignment stock
+            [C] 215 [13] [Money Dr Instant] Amount of particular consignment stock
+        [C] 4534 [13] [String Duration] Stocks free-text comment
+      [C] 1202 [13] [Money Dr Instant] Debtors
+        [C] 4834 [13] [Money Dr Instant] Trade debtors
+        [C] 237 [13] [Money Dr Instant] Amounts owed by group undertakings and other participating interests
+        [C] 246 [13] [Money Dr Instant] Amounts owed by subsidiaries
+        [C] 240 [13] [Money Dr Instant] Amounts owed by joint-ventures
+        [C] 234 [13] [Money Dr Instant] Amounts owed by associates
+        [C] 243 [13] [Money Dr Instant] Amounts owed by other participating interests
+        [C] 273 [13] [Money Dr Instant] Amounts recoverable on contracts
+        [C] 3507 [13] [Money Dr Instant] Other debtors
+        [C] 491 [13] [Money Dr Instant] Called up share capital not-paid, current asset
+        [C] 3935 [13] [Money Dr Instant] Prepayments and accrued income, current asset
+        [C] 3789 [13] [Money Dr Instant] Pension schemes prepayments
+        [C] 230 [13] [Money Dr Instant] Amounts due on sale of subsidiary
+        [C] 1755 [13] [Money Dr Instant] Dividends due from subsidiaries
+        [C] 1018 [13] [Money Dr Instant] Corporation tax recoverable, current asset
+        [C] 4994 [13] [Money Dr Instant] VAT, current asset
+        [C] 1993 [13] [Money Dr Instant] Factored debts outstanding
+        [C] 3045 [13] [Money Dr Instant] Lessors: net investment in finance leases
+        [C] 3048 [13] [Money Dr Instant] Lessors: net investment in hire purchase contracts
+        [C] 3042 [13] [Money Dr Instant] Lessors: cost of assets acquired for letting under finance leases
+        [C] 3039 [13] [Money Dr Instant] Lessors: aggregate rentals receivable for finance leases
+        [C] 1209 [13] [String Duration] Debtors free-text comment
+        [C] 1207 [13] [Money Dr Instant] Debtors due within one year
+          [C] 4836 [13] [Money Dr Instant] Trade debtors within one year
+          [C] 239 [13] [Money Dr Instant] Amounts owed by group undertakings and other participating interests within one year
+          [C] 248 [13] [Money Dr Instant] Amounts owed by subsidiaries within one year
+          [C] 242 [13] [Money Dr Instant] Amounts owed by joint-ventures within one year
+          [C] 236 [13] [Money Dr Instant] Amounts owed by associates within one year
+          [C] 245 [13] [Money Dr Instant] Amounts owed by other participating interests within one year
+          [C] 275 [13] [Money Dr Instant] Amounts recoverable on contracts within one year
+          [C] 3509 [13] [Money Dr Instant] Other debtors within one year
+          [C] 492 [13] [Money Dr Instant] Called up share capital not-paid, current asset due within one year
+          [C] 3937 [13] [Money Dr Instant] Prepayments and accrued income, current asset due within one year
+          [C] 3791 [13] [Money Dr Instant] Pension schemes prepayments due within one year
+          [C] 232 [13] [Money Dr Instant] Amounts due on sale of subsidiary within one year
+          [C] 1757 [13] [Money Dr Instant] Dividends due from subsidiaries within one year
+          [C] 1020 [13] [Money Dr Instant] Corporation tax recoverable, current asset due within one year
+          [C] 1235 [13] [Money Dr Instant] Deferred tax, current asset due within one year
+            [C] 1533 [13] [String Duration] Description of reasons why deferred tax asset due within one year should be recognised
+          [C] 4996 [13] [Money Dr Instant] VAT, current asset due within one year
+          [C] 1995 [13] [Money Dr Instant] Factored debts outstanding, due within one year
+          [C] 3047 [13] [Money Dr Instant] Lessors: net investment in finance leases due within one year
+          [C] 3050 [13] [Money Dr Instant] Lessors: net investment in hire purchase contracts due within one year
+          [C] 3044 [13] [Money Dr Instant] Lessors: cost of assets acquired for letting under finance leases due within one year
+          [C] 3041 [13] [Money Dr Instant] Lessors: aggregate rentals receivable for finance leases due within one year
+          [C] 1208 [13] [String Duration] Debtors due within one year free-text comment
+        [C] 1205 [13] [Money Dr Instant] Debtors due after one year
+          [C] 4835 [13] [Money Dr Instant] Trade debtors after one year
+          [C] 238 [13] [Money Dr Instant] Amounts owed by group undertakings and other participating interests after one year
+          [C] 247 [13] [Money Dr Instant] Amounts owed by subsidiaries after one year
+          [C] 241 [13] [Money Dr Instant] Amounts owed by joint-ventures after one year
+          [C] 235 [13] [Money Dr Instant] Amounts owed by associates after one year
+          [C] 244 [13] [Money Dr Instant] Amounts owed by other participating interests after one year
+          [C] 274 [13] [Money Dr Instant] Amounts recoverable on contracts after one year
+          [C] 3508 [13] [Money Dr Instant] Other debtors due after one year
+          [C] 3936 [13] [Money Dr Instant] Prepayments and accrued income, current asset due after one year
+          [C] 3790 [13] [Money Dr Instant] Pension schemes prepayments due after one year
+          [C] 231 [13] [Money Dr Instant] Amounts due on sale of subsidiary after one year
+          [C] 1756 [13] [Money Dr Instant] Dividends due from subsidiaries after one year
+          [C] 1019 [13] [Money Dr Instant] Corporation tax recoverable, current asset due after one year
+          [C] 1234 [13] [Money Dr Instant] Deferred tax, current asset due after one year
+            [C] 1532 [13] [String Duration] Description of reasons why deferred tax asset due after one year should be recognised
+          [C] 4995 [13] [Money Dr Instant] VAT, current asset due after one year
+          [C] 1994 [13] [Money Dr Instant] Factored debts outstanding, due after one year
+          [C] 3046 [13] [Money Dr Instant] Lessors: net investment in finance leases due after one year
+          [C] 3049 [13] [Money Dr Instant] Lessors: net investment in hire purchase contracts due after one year
+          [C] 3043 [13] [Money Dr Instant] Lessors: cost of assets acquired for letting under finance leases due after one year
+          [C] 3040 [13] [Money Dr Instant] Lessors: aggregate rentals receivable for finance leases due after one year
+          [C] 1206 [13] [String Duration] Debtors due after one year free-text comment
+      [A] 1114 Current asset investments [heading]
+        [C] 4408 [13] [Money Dr Instant] Shares in subsidiaries, held for sale
+        [C] 3699 [13] [Money Dr Instant] Own shares, held for sale
+        [C] 3072 [13] [Money Dr Instant] Listed investments
+          [C] 2926 [13] [Money Dr Instant] Investments listed on UK exchanges
+            [C] 2445 [13] [Money Dr Instant] Government securities listed on UK exchanges
+            [C] 3580 [13] [Money Dr Instant] Other investments listed on UK exchanges
+          [C] 2925 [13] [Money Dr Instant] Investments listed on exchanges outside the UK
+            [C] 2444 [13] [Money Dr Instant] Government securities listed on exchanges outside the UK
+            [C] 3579 [13] [Money Dr Instant] Other investments listed on exchanges outside the UK
+              [C] 1151 [13] [Date Instant] Date at which market value measured
+              [C] 147 [13] [Money Dr Instant] Aggregate market value of listed investments at date
+              [C] 4692 [13] [Money Cr Instant] Tax liability (asset) if investments were sold at this value
+        [C] 4938 [13] [Money Dr Instant] Unlisted investments
+          [C] 599 [13] [Money Dr Instant] Certificates of deposit, UK
+          [C] 598 [13] [Money Dr Instant] Certificates of deposit, overseas
+          [C] 4740 [13] [Money Dr Instant] Term deposits, UK
+          [C] 4739 [13] [Money Dr Instant] Term deposits, overseas
+          [C] 3513 [13] [Money Dr Instant] Other deposits, UK
+          [C] 3512 [13] [Money Dr Instant] Other deposits, overseas
+        [C] 4416 [13] [Money Dr Instant] Short-term deposits
+        [C] 3501 [13] [Money Dr Instant] Other current asset investments, held for sale
+        [C] 1113 [13] [String Duration] Current asset investments free-text comment
+      [C] 542 [13] [Money Dr Instant] Cash at bank and in hand
+        [C] 575 [13] [Money Dr Instant] Cash in hand
+        [C] 541 [13] [Money Dr Instant] Cash at bank
+      [C] 1119 [13] [String Duration] Current assets free-text comment
+      [A] 2191 For disclosures on financial instruments, see 'Financial Instruments' note [cross-reference]
+    [C] 4769 [1,13] [Money Cr Instant] Total creditors
+      [A] 2176 For borrowings, loans, debt and preference shares, see 'Borrowings' note in this section [cross-reference]
+      [C] 1084 [13] [Money Cr Instant] Cumulative preference share dividends unpaid
+      [C] 3387 [13] [Money Cr Instant] Obligations under finance lease and hire purchase contracts
+      [C] 3750 [13] [Money Cr Instant] Payments received on account
+      [C] 4829 [13] [Money Cr Instant] Trade creditors
+      [C] 415 [13] [Money Cr Instant] Bills of exchange
+      [C] 252 [13] [Money Cr Instant] Amounts owed to group undertakings and other participating interests
+      [C] 270 [13] [Money Cr Instant] Amounts owed to subsidiaries
+      [C] 264 [13] [Money Cr Instant] Amounts owed to parent undertaking
+      [C] 258 [13] [Money Cr Instant] Amounts owed to joint-ventures
+      [C] 249 [13] [Money Cr Instant] Amounts owed to associates
+      [C] 261 [13] [Money Cr Instant] Amounts owed to other participating interests
+      [C] 267 [13] [Money Cr Instant] Amounts owed to related parties
+      [C] 4720 [13] [Money Cr Instant] Taxation and social security
+        [C] 1015 [13] [Money Cr Instant] Corporation tax
+        [C] 4998 [13] [Money Cr Instant] VAT due, total creditors
+        [C] 2229 [13] [Money Cr Instant] Foreign tax, total creditors
+        [C] 3671 [13] [Money Cr Instant] Other taxation and social security
+      [C] 2441 [13] [Money Cr Instant] Government grants
+      [C] 62 [13] [Money Cr Instant] Accruals and deferred income
+      [C] 1226 [13] [Money Cr Instant] Deferred consideration for acquisitions
+      [C] 4942 [13] [Money Cr Instant] Unpaid contributions to pension schemes
+      [C] 3128 [13] [Money Cr Instant] Long-term borrowings, book value
+      [C] 3100 [13] [Money Cr Instant] Loans from directors
+      [C] 3494 [13] [Money Cr Instant] Other creditors
+      [C] 3498 [13] [Money Cr Instant] Other creditors including taxation and social security, subtotal
+      [C] 256 [13] [Money Cr Instant] Amounts owed to group undertakings and participating interests, subtotal
+      [C] 1075 [13] [String Duration] Creditors free-text comment
+    [C] 1069 [13] [Money Cr Instant] Creditors due after one year
+      [A] 2176 For borrowings, loans, debt and preference shares, see 'Borrowings' note in this section [cross-reference]
+      [C] 1085 [13] [Money Cr Instant] Cumulative preference share dividends unpaid after one year
+      [C] 3388 [13] [Money Cr Instant] Obligations under finance lease and hire purchase contracts after one year
+      [C] 3751 [13] [Money Cr Instant] Payments received on account after one year
+      [C] 4831 [13] [Money Cr Instant] Trade creditors after one year
+      [C] 416 [13] [Money Cr Instant] Bills of exchange after one year
+      [C] 253 [13] [Money Cr Instant] Amounts owed to group undertakings and other participating interests after one year
+      [C] 271 [13] [Money Cr Instant] Amounts owed to subsidiaries after one year
+      [C] 265 [13] [Money Cr Instant] Amounts owed to parent undertaking after one year
+      [C] 259 [13] [Money Cr Instant] Amounts owed to joint-ventures after one year
+      [C] 250 [13] [Money Cr Instant] Amounts owed to associates after one year
+      [C] 262 [13] [Money Cr Instant] Amounts owed to other participating interests after one year
+      [C] 268 [13] [Money Cr Instant] Amounts owed to related parties after one year
+      [C] 4721 [13] [Money Cr Instant] Taxation and social security due after one year
+        [C] 1016 [13] [Money Cr Instant] Corporation tax due after one year
+        [C] 4997 [13] [Money Cr Instant] VAT due after one year
+        [C] 2224 [13] [Money Cr Instant] Foreign tax due after one year
+        [C] 3672 [13] [Money Cr Instant] Other taxation and social security due after one year
+      [C] 2442 [13] [Money Cr Instant] Government grants after one year
+      [C] 63 [13] [Money Cr Instant] Accruals and deferred income after one year
+      [C] 1227 [13] [Money Cr Instant] Deferred consideration for acquisitions after one year
+      [C] 3128 [13] [Money Cr Instant] Long-term borrowings, book value
+      [C] 3101 [13] [Money Cr Instant] Loans from directors after one year
+      [C] 3495 [13] [Money Cr Instant] Other creditors after one year
+      [C] 3497 [13] [Money Cr Instant] Other creditors including taxation and social security after one year, subtotal
+      [C] 255 [13] [Money Cr Instant] Amounts owed to group undertakings and participating interests after one year, subtotal
+      [C] 1070 [13] [String Duration] Creditors due after one year free-text comment
+    [C] 1072 [13] [Money Cr Instant] Creditors due within one year
+      [A] 2176 For borrowings, loans, debt and preference shares, see 'Borrowings' note in this section [cross-reference]
+      [C] 1086 [13] [Money Cr Instant] Cumulative preference share dividends unpaid within one year
+      [C] 3389 [1,13] [Money Cr Instant] Obligations under finance lease and hire purchase contracts within one year
+      [C] 3752 [13] [Money Cr Instant] Payments received on account within one year
+      [C] 4833 [13] [Money Cr Instant] Trade creditors within one year
+      [C] 417 [13] [Money Cr Instant] Bills of exchange within one year
+      [C] 254 [13] [Money Cr Instant] Amounts owed to group undertakings and other participating interests within one year
+      [C] 272 [13] [Money Cr Instant] Amounts owed to subsidiaries within one year
+      [C] 266 [13] [Money Cr Instant] Amounts owed to parent undertaking within one year
+      [C] 260 [13] [Money Cr Instant] Amounts owed to joint-ventures within one year
+      [C] 251 [13] [Money Cr Instant] Amounts owed to associates within one year
+      [C] 263 [13] [Money Cr Instant] Amounts owed to other participating interests within one year
+      [C] 269 [13] [Money Cr Instant] Amounts owed to related parties within one year
+      [C] 4722 [13] [Money Cr Instant] Taxation and social security due within one year
+        [C] 1017 [13] [Money Cr Instant] Corporation tax due within one year
+        [C] 4999 [13] [Money Cr Instant] VAT due within one year
+        [C] 2225 [13] [Money Cr Instant] Foreign tax due within one year
+        [C] 3673 [13] [Money Cr Instant] Other taxation and social security within one year
+      [C] 2443 [13] [Money Cr Instant] Government grants within one year
+      [C] 64 [13] [Money Cr Instant] Accruals and deferred income within one year
+      [C] 4943 [13] [Money Cr Instant] Unpaid contributions to pension schemes within one year
+      [C] 1781 [13] [Money Cr Instant] Dividends proposed, creditors due within one year
+        [C] 1783 [13] [Money Cr Instant] Dividends proposed, ordinary shares, creditors due within one year
+        [C] 1782 [13] [Money Cr Instant] Dividends proposed, cumulative preference shares, creditors due within one year
+      [C] 3102 [13] [Money Cr Instant] Loans from directors within one year
+      [C] 3496 [13] [Money Cr Instant] Other creditors due within one year
+      [C] 3499 [13] [Money Cr Instant] Other creditors including taxation and social security within one year, subtotal
+      [C] 257 [13] [Money Cr Instant] Amounts owed to group undertakings and participating interests within one year, subtotal
+      [C] 1073 [13] [String Duration] Creditors due within one year free-text comment
+    [A] 3500 Other creditors subtotals [heading]
+      [C] 1076 [13] [Money Cr Instant] Creditors, other than convertible debt
+        [C] 1071 [13] [Money Cr Instant] Creditors due after one year, other than convertible debt
+        [C] 1074 [13] [Money Cr Instant] Creditors due within one year, other than convertible debt
+      [C] 4332 [13] [Money Cr Instant] Secured debts
+

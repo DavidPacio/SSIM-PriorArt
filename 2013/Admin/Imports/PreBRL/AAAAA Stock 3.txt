@@ -1,0 +1,15 @@
+﻿Import Data as per CW's SS WorkedTBs-AAAAAALtd.xlsx columns F, N, T
+Just 1 Stock
+No DE Check
+ImportType:Replace
+Tx5469	AAAAA Limited
+Tx5589	2009.01.01	2008.01.01
+Tx5460	2009.12.31	2008.12.31
+
+Stock End Balances
+Tx4551	147,996 	182,290
+Tx5092	2,046,481 	2,227,691
+Tx2120	615 	836
+#Tx4551:ExpenseType.CoS	147,996 	182,290
+#Tx5092:ExpenseType.CoS	2,046,481 	2,227,691
+#Tx2120:ExpenseType.CoS	615 	836

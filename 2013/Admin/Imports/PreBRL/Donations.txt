@@ -1,0 +1,56 @@
+Donations.txt
+
+Import to test Tuples use with Donations as per Charles' A-Dons Limited-2011-12-04-AccountsTRAP.html example (with a few adjustments)
+and no instance numbers are used with the tuple references, which is OK if this is the first import involving the tuples in question.
+
+As per example accounts
+Political donations
+During the year the company made political donations of £4,400. Individual donations to EU political parties were:
+EU Party One            1,200
+EU Party Two            1,200
+EU Party Three          1,200
+
+The company has also contributed £800 to non-EU political parties.
+
+Charitable donations
+During the year the company made charitable donations of £3,000. Individual donations were:
+Save the Children       1,000
+Save the Parents        1,000
+Save the Planet         1,000
+
+And in the Detailed Profit and Loss Account
+
+Administrative expenses
+Charitable donations    3,000
+Political donations     4,400
+
+
+ImportType:Replace
+SchInputEntity.Names.CurrentLegalOrRegistered   	AAAAA Limited
+SchInputBRI.DatesPeriods.Start       	2009-01-01	2008-01-01
+SchInputBRI.DatesPeriods.End         	2009-12-31	2008-12-31
+
+Charitable
+SchInputDirRep.PoliticalCharitableDonations.Charitable.SpecificCharitableDonation.DescrPurpose,T.11  	Save the Children	Save the Children	#Bro 6370
+SchInputDirRep.PoliticalCharitableDonations.Charitable.SpecificCharitableDonation.Amount,T.11 	1,000 	101	#Bro 6371
+SchInputDirRep.PoliticalCharitableDonations.Charitable.SpecificCharitableDonation.DescrPurpose,T.12  	Save the Parents	Save the Parents
+SchInputDirRep.PoliticalCharitableDonations.Charitable.SpecificCharitableDonation.Amount,T.12 	1,000 	102
+SchInputDirRep.PoliticalCharitableDonations.Charitable.SpecificCharitableDonation.DescrPurpose,T.13  	Save the Planet	Save the Planet
+SchInputDirRep.PoliticalCharitableDonations.Charitable.SpecificCharitableDonation.Amount,T.13 	1,000 	103
+
+Political
+SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.NameOrDescrRecipientOrg,T.21 	EU Party One	EU Party One	#Bro 6375
+SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg,T.21  	1,200 	201	#Bro 6376
+SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.NameOrDescrRecipientOrg,T.22 	EU Party Two	EU Party Two
+SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg,T.22  	1,200 	202
+SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.NameOrDescrRecipientOrg,T.23 	EU Party Three	EU Party Three
+SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg,T.23  	1,200 	203
+SchInputDirRep.PoliticalCharitableDonations.Political.NonEU              	800   	204
+
+#PL.Expenses.Donations.Political,Function.Admin  	4,000 	606
+#PL.Expenses.Donations.Charitable,Function.Admin 	2,500 	306
+PLExps.OperationalAdministration.CharitableDonations 	3,000 	306
+PLExps.OperationalAdministration.PoliticalDonations  	4,400 	810
+
+# DE Balancing Posting
+Suspense  	-7,400    	-1,116

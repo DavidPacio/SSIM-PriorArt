@@ -1,0 +1,90 @@
+Dimension Handling
+==================
+
+The Dimension Handling Plan as of 20.06.11.
+
+[See Braiins RG DB.txt and Constants.RG for the details of the actual implementation. Comment added 24.06.11 post implementation.]
+
+(in addition to the already working dimensions mapping and packing/unpacking of BRO Idxs via PackBroIdx() and UnPackBroIdx())
+
+Entity Type
+===========
+Define an Entity type enum to be set when the Entity is created, along with with other properties as per Charles' ideas
+in his "Zones vs Hypercubes and Dimensions" email of 29 May 2011:
+
+Example; if as part of the initial set up pages we know that there are no Restatements and or that this company is not
+ the parent company of a group then conditions can be restricted/made illegal right at the outset.
+
+In fact for some Dimensions it might be better not to control them within Zones at all, but make them Global in their inclusion or exclusion.
+Language
+Country
+Restated
+Group
+
+
+Dimension Members (DiMe/DiMes)
+=================
+Provide for 4 types:
+0 or N Normal i.e. standard, not an S, P, or X special DiMe
+
+1 or S Set type for use in defining a 'dimension based set' e.g.
+       Officers.CoSec, Officers.Director1-Director40, Officers.PartnerLLP1-PartnerLLP20, TPAType.Accountants-Receivers
+
+2 or P Property type for use as a second DiMe with an S first DiMe e.g.
+       Officers.Chairman (419), Officers.CEO (420), Officers.ChairmanCEO (421),
+       Officers.ChiefPartnerLLP (422), Officers.CoSec (423),
+       Officers.CoSecretaryDirector (424), Officers.HighestPaidDirector (425),
+       OfficerType.Executive (487), OfficerType.Nonexecutive (488)
+
+3 or X Not ever user selectable being reserved for Braiins RG generation e.g. Officers.AllEntityOfficers
+
+Plus
+- optional entity type list meaning only applicable to members of that list e.g. company or LLP
+
+BROs
+====
+1. Change the current 'Must Have' dim to 'Set Dim', defined at the BRO Set level with an optional Element override either way
+   i.e. -> Set Dim or no Set Dim
+2. Add the option of a list of allowable DiMes for the 1st dim, defined at the BRO Set level with an optional Element override, for:
+   - DimId and type S plus entity type match DiMes
+   or
+   - DiMes range plus entity type match e.g. CoSec & Director1-Director40, Director1-Director40, PartnerLLP1-PartnerLLP20
+   plus optional
+   - 'none ok' e.g. for Officers.DirectorRemuneration with 'none ok' being added to a money BRO by default
+3. Add the option of a list of applicable DiMes for the 2nd dim if a 2nd dim is allowed,
+   defined at the BRO element level (not needed by BRO Sets), for:
+   - DimId and type P plus entity type match DiMes
+   or
+   - DiMes doubly dimensioned list by 1st dim range choice, plus entity type match e.g.
+     CoSec -> none
+     Director1-Director40 -> Officers.Chairman (419), Officers.CEO (420), Officers.ChairmanCEO (421),
+                             Officers.CoSecretaryDirector (424), Officers.HighestPaidDirector (425),
+                             OfficerType.Executive (487), OfficerType.Nonexecutive (488)
+                             [Not Officers.AllEntityOfficers (418), Officers.ChiefPartnerLLP (422)
+                              or Officers.CoSec (423)]
+     with this list to be reduced according to choices already made to prevent duplicates.
+
+Handling of HighestPaidDirector and AllEntityOfficers Contexts
+--------------------------------------------------------------
+For BROs with context of RGC_Officer (Officers but not Officers.Aggregates) and type Money:
+- 'posting' with no dims allowable via BRO property of 'allowable 1st dim = 'none ok'
+- summing algorithm to check if such a BRO has child dims and if so:
+  * if a total (no dims) has been 'posted' check that the sum of the dim children = the total value
+  * if a total (no dims) has not been 'posted', set it to the sum of the dim children
+- if a child dim is output-> RGC_Officer context unless the dim is for the director who has the HighestPaidDirector property set,
+                             in which case -> HighestPaidDirector context
+- if the total (no dims) is output -> RGC_AllOfficers context, whether it has child dims or not
+
+BROs with context of RGC_AllOfficers (Officers.Aggregates) -> RGC_AllOfficers context in all cases.
+
+Zones
+=====
+All the above is to be subject to Zones override re allowable dimensions.
+
+Will Need
+=========
+- DiMe ranges array and range 'Id' by entity type e.g.:
+  All:     TPAType.Accountants-Receivers
+  Company: CoSec & Director1-Director40 for SchInputEntity.Officers.Name and SchInputDirRep.DirectorSigningReport
+           Director1-Director40               for SchInputEntity.Officers.DirectorSigningAccounts, Officers.DirectorRemuneration etc
+  LLP:     PartnerLLP1-PartnerLLP20           for all Officers BROs?

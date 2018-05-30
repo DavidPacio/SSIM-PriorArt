@@ -1,0 +1,407 @@
+Sign Handling
+=============
+
+XBRL UK Preparers and Developers Guide Version 1.0, dated 31 March 2010
+=======================================================================
+5.3  Positive and negative values
+--------------------------------
+
+The correct positive and negative sign must be applied to data values in an XBRL report.  This sign is determined by XBRL rules based on the taxonomy.  It is NOT necessarily the same as the sign which is used in the human-readable view of a report.  The latter is controlled by the preparer and will depend on the particular conventions which a company follows.  (Signs can be transformed between the underlying XBRL data value and the human-readable presentation using features of Inline XBRL.)
+
+RULE:  Preparers of XBRL reports MUST follow the rules below when entering XBRL data values:
+
+a.  Data MUST always be entered as positive UNLESS rule (b) below requires otherwise.
+
+b.  Where data may be positive or negative, the label will indicate the correct sign of the item.  Labels will use brackets around terms to show what data should be entered as negative.
+
+Examples of sign indicators in labels are:
+
+•  Operating profit (loss)
+•  Net current assets (liabilities)
+•  Net cash flow (outflow) from financing
+•  Funds (debts) acquired with subsidiaries
+
+If a company reports an operating profit, it will thus enter the value of the profit as positive.  On the other hand, if it reports a loss, it will enter the value of the loss as negative.  Similarly, it will enter funds acquired with subsidiaries as positive, but debts acquired as a negative value.
+
+The taxonomy also allocates debit / credit balance indicators to some monetary tags.  These may help guide users on the correct sign, but they only sensibly apply to income and asset / liability data and the wording of labels always takes precedence in determining sign.
+
+XBRL UK Detailed Tagging Information Version 1.0, dated 1 May 2011
+==================================================================
+5.1 Positive and negative numbers
+---------------------------------
+Preparers MUST follow the rules set out in section 5.3 of the Preparers & Developers Guide in determining whether a number is entered as positive or negative.  This requires that data is entered as positive unless the meaning of a value is the opposite of that indicated in the taxonomy label, in which case the data should be entered as negative.
+
+For example, “Operating loss  25” must be entered as a negative value, since the taxonomy label ‘Operating profit (loss)’ indicates a profit is positive and a loss is negative.
+
+Note that the sign on an item in human readable accounts does not necessarily indicate its correct sign in XBRL.  The presence of a sign may simply represent a calculation relationship.  For example, “Distribution costs  -10” will typically indicate that the amount is being deducted from other figures in a financial table.  Costs are 10 and this value must be entered as positive in line with the taxonomy label ‘Distribution costs’.  In determining sign, preparers must consider the real meaning of a value and the description of the item in the taxonomy label.
+
+Not all taxonomy labels which may represent positive or negative values contain bracketed terms.  For example, ‘Gross profit’ in the IFRS taxonomy is missing a (loss) term.  In these cases, preparers should still follow the general rule.   In very unusual cases, items like ‘Cost of sales’ may also show a sign reversal (for example, when a large credit note exceeds purchases).
+
+5.2 Incorrect debit and credit attributes
+-----------------------------------------
+A small number of tags have incorrect debit and credit attributes.   For example, 'Research and development expense' in the IFRS taxonomy is incorrectly shown as a credit.  In such cases, the label on the item takes precedence in determining the sign on the value in XBRL, in line with section 5.3 in the Preparers & Developers Guide.  Preparers can use such tags and follow the label in determining sign, not the credit / debit attribute.
+
+-----------
+Email:   Fwd: Re: Questions About Bracketing and the Tag sign attribute
+Wed, 27 Apr 2011 10:44:05 -0400
+
+It helps, yes, but need a decision please re:
+
+1.3 Format controlled. cw: Maybe but see 1.4
+1.4 Controlled by Zones cw: Well reversal of original thought. Think Zones do have a role to paly re bracketing. Depends to what extent a format = a complete note or primary report. And to what extent this is better covered by Zones (or a higher level format). Need to beware of the Balance Sheet. Need to be able to separately control Net Assets section from Capital and Reserves section.
+1.5 Controlled by user Preference options. Additional option. cw: Need to see what options are allowed in SAPA.
+
+(I don't need this decision immediately, but will within the next few weeks please.)
+
+iXBRL
+Re the iXBRL appearing to be the easiest, I find the section 5.3 bit about wording in labels taking precedence over a taxonomy data value to be odd. Labels should not be considered definitive. They should be just for guidance, not for something fundamental like setting the sign.
+
+It also means that the label has to be available at account generation time, or at least, the sign information extracted from the label needs to be.
+
+Of their examples in 5.3
+the first two have balance signs in the taxonomy:
+Operating profit (loss)            credit
+Net current assets (liabilities)   debit
+
+but the next two
+Net cash flow (outflow) from financing
+Funds (debts) acquired with subsidiaries
+
+do not.
+
+If I were to set the sign at the time of adding an element to the Names table, checking the Taxonomy balance value and the label, would that work? But how would the program know which was debit and which credit for a label with a brackets section if no balance sign is specified? Might need to use Zone info to decide this. Or manual editing of the RG Names Table sign setting. Hmm. We'll have to see how it goes.
+
+Not so clear cut.
+
+D
+
+On 19/04/2011 16:39, Charles Woodgate wrote:
+
+David
+
+As ever, see also in text.
+
+Hope this clarifies.
+
+BTW in continuing my sorting of files books etc came across a file with notes on a future design of GL i.e. beyond what we ever got into H.A So might prove useful to this project.
+
+iXBRL
+
+This appears the easiest. The conventions are determined in the UK GAAP taxonomy.
+
+As I know you know, this is covered in the XBRL UK Preparers and Developers Guide, section 5.3
+
+Human Readable
+
+Possible permutations are:
+
+A)           No brackets
+
+Use brackets to denote
+
+B)            Item opposite of what one would expect of this item type
+
+C)            Item opposite of what one would expect in this report type
+
+A is self explanatory. It could apply to any primary report or supporting schedule.
+
+B really follows the same convention as the iXBRL taxonomy. So may be it could be controlled by the same mechanism. Certainly it could be taken as the default state.
+
+C could apply to a primary or secondary report. So would need to allow definition for each report type whether it is Debit (Expense/Asset), or Credit (Asset/Income).
+
+So:
+
+Profit and Loss account                        = Credit.
+
+Statement of Realised Gains & Losses (STRGL)   = Credit
+
+Balance sheet – Net Assets section             = Debit.
+
+Balance sheet – Capital & reserves             = Credit
+
+P&L Notes – Income                             = Credit
+
+P&L Notes Expenses                             = Debit
+
+BS Notes – Assets                              = Debit
+
+BS Notes –Liabilities                          = Credit
+
+Cashflow                                       = Debit
+
+Cashflow Notes                                 = Debit
+
+
+Despite statement about taking B) to be default state, would in fact expect most reports to follow option C).
+
+If C) applied it would always override B); which is why it still best to think of B) as the default state because that is what the accounts could fall back to if no explicit instructions
+
+Note that it cannot be assumed that if one primary report adheres to one bracketing convention that the all the others must also adhere to the same.
+
+
+See this Ernst & Young example.
+http://www.ey.com/Publication/vwLUAssets/UK_GAAP_Illustrative_Financial_Statements_2009/$FILE/EY_UK_GAAP_Illustrative_Financial_Statements_2009.pdf
+
+The balance sheet works on option B. but all the other reports work on C.
+
+a would normally apply at the secondary report level.
+
+
+=======
+
+Sign Process used as of 14.08.11
+================================
+Maintain expected sign from Zone. (Global $ZoneSignN)
+
+Output/format all balances as positive numbers.
+
+- XBRL
+  Add sign='-' if balance is not equal to BRO Sign, or if the BRO does not have a sign (Tx Element has no sign) use the Zone sign.
+  BRO signs should be checked for all Tx Element with bracketed items in their labels
+
+- Presentation
+  Bracket outside the iXBRL tag if balance is adverse to the current Zone sign
+
+Descriptions (Titles or Labels) Containing Bracketed Sections (After label wording/spelling errors fix added to BuildTaxonomyDB.php)
+=============================================================
+
+Fixing label wording/spelling errors
+'(Benefits paid) related to the defined benefit scheme' changed to 'Benefits paid related to the defined benefit scheme'
+'( loss)' changed to '(loss)' in Text.Id 7603 Gain (loss) on disposal of available-for-sale financial assets reclassified to profit or loss from equity, before tax
+'( loss)' changed to '(loss)' in Text.Id 7604 Gain (loss) on disposal of available-for-sale financial assets reclassified to profit or loss from equity, net of tax
+'( loss)' changed to '(loss)' in Text.Id 7624 Gain (loss) on impairment of available-for-sale financial assets reclassified to profit or loss from equity, before tax
+'( loss)' changed to '(loss)' in Text.Id 7625 Gain (loss) on impairment of available-for-sale financial assets reclassified to profit or loss from equity, net of tax
+'( loss)' changed to '(loss)' in Text.Id 10531 Tax expense on gain (loss) on disposal of available-for-sale financial assets reclassified to profit or loss from equity, before tax
+'( loss)' changed to '(loss)' in Text.Id 10532 Tax expense on gain (loss) on impairment of available-for-sale financial assets reclassified to profit or loss from equity, before tax
+'Tangible fixed assets, depreciation, increase (decease) from acquisitions' changed to 'Tangible fixed assets, depreciation, increase (decrease) from acquisitions'
+
+687 conrete elements have labels with brackets.
+Elements List and
+abstract is null and T.Text like '%(%' and T.Text not like '%(3)%'
+Select E.Id,T.Text From Elements E Join Text T on T.Id=E.StdLabelTxtId Where abstract is null and T.Text like '%(%' and T.Text not like '%(3)%'
+
+For 161 of them, no sign is set:
+abstract is null and T.Text like '%(%' and T.Text not like '%(3)%' and SignN is null
+
+See BracketedLabels.txt for the full lists
+
+Some labels have bracketed sections which aren't related to sign:
+e.g.
+660   Change in debt securities not quoted in active market (at cost), available-for-sale financial assets
+
+The following words lists were developed/tested using BracketedLabels.php:
+
+Label word pairs or phrases with a bracketed section which are not related to sign:
+$NonWordsA = array(
+'(or deduction for expected selling costs)',
+'(regulations prior to December 2006)',
+'market (at cost)',
+'origin (excluding inter-segment sales)',
+'standard (nominal)',
+'swaps (swaptions)'
+);
+
+Word pairs with a bracketed word which are related to sign
+----------------------------------------------------------
+
+Bracketed Word Pairs as per the Taxonomy with commonest ones up front:
+
+$BracketedWordPairsA = array(
+'profit (loss)',
+'gain (loss)',
+'gains (losses)',
+'asset (liability)',
+'assets (liabilities)',
+'(funds) debts',
+'cash (overdrafts)',
+'charge (credit)',
+'charge (release)',
+'charged (credited)',
+'charges (gains)',
+'charges (income)',
+'costs (gains)',
+'debt (funds)',
+'decrease (increase)',
+'deficit (surplus)',
+'earnings (loss)',
+'earnings (payments)',
+'expense (credit)',
+'expense (income)',
+'flow (outflow)',
+'flows (outflows)',
+'from (to)',
+'funds (debts)',
+'granted (lapsed)',
+'higher (lower)',
+'impairment (loss)',
+'impairment (reversal)',
+'income (charge)',
+'income (expense)',
+'increase (decrease)',
+'liabilities (assets)',
+'liability (asset)',
+'loss (gain)',
+'loss (reversal)',
+'lower (higher)',
+'obligations (surplus)',
+'off (back)',
+'outstanding (pre-paid)',
+'payable (receivable)',
+'payable (recoverable)',
+'payment (receipt)',
+'payments (receipts)',
+'proceeds (outgoings)',
+'receipts (payments)',
+'receivable (payable)',
+'reduction (increase)',
+'relief (charge)',
+'resurrected (lost)',
+'sale (purchase)',
+'surplus (deficit)',
+'tax (relief)',
+'to (from)'
+);
+
+Bracketed Word Pairs as per the Taxonomy keyed by the bracketed word, with those that have multiple other words as an array:
+
+$BracketedWordPairsA = array(
+'asset'       => 'liability',
+'assets'      => 'liabilities',
+'back'        => 'off',
+'charge'      => array('income', 'relief'),
+'credit'      => array('charge', 'expense'),
+'credited'    => 'charged',
+'debts'       => 'funds',
+'decrease'    => 'increase',
+'deficit'     => 'surplus',
+'expense'     => 'income',
+'from'        => 'to',
+'funds'       => array('debts', 'debt'),
+'gain'        => 'loss',
+'gains'       => array('charges', 'costs'),
+'higher'      => 'lower',
+'income'      => array('charges', 'expense'),
+'increase'    => array('decrease', 'reduction'),
+'lapsed'      => 'granted',
+'liabilities' => 'assets',
+'liability'   => 'asset',
+'loss'        => array('profit', 'gain', 'earnings', 'impairment'),
+'losses'      => 'gains',
+'lost'        => 'resurrected',
+'lower'       => 'higher',
+'outflow'     => 'flow',
+'outflows'    => 'flows',
+'outgoings'   => 'proceeds',
+'overdrafts'  => 'cash',
+'payable'     => 'receivable',
+'payments'    => array('earnings', 'receipts'),
+'pre-paid'    => 'outstanding',
+'purchase'    => 'sale',
+'receipt'     => 'payment',
+'receipts'    => 'payments',
+'receivable'  => 'payable',
+'recoverable' => 'payable',
+'release'     => 'charge',
+'relief'      => 'tax',
+'reversal'    => array('impairment', 'loss'),
+'surplus'     => array('deficit', 'obligations'),
+'to'          => 'from',
+);
+
+Bracketed Word Pairs as per the Taxonomy plus some additions, keyed by the bracketed word, with those that have multiple other words as an array:
+
+$BracketedWordPairsA = array(
+'asset'       => 'liability',
+'assets'      => 'liabilities',
+'back'        => 'off',
+'charge'      => array('income', 'relief'),
+'credit'      => array('charge', 'expense'),
+'credited'    => 'charged',
+'debts'       => 'funds',
+'decrease'    => 'increase',
+'deficit'     => 'surplus',
+'expense'     => 'income',
+'from'        => 'to',
+'funds'       => array('debts', 'debt'),
+'gain'        => 'loss',
+'gains'       => array('charges', 'costs', 'losses'), # losses added
+'higher'      => 'lower',
+'income'      => array('charges', 'expense'),
+'increase'    => array('decrease', 'reduction'),
+'lapsed'      => 'granted',
+'liabilities' => 'assets',
+'liability'   => 'asset',
+'loss'        => array('profit', 'gain', 'earnings', 'impairment'),
+'losses'      => 'gains',
+'lost'        => 'resurrected',
+'lower'       => 'higher',
+'outflow'     => 'flow',
+'outflows'    => 'flows',
+'outgoings'   => 'proceeds',
+'overdrafts'  => 'cash',
+'payable'     => 'receivable',
+'payments'    => array('earnings', 'receipts'),
+'prepaid'    => 'outstanding', # added
+'pre-paid'    => 'outstanding',
+'purchase'    => 'sale',
+'receipt'     => 'payment',
+'receipts'    => 'payments',
+'receivable'  => 'payable',
+'recoverable' => 'payable',
+'release'     => 'charge',
+'relief'      => 'tax',
+'reversal'    => array('impairment', 'loss'),
+'surplus'     => array('deficit', 'obligations'),
+'to'          => 'from',
+);
+
+
+Examples frpm Charles via email RE: BRO Descriptions - Gross profit (loss) question
+15.08.11
+
+  AAAAB LIMITED (USE FOR TESTING ON EXPORTS)
+  ALPHA, ALPHA, ALPHA, ALPHA AND SONS
+  PROFIT AND LOSS ACCOUNT
+  YEAR ENDED 31 DECEMBER 2009
+
+                                                2009  2008
+                                                  (restated)
+                                              Note  £  £
+TURNOVER                                         1  16,613,552  19,195,013
+
+Cost of sales                                       14,651,380  16,666,490
+                                               ---------------  ---------------
+GROSS PROFIT                                         1,962,172   2,528,523
+
+Distribution costs                                     221,780     260,471
+Administrative expenses                                887,119   1,057,994
+                                                 -------------  -------------
+OPERATING PROFIT                                 2     853,273   1,210,058
+
+Attributable to:
+Operating profit before exceptional items            1,709,673   1,210,058
+  Exceptional items                              2    (856,400)          –
+                                                 -------------  -------------
+                                                       853,273   1,210,058
+
+Loss on disposal of discontinued operations      5    (600,000)          –
+Cost of restructuring the company                6           –  (1,100,000)
+                                                    ----------  -------------
+                                                       253,273     110,058
+
+Interest receivable                                        372       1,876
+Interest payable and similar charges             7     (81,149)   (117,176)
+
+                                                    ----------   ----------
+PROFIT/(LOSS) ON ORDINARY ACTIVITIES BEFORE TAXATION   172,496       (5,242)
+
+Tax on profit/(loss) on ordinary activities      8     212,422      337,173
+
+                                                     ----------  ----------
+LOSS ON ORDINARY ACTIVITIES AFTER TAXATION             (39,926)    (342,415)
+
+Extraordinary items                              9           –     (500,000)
+                                                     ---------    ----------
+(LOSS)/PROFIT FOR THE FINANCIAL YEAR                   (39,926)      157,585
+                                                     ---------    ----------
+

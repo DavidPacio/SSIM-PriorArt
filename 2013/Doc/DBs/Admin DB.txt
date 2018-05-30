@@ -1,0 +1,69 @@
+Braiin Admin DB Notes and Tables
+================================
+
+History:
+03.20.11 djh Started based on TARI Hostgator one
+------------------------------------------------
+
+DB Name: Admin
+~~~~~~~~~~~~~~
+Status         Same as Braiin.Status
+Visitors       Same as Braiin.Status
+VisitTrans     Same as Braiin.VisitTrans
+DBLog          Same as Braiin.DBLog
+NoGos??        Used? If it is then it should be added to Braiin too
+
+###########
+## NoGos ## Records information about visitors who can't run Braiin Admin
+###########
+CREATE TABLE IF NOT EXISTS NoGos (
+  Id      mediumint unsigned not null auto_increment,
+  Dom     tinyint   unsigned not null, # 1 if DOM is available
+  Cookies tinyint   unsigned not null, # Cookies Enabled
+  ScrRes  mediumint unsigned not null, # Screen Resolution as a number e.g. 12801024 or 800600
+  TZO     smallint           not null, # Time Zone Offset (minutes)
+  JSV       varchar(4)       not null, # JavaScript Version e.g. '1.3'; '' if scripting is disabled
+  IP        varchar(40)      not null,
+  UserAgent varchar(100)     not null,
+  Cookie    varchar(255)     not null,
+  Protocol  varchar(8)       not null, # $_SERVER['SERVER_PROTOCOL']
+  AddT    timestamp not null default 0,
+  Primary Key (Id)
+) Engine = MyISAM;
+
+###########
+## Daily ## Daily - Updated once a day by Housekeeping run by cron at 11:59 GMT
+###########         Counts are for the day, or the period since the previous record if a day is missed.
+# Type: Log
+CREATE TABLE IF NOT EXISTS Daily (
+  Id            smallint  unsigned not null auto_increment,
+  DayD          smallint  unsigned not null, # eeDate of the day
+  # Key table next auto increment numbers
+  PeopleNai     mediumint unsigned not null,
+  MembersNai    mediumint unsigned not null,
+  EmailsNai     mediumint unsigned not null,
+  AgentsNai     mediumint unsigned not null,
+  # Key Numbers
+  Agents       smallint unsigned not null,
+  AccountsProc mediumint unsigned not null,
+  CurrCredits  mediumint unsigned not null,
+  CreditsSold  mediumint unsigned not null,
+  Sales              int unsigned not null, // pence
+  # Key Numbers - People and Members
+  People      smallint unsigned not null,
+  MemLists    smallint unsigned not null,
+  MemGuests   smallint unsigned not null,
+  MemAdmins   smallint unsigned not null,
+  MemMembers  smallint unsigned not null,
+# MemAdvisors smallint unsigned not null,
+  # Key Numbers - Emails
+  Emails        mediumint unsigned not null,
+  # Key Numbers - DB maintenance
+  MTdels     smallint  unsigned not null,
+  FTdels     smallint  unsigned not null,
+  FTups      smallint  unsigned not null,
+  # sys stuff
+  AddT          timestamp not null default 0,
+  Primary Key (Id),  # unique
+  Unique Key (DayD)
+) Engine = InnoDB;

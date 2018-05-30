@@ -1,0 +1,7 @@
+﻿Cash test with dimension in use
+No DE Check
+ImportType:Replace
+
+Cash
+Tx541:OpActivs.ContinuingOpsExclAcqs	60,000 	30,000
+Tx575	6,330 	5,082

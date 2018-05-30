@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<title>BDT - Braiins DeskTop</title>
+<meta id=3.1.1 charset=utf-8>
+<meta name=author content='Braiins Ltd Copyright 2011-2013'>
+<link rel='shortcut icon' href=../favicon.png>
+<!-- Wijmo Theme
+<link rel=stylesheet type=text/css href=http://cdn.wijmo.com/themes/cobalt/jquery-wijmo.css title='cobalt-jqueryui'>
+<link rel=stylesheet type=text/css href=css/Aristo/Aristo.css>
+-->
+<link rel=stylesheet type=text/css href=css/cobalt/jquery-wijmo.css>
+<link rel=stylesheet type=text/css href=css/BDT.css>
+<link rel=stylesheet type=text/css href=css/jd/jwindow.css>
+<!--Wijmo Widgets CSS
+<link rel=stylesheet type=text/css href=http://cdn.wijmo.com/jquery.wijmo-complete.all.2.1.4.min.css>
+-->
+<!--
+<link rel=stylesheet type=text/css href=css/wijmo/jquery.wijmo-open.2.1.4.css>
+<link rel=stylesheet type=text/css href=css/wijmo/jquery.wijmo-complete.2.1.4.css>
+-->
+<link rel=stylesheet type=text/css href=pis/sg/bGrid.css>
+<!--
+<link rel=stylesheet type=text/css href=pis/sg/controls/slick.pager.css>
+<link rel=stylesheet type=text/css href=pis/sg/controls/slick.columnpicker.css>
+-->
+<link rel=stylesheet type=text/css href=pis/cm/ContextMenu.css>
+<link rel=stylesheet type=text/css href=../css/Tips.css>
+
+</head>
+<body>
+<div id=main>
+  <div id=topbar>
+    <div id=logo class=fl></div>
+    <ul>
+      <li id=Mb class=greya>Menu</li>
+    </ul>
+    <p id=Ag><b>Agent :</b> <span></span></p>
+    <p id=En><b>Entity :</b> <span class=ERef></span>, <span class=EName></span></p>
+    <ul id=rMnu>
+      <li id=FS title='Tip: To Toggle Full Screen Mode press the F11 Key'>Full Screen</li>
+      <li id=LO title='Click to Logout and Close Desktop'>Logout</li>
+    </ul>
+    <div id=CL title='Click to Close Desktop without logging out'></div>
+  </div> <!-- /topbar -->
+
+<div id=footer>
+  <ul id=tcontainer></ul>
+</div>
+</div> <!-- /main -->
+<div id=Md>
+<dl>
+  <dt>Current Entity</dt>
+  <dd>
+    <ul>
+      <li data-app=10>Upload Data</li>
+      <li data-app=11>Enter or Edit Data</li>
+      <li data-app=12>Trial Balance</li>
+      <li data-app=13>Data Trail</li>
+      <li data-app=14>Data Check</li>
+      <li data-app=15>Financial Statements</li>
+      <li data-app=16>FS Download</li>
+      <li data-app=17>Set to Final</li>
+      <li data-app=18>Start Next Year</li>
+    </ul>
+  </dd>
+  <hr>
+  <dt>Entities</dt>
+  <dd>
+    <ul>
+      <li data-app=20>Change</li>
+      <li data-app=21>List</li>
+      <li data-app=22>New</li>
+      <li data-app=23>Edit Current</li>
+      <li data-app=24>Reset</li>
+      <li data-app=25>Delete</li>
+    </ul>
+  </dd>
+</dl>
+<dl>
+  <dt>Actions</dt>
+  <dd>
+    <ul>
+      <li><a data-app=1>Close Desktop</a></li>
+      <li><a data-app=2>Logout</a> and Close</li>
+      <li><a data-app=3>Minimise</a> all windows</li>
+      <li><a data-app=4>Close</a> all windows</li>
+
+    </ul>
+  </dd>
+  <hr>
+  <dt>Interaction &amp; Info</dt>
+  <dd>
+    <ul>
+      <li data-app=30>Messages</li>
+      <li data-app=31>Support</li>
+      <li data-app=32>Documentation</li>
+    </ul>
+  </dd>
+  <hr>
+  <dt>Admin</dt>
+  <dd>
+    <ul class=mb0>
+      <li data-app=40>Snapshot</li>
+      <li data-app=41>Admin Reports</li>
+      <li data-app=42>Credits</li>
+      <li data-app=43>Account Details</li>
+      <li data-app=44>Members</li>
+      <li data-app=45>Headings</li>
+      <li data-app=46>Layout Options</li>
+      <li data-app=47>Download Export Format</li>
+    </ul>
+  </dd>
+</dl>
+</div> <!-- /Md -->
+<div id=A class=hide></div> <!-- Alert -->
+<div id=B class=Busy><div></div></div> <!-- Busy -->
+<div id=H class=tip-yellow><div class=tip-inner></div><div class=tip-arrow></div></div>
+<form id=T class=hide action=tab/Tab.php method=post>  <!-- Tab -->
+<input type=hidden name=Dat>
+</form>
+<!--
+<script src=//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js></script>
+<script src=//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js></script>
+-->
+<script src=../js/jquery-1.9.1.min.js></script>
+<script>$.uiBackCompat = false;</script> <!-- To be removed with jui 1.11 -->
+<script src=../js/jquery-ui-1.10.1.min.js></script>
+<!--Wijmo Widgets JavaScript
+<script src=http://cdn.wijmo.com/jquery.wijmo-complete.all.2.1.4.min.js></script>
+-->
+<!--
+<script src=js/wijmo/jquery.wijmo-open.all.2.1.4.min.js></script>
+<script src=js/wijmo/jquery.wijmo-complete.all.2.1.4.min.js></script>
+-->
+<script src=pis/sg/slick.core.js></script>
+<script src=pis/sg/slick.formatters.js></script>
+<script src=pis/sg/bEditors.js></script>
+<script src=pis/sg/bGrid.js></script>
+<!---
+<script src=pis/sg/slick.dataview.js></script>
+<script src=pis/sg/controls/slick.pager.js></script>
+<script src=pis/sg/controls/slick.columnpicker.js></script>
+<script src=pis/sg/plugins/slick.rowselectionmodel.js></script>
+-->
+<script src=js/jd/Bensure.js></script>
+<script src=js/lib/jquery.event.drag-2.2.js></script>
+
+<script src=pis/cm/ContextMenu.js></script>
+<script src=js/BDT.js></script>
+<script src=../js/BTip.js></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+SemanticWeb  Started 31.05.13
+-----------
+
+http://semanticweb.com/
+
+
+Introduction to Reasoners
+http://semanticweb.com/introduction-to-reasoners_b36245
+
+
+http://schema.org/
+his site provides a collection of schemas, i.e., html tags, that webmasters can use to markup their pages in ways recognized by major search providers.

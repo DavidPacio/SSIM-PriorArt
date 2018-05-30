@@ -1,0 +1,2688 @@
+Sage Accounts Production Advanced Reportpad Rel 11.00
+master.SUBLTD.rph                                                     22.02.11
+============================  ACCOUNTS REPORTPAD  ============================
+//////////////////////////////////////////////////////////////////////////////
+[def reportpad genAGMeetingR] Time, date and venue of AGM GEN
+// ---------------------- Amend text - no full stop at the end
+at 12.00 noon on 1st April 2001 at the registered office
+[end reportpad]
+[def reportpad genBoardMeetingR] Details of Board meeting prior to AGM GEN
+at 11.30am on 1st April 2001 at the registered office
+[end reportpad]
+[def reportpad genExtraResolutionR] Additional resolution for AGM agenda/proxy GEN
+[end reportpad]
+[def reportpad genExtraResolution2R] Second additional resolution for AGM agenda/proxy GEN
+[end reportpad]
+[def reportpad genExtraResolution3R] Third additional resolution for AGM agenda/proxy GEN
+[end reportpad]
+[def reportpad genChairStatementR] Full text of Chairman's Statement GEN
+[end reportpad]
+[def reportpad genOperatingFinancialReviewR]Operating Financial Review (OFR) GEN
+//If you wish to complete an Operating Financial Review (OFR) as part of
+//Reporting Standard 1 (RS1) please enter details in this reportpad
+[end reportpad]
+[def reportpad genOffPageSubCommittee1R] First sub-committee following Directors GEN
+[end reportpad]
+[def reportpad genOffPageSubCommittee2R] Second sub-committee following Directors GEN
+[end reportpad]
+[def reportpad genOffPageInvestAdviserR] Contents of optional item following Company Secretary GEN
+[end reportpad]
+[def reportpad genOffPageOtherAdviser1R] First Other adviser following Investment adviser GEN
+[end reportpad]
+[def reportpad genOffPageOtherAdviser2R] Second Other adviser following Investment adviser GEN
+[end reportpad]
+[def reportpad genOffPageExtraSolicitorR] Additional details for Solicitor's section GEN
+[end reportpad]
+[def reportpad genOffPageExtraBankR] Additional details for Banker's section GEN
+[end reportpad]
+[def reportpad genOffPageFinalItemR] Contents of optional last item on Officers Page GEN
+[end reportpad]
+[def reportpad genCoverAddressR] Alternative address to be used on covers GEN
+[end reportpad]
+//////////////////////////////////////////////////////////////////////////////
+----------------------------  DIRECTORS REPORT  ------------------------------
+//////////////////////////////////////////////////////////////////////////////
+[def reportpad dirDateIncorpR] Date of incorporation, commencement of trading, etc DIR
+[end reportpad]
+[def reportpad dirMoreActivitiesR] More text for principal activities if needed DIR
+to this strategy. The year's performance has enabled the company to maintain Its
+status as a category A supplier to its principal customer
+[end reportpad]
+[def reportpad dirBusReviewR] Business review DIR
+As predicted last year the manufacture of widgets for
+BigCorp during the year stabilised at a lower level than hitherto The resultant
+available capacity was principally taken up with the successful completion of a
+large scale (£4m) micro widget project and increased activity in other areas
+
+Investment in the AAAAA China facility has commenced and anticipates production
+in the coming financial year.
+[table "0300000002772377D620"]
+[end reportpad]
+[def reportpad dirFutDevelopR] Future Developments DIR
+[end reportpad]
+[def reportpad dirDividendsR] Additional comments re dividends DIR
+[end reportpad]
+[def reportpad dirFinancialRiskManagementR] Financial risk management objectives and policies DIR
+//This section on financial instruments is a requirement of Statutory Instrument SI 04 2947
+//which applies to large and medium-sized entities that are not adopting FRS 25 and 26 in full
+[e2]***Insert text here to explain the following:***[e]
+[e77]Financial risk management objectives and policies[e]
+
+The principal risks and uncertainties facing the company include the acceptance
+by end customers of its products, changes in customer requirements and in
+levels of demand in the market, competitive pressure on pricing, delivery or
+technology, utility costs, changes in government legislation, and overall
+economic conditions
+
+a) the financial risk management objectives and policies of the company including the policy for hedging each major type of forecasted transaction for which hedge accounting is used; and
+
+b) the exposure of the company to price risk, credit risk, liquidity risk and cash flow risk;
+
+unless such information is not material for the assessment of the assets, liabilities, financial position and profit or loss of the company.
+[end reportpad]
+[def reportpad dirResearch&DevR] Research & development DIR
+[end reportpad]
+[def reportpad dirDirshareholdingsR] Directors interests in the company (or group) DIR
+[end reportpad]
+[def reportpad dirDirsIntOverrideR] Directors interests override DIR
+[end reportpad]
+[def reportpad dirMoreDetailsR] Additional details re directors - share options etc DIR
+[end reportpad]
+[def reportpad dirDirsChangesR] Text Version of Appointments, Retirements etc DIR
+[end reportpad]
+[def reportpad dirFixedAssetsR] Notes re fixed assets DIR
+[end reportpad]
+[def reportpad dirMiscellaneousR] Miscellaneous notes DIR
+[end reportpad]
+[def reportpad dirInsuranceR] Directors/auditors insurance DIR
+[end reportpad]
+[def reportpad dirPayCreditorsR] Policy on payment of creditors DIR
+[end reportpad]
+[def reportpad dirDonationsR] Political donations DIR
+//Disclose donations to independent election candidates (CA 2006 requirement)
+[end reportpad]
+[def reportpad dirPostBSeventR] Details of post balance sheet event DIR
+[end reportpad]
+[def reportpad dirDisabledEmplR] Disabled employees DIR
+[end reportpad]
+[def reportpad dirEmplInvolveR] Employee involvement DIR
+[end reportpad]
+[def reportpad dirOwnSharesR] Purchase of own shares DIR
+[end reportpad]
+[def reportpad dirIFRSTransitionR]Information on IFRS transition plans DIR
+//*** Complete to provide further information on IFRS transition plans***
+[end reportpad]
+[def reportpad dirAuditorChangeR] Alternative text relating to auditors appointment DIR
+[end reportpad]
+[def reportpad dirSignatoryR] Signatory to Directors report - Not secretary DIR
+// Warning: please do not remove [def block] and [end block] statements as these control pagination.
+[def block]
+[tab 40][xbrl "uk-bus:NameEntityOfficer", officer="Director1"] Mr B B Black[end xbrl]
+//[tab 40][xbrl "uk-bus:NameEntityOfficer", officer="Director1"]** Name (line 2) **[end xbrl]
+
+[tab 40]** Position **
+[end block]
+[end reportpad]
+-----------------------  AUDITORS/ACCOUNTANTS REPORT  ------------------------
+//////////////////////////////////////////////////////////////////////////////
+[def reportpad aurLimitR] Limitation of scope details AUR
+[end reportpad]
+[def reportpad aurExplanR] Explanatory paragraph AUR
+[end reportpad]
+[def reportpad aurAudqualR] Qualification paragraph AUR
+[end reportpad]
+[def reportpad aurOpinionR] Revised opinion - suggest copy from AUDREP01.HC & modify AUR
+// Please use Headings > Auditors Report > RevisedOpinion to edit the title of the revised opinion paragraph.
+// Type main text for the revised opinion paragraph below:
+//[variables string bulletS]
+//[bulletS = "{\f33\fs20\'b7}"]
+//Except for the ..., in our opinion the financial statements:[new line]
+//[new line]
+//|[rtf bulletS][tab 4][nonl]
+//|give a true and fair view of the state of the company's affairs at … and of its profit/loss for the year then ended; [new line]
+//[new line]
+//|[rtf bulletS][tab 4][nonl]
+//|have been properly prepared in accordance with United Kingdom Generally Accepted Accounting Practice; and [new line]
+//[new line]
+//|[rtf bulletS][tab 4][nonl]
+//|have been prepared in accordance with the requirements of the Companies Act 2006.
+[end reportpad]
+[def reportpad aurEmphasisR] Emphasis of matter paragraph AUR
+//[e60]Emphasis of matter - Going concern[e]
+//Use the heading above for full accounts. If the full report is included in abbreviated accounts a different font is required so replace [e60] with [e13].
+//Enter text here to follow the audit report opinion paragraph
+[end reportpad]
+[def reportpad acrDisclaimR] Management accounts report paragraph AUR
+[end reportpad]
+[def reportpad aurAuditAddressR] Address to be used at bottom of Audit Report AUR
+[end reportpad]
+[def reportpad aurAPBEthicalR] Wording for the APB Ethical statement November 2004 AUR
+**** PLEASE ENTER TEXT IN REPORTPAD APBEthical ****
+// Please complete the reportpad and enter circumstances under which the
+// APB Ethical Standard - Provisions for Smaller Entities has been applied
+// The illustrative wording from the bulletin is set out below.  Please enable
+// wording by removing slashes if applicable or create your own wording as
+// appropriate.
+//
+//In common with many other businesses of our size and nature we use our [nonl]
+//auditors to prepare and submit returns to the tax authorities and assist [nonl]
+//with the preparation of the financial statements.
+//
+//In common with many other businesses of our size and nature we use our [nonl]
+//auditors to provide tax advice and to represent us, as necessary, at tax [nonl]
+//tribunals.
+//
+//XYZ, a former partner of {audit firm} joined [name] as {a director} on [nonl]
+//{date}.
+[end reportpad]
+[def reportpad aurClarificationR] Override respective responsibilities clarification of opinion info AUR
+//If the accounts include an OFR or Chairman's Statement an additional line will be added to the third paragraph of the "Respective responsibilities of directors and auditors" section. Enter text below to override the default:
+//e.g. The information given in the Directors' Report includes that specific information presented in the Operating and Financial Review that is cross referred from the Business Review section of the Directors' Report.
+[end reportpad]
+[def reportpad aurUncertaintyR] ICAEW Assurance Report - Significant Uncertainty AUR
+//[e60]Significant Uncertainty[e]
+//
+//Without qualifying our opinion… (set out details of the uncertainty)
+[end reportpad]
+[def reportpad aurScopeOfAuditR] Override reference to scope of audit AUR
+// set out on page x of the Annual Report.
+[end reportpad]
+[def reportpad aurMattersRepByExceptionR] Matters reported by exception AUR
+//[variables string bulletS]
+//[bulletS = "{\f33\fs20\'b7}"]
+//We have nothing to report in respect of the following matters where the Companies Act 2006 requires us to report to you if, in our opinion:[new line]
+//[new line]
+//|[rtf bulletS][tab 4][nonl]
+//|adequate accounting records have not been kept, or returns adequate for our audit have not been received from branches not visited by us; or [new line]
+//[new line]
+//|[rtf bulletS][tab 4][nonl]
+//|the financial statements are not in agreement with the accounting records and returns; or [new line]
+//[new line]
+//|[rtf bulletS][tab 4][nonl]
+//certain disclosures of directors' remuneration specified by law are not made; or [new line]
+//[new line]
+//|[rtf bulletS][tab 4][nonl]
+//we have not received all the information and explanations we require for our audit.
+[end reportpad]
+[def reportpad aurAltOpinionPrescByCA06R] Alternative opinion prescribed by CA06 AUR
+[end reportpad]
+--------------------------  PROFIT & LOSS ACCOUNT  ---------------------------
+//////////////////////////////////////////////////////////////////////////////
+[def reportpad p&lTextAtTopR] Text or spacing at the TOP of P&L account ACS
+[end reportpad]
+[def reportpad p&lTextBeforeExpR] Text or spacing just Before EXPenses ACS
+[end reportpad]
+[def reportpad p&lTextAtEndR] Text or spacing at the very END of P&L account ACS
+[end reportpad]
+-------------------------- ACCOUNTS---------------------------------------------
+//////////////////////////////////////////////////////////////////////////////
+[def reportpad acsRevalAssetsR] Text to be used to name revalued assets in audit rep & acc policies ACS
+certain fixed assets[nonl]// (no spaces before or after)
+[end reportpad]
+[def reportpad acsFinanceAssetsR] Text used to describe type of assets held under HP & Finance Leases ACS
+assets
+[end reportpad]
+------------------------------  BALANCE SHEET  -------------------------------
+//////////////////////////////////////////////////////////////////////////////
+[def reportpad bsaTextBeforeFAR] Text or spacing Before the Fixed Assets ACS
+[end reportpad]
+[def reportpad bsaTextBeforeEquityR] Text or spacing Before the EQuity section ACS
+[end reportpad]
+[def reportpad bsaTextAtEndOfBSR] Text or spacing AT the very END of the BS ACS
+[end reportpad]
+[def reportpad bsaSignatoryR] Alternative user defined Balance Sheet signatories ACS
+
+
+**Name 1**                      **Name 2**
+**Position                      **Position
+[end reportpad]
+---------------------------  CASH FLOW STATEMENT  ----------------------------
+//////////////////////////////////////////////////////////////////////////////
+[def reportpad cfsCashflowTextR] Text at end of second page ACS
+[end reportpad]
+[def reportpad cfsLiquidR] Explanation of liquid resources as required by FRS1(R) para26 ACS
+[end reportpad]
+[def reportpad acsCashflowNetDebt1R] Text for PYA below net cash flow to net debt reconciliation ACS
+[end reportpad]
+[def reportpad acsCashflowNetDebt2R] Text for PYA below analysis of changes in net debt ACS
+[end reportpad]
+---------------------------  ACCOUNTING POLICIES  ----------------------------
+//////////////////////////////////////////////////////////////////////////////
+[def reportpad polAcctBasisR] Details of basis of accounting POL
+[end reportpad]
+[def reportpad polFRSSE2005NewR] Changes in accounting policies FRSSE 2005 POL
+// Warning: please do not remove [def block], [end block] and [flush block] statements as these control pagination.
+[def block]
+[e2]***Please amend reportpad FRSSE2005NewR as appropriate.***[e]
+
+(Insert text here to explain the impact of the adoption of FRSSE (effective January 2005)in the year.
+Provide details of the changes including:
+
+(a) a brief explanation of the change in policy;
+(b) where practicable, the effect of a prior period adjustment on the results for the preceding period in accordance with FRS 3; and
+(c) where practicable, an indication of the effect of a change in accounting policy on the results for the current period.
+
+Where it is not practicable to make the disclosures described in (b) and (c) above, state that this is the case and give the reasons for it.)
+[end block]
+[end reportpad]
+[def reportpad polFRS17NewR] Changes in accounting policies FRS 17 POL
+// Warning: please do not remove [def block], [end block] and [flush block] statements as these control pagination.
+[def block]
+[e2]***Please amend reportpad FRS17NewR as appropriate.***[e]
+
+(Insert text here to explain the impact of the full adoption of FRS 17 in the year.
+Provide details of the changes including:
+
+(a) a brief explanation of the change in policy;
+(b) where practicable, the effect of a prior period adjustment on the results for the preceding period in accordance with FRS 3; and
+(c) where practicable, an indication of the effect of a change in accounting policy on the results for the current period.)
+[end block]
+[end reportpad]
+[def reportpad polFRS20NewR] Changes in accounting policies FRS 20 POL
+// Warning: please do not remove [def block], [end block] and [flush block] statements as these control pagination.
+[variables string bulletS]
+[bulletS = "-"]
+//
+[def block]
+[e2]***The following text should be used as a guide, please amend reportpad FRS20NewR as
+appropriate.***[e]
+
+FRS 20 'Share-Based Payment (IFRS 2)' requires the recognition of equity-settled share-based payments at fair value at the date of the grant and the recognition of liabilities for cash-settled share-based payments at the current fair value at each balance sheet date. Prior to the adoption of FRS 20, the company did not recognise the financial effect of share-based payments until such payments were settled.
+
+In accordance with the transitional provisions of FRS 20, the Standard has been applied retrospectively to all grants of equity instruments after 7 November 2002 that were unvested as of 1 January 2006.
+
+For year ended [date last end], the change in accounting policy has resulted in a net decrease in the profit for the year of [cdb.aps.6][sum @103A+@103B+@153A+@153B+@234A+@234B c3 text]. The balance sheet at [date last end] has been restated to reflect the recognition of a liability for share-based payments of [cdb.aps.6][sum @808A+@872A c3 text], a share options reserve of [cdb.aps.6][sum @989A c3 text] and an additional deferred tax asset of [cdb.aps.6]XXX
+
+For the year ended [date this end] the change in accounting policy has resulted in a net charge to the profit and loss account of [cdb.aps.6][sum @103A+@103B+@153A+@153B+@234A+@234B c1 text]. At [date this end], the share options reserve amounted to [cdb.aps.6][sum @989A c1 text], the liability recognised for share-based payments amounted to [cdb.aps.6][sum @808A+@872A c1 text] and the related deferred tax asset amounted to [cdb.aps.6]XXX.
+[end block]
+[end reportpad]
+[def reportpad polFRS21NewR] Changes in accounting policies FRS 21 POL
+// Warning: please do not remove [def block], [end block] and [flush block] statements as these control pagination.
+[def block]
+[e2]***The following text should be used as a guide, please amend reportpad FRS21NewR as appropriate.***[e]
+
+The adoption of FRS 21 has resulted in a change in accounting policy in respect of proposed equity dividends.  If the company declares dividends to the holders of equity instruments after the balance sheet date, the company does not recognise those dividends as a liability at the balance sheet date.  The aggregate amount of equity dividends
+proposed before approval of the financial statements, which have not been shown as liabilities at the balance sheet date, are disclosed in the notes to the financial statements. Previously, proposed equity dividends were recorded as liabilities at the balance sheet date.
+
+This change in accounting policy has resulted in a prior year adjustment for the company. Shareholders' funds at [date last begin] have been increased by [cdb.aps.6]XXX. For year ended [date last end], the change in accounting policy has resulted in a net increase in retained profit for the year of [cdb.aps.6]XXX. The balance sheet at [date last end] has been
+restated to reflect the de-recognition of a liability for proposed equity dividends of [cdb.aps.6]XXX. For year ended [date this end], the change in accounting policy has resulted in a net increase in retained profit for the year of [cdb.aps.6]XXX.
+[end block]
+[end reportpad]
+[def reportpad polFRS23NewR] Changes in accounting policies FRS 23 POL
+// Warning: please do not remove [def block], [end block] and [flush block] statements as these control pagination.
+[def block]
+[e2]***You have set rop.acc.m.f23 to 'yes' indicating that adoption of FRS 23 has resulted in a change in accounting policy, please enter text in reportpad FRS23NewR as appropriate.***[e]
+[end block]
+[end reportpad]
+[def reportpad polFRS25_26NewR] Changes in accounting policies FRS 25/26 POL
+// Warning: please do not remove [def block], [end block] and [flush block] statements as these control pagination.
+[def block]
+[e2]***The following text should be used as a guide, please amend reportpad FRS25_26NewR as appropriate.***[e]
+
+Provide details of the changes including:
+
+a) a brief explanation of the change in policy;
+
+b) where practicable, the effect of a prior period adjustment on the results for the preceding period in accordance with FRS 3; and
+
+c) where practicable, an indication of the effect of a change in accounting policy on the results for the current period.
+[end block]
+[end reportpad]
+[def reportpad polUITFNewR] Changes in accounting policies UITF 40 Revenue Recognition POL
+// Warning: please do not remove [def block], [end block] and [flush block] statements as these control pagination.
+[def block]
+[e2]***The following text should be used as a guide, amend reportpad UITFNewR***[e]
+
+Provide details of the changes including:
+
+a) a brief explanation of the change in policy;
+
+b) where practicable, the effect of a prior period adjustment on the results for the preceding period in accordance with FRS 3; and
+
+c) where practicable, an indication of the effect of a change in accountancy policy on the results for the current period.
+[end block]
+[end reportpad]
+[def reportpad polFRSSE2007ChangePolicyR] FRSSE 2007 Changes to share based payments POL
+//[e2]***The following text should be used as a guide, please amend reportpad FRSSE2007ChangePolicy as appropriate***[e]
+//
+//The Financial Reporting Standard for Smaller Entities (effective January 2007) requires a liability for cash-settled share-based payments, equal to the portion of the goods and services received, to be recognised at the current fair value determined at each balance sheet date.
+//
+//For the year ended [date last end], the change in accounting policy has resulted in a net decrease in the profit for the year of [cdb.aps.6][sum @103A+@103B+@153A+@153B+@234A+@234B c3 text]. The balance sheet at [date last end] has been restated to reflect the recognition of a liability for share based payments of [cdb.aps.6][sum @808A+@872A c3 text] and an additional deferred tax asset of [cdb.aps.6]XXXX.
+//
+//For the year ended [date this end], the change in accounting policy has resulted in a net charge to the profit and loss account of [cdb.aps.6][sum @103A+@103B+@153A+@153B+@234A+@234B c1 text]. At [date this end] the liability recognised for share based payments amounted to [cdb.aps.6][sum @808A+@872A c1 text] and the related deferred tax asset amounted to [cdb.aps.6]XXXX.
+[end reportpad]
+[def reportpad polFRSSE2007CashSBPR] FRSSE 2007 Cash settled share based payments POL
+// Warning: please do not remove [def block], [end block] and [flush block] statements as these control pagination.
+[def block]
+[e2]***The following text should be used as a guide, please amend reportpad FRSSE2007 Cash
+Settled Share Based Payments as appropriate***[e]
+The <company/group> issues cash-settled share-based payments to certain employees
+(including directors). A liability equal to the portion of the goods and services
+received is recognised at the current fair value determined at each balance sheet date.
+[end block]
+[end reportpad]
+[def reportpad polFRSSE2007EquitySBPR] FRSSE 2007 Equity settled share based payments POL
+// Warning: please do not remove [def block], [end block] and [flush block] statements as these control pagination.
+[def block]
+[e2]***The following text should be used as a guide, please amend reportpad FRSSE2007
+Equity Settled Share Based Payments as appropriate***[e]
+The <company/group> issues equity-settled share-based payments to certain employees
+(including directors). Equity-settled share-based payments are measured at fair value
+at the date of grant. Under the ruling of the Financial Reporting Standard for Smaller
+Entities (effective January 2007) equity-settled share based payments are not recorded
+in the [FinancialAccountsH] and are recognised on a disclosure only basis.
+[end block]
+[end reportpad]
+[def reportpad polRelPartiesTransPolR] Body of policy for Related Parties transactions POL
+//The company is a wholly owned subsidiary of <name>, the consolidated accounts of which are publicly
+//available. Accordingly, the company has taken advantage of the exemption in FRS 8 from disclosing transactions with
+// members or investees of the <name> group.
+[end reportpad]
+[def reportpad polCashFlowR] Alternative cash flow statement policy text POL
+[end reportpad]
+[def reportpad polTurnoverR] Alternative turnover policy POL
+[end reportpad]
+[def reportpad polTurnoverUITFR] Additional turnover text for UITF 40 POL
+***Enter additional text in reportpad TurnoverUITF which will appear after the main turnover policy.***
+[end reportpad]
+[def reportpad polDepreciationR] Additional depreciation policy POL
+[end reportpad]
+[def reportpad polRevalDepnR] Override of standard wording for excess depreciation on revalued assets POL
+[end reportpad]
+[def reportpad polImpairDepnR] Override of standard wording for impairment review POL
+[end reportpad]
+[def reportpad polInvestmentPropertyR] Investment property policy POL
+[end reportpad]
+[def reportpad polGoodWillR] Goodwill policy POL
+[end reportpad]
+[def reportpad polOtherIntanFAR] Other Intangible policy POL
+[end reportpad]
+[def reportpad polTanFixAssetR] Tangible Fixed Asset policy POL
+All fixed assets are initially recorded at cost.
+[end reportpad]
+[def reportpad polStockR] Stock policy POL
+[end reportpad]
+[def reportpad polStockEndR] Stock policy - additional text POL
+[end reportpad]
+[def reportpad polWipR] WIP policy POL
+[end reportpad]
+[def reportpad polFRS17PensionR] User defined pension policy FRS 17 POL
+// Warning: please do not remove [def block], [end block] and [flush block] statements as these control pagination.
+[def block]
+[e2]***The following text should be used as a guide, please amend reportpad FRS17PensionR***[e]
+//If the company operates both defined benefit and defined contribution schemes please amend the text below accordingly.
+The company operates a defined benefit pension scheme for employees. The assets of the scheme are held separately from those of the company.
+
+Current service costs, past service costs and gains and losses on settlements and curtailments are charged to the profit and loss account. Past service costs are recognised over the vesting period or immediately if the benefits have vested. When a settlement (eliminating all obligations for benefits already accrued) or a curtailment [nonl]
+(reducing future obligations as a result of a material reduction in the scheme membership or a reduction in future entitlement) occurs, the obligation and related plan assets are re-measured using current actuarial assumptions and the resultant gain or loss is recognised in the profit and loss account during the period in which the settlement or curtailment occurs.
+
+[flush block]
+The interest cost and the expected return on assets are shown as a net amount in the profit and loss account as other finance costs or income. Actuarial gains and losses are recognised immediately in the statement of total recognised gains and losses.
+
+[flush block]
+Pension scheme assets are valued at fair value at the balance sheet date.  Fair value is based on market price information and in the case of quoted securities is the published bid price.  Pension scheme liabilities are measured on an actuarial basis using the projected unit method and are discounted to their present value using a rate equivalent to the [nonl]
+current rate of return on a high quality corporate bond of equivalent currency and term to the scheme liabilities. Pension scheme (either: "surpluses (to the extent that they can be recovered) OR "deficits") are recognised in full on the balance sheet, net of related deferred tax.
+[end block]
+[end reportpad]
+[def reportpad polPensionR] User defined pension policy POL
+[end reportpad]
+[def reportpad polPostRetireBenPolR] Post retirement benefits policy POL
+[end reportpad]
+[def reportpad polHirePurchaseR] Hire purchase policy personalised text POL
+[end reportpad]
+[def reportpad polFinanceLeaseR] Finance lease policy personalised text POL
+[end reportpad]
+[def reportpad polCombinedLeasesR] HP and Finance Leases in one policy statement POL
+[end reportpad]
+[def reportpad polOperatingLeaseR] Operating lease policy personalised text POL
+[end reportpad]
+[def reportpad polResearch&DevR] Research and Development charging policy POL
+Research and development expenditure is written off in the year in which it is incurred.
+//
+//Development expenditure incurred on clearly defined projects whose outcome can be assessed with
+//reasonable certainty is carried forward and amortisation is charged from that time over the lesser
+//of the life of the project or three years.
+//
+[end reportpad]
+[def reportpad polProvLiabChargesPolR] Provision for liabilities policy POL
+[end reportpad]
+[def reportpad polDeferredTaxR] User defined deferred tax policy POL
+//Alternative pre-FRS 19 version:
+//Deferred taxation is provided using the liability method on all timing differences, including those relating to pensions, which are
+//expected to reverse in the future without being replaced, calculated at the rate at which it is anticipated the timing differences
+//will reverse.  Advance corporation tax which is expected to be recoverable in the future is deducted from the deferred
+//taxation balance.
+//
+//Deferred taxation assets are only recognised if recovery without replacement by equivalent debit balances is reasonably
+//certain.
+//
+//FRS 19 version:
+//[def block]
+//Deferred tax is recognised in respect of all timing differences that have originated but not reversed at the balance sheet date
+//where transactions or events have occurred at that date that will result in an obligation to pay more, or a right to pay less or to
+//receive more tax, with the following exceptions:
+//[end block]
+//
+//[def block]
+//[BulletP]  provision is made for tax on gains arising from the revaluation (and similar fair value adjustments) of fixed assets, and
+// gains on disposal of fixed assets that have been rolled over into replacement assets, only to the extent that, at the balance sheet
+// date, there is a binding agreement to dispose of the assets concerned.  However, no provision is made where, on the basis of all available
+//evidence at the balance sheet date, it is more likely than not that the taxable gain will be rolled over  into replacement assets and charged
+// to tax only where the replacement assets are sold;
+//[end block]
+//
+//[def block]
+//[BulletP]  provision is made for deferred tax that would arise on remittance of the retained earnings of overseas subsidiaries,
+//associates and joint ventures only to the extent that, at the balance sheet date, dividends have been accrued as receivable;
+//[end block]
+//
+//[def block]
+//[BulletP]  deferred tax assets are recognised only to the extent that the directors consider that it is more likely than not that
+//there will be suitable taxable profits from which the future reversal of the underlying timing differences can be deducted.
+//[end block]
+//
+//[def block]
+//Deferred tax is measured on a discounted/an undiscounted basis at the tax rates that are expected to apply in the periods in
+//which timing differences reverse, based on tax rates and laws enacted or substantively enacted at
+//the balance sheet date.
+//[end block]
+[end reportpad]
+[def reportpad polForeignCurrencyR] User defined foreign currency policy POL
+[end reportpad]
+[def reportpad polGovtGrantsR] User defined government grants policy POL
+[end reportpad]
+[def reportpad polDerivInstrumPolR] Derivative instruments policy POL
+[end reportpad]
+[def reportpad polCapitalInstrumPolR] Capital instruments policy POL
+[end reportpad]
+[def reportpad polFRS20R] FRS 20 Share-based payments policy POL
+// Warning: please do not remove [def block], [end block] and [flush block] statements as these control pagination.
+[def block]
+[e2]***The following text should be used as a guide, please amend reportpad FRS20R as
+appropriate.***[e]
+
+The company issues equity-settled and cash-settled share-based payments to certain employees (including directors). Equity-settled share-based payments are measured at fair value at the date of grant. The fair value determined at the grant date of the equity-settled share-based payments is expensed on a straight-line basis over the vesting period, together with a corresponding increase in equity, based upon the company's estimate of the shares that will eventually vest.
+[end block]
+
+[def block]
+Fair value is measured using the [ShareOptionsPricingModelH]. The expected life used in the model has been adjusted, based on management's best estimate, for the effects of non-transferability, exercise restrictions and behavioural considerations.
+[end block]
+
+[def block]
+Where the terms of an equity-settled transaction are modified, as a minimum an expense is recognised as if the terms had not been modified. In addition, an expense is recognised for any increase in the value of the transaction as a result of the modification, as measured at the date of modification.
+[end block]
+
+[def block]
+Where an equity-settled transaction is cancelled, it is treated as if it had vested on the date of the cancellation, and any expense not yet recognised for the transaction is recognised immediately. However, if a new transaction is substituted for the cancelled transaction, and designated as a replacement transaction on the date that it is granted, the cancelled and new transactions are treated as if they were a modification of the original transaction,
+as described in the previous paragraph.
+[end block]
+
+[def block]
+For cash-settled share-based payments, a liability equal to the portion of the goods and services received is recognised at the current fair value determined at each balance sheet date.
+[end block]
+[end reportpad]
+[def reportpad polFRS25_26R] FRS 25/26 Financial Instruments POL
+// Warning: please do not remove [def block], [end block] and [flush block] statements as these control pagination.
+[def block]
+[e2]***The following text should be used as a guide, please amend reportpad FRS25_26R as appropriate.***[e]
+
+Financial instruments are classified and accounted for, according to the substance of the contractual arrangement, as either financial assets, financial liabilities or equity instruments. An equity instrument is any contract that evidences a residual interest in the assets of the company after deducting all of its liabilities.
+[flush block][end block]
+
+[def block]
+[e77]Investments[e]
+
+All investments are initially recorded at cost, being the fair value of the consideration given and including acquisition costs associated with the investment. All purchases and sales of investments are recognised using trade date accounting.
+[flush block][end block]
+
+[def block]
+After initial recognition, investments, which are classified as held for trading and available-for-sale, are measured at fair value. Gains or losses on investments held for trading are recognised in the profit and loss account. Gains or losses on available-for-sale investments are recognised as a separate component of equity until the investment is disposed of or [nonl]
+until its value is impaired, at which time the cumulative gain or loss previously reported in equity is included in the profit and loss account.
+[flush block][end block]
+
+[def block]
+Investments classified as held-to-maturity are subsequently measured at amortised cost using the effective interest method. Gains and losses are recognised in the profit and loss account when the investment in derecognised, or impaired, as well as through the amortisation process.
+[flush block][end block]
+
+[def block]
+Investments are fair valued using quoted market prices, independent appraisals, discounted cash flow analysis or other appropriate valuation models at the balance sheet date.
+[flush block][end block]
+
+[def block]
+[e77]Trade and other debtors[e]
+
+Trade and other debtors are recognised and carried forward at invoices amounts less provisions for any doubtful debts. Bad debts are written off when identified.
+[flush block][end block]
+
+[def block]
+[e77]Interest-bearing loans and borrowings[e]
+
+All loans and borrowings are recognised initially at cost, which is the fair value of the consideration received, net of issue costs associated with the borrowing.
+
+After initial recognition, interest-bearing loans and borrowings are measured at amortised cost using the effective interest method. Gains or losses are recognised in the profit and loss account when liabilities are derecognised or impaired, as well as through the amortisation process.
+[flush block][end block]
+
+[def block]
+[e77]Derivative financial instruments[e]
+
+The company uses a number of derivative financial instruments such as foreign currency contracts and interest rate swaps to hedge its risks associated with interest rate and currency fluctuation risk. Such derivative financial instruments are always stated at their fair value.
+
+For derivatives that do not qualify for hedge accounting (see below), any gains or losses arising from changes in fair value are taken directly to the profit and loss account.
+
+Embedded derivatives are separated from their host contract and are recorded immediately in the profit and loss account when their economic characteristics and risks are not closely related to the host contract and the hybrid instrument itself is not measured at fair value.
+[flush block][end block]
+
+[def block]
+[e77]Hedging[e]
+
+The company designates certain risks being hedged into three types:
+
+- fair value hedges;
+
+- cash flow hedges; and
+
+- hedge of a net investment in a foreign entity.
+
+In relation to fair value hedges, which meet the conditions for special hedge accounting, any gain or loss from re-measuring the hedging instrument at fair value is recognised immediately in the profit and loss account.
+[flush block][end block]
+
+[def block]
+In relation to cash flow hedges, designed to hedge the exposure to variability in future cash flows relating to firm commitments or highly probable forecasted transactions, the portion of the gain or loss on the hedging instrument, which meets the conditions for special hedge [nonl]
+accounting, is recognised directly in equity. Deferred gains and losses are released to the profit and loss account when the forecasted transactions occur.
+
+An ineffective portion of the hedge is always recognised immediately in the profit and loss account.
+[flush block][end block]
+
+[def block]
+The hedge of a net investment in a foreign entity is accounted for as a cash flow hedge with foreign exchange differences recognised directly in equity.
+
+Hedge accounting is discontinued when the hedging instrument expires or is sold, terminated or exercised, or no longer qualifies for hedge accounting. At that point in time, any cumulative gain or loss on the hedging instrument recognised in equity is kept in equity until the [nonl]
+forecasted transaction occurs. If a forecasted transaction is no longer expected to occur, the net cumulative gain or loss recognised in equity is transferred to the profit and loss account.
+[end block]
+[end reportpad]
+[def reportpad polFinancialInstrumPolR] Financial Instruments for FRSSE or FRS 25 Presentation only POL
+// Warning: please do not remove [def block], [end block] and [flush block] statements as these control pagination.
+[def block]
+[e2]***Reportpad FinancialinstrumPol should be tailored for specific circumstances***[e]
+
+Financial liabilities and equity instruments are classified according to the substance of the contractual arrangements entered into. An equity instrument is any contract that evidences a residual interest in the assets of the entity after deducting all of its financial liabilities.
+
+Where the contractual obligations of financial instruments (including share capital) are equivalent to a similar debt instrument, those financial instruments are classed as financial liabilities. Financial
+liabilities are presented as such in the balance sheet.  Finance costs and gains or losses relating to financial liabilities are included in the profit and loss account. Finance costs are calculated so as to produce a constant rate of return on the outstanding liability.
+
+Where the contractual terms of share capital do not have any terms meeting the definition of a financial liability then this is classed as an equity instrument. Dividends and distributions relating to equity instruments are debited direct to equity.
+[flush block][end block]
+
+[def block]
+*** The following text should be included if there are any compound instruments****
+[e77]Compound instruments[e]
+
+Compound instruments comprise both a liability and an equity component. At date of issue, the fair value of the liability component is estimated using the prevailing market interest rate for a similar debt instrument. The liability component is accounted for as a financial liability.
+
+The residual is the difference between the net proceeds of issue and the liability component (at time of issue). The residual is the equity component, which is accounted for as an equity instrument.
+
+The interest expense on the liability component is calculated applying the effective interest rate for the liability component of the instrument. The difference between this amount and any repayments is added to the carrying amount of the liability in the balance sheet.
+[end block]
+[end reportpad]
+[def reportpad polSpare1R] Spare policy 1 POL
+//Enter your policy text here - enter the Heading in SparePol1
+[end reportpad]
+[def reportpad polSpare2R] Spare policy 2 POL
+//Enter your policy text here - enter the Heading in SparePol2
+[end reportpad]
+[def reportpad polSpare3R] Spare policy 3 POL
+//Enter your policy text here - enter the Heading in SparePol3
+[end reportpad]
+[def reportpad polSpare4R] Spare policy 4 POL
+//Enter your policy text here - enter the Heading in SparePol4
+[end reportpad]
+[def reportpad polSpare5R] Spare policy 5 POL
+//Enter your policy text here - enter the Heading in SparePol5
+[end reportpad]
+[def reportpad polCallPolicyR] Use clients special policy format POL
+[call zzzhcpol.ug]
+[end reportpad]
+//////////////////////////////////////////////////////////////////////////////
+-----------------  NOTES TO THE ACCOUNTS: PROFIT AND LOSS  -------------------
+//////////////////////////////////////////////////////////////////////////////
+[def reportpad ntpPrincipalR] Alternative text for Turnover attributable to one NTP
+// -------------------- principal activity
+[end reportpad]
+[def reportpad ntpTurnoverR] Turnover explanatory text NTP
+[end reportpad]
+[def reportpad ntpTurnoverOverrideR] Turnover override explanatory text NTP
+// Text in this reportpad will replace the usual turnover note.
+// e.g. if the directors consider it to be seriously prejudicial to the interests of
+// the company to disclose information regarding turnover, then the fact that such
+// information has not been disclosed must be stated, para 55(5) Sch 4 CA 1985.
+//
+// OR (only if small abbrev and year start date >= 6th April 2008)
+//
+// information has not been disclosed must be stated, CA 2006.
+[end reportpad]
+[def reportpad ntpTurnoverAnalysisTopR] Segmental analysis explanatory text at top NTP
+[end reportpad]
+[def reportpad ntpTurnoverAnalysisActivityR] Activity segmental analysis explanatory text NTP
+[end reportpad]
+[def reportpad ntpTurnoverAnalysisGeogR] Geographical segmental analysis explanatory text NTP
+[end reportpad]
+[def reportpad ntpTurnoverAnalysisGeogOverrideR] Geographical segmental analysis override NTP
+[end reportpad]
+[def reportpad ntpOtherOperatingIncomeR] Other operating income explanatory text NTP
+[end reportpad]
+[def reportpad ntpExceptionalItemsR] Exceptional items explanatory text NTP
+[end reportpad]
+[def reportpad ntpNonOperatingExceptionalItemsR] Reportpad for describing user defined non operating exceptional item NTP
+Please enter details of this non operating exceptional item in reportpad: [e2]notes - profit and loss account - NonOperatingExceptionalItems[e]
+[end reportpad]
+[def reportpad ntpAuditFeeR] Auditors remuneration note explanatory text NTP
+[end reportpad]
+//
+[def reportpad ntpAuditorRemn1R] Text following auditors' fees analysis for the first auditor NTP
+//Enter text to follow the first auditor's fees breakdown (when postings are made to range 4200:4215)
+[end reportpad]
+[def reportpad ntpAuditorRemn2R] Text following auditors' fees analysis for the second auditor NTP
+//Enter text to follow the second auditor's fees breakdown where there is more than one auditor in the year (postings to 4220:4235)
+[end reportpad]
+//
+[def reportpad ntpEmployeesR] Employee disclosure explanatory text NTP
+//If there are staff costs reportpad adds supplementary text at bottom of note.
+//If staff costs are zero and reportpad completed will over-write default text provided in note.
+[end reportpad]
+[def reportpad ntpEmployeesFRS17R] Disclosure on FRS 17 Pension costs in Employee note NTP
+//This will override any default text appearing in the note with regards to defined benefit pension schemes e.g. if text is required on both defined contribution and defined benefit schemes the following text might be appropriate:
+//"Included in other pension costs above are pension costs, in respect of defined contribution pension schemes, of £X (2004: £X).
+//Other pension costs also includes £X (2004: £X), in respect of defined benefit pension schemes, representing amounts charged to operating profit. These amounts do not include (Either: "amounts credited to finance income (see note x)" OR: "amounts charged to finance costs (see note y)" AND if relevant "and amounts recognised in the statement of total recognised gains and losses") in respect of defined benefit pension schemes."
+[end reportpad]
+[def reportpad ntpDirectorRemunerationR] Directors remuneration explanatory text NTP
+[end reportpad]
+[def reportpad ntpDirectorsInSchemesR] User text re directors pension schemes NTP
+// Enter details of number of directors in money purchase/def benefit schemes
+[end reportpad]
+[def reportpad ntpFRS3DisposalFAR] FRS3 disposal of fixed assets - further explanatory text NTP
+[end reportpad]
+[def reportpad ntpFRS3DisposalDisconR] FRS3 disposal/termin of discon bus. - further explanatory text NTP
+[end reportpad]
+[def reportpad ntpFRS3RestructureR] FRS3 cost of restructuring - further explanatory text NTP
+[end reportpad]
+[def reportpad ntpGroupIncR] Group income - further explanatory text NTP
+[end reportpad]
+[def reportpad ntpParticipatingR] Participating interests income explanatory text NTP
+[end reportpad]
+[def reportpad ntpFAIncomeR] F.A. Investment income explanatory text NTP
+[end reportpad]
+[def reportpad ntpInterestRecR] Interest receivable - further explanatory text NTP
+[end reportpad]
+[def reportpad ntpWriteOffR] Amounts written off explanatory text NTP
+[end reportpad]
+[def reportpad ntpInterestPayR] Interest payable note explanatory text NTP
+[end reportpad]
+[def reportpad ntpCorpTaxR] Corporation tax charge explanatory text NTP
+[end reportpad]
+[def reportpad ntpBeforeTaxOrdActR] Optional narrative at start of Tax on Ordinary Activities section NTP
+[end reportpad]
+[def reportpad ntpAfterTaxOrdActR] Optional narrative at end of Tax on Ordinary Activities section NTP
+[end reportpad]
+[def reportpad ntpCorpTaxSOTRGLR] Describe corporation tax charged or credited to SOTRGL NTP
+[end reportpad]
+[def reportpad ntpCurrTaxChargeR] Describe factors that affected current period's tax charge NTP
+[end reportpad]
+[def reportpad ntpFutureTaxChargeR] Describe factors expected to affect future tax charge NTP
+[end reportpad]
+[def reportpad ntpExtraordinaryR] Extraordinary items (Per FRS3 - unlikely) NTP
+[end reportpad]
+[def reportpad ntpDividendsR] Dividend payments explanatory text NTP
+[end reportpad]
+[def reportpad ntpEarningsPerShareR] Earnings per share explanatory text NTP
+//Example text for disclosing the calculation of adjusted Earnings per Share
+//The adjusted earnings per ordinary share is calculated by dividing profit for the year less non-equity dividends and other appropriations in respect of non-equity shares (after adjusting the figure for the effect of…..) by the weighted average number of equity shares outstanding during the year.
+[end reportpad]
+[def reportpad ntpTransactionsWithSharesR] Earnings per share - transactions involving shares text NTP
+[e2]***The following text should be used as a guide, please amend reportpad TransactionsWithSharesR as appropriate.***[e]
+There have been no other transactions involving ordinary shares or potential ordinary shares since the reporting date and before the completion of these financial statements.
+[end reportpad]
+[def reportpad ntpSparep00R] Spare note before Accounting Policies - user defined NTP
+// ---------------------- Appears after before accounting policies
+[NoteTabP][caps off]SPAREP00 USER DEFINED HEADING[e]
+
+.......
+[end reportpad]
+[def reportpad ntpSparep01R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears after accounting policies
+[NoteTabP][caps off]SPAREP01 USER DEFINED HEADING[e]
+
+.......
+[end reportpad]
+[def reportpad ntpSparep02R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears before turnover note
+[NoteTabP][caps off]SPAREP02 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntpSparep03R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears before other operating income note
+[NoteTabP][caps off]SPAREP03 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntpSparep04R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears before profit on ordinary activities note
+[NoteTabP][caps off]SPAREP04 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntpSparep05R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears before employee note
+[NoteTabP][caps off]SPAREP05 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntpSparep06R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears before income from participating interests
+[NoteTabP][caps off]SPAREP06 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntpSparep07R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears before income from fixed asset investments note
+[NoteTabP][caps off]SPAREP07 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntpSparep08R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears before interest receivable note
+[NoteTabP][caps off]SPAREP08 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntpSparep09R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears before amounts written off investments note
+[NoteTabP][caps off]SPAREP09 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntpSparep10R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears before interest payable note
+[NoteTabP][caps off]SPAREP10 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntpSparep11R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears before tax note to p&l
+[NoteTabP][caps off]SPAREP11 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntpSparep12R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears before extraordinary items note
+[NoteTabP][caps off]SPAREP12 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntpSparep13R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears before dividends note
+[NoteTabP][caps off]SPAREP13 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntpSparep14R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears before earnings per share note
+[NoteTabP][caps off]SPAREP14 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntpSparep15R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears before prior year adjustment note
+[NoteTabP][caps off]SPAREP15 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntpSparep16R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears as final P&L note
+[NoteTabP][caps off]SPAREP16 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntpSparep99R] Spare P&L Note to the accounts - user defined NTP
+// ---------------------- Appears immediately after P & L notes
+[NoteTabP][caps off]SPAREP99 USER DEFINED HEADING[e]
+
+.......
+[end reportpad]
+//////////////////////////////////////////////////////////////////////////////
+------------------  NOTES TO THE ACCOUNTS: BALANCE SHEET  --------------------
+//////////////////////////////////////////////////////////////////////////////
+[def reportpad ntbFAIntangibleTitleR] Override auto intangible fixed assets note headings NTB
+// To override auto column titles, remove //'s and insert custom title between quotation marks,
+// the titles for any unused columns will be ignored.
+//["Type 1" c1 f+ e4]["Type 2" c2 f+ e4]["Total" c6 f+ e4][nonl]
+[end reportpad]
+[def reportpad ntbFAIntangibleR] Additional text re intangible assets NTB
+[end reportpad]
+[def reportpad ntbFATangibleTitleR] Override automatic tangible fixed assets note headings NTB
+// To override auto column titles, remove //'s and insert custom title between quotation marks,
+// the titles for any unused columns will be ignored.
+//["Asset Group One" c1 f+ e4]["Asset Group Two" c2 f+ e4]["Asset Group Three" c3 f+ e4]["Asset Group Four" c4 f+ e4]["Asset Group Five" c5 f+ e4]["Total" c6 f+ e4][nonl]
+[end reportpad]
+[def reportpad ntbFATangibleRevaluationR] Full details of revaluation NTB
+[end reportpad]
+[def reportpad ntbFATangibleR] Additional text re tangible assets NTB
+[end reportpad]
+[def reportpad ntbFAInvestTitleR] Headings for fixed assets investments note NTB
+// Remove //'s and insert custom title between quotation marks,
+// the titles for any unused columns will be ignored.
+//["Type 1" c1 f+ e4]["Type 2" c2 f+ e4]["Type 3" c3 f+ e4]["Type 4" c4 f+ e4]["Total" c6 f+ e4][nonl]
+[end reportpad]
+//////////////////////////////////////////////////////////////////////////////
+[def reportpad ntbFAInvestmentsDiscloseR] F.A. Investments additional disclosure NTB
+//remove the '//' to make any line print out. Use memo codes in the range of
+//1960 to 1979 for aggregate share capital and reserves and 1980 to 1999
+//for profit or loss for the year.
+//
+//The company owns 100% of the issued share capital of the companies listed below,
+//except for Sub 3 Limited (90%)
+//
+//[NoteSubHeadingP]// This command outputs the year and currency heading for each column
+//[debit]// This command is needed to force brackets on any credit balances below
+//[e2]Aggregate capital and reserves[e]
+//
+//Sub 1 Limited (dormant)                            [sum @1960 c2,c4][stay]
+//Sub 2 Limited                                      [sum @1961 c2,c4][stay]
+//Sub 3 Limited                                      [sum @1962 c2,c4][stay]
+//Sub 4 limited                                      [sum @1963 c2,c4][stay]
+//
+//[e2]Profit and (loss) for the year[e]
+//
+//Sub 1 Limited                                      [sum @1980 c2,c4][stay]
+//Sub 2 Limited                                      [sum @1981 c2,c4][stay]
+//Sub 3 Limited                                      [sum @1982 c2,c4][stay]
+//Sub 4 Limited                                      [sum @1983 c2,c4][stay]
+//
+//Under the provision of section 398 of the Companies Act 2006 the company is
+//
+//OR (if year start date < 6th April 2008)
+//
+//Under the provision of section 248 of the Companies Act 1985 the company is
+//exempt from preparing consolidated accounts and has not done so, therefore the
+//accounts show information about the company as an individual entity.
+[end reportpad]
+[def reportpad ntbFAInvestmentsAbR] F.A. Investments text for small abbreviated accounts NTB
+[end reportpad]
+//
+[def reportpad ntbStockTextR] Stock & WIP additional text NTB
+[end reportpad]
+[def reportpad ntbDebtorsTextR] Debtors additional text NTB
+[end reportpad]
+[def reportpad ntbInvestmentsR] C.A. Investments additional text NTB
+[end reportpad]
+[def reportpad ntbInvestmentsAbR] C.A. Investments text for small abbreviated accounts NTB
+[end reportpad]
+[def reportpad ntbCashAtBankR] Cash at bank additional text for Insurance Brokers NTB
+[end reportpad]
+[def reportpad ntbCreditors<1yrR] Creditors under 1Yr additional text NTB
+[end reportpad]
+[def reportpad ntbCreditorsChargeR] Creditors < 1Yr Details of charge over assets NTB
+[end reportpad]
+[def reportpad ntbCreditors>1yrR] Creditors over 1Yr additional text NTB
+[end reportpad]
+[def reportpad ntbCreditors>1yrChargeR] Creditors > 1Yr Details of charge over assets NTB
+[end reportpad]
+[def reportpad ntbCreditors>5yrsR] Creditors > 5 years Terms of repayment and interest NTB
+[end reportpad]
+[def reportpad ntbDirectorsAccountsR] Additional text for directors accounts note NTB
+[end reportpad]
+[def reportpad ntbCapitalInstrmStartR] Capital instruments text at start of note? NTB
+[end reportpad]
+[def reportpad ntbCapitalInstrumentR] Capital instruments additional text NTB
+[end reportpad]
+[def reportpad ntbConvertDebtR] Creditors - convertible debt details NTB
+[end reportpad]
+[def reportpad ntbPensionsR] Text re pension scheme & outstanding liabilities NTB
+[end reportpad]
+[def reportpad ntbPenSchDefConDescR] Description of Defined Contribution pension scheme NTB
+[end reportpad]
+[def reportpad ntbPenSchDefBenPN297DescR] Description of Defined Benefits pension scheme PN 297 NTB
+[def block]
+[e2]*** Example text only: Please amend reportpad PenSchDefBenPN297Desc ***[e][new line]
+[tab 0]The company operates a pension scheme providing benefits based on final pensionable pay. Under the scheme, the employees are entitled to retirement benefits varying between X% and Y% of final salary on reaching retirement age of 65. No other post-retirement benefits are provided. The scheme is a funded scheme.
+[flush block]
+[end block]
+
+[def block]
+*** Other recommended disclosures ***
+  - narrative disclosures explaining the relationship between the company and the trustees of the scheme[new line]
+[tab 0]  - narrative disclosures explaining the method of measurement used to measure scheme liabilities[new line]
+[tab 0]  - narrative disclosures, which enable users of accounts, to understand the company’s funding obligations.
+[end block]
+[end reportpad]
+[def reportpad ntbPenSchDefBenPN297ProfLossR] Profit and loss account NTB
+//Use this reportpad to provide any additional explanatory narrative in respect of the profit and loss account
+[end reportpad]
+[def reportpad ntbPenSchDefBenPN297BalShtR] Amounts recognised in the balance sheet NTB
+//Use this reportpad to provide any additional explanatory narrative in respect of amounts recognised in the balance sheet
+[end reportpad]
+[def reportpad ntbPenSchDefBenPN297AssetR] FV of major categories of scheme asset NTB
+//Use this reportpad to provide any additional explanatory narrative in respect of FV of major categories of scheme asset
+[end reportpad]
+[def reportpad ntbPensionExtraDiscR] Current and previous period disclosures NTB
+//Use this reportpad to provide any additional explanatory narrative in respect of current and previous period disclosures
+[end reportpad]
+[def reportpad ntbPenSchDefBenDescR] Description of Defined Benefits pension scheme NTB
+//[e2]***The following text should be used as a guide for entities adopting full FRS 17 accounting rules, please amend reportpad PenSchDefBenDescR as appropriate.***[e]
+//
+//The company operates a pension scheme providing benefits based on final pensionable pay.  The assets of the scheme are held separately from those of the company, being invested with (Insert investment explanation e.g. insurance companies).
+//
+//Pension contributions are determined by a (Insert actuarial details e.g. qualified actuary) on the basis of (Insert frequency of valuations e.g. triennial valuations) using (Insert the actuarial method used e.g. the projected unit method). A full actuarial valuation was carried out at (Insert date of valuation) and updated at [date this end].  The main assumptions used by the actuary were:
+[end reportpad]
+[def reportpad ntbPenSchDefBenValnR] Explanation of latest valuation for Defined Benefits pension scheme NTB
+//Use this reportpad to provide any additional explanatory narrative in respect of actuarial assumptions
+[end reportpad]
+[def reportpad ntbPenSchDefBenActionR] Action to be taken on Surplus/Deficit in Defined Benefit scheme NTB
+//[e2]***The following text should be used as a guide for entities adopting full FRS 17 accounting rules, please amend reportpad PenSchDefBenActionR as appropriate.***[e]
+//(Insert text here to describe:-
+//
+//the pension contribution in the year in total (£) and/or expressed as a % of pensionable earnings;
+//
+//any increase/reduction in % contribution rates for future years, in order to eliminate a surplus/deficit in the scheme; and
+//
+//any other action (e.g. improvements in benefits) to be taken to eliminate a pension scheme surplus/deficit.)
+[end reportpad]
+[def reportpad ntbPostRetBensR] Post-retirement benefits other than pensions NTB
+[end reportpad]
+[def reportpad ntbPensCommitSSAP24R] Text for the SSAP 24 section of the Pension Commitment Note NTB
+//[e2]***The following text should be used as a guide for entities adopting FRSSE 2005 but not full (FRS 17 approach) pension rules, please amend reportpad PensCommitSSAP24R as appropriate.***[e]
+//
+//The company operates a pension scheme providing benefits based on final pensionable pay.  The assets of the scheme are held separately from those of the company, being invested with (Insert investment explanation e.g. insurance companies). Contributions to the scheme are charged to the profit and loss account so as to spread the cost of pensions over employees’ working lives with the company.
+//
+//The contributions are determined by a (Insert actuarial details e.g. qualified actuary) on the basis of (Insert frequency of valuations e.g. triennial valuations) using (Insert the actuarial method used e.g. the projected unit method).  The most recent valuation was at (Insert date of valuation).  The assumptions that have the most significant effect on the results
+//of the valuation are those relating to the rate of return on investments and the rate of increase in salaries and pensions.  It is assumed that the investment returns would be …% per year, that salary increases would average …% per year and that pensions and future pensions would increase at the rate of …% per year.
+//
+//The pension charge for the year was £… (2004 - £…).  (Insert the following additional sentence, if relevant: This included £… (2004 - £…) in respect of the amortisation of experience surpluses that are being recognised over … years, the average remaining service lives of employees).
+//
+//The most recent actuarial valuation showed that the market value of the scheme’s assets was £… and that the actuarial value of those assets represented …% of the benefits that had accrued to members, after allowing for expected future increases in earnings. The contributions of the company and employees will remain at …% and …% of earnings respectively.
+[end reportpad]
+[def reportpad ntbPenSchDefBenOtherR] FRS 17 Defined Benefit Scheme additional text NTB
+//[e2]***The following text should be used as a guide for entities adopting FRSSE 2005 but not full (FRS 17 approach) pension rules, please amend reportpad PenSchDefBenOtherR as appropriate.***[e]
+//
+//(Insert text here to explain any material difference between the surplus/(deficit) shown above, determined in accordance with the requirements of paragraph 2 of Appendix II, FRSSE (effective January 2005), and the pension asset/liability shown in the accounts.)
+[end reportpad]
+[def reportpad ntbDeferredTaxR] Deferred tax additional text NTB
+[end reportpad]
+[def reportpad ntbProvisionsR] Provisions additional text NTB
+[end reportpad]
+[def reportpad ntbShareBasedPaymentsR] Introductory text for share-based payments note NTB
+[e2]***Please amend reportpad ShareBasedPayments as required***[e]
+The company has a share option scheme for all employees (including directors). Options are exercisable at a price equal to the average market price of the company's shares on the date of grant. The vesting period is usually … to … years. The exercise of options is also dependent on eligible executives meeting performance criteria. The options may not be exercised unless, over the vesting period, the … has increased by ...%. The options are settled in equity once exercised.
+[flush block]//Please do not remove, needed for correct pagination
+
+If the options remain unexercised after a period of … years from the date of grant, the options expire. Options are forfeited if the employee leaves the company before the options vest.
+[flush block]
+
+Details of the number of share options and the weighted average exercise price (WAEP) outstanding during the year are as follows:
+[flush block]
+[end reportpad]
+[def reportpad ntbShareBasedPayments2R] Further details on  share options outstanding NTB
+//Please do not delete/edit the following code***************************************************
+[variables string lastYearS][variables integer len]
+[lastYearS = date(last end)]
+[len = length(lastYearS)]
+[lastYearS = lastYearS{len-3, len}]
+//Custom text from hereon can be amended ********************************************************
+[e2]***Please amend reportpad ShareBasedPayments2 as required***[e]
+The share options outstanding at the end of the year have a weighted average remaining contractual life of X years ([lastYearS] - X years) and have the following exercise prices:
+[end reportpad]
+[def reportpad ntbShareBasedPayments3R] Further descriptions on the pricing model NTB
+[e2]***Please amend reportpad ShareBasedPayments3 as required***[e]
+In the year ended [date this end], options were granted on the following dates: …, …, and …. The estimated fair value of the options granted on those dates were [cdb.aps.6]X, [cdb.aps.6]X and [cdb.aps.6]X respectively. In the year ended [date last end], options were granted on the following dates: … and … and … . The estimated fair values of the options granted on those dates were [cdb.aps.6]X and [cdb.aps.6]X respectively.
+
+The fair values were calculated using the [ShareOptionsPricingModelH]. The inputs into the model were as follows:
+[end reportpad]
+[def reportpad ntbShareBasedPayments4R] Further description to fair value table NTB
+//Please do not delete/edit the following code***************************************************
+[variables string lastYearS][variables integer len]
+[lastYearS = date(last end)]
+[len = length(lastYearS)]
+[lastYearS = lastYearS{len-3, len}]
+//Custom text from hereon can be amended ********************************************************
+[e2]***please amend reportpad ShareBasedPayments4 as required***[e]
+Expected volatility was determined by calculating the historical volatility of the company's share price over the previous … years. The expected life used in the model has been adjusted, based on the management's best estimate, for the effects of non-transferability, exercise restrictions and behavioural considerations.
+
+During the year ended [date this end], the company repriced certain of its outstanding options. The exercise price was reduced from [cdb.aps.6]… to the current market price of [cdb.aps.6]…. The incremental fair value of [cdb.aps.6]… will be expensed over the remaining vesting period of … years. The company used the inputs noted above to measure the fair value of the old and new options.
+
+The company recognised total expenses of [cdb.aps.6][sum @103A+@153A+@234A c2 text] ([lastYearS] - [cdb.aps.6][sum @103A+@153A+@234A c4 text]) related to equity-settled share-based payment transactions during the year.
+[end reportpad]
+[def reportpad ntbCashSettledShareBasedPaymentsR] Cash-settled share-based payments NTB
+//Please do not delete/edit the following code***************************************************
+[variables string lastYearS][variables integer len]
+[lastYearS = date(last end)]
+[len = length(lastYearS)]
+[lastYearS = lastYearS{len-3, len}]
+//Custom text from hereon can be amended ********************************************************
+[e2]***The following text should be used as a guide, please amend reportpad CashSettledShareBasedPaymentsR as appropriate.***[e]
+
+The company issued to certain employees share appreciation rights (SARs) that require the company to pay the intrinsic value of the SAR to the employee at the date of exercise. At [date this end], the company had recorded liabilities of [cdb.aps.6][sum @808A+@872A c2 text] ([lastYearS] - [cdb.aps.6][sum @808A+@872A c4 text]) in respect of SARs. The fair value of the SARs is determined using the [ShareOptionsPricingModelH] using the assumptions noted above. The company recorded total expenses
+of [cdb.aps.6][sum @103B+@153B+@234B c2 text] during the year ended [date this end] ([lastYearS] - [cdb.aps.6][sum @103B+@153B+@234B c4 text]) in respect of SARs. At [date this end] the total intrinsic value of the vested SARs was [cdb.aps.6][sum @4070 c2 text] ([lastYearS] - [cdb.aps.6][sum @4070 c4 text]).
+[end reportpad]
+//
+[def reportpad NTBFinancialRiskManagementR] Financial Risk Management objectives and policies NTB
+[e2]***The following text should be used as a guide. Please amend reportpad FinancialRiskManagementR as appropriate[e]
+
+The company holds or issues financial instruments in order to achieve three main objectives, being:
+
+(a)	to finance its operations;
+
+(b)	to manage its exposure to interest and currency risks arising from its operations and from its sources of finance; and
+
+(c)	for trading purposes.
+
+In addition, various financial instruments (e.g. trade debtors, trade creditors, accruals and prepayments) arise directly from the company's operations.
+
+Transactions in financial instruments result in the company assuming or transferring to another party one or more of the financial risks described below.
+[end reportpad]
+[def reportpad NTBInterestRateRiskR] Interest rate risk NTB
+[e2]***The following text should be used as a guide. Please amend reportpad InterestRateRiskR as appropriate[e]
+
+The following table sets out the carrying amounts by repricing/maturity dates and effective interest rates (when applicable) of the company's financial instruments that are exposed to interest rate risk:
+[end reportpad]
+//
+[def reportpad NTBCreditRiskR] Credit Risk NTB
+[e2]***The following text should be used as a guide. Please amend reportpad CreditRiskR as appropriate[e]
+
+The company monitors credit risk closely and considers that its current policies of credit checks meets its objectives of managing exposure to credit risk.
+
+The company has no significant concentrations of credit risk. Amounts shown in the balance sheet best represent the maximum credit risk exposure in the event other parties fail to perform their obligations under financial instruments.
+[end reportpad]
+//
+[def reportpad NTBLiquidityRiskR] Liquidity Risk NTB
+[e2]***Insert text in reportpad LiquidityRiskR to describe the company's policy in relation to liquidity risk.***[e2]
+[end reportpad]
+[def reportpad NTBCurrencyRiskR] Currency Risk NTB
+[e2]***Insert text in reportpad CurrencyRiskR to describe the company's policy in relation to currency risk.[e]
+[end reportpad]
+//
+[def reportpad NTBFinancialInstrumentFairValueR] Fair values of financial instruments NTB
+
+Set out below is a comparison by category of carrying amounts and fair values of all of the company's financial instruments that are carried in the financial statements at other than fair values:
+[end reportpad]
+//
+[def reportpad NTBFinancialInstrumentFairValue2R] Fair values of financial instruments 2 NTB
+Insert text in reportpad FinancialInstrumentFairValue2R on the methods and assumptions used by the company in estimating the fair values of financial instruments included in the above table.
+[end reportpad]
+//
+[def reportpad NTBHedgingActivitiesR] Hedging activities NTB
+
+[e2]Insert text in reportpad HedgingActivitiesR to disclose the following information for each of:[e]
+[e2]fair value hedges, cash flow hedges and hedges of a net investment in a foreign entity;[e]
+
+(a) A description of the hedge;
+
+(b) A description of the financial instruments designated as hedging instruments and their fair values at the balance sheet date;
+
+(c) The nature of the risks being hedged; and
+
+(d) For cash flow hedges, the periods in which the cash flows are expected to occur, when they are expected to affect the profit and loss account, and a description of any forecasted transaction for which hedge accounting had been previously used, but which is no longer expected to occur.
+[end reportpad]
+[def reportpad ntbDerivativesR] Information on Derivatives NTB
+[e2]***If the group has derivatives that it has not included in its accounts at fair value, insert the following information for each class of such derivatives in reportpad DerivativesR:***[e]
+
+a) the fair value of the derivatives in that class, if such a value can be determined; and
+
+b) the extent and nature of the derivatives.
+[end reportpad]
+[def reportpad ntbGrantsR] Text for Government Grants NTB
+[end reportpad]
+[def reportpad ntbAccrualsR] Accruals note additional text NTB
+[end reportpad]
+[def reportpad ntbHP&FinanceLeaseR] HP/Finance lease details additional text NTB
+[end reportpad]
+[def reportpad ntbOperLeaseR] Operating lease details additional text NTB
+[end reportpad]
+[def reportpad ntbContingentLiabR] Contingent liabilities disclosure NTB
+[end reportpad]
+[def reportpad ntbDirInterestsR] Directors loans/transactions details NTB
+[end reportpad]
+[def reportpad ntbBeforeTradeAcqn1R] Before trade acquisitions 1 NTB
+[end reportpad]
+[def reportpad ntbBeforeTradeAcqn2R] Before trade acquisitions 2 NTB
+[end reportpad]
+[def reportpad ntbBeforeTradeAcqn3R] Before trade acquisitions 3 NTB
+[end reportpad]
+[def reportpad ntbAfterTradeAcqn1R] After trade acquisitions 1 NTB
+[end reportpad]
+[def reportpad ntbAfterTradeAcqn2R] After trade acquisitions 2 NTB
+[end reportpad]
+[def reportpad ntbAfterTradeAcqn3R] After trade acquisitions 3 NTB
+[end reportpad]
+[def reportpad ntbBeforeTradeDisp1R] Before trade disposal 1 NTB
+[end reportpad]
+[def reportpad ntbBeforeTradeDisp2R] Before trade disposal 2 NTB
+[end reportpad]
+[def reportpad ntbBeforeTradeDisp3R] Before trade disposal 3 NTB
+[end reportpad]
+[def reportpad ntbAfterTradeDisp1R] After trade disposal 1 NTB
+[end reportpad]
+[def reportpad ntbAfterTradeDisp2R] After trade disposal 2 NTB
+[end reportpad]
+[def reportpad ntbAfterTradeDisp3R] After trade disposal 3 NTB
+[end reportpad]
+[def reportpad ntbCashflowChangesR] Changes relating to the acquisition/disposal of a trade/business NTB
+//Enter text to follow the "Analysis of changes in net debt" note in the cashflow
+[end reportpad]
+[def reportpad ntbCashflowContAcqR] Cashflow contribution of acquisition NTB
+//The note below will output as a note to the cashflow.
+//
+//***IMPORTANT** Remove TWO forward slashes from each line in the rest of the reportpad to output the note *** Adjust all text descriptions as required *** Example figures are typed in below (these need to be in square brackets as shown), the current year figures are first followed by "c2", comparative year figures are second followed by "c4". Adjust these by entering the value as required, with additional 2 zero's. i.e for £25,000, enter 2500000 ***
+///
+//[e][caps off]The trade/business acquired during the year contributed to the company's/group's net cash flow as follows:
+//[NoteSubHeadingPLP]//THIS COMMAND OUTPUTS THE CORRECT YEAR AND CURRENCY HEADINGS
+//Net cash inflow/(outflow) from operating activities      [10000000 c2] [0 c4]
+//Returns on investment and servicing of finance           [30000000 c2] [10000000 c4]
+//Taxation                                                 [20000000 c2] [20000000 c4]
+//Capital expenditure and financial investment             [30000000 c2] [30000000 c4]
+//Acquisitions and disposals                               [20000000 c2] [20000000 c4]
+//Management of liquid resources                           [30000000 c2] [1000000 c4]
+//Financing                                                [40000000 c2] [0 c4]
+//Increase/(decrease) in cash    [total c2,c4 aul,bdul]//THIS AUTOMATICALLY TOTALS THE FIGURES ABOVE
+[end reportpad]
+[def reportpad ntbRelatedPartiesFR8R] Related party transactions (FRS8 disclosures) NTB
+// Delete the message on the line below to prevent it appearing on the accounts
+[e2]***** Amend text in REPORTPAD relparties *****[e]
+// Delete and amend as appropriate
+// First, control:-
+The company was under the control of Mr ******** throughout the current
+and previous year. Mr ********* is the managing director and majority
+shareholder.
+// or:
+//The company was under the control of Mr ********, a director and members of
+//his close family throughout the current and previous year. Mr ********* is
+//personally interested in **% (19** - **%) of the company's share capital.
+//In addition, his adult children control in aggregate a further **% (19** -
+//**%) of the company's issued share capital.
+//
+//
+// Next, transactions:-
+
+// either
+No transactions with related parties were undertaken such as are required
+to be disclosed under Financial Reporting Standard 8. (** Change FRS8 to FRSSE if applicable **)
+// or:
+// Just as an example:
+//The company sold a vehicle to one of Mr *********'s children for the sum
+//of £*,*** during the year. The amount of £*,*** is still owing at the date
+//of the balance sheet.
+[end reportpad]
+[def reportpad ntbRelatedPartiesCA1985R] Additional related party text (CA1985 disclosures) NTB
+// This paragraph will be included in Abbreviated Accounts if called.
+//Can also be used for disclosures under CA 2006
+[end reportpad]
+[def reportpad ntbShareCapR] Share capital explanatory text NTB
+[end reportpad]
+[def reportpad ntbVertCoReservesR] Additional text at foot of vertical schedule of reserves NTB
+[end reportpad]
+[def reportpad ntbSharePremiumR] Share premium account additional text NTB
+[end reportpad]
+[def reportpad ntbCapRedemptionR] Capital redemption reserve additional text NTB
+[end reportpad]
+[def reportpad ntbRevaluationReserveR] Revaluation reserve additional text NTB
+[end reportpad]
+[def reportpad ntbReservesOther1R] Other reserve explanatory text - a/cs 960:969 NTB
+[end reportpad]
+[def reportpad ntbReservesOther2R] Other reserve explanatory text - a/cs 970:979 NTB
+[end reportpad]
+[def reportpad ntbReservesOther3R] Other reserve explanatory text - a/cs 980:989 NTB
+[end reportpad]
+[def reportpad ntbShareOptionsReserveR] Share options reserve additional text NTB
+[end reportpad]
+[def reportpad ntbProfit&LossAcR] Profit & loss account note additional text NTP
+[end reportpad]
+[def reportpad ntbShareHoldersFundsR] Shareholders funds note additional text NTB
+[end reportpad]
+[def reportpad ntbPriorYearAdjustmentR] Prior year adjustment explanatory text NTB
+[end reportpad]
+[def reportpad ntbLimitedByGuaranteeR] Additional text re Company limited by guarantee NTB
+[end reportpad]
+[def reportpad ntbPostBSEventsR] Post balance sheet event note text NTB
+[end reportpad]
+[def reportpad ntbParentCompanyR] Parent company details NTB
+[end reportpad]
+[def reportpad ntbFATangibleCapCommitR] Additional text re capital expenditure commitments NTB
+[end reportpad]
+[def reportpad ntbLimitationOfAuditorsLiabilityR] Limitation of Auditors Liability NTB
+//
+// Text entered into this reportpad will only trigger the appearance of a note for accounts with a year start date on or after 06/04/08.
+// This reportpad is relevant to audited accounts only.
+//
+//
+// Remove the '//'s from the beginning of the following lines to make them appear in the note.
+// Delete and amend as appropriate.
+//
+//A company which has entered into a liability limitation agreement must disclose:
+//
+//(a) its principal terms; and
+//(b) the date of the resolution approving the agreement or the agreement's principal terms or, in the case of a private company, the date of the resolution waiving the need for such approval, in a note to the company's annual accounts.
+[end reportpad]
+[def reportpad ntbSpareb01R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before intangible fixed assets note
+[NoteTabP][caps off]SPAREB01 USER DEFINED HEADING[e]
+
+.......
+[end reportpad]
+[def reportpad ntbSpareb02R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before tangible fixed asset note
+[NoteTabP][caps off]SPAREB02 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb03R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before fixed asset investment note
+[NoteTabP][caps off]SPAREB03 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb04R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before stocks note
+[NoteTabP][caps off]SPAREB04 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb05R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before debtors note
+[NoteTabP][caps off]SPAREB05 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb06R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before deferred tax asset note
+[NoteTabP][caps off]SPAREB06 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb07R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before spare B08 note
+[NoteTabP][caps off]SPAREB07 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb08R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before current assets investment note
+[NoteTabP][caps off]SPAREB08 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb09R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before cash at bank note
+[NoteTabP][caps off]SPAREB09 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb10R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before creditors > 1 year note
+[NoteTabP][caps off]SPAREB10 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb11R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before directors accounts note
+[NoteTabP][caps off]SPAREB11 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb12R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before pensions note
+[NoteTabP][caps off]SPAREB12 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb13R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before deferred tax liability note
+[NoteTabP][caps off]SPAREB13 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb14R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before other provisions note
+[NoteTabP][caps off]SPAREB14 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb15R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before government grants note
+[NoteTabP][caps off]SPAREB15 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb16R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before accruals and deferred income note
+[NoteTabP][caps off]SPAREB16 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb17R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before commitments under HP or FL note
+[NoteTabP][caps off]SPAREB17 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb18R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before commitments under operating lease note
+[NoteTabP][caps off]SPAREB18 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb19R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before contingencies note
+[NoteTabP][caps off]SPAREB19 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb20R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before directors/related parties trans note
+[NoteTabP][caps off]SPAREB20 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb21R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before share capital note
+[NoteTabP][caps off]SPAREB21 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb22R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before reserves notes
+[NoteTabP][caps off]SPAREB22 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb23R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before rec of movements in s/h funds note
+[NoteTabP][caps off]SPAREB23 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb24R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before cash flow notes
+[NoteTabP][caps off]SPAREB24 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb25R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before disclaimer note
+[NoteTabP][caps off]SPAREB25 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb26R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before post balance sheet events
+[NoteTabP][caps off]SPAREB26 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb27R] Spare BS Note to the accounts - user defined NTB
+// ---------------------- Appears before parent company note
+[NoteTabP][caps off]SPAREB27 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb95R] Spare note, one of five for the very end of the accounts NTB
+// --- Appears as the first of the very last notes to the accounts
+//[NoteTabP][caps off]SPAREB95 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb96R] Spare note, two of five for the very end of the accounts NTB
+//--- Appears as the second of the very last notes to the accounts
+//[NoteTabP][caps off]SPAREB96 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb97R] Spare note, three of five for the very end of the accounts NTB
+// --- Appears as the third of the very last notes to the accounts
+//[NoteTabP][caps off]SPAREB97 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb98R] Spare note, four of five for the very end of the accounts NTB
+// --- Appears as the fourth of the very last notes to the accounts
+//[NoteTabP][caps off]SPAREB98 USER DEFINED HEADING[e]
+[end reportpad]
+[def reportpad ntbSpareb99R] Spare note, five of five for the very end of the accounts NTB
+// --- Appears as the very last note to the accounts
+//[NoteTabP][caps off]SPAREB99 USER DEFINED HEADING[e]
+//
+//The company.......
+[end reportpad]
+//
+[def reportpad ntbPrepaymentsAccruedIncomeR]Balance sheet note for Prepayments accrued income NTB
+//only to be used with e-filing
+//Balance sheet Prepayments Accrued Income
+[end reportpad]
+//
+[def reportpad ntbEquityShareholdersFundsR]Balance sheet note for Equity shareholder funds NTB
+//only to be used with e-filing
+//Balance sheet Equity Shareholders Funds
+[end reportpad]
+//
+[def reportpad ntbNonEquityShareholdersFundsR]Balance sheet note for Non-equity shareholder funds NTB
+//only to be used with e-filing
+//Balance sheet Non-equity Shareholders Funds
+[end reportpad]
+//
+//////////////////////////////////////////////////////////////////////////////
+----------------------------- MANAGEMENT REPORTS -----------------------------
+[def reportpad cfsCashflowStartR] Insert a section at beginning of the Cashflow report MAN
+[end reportpad]
+[def reportpad cfsCashflowEndR] Insert a section at end of the Cashflow report MAN
+[end reportpad]
+[def reportpad p&lDetailedP&Lpage1StartR] Insert a section at beginning of page 1 of the Detailed P&L Account MAN
+[end reportpad]
+[def reportpad p&lDetailedP&Lpage1EndR] Insert a section at end of page 1 of the Detailed P&L Account MAN
+[end reportpad]
+[def reportpad p&lDetailedP&LSchedStartR] Insert a section at start of the Detailed P&L Schedule MAN
+[end reportpad]
+[def reportpad p&lDetailedP&LSchedEndR] Insert a section at end of the Detailed P&L Schedule MAN
+[end reportpad]
+[def reportpad manUserReport1R] User Defined Report 1. P&L Style. Printed after all the standard Management Reports MAN
+[end reportpad]
+[def reportpad manUserReport2R] User Defined Report 2. P&L Style. Printed after all the standard Management Reports MAN
+[end reportpad]
+[def reportpad manUserReport3R] User Defined Report 3. BS Style. Printed after all the standard Management Reports MAN
+[end reportpad]
+[def reportpad manUserReport4R] User Defined Report 4. Blank, but P&L type period heading. Printed after all the standard Management Reports MAN
+[end reportpad]
+//
+[def reportpad p&lManagementP&LStartR] Insert a section at beginning of Management P&L Account MAN
+[end reportpad]
+[def reportpad p&lManagementP&LEndR] Insert a section at end of the Management P&L Account MAN
+[end reportpad]
+[def reportpad manUserReportMan1R] User Def Report 1. P&L Style. Management a\cs printed after all the standard Management Reports MAN
+[end reportpad]
+[def reportpad manUserReportMan2R] User Def Report 2. P&L Style. Management a\cs printed after all the standard Management Reports MAN
+[end reportpad]
+[def reportpad manUserReportMan3R] User Def Report 3. BS Style. Management a\cs printed after all the standard Management Reports MAN
+[end reportpad]
+[def reportpad manUserReportMan4R] User Def Report 4. Blank, but P&L type period heading. Management a\cs printed after the standard Management Reports MAN
+[end reportpad]
+//////////////////////////////////////////////////////////////////////////////
+-----------------------------  LEAD SCHEDULES  -------------------------------
+[def reportpad schFaIntanR] Conclusion on Intangible Fixed Assets SCH
+[end reportpad]
+[def reportpad schFassetsR] Conclusion on Tangible Fixed Assets SCH
+[end reportpad]
+[def reportpad schFaInvestsR] Conclusion on Fixed Assets Investments SCH
+[end reportpad]
+[def reportpad schCaInvestsR] Conclusion on Current Assets Investments SCH
+[end reportpad]
+[def reportpad schStockR] Conclusion on Stocks SCH
+[end reportpad]
+[def reportpad schDebtorsR] Conclusion on Debtors SCH
+[end reportpad]
+[def reportpad schCashR] Conclusion on Cash and Bank SCH
+[end reportpad]
+[def reportpad schCreditorsR] Conclusion on Creditors under 1Yr SCH
+[end reportpad]
+[def reportpad schCreditors>1R] Conclusion on Creditors over 1Yr SCH
+[end reportpad]
+[def reportpad schProvisionsR] Conclusion on Provisions SCH
+[end reportpad]
+[def reportpad schTaxR] Conclusion on Tax SCH
+[end reportpad]
+[def reportpad schCapitalR] Conclusion on Capital SCH
+[end reportpad]
+[def reportpad schReservesR] Conclusion on Reserves SCH
+[end reportpad]
+[def reportpad schProfitandlossR] Conclusion on Profit & Loss Account SCH
+[end reportpad]
+//////////////////////////////////////////////////////////////////////////////
+==============================  OTHER REPORTS  ===============================
+[def reportpad othVarianceCommentR] Comments on Variances (foot of VARIANCE report) OTH
+[end reportpad]
+[def reportpad oth5YrSummaryCommentR] Comments on Five Year Summary OTH
+[end reportpad]
+[def reportpad othAccountsLogR] Comments on Accounts e.g. describe manual amendments OTH
+[end reportpad]
+[def reportpad othExampleR] Example of a more complex reportpad OTH
+[variables string HeadingCol1S, HeadingCol2S]
+//[variables string HeadingCol3S, HeadingCol4S]
+[HeadingCol1S = "Heading to be used over the first set of figures"]
+[HeadingCol2S = "Heading to be used over the second set of figures"]
+//
+[NoteTabP][caps off]USER DEFINED HEADING[e]
+
+This gives an example of how reportpads can be used for more sophisticated entries.
+In fact you can create "formats" inside reportpads.
+
+To try this reportpad out, copy it into one of the spare notes such as the first spare
+balance sheet note (spareB01).
+
+[e2]This is a text heading[HeadingCol1S c2][HeadingCol2S c4][e]
+[e4]This is a short subheading[e][NoteSubHeadingP]
+[e2]Or you could put a heading here[e]
+Sales [sum 1:49 c2,c4]
+Cost of Sales [sum 50:199 c2,c4]
+Expenses [sum 200:499 c2,c4]
+Total [total c2,c4 aul,bdul]
+
+Note that the figures will be correctly aligned with the rest of the reports, and will
+even take on the style assigned for the accounts, e.g. bold for current year figures.
+
+[e2]This is a text heading[HeadingCol1S c2][HeadingCol2S c4][e]
+[e4]This is a short subheading[e][NoteSubHeadingP]
+[e2]Or you could put a heading here[e]
+Line one of figures entered directly [sum 100000 c2][sum -250000 c4]
+Line two of figures entered directly [sum 900000 c2][sum 350000 c4]
+Line three of figures entered directly [sum 1000000 c2][sum 1250000 c4]
+Total of above [total c2,c4 aul,bdul]
+
+The above example show that numbers can be directly entered into columns. This is useful
+where the values do not come from the nominal ledger or any other part of the accounts.
+
+Note that the numbers have to be entered as if pence values. e.g. to get [$]1 enter
+100.
+
+Values from the nominal ledger can appear in a paragraph by adding the command
+"text" within the column command. For example this is the value of all credit
+balances on accounts from 700 to 800 this year [sumc 700:800 c1 text] (last year -
+[sumc 700:800 c3 text].
+
+So here we have a reportpad note which contains a couple of paragraphs of text,
+a table and a reference to some nominal balances in the text.
+
+You have to be careful about starting a command such as {sumc 700:800 c1 text}
+and splitting it at the end of the line. It thinks you have not completed the
+closing brackets.
+
+For further details see the Balance Sheet on page[pages B,b]. Note that it can even
+look into the reports to find out on which page(s) the Balance Sheet appeared.
+[end reportpad]
+=================================  LETTERS  ==================================
+[def reportpad corSalutationR] Alternative salutation text - incl the word "Dear" COR
+[end reportpad]
+[def reportpad corFreeTextR] Free text into letters COR
+[end reportpad]
+[def reportpad corPriorAgentR] Name and address of prior agent for clearance letter COR
+Name of Prior Agent (use reportpad PriorAgent)
+Address line 1
+Address line 2
+Address line 3
+Address line 4
+[end reportpad]
+//////////////////////////////////////////////////////////////////////////////
+[def reportpad corSubsidiariesForBankLetterR] Free text list of subsidiaries in bank letter COR
+//Edit ONLY the text in double quotes to populate the table for subsidiary details.
+//DO NOT remove the square brakets
+["Enter company name in reportpad 'SubsidiariesForBankLetter'" ct]["enter sort code" c1]["enter account no." c2]
+//
+["Enter company name in reportpad 'SubsidiariesForBankLetter'" ct]["enter sort code" c1]["enter account no." c2]
+//
+["Enter company name in reportpad 'SubsidiariesForBankLetter'" ct]["enter sort code" c1]["enter account no." c2]
+//
+["Enter company name in reportpad 'SubsidiariesForBankLetter'" ct]["enter sort code" c1]["enter account no." c2]
+[end reportpad]
+[def reportpad corBankLetterContactR] Name of contact in bank letter COR
+[e2]***Please enter contact in Reportpads > Letters > BankLetterContact[e]
+[end reportpad]
+[def reportpad corOtherInfoForBankLetR] Full details of additional information required COR
+[end reportpad]
+//
+[def reportpad corBankAddressR] Address for correspondence to be sent to COR
+//Please enter the address of the bank
+[end reportpad]
+//
+[def reportpad corAcknowledgementR] Reference to be quoted in acknowledgement COR
+//Please enter reference to be quoted in the acknowledgement
+[end reportpad]
+//
+[def reportpad corFastTrackR] Reason for the fast track request COR
+Enter reason for the fast track request in reportpad "FastTrack"
+[end reportpad]
+//
+[def reportpad corBankLetterContactTelR] Contact telephone number and email for contact for bank letter COR
+//Contact Telephone                       Email Address
+[end reportpad]
+//
+[def reportpad corTradeFinanceR] Account number for Trade Finance COR
+[end reportpad]
+//
+[def reportpad corDerivative&CommodityTradingR] Account number for Commodity Trading COR
+[end reportpad]
+//////////////////////////////////////////////////////////////////////////////
+================================  HEADINGS  ==================================
+//////////////////////////////////////////////////////////////////////////////
+[def heading AccountantsNameH] Type your name, which will appear left justified in footer or header GEN
+[end heading]
+[def heading DraftAccountsCoverH] "Draft Accounts" on the cover GEN
+Draft Accounts
+[end heading]
+[def heading DraftAccountsH] Draft Accounts GEN
+Draft Accounts
+[end heading]
+[def heading ManagementAccountsH] Management Accounts GEN
+Management Accounts
+[end heading]
+[def heading FinancialAccountsH] the word "Accounts" or "financial statements" GEN
+financial statements
+//accounts
+[end heading]
+[def heading CompanyH] "company" GEN
+company
+[end heading]
+[def heading GuaranteeH] Text describing a Company Limited by Guarantee GEN
+Company Limited by Guarantee
+[end heading]
+[def heading QualificationH] Description of accountancy qualification GEN
+Chartered Accountants
+//Chartered Certified Accountants
+[end heading]
+[def heading SecondLineInCoverH] Adds ability to add an extra line of text in the cover GEN
+[end heading]
+[def heading OfficersProfAdvH] Officers and professional advisers, contents & officers page GEN
+Officers and professional advisers
+[end heading]
+[def heading AltCurrYrColHeadingH] Alternative column heading for the current year GEN
+// This heading allows you to use an alternative description above the current year columns for PL
+// style columns. The space available is restricted to about 33 characters on 3 lines (this will
+// vary depending on the font in use). If you exceed the limit, the output will be truncated, so
+// care should be exercised when using this Heading. In addition, no single word should be
+// longer then about 11 characters.
+[end heading]
+[def heading AltCompYrColHeadingH] Alternative column heading for the comparative year GEN
+// This heading allows you to use an alternative description above the comparative year columns
+// for PL style columns. The space available is restricted to about 33 characters on 3 lines
+// (this will vary depending on the font in use). If you exceed the limit, the output will be
+// truncated, so care should be exercised when using this Heading. In addition, no single word
+// should be longer then about 11 characters.
+[end heading]
+[def heading AltPYARestatedH] Alternative column heading for PYA Restated GEN
+[end heading]
+//
+[def heading TradingAsDescriptionH] Heading for entering the "trading as" description GEN
+//Text entered here will appear on the cover page and within the heading after the company name if the 'trading as' name is different to the company name.
+Alpha, Alpha, Alpha, Alpha and Sons
+[end heading]
+[def heading AnnualReportH] Name of Annual Report GEN
+annual report
+[end heading]
+//
+[def heading ContentsTitleH] Contents Title CON
+CONTENTS
+[end heading]
+[def heading AGMContentsTitleH] AGM Contents Title CON
+Notice of Annual General Meeting
+[end heading]
+[def heading ChairmanContentsTitleH] Chairman Statement Contents Title CON
+Chairman's statement
+[end heading]
+[def heading SOTRGLContentsTitleH] SOTRGL Contents Title CON
+Statement of total recognised gains and losses
+[end heading]
+[def heading HistoricalContentsTitleH] Historical Costs Contents Title CON
+Note of historical cost profits and losses
+[end heading]
+[def heading AccPolsContentsTitleH] Accounting Policies Contents Title CON
+Accounting policies
+[end heading]
+[def heading NotesContentsTitleH] Notes Contents Title CON
+Notes to the [FinancialAccountsH]
+[end heading]
+//
+[def heading OfficialsOfficersPageH] Officials on the Officers Page OFF
+[end heading]
+[def heading PrincipalAddressH] Principal Address on the Officers Page OFF
+[end heading]
+[def heading BankersH] Bankers OFF
+Bankers
+[end heading]
+[def heading SolicitorsH] Solicitors OFF
+Solicitors
+[end heading]
+[def heading OffPageSubCommittee1H] Title of first sub-committee following Directors OFF
+[end heading]
+[def heading OffPageSubCommittee2H] Title of second sub-committee following Directors OFF
+[end heading]
+[def heading OffPageInvestAdviserH] Title of optional item following Company Secretary OFF
+[end heading]
+[def heading OffPageOtherAdviser1H] Title for first Other adviser OFF
+First Other adviser
+[end heading]
+[def heading OffPageOtherAdviser2H] Title for second Other adviser OFF
+Second Other adviser
+[end heading]
+[def heading OffPageFinalItemH] Title of optional last item on Officers Page OFF
+[end heading]
+//
+[def heading DateIncorpH] Heading for date of incorporation, commencement of trading, etc. DIR
+Incorporation
+[end heading]
+[def heading FutDevelopH] Future Developments DIR
+Future developments
+[end heading]
+[def heading FinancialRiskManagementH] Financial risk management objectives and policies DIR
+Financial instruments
+[end heading]
+[def heading Research&DevH] Research and Development DIR
+Research and development
+[end heading]
+[def heading DisabledEmplH] Disabled Employees DIR
+Disabled employees
+[end heading]
+[def heading EmplInvolveH] Employee Involvement DIR
+Employee involvement
+[end heading]
+[def heading ParentCoHoldingH] Description of shares held by directors in parent company DIR
+Ordinary shares of £1 in the parent company
+[end heading]
+[def heading NonEquitySharesH] Description of non-equity shares for reference to dividends DIR
+preference
+[end heading]
+[def heading ActivityH] Singular or Plural version of Activity in heading DIR
+activities[nonl]
+//activity[nonl]
+[end heading]
+[def heading DirDonationsH] Heading for Charitable and Political Donations section, if produced DIR
+Donations
+//Charitable donations
+//Charitable and political donations
+[end heading]
+[def heading IFRSTransitionH] Heading for IFRS Transition statement if completed DIR
+IFRS Transition Statement
+[end heading]
+[def heading ReportToH] Addressee of the Audit Report AUR
+[end heading]
+[def heading ThirdPartiesH] ICAEW Assurance Report - names of third parties AUR
+//insert the name of the third party who the assurance report is jointly addressed to, e.g. the client's bank
+[end heading]
+[def heading RevisedOpinionH] Heading for revised 'Opinion' reportpad AUR
+QUALIFIED OPINION
+[end heading]
+[def heading Inc&ExpAcctTitleH] Income and Expenditure Account Title - used when P&L rop PIE is set to Inc&Exp PLA
+Income and Expenditure Account
+[end heading]
+[def heading Profit&LossAccTitleH] Profit and Loss Account Title - used when P&L rop PIE is set to P&L PLA
+Profit and Loss Account
+[end heading]
+[def heading TurnoverH] Turnover - P&L account and the note PLA
+Turnover
+[end heading]
+[def heading CostOfSalesH] Cost of sales, P&L account PLA
+Cost of sales
+[end heading]
+[def heading CostOfSalesMedAbbrevH] CA 2006 description of Cost of Sales for Medium Abbreviated accounts PLA
+//P&L Format 1 - Cost of Sales and Other operating income
+//P&L Format 2 - Cost of Sales (excluding staff costs)
+[end heading]
+[def heading PurchasesH] Purchases, P&L account PLA
+Purchases
+[end heading]
+[def heading GrossProfitH] Gross Profit, P&L account PLA
+Gross [altcd]
+[end heading]
+[def heading DistributionCostsH] Distribution Costs, P&L account PLA
+Distribution costs
+[end heading]
+[def heading AdministrativeExpensesH] Administrative Expenses PLA
+Administrative expenses
+[end heading]
+[def heading ExceptionalCostOfSalesH] Exceptional items heading P&L format 1 PLA
+Exceptional cost of sales
+[end heading]
+[def heading ExceptionalDistributionCostsH] Exceptional items heading P&L format 1 PLA
+Exceptional distribution costs
+[end heading]
+[def heading ExceptionalAdminCostsH] Exceptional items heading P&L format 1 PLA
+Exceptional administrative expenses
+[end heading]
+[def heading ExceptionalOtherOperIncomeH] Exceptional items heading P&L formats 1&2 PLA
+Exceptional other operating income
+[end heading]
+[def heading ExceptionalRawMaterialsAndConsumablesH] Exceptional items heading P&L format 2 PLA
+Exceptional raw materials and consumables
+[end heading]
+[def heading ExceptionalOtherExternalChargesH] Exceptional items heading P&L format 2 PLA
+Exceptional other external charges
+[end heading]
+[def heading ExceptionalStaffCostsH] Exceptional items heading P&L format 2 PLA
+Exceptional staff costs
+[end heading]
+[def heading ExceptionalDepreciationChargesH] Exceptional items heading P&L format 2 PLA
+Exceptional depreciation written off fixed assets
+[end heading]
+[def heading ExceptionalOtherOperChargesH] Exceptional items heading P&L format 2 PLA
+Exceptional other operating charges
+[end heading]
+[def heading ExceptionalItemsH] P&L heading for exceptional items PLA
+Exceptional items
+[end heading]
+[def heading Sales1TableH] Sales type1 in horizontal table PLA
+Sales 1
+[end heading]
+[def heading Sales2TableH] Sales type2 in horizontal table PLA
+Sales 2
+[end heading]
+[def heading Sales3TableH] Sales type3 in horizontal table PLA
+Sales 3
+[end heading]
+[def heading Sales4TableH] Sales type4 in horizontal table PLA
+Sales 4
+[end heading]
+[def heading SalesTableH] Sales column heading in horizontal table PLA
+Sales
+[end heading]
+[def heading COSTableH] Cost of sales column heading in horizontal table PLA
+Cost of sales
+[end heading]
+[def heading DCTableH] Direct costs column heading in horizontal table PLA
+Direct costs
+[end heading]
+[def heading SuppressPnLEntityH] Name of other entity or relationship for rop.acc.e.sup PLA
+parent company/another group company/for X Limited
+[end heading]
+[def heading RevalOfInvestmentsH] Description of investments revalued for SOTRGL purposes PLA
+investment properties
+[end heading]
+//
+[def heading BalanceSheetTitleH] Balance Sheet, title BSA
+Balance sheet
+[end heading]
+[def heading FixedAssetsH] Fixed Assets BSA
+Fixed Assets
+[end heading]
+[def heading CurrentAssetsH] Current Assets BSA
+Current Assets
+[end heading]
+[def heading TotalCurrentAssetsH] Total Current Assets BSA
+Total Current Assets
+[end heading]
+[def heading TotalCurrentLiabilitiesH] Total Current Liabilities BSA
+Total Current Liabilities
+[end heading]
+[def heading CapitalAndReservesH] Capital And Reserves BSA
+Capital And Reserves
+[end heading]
+[def heading RevaluationReserveH] Revaluation reserve BSA
+Revaluation reserve
+[end heading]
+[def heading OtherReservesH] Other reserves BSA
+Other reserves
+[end heading]
+//
+[def heading CashFlowTitleH] Cash Flow Statement Title CFA
+Cash flow statement
+//Statement of cash flows
+[end heading]
+[def heading SharesClassedAsDebtH] Shares classed as financial liabilities cashflow description CFA
+//Amend cashflow description as necessary e.g. shares classed as compound financial instruments
+shares classed as financial liabilities
+[end heading]
+//
+[def heading BasisAccountingH] Basis of accounting POL
+Basis of accounting
+//Basis of preparation
+[end heading]
+[def heading ChangeAccountingPolH] Changes in accounting policies POL
+Changes in accounting policies
+[end heading]
+[def heading FRSSE2007ShareBasedPaymentsPolH] FRSSE 2007 Cash or Equity settled share based payments POL
+//[e2]***Edit the heading to suit***[e]
+Cash or equity settled share based payments
+[end heading]
+[def heading FRS17H] FRS 17 'Retirement Benefits' POL
+FRS 17 'Retirement Benefits'
+[end heading]
+[def heading FRS20H] FRS 20 Share-based payment (IFRS 2) POL
+FRS 20 'Share-based payment (IFRS 2)'
+[end heading]
+[def heading FRS21H] FRS 21 Events after the Balance Sheet date (IAS 10) POL
+FRS 21 'Events after the Balance Sheet date (IAS 10)'
+[end heading]
+[def heading FRS23H] FRS 23 The Effects of Changes in Foreign Exchange Rates (IAS 21) POL
+FRS 23 'The Effects of Changes in Foreign Exchange Rates (IAS 21)'
+[end heading]
+[def heading FRS25H] FRS 25 Financial Instruments: Disclosure and Presentation (IAS 32) POL
+FRS 25 'Financial Instruments: Disclosure and Presentation (IAS 32)'
+[end heading]
+[def heading FRS26H] FRS 26 Financial Instruments: Measurement (IAS 39) POL
+FRS 26 'Financial Instruments: Measurement (IAS 39)'
+[end heading]
+[def heading UITF40H] UITF 40 Revenue recognition and service contracts POL
+UITF 40 'Revenue recognition and service contracts'
+[end heading]
+[def heading ConsolidationPolH] Consolidation policy POL
+Consolidation
+[end heading]
+[def heading BasisConsolidationH] Basis of consolidation POL
+Basis of consolidation
+[end heading]
+[def heading RelPartiesTransPolH] Sub heading for Related Parties policy POL
+Related parties transactions
+[end heading]
+[def heading CashFlowPolH] Cash flow statement policy POL
+Cash flow statement
+[end heading]
+[def heading TurnoverPolH] Turnover policy POL
+Turnover
+[end heading]
+[def heading GoodwillPolH] Goodwill policy POL
+Goodwill
+[end heading]
+[def heading OthIntanPolH] Other Intangible policy POL
+Intangible Assets
+[end heading]
+[def heading AmortisationPolH] Amortisation policy POL
+Amortisation
+[end heading]
+[def heading TanFixAssetPolH] Tangible Fixed Asset policy POL
+Fixed Assets
+[end heading]
+[def heading DepreciationPolH] Depreciation policy POL
+Depreciation
+[end heading]
+[def heading InvestmentPropertiesPolH] Investment Properties policy POL
+Investment properties
+[end heading]
+[def heading StocksPolH] Stocks policy POL
+Stocks
+[end heading]
+[def heading WorkInProgressPolH] Work in Progress policy POL
+Work in progress
+[end heading]
+[def heading HPAgreementsPolH] Hire Purchase Agreements policy POL
+Hire purchase agreements
+[end heading]
+[def heading FLeaseAgreementsPolH] Finance Lease Agreements policy POL
+Finance lease agreements
+[end heading]
+[def heading CombinedLeasesPolH] HP and Finance Leases in one policy statement POL
+Leasing and hire purchase commitments
+[end heading]
+[def heading OLeaseAgreementsPolH] Operating Lease Agreements policy POL
+Operating lease agreements
+[end heading]
+[def heading FRS17PensionCostsPolH] Pension Costs policy POL
+Pension costs and other post-retirement benefits
+[end heading]
+[def heading PensionCostsPolH] Pension Costs policy POL
+Pension costs
+[end heading]
+[def heading PostRetireBenPolH] Post Retirement Benefits policy POL
+Post retirement benefits
+[end heading]
+[def heading Research&DevPolH] Research and Development policy title POL
+Research and development
+[end heading]
+[def heading ProvLiabChargesPolH] Provision for Liabilities policy POL
+Provisions for liabilities
+[end heading]
+[def heading DefTaxPolH] Deferred Tax policy POL
+Deferred taxation
+[end heading]
+[def heading ForeignCurrenciesPolH] Foreign Currencies policy POL
+Foreign currencies
+[end heading]
+[def heading DefGovernmentGrantsPolH] Deferred Government Grants policy POL
+Deferred government grants
+[end heading]
+[def heading DerivInstrumPolH] Derivative Instruments policy POL
+Derivative instruments
+[end heading]
+[def heading CapitalInstrumPolH] Capital Instruments policy POL
+Capital instruments
+[end heading]
+[def heading StockCategory1H] Stock category 1 description POL
+Raw materials, consumables and goods for resale
+[end heading]
+[def heading StockCat1BasisH] Basis of valuation of stock category 1 POL
+purchase cost on a first-in, first-out basis.
+[end heading]
+[def heading StockCategory2H] Stock category 2 description POL
+Work in progress and finished goods
+[end heading]
+[def heading StockCat2BasisH] Basis of valuation of stock category 2 POL
+cost of direct materials and labour plus attributable overheads based on a normal level of activity.
+[end heading]
+[def heading StockCategory3H] Stock category 3 description POL
+[end heading]
+[def heading StockCat3BasisH] Basis of valuation of stock category 3 POL
+[end heading]
+[def heading StockCategory4H] Stock category 4 description POL
+[end heading]
+[def heading StockCat4BasisH] Basis of valuation of stock category 4 POL
+[end heading]
+[def heading SparePol1H] Title of first spare policy POL
+//[e55]Your Heading Here[e][caps off]
+//[if rop.prs.spa.po2][new line]
+[end heading]
+[def heading SparePol2H] Title of second spare policy POL
+//[e55]Your Heading Here[e][caps off]
+//[if rop.prs.spa.po2][new line]
+[end heading]
+[def heading SparePol3H] Title of third spare policy POL
+//[e55]Your Heading Here[e][caps off]
+//[if rop.prs.spa.po2][new line]
+[end heading]
+[def heading SparePol4H] Title of fourth spare policy POL
+//[e55]Your Heading Here[e][caps off]
+//[if rop.prs.spa.po2][new line]
+[end heading]
+[def heading SparePol5H] Title of fifth spare policy POL
+//[e55]Your Heading Here[e][caps off]
+//[if rop.prs.spa.po2][new line]
+[end heading]
+//
+[def heading AuditorName1H] Name of first auditor (where there is more than one in the year) PLA
+Enter Auditor name in "AuditorName1" Heading
+[end heading]
+//
+[def heading AuditorName2H] Name of second Auditor (where there is more than one in the year) PLA
+Enter Auditor name in "AuditorName2" Heading
+[end heading]
+//
+[def heading StaffCostsH] Staff Costs note heading NTP
+Particulars of employees
+// Staff costs
+[end heading]
+[def heading InterestChargeH] Interest and Other Charges note heading NTP
+Interest payable and similar charges
+[end heading]
+[def heading TaxOrdActivitiesH] Taxation on Ordinary Activities note heading NTP
+Taxation on ordinary activities
+// Tax on profit from ordinary activities
+[end heading]
+[def heading DividendsH] Dividends note heading NTP
+Dividends
+// Dividends and other appropriations
+[end heading]
+[def heading StaffPensionCostsH] Staff pension costs in particulars of employees note NTP
+Other pension costs
+//Staff pension contributions
+[end heading]
+[def heading OtherPensionCostsH] Other pension costs in particulars of employees note NTP
+Pensions paid to former employees
+//Other pension costs
+[end heading]
+[def heading CoContribDefContribnH] Company contributions to defined contribution scheme NTP
+Value of [CompanyH] pension contributions to money purchase schemes
+//Value of [CompanyH] pension contributions to defined contribution schemes
+[end heading]
+[def heading Home_TaxationH] Alternative description for 'UK Taxation' in country of residence NTP
+UK Taxation
+[end heading]
+[def heading ForeignTaxH] Description of Foreign Tax in taxation note NTP
+Foreign tax
+[end heading]
+[def heading FormerDirectorsH] Former directors NTP
+director
+//directors
+//trustee
+//trustees
+[end heading]
+//
+[def heading InvNoteTitleH] Alternative title for Investment Note NTP
+//Alternative title for sale/write-off of investment note
+//will also affect the face of the P&L
+[end heading]
+[def heading FARevaluationH] Fixed Asset, alternative to 'Revaluation' NTB
+[end heading]
+[def heading FATradeAcqH] Fixed Asset, alternative to Acquisition of Trade NTB
+Acquisition of trade
+[end heading]
+[def heading FATradeDispH] Fixed Asset, alternative to Disposal of Trade NTB
+Disposal of trade
+[end heading]
+[def heading FATransferH] Fixed Asset, alternative to 'Transfer' NTB
+[end heading]
+[def heading FACostValH] Fixed Asset, alternative to 'Cost' or 'Cost or Valuation' NTB
+[end heading]
+[def heading FAICostValH] Fixed Asset Investments, alternative to 'Cost' or 'Cost or Valuation' NTB
+[end heading]
+[def heading IFACostValH] Intangible Fixed Asset, alternative to 'Cost' or 'Cost or Valuation' NTB
+[end heading]
+[def heading CapitalCommitH] Capital Commitments note or subnote heading NTB
+Capital commitments
+[end heading]
+// The next four Headings are for alternative stock descriptions in the notes
+//
+[def heading StockDescH] Stock note description code 630 NTB
+Stock
+[end heading]
+[def heading RawMaterialStockDescH] Raw Materials Stock description codes 631:644 NTB
+Raw materials
+[end heading]
+[def heading WIPStockDescH] Work in Progress description codes 635:639 NTB
+Work in progress
+[end heading]
+[def heading FinGoodsStockDescH] Finished Goods Stock description codes 640:644 NTB
+Finished goods
+[end heading]
+[def heading DirsPensionsH] Directors in Pensions schemes note heading NTB
+Pensions
+[end heading]
+[def heading CapitalInstrumentsNoteTitleH] Capital Instruments note title NTB
+Creditors - capital instruments
+[end heading]
+[def heading CapInstrmCredHeadH] Capital Instruments note heading NTB
+Creditors include finance capital which is due for repayment as follows:
+[end heading]
+[def heading CapInstrmLess5YrsH] Title within Cap Instrm Note before balances repayable in less than 5 years NTB
+Wholly repayable within five years:
+[end heading]
+[def heading CapInstrmMore5YrsH] Title within Cap Instrm Note before balances repayable in more than 5 years NTB
+Not wholly repayable within five years:
+[end heading]
+[def heading OrdinaryShareCapitalH] Ordinary share capital in the share capital note NTB
+Ordinary share capital
+[end heading]
+//Next three headings added for PN297 to define name of pension scheme
+[def heading PenSchDefBen1H] Defined benefit scheme 1 NTB
+Scheme 1
+[end heading]
+[def heading PenSchDefBen2H] Defined benefit scheme 2 NTB
+Scheme 2
+[end heading]
+[def heading PenSchDefBen3H] Defined benefit scheme 3 NTB
+Scheme 3
+[end heading]
+[def heading PensCommitH] Pension Commitment Note heading NTB
+//Pension commitments
+[end heading]
+[def heading PensCommitSubHead1H] Pensions Note, Sub heading, Pensions NTB
+Pensions
+[end heading]
+[def heading PensCommitSubHead2H] Pensions Note, Sub heading, Post Retirement Benefits NTB
+Post-retirement benefits other than pensions
+[end heading]
+[def heading PensCommitSubHead3H] Pensions Note, Sub heading, FRS 17 reconciliation NTB
+Reconciliations of net assets and reserves under FRS 17
+[end heading]
+[def heading EquitySettledShareBasedPaymentsH]Equity-settled share-based payments NTB
+Equity-settled share-based payments
+[end heading]
+[def heading CashSettledShareBasedPaymentsH]Cash-settled share-based payments NTB
+Cash-settled share-based payments
+[end heading]
+[def heading ShareOptionsPricingModelH] Description of share options pricing model NTB
+[e2]***Please describe the pricing model by entering text in heading ShareOptionsPricingModelH***[e]
+[end heading]
+[def heading FinancialInstrumentsDisclosureH] FRS 25 Disclosure requirements NTB
+Financial risk management objectives and policies
+[end heading]
+[def heading OperLeaseH] Operating Lease note heading NTB
+Commitments under operating leases
+// Other financial commitments
+[end heading]
+[def heading ContingentLiabH] Contingent Liability note heading NTB
+Contingencies
+// Contingent liability
+[end heading]
+[def heading DirInterestsH] Directors Interests note heading NTB
+Transactions with the
+// Transactions with (NB directors titles is calculated by DirectorUSg)
+[end heading]
+[def heading AcquisitionsAndDisposalsH] Acquisitions and disposals note heading NTB
+[end heading]
+[def heading CashflowContAcqH] Cashflow contributions of acquisition heading NTB
+CASHFLOW CONTRIBUTIONS OF ACQUISITION
+[end heading]
+[def heading CashflowChangeInDebtAcqH] Change in net debt due to acquisition/disposal NTB
+Change in net debt due to acquisition/disposal of trade/business
+[end heading]
+[def heading LimitationOfAuditorsLiabilityH] Limitation of Auditors Liability note heading NTB
+Disclosure of limitation of auditors' liability
+//Disclosure of limitation of auditor's liability
+[end heading]
+[def heading RelatedPartiesFR8H] Related Parties note heading NTB
+Related party transactions
+// Related parties
+[end heading]
+[def heading PostBSEventsH] Post balance sheet event note heading NTB
+Post balance sheet events
+[end heading]
+[def heading ParentCompanyH] Parent Company note heading NTB
+Ultimate parent company
+// Parent undertaking and controlling party
+[end heading]
+[def heading OwedGroupUndertakingsH] Description of Amounts owed to group undertakings NTB
+Amounts owed to group undertakings
+[end heading]
+[def heading OperLeaseSubHeadH] Operating Lease Sub note heading NTB
+[end heading]
+[def heading RsvNoteDividendsH] Reserves note - dividends narrative NTB
+Dividends
+[end heading]
+[def heading RsvNoteOtherAppropH] Reserves note - add backs narrative NTB
+Use Heading RsvNoteOtherApprop
+[end heading]
+[def heading RsvNoteRecGainLossesH] Reserves note - other gains and losses narrative NTB
+Other gains and losses
+[end heading]
+[def heading RsvNoteRevaluationH] Reserves note - revaluation narrative NTB
+Revaluation of fixed assets
+[end heading]
+[def heading RsvNoteGoodwillH] Reserves note - goodwill narrative NTB
+Use heading RsvNoteGoodwill
+[end heading]
+[def heading RsvNotePriorYearH] Reserves note - prior year adjustment narrative NTB
+Prior year adjustment
+[end heading]
+[def heading RsvNoteOtherMoveH] Reserves note - other movements narrative NTB
+Other movements
+[end heading]
+[def heading RsvNoteShareIssuesH] Reserves note - net proceeds from share issue narrative NTB
+New equity share capital subscribed
+[end heading]
+[def heading RsvNoteOtherIssuesH] Reserves note - non equity issue narrative NTB
+New non-equity share capital subscribed
+[end heading]
+[def heading RsvNoteOwnSharePurchH] Reserves note - purchase of own shares narrative NTB
+Use heading RsvNoteOwnSharePurch
+[end heading]
+[def heading RsvNoteTransfersH] Reserves note - transfers narrative NTB
+Transfers
+[end heading]
+[def heading RsvNoteCapitalisationH] Reserves note - capitalisation of reserves narrative NTB
+Use heading RsvNoteCapitalisation
+[end heading]
+[def heading RsvNoteOtherDescH] Reserves note - sundries narrative NTB
+Other
+[end heading]
+[def heading RsvNoteTferViaPnLH] Reserves note - transfers between P&L and Other reserves NTB
+ - transfer to other reserves
+[end heading]
+[def heading RsvNoteRedmPnLH] Reserves note - transfers between P&L and Capital Redemption rsv, a/cs 460 & 952 NTB
+ - transfer to/from capital redemption reserve
+[end heading]
+[def heading RsvNoteRevlnPnLH] Reserves note - transfers between P&L and Revaluation rsv, a/cs 932 & 942 NTB
+ - transfer to/from revaluation reserve
+[end heading]
+[def heading DefTaxNoteTitleH] Title for Deferred Tax Note NTB
+Deferred Taxation
+[end heading]
+[def heading ProvNoteTitleH] Title for Provisions Note NTB
+Other Provisions
+//Provisions for liabilities and charges
+[end heading]
+[def heading ProvSundriesColH] Column heading for aggregation of a/cs 884, 890 & 895 NTB
+Sundries
+[end heading]
+[def heading ProvOtherColH] Column heading for aggregation of a/cs in excess of five NTB
+Other provisions
+[end heading]
+[def heading TaxDebtorH] Tax debtor @699 not aggregated with other tax balances NTB
+// This standard heading has been left to cover Shadow ACT. Change if required.
+ACT recoverable against future taxation
+[end heading]
+[def heading TaxAccount792H] Description for tax account 792 - (Can be Dr or Cr) NTB
+// If not used the description in either the creditors or debtors note will
+// describe the balance as Advance Corporation Tax (recoverable).
+// Alternatively remove the slashes below or enter your own description
+//Corporation tax recoverable
+[end heading]
+[def heading DebentureLoanTitleH] Debenture loan description NTB
+Debenture loans
+[end heading]
+//
+[def heading ntbSpare01H]Balance sheet spare note 1 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 1 (user defined)
+[end heading]
+//
+[def heading ntbSpare02H]Balance sheet spare note 2 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 2 (user defined)
+[end heading]
+//
+[def heading ntbSpare03H]Balance sheet spare note 3 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 3 (user defined)
+[end heading]
+//
+[def heading ntbSpare04H]Balance sheet spare note 4 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 4 (user defined)
+[end heading]
+//
+[def heading ntbSpare05H]Balance sheet spare note 5 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 5 (user defined)
+[end heading]
+//
+[def heading ntbSpare06H]Balance sheet spare note 6 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 6 (user defined)
+[end heading]
+//
+[def heading ntbSpare07H]Balance sheet spare note 7 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 7 (user defined)
+[end heading]
+//
+[def heading ntbSpare08H]Balance sheet spare note 8 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 8 (user defined)
+[end heading]
+//
+[def heading ntbSpare09H]Balance sheet spare note 9 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 9 (user defined)
+[end heading]
+//
+[def heading ntbSpare10H]Balance sheet spare note 10 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 10 (user defined)
+[end heading]
+//
+[def heading ntbSpare11H]Balance sheet spare note 11 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 11 (user defined)
+[end heading]
+//
+[def heading ntbSpare12H]Balance sheet spare note 12 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 12 (user defined)
+[end heading]
+//
+[def heading ntbSpare13H]Balance sheet spare note 13 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 13 (user defined)
+[end heading]
+//
+[def heading ntbSpare14H]Balance sheet spare note 14 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 14 (user defined)
+[end heading]
+//
+[def heading ntbSpare15H]Balance sheet spare note 15 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 15 (user defined)
+[end heading]
+//
+[def heading ntbSpare16H]Balance sheet spare note 16 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 16 (user defined)
+[end heading]
+//
+[def heading ntbSpare17H]Balance sheet spare note 17 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 17 (user defined)
+[end heading]
+//
+[def heading ntbSpare18H]Balance sheet spare note 18 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 18 (user defined)
+[end heading]
+//
+[def heading ntbSpare19H]Balance sheet spare note 19 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 19 (user defined)
+[end heading]
+//
+[def heading ntbSpare20H]Balance sheet spare note 20 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 20 (user defined)
+[end heading]
+//
+[def heading ntbSpare21H]Balance sheet spare note 21 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 21 (user defined)
+[end heading]
+//
+[def heading ntbSpare22H]Balance sheet spare note 22 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 22 (user defined)
+[end heading]
+//
+[def heading ntbSpare23H]Balance sheet spare note 23 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 23 (user defined)
+[end heading]
+//
+[def heading ntbSpare24H]Balance sheet spare note 24 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 24 (user defined)
+[end heading]
+//
+[def heading ntbSpare25H]Balance sheet spare note 25 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 25 (user defined)
+[end heading]
+//
+[def heading ntbSpare26H]Balance sheet spare note 26 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 26 (user defined)
+[end heading]
+//
+[def heading ntbSpare27H]Balance sheet spare note 27 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 27 (user defined)
+[end heading]
+//
+[def heading ntbSpare95H]Balance sheet spare note 95 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 95 (user defined)
+[end heading]
+//
+[def heading ntbSpare96H]Balance sheet spare note 96 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 96 (user defined)
+[end heading]
+//
+[def heading ntbSpare97H]Balance sheet spare note 97 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 97 (user defined)
+[end heading]
+//
+[def heading ntbSpare98H]Balance sheet spare note 98 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 98 (user defined)
+[end heading]
+//
+[def heading ntbSpare99H]Balance sheet spare note 99 heading NTB
+//only to be used with e-filing
+Balance sheet Spare note 99 (user defined)
+[end heading]
+//
+//
+[def heading UnallocatedPandLTotalH] Title of unallocated P&L Total heading MAN
+Unallocated P&L amount
+[end heading]
+[def heading ExpenditureH] Title of main expenditure heading MAN
+Expenditure
+[end heading]
+[def heading EstablishmentExpensesH] Establishment Expenses MAN
+Establishment expenses
+[end heading]
+[def heading PersonnelCostsH] Personnel Costs, management accounts MAN
+Personnel costs
+[end heading]
+[def heading MotorExpensesH] Motor Expenses, management accounts MAN
+Motor expenses
+[end heading]
+[def heading GeneralExpensesH] General Expenses, management accounts MAN
+General expenses
+[end heading]
+[def heading FinancialCostsH] Financial costs, management accounts MAN
+Financial costs
+[end heading]
+[def heading StaffWelfareExpensesH] Staff Welfare Expenses, management accounts MAN
+Staff welfare expenses
+[end heading]
+[def heading ProfessionalFeesH] Professional Fees, management accounts MAN
+Professional fees
+[end heading]
+[def heading ExceptionalCostsMgtH] Exceptional Costs, management accounts MAN
+Exceptional costs
+[end heading]
+[def heading DirectorsEmolumentsMgtH] Directors Remuneration, management accounts MAN
+//Directors emoluments
+Directors remuneration
+[end heading]
+[def heading DepreciationMgtH] Depreciation, management accounts MAN
+Depreciation
+[end heading]
+[def heading OtherOperatingIncomeH] Other Operating Income, management accounts MAN
+Other operating income
+[end heading]
+[def heading ProfitAndLossRestructuringH] Profit & Loss Restructuring, management accounts MAN
+Profit & loss restructuring
+[end heading]
+[def heading OtherIncomeH] Other Income, management accounts MAN
+Other income
+[end heading]
+[def heading OtherInterestH] Other Interest, management accounts MAN
+Other interest
+[end heading]
+[def heading InterestReceivableH] Interest Receivable, P&L account MAN
+Interest receivable
+[end heading]
+[def heading OtherIncomeAndIntRecH] Other income and interest receivable, P&L account MAN
+Other income and interest receivable
+[end heading]
+[def heading WrittenOffInvestmentsH] Written off Investments, management accounts MAN
+Written off investments
+[end heading]
+[def heading InterestPayableH] Interest Payable, management accounts MAN
+Interest payable
+[end heading]
+[def heading TaxationMgtH] Taxation, management accounts MAN
+Taxation
+[end heading]
+[def heading ExtraordinaryItemsMgtH] Extraordinary Items, management accounts MAN
+Extraordinary items
+[end heading]
+[def heading OtherTaxesMgtH] Other Taxes, management accounts MAN
+Other taxes
+[end heading]
+[def heading DividendsMgtH] Dividends, management accounts MAN
+Dividends
+[end heading]
+[def heading MinorityInterestsMgtH] Minority Interests, management accounts MAN
+Minority interests
+[end heading]
+[def heading OtherItemsMgtH] Other Items, management accounts MAN
+Other items
+[end heading]
+[def heading IntangiblesMgtH] Intangibles, management accounts MAN
+Intangibles
+[end heading]
+[def heading TangiblesMgtH] Tangibles, management accounts MAN
+Tangibles
+[end heading]
+[def heading CurrentAssetsMgtH] Current Assets, management accounts MAN
+Current assets
+[end heading]
+[def heading CreditorsUnderOneYearMgtH] Creditors Under One Year, management accounts MAN
+Creditors under one year
+[end heading]
+[def heading CreditorsOverOneYearMgtH] Creditors Over One Year, management accounts MAN
+Creditors over one year
+[end heading]
+[def heading ProvisionsMgtH] Provisions, management accounts MAN
+Provisions
+[end heading]
+[def heading CapitalAccountsMgtH] Capital Accounts, management accounts MAN
+Capital Accounts
+[end heading]
+[def heading CurrentAccountsMgtH] Current Accounts, management accounts MAN
+Current Accounts
+[end heading]
+[def heading CostCentre1H] Cost Centre 1 description MAN
+Cost Centre 1
+[end heading]
+[def heading CostCentre2H] Cost Centre 2 description MAN
+Cost Centre 2
+[end heading]
+[def heading CostCentre3H] Cost Centre 3 description MAN
+Cost Centre 3
+[end heading]
+[def heading CostCentre4H] Cost Centre 4 description MAN
+Cost Centre 4
+[end heading]
+[def heading CostCentre5H] Cost Centre 5 description MAN
+Cost Centre 5
+[end heading]
+[def heading CostCentre6H] Cost Centre 6 description MAN
+Cost Centre 6
+[end heading]
+[def heading CostCentre7H] Cost Centre 7 description MAN
+Cost Centre 7
+[end heading]
+[def heading CostCentre8H] Cost Centre 8 description MAN
+Cost Centre 8
+[end heading]
+[def heading CostCentre9H] Cost Centre 9 description MAN
+Cost Centre 9
+[end heading]
+[def heading CostCentre10H] Cost Centre 10 description MAN
+Cost Centre 10
+[end heading]
+[def heading UserReport1H] Main title for User Report 1 MAN
+User Report 1 Sample Heading
+[end heading]
+[def heading UserReport2H] Main title for User Report 2 MAN
+User Report 2 Sample Heading
+[end heading]
+[def heading UserReport3H] Main title for User Report 3 MAN
+User Report 3 Sample Heading
+[end heading]
+[def heading UserReport4H] Main title for User Report 4 MAN
+User Report 4 Sample Heading
+[end heading]
+//
+[def heading UserReportMan1H] Main title for Management User Report 1 MAN
+User Report 1 Sample Heading
+[end heading]
+[def heading UserReportMan2H] Main title for Management User Report 2 MAN
+User Report 2 Sample Heading
+[end heading]
+[def heading UserReportMan3H] Main title for Management User Report 3 MAN
+User Report 3 Sample Heading
+[end heading]
+[def heading UserReportMan4H] Main title for Management User Report 4 MAN
+User Report 4 Sample Heading
+[end heading]
+//
+//////////////////////////////////////////////////////////////////////////////
+---------------------  MANAGEMENT INFORMATION PACK  --------------------------
+//////////////////////////////////////////////////////////////////////////////
+[def reportpad manMipGrossProfitPercentR] Simple Explanatory Narrative for Gross Profit as Percentage chart MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "GrossProfitPercentNotes.doc".
+[end reportpad]
+[def reportpad manMipGrossProfitActualsR] Simple Explanatory Narrative for Gross Profit Actuals chart MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "GrossProfitActualsNotes.doc".
+[end reportpad]
+[def reportpad manMipNetProfitPercentR] Simple Explanatory Narrative for Net Profit as a Percentage chart MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "NetProfitPercentNotes.doc".
+[end reportpad]
+[def reportpad manMipNetProfitActualsR] Simple Explanatory Narrative for Net Profit Actuals chart MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "NetProfitActualsNotes.doc".
+[end reportpad]
+[def reportpad manMipLiquidityR] Simple Explanatory Narrative for Liquidity chart MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "LiquidityNotes.doc".
+[end reportpad]
+[def reportpad manMipDebtorDaysR] Simple Explanatory Narrative for Debtor Days chart MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "DebtorDaysNotes.doc".
+[end reportpad]
+[def reportpad manMipCreditorDaysR] Simple Explanatory Narrative for Creditor Days chart MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "CreditorDaysNotes.doc".
+[end reportpad]
+[def reportpad manMipDebtorAndCreditorDaysR] Simple Explanatory Narrative for Debtor And Creditor Days chart MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "DebtorAndCreditorDaysNotes.doc".
+[end reportpad]
+[def reportpad manMipStockDaysR] Simple Explanatory Narrative for Stock Days chart MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "StockDaysNotes.doc".
+[end reportpad]
+[def reportpad manMipROCER] Simple Explanatory Narrative for Return on Capital Employed chart MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "ROCENotes.doc".
+[end reportpad]
+[def reportpad manMipAveSalExclDirsR] Simple Explanatory Narrative for Average Salaries Excl Directors chart MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "AveSalExclDirsNotes.doc".
+[end reportpad]
+[def reportpad manMipAveSalInclDirsR] Simple Explanatory Narrative for Average Salaries Incl Directors chart MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "AveSalInclDirsNotes.doc".
+[end reportpad]
+[def reportpad manMipSpareChart1R] Simple Explanatory Narrative for Spare Chart 1 MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "SpareChart1Notes.doc".
+[end reportpad]
+[def reportpad manMipSpareChart2R] Simple Explanatory Narrative for Spare Chart 2 MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "SpareChart2Notes.doc".
+[end reportpad]
+[def reportpad manMipSpareChart3R] Simple Explanatory Narrative for Spare Chart 3 MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "SpareChart3Notes.doc".
+[end reportpad]
+[def reportpad manMipSpareChart4R] Simple Explanatory Narrative for Spare Chart 4 MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "SpareChart4Notes.doc".
+[end reportpad]
+[def reportpad manMipSpareChart5R] Simple Explanatory Narrative for Spare Chart 5 MAN
+// Put simple explanatory text here. "Simple" means that you cannot specify any
+// headings, formatting or paragraphing. For more sophisticated explanatory texts,
+// create a document in Microsoft Word called "SpareChart5Notes.doc".
+[end reportpad]
+[def heading FinancialReportsTitleH] Title for reports section of Management Information Pack MAN
+Financial Reports
+[end heading]
+[def heading PerformanceGraphsTitleH] Title for graphs section of Management Information Pack MAN
+Performance Graphs
+[end heading]
+[def heading SalesAnalysisTitleH] Title for Sales Analysis report MAN
+Sales Analysis
+[end heading]
+[def heading KeyFiguresTitleH] Title for the Key Figures report MAN
+Summary of Key Figures
+[end heading]
+[def heading GrossProfitPercentTitleH] Title for Gross Profit as a percentage of Turnover graph MAN
+[end heading]
+[def heading GrossProfitActualsTitleH] Title for Gross Profit Actual £s graph MAN
+[end heading]
+[def heading NetProfitPercentTitleH] Title for Net Profit as a percentage of Turnover graph MAN
+[end heading]
+[def heading NetProfitActualsTitleH] Title for Net Profit Actual £s graph MAN
+[end heading]
+[def heading LiquidityTitleH] Title for Liquidity graph MAN
+[end heading]
+[def heading DebtorDaysTitleH] Title for Debtor Days graph MAN
+[end heading]
+[def heading CreditorDaysTitleH] Title for Creditor Days graph MAN
+[end heading]
+[def heading DebtorAndCreditorDaysTitleH] Title for Debtor and Creditor Days graph MAN
+[end heading]
+[def heading StockDaysTitleH] Title for Stock Days graph MAN
+[end heading]
+[def heading ROCETitleH] Title for Return on Capital Employed graph MAN
+[end heading]
+[def heading AveSalExclDirsTitleH] Title for Average Salaries excluding directors graph MAN
+[end heading]
+[def heading AveSalInclDirsTitleH] Title for Average Salaries including directors graph MAN
+[end heading]
+[def heading SpareChart1TitleH] Title for Spare chart 1 MAN
+[end heading]
+[def heading SpareChart2TitleH] Title for Spare chart 2 MAN
+[end heading]
+[def heading SpareChart3TitleH] Title for Spare chart 3 MAN
+[end heading]
+[def heading SpareChart4TitleH] Title for Spare chart 4 MAN
+[end heading]
+[def heading SpareChart5TitleH] Title for Spare chart 5 MAN
+[end heading]

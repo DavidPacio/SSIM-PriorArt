@@ -1,0 +1,337 @@
+1	Entity	#	Entity Ref		D	1						N	Agent's Ref for the Entity, with 'This' an alias for the Current Entity
+													
+2	Superior	#	Superior's Entity Ref		I	2				3 - 5	+RL1	N	Superior Entity
+		CP	Controlling Party			3			2			1	
+		UP	Ultimate Parent (Group)			4			2			1	
+		IP	Immediate Parent (Group)			5			2			1	
+													
+3	Subord	#	Subordinate's Entity Ref		I	6				7 - 11	+RL1	N	Subordinate Entity
+		Type	Type of Subordinate										
+		Assoc	Associate			7			6			1	
+		JV	Joint Venture			8			6			1	
+		OPI	Other Participating Interest			9			6			1	
+		SPE	Special Purpose Entity			10			6			1	
+		Subsid	Subsidiary			11			6	12, 13	+RL1	1	
+		BasisDominantInfluence	Basis of Dominant Influence										
+		MajSH	Majority share holding			12			11			1	
+		MajCSH	Major common shareholder			13			11			1	
+													
+4	TPA	#	Third Party Agent's Entity Ref		I	14				15 - 25	+RLn	N	
+		Type	Type or Types of TPA										
+		Accountants	Accountants			15			14			1	
+		Auditors	Auditors			16			14			1	
+		Bankers	Bankers			17			14			1	
+		Consultants	Consultants			18			14			1	
+		LegalAdvisors	LegalAdvisors			19			14			1	
+		Underwriters	Underwriters			20			14			1	
+		Administrators	Administrators			21			14			1	
+		Liquidators	Liquidators			22			14			1	
+		Receivers	Receivers			23			14			1	
+		PublicRelationsAdvisers	PublicRelationsAdvisers			24			14				
+		RegistrationAgents	RegistrationAgents			25			14				
+		Classification	Classification of Agent										
+		Principal	Principal			26		26 - 28	15 - 23				
+		Joint	Joint			27		26 - 28	15 - 23				
+		Other	Other			28		26 - 28	15 - 23				
+													
+5	Person	#	Person Ref		D	29						N	Agent's Ref of the Person
+													
+6	Officer	#	Officer's Person Ref		I	30				31 - 34	+RLn	N	
+		Director	Director [or other as per the EntityType]			31			30	36, 37	+RL1	1	Label is set from the Entity Type info
+		Chairman	Chairman [or other as per the EntityType]			32			30	31	+RL1	1	"
+		CEO	Chief Executive Officer [or other as per the EntityType]			33			30	31	+RL1	1	"
+		CoSec	Company Secretary [or other as per the EntityType]			34			30			1,ET	"
+		HighestPaidOfficer	Highest Paid Officer			35							
+		ExecType	Exec or Non-Exec										
+		Exec	Executive Officer			36			31			1	
+		NonExec	Non-Executive Officer			37			31			1	
+		Signing	Signing Authority										
+		SignAccounts	Signing Accounts			38			31			1	
+		SignDirRep	Signing Directors' Report			39			31, 34			1,ET	Only allowed in CoSec case if CoSec of Entity Type is permitted to sign Directors' Report
+													
+7	Address	#	Ref of an Entity or Person Address		D	40						N	See Notes for examples
+		Main	Main address		O	41							
+		Postal	Postal address		O	42							
+		Street	Street address		O	43							
+		RegisteredOffice	Registered Office address		O	44							
+		Branch	Branch address		O	45							
+		Factory	Factory address		O	46							
+		RandD	Research and Development Centre address		O	47							
+		Other	Other address		O	48							
+		Home	Home address		O	49							
+													
+8	Contact	#	Ref of an Entity or Person Contact		D	50						N	See Notes for examples
+		HeadOffice	Head office			51							
+		MainBusiness	Main business			52							
+		RegisteredOffice	Registered office			53							
+		PublicRelations	Public relations			54		Kids					
+		  InvestorRelations	  Investor relations	1		55							
+		  MediaRelations	  Media relations	1		56							
+		SalesMarketing	Sales and marketing			57		Kids					
+		  Sales	  Sales	1		58							
+		  Marketing	  Marketing	1		59							
+		ProductInfo	Product information			60							
+		TechnicalInfo	Technical information			61							
+		BusinessReport	Business report contact			62							
+													
+9	Group	Group	Group and Company		RO	63	Kids					N	Waiting on Group/Consol items from Charles
+		  Consol	  Consolidated	1		64							
+		  Co	  Company	1		65							
+		GroupBeforeAssocsJVs	Group before associates and joint ventures		RO	66	63					N	
+		GroupShareJVsExclAssocsTurnoverOnly	Group and share of joint ventures, excluding associates [turnover only]		RO	67	66,69					N	
+		ShareJVsAssocs	Share of joint ventures and associates		RO	68	69,71					N	
+		Subordinate.JV#	Joint venture Subordinate #		Ei	69							Need to ensure this is a JV Subordinate
+		GroupAfterAssocsBeforeJVs	Group after associates, before joint ventures		RO	70	66,71					N	
+		Subordinate.Assoc#	Associate Subordinate #		Ei	71							Need to ensure this is an Associate Subordinate
+													
+10	Restated	Amount	Restated amount		RO,Y	72	Kids					N	
+		   PriorPeriodIncr	  Prior period increase (decrease)	1	RO,Y	73	Kids					N	
+		      AcctPolicyIncr	    Accounting policy increase (decrease)	2	Y	74							
+		      MaterialErrorIncr	    Material error increase (decrease)	2	Y	75							
+		   OriginalAmount	  Original amount	1	Z,Y	76						N	
+													
+11	OpActivs	All	All operating activities			77						N	
+		ContinuingInclAcqs	Continuing operations, including acquisitions		RO	78	Kids					N	
+		  Acqs	  Acquisitions	1		79							
+		  Continuing	  Continuing operations, excluding acquisitions	1		80							
+		Discontinued	Discontinued operations			81							
+													
+12	BizSegs	#	Business segment #		Ei	82							
+													
+13	ProvisionClasses	All	All provisions		RO	83	Kids					N	
+		   PensionsSimilarObligations	  Provisions for pensions and similar obligations	1		84							
+		   DBPensionSchemes	  Provisions for defined benefit pension schemes	1		85							
+		   DCPensionSchemes	  Provisions for defined contribution pension schemes	1		86							
+		   PostRetireBenefitsNonPension	  Provisions for post-retirement benefits other than pensions	1		87							
+		   TaxationInclDeferred	  Provisions for taxation, including deferred taxation	1		88							
+		   DeferredTaxation	  Provisions for deferred taxation	1		89							
+		   RestructuringOrReorg	  Provisions for restructuring or reorganisation	1		90							
+		   ProductGuarantees	  Provisions for product guarantees	1		91							
+		   LegalProceedings	  Provisions for legal proceedings	1		92							
+		   OnerousContracts	  Provisions for onerous contracts	1		93							
+		   DecommissionRestorationRehab	  Provisions for decommissioning, restoration and rehabilitation	1		94							
+		   EnvironmentalCosts	  Provisions for environmental costs	1		95							
+		   Remediation	  Provisions for remediation	1		96							
+		   Maintenance	  Provisions for maintenance	1		97							
+		   Dilapidations	  Provisions for dilapidations	1		98							
+		   BadDebts	  Provisions for bad debts	1		99							
+		   DeferredConsids	  Provisions for deferred considerations	1		100							
+		   VacantProperties	  Provisions for vacant properties	1		101							
+		   Others	  Other provisions	1		102							
+													
+14	IFAClasses	All	All intangible fixed assets		RO	103	Kids					N	
+		  NetGoodwill	  Net goodwill	1		104	Kids	Kids			M		
+		    PositiveGoodwill	    Positive goodwill	2		105		104			M		
+		    NegativeGoodwill	    Negative goodwill	2		106		104			M		
+		  OtherThanGoodwill	  Intangible assets other than goodwill	1		107					M		
+		  DevelopmentCostsPatentsSimilar	  Development costs, patents and similar	1		108	Kids	Kids			M		
+		    DevelopmentCosts	    Development costs	2		109		108			M		
+		    PatentsSimilar	    Patents, concessions, licences, trade marks and similar	2		110	Kids	108, Kids			M		
+		      ConcessionsLicencesFranchises	      Concessions, licences, franchises	3		111		108,110			M		
+		      PatentsCopyrightsTrademarksSimilar	      Patents, copyrights, trademarks and similar	3		112		108,110			M		
+		  IntellectualProperty	  Intellectual property	1		113					M		
+		  OtherExploitationRights	  Other exploitation rights	1		114					M		
+		  MastheadsPublishingTitles	  Mastheads and publishing titles	1		115					M		
+		  BrandNames	  Brand names	1		116					M		
+		  CustomerRelationships	  Customer relationships	1		117					M		
+		  PaymentsOnAcct	  Payments on account, intangible fixed assets	1		118					M		
+		  Others	  Other intangible fixed assets	1		119					M		
+													
+15	TFAClasses	All	All tangible fixed assets		RO	120	Kids					N	
+		   LandBuildings	  Land and buildings	1		121	Kids	Kids		145,147,148	M+RL1		
+		      Land	    Land	2		122		121		145,147,148	M+RL1		
+		      Buildings	    Buildings	2		123		121		145,147,148	M+RL1		
+		   InvestProperties	  Investment properties	1		124				145,147,148	M+RL1		
+		   PropertiesUnderConstruction	  Properties under construction	1		125				145,147,148	M+RL1		
+		   VehiclesPlantMachinery	  Vehicles, plant and machinery	1		126	Kids	Kids		145,146	M+RL1		
+		      PlantMachinery	    Plant and machinery	2		127		126		145,146	M+RL1		
+		      Vehicles	    Vehicles	2		128	Kids	126, Kids		145,146	M+RL1		
+		         Aircraft	      Aircraft	3		129		126,128		145,146	M+RL1		
+		         Boats	      Boats	3		130		126,128		145,146	M+RL1		
+		         MotorVehicles	      Motor vehicles	3		131	Kids	126,128, Kids		145,146	M+RL1		
+		            CommercialMotorVehicles	        Commercial motor vehicles	4		132		126,128,131		145,146	M+RL1		
+		            MotorCars	        Motor cars	4		133		126,128,131		145,146	M+RL1		
+		         OtherVehicles	      Other vehicles	3		134		126,128		145,146	M+RL1		
+		   FixturesFittingsToolsEquipment	  Fixtures, fittings, tools and equipment	1		135	Kids	Kids		145,146	M+RL1		
+		      FixturesFittings	    Fixtures and fittings	2		136		135		145,146	M+RL1		
+		      ToolsEquipment	    Tools and equipment	2		137		135		145,146	M+RL1		
+		   OfficeEquipment	  Office equipment	1		138				145,146	M+RL1		
+		   ComputerEquipment	  Computer equipment	1		139				145,146	M+RL1		
+		   PaymentsOnAcctAssetsUnderDev	  Payments on account and assets under development	1		140	Kids	Kids		145,146	M+RL1		
+		      PaymentsOnAcct	    Payments on account	2		141		140		145,146	M+RL1		
+		      ImprovementOrDevelopmentAssets	    Improvements or development of assets	2		142		140		145,146	M+RL1		
+		   ExplorationOrEvaluationAssets	  Tangible exploration or evaluation assets	1		143				145,146	M+RL1		
+		   Others	  Other tangible fixed assets	1		144				145,146	M+RL1		
+		BasisOwnership	Basis of Ownership										
+		OwnedOrFreehold	Owned or freehold tangible fixed assets			145			121 - 144			1	
+		Leased	Leased tangible fixed assets			146			121 - 144			1	
+		ShortLeaseholdProperties	Short leasehold properties			147			121 - 144			1	
+		LongLeaseholdProperties	Long leasehold properties			148			121 - 144			1	
+													
+16	FAIHoldings	All	All fixed asset investment holdings		RO	149	Kids					N	Waiting on Charles
+		   GroupUndertakingsOtherInterests	  Group undertakings and other participating interests	1		150				159 - 164	M+RL1		
+		   GroupBeforeAssocsJVs	  Group before associates and joint ventures	1		151				159 - 164	M+RL1		
+		   ShareJVsAssocs	  Share of joint ventures and associates	1		152				159 - 164	M+RL1		
+		   InvestInJVs	  Investments in joint ventures	1		153				159 - 164	M+RL1		
+		   InvestInAssocs	  Investments in associates	1		154				159 - 164	M+RL1		
+		   InvestInSubsids	  Investment in subsidiaries	1		155				159 - 164	M+RL1		
+		   InvestInOtherInterests	  Investment in other participating interests	1		156				159 - 164	M+RL1		
+		   Others	  Total other investments	1		157				159 - 164	M+RL1		
+		Type	Holdings Type										
+		Shares	  Shares, fixed asset investments		RO	158	Kids						
+		  SharesListed	    Shares, listed, fixed asset investments	1		159			150 - 157			1	
+		  SharesUnlisted	    Shares, unlisted, fixed asset investments	1		160			150 - 157			1	
+		Loans	  Loans held as fixed asset investments			161			150 - 157			1	
+		OtherThanSharesInclLoans	  Fixed asset investments other than shares, including loans			162			150 - 157			1	
+		OtherThanSharesNotInclLoans	  Fixed asset investments other than shares, not  including loans			163			150 - 157			1	
+		OtherThanLoans	  Fixed asset investments other than loans			164			150 - 157			1	
+													
+17	Dividends	PaidProposed	Dividends paid and proposed		RO	165	Kids					N	
+		   Paid	  Dividends paid	1		166							
+		   Proposed	  Dividends proposed	1		167							
+													
+18	PensionSchemes	All	All pension schemes		RO	168	Kids					N	
+		   ExclMedical.#	  Pension scheme, excluding medical schemes #	1	Ei	169							
+		   PostEmploymentMedical.#	  Post-employment medical scheme #	1	Ei	170							
+													
+19	ShareSchemes	#	Share based payment scheme #		Ei	171						N	
+													
+20	FIValueType	CarryingAmount	Carrying amount			172							
+		Value	Fair value			173							
+		PastDueOrImpaired	Past due or impaired, carrying value		RO	174	Kids					N	
+		   PastDueButNotImpaired	  Past due but not impaired, carrying value	1		175							
+		   Impaired	  Impaired, carrying value	1		176							
+		NeitherPastDueNorImpaired	Neither past due nor impaired, carrying value			177							
+		NotionalAmount	Notional amount			178							
+													
+21	FIs	All	Total current and non-current financial instruments		RO	179	Kids					N	
+		   Current	  Current financial instruments	1		180							
+		   NonCurrent	  Non-current financial instruments	1		181							
+													
+22	FILevel	#	Financial instrument level #		Ei	182						N	
+													
+23	FIMvts	TransferLevel1To2	Transfer from level 1 to 2			183							
+		TransferLevel2To1	Transfer from level 2 to 1			184							
+		ValueGainRecordedInIncomeStatement	Fair value gain (loss) recorded in income statement			185							
+		GainRecordedInEquity	Gain (loss) recorded in equity			186							
+		NetIncrLevel3PurchasesSalesSettlements	Net increase (decrease) in level 3 from purchases, sales and settlements			187	Kids	Kids					
+		   NetIncrLevel3Purchases	  Net increase (decrease) in level 3 from purchases	1		188		187					
+		   NetIncrLevel3Sales	  Net increase (decrease) in level 3 from sales	1		189		187					
+		   NetIncrLevel3Settlements	  Net increase (decrease) in level 3 from settlements	1		190		187					
+		ReclassifiedToLoansReceivables	Reclassified to loans and receivables			191							
+		TransferLevel12To3	Transfer from level 1 and 2 to 3			192							
+		TransferLevel3To12	Transfer from level 3 to 1 and 2			193							
+													
+24	MPeriods	All	All periods		RO	194	Kids					N	
+		   <1	  Within one year	1		195	Kids	Kids					
+		      30Days	    Within 30 days	2		196		195					
+		      30To60Days	    From 30 to 60 days	2		197		195					
+		      60To90Days	    From 60 to 90 days	2		198		195					
+		      6Months	    Within 6 months	2		199		195					
+		      6MonthsOneYear	    Between 6 months and one year	2		200		195					
+		   >1	  After one year	1		201	Kids	Kids					
+		      1-5	    Between one and five years	2	RO	202	Kids						
+		         1-2	      Between one and two years	3		203		201					
+		         2-5	      Between two and five years	3		204		201					
+		      >5	    More than five years	2		205		201					
+													
+25	Acqs	#	Acquisition #		Ei	206						N	Should this be a Subordinate, Charles?
+													
+26	AcqAssetsLiabs	All	All acquisitions		RO	207	Kids					N	
+		   AllSubsids	  All subsidiaries	1		208							
+		   ShareJVs	  Share of joint ventures	1		209							
+		   ShareAssocs	  Share of associates	1		210							
+		   BookValue	  Book value	1		211							
+		   ProvisionalValue	  Provisional fair value	1		212							
+		   ValueAdjustIncr	  Fair value adjustment increase (decrease)	1		213							
+		   RevaluationIncr	  Revaluation increase (decrease)	1		214							
+		   AcctPolicyAlignIncr	  Accounting policy alignment increase (decrease)	1		215							
+		   OtherSigAdjustsIncr	  Other significant adjustments increase (decrease)	1		216							
+													
+27	Disposals	#	Disposal #		Ei	217						N	Should this be a Subordinate, Charles?
+													
+28	OtherInterests	All	All OtherInterests		RO	218	Kids					N	To be replaced by Subordinate, Charles?
+		  Partic.#	  Other participating interest #	1	Ei	219							
+		  Invest.#	  Other investment #	1	Ei	220							
+													
+29	ShareClasses	All	All share classes		RO	221	Kids					N	
+		    Ordinary.#	  Ordinary share class #	1	Ei	222							
+		   Preference.#	  Preference share #	1	Ei	223							
+													
+30	ShareTypes	All	All share types		RO	224	Kids					N	
+		   Cum	  Cumulative shares	1	RO	225	Kids					N	
+		      CumRedeemable	    Cumulative and redeemable shares	2		226							
+		      CumNonRedeemable	    Cumulative and non-redeemable shares	2		227							
+		   NonCum	  Non-cumulative shares	1	RO	228	Kids					N	
+		      NonCumRedeemable	    Non-cumulative and redeemable shares	2		229							
+		      NonCumNonRedeemable	    Non-cumulative and non-redeemable shares	2		230							
+		   Others	  Other share types	1		231							
+													
+31	Region	#	Region #		R	232						N	
+													
+32	Country	#	Country #		C	233						N	
+													
+33	Currency	#	Currency #		U	234						N	
+													
+34	StockEx	#	Stock Exchange #		X	235						N	
+													
+35	Language	#	Language #		L	236						N	
+													
+36	Activity	All	Total activities		RO	237	Kids					N	To be BRLised, Charles?
+		   AgriForestryFishing	A - Agriculture, forestry and fishing	1		238							
+		   MiningQuarrying	B - Mining and quarrying	1		239							
+		   Manufacturing	C - Manufacturing	1		240							
+		   ElectricGasSteamAirCon	D - Electricity, gas, steam and air conditioning supply	1		241							
+		   WaterSewerageWasteMngmt	E - Water supply, sewerage, waste management and remediation facilities	1		242							
+		   Construction	F - Construction	1		243							
+		   WholesaleRetailTradeRepairMotors	G - Wholesale and retail trade, repair of motor vehicles and motorcycles	1		244							
+		   TransportStorage	H - Transportation and storage	1		245							
+		   AccommodationFoodService	I - Accommodation and food service activities	1		246							
+		   InfoCommunication	J - Information and communication	1		247							
+		   FinancialInsurance	K - Financial and insurance activities	1		248							
+		   RealEstate	L - Real estate activities	1		249							
+		   ProfessionalScientificTechnical	M - Professional, scientific and technical activities	1		250							
+		   AdminSupportService	N - Administrative and support service activities	1		251							
+		   PublicAdminDefenceSocSecurity	O - Public administration and defence, compulsory social security	1		252							
+		   Education	P - Education	1		253							
+		   HealthSocialWork	Q - Human health and social work activities	1		254							
+		   ArtsEntertainRecreation	R - Arts, entertainment and recreation	1		255							
+		   OtherServiceActivities	S - Other service activities	1		256							
+		   HouseholdsAsEmployersProducersOwnUse	T - Households as employers - undifferentiated goods and service-production activities of households for own use	1		257							
+		   ExtraterritorialOrgsBodies	U - Extra-territorial organisations and bodies	1		258							
+		   CombinedXsectorActivs.#	Combined cross-sector activity #	1	Ei	259							
+		   OtherSpecific.#	Other specific activity #	1	Ei	260							
+													
+37	ExpenseType	All	Total costs		RO	261	Kids					N	
+		  CoS	  Cost of sales	1		262							
+		  Distrib	  Distribution costs	1		263							
+		  Admin	  Administrative expenses	1		264							
+													
+38	ExceptNon	All	Total exceptional and non-exceptional		RO	265	Kids					N	
+		  Nonexcept	  Non-exceptional	1		266							
+		  Except	  Exceptional	1		267							
+													
+39	Analysis	#	Analysis item #		Ei	268						N	
+													
+40	GroupTrans	All	Total transactions		RO	269	Kids					N	Waiting on Charles
+		  Undertakings	  Group undertakings	1	RO	270	Kids					N	
+		    Parent	    Parent	2		271							
+		    SubsidUndertakings	    Subsidiaries / other group undertakings	2		272							
+		  JVs	  Joint ventures	1		273							
+		  Assocs	  Associates	1		274							
+		  ParticInterests	  Participating interests	1		275							
+		  TPs	  Third parties outside group	1		276							
+													
+41	Ageing	All	All		RO	277	Kids					N	
+		   <1	  <1	1		278							
+		   >1	  >1	1		279	Kids	Kids					
+		      1-5	    1-5	2	RO	280	Kids					N	
+		         1-2	       1-2	3		281		279					
+		         2-5	       2-5	3		282		279					
+		      >5	    >5	2		283		279					
+													
+42	Instance	#	Instance #		Ei	284						N	
+													
+43	None	None	None		Z	285						N	A null Property to allow Folios 'Info' and 'NoProps' which are for Bro only BroRefs i.e. no Properties allowed.
+													
+44	Unallocated	Unallocated	Unallocated		Z	999						N	Used by Bro summing if necessary

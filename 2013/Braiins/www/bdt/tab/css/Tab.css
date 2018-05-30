@@ -1,0 +1,63 @@
+/* Braiins/www/bdt/tab/css/Tab.css
+
+Global */
+* {margin:0;padding:0}
+img {border:none}
+body {font:normal 12px Verdana,Arial,sans-serif;color:#000;background:#06c}
+
+p {margin:0 0 .5em}
+h1{font-size:120%;color:#007AA3;margin:0 0 .6em}
+h2{font-size:115%;color:#007AA3;margin:0 0 .5em}
+h3{font-size:110%;color:#777AA3;margin:0 0 .2em}
+h4{font-size:105%;color:#069}
+
+
+a:link    {color: #0000CD}
+a:active  {color: #0000FF}
+a:visited {color: Navy}
+a:hover   {color: #483D8B}
+
+hr {clear:both;border-top:1px solid #ddd;margin:0 0 1.2em;height:0}
+
+/* layout */
+#Page   {background:#fff;border:1px solid #ddd;margin:4px auto;padding:8px 12px 6px;border-radius:8px}
+/*header {padding:6px;border-bottom:2px solid #ededed} */
+footer {margin-top:6px;padding:0.5em 0 0;border-top:2px solid #ededed;text-align:center;font-size:75%;color:#333}
+.break{page-break-before:always}
+
+/* misc */
+ul {margin:0 0 .5em 1.5em;list-style-image:url(../../../img/BlueDot.gif)}
+/* p+ul,h2+ul {margin-top:-0.5em} */
+li {margin:0 0 0.5em}
+
+.clr {clear:both}
+.b  {font-weight:bold}
+.c {text-align:center}
+.r {text-align:right}
+.l {text-align:left}
+.L  {font-size:1.2em}
+.s  {font-size:0.8em}
+.hide{display:none}
+.inline{display:inline}
+.mc{margin-left:auto;margin-right:auto}
+.top {vertical-align:top}
+.mb0 {margin-bottom:0}
+.mb05{margin-bottom:0.5em}
+.f90 {font-size:90% !important}
+.notb{border-top:0 !important}
+.norb{border-right:0 !important}
+.nobb{border-bottom:0 !important}
+
+/* Table likw BDT table.show */
+table {font-size:1em;background:#FDFEFE;border:1px solid silver;border-collapse:collapse;margin:1em auto}
+table td {padding:4px;vertical-align:top;border:1px solid silver;}
+table tr.odd {background: #FBFBFB} /* with even rows #FDFEFE as per the table */
+
+table.itran {background:transparent;border:none;margin:0}
+table.itran td {border:none;padding:1px 4px}
+
+
+/* Buttons */
+.topB {margin:6px auto;width:27px;height:12px;padding-top:14px;font-size:8.5pt;font-weight:bold;color:#333;background-image:url(../../../img/TopBtn.png);background-repeat:no-repeat;background-position:50% 0}
+.topB:hover {background-position:50% -30px;color:#f00}
+button.bGo{margin-top:6px}

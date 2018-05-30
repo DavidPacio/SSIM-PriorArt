@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<title>Local Storage</title>
+<link rel='shortcut icon' href=../favicon.png>
+<link rel=stylesheet type=text/css href=css/Utils.css>
+<script>
+  function Show() {
+    var i,len=localStorage.length,ents=[],s
+    if (len) {
+      for (i=0;i<len;i++)
+        ents.push(localStorage.key(i)+' '+localStorage[localStorage.key(i)])
+      s = ents.sort().join('<br>')
+    }else
+      s = 'Empty'
+    document.getElementById('ls').innerHTML=s
+  }
+  
+  function Clear() {
+    localStorage.clear()
+    Show()
+  }
+</script>
+</head>
+<body>
+<div class=topl><a href=http://admin.braiins.com/utils/>Home</a></div><div class=topr><a href=http://admin.braiins.com/utils/>Home</a></div>
+<h2 class=c>Braiins Local Storage</h2>
+<div class=mc style=width:150px>
+<p>Current Values:</p>
+<p id=ls></p>
+<button onClick=Show() class=on>Refresh</button> <button onClick=Clear() class=on>Clear All</button>
+<div>
+<p class='c mt10'><a href=http://admin.braiins.com/utils/>Home</a></p>
+<script>
+  Show()
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+﻿BroSet Type: In-Main, Name: CoA Test 1 By Includes, Descr: Same as Test 1 via Includes, SortKey: C5
+Include BroSet CoA Revenue
+Include BroSet CoA CoS
+Include BroSet CoA The Rest

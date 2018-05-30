@@ -1,0 +1,18 @@
+﻿SnippetsHtaccess.txt started 18.09.12
+====================
+
+http://www.sitepoint.com/domain-www-or-no-www/
+To www or Not to www — That is the Question
+
+To go from www to naked
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^mydomain\.com [NC]
+RewriteRule ^/?(.*)$ http://mydomain.com/$1 [L,R=301]
+
+
+Verus current naked to www
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^www.davidjohnhartley.com
+RewriteRule (.*) http://www.davidjohnhartley.com/$1 [R=301,L]

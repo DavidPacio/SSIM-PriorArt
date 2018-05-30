@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <title>Closures</title>
+   <!--
+   <script type="text/javascript" src="js/jquery-1.5.min.js"></script>
+   -->
+ </head>
+ <body>
+
+ <script>
+/*
+Whenever you use function inside another function, a closure is used.
+A closure in JavaScript is like keeping a copy of the all the local variables, just as they were when a function exited.
+A new set of local variables is kept every time a function with a closure is called (Given that the function contains a
+function declaration inside it, and a reference to that inside function is either returned or an external reference is
+kept for it in some way).
+*/
+
+// single instance
+/*
+ cf = function(v) {
+   var num = v;
+   // Store some references to functions as global variables
+   gAlertNumber = function() { alert(num); }
+   gIncreaseNumber = function() { num++; }
+   gSetNumber = function(x) { num = x; }
+   return this
+ }
+
+ a = cf(1)
+ a.gAlertNumber() // 1
+ b = cf(2)
+ b.gAlertNumber() // 2
+ a.gAlertNumber() // 2 not 1
+ a.gSetNumber(3)
+ a.gAlertNumber() // 3
+ b.gAlertNumber() // 3
+ b.gSetNumber(4)
+ a.gAlertNumber() // 4
+ b.gAlertNumber() // 4
+
+
+// new instance for each call
+ cf = function(v) {
+   var num = v;
+   // Store some references to functions as global variables
+   return function() { alert(num); }
+ }
+
+ a = cf(1)
+ a()        // 1
+ b = cf(2)
+ b()        // 2
+ a()        // 1 this time i.e. separate closures
+ a(3)
+*/
+
+myObject = function() {
+   var privateVar = 'This variable is private!';
+
+   var privateFunction = function() {
+      alert('this function is Private!');
+   }
+
+   return {
+
+      showPrivateVar : function () {
+         alert(privateVar);
+      },
+
+      changePrivateVar : function(val) {
+         privateVar = val;
+      },
+
+      callPrivateFunc : function() {
+         privateFunction();
+      }
+
+   }
+}(); // called immediately
+
+alert(myObject.showPrivateVar)
+myObject.changePrivateVar(1)
+myObject.showPrivateVar()
+
+myObject.changePrivateVar(2)
+myObject.showPrivateVar()
+
+myObject.callPrivateFunc()
+
+alert('delete myObject =' + (delete myObject)) // true i.e can be deleted if used wo var
+
+
+ </script>
+</body>
+</html>

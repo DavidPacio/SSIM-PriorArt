@@ -1,0 +1,6 @@
+﻿IFA Test
+No DE Check
+Debug:0
+ImportType:Replace
+
+Tx178:ExpenseType.CoS:IFAClasses.DevelopmentCosts	40,140 	40,000

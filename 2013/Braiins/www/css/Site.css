@@ -1,0 +1,188 @@
+/* Global */
+* {margin:0;padding:0}
+img {border:none}
+body {font:normal 11pt Arial,"Helvetica Neue",Helvetica,sans-serif;color:#000;background:#06c}
+
+p {margin:0 0 1em}
+
+h1, h2, h3, h4, label {font-family:Verdana,Tahoma,Arial,Helvetica,Geneva,sans-serif}
+
+h1 {font-size:135%;color:#007AA3;margin:0 0 8pt}
+h2 {font-size:120%;color:#007AA3;margin:0 0 6pt}
+h3 {font-size:110%;color:#db7800;margin:0 0 4pt}
+h4 {font-size:105%;color:#069}
+
+a:link    {color: #0000CD}
+a:active  {color: #0000FF}
+a:visited {color: Navy}
+a:hover   {color: #483D8B}
+
+hr {clear:both;border-top:1px solid #ddd;margin:0 0 1.2em;height:0}
+
+/* layout */
+#Wrapper {width:1000px;margin:10px auto;padding:15px;border:none;background:#ededed;position:relative}
+#Page {background:#fff;border:1px solid #ddd}
+header {padding:6px;border-bottom:2px solid #ededed}
+#HdrWords {position:absolute;font-size:13pt;font-weight:bold;left:266px;top:44px}
+#Bottom {clear:both;padding:4px}
+footer {margin-top:4px;padding:1em 0 0.5em;border-top:4px solid #ededed;text-align:center;font-size:9pt;line-height:1.1em;color:#333}
+
+#Logo {float:left;margin:0 0 4px;height:100px} /* Need the height:100px or height became 103 tho 100 in xhtml */
+#LI  {float:right;font-size:9pt;padding-bottom:0}
+#LIB {float:right;position:relative;top:-2px}
+#LOB {float:right;display:none;margin:20px 12px 0}
+#Menu {clear:both;border-top:1px solid #CCC;padding-top:4px}
+#Main {margin:12px}
+#Cont {float:left}
+#Sidebar{padding-top:50px;padding-right:30px;float:right;position:relative}
+#Sidebar a:hover {color:#f00}
+
+/* Member Info */
+#MI {position:absolute;right:24px;top:90px;text-align:right;font-size:10pt}
+
+/* Menu Son of Suckerfish Dropdown http://htmldog.com/articles/suckerfish/dropdowns/ */
+#Tagline {font-weight:bold;color:#777;margin:0;float:left;padding:3px 0 0}
+
+#Nav li.thisp {background:#CDD122;text-align:center}
+#Nav>li.thisp {padding:0 6px}
+/*
+#Nav li.grey  {padding-left:6px;color:#999;width:75px}
+*/
+#Nav li.grey  {color:#999}
+#main li.grey {color:#999}
+#Nav, #Nav * {margin:0;z-index:9}
+#Nav {float:right;position:relative;margin-top:1px}
+#Nav li {display:block;float:left;color:#414141;font-weight:bold;height:22px;line-height:22px;margin-right:6px;position:relative}
+#Nav li.dad1 {padding-left:8px;width:75px;background:url(../img/MenuDown.png) 99% 50% no-repeat}
+#Nav li.dad1.mem {background-position: 92% 50%}
+#Nav li.dad1.abt {background-position: 65% 50%}
+#Nav a {display:block;float:left;color:#414141;padding:0 6px;text-decoration:none}
+#Nav li li {position:relative;float:none;width:84px;border-top:1px solid #999}
+#Nav li ul {float:none;left:-999em;position:absolute;width:84px}
+#Nav li:hover ul,#Nav li.sfHover ul {left:0;top:22px}
+#Nav li:hover,#Nav li.sfHover,#Nav ul {color:#007AA3;background:#CDD122}
+#Nav li:hover a,#Nav li.sfHover a,#Nav li:hover li:hover a,#Nav li.sfHover li.sfHover a {color:#007AA3;font-weight:bold}
+#Nav li:hover li a,#Nav li.sfHover li a,#Nav li:hover li:hover li a,#Nav li.sfHover li.sfHover li a {color:#414141;font-weight:normal}
+#Nav a:active {background:#fff}
+
+/* misc */
+ul {margin:0 0 1em 20px;list-style-image:url(../img/BlueDot.gif)}
+li {margin:0 0 0.5em}
+p + ul {margin-top: -0.5em}
+ul li, ul li ul, li p {margin-bottom:0.5em}
+
+.b {font-weight:bold}
+.bb{font-weight:bold;color:#069}
+.c {text-align:center}
+.n {font-weight:normal}
+.i {font-style:italic}
+.s {font-size:smaller}
+.L {font-size:127%}
+.f9 {font-size:9pt}
+.f10{font-size:10pt}
+.f11{font-size:11pt}
+.f13{font-size:13pt}
+.fl {float:left}
+.fr {float:right}
+.hide{display:none}
+.inline{display:inline !important}
+.clr{clear:both}
+.mc{margin-left:auto;margin-right:auto}
+.left{text-align:left}
+.right{text-align:right}
+.top {vertical-align:top}
+.m08 {margin:.8em}
+.p08 {padding:.8em}
+.mb0 {margin-bottom:0}
+.mb05{margin-bottom:0.5em}
+.mb10{margin-bottom:1em}
+.mt07{margin-top:.7em}
+.mt10{margin-top:1em}
+.pt0 {padding-top:0}
+.pt05{padding-top:.5em}
+.pt10{padding-top:1em}
+.grey4{color:#444}
+.grey7{color:#777}
+.w80{width:80%}
+.w90{width:90%}
+
+.lilBox{font-size:9pt;border:1px solid #666;background:#eee;padding:8px;border-radius:8px}
+
+.TNail:hover {border-color:#00f;cursor:help}
+.picr{float:right;text-align:center}
+
+.imgl{margin:4px 8px 4px 0;padding:1px;border:1px solid #ccc}
+.il  {margin:4px 8px 4px 0;border:1px solid #ccc}
+.ilnb{margin:4px 12px 4px 0}
+.imgr{margin:4px 0 4px 8px;padding:1px;border:1px solid #ccc}
+.ir  {margin:4px 0 4px 8px;border:1px solid #ccc}
+.irnb{margin:4px 0 4px 12px}
+.img {border:1px solid #ccc;padding:1px;margin:4px}
+.inb {margin:6px}
+
+.brd {border:1px solid #CCC}
+.vid {border:1px solid #CCC;height:411px;width:502px;margin:0 auto}
+.vidi{border:2px solid #066;position:absolute;left:115px;top:13px;width:535px;height:460px;display:none;padding:0;z-index:10}
+.box {border:2px solid #CCC;padding:8px}
+.nojc{font-weight:bold;margin:12px auto;padding:12px;text-align:center;width:700px;font-size:larger;background-color:#FFDE9F;color:#415f9b}
+.nojch{font-size:110%;color:#db7800}
+
+/* Button */
+button {height:30px;cursor:pointer;border:none;background:none;color:#555;font-size:14px;font-weight:bold}
+button span {padding:2px 0 11px 15px;background:url(../img/Button.png) no-repeat -20px -4px}
+button span+span {padding-left:0;background:url(../img/Button.png) repeat-x 0 -40px}
+button span+span+span {padding-left:15px;background:url(../img/Button.png) no-repeat 0 -4px}
+button:hover {color:#00F}
+button:disabled{cursor:default}
+button:disabled:hover {color:#555}
+button:disabled span{background-position:-20px -78px}
+button:disabled span+span{background-position:0 -114px}
+button:disabled span+span+span{background-position:0 -78px}
+
+/* Top Button */
+.topB {margin:0 auto;width:70px;height:12px;padding-top:14px;font-size:8.5pt;font-weight:bold;color:#333;background-image:url(../img/TopBtn.png);background-repeat:no-repeat;background-position:50% 0}
+.topB:hover {background-position:50% -30px;color:#f00}
+#L {display:none;padding-left:24px;width:24px;height:24px;background:#ffffea url(../img/Busy.gif) no-repeat center}
+
+/* Little Local Button */
+button.bLoc {height:21px;padding:0 0.5em 2px;background: #e7f7ff;border: 1px solid #7F9DFF;border-radius:6px;font-size:12px}
+button.bLoc:hover{color:#00f;box-shadow:0 0 0 1px #7FBBFF inset;background:#e0ffff}
+
+/* tables and inputs */
+/*input, .si {font:normal 0.9em verdana,arial,sans-serif;color:#000;background:#f0ffff;border:1px solid #7F9DFF;padding:0 2px 1px 2px} */
+.inf {background:#ffffdf !important}
+input,.in {font:normal 1em verdana,arial,sans-serif;color:#000;background:#f5ffff;border:1px solid #7F9DFF;padding:0 2px 1px;margin-top:1px;outline-color:#7F9DFF;line-height:16px}
+input[type=text],input[type=email] {outline:none} /* To turn off Chrome's outline on these inputs, but need to allow it on selects, CBs, RBs as box-shadow doesn't work, but need to change their colour as above*/
+span[title] {padding:2px} /* so that mouse in/out works for tips re included disabled inputs/btns */
+input:invalid {border:1px solid #db7800;box-shadow:none} /* box-shadow to kill FF's big red bs */
+input:focus,span.childHasFocus {box-shadow:0 0 3px #7F9DFF}
+input:focus:invalid{box-shadow:0 0 3px #db7800}
+
+/*
+.vLabel {display:block;font-size:10pt;margin:10px 0 2px 0}
+.hLabel {font-size:10pt}
+*/
+
+form table {font-size:1em;background:#ffe;border:2px solid #066;border-collapse:collapse}
+table.inner {background:#fafafa;border:2px solid #00c}
+table.itran {background:transparent;border:none}
+form td     {padding:4px;vertical-align:top}
+form td.mid {vertical-align:middle}
+form td.clp0{border:1px solid #00c;text-align:left;padding:0}
+form td.cc  {border:1px solid #00c;text-align:center}
+form td.ccb {font-weight:bold;border:1px solid #00c;text-align:center}
+form td.cl  {border:1px solid #00c;text-align:left}
+form td.clb {font-weight:bold;border:1px solid #00c;text-align:left}
+form td.cr  {border:1px solid #00c;text-align:right}
+form td.crb {font-weight:bold;border:1px solid #00c;text-align:right}
+form td.crpr8{font-size:0.8em;color:#000;border:1px solid #00c;text-align:right;padding-right:8px}
+form td.crbpr8{font-weight:bold;border:1px solid #00c;text-align:right;padding-right:8px}
+form td.crbprF{font-weight:bold;border:1px solid #00c;text-align:right;padding-right:16px}
+
+/* Table alternate row colours */
+.bg0 {background:#f0ffff}
+.bg1 {background:#ffffea}
+.bgw {background:#fff}
+
+.f75{font-size:75%}
+.f90{font-size:90%}

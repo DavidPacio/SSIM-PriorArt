@@ -1,0 +1,5 @@
+Charles Follow Up started 28.04.12
+-----------------
+
+
+          1. U values in /Com/inc/Constants.inc.$DimGroupsA

@@ -1,0 +1,17 @@
+<?php
+$ZonesA=[0,
+['Cover',0],
+['Contents',0],
+['Info',0],
+['DirRep',0],
+['PL',2],
+['BS',1]
+];
+$ZoneRefsA=[
+'Cover'=>1,
+'Contents'=>2,
+'Info'=>3,
+'DirRep'=>4,
+'PL'=>5,
+'BS'=>6
+];

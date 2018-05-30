@@ -1,0 +1,1223 @@
+Report Generator (RG) Language
+==============================
+
+Basic Conventions
+=================
+Formats are text files with extensions of .b with 'p' appended for the primary or control format e.g. LtdFullGAAP.bp
+
+If the format contains any non-ascii characters e.g. £ ¥ € ® ™ © or curly quotes the file should be utf-8 encoded.
+Some editors e.g. NotePad++ give options for specifically defining a text file as being utf-8 encoded with a BOM
+(Byte Order Mark) at the start of the file, or not, leaving the utf-8 encoding to be deduced at file opening time
+if a utf-8 character is found anywhere in the file. Either should be OK, but if ever there should be a problem with
+non-ascii characters in a 'without BOM' file, try converting the file to utf-8 specifically i.e. with BOM.
+
+The format file extensions are just for convention, and to facilitate formatting within an editor e.g. NotePad++.
+The compiler does not make any use of the extension.
+
+Format names must NOT include spaces.
+
+The directory structure is:
+ Admin root /Formats/Corp for corporate formats
+ Admin root /Formats/Unincorp for unicorporated formats
+ Admin root /Formats/Shared for shared or common or library formats
+
+The RG compiler searches in these three directories for a given format.
+Only if a format is in a subdirectory of any of these directories is directory information needed in its name,
+e.g.
+#include genFuncs.b      would find the format Admin/Formats/Shared/genFuncs.b
+#include farmers/notes.b would find the format Admin/Formats/Unincorp/farmers/notes.b
+
+Formats are processed on a line by line basis.
+
+Compiler command lines start with # as the first non white space character. The command can be followed by a comment after at least one space.
+
+Lines which start with // are ignored. (Comment characters are not really needed as described below but recognising // at the start of a line to skip the line has been included to allow real statement lines with []s in them to be commented out without editing them.)
+
+Language statements are enclosed within []s. A format line can include multiple statements.
+
+Anything else is ignored, so white space, blank lines, and comments can be used anywhere, with no need for comment characters.
+
+Text within a statement for output by the statement as a part or the whole of a string expression, should be quoted using either single or double quotes.
+Use single quotes unless the text contains single quote (apostrophe) characters, in which case double quotes should be used.
+The type of quotes used at the start and end of the text segment must match.
+
+White space within statements is ignored, unless enclosded within quotes.
+
+Tab characters should not be used i.e. spaces should be used for indenting.
+
+Multiple lines in a format may be extended to form a single processing "line" via an "&" character at the end of
+lines before the last one.
+
+All compiler commands and statements are lower case only.
+
+RG Constructs
+=============
+The Report Genarator works with:
+  compiler commands as defined in the Compiler Commands section below
+  language statements as defined in the Language Statements section below
+  headers   via the language [header] statement
+  footers   via the language [footer] statement
+X xrefs     via the language [xref] statement
+H headings  defined via the BDT headings module
+  constants defined within formats via a compiler command
+  PHP constants such as those defined in ConstantsRg.inc
+  BROs (Braiins Report Objects)
+  Cells (Cells within tables of a report, once generated, may be referenced and used in subsequent expressions.)
+|- F, P, X = required final letter of name
+|- * = required final letter of name according to variable type as per Data Types below
+
+Plus possibly though not implemented as of 12.09.11:
+F functions via the language [function] statement
+P para      via the language [para ...] statement
+  variables defined within formats in addition to the predfined ones
+  arrays    defined within formats
+  PHP variables
+
+Years
+=====
+Braiins works with up to 4 years of data, using years named 0, 1, 2, 3 where 0 is the current i.e. 'this' year,
+1 means this -1 or last year, -2 the year 2 back, and 3 the year 3 back.
+Thus if this year is 2011 then
+year 0 = 2011
+     1 = 2010
+     2 = 2009
+     3 = 2008
+
+The year # of 0 to 3 is used when referencing Bro balances and in defining/referencing table columns or cells.
+
+The default if no year is specified is year 0.
+
+Braiins Report Objects (BROs)
+=============================
+BROs are the means by which entity data is accessed and tagging is performed.
+See Braiins Utils for BRO details.
+
+When a BRO that is taxonomy based is used in a format the appropriate iXBRL tag and context is generated automatically.
+
+Bros are used via a Bro Reference.
+
+Bro Reference (BroRef) in Source Form as used in Formats or Data Import
+-----------------------------------------------------------------------
+BroName{,DimRef...}{,<end|start>}{,T.#}
+where
+- BroName is a full Bro name including dots
+
+- DimRef is a dimension reference as per the Dimensions Map "Dimension{.Dimension Member} Reference" column
+  which is DimensionShortName{.DimensionMemberShortName}  with the ".DimensionMemberShortName" optional for the default.
+
+  The DimensionShortName part can be omitted if there is a ".DimensionMemberShortName" section and if the Bro is a member
+  of a Set and any Set level name (in left to right order) matches a DimensionShortName e.g.
+  SchInputEntity.Officers.Properties:.Director1:.Chairman
+  rather than
+  SchInputEntity.Officers.Properties:Officers.Director1:Officers.Chairman
+
+  There can be any number of comma separated DimRefs in any order.
+
+  Dimension references are converted to DiMeIds for DB storage and processing.
+
+  Validity checks are applied to DimRef uses e.g. versus the Bro's allowable dimensions, potentially as modified for global options, etc.
+
+  Mux checks also apply.
+
+- <,end|start>
+  :end or :start can optionally be used to specify end or start (closing or opening) period for StartEnd Bros, and only for such Bros.
+  The default is end.
+
+- :T.#
+  is a tuple reference where
+  # is an instance number in the range of 1 to 7998 to refer to a specific tuple instance, or 'all'.
+    The same instance number should be used in different years.
+    The same instance number should be used for related items making up a tuple set,
+    that is, for different TuMeIds of one TupId e.g. TuMeId 475 charitable donation description and 476 charitable donation amount for TupId 151 Specific charitable donation.
+    Such tuple sets are used when checking that mandatory tuple members have been supplied.
+
+  In a format, ‘T.all’ means loop through all tuple instances that are defined for the rest of the Bro reference.
+
+  In a format, a Bro Reference for a Tuple Bro without any {,T.#} reference can be used with a Money Summing Bro to mean the sum of the tuple instances.
+  For any other Tuple Bro type this is rejected as an error.
+
+BRO Year
+--------
+A BRO reference may be preceded by y:# e.g. y:1 to specify the year. There must be a space between the the y:# and the BRO name.
+The year will remain set for subsequent BRO references in an expression unless reset by another y:#.
+
+BRO Description
+---------------
+A BRO reference consisting of just the BRO name may be preceded by descr to specify the BRO Description, as potentially varied
+by the Agent or Entity.
+
+BRO Loops
+---------
+BROs may be used in formats to specify repeating or looping information by means of an '@' code.
+
+For example:
+
+SchInputEntity.Officers.Name@Directors
+ means the Name for all directors. (The @Directors tells the RG that it should loop for all Directors.)
+
+RegisteredOffice@Address
+ means the address lines for the Registered Office i.e. RegisteredOffice.AddressLine1 to RegisteredOffice.PostCode
+
+TPAs:TPAType.Accountants@Address
+ means the address lines for the Accountants, or Auditors if Accountants is mapped to Auditors as below.
+
+A test can be included in the loop instruction by appending a second '@' and the level name (same set) of a boolean BRO e.g:
+SchInputEntity.Officers.Name@Directors@DirectorSigningAccounts
+ means the Name for all directors for whom DirectorSigningAccounts is true.
+
+BRO Loops may be included as the expr part of [p or [col statements.
+
+For a [p statment the repetition is down the page.
+For a [col statement the default repeition is down the page, in the same column of the table as the loop starts.
+This can be changed to looping across the page by means of the optional "hor" attribute of the [col statement.
+
+The RG takes care of repeating css, and creating emtpy/span <td> elements as required in the [col case.
+
+Automatic Mapping of CompanySecretary to Company Secretary Director
+===================================================================
+If a Director has the property dimension CoSecDirector set, references to the BRO Officers.CoSec are automatically mapped to that director.
+
+Formats should just use Officers.CoSec for any company secretary references, and not attempt to test for CoSecDirector being set.
+
+Automatic Mapping of Accountant to Auditor
+==========================================
+If the BROs SchInputEntity.OfficialOperationalStatus.Audited and SchInputEntity.ThirdPartyAgents.AccountantsAndAuditors are set, references to the BRO SchInputEntity.ThirdPartyAgents.Accountants are automatically mapped to SchInputEntity.ThirdPartyAgents.Auditors.
+
+Formats should use SchInputEntity.ThirdPartyAgents.Accountants wherever Accountants or Auditors may be applicable e.g. on the Cover or Info pages.
+SchInputEntity.ThirdPartyAgents.Auditors may be used in a specific Auditors report.
+
+Data Types
+==========
+BROs use 10 data types as below. This is a sub set of those used by the Taxonomy.
+For format purposes the 10 data types are reduced further to 6:
+ DT_String    1  S String. All types > DT_String are numerical
+ DT_Integer   2  I Integer number
+ DT_Money     3  M Money number processed internally as an integer assuming whole pounds with rounding performed by the exporting system
+ DT_Decimal   4  E Decimal or floating point number for percentages, ratios, or other calculated values with possible decimal fractions
+ DT_Date      5  D Date
+ DT_Boolean   6  B Boolean value 1 or 0 i.e. True or False, Yes or No. (Actually anything other than 0 means True/Yes.)
+ DT_Enum      7    -> I for RG purposes
+ DT_Share     8    -> I
+ DT_PerShare  9    -> E
+ DT_PerCent  10    -> E
+                 |- required final letter of variable or array name of the given type
+
+Predefined Language Constants
+=============================
+These apply at compilation time.
+
+Name    Default Value    May be set to
+----    -------------    -------------
+ETypeC  ET_PrivateLtdCo  ET_Sole | ET_Partnership | ET_LLP | ET_Charity | ET_PrivateLtdCo | ET_PrivateUnltdCo | ET_PrivateLtdGuarCo | ET_CommInterestCo | ET_PLC | ET_Other
+                         or an integer or a constant with a value in the range 1 to 10
+CoSizeC 0                ES_Small | ES_SmallFRSSE | ES_Medium | ES_Large | ES_IFRS_SME
+                         or an integer or a constant with a value in the range 1 to 5
+
+ETypeC affects dimension member use checking for those dimension members that apply only to certain entity types. See the Dimensions Map for details.
+CoSizeC may only be set to ES_SmallFRSSE if ETypeC is set to ET_PrivateLtdCo.
+If CoSizeC is set to ES_Small or ES_SmallFRSSE, use of dimensions in the Dimension Groups excluded for Small Companies throws an error.
+
+Prefined PHP Constants
+======================
+All the PHP constants defined in
+ /Com/inc/Constants.inc
+ /Com/inc/ConstantsRg.inc
+are available, and specifically:
+ ET_Sole, ET_Partnership, ET_LLP, ET_Charity, ET_PrivateLtdCo, ET_PrivateUnltdCo, ET_PrivateLtdGuarCo, ET_CommInterestCo, ET_PLC, ET_Other
+ ES_Small, ES_SmallFRSSE, ES_Medium, ES_Large, ES_IFRS_SME
+
+Predefined Variables
+====================
+These variables may be used in a format. They are defined at run time using the data for the entity that the format is being run for.
+
+Name                         Comments
+----                         --------
+IncorporationCountryS        Bro SchInputEntity.LegalForm.CountryFormationOrIncorporation value in string form. The Bro should NOT be used directly in a format,
+                             as the Taxonomy type is fixed, not string. The tag is added to the hidden section without any data.
+DirectorsS                   'Director'   or 'Directors' if directors at report date > 1
+DirectorsApostropheS         "Directors'" or "Director's" using a right single quote (&rsquo;) for the apostrophe
+DraftS                       For a Statutory Format, DraftS is set to:
+                              'Draft ' if the entity DataState has errors or warnings, or
+                                        running the format results in run time errors, or
+                                        there are no data or run time errors, but the entity has not yet been set to Final.
+                                        The 'Accts State' of the Entities List report and second line of the browser tab on viewing the
+                                        accounts show as 'Draft' for the first two cases above and 'Final Candidate' for the third.
+                              ''       if the entity has been set to Final, and the DataState is OK, and there are no run time erros.
+                             For a non Statutory format DraftS is always '' i.e. it results in no output.
+FullAccountsS                AccountsFullUnauditedH or AccountsFullAuditedH as per BRO Audited
+CoSecStatusS                 'Company Secretary' or 'Director'
+ETypeI                       ET_Sole | ET_Partnership | ET_LLP | ET_Charity | ET_PrivateLtdCo | ET_PrivateUnltdCo | ET_PrivateLtdGuarCo | ET_CommInterestCo | ET_PLC | ET_Other
+CoSizeI                      ES_Small | ES_SmallFRSSE | ES_Medium | ES_Large | ES_IFRS_SME
+NumDirectorsI                Number of directors
+NumDirectorsSigningAccountsI Number of directors signing accounts
+CoSecDirectorI               Set to the number of the (last) director for with DiMeId_CoSecDirector set
+AccountantsAndAuditorsSameB  Set from ThirdPartyAgents.Auditors.AccountantsAndAuditors
+
+Expressions
+===========
+The RG supports 2 types of expressions:
+integer - involving just integer numbers, typically as statement attribute values
+general - potentially involving operands of any data type. The type of the result is automaticaly converted
+          if necessary according to where the expression is used.
+          Sometimes for expressions involving both strings and numbers it may be necessary to use "" (or " ")
+          to tell the compiler that a string is required.
+
+There are also some differences in handling tags and types within expressions depending on where they are used.
+
+Operators
+=========
+As per PHP. See http://php.net/manual/en/language.operators.php
+
+A sub set of them as most likely to be used in formats are:
+
+Unary Arithmetic Operators
+--------------------------
+ -       Negation or unary minus
+ ++      Increment (pre and post)  e.g. [counterI++] or [++counterI] are equivalent to [counterI += 1] or [counterI = counterI + 1]
+ --      Decrement (pre and post)  pre and post define when the increment/decrement is done versus possible other use of the value in an expression.
+                                   There is no difference in simple expressions like [counterI++] or [++counterI]
+Binary Arithmetic Operators
+---------------------------
+ + - / * Normal arithmetic
+ %       Modulus (division remainder) i.e. 5%2 gives 1
+
+Assignment Operators
+--------------------
+=        Does NOT mean 'equals' or 'is equal to'. Means is assigned to e.g. [counterI = 1] or [msgS = "Start of a message"]
++=       Add to and assign    e.g. [counterI += 2] is a shorter way of writing [counterI = counterI + 2]
+-=       Subtract and assign
+
+String Operators
+----------------
+The php . string concatenation operator is not used.
+Instead string operands which follow one another on a format line are automatically concatenated.
+()s can be used for clarity if desired but they serve no processing function.
+
+The only specific string operator is the php:
+.=       Concatenate and assign e.g. [msgS .= " more added to the message"] ia same as [msgS = msgS " more added to the message"]
+
+Comparison Operators
+--------------------
+==       Equals or is equal to with loose  definition of equals as to type e.g. "2" == 2 will give true
+===      Equals or is equal to with strict definition of equals as to type e.g. "2" === 2 will give false
+!= <>    Not equals with loose  definition of not equals as to type e.g. 0 != false will give false
+!==      Not equals with strict definition of not equals as to type e.g. 0 !== false will give true,
+         most commonly used to test some php function return values where 0 is a valid result but false means no or invalid
+>        Greater than
+<        Less than
+>=       Greater than or equal
+<=       Less than or equal
+
+Logical Operators
+-----------------
+&&       and, same as 'and' with higher precedence  e.g. [if CoSizeI == ES_Small && NumDirectorsI == 1]
+||       or,  same as 'or'  with higher precedence       [if CoSizeI == ES_Small || NumDirectorsI == 1]
+!        not                                             [if !AccountantsAndAuditorsSameB] (Same as [if AccountantsAndAuditorsSameB == 0])
+and      same as '&&'  with lower precedence             [if CoSizeI == ES_Small and NumDirectorsI == 1]
+or       same as '||'  with lower precedence             [if CoSizeI == ES_Small or  NumDirectorsI == 1]
+
+Operator Precedence
+===================
+As per PHP: http://www.php.net/manual/en/language.operators.precedence.php
+
+Associativity   Operators     Additional Information
+left            [             array()
+non-associative ++ --         increment/decrement
+right           -
+right           !             logical
+left            * / %         arithmetic
+left            + - .         arithmetic and string
+non-associative < <= > >= <>  comparison
+non-associative == != === !== comparison
+left            &&            logical
+left            ||            logical
+right           = += -=       assignment
+left            and           logical
+left            or            logical
+
+optionally varied by ()'s.
+[if CoSizeI == ES_Small && NumDirectorsI == 1]
+could be written as
+[if (CoSizeI == ES_Small) && (NumDirectorsI == 1)]
+but the brackets are not necessary as == has higher precedence than && and so the comparisons are done before the logical && operation anyway.
+
+Note: Courtesy of PHP, evaluation of expressions like this ends as soon as a state is reached which makes the result unambiguous.
+In this case if CoSizeI is not equal to ES_Small then the (NumDirectorsI == 1) part of the expression is not evaluated
+as the whole expression can never be true. The implications of this are:
+- where the logic would allow either || or && tests, use the && form for greater speed
+- in complex expressions of this type put the test most likely to fail up front, again for greater speed
+- do not count on side effects happening (e.g. via a function call) in parts of an expression like this
+  where the part of the expression may not get evaluated
+
+Tables
+======
+Formats generate account schedules using html tables, using <html, <tr, and <td tags.
+
+Tables may also be used for calculation/storage/"variable" like uses. See Table Cell reference below.
+Tables being used this way may be part of the report, or they may be hidden from view to be used purely for this purpose.
+
+The language statements used to create table are table, row, col, and end.
+
+Table rows correspond to single format lines, unless a looping construct is used to generate multiple rows from one format line.
+
+A table statement may optionally define the type of the columns in the table, chosen from:
+ t title or text column
+ n note column
+ 0 year 0 money column
+ 1 year 1 money column
+ 2 year 2 money column
+ 3 year 3 money column
+ c calculated column formatted like a money column
+ p percentage column
+
+If no column types are defined for a table, all columns used default to type t or text.
+Text columns default to being left justified with 0.5 em right padding.
+The default for all other column types is right justified.
+Note columns default to bold with 0.5 em right padding.
+Money columns default to no padding and actually use two html columns i.e. two <td tags,
+with the second tag being used for just the right brackets, if any.
+
+Text may be output to n, 0-3, c, and p type columns, as well as to t columns, usually as headings.
+
+Tables may contain up to 29 columns.
+(29 is likely to be ample for any table being output in a report, but more than 29 might possibly be desired for a
+table being used for calulation purposes. If so, the 29 limit could easily be increased as it is just an arbitrary limit.)
+
+The row statement is optional and is usually not needed for text table such as the company information table.
+For money tables such as the P&L however, the row statement is powerful and can specify a complete table row, for all columns.
+
+Col is used to specify content for a specific column on a row, thereby forming a cell.
+The RG can often generate the equivalent of col statements automatically using information from the row statement.
+For example [row b:Pl.CoS] could define a complete table row for all columns based on a Bro named PL.CoS.
+A combination of col statements and automatic columns from the row statement information can be used
+i.e. with col used only for cells that are different from what the row statement would generate.
+
+The contents of a table cell, once generated, may be referenced (used) in a format by means of a cell reference in an expression,
+as described below. This allows cross column or vertical row arithmetic to be performed. It also permits tables to be used for
+storage, calculation, or variable like purposes within a format. To facilitate this potential "variable" use, a table may be
+completely hidden so that it does not appear in the final report.
+
+Table Cell References
+---------------------
+The contents of a table cell, once generated, may be referenced (used) in a format by means of a cell reference in an expression.
+This allows cross column or vertical row arithmetic to be performed. It also permits tables to be used for storage, calculation,
+or variable like purposes within a format. To facilitate this potential "variable" use, a table may be completely hidden so that
+it does not appear in the final report.
+
+Accessible cells are those to the left of the current position on the current row in a table, or any cell in any previous row
+which has been given a name in a row statement, other than note column cells. (Note column cells usually contain xrefs, and
+xrefs may be used directly if required.)
+
+Note: It would be possible to provide access to any cell on the current row of a table i.e. to the right as well as the left
+of the current cell if that cell is defined by some means other than a cell reference. Let David know if you want this.
+
+The syntax of a cell reference is:
+<RowName|this>:<t{#}|d{#}|<y0{#}-y3{#}>|c{#}|p{#}>{:colSum}
+
+where:
+RowName is the name of a table row. It can be any previous row in the report. RowNames must be unique in the report, not just within
+        a single table. Suggested practice to avoid confusion with Bro names is to use names starting with R.
+        e.g. R.PL.Turnover for the P&L Turnover row.
+this    means the current row of a table. It does not need to be a named row. The 'this' form of cell reference can only be used
+        in expressions in a col statement of a table. (The RowName form of cell reference can be used in p or h statement expressions
+        that are not part of a table.)
+<t{#}|d{#}|<y0{#}-y3{#}>|c{#}|p{#}> defines the cell (column) within the row, using the non-numeric form of column references used
+        in col and row statement cols lists.
+{:colSum} is an optional attribute meaning the column sum i.,e. the running sum of the column, rather than the individual cell balance.
+        :colSum can only be used with cells in money or calculated table columns.
+
+The numeric (1-29) form of column number is not allowed in cell references, which potentially cross tables, to avoid the risk
+of potentially hard to find format bugs caused by the column layout of a table being changed.
+
+Examples:
+  R.PL.Turnover:d                to access the description of the R.PL.Turnover row
+  R.PL.Turnover:y0               to access the year 0 balance of the R.PL.Turnover row
+  R.PL.Turnover:y02              to access the second year 0 column balance of the R.PL.Turnover row
+  this:y0:colSum-this:y1:colsum  to calculate the variance between the running sums of the year 0 and year 1 columns of the current row
+  this:y0/PL.ExpensesTotal*100   to calcuate the current row's year 0 balance as a percentage of total expenses in a Bro named PL.ExpensesTotal
+                                 A cell reference could also be used instead of a Bro.
+
+Evaluation Order:
+The order in which expressions are evaluated when a report is being produced is:
+- col (cell) balances that do not involve cell references
+- col (cell) balances involving cell references to previous named rows in the report
+- subtotals or totals
+- col (cell) balances involving cell references to the current row in left to right order
+
+Table Balance Sign Handling
+===========================
+This section applies to defined, non zero balances in tables. For zero or undefined balances see 'Zero and Undefined Balances' below.
+
+Many factors are involved in balance sign handling:
+- balSign  = the absolute sign of the balance itself i.e. whether debit or credit.
+
+- cellSign = optional sign specifically set for a table cell, either for the cell itself via a col statement, or for the row via a row statement.
+             cellSign should not normally need to be set, with zoneSign and broSign covering most cases.
+
+- zoneSign = the optional current zone sign
+
+- broSign  = the optional sign from the Bro if the balance comes from a Bro. If the Bro is taxonomy based, this will usually be the
+             taxonomy sign, though that can be edited for the Bro, especially in cases where the taxonomy sign is not set, or is wrong.
+             If broSign is not defined, the fall back is to use the cellSign. If cellSign is not defined the further fallback is to the balSign.
+             If a tag is to be generated, and a fall back all the way to balSign took place, a run time warning message is generated.
+
+Bracketting Sign
+----------------
+The bracketting sign, which is used to decide whether a balance is to shown with or without brackets, is derived as follows:
+- Bro balance cases:
+  Bracketting sign = cellSign with fall back to zoneSign with fall back to broSign, which itself could have involved a fall back to balSign as above.
+
+- Not a Bro derived balance i.e. a balance from an expression:
+  Bracketting sign = cellSign with fall back to zoneSign with fall back to balSign
+
+If balSign is opposite to the bracketting sign, the balance is shown with brackets.
+
+XBRL Sign
+---------
+If a tag is to be generated, the attribute sign='-' is added to the <ix:nonFraction tag for the balance if balSign is not equal to broSign.
+
+The balance itself is always included within the <ix:nonFraction tag as a positive number. Any brackets from the bracketing sign above appear
+outside the <ix:nonFraction tag.
+
+Table Zero and Undefined Balances
+=================================
+Braiins maintains a distinction between actual or real zeros, and undefined balances, which arithmetically act like zero.
+
+Real Zero         = a balance that was posted as 0, or a sum of defined balances which add to zero.
+Undefined Balance = a balance that was not posted, or a sum of undefined balances.
+                    (Summing undefined balances does not result in a real zero. The sum is also an undefined balance.)
+
+Maintaining this distiction allows the RG to:
+- format real zero and undefined 'zeros' differently.
+  The defaults are an html en dash for a real zero, and '' i.e. nothing, for an undefined 'zero'.
+  These daults may be changed by an Agent via Preferences.
+  [If ever required, RG language formatting options could get added to override the defaults.]
+
+- tag real zeros (if taxonomy Bro based) but not undefined 'zeros'.
+  For a real zero tag, '-' and the format='ixt:zerodash' transformation attribute in the <ix:nonFraction tag is used.
+  If the visible output is not '-' i.e. is the default en dash, the <ix:nonFraction tag is hidden in a span with the visible
+  representation of the real zero outside that.
+
+- suppress (remove) whole columns of a table if nothing apart from headings and undefined 'zeros' was deposited to the column.
+
+Sign Handling for Balances Not In Tables
+========================================
+Defined non zero balances not in tables e.g. for a balance included in p statement text, are always shown as positive numbers without brackets.
+
+(It may prove to be necessary to make this more sophisticated.)
+
+Real zero and undefined balances not in tables are formatted as described above for Table Zero and Undefined Balances.
+
+Table Alternative Title Text Processing
+=======================================
+All table rows with money columns in them are checked for possible title text content like "Profit/(Loss)" and if found the text
+is adjusted according to the sign of the balances in the row, or in another row if specified by a row statement alt: attribute.
+
+Alternative text processing is performed when a bracketted word is found in the text that occurs in the left hand column of the
+list below, and a word in the right hand column of the list below (or any of the words at the right in the case of a comma
+separated list) of the line for the bracketted word occurs in the text close proximity to the bracketted word, either left or
+right of it, where 'close' = with a separation of 3 or fewer characters e.g. allowing for '/' or ' / ' between the words,
+or some other separator.
+
+ asset        liability
+ assets       liabilities
+ back         off
+ charge       income, relief
+ credit       charge, expense
+ credited     charged
+ debts        funds
+ decrease     increase
+ deficit      surplus
+ expense      income
+ from         to
+ funds        debts, debt
+ gain         loss
+ gains        charges, costs, losses
+ higher       lower
+ income       charges, expense
+ increase     decrease, reduction
+ lapsed'      granted
+ liabilities  assets
+ liability    asset
+ loss         profit, gain, earnings, impairment
+ losses       gains
+ lost         resurrected
+ lower        higher
+ outflow      flow
+ outflows     flows
+ outgoings    proceeds
+ overdrafts   cash
+ payable      receivable
+ payments     earnings  receipts
+ prepaid      outstanding
+ pre-paid     outstanding
+ purchase     sale
+ receipt      payment
+ receipts     payments
+ receivable   payable
+ recoverable  payable
+ release      charge
+ relief       tax
+ reversal     impairment, loss
+ surplus      deficit, obligations
+ to           from
+
+When a match is found, the text of the word pair is reassembled, with case and word separation character(s) preserved, according
+to the bracketting signs (as per 'Table Balance Sign Handling - Bracketting Sign' above), for the first balance of for each of
+this and last year in the row on which the decision is to be based (the current row or the row specified by a row alt: attribute),
+as follows:
+
+Case                                  Text Reassembled as                             Example for Profit/(Loss) or (Loss)/Profit
+both year balances not braketted:     other word                                      Profit
+both year balances braketted:         bracketted word without brackets                Loss
+this bracketted, last not:            (bracketted word) separator char(s) other word  (Loss)/Profit
+this not bracketted, last bracketted: other word  separator char(s) (bracketted word) Profit/(Loss)
+
+An example of basing the alternative text processing decisions on an alt: row is a tax row with the title
+'Tax on profit/(loss) on ordinary activities' where the alternative text processing of 'profit/loss' should
+be based not on the tax row balances, but on the profit row balances.
+
+A format example for this is:
+[row subtotal aul cols:y0,y1 n:R.PL.OrdinaryActivities][col 'Profit/(Loss) on ordinary activities before taxation']
+[row b:PL.Expenses.Tax alt:R.PL.OrdinaryActivities][col 'Tax on profit/(loss) on ordinary activities']
+or just
+[row b:PL.Totals.OrdinaryActivities n:R.PL.OrdinaryActivities]
+[row b:PL.Expenses.Tax alt:R.PL.OrdinaryActivities]
+if the Bros held the required descriptions for the text column, and the required total in the case of the Bro PL.Totals.OrdinaryActivities.
+
+Subtotal and Total Handling
+===========================
+The RG incorporates intelligent subtotal and total processing to suppress or hide repeated subtotals, and to move balances
+between columns in a multi column layout if only one balance has been kept in a column before the subtotal/total.
+
+Moving Balances
+---------------
+If a subtotal or total involves from -> to columns e.g.
+[row subtotal cols:y0->2,y1->2 aul]
+and only one balance has been kept in the 'from' column since the start of the table or any previous subtotal/total,
+the balance in the from column is moved to the to column, and the subtotal performed in the to column.
+
+If when the end of the table is reached the RG finds that no balances have been kept in the from column, the whole column is removed.
+
+Discarding or Hiding Repeated Subtotals
+---------------------------------------
+When a same column subtotal is performed, and the row is not a 'keep|keepHide' row, the RG checks to see if the previous visible output
+in the report was also a subtotal, whether a same column subtotal, or a from to column subtotal, and if so, checks to see if the
+(to column) balances are the same.
+
+If they are, then
+- if the previous visible subtotal had a title, the current subtotal is discarded if it does not involve any tags, or it is kept and
+  hidden if it does involve tags. (Whether the current subtotal row has a title or not makes no difference.)
+
+- if the previous visible subtotal did not have a title, but the current one does, the current subtotal is kept and made visible,
+  while the previous subtotal is discarded if it did not involve any tags, or it is kept and hidden if it did involve tags.
+
+This
+This behaviour can be overridden by use of the <keep|keepHide> row attribute if required.
+
+Totals do not cause a prior subtotal to be discarded or hidden, even if the balances are the same.
+
+            # If row is not a keep row see if subtotal is a repeat of a subtotal with no change
+            # -> discard it or the previous visible one if it had no title and this one does, if no tags, or hide it if is has tags
+  as those in Suppressing
+
+Automatic Suppression of Table Money Columns
+============================================
+If a table includes a money column that never has a kept defined balance deposited to it, the column is removed from the report entirely.
+
+This applies even if the column did have a balance but the balance was moved to another column by a subtotal.
+
+Headings in the column do not cause it to be retained.
+
+#####################
+# Compiler Commands #
+#####################
+
+Only one compiler command can be used per line, with no [] statements on the same line.
+The available commands are:
+
+#include  formatName
+#constant constantName {=} value   where value can be a number, a quoted string, or an already defined constant
+
+The [zone ...] statement also has some compilation time aspects.
+
+Planned but not implemented as of 12.09.11:
+  #if
+  #else
+  #end
+
+#include formatName
+-------------------
+Example:
+#include notes.b
+
+Formats can be included at any point in a format and be nested to any depth.
+A format can be included more than once if that should be appropriate to the report.
+formatName does not need to be quoted though it can be.
+
+#constant constantName {=} value
+--------------------------------
+Examples:
+#constant YearC = 2011
+#constant FredC 'Fred Smith'
+#constant fredC FredC
+
+constantName: See Names and RG Data Types below for the naming rules.
+{=}           A = sign between name and value is optional
+value:        Must be scalar i.e. a single number, a quoted string, or an already defined constant name which is not quoted.
+              It cannot be a more complex expression. Note that strings must be quoted. (A non quoted string is assumed
+
+Once defined a constant can be used in an expression.
+
+Note that PHP Constants e.g. those defined in RgConstants.inc can also be used in expressions.
+
+#######################
+# Language Statements #
+#######################
+Conventions:
+ #         an integer number, often a single digit
+ dD        a date variable or BRO element of type date
+ <a|b|...> one item to be chosen e.g. a or b etc
+ {...}     optional
+ zzz1      A Zone name
+
+ expr      An expression potentially involving operands of any type i.e. string, integer, money, boolean, or real, obtained from Bros,
+           the format code, variables,. constants, or row/cell values.
+
+           Most format expressions are simple e.g. a number, some text, or a Bro reference, but they can be (much) more complex if necessary.
+
+           Different operand types can be mixed in an expression in any sensible way.
+
+           Text or string data entered into a format needs to be enclosed within either single or double quotes. A single quoted string can
+           include double quotes and vice versa '"like this"' or "O'Reilly".
+
+           Strings can be built up by stringing together quoted text, a BRO reference, numbers, a variable, a para call, a call to a function
+           which generates output, or a nested [nl], [date ...], [span ...] or [xref ...] statements.
+           Elements being strung together to form a longer string do not need an operator, just following one after the other on a format line
+           is sufficient. Elements may optionally be separated by a space or spaces for legibility.
+
+           BRO references may be preceded by y:# or descr as described in the BROs section above.
+
+           ()s may be included in the expression to ovrride precedence, or for legibility.
+
+ intExpr   an integer expression which can be as simple as just a number
+           intExprs for attributes e.g. r:intExpr of the [col statement, should not include any spaces as such expressions terminate on a space.
+
+ css       CSS class comma separated list, though most usually just one class name would be used with no comma needed
+            with the full set of CSS classes to be defined. A start is:
+              Built in "fixed" classes:
+                b    = bold
+                c    = center
+                i    = italics
+                l    = large (1.2em)
+                s    = snall (0.8em)
+                u    = underlined
+                nb   = no bold typically used for a non-bold section within a heading that almost always will be bold
+                lj   = left justify
+                rj   = right justify
+                m0   = margin:0
+                w10  = width:10em
+            The default css is:
+              body {font:normal 11pt Arial,'Helvetica Neue',Helvetica,sans-serif;color:#000;background:#fff;padding:8px}
+              p {margin:0 0 1em}
+              h1, h2, h3, h4, label {font-family:Verdana,Tahoma,Arial,Helvetica,Geneva,sans-serif}
+              h1 {font-size:120%;margin:0 0 0.75em}
+              h2 {font-size:115%;margin:0 0 0.5em}
+              h3 {font-size:110%;margin:0 0 0.4em}
+              h4 {font-size:105%;#069}
+              table {font-size:1em;border-collapse:collapse}
+              td    {padding-right:0.5em;vertical-align:top}
+              .page {width:550pt;margin-left:auto;margin-right:auto;padding:0.5em 1em;border:1px solid #ccc}
+              .break{page-break-before:always}
+              .mc {margin-left:auto;margin-right:auto}
+
+Type: C Control    - flow Control or Conditional statements
+      F Formatting - defines a Formatting option
+      L Language   - a Language statement/construct which does not directly cause output
+      O Output     - generates html Output
+      R Reference  - a Reference or bookmark in the accounts
+
+Case
+----
+Statements names are lower case.
+Attributes are case insensitive e.g. restatedHdg or restatedhdg are ok.
+
+Statements
+----------
+                      Type -\ /- Can be used in an expression. E = expr
+Statement                   | |
+[col{cols list}             O   Col works with the table and optional row statements to form html tables which are the main structure for
+ {span:#} {restatedHdg}         accounts produced by Braiins. See 'Tables' above for a general description of tables, row, and col use.
+ {repeat:intExpr} {hor}
+ {c:css} {<keep|keepHide>}      The contents of a cell, once generated, may be referenced (used) in a format by means of a cell reference in
+ {<ul|dul>} {<aul|adul>}        an expression, as described in 'Table Cell References' above.
+ {<dr|cr>} {b:BroRef}
+ {expr}]                        Col outputs a Bro or expr result to a table cell, with options of:
+                                - cols list is the column number or a list of comma separated column numbers, with each a number in the
+                                  1 to 29 range, or columns can be specified as <t{#}|d{#}|n{#}|<y0{#}-y3{#}>|c{#}|p{#}> when a table cols attribute
+                                  has been used, or nothing (including in a comma separated list) meaning the next column in left to right sequence.
+                                  If a list is used, other options repeat for each column except for span and repeat. If the columns are
+                                  money columns (as specified by a table statement) then the year used when evaluating a BRO reference changes
+                                  automatically according to the column, unless overridden by a y:# prefix preceding an expr Bro reference.
+                                  If the first col statement on a format line has no col # list it defaults to column 1.
+                                  col statements which include a cols list may be used out of col # order, whereas without a cols list they
+                                  must be in left to right order. A space between [col and the column list is optional i.e. it is not required.
+
+                                - span:# allows the output to span # columns. The column specified by the cols list should be the right most column.
+
+                                - restatedHdg (or restatedhdg} attribute means to output the RestatedH heading as a following line in
+                                    this table cell if any Restated balances are output to the column before the table ends.
+                                    restatedHdg is automatically excluded from year 0 columns so the restatedHdg attribute can be
+                                    included in a statement whose cols list is for multiple columns including a year 0 column.
+                                    restatedHdg is invalid for other than money columns.
+
+                                - repeat:intExpr causes the output to be repeated intExpr times e.g. same word/phrase in r columns
+
+                                - hor attribute means loop horizontally if expr is a BRO loop reference, otherwise looping (if any) is vertical
+
+                                - c:css allows css class(es) to be applied to the cell in addition to any via table and row statements.
+
+                                - <keep|keepHide> The keep and keepHide attributes are usually used with a row statement q.v. to apply to
+                                  the whole row. However, they can be used with money or calculated cells whre the keepHide meaning is
+                                  different from when used for a row. The cell (col) meanings are:
+                                  keep     Keep the cell (and thus the row) even if the balance is zero or undefined. The zero or undefined
+                                           balance will be shown as per the Agent's Preferences. This is effectively the same as for keep
+                                           used with a row statement.
+                                  keepHide Keep the cell (and thus the row) even if the balance is zero or undefined. The zero or undefined
+                                           balance will be shown as per the Agent's Preferences for Undefined balances, for which the
+                                           default is '' i.e. nothing. Thus unless the 'Undefined' preference is changed to produce a visible
+                                           output, 'keepHide' will 'hide' a real zero. See row statement for the different behaviour of
+                                           keepHide with a row statement.
+
+                                - <ul|dul> ul  causes the cell to be single underlined.
+                                               ul can also be specified via a row statement for all money cells in a row.
+                                           dul causes the cell to be double underlined.
+                                               dul can also be specified via a row statement for all money cells in a row.
+
+                                - <aul|adul> aul  causes the cell to be single above underlined i.e. the cell above to be underlined.
+                                                  aul can also be specified via a row statement for all money cells in a row.
+                                             adul causes the cell to be above double underlined i.e. the cell above to be double underlined.
+                                                  dul can also be specified via a row statement for all money cells in a row.
+
+                                - <dr|cr> Sets the cellSign. See 'Table Balance Sign Handling' above.
+                                          dr|cr can also be specified via a row statement for all money cells in a row.
+
+                                - b:BroRef achieves the same result as an expr of a single Bro. The option is provided for style reasons to match
+                                    the row statement's b:BroRef attribute and so that it can occur anywhere in the statement after the cols list,
+                                    whereas expr must always come last.
+                                    b:BroRef specifies a Bro, optionally including dimensions, whose value is to be output to the column. If the Bro
+                                    is taxonomy based, this will always generate a tag for money amounts, or on first usage for string values.
+                                    If the same Bro applies to multiple columns in the row, including potentially for the title column via the Bro's
+                                    description, it can be specified just once in a row statement, with the b:BroRef and expr attributes
+                                    omitted from the columns where it apllies.
+                                    When fetching the Bro's data, the year of the column as defined by the table statement is used automatically.
+                                    If the table statement does not define columns, year 0 is used.
+                                    If b:BroRef is used with a t (text/title) column as defined by a table stement the Bro's decription, rather
+                                    than the Bro's value, is output.
+                                    If the Bro is a date Bro the year is output, typically for column headings. If a differently
+                                    formatted form of date is required, an expr including a [date...] statement should be used.
+                                    For a Bro loop, an expr should be used. (Put the Bro loop reference at the end of the statement without b:)
+                                    If the b:BroRef attribute is used, expr cannot also be used.
+
+                                - expr, which must be the last attribute, typically is a single Bro reference, in which case it achieves the same
+                                    result as described above for b:BroRef, or a string expression for text, though other expressions
+                                    including numeric ones and expressions with multiple Bros and cell references can be used. Or none.
+                                    If no expr or b:BroRef is included the BroRef of the row statement is used, or if there isn't one,
+                                    the expr from a previous col statement. At least one of these (row BroRef, column b:BroRef, or column expr)
+                                    must be specified for each table row.
+
+                                  expr may be a BRO loop reference. If so, the col statement must be the last col statement on the format line,
+                                    and its col # list must specify only one column. In this case the ul, dul, restatedHdg, repeat and span
+                                    attributes are illegal. Css and hor are OK.
+
+                                  expr may include year specifiers (y:# ) to be used when fetching Bro data, though if the column is a money
+                                    column specified by a table statement, its year is used automatically. Otherwise year 0 is the default.
+
+                                  expr may include descr prefixes for Bro rferences, meaning the Bro's description rather than its value,
+                                    but use of descr with a single Bro in a t (text/title) column is unnecessary, as this is the default.
+
+                                  expr results are formatted automatically, according to their data type and the type of the column.
+                                    If arithmetic is performed using date Bros, typically subtraction, the result is the number of days
+                                    between the dates.
+
+                                Options other than the cols list (which must come first) and expr (which must come last) may be used in any order.
+
+                                The RG takes care of generating any necessary rowspan, colspan, or empty <td> html attributes/statements.
+
+                                All col statements for one table row should be in one format line, as a new format line with another
+                                row or col statement starts a new table row. If required, the @ code at the end of a line may be used
+                                to turn multiple physical lines into a single line for the compiler.
+
+                                If an optional row statement is used in conjunction with col statements, it should be the first statement
+                                on the line. Note that table rows using Bros, or other row values, and no note number or special text,
+                                may be specified with just a row statement without any col statements
+
+[block]                     L   Start of a block. See Function Constructs section below.
+
+[date {<f|s|x|y>} {y:year}  O E Output the dD date, where dD may be a date variable or a BRO element of date type.
+ {c:css} dD]                    Optional attributes:
+                                <f|s|x|y> to specify the date format, with none defaulting to 'f', meaning:
+                                 f: Output date dD in full  form e.g. 03 February 2011
+                                 s: Output date dD in short form e.g. 03 Feb 2011 or 03/02/2011 or 03.02.2011 as per preferences
+                                 x: Output date dD in iXBRL form e.g. 2011-02-03
+                                 y: Output date dD in year  form e.g. 2011
+                                css class(es), and
+                                year (1-2) specified, with 0 for the current year as the default, when dB is a BRO element.
+
+                                [date ..] is most typically used within exprs for [h, [p, [span, or [col statements, though a date
+                                Bro may be used in a [col statement by itself to give the year.
+
+                                If used stand alone the formatted date is output within an html p tag.
+
+[else]                      C   Start of an alternative if branch. See Flow Control Statements below.
+[else if Expr {then}]       C   Alternative if test. As per [if ... below but without the onee line a) form.
+[end]                       L   End of an if, else if, block, header, footer, function, para, table, or toc construct. See sections below.
+[expr]                      O   Evaluate the expr and output the result if any. (This statement could be used to call a function which
+                                does not generate output, or to call a para which is empty.)
+                                If output is generated the statement acts like [p strExpr].
+
+[function nameF{(...)}]     L   Start of a function. See Function Constructs section below.
+[footer]                    L   Start of a footer. See Function Constructs section below.
+
+[header]                    L   Start of a header. See Function Constructs section below.
+[h<1|..|4> {c:css} strExpr] O   Output the strExpr result as an html h1 to h4 heading, optionally with css class(es) included.
+
+[if expr {then}]            C   If test. Can take the following forms:
+                                a. [if expr {then}][ ... statements on same line will be executed if the expr is true. ... ]
+                                   No [end] is needed in this case.
+                                   For all other forms an [end] or [else {..}] is required to close the if branch.
+
+                                b. [if expr {then}]
+                                     [ ... statements executed if the expr result is true ... ]
+                                   [end]
+
+                                c. [if expr {then}]
+                                     [ ... statements executed if the expr result is true ... ]
+                                   [else]
+                                     [ ... statements executed if the expr result is false ... ]
+                                   [end]
+
+                                d. [if expr {then}]
+                                     [ ... statements executed if the expr result is true ... ]
+                                   [else if expr {then}]
+                                     [ ... statements executed if the first expr is false and the second one is true ... ]
+                                   [end]
+                                   There can be any number of else if branches if the format logic needs that.
+                                   As for version c. above, there can be a final [else] ... [end] block that will be executed if none of the if tests are true.
+
+                                Expression results that are considered to be false are:
+                                  0     (an integer number 0)
+                                  0.0   (a decimal number 0.0)
+                                  ''    (an empty string)
+                                  false (a boolean value or result from from comparison and logical operators)
+                                Anything else is considered to be true.
+
+                                It is not necessary to include comparisons of > or < 0 e.g.
+                                  [if NumDirectorsI] achieves the same result as [if NumDirectorsI > 0]
+                                The opposite test for equal to 0 can be written as
+                                  [if !NumDirectorsI] (not NumDirectorsI) or [if NumDirectorsI == 0]
+
+                                The 'then' is optional.
+
+[line]                      O   End any output in progress and output a blank line. If used within a table causes a empty row.
+[lines intExpr]             O   End any output in progress and output intExpr blank lines, or empty rows in used within a table.
+
+[nl]                        O E New line, which really means end the current line so that any following output will be on a new line.
+                                To achieve vertical space in the report use [line], [lines intExpr], or a suitable css class.
+                                If [nl] is used within a string expression it causes a <br/> (break or new line) tag to be inserted in the string.
+                                <br/> can be used directly in strings if preferred. e.g. the following expression segments all achieve the same thing;
+                                " Report" [nl] "for the Period Ended "
+                                ' Report' [nl] 'for the Period Ended '
+                                " Report<br/>for the Period Ended "
+                                ' Report<br/>for the Period Ended '
+
+[np]                        O   Start a new page after outputting the previous page's footer, if any, and output the header if defined.
+                                If the new page is to have a different footer, the new footer should be defined after the [np].
+
+[p {c:css} strExpr]         O   Output strExpr result as an html <p> paragraph in body text as the default, optionally with css class(es) included.
+                                strExpr may be a BRO Loop.
+
+[page# {c:css}]             O E Output the current page #, optionally with css class(es) included
+                                [page#] is most typically used within strExprs for [h, [p, [span, or [col statements.
+                                If used stand alone the page number is output within an html p tag.
+
+[para nameP]                L   Start of a para. See Function Constructs section below.
+
+[return]                    L   Return from (or end) a function or para.
+
+
+[row {b:BroRef} {n:RowName} O   Row is used to specify defaults or actions for a table row. A table row does not have to have a row statement.
+ {alt:RowName} {<dr|cr>}        See 'Tables' above for a general description of tables, row, and col use.
+ {<keep|keepHide>}
+ {<ul|dul>} {<aul|adul>}        A row statement is usually not needed for text table such as the company information table.
+ {mc:css} {rc:css}              For money tables such as the P&L however, the row statement is powerful and can specify a complete table row,
+ {<subtotal|total>}             for all columns. For example [row b:Pl.CoS] could define a complete table row for all columns based on a Bro
+ {cols:cols list}]              named PL.CoS.
+
+                                If a row statement is used in conjunction with col statements, it should be the first statement
+                                on the format line. Note that table rows using Bros, or other row values, and no note number or special text,
+                                may be specified with just a row statement without any col statements
+
+                                All row attributes are optional, and may be used in any order. They are:
+
+                                - b:BroRef specifies a Bro, optionally including dimensions, whose value is to be output to columns which
+                                    don't have content defined by a col statement expression or col statement b:BroRef for a different Bro.
+
+                                    If the Bro is taxonomy based, this will always generate a tag for money amounts, or on first usage for
+                                    string values.
+
+                                    When fetching the Bro's data, the year of the column as defined by the table statement is used
+                                    automatically. If the table statement does not define columns, year 0 is used.
+
+                                    If b:BroRef is used with a t (text/title) column as defined by a table stement the Bro's decription,
+                                    rather than the Bro's value, is output.
+
+                                    If the Bro is a date Bro the year is output, typically for column headings. If a differently
+                                    formatted form of date is required, a col statement expr including a [date...] statement should be used.
+
+                                    A row BroRef cannot be used for a Bro loop.
+
+                                    For a col statement with an expression but no BroRef, the row Broref is used for tagging purposes.
+
+                                - n:RowName names the row for use in cell references in expressions (see 'Table Cell References' above),
+                                    and with 'Table Alternative Title Text Processing'.
+
+                                    RowName should be a unique name within the set of formats for a report, not just within the table
+                                    where it is used, as named rows can be referenced across tables, and indeed from outside tables.
+
+                                    RowName must not conflict with the name of a Bro, Heading, or any other construct.
+
+                                    RowName must start with a letter and not include ':' characters, but otherwise can be anything.
+
+                                    The suggested, but not enforced, style for RowNames is to start the names with 'R.' or to end with 'R'.
+
+                                - alt:RowName allows alternative title processing for title text like Profit/(Loss) in this row to be based
+                                    on the year balance results of a different row named RowName.
+
+                                    See 'Table Alternative Title Text Processing' for details.
+
+                                - <dr|cr> Sets the cellSign for all money cells in the row unless overridden by a col statement <dr|cr>.
+                                          See 'Table Balance Sign Handling' above.
+
+                                - <keep|keepHide> The row keep and keepHide attributes can be used to retain a report row which would
+                                  otherwise be discarded because all money balances are zero or undefined. The meanings are:
+                                  keep     Keep the row in the report.
+                                  keepHide Keep the row in the html of the report but hide it from view.
+                                           When a subtotal line that is suppressed includes tags 'keepHide' is used. See 'Subtotal and
+                                           Total Handling'.
+                                  The <keep|keepHide> attributes may also be used with individual cells via the col statement. keep then
+                                  is effectively the same as the row keep described here, but keepHide 'hides' just the cell real zero
+                                  by displaying it as an undefined zero for which the default output is '' or nothing.
+
+                                - <ul|dul> Sets the <ul|dul> attribute for all money cells in the row.
+                                  ul  causes the cells to be single underlined.
+                                  dul causes the cells to be double underlined.
+
+                                - <aul|adul> Sets the <aul|adul> attribute for all money cells in the row.
+                                  aul  causes the cells to be single above underlined i.e. the cells above to be underlined.
+                                  adul causes the cells to be above double underlined i.e. the cells above to be double underlined.
+
+                                - mc:css allows css class(es) to be specified for use with all money cells in the row.
+                                  mc:b would cause all money cells to be shown in bold, but not other cells.
+                                  In the html of the report any mc classes are added to the default css for the <td tags
+                                  containing the money balances. This includes the second <td tag for a right bracket if any.
+
+                                - rc:css allows css class(es) to be applied to the whole row via the <tr tag for the row.
+                                  rc could be used to change the font, add text or background colour to a row, add bborders,
+                                  or indeed do anything for which classes have been defined. Two examples are:
+                                  rc:b would cause the whole row to be shown in bold.
+                                  rc:asp1 would add 1em spacing above the row
+
+                                - <subtotal|total> Report subtotal and total operations are invoked via this row attribute.
+                                  See 'Subtotal and Total Handling' for the details of how subtotal and total operate.
+                                  If no cols: attribute is used, all money columns of the row are subtotalled/totaled.
+
+                                  It is possible to subtotal/total from one column to another via a cols:cols list (see
+                                  next attribute), or to subtotal/total only some columns of a report. For example
+                                    [row subtotal][col y0]
+                                    or
+                                    [row subtotal cols:y0]
+                                  would subtotal only the y0 column.
+
+                                - cols:cols list allows money columns involved in the row to be specified. If all money columns
+                                  in a row are to be included in the report there is no need for a cols: attribute.
+
+                                  A row cols list takes the form of a column number or a list of comma separated column numbers,
+                                  with each being a number in the 1 to 29 range, or a column specified via the non-numeric form of
+                                  <t{#}|d{#}|n{#}|<y0{#}-y3{#}>|c{#}|p{#}>, or nothing meaning the next column in left to right sequence.
+
+                                  For example, for a table with 4 money columns specified by
+                                    [table cols:dn0011]
+                                  then
+                                    [row b:PL.Expenses:WaterRates cols:y0,y1] or
+                                    [row b:PL.Expenses:WaterRates cols:y01,y11]
+                                  tells the RG to output and tag the WaterRates Bro values to the first year 0 and year 1 columns.
+                                  This could also be done using col statements for each column, but there is no need to do that
+                                  unless different attributes need to be applied to individual columns.
+
+                                  For subtotals or totals any column reference in the list can be followed by -># to specify that the
+                                  subtotal/total is to be performed from one column to another, with # being the number of the 'to'
+                                  column in the same year as the 'from' column. (Subtotal and total operations cannot cross years.)
+                                  For example, for a table with 4 money columns as above then
+                                    [row subtotal cols:y0->2,y1->2] or
+                                    [row subtotal cols:y01->2,y11->2]
+                                  tells the RG to subtotal the first year 0 column to the second, and the first year 1 column to the second.
+
+[span {c:css} strExpr]      O E Output the strExpr result within an html span tag, optionally with css class(es) included. Most commonly
+                                [span ...] would be used for the purpose of attaching css to a segment of output within other output,
+                                though it could also be used to define text for a [xref xrefNameX] statement.
+                                e.g. [span c:b 'today'] generates <span class='b'>today</span>
+                                     [span c:b,i AgentNameS] generates <span class='b i'>Woodgate & Co.</span> or whatever the Agent's name is.
+                                BRO Loops are not supported for span strExprs. Use [p or [col instead.]
+                                [span ..] is most typically used within strExprs for [h, [p, or [col statements.
+                                If used stand alone the html span tag generated is output within an html p tag.
+
+[table  {center} {c:css}    O   Start a table. Table rows are created via row and/or col statements.Table options in any order are:
+ {cols:<t|d|n|0-3|c|p>...}      - center attribute means that the table is to be centred on the page. This could also be achieved by c:mc
+ {noOutput}]
+                                - c:css specifies css class(es) to be applied to the table as a whole
+                                  e.g. for outer borders or a background colour.
+
+                                - cols: attribute to define the type of columns via a string of up to 29 characters for 29 columns, where
+                                  t = text  column  left justified with 0.5 em right padding
+                                  d = descr  column  left justified with 0.5 em right padding
+                                      similar to a text column with the additional feature of automatically becoming a Bro's Descr if
+                                      used with either a column or row Bro reference.
+                                  n = notes column right justified in bold with 0.5 em right padding
+                                  0-3 = money (or balances) column for year 0-3 right justified with no padding and a second column
+                                        automatically inserted at the right to hold the ')' of any bracketed balances.
+                                        Row or col underline attributes do not underline automatic ')' columns, but css classes
+                                        applied to a money column, whether via a row mc: or col c: attribute, are also applied to the
+                                        automatic ')' column if it contains a ')'.
+                                        Column numbers used in cols list attributes in row or col statements do not need to take the
+                                        automatic ')' columns into account.
+                                        Bro references automatically use the year of 0-3 column types, though this can be overriden
+                                        with y:# preceding a Bro reference.
+                                  c = calculated column (using a col statement expr), formatted like a money column
+                                  p = percentage column using a col staement expr
+
+                                  For tables with a cols: attribute individual columns may be referenced either by number (1 to 29)
+                                  or as <t{#}|d{#}|n{#}|<y0{#}-y3{#}>|c{#}|p{#}> where the # digit is only applicable if there are more
+                                  than one column of a particular type, and then the # as 1,2,3 etc specifies the first, second,
+                                  third etc column of that type. If # is 1, it is optional i.e. y0 and y01 both mean the first
+                                  year 0 column.
+
+                                  (Cell references, which potentially cross tables, require use of the
+                                  <t{#}|d{#}|n{#}|<y0{#}-y3{#}>|c{#}|p{#}> form of column reference, to avoid the risk of potentially
+                                  hard to find format bugs caused by the column layout of a table being changed.)
+
+                                - noOutput to use the table for calculation/storage/"variable" purposes with no html output to be generated.
+                                  A noOutput table provides a format with the equivalent of a powerful array variable.
+                                  (Tables which do form part of the report can also be referenced like noOutput tables.)
+
+                                Example:
+                                [table cols:dn01 center] gives a centred table with Descr, Note #, plus this year and last year Money columns.
+
+                                A table ends on an [end] statement.
+
+[toc {c:css} {c:css}        O   Insert a Table of Contents table. [toc could also be used for other cross reference tables besides tables of
+ {xrefNameX}]                   contents tables. A Table of Contents could also be constructed via [table] and [c#...] statements but
+                                [toc provides a shorthand method.
+                                [toc] i.e. without attributes means start the table.
+                                [toc xrefNameX] means insert a two column table of contents row for the text and page number defined by
+                                 xrefNameX with the text as a link.
+                                The two optional css attributes override preferences for the text and page number columns.
+                                A table of contents table ends on an [end] statement.
+
+[xref <target|text|page|        A cross reference for toc, link, or page number/text cross referencing use, according to the first attribute:
+ both|link> {c:css} nameX]  R    target: Defines the target of the cross reference. The page number and the next text from a p, h, or span
+                                         statement (up to the first line end if multi line) are recorded for use elsewhere in the report, either before or after the [xref target location. Example: [xref target notesX]
+                            O E  text: Outputs the text of the target of the xref
+                            O E  page: Outputs the page number of the target of the xref
+                            O E  both: Outputs "text on page x" where 'text' and 'x' are the text and page number of the target
+                            O E  link: Outputs the text of the target of the xref as a link to the target
+                                Optionally css classes can be used to override preferences in the output cases.
+                                The output forms of [xref ..] are most typically used within strExprs for [h, [p, [span, or [col statements.
+                                If used stand alone the xref generated is output within an html p tag.
+
+[zone{s} {zzz1{,zzz2...}}]  C   Invokes one or more RG zones specified in a cs list, and cancels any previous zones.
+                                The optional 's' after zone is just to allow the statement to read better when multiple zones are being set.
+                                The list may be empty e.g. [zone] or [zones] to cancel a previous setting and leave no zone current.
+                                This statement has both compilation and run time effects. It is the only statement like this.
+
+                                At run time the first zone in the current list of zones which has a sign defines the default sign.
+
+                                At compilation time the currently set zones are used to check whether a BRO is valid where used.
+
+                                Note: The compilation checking is done with zones set as statements are encountered in the flow of
+                                compilation, not the execution flow, which could be different via if statements or function calls. Thus
+                                zone statements should be positioned carefully. Included formats are compiled as encountered, so an
+                                included format which sets zones will cause the calling format to have those zones set after the #include
+                                line, unless cancelled or changed. If there is possible ambiguity, repeat zones statements.
+
+
+
+Pagination Control
+------------------
+[block]                   L   Define a block to be output on one page i.e. to be bumped to the next page if it won't fit on the current page.
+  {statements                 Cannot contain footer, header, function, or para statements, though it may use these.
+[end]
+
+Function Constructs
+-------------------
+The code which defined functions cannot be nested. Footers and headers execute automatically
+
+[footer]                  L   Define a footer to be output at the bottom of pages.
+  {statements}                Stays active across formats amd pages until changed or cancelled by defining an empty one.
+[end]
+
+[header]                  L   Define a header to be output at the top of pages.
+  {statements}                Stays active across formats amd pages until changed or cancelled by defining an empty one.
+[end]
+
+[function nameF{(...)}]   L   Define a named function, optionally with any number of comma separated parameters to be passed to it.
+  {statements}                A function can contain any other statements except block and other function statements.
+  {[return]}                  A function may optionally include one or more [return] statements. ([end] acts like [return] so a
+[end]                         [return] statement isn't necessary but can be convenient if the function includes different execution paths.)
+                              A function is used or called by name either directly e.g. [nameF{(...)}] or by within an expr.
+                              A direct function call like [nameF] acts like a [p nameF] statement if the function generates output.
+                              If a functiion is called within an expr:
+                               - its output is not output directly to the report but is returned to the expr as a number or string
+                                 depending on what is output by the function.
+                               - if the function includes multiple output statements, the output is treated as a string and concatenated
+                                 with a space separator
+                               - line feeds (<br/> tags) from [NL] statements are preserved, but lines from different format lines do not
+                                 result in <br/> tags. Thus
+                                 [function FredF]
+                                   ["Now is[nl]the hour"]
+                                   ["for all good men"]
+                                 [end]
+                                 [FredS = FredF]
+                                 results in FredS holding "Now is<br/>the hour for all good men"
+                                 and
+                                 [p FredF] or [FredF]
+                                 results in output of <p>Now is<br/>the hour for all good men</p>
+
+[para nameP]              L   Define a named "paragraph" of text.
+  {statements}                A para is like a function without parameters.
+[end]                         See [function ...] above for how a para operates.
+
+
+Still to be defined
+-------------------
+Compiler commands #if, #else, #end
+logic statements e.g. case, loops, para and function details
+formatting related statements or options apart from css ones
+
+Statements Removed
+------------------
+[nonl]     No new line i.e. suppress an automatic new line.
+[center]   Centre output on the page. Css e.g. c:c should be used instead.
+           Tables do have an optional center attribute to allow them to be centred
+
+To Do
+=====
+Add sections about
+- preferences
+  'RealZero'  => '&#8211;', # en dash
+  'Undefined' => '',        # for a false balance
+  'ThisYearColCss' => 'b',
+  'PriorYearColCss' => ''
+- default css
+- year 0 css
+

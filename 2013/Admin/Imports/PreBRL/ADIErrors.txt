@@ -1,0 +1,34 @@
+﻿Testing Data Import Errors - all except for the Reporting Requirement ones
+ImportType:Replace
+No DE Check
+Debug:0
+
+BankOverdraftCharges:Function.NonOp	23,386 	49,178
+SchInputDirRep.Remuneration.DirectorBenefitsInclPaymentsToThirdParties:Officers.CoSec	100	200
+SchInputDirRep.Remuneration.DirectorBenefitsInclPaymentsToThirdParties:Officers.PartnerLLP18	100	200
+SchInputDirRep.Remuneration.DirectorBenefitsInclPaymentsToThirdParties:Officers.HighestPaidDirector	100	200
+SchInputDirRep.Remuneration.DirectorBenefitsInclPaymentsToThirdParties:Officers.CEO	100	200
+
+Assets.Fixed.Intangible.DevelopmentCosts.DeferredExpenditureIncr:IFAClasses.DevelopmentCostsPatentsSimilar	1
+Assets.Fixed.Intangible.DevelopmentCosts.DeferredExpenditureIncr:Countries.UK	1
+Tx1266Hy:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	18,403 	18,000
+Tx1266Hy:TFAClasses.Buildings:TFAOwnership.Leased	18,403 	18,000
+
+SchInputEntity.Officers.Properties:.Director1:OfficerType.Exec     	1
+SchInputEntity.Officers.Properties:.Director1:.Director2:OfficerType.Exec     	1
+SchInputEntity.Officers.Properties:.Director1:OfficerType.Exec:OfficerType.Nonexec     	1
+SchInputEntity.Officers.Properties:ExpenseType.CoS     	1
+SchInputEntity.Officers.Properties:.All     	1
+SchInputEntity.Officers.Properties          	1
+
+Exp.Other.OtherUnexceptional:Function.Fred                     	 13,819,379 	 16,524,490
+Exp.Other.OtherUnexceptional:ExpenseType.CoS                      	 13,819,379 	 16,524,490
+Exp.Other.OtherUnexceptional:ExpenseType.Distrib                  	    221,780 	    260,471
+Exp.Other.OtherUnexceptional:ExpenseType.Distrib:ExpenseType.CoS     	    221,780 	    260,471
+
+SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo:Countries.UK  	-16,509,371 	-18,012,026
+SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo:Countries.Europe         	    -81,856  	    -13,084
+SchInputPL.SegAnalysisRevCostsProfits.Geography.RevenueByDestination.Geo:Countries.UK:Countries.Europe:Countries.UK  	-16,509,371 	-18,012,026
+
+#Liabilities.Creditors.TaxationSocialSecurity.Other.PAYE:Ageing.1-5	-2
+Liabilities.Creditors.TaxationSocialSecurity.Other.PAYE:Ageing.1-2	-2	# Expected to error

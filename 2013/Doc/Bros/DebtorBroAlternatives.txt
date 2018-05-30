@@ -1,0 +1,247 @@
+Debtors Bros Alternatives 04.11.11 - 22.11.11
+=========================
+
+Method 0
+--------
+Using Braiins Ageing Dimension
+
+Bro                                                                     Tx
+1   Set BS.NetAssets                                                  3261
+2   Set   BS.NetAssets.Current                                        3277
+3   Set     BS.NetAssets.Current.Debtors                              1202
+4   Map     BS.NetAssets.Current.Debtors:Ageing.<1                    1207    DueWithinOneYear
+5   Map     BS.NetAssets.Current.Debtors:Ageing.>1                    1205    DueAfterOneYear
+6   Ele       BS.NetAssets.Current.Debtors.Trade                      4834 <- Trade Debtors 4834
+7   Map       BS.NetAssets.Current.Debtors.Trade:Ageing.<1            4836 <- Trade Debtors due within one year 4836
+8   Map       BS.NetAssets.Current.Debtors.Trade:Ageing.>1            4835 <- Trade Debtors due after one year  4835
+9   Ele       BS.NetAssets.Current.Debtors.Group                       237
+10  Map       BS.NetAssets.Current.Debtors.Group:Ageing.<1             239
+11  Map       BS.NetAssets.Current.Debtors.Group:Ageing.>1             238
+              ...
+    Ele       BS.NetAssets.Current.Debtors.Comment                    1209
+    Map       BS.NetAssets.Current.Debtors.Comment:Ageing.<1          1208
+    Map       BS.NetAssets.Current.Debtors.Comment:Ageing.>1          1206
+
+
+etc
+
+Gives:
+Sum of all Debtors                 in Bro 3 BS.NetAssets.Current.Debtors or BS.NetAssets.Current.Debtors:Ageing.All
+Sum of Debtors due within one year in Bro 3 BS.NetAssets.Current.Debtors:Ageing.<1
+Sum of Debtors due after one year  in Bro 3 BS.NetAssets.Current.Debtors:Ageing.>1
+Sum of Trade Debtors               in Bro 6 BS.NetAssets.Current.Debtors.Trade or BS.NetAssets.Current.Debtors.Trade:Ageing.All
+Sum of Trade   due within one year in Bro 6 BS.NetAssets.Current.Debtors.Trade:Ageing.<1
+Sum of Trade   due after one year  in Bro 6 BS.NetAssets.Current.Debtors.Trade:Ageing.>1
+Sum of Group Debtors               in Bro 9 BS.NetAssets.Current.Debtors.Group or BS.NetAssets.Current.Debtors.Group:Ageing.All
+Sum of Group   due within one year in Bro 9 BS.NetAssets.Current.Debtors.Group:Ageing.<1
+Sum of Group   due after one year  in Bro 9 BS.NetAssets.Current.Debtors.Group:Ageing.>1
+
+
+Method 1
+--------
+Bros in Tx order:
+
+Bro                                                                     Tx
+1   Set BS.NetAssets                                                  3261
+2   Set   BS.NetAssets.Current                                        3277
+3   Set     BS.NetAssets.Current.Debtors                              1202
+4   Ele       BS.NetAssets.Current.Debtors.Trade                      4834 <- Trade Debtors 4834
+5   Ele       BS.NetAssets.Current.Debtors.Group                       237
+6   Ele       ...                                                     3039
+7   Ele       BS.NetAssets.Current.Debtors.Comment                    1209
+8   Set       BS.NetAssets.Current.Debtors.DueAfterOneYear            1205
+9   Ele         BS.NetAssets.Current.Debtors.DueAfterOneYear.Trade    4835 <- Trade Debtors due after one year 4835
+10  Ele         BS.NetAssets.Current.Debtors.DueAfterOneYear.Group     238
+11  Ele         ...                                                   3040
+12  Ele         BS.NetAssets.Current.Debtors.DueAfterOneYear.Comment  1206
+13  Set       BS.NetAssets.Current.Debtors.DueWithinOneYear           1207
+14  Ele         BS.NetAssets.Current.Debtors.DueWithinOneYear.Trade   4836 <- Trade Debtors due within one year 4836
+15  Ele         BS.NetAssets.Current.Debtors.DueWithinOneYear.Group    239
+16  Ele         ...                                                   3041
+17  Ele         BS.NetAssets.Current.Debtors.DueWithinOneYear.Comment 1208
+
+
+- Define the BS.NetAssets.Current.Debtors children (not grand children) i.e. Bros 4-6 (Tx 237 - 3039) above as Subtotal type (not 7 string type)
+  = Report Only (no posting, so must post to next level), and can be Sum To targets
+
+- 'Sum To' for Bro  9 = Bro 4 (Trade Debtors due after one year  -> Trade debtors)
+- 'Sum To' for Bro 14 = Bro 4 (Trade Debtors due within one year -> Trade debtors)
+
+- 'Sum To' for Bro 10 = Bro 5 (Group due after one year  -> Group)
+- 'Sum To' for Bro 15 = Bro 5 (Group due within one year -> Group)
+
+etc
+
+Gives:
+Sum of all Debtors in Bro 3
+Sum of Trade (under + over year) in Bro 4
+Sum of Group (under + over year) in Bro 5
+etc
+Sum of Debtors due after one year  in Bro 8
+Sum of Debtors due within one year in Bro 13
+
+Method 2
+--------
+Using sets per debtor type:
+
+1   Set BS.NetAssets                                                  3261
+2   Set   BS.NetAssets.Current                                        3277
+3   Set     BS.NetAssets.Current.Debtors                              1202
+4   Set       BS.NetAssets.Current.Debtors.Trade                      4834 <- Trade Debtors 4834
+5   Ele         BS.NetAssets.Current.Debtors.Trade.DueAfterOneYear    4835 <- Trade Debtors due after one year 4835
+6   Ele         BS.NetAssets.Current.Debtors.Trade.DueWithinOneYear   4836 <- Trade Debtors due within one year 4836
+7   Set       BS.NetAssets.Current.Debtors.Group                       237
+8   Ele         BS.NetAssets.Current.Debtors.Group.DueAfterOneYear     238
+9   Ele         BS.NetAssets.Current.Debtors.Group.DueWithinOneYear    239
+10  Ele       ...
+11  Set       BS.NetAssets.Current.Debtors.Comment                    1209
+12  Ele         BS.NetAssets.Current.Debtors.Comment.DueAfterOneYear  1206
+13  Ele         BS.NetAssets.Current.Debtors.Comment.DueWithinOneYear 1208
+14  Ele       BS.NetAssets.Current.Debtors.DueAfterOneYear            1205
+15  Ele       BS.NetAssets.Current.Debtors.DueWithinOneYear           1207
+
+- Define Bros 14 and 15 4-6 above as Subtotal type
+  = Report Only (no posting), and can be Sum To targets
+
+- 'Sum To' for Bro 5 = Bro 14 (Trade Debtors due after one year  -> Debtors due after one year)
+- 'Sum To' for Bro 6 = Bro 15 (Trade Debtors due within one year -> Debtors due within one year)
+
+- 'Sum To' for Bro 8 = Bro 14 (Group due after one year  -> Debtors due after one year)
+- 'Sum To' for Bro 9 = Bro 15 (Group due within one year -> Debtors due within one year)
+
+etc
+
+Gives:
+Sum of all Debtors in Bro 3
+Sum of Trade (under + over year) in Bro 4
+Sum of Group (under + over year) in Bro 7
+etc
+Sum of Debtors due after one year  in Bro 14
+Sum of Debtors due within one year in Bro 15
+
+14 and 15 would not Sum Up to 3 as 'Sum To' ops are performed after set summing.
+Though to make it clear that this is not happening and not wanted, 'Sum Up' could be set to 'No.
+Or 14 and 15 could be made Total type rather than Subtotal type.
+
+
+--------
+
+Either should work but I prefer Method 2 as the summing is clearer with only 2 subtotal Bros vs 19 or so in Method 1.
+
+Method 3
+--------
+Using multi-index sets:
+
+1   Set BS.NetAssets                                                  3261
+2   Set   BS.NetAssets.Current                                        3277
+3   Set     BS.NetAssets.Current.Debtors[]                            1202
+4   Set       BS.NetAssets.Current.Debtors.Trade                      4834 <- Trade Debtors 4834
+5   Ele         BS.NetAssets.Current.Debtors[AfterOneYear].Trade.DueAfterOneYear    4835 <- Trade Debtors due after one year 4835
+6   Ele         BS.NetAssets.Current.Debtors[WithinOneYear].Trade.DueWithinOneYear  4836 <- Trade Debtors due within one year 4836
+7   Set       BS.NetAssets.Current.Debtors.Group                       237
+8   Ele         BS.NetAssets.Current.Debtors[AfterOneYear].Group.DueAfterOneYear     238
+9   Ele         BS.NetAssets.Current.Debtors[WithinOneYear].Group.DueWithinOneYear   239
+10  Ele       ...
+11  Set       BS.NetAssets.Current.Debtors.Comment                    1209
+12  Ele         BS.NetAssets.Current.Debtors.Comment.DueAfterOneYear  1206 Without index as string so no summing involved.
+13  Ele         BS.NetAssets.Current.Debtors.Comment.DueWithinOneYear 1208 "
+
+- No Subtotal types or 'Sum To's needed. (But programming required.)
+
+- The empty []s at the end of Bro 3's name BS.NetAssets.Current.Debtors say this is a Set which can have extra indices.
+  (Corresponding to a multi-dimensioned array in programming terms, but I would avoid use of the word dimension in regard
+  to sets like this given its XBRL use.)
+  Any number of indices could be used. Just 2 here for AfterOneYear and WithinOneYear
+  The indices could be any word or number.
+
+  It would not actually be necessary to use the empty []s with 3 i.e. just the use of the indices with Bros 5, 6, etc would
+  be enough to trigger that Set BS.NetAssets.Current.Debtors has indices but perhaps it would be good to adopt the empty []s
+  convention for clairty and checking purposes.
+
+- 5, 6, 8, 9 etc then use an extra index to effectively specify an extra level of summing.
+
+Effetively the indices with BS.NetAssets.Current.Debtors replace the separate subtotal Bros
+14 Ele BS.NetAssets.Current.Debtors.DueAfterOneYear
+15 Ele BS.NetAssets.Current.Debtors.DueWithinOneYear
+
+Gives:
+Sum of all Debtors                 in Bro 3 referenced as BS.NetAssets.Current.Debtors i.e. without index
+Sum of Debtors due after one year  in Bro 3 referenced as BS.NetAssets.Current.Debtors[AfterOneYear]
+Sum of Debtors due within one year in Bro 3 referenced as BS.NetAssets.Current.Debtors[WithinOneYear]
+Sum of Trade (under + over year) in Bro 4
+Sum of Group (under + over year) in Bro 7
+
+The elements could be referenced as
+BS.NetAssets.Current.Debtors[AfterOneYear].Trade.DueAfterOneYear
+or
+BS.NetAssets.Current.Debtors.Trade.DueAfterOneYear
+as the [AfterOneYear] is not part of the element address. It specifies summing.
+
+Method 4
+--------
+As per 3 but using numeric indices:
+
+1   Set BS.NetAssets                                                   3261
+2   Set   BS.NetAssets.Current                                         3277
+3   Set     BS.NetAssets.Current.Debtors[]                             1202
+4   Set       BS.NetAssets.Current.Debtors.Trade                       4834 <- Trade Debtors 4834
+5   Ele         BS.NetAssets.Current.Debtors[1].Trade.DueAfterOneYear  4835 <- Trade Debtors due after one year 4835
+6   Ele         BS.NetAssets.Current.Debtors[2].Trade.DueWithinOneYear 4836 <- Trade Debtors due within one year 4836
+7   Set       BS.NetAssets.Current.Debtors.Group                        237
+8   Ele         BS.NetAssets.Current.Debtors[1].Group.DueAfterOneYear   238
+9   Ele         BS.NetAssets.Current.Debtors[2].Group.DueWithinOneYear  239
+10  Ele       ...
+11  Set       BS.NetAssets.Current.Debtors.Comment                     1209
+12  Ele         BS.NetAssets.Current.Debtors.Comment.DueAfterOneYear   1206 Without index as string so no summing involved.
+13  Ele         BS.NetAssets.Current.Debtors.Comment.DueWithinOneYear  1208 "
+
+Gives:
+Sum of all Debtors                 in Bro 3 referenced as BS.NetAssets.Current.Debtors i.e. without index
+Sum of Debtors due after one year  in Bro 3 referenced as BS.NetAssets.Current.Debtors[1]
+Sum of Debtors due within one year in Bro 3 referenced as BS.NetAssets.Current.Debtors[2]
+Sum of Trade (under + over year) in Bro 4
+Sum of Group (under + over year) in Bro 7
+
+Shorter, but then you need to remember what 1 and 2 mean.
+
+Method 5
+--------
+Using multi-index sets as per 3 but using 'Sum To' to specify which index is to be summed to:
+
+1   Set BS.NetAssets                                                  3261
+2   Set   BS.NetAssets.Current                                        3277
+3   Set     BS.NetAssets.Current.Debtors[]                            1202
+4   Set       BS.NetAssets.Current.Debtors.Trade                      4834 <- Trade Debtors 4834
+5   Ele         BS.NetAssets.Current.Debtors.Trade.DueAfterOneYear    4835 <- Trade Debtors due after one year 4835
+6   Ele         BS.NetAssets.Current.Debtors.Trade.DueWithinOneYear   4836 <- Trade Debtors due within one year 4836
+7   Set       BS.NetAssets.Current.Debtors.Group                       237
+8   Ele         BS.NetAssets.Current.Debtors.Group.DueAfterOneYear     238
+9   Ele         BS.NetAssets.Current.Debtors.Group.DueWithinOneYear    239
+10  Ele       ...
+11  Set       BS.NetAssets.Current.Debtors.Comment                    1209
+12  Ele         BS.NetAssets.Current.Debtors.Comment.DueAfterOneYear  1206
+13  Ele         BS.NetAssets.Current.Debtors.Comment.DueWithinOneYear 1208
+
+with 'Sum To's of:
+- 'Sum To' for Bro 5 = BS.NetAssets.Current.Debtors[AfterOneYear]
+- 'Sum To' for Bro 6 = BS.NetAssets.Current.Debtors[WithinOneYear]
+- 'Sum To' for Bro 8 = BS.NetAssets.Current.Debtors[AfterOneYear]
+- 'Sum To' for Bro 9 = BS.NetAssets.Current.Debtors[WithinOneYear]
+etc
+or, for numeric indices:
+- 'Sum To' for Bro 5 = BS.NetAssets.Current.Debtors[1]
+- 'Sum To' for Bro 6 = BS.NetAssets.Current.Debtors[2]
+- 'Sum To' for Bro 8 = BS.NetAssets.Current.Debtors[1]
+- 'Sum To' for Bro 9 = BS.NetAssets.Current.Debtors[2]
+
+
+Gives same result as methods 3 and 4 i.e.:
+Sum of all Debtors                 in Bro 3 referenced as BS.NetAssets.Current.Debtors i.e. without index
+Sum of Debtors due after one year  in Bro 3 referenced as BS.NetAssets.Current.Debtors[AfterOneYear]
+Sum of Debtors due within one year in Bro 3 referenced as BS.NetAssets.Current.Debtors[WithinOneYear]
+Sum of Trade (under + over year) in Bro 4
+Sum of Group (under + over year) in Bro 7
+or, for numeric indices
+Sum of Debtors due after one year  in Bro 3 referenced as BS.NetAssets.Current.Debtors[1]
+Sum of Debtors due within one year in Bro 3 referenced as BS.NetAssets.Current.Debtors[2]
+

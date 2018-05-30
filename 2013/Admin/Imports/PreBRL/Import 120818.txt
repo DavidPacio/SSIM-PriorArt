@@ -1,0 +1,434 @@
+﻿	# Exclude Always? #	# Exclude while testing	#  Exclude CTB #	#  Exclude Mov #	#  Exclude BBF/OTB #	BRO REF with Options	CLOSING TB This Yr Dr/-Cr	CLOSING TB Last Yr Dr/-Cr
+						Tx5469	Tx5469 AAAAA Limited 	
+							Agent Braiins Limited	
+							Date 2012.07.24	
+							ImportType:Replace	
+						Tx5470	No	
+						Tx5492	Yes	
+						Tx5600	87654321	
+						Tx5589	2009.01.01	
+						Tx5460	2009.12.31	
+						Tx4907	-16,613,551 	-19,195,013
+						Tx2409:Countries.UK	-16,509,371 	-18,012,026
+						Tx2409:Countries.Europe	-81,856 	-13,084
+						Tx2409:Countries.NorthAmerica	0 	-878,597
+						Tx2409:Countries.OtherRegions	-22,324 	-291,306
+	#							
+						Tx2727:ExpenseType.CoS	34,294 	-182,290
+						Tx2744:ExpenseType.CoS	181,210 	-2,227,691
+						Tx2688:ExpenseType.CoS	221 	-836
+			#	#	#	Tx4551:ExpenseType.CoS	182,290 	0
+			#	#	#	Tx5092:ExpenseType.CoS	2,227,691 	0
+			#	#	#	Tx2120:ExpenseType.CoS	836 	0
+						Tx4107:ExpenseType.CoS	8,826,243 	14,067,849
+			#	#	#	Tx4551:ExpenseType.CoS	-147,996 	-182,290
+			#	#	#	Tx5092:ExpenseType.CoS	-2,046,481 	-2,227,691
+			#	#	#	Tx2120:ExpenseType.CoS	-615 	-836
+						Tx5061:ExpenseType.CoS	3,824,051 	3,878,057
+						Tx1851:ExpenseType.CoS	377,842 	410,836
+						Tx4482:ExpenseType.CoS	138,676 	144,565
+						Tx178:ExpenseType.CoS:IFAClasses.DevelopmentCosts	40,140 	40,000
+						Tx1268:ExpenseType.CoS:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	18,403 	18,000
+						Tx1268:ExpenseType.CoS:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	179,077 	143,176
+						Tx1268:ExpenseType.CoS:TFAClasses.VehiclesPlantMachinery:TFAOwnership.Leased	167,234 	202,824
+						Tx1268:ExpenseType.CoS:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	31,988 	30,000
+	#							
+						Tx3721:ExpenseType.Distrib	3,771 	87,955
+						Tx5061:ExpenseType.Distrib	169,160 	128,161
+						Tx1851:ExpenseType.Distrib	16,714 	13,577
+						Tx4482:ExpenseType.Distrib	6,135 	4,778
+						Tx1268:ExpenseType.Distrib:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	3,000 	3,000
+						Tx1268:ExpenseType.Distrib:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	20,000 	20,000
+						Tx1268:ExpenseType.Distrib:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	3,000 	3,000
+	#							
+						Tx4625:ExpenseType.Admin	327,152 	467,163
+						Tx5061:ExpenseType.Admin	184,539 	170,881
+						Tx1851:ExpenseType.Admin	18,233 	18,103
+						Tx4482:ExpenseType.Admin	6,692 	6,370
+						DirectorsSalariesDetPL:ExpenseType.Admin	240,321 	267,040
+						Tx1681:ExpenseType.Admin	47,956 	79,600
+						Tx5284:TPAType.Auditors	16,500 	16,500
+						Tx2480:ExpenseType.Admin	6,922 	10,445
+						Tx1268:ExpenseType.Admin:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	2,000 	2,000
+						Tx1268:ExpenseType.Admin:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	10,000 	10,000
+						Tx1268:ExpenseType.Admin:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	12,000 	12,000
+						Tx2272	-9,596 	-2,108
+						FinanceIncNetRecOther:Function.NonOp	-372 	-1,876
+						BankOverdraftCharges:Function.NonOp	23,386 	49,178
+						FinLeaseCharges:Function.NonOp	57,763 	67,998
+						Tx4920	303,243 	104,037
+						Tx2739	-209,529 	30,830
+						Tx2456	135,798 	249,611
+						Tx2741	-24,878 	-35,114
+						Tx2750	7,788 	-12,191
+						Tx2815:IFAClasses.DevelopmentCosts:start	415,682 	415,682
+						Tx2804:IFAClasses.DevelopmentCosts	82,565 	0
+						Tx2805:IFAClasses.DevelopmentCosts:start	-51,724 	-11,724
+						Tx2806:IFAClasses.DevelopmentCosts	-40,140 	-40,000
+						Tx4654:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold:start	2,067,544 	2,067,544
+						Tx4653:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	0 	0
+						Tx4664:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	0 	0
+						Tx4655:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold:start	-72,887 	-49,887
+						Tx4656:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	-23,403 	-23,000
+						Tx4658:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	0 	0
+			#	#	#	Tx4654:TFAClasses.VehiclesPlantMachinery:start	9,374,695 	9,374,695
+						Tx4654:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold:start	3,374,695 	3,374,695
+						Tx4654:TFAClasses.VehiclesPlantMachinery:TFAOwnership.Leased:start	6,000,000 	6,000,000
+			#	#	#	Tx4653:TFAClasses.VehiclesPlantMachinery	172,975 	
+						Tx4653:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	147,179 	
+						Tx4653:TFAClasses.VehiclesPlantMachinery:TFAOwnership.Leased	25,796 	
+						Tx4664:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	-52 	0
+			#	#	#	Tx4655:TFAClasses.VehiclesPlantMachinery:start	-7,678,365 	-7,302,365
+						Tx4655:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold:start	-2,795,036 	-2,619,036
+						Tx4655:TFAClasses.VehiclesPlantMachinery:TFAOwnership.Leased:start	-4,883,329 	-4,683,329
+			#	#	#	Tx4656:TFAClasses.VehiclesPlantMachinery	-376,311 	-376,000
+						Tx4656:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	-209,077 	-176,000
+						Tx4656:TFAClasses.VehiclesPlantMachinery:TFAOwnership.Leased	-167,234 	-200,000
+						Tx4658:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	52 	0
+						Tx4654:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold:start	927,564 	927,564
+						Tx4653:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	24,375 	0
+						Tx4664:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	-14,820 	0
+						Tx4655:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold:start	-826,476 	-781,476
+						Tx4656:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	-46,988 	-45,000
+						Tx4658:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	14,820 	0
+# Raw materials and consumables						Tx4551	147,996 	182,290
+# Work in progress 						Tx5092	2,046,481 	2,227,691
+# Finished goods and goods for resale 						Tx2120	615 	836
+		# Assets.Current.StocksInventory.WIPLongtermContracts.PaymentsOnAccountNotMatchedWithTurnover				Tx3130	147,996 	182,290
+		# Assets.Current.StocksInventory				Tx4536	2,046,481 	2,227,691
+		# Assets.Current.StocksInventory.WIPLongtermContracts				Tx5095	615 	836
+						Tx4834	3,186,522 	2,231,517
+						Tx237	0 	822,706
+						Tx3507	500 	2,650
+						Tx3935	442,988 	328,380
+						Tx273	892,193 	0
+	#							
+						Tx541	60,000 	30,000
+						Tx575	6,330 	5,082
+			#	#	#	Tx382:FinInstrCurrentNonCurrent.Current	-331,701 	-241,815
+						Tx389	-331,701 	-241,815
+						Tx3389Hy13:start	-462,838 	-429,504
+						Tx4829:Ageing.<1	-1,978,195 	-2,782,060
+						Tx3494:Ageing.<1	-452,680 	-415,262
+						Tx1015:Ageing.<1	-198,508 	-134,978
+						Tx3671:Ageing.<1	-603,843 	-423,600
+						Tx62:Ageing.<1	-171,105 	-163,472
+						Tx264:Ageing.<1	-778,078 	0
+						Tx252:Ageing.<1	-26,516 	0
+		# Liabilities.Creditors.ObligationsFinanceLeaseAndHPContracts.AfterOneYear.MoreThan1Year				ObligFLHPAfter1Yr:Ageing.>1	-592,949 	-959,560
+		# Liabilities.Creditors.ObligationsFinanceLeaseAndHPContracts.AfterOneYear				Tx3388:Ageing.>1	-592,949 	-959,560
+    # Tx3388:Ageing.>1	-592,949 	-959,560
+		# Liabilities.Creditors.ObligationsFinanceLeaseAndHPContracts.AfterOneYear (as above but with BD Aging switched off)				Tx3388	-592,949 	-959,560
+# Liabilities.Creditors.ObligationsFinanceLeaseAndHPContracts.AfterOneYear. As above , but with :start invoked.						Tx3388:start	-592,949 	-959,560
+    # Tx3388:start	-592,949 	-959,560
+	#					Tx4062:ProvisionsClasses.DeferredTaxation		
+						Tx1630	-165,202 	(177,215)
+						Tx3675		12,013
+						Tx4038	17,090 	0
+			#		#	LiabSuspense		
+						Tx4378:ShareClasses.Ordinary1	-3,981,190 	-3,981,190
+						Tx3984:start	-290,542 	-390,957
+#						Tx4776Hy26	700,000 	1,000,000 djh Fudge on next row to get DE to balance
+						Tx4776Hy26	2,302,143	2,451,257
+
+	#						-18,030,025 	-20,094,598
+	#						1,416,474 	899,585
+	#						-16,613,551 	-19,195,013
+	#						 36,022,439 	 40,386,184
+	#						-52,635,990 	-59,581,197
+	#						-16,613,551 	-19,195,013
+	#							
+	#						 15,441,452 	 20,757,534
+	#						-33,471,477 	-40,852,132
+	#						-18,030,025 	-20,094,598
+	#						 20,580,987 	 19,628,650
+	#						-19,164,513 	-18,729,065
+	#						 1,416,474 	 899,585
+	#						-16,613,551 	-19,195,013
+	#						Braiins Limited	
+	#						Agent	
+	#							
+	#							
+	#							
+						Tx5341Hy40:ContactType.RegisteredOffice	Sample House	
+						Tx5576Hy40:ContactType.RegisteredOffice	Sample Town	
+						Tx5568Hy40:ContactType.RegisteredOffice	ST9 9ZY	
+	#							
+						Tx5524:Officers.Director1	A A Green	
+						Tx5524:Officers.Director2	B B Black	
+	#							
+						Tx5524:Officers.CoSec	C C Smith	
+	#							
+						Tx5527:TPAType.Auditors	DEF LLP	
+						Tx5341Hy41:TPAType.Auditors	DEF House	
+						Tx5576Hy41:TPAType.Auditors	Sample Town	
+						Tx5568Hy41:TPAType.Auditors	ST12 0ZZ	
+	#							
+	#							
+	#						For the year ended 31 December 2009 	
+	#						The directors present their report and the audited financial statements for the year ended 31 December 2009.	
+	#							
+	#						The company's profit for the year is £1,416,474 (2008 £899,585) The company paid a dividend of £700,000 (2008 £1,000,000) during the year.	
+	#							
+						Tx5394	As predicted last year the manufacture of widgets for BigCorp during the year stabilised at a lower level than hitherto The resultant available capacity was principally taken up with the successful completion of a large scale (£4m) micro widget project and increased activity in other areas. Investment in the AAAAA China facility has commenced and anticipates production in the coming financial year. The company continues to strive to be a 'best in class' supplier of components for OEM's and hence considers improvement in Key Performance Indicators of on-time delivery and quality performance to be fundamental to this strategy. The year's performance has enabled the company to maintain Its status as a category A supplier to its principal customer.	
+	#							
+						OpProfPer	0.103	0.070
+						GrossMarginPer	0.168	0.139
+						QualIncidentsDeliveriesPer	0.012	0.019
+						OnTimeDeliveriesPer	0.930	0.953
+	#							
+	#						The principal risks and uncertainties facing the company include the acceptanceby end customers of its products, changes in customer requirements and inlevels of demand in the market, competitive pressure on pricing, delivery or technology, utility costs, changes in government legislation, and overall economic conditions.	
+	#							
+						Tx2389	The company's operations expose it to a variety of financial risks including the effects of changes in interest rates on debt, foreign currency exchange rates, credit risk and liquidity risk. The company's principal financial instruments comprise cash and bank deposits, bank loans and overdrafts and obligations under finance leases together with trade debtors and trade creditors that arise directly from its operations The company has not entered into derivative transactions, with the exception of foreign exchange contracts in the normal course of trade, nor does it trade in financial instruments as a matter of policy. The main risks arising from the company's financial instruments can be analysed as follows.	
+	#							
+						Tx1361	The company's principal financial assets are bank balances, cash, and trade debtors, which represent the company's maximum exposure to credit risk in relation to financial assets Credit risk is managed by monitoring the aggregate amount and duration of exposure to any one customer depending upon their credit rating. The amounts presented in the balance sheet are net of allowances for doubtful debts, estimated by the company's management based on prior experience and their assessment of the current economic environment. The credit risk on liquid funds is limited because the counterparties are banks with high credit-ratings assigned by international credit-rating agencies.	
+	#							
+						Tx1408	The company's principal exposure to exchange rate fluctuations arises on the translation of receipts arising from contracts denominated in Euros and US dollars. Where naturally hedging with other group companies is not possible the company seeks to mitigate exchange exposure by entering into forward foreign currency contracts to eliminate exposures on material sales or purchases denominated in foreign currency. The company has no forward sale contracts at 31 December 2009 or 31 December 2008.	
+	#							
+						Tx1432	The company finances its operations where necessary through bank loans, overdrafts and hire purchase facilities principally at variable rates at negotiated fine margins using the pooling of the Group's requirements to achieve this.	
+	#							
+						Tx1438	The company's liquidity is maintained through a combination of debtor financing for working capital needs and hire purchase facilities for medium term requirements.	
+	#							
+	#						The company's policy with regard to the environment is to ensure that we understand and effectively manage the actual and potential environmental impact of our activities Our operations are conducted such that we comply with all legal requirements relating to the environment in all areas where we carry out our business. During the period covered by this report the company has not incurred any significant fines or penalties or been investigated for any significant breach of environmental regulations.	
+	#							
+	#						The directors of the company who served during the year	
+	#					Tx5524:Officers.Director1	A A Green	
+	#					Tx5524:Officers.Director2	B B Black	
+	#							
+	#						During the year £82,565 (2008 £195,290) of development costs were capitalised as an intangible fixed asset These costs arise from work in developing products for alternate energy production and for the expansion of the company's widget capabilities.	
+	#							
+						Tx5247	It is the company's policy to settle with its suppliers in accordance with the agreed terms, provided that those suppliers have complied with all relevant terms and conditions The company does not follow any specific code on payment practice Creditor days at 31 December 2009 were 75 days (2008 84 days).	
+	#							
+						Tx5171	The directors are responsible for preparing the Annual Report and the financial statements in accordance with applicable law and regulations. Company law requires the directors to prepare financial statements for each financial year.  Under that law the directors have elected to prepare financial statements in accordance with United Kingdom Generally Accepted Accounting Practice (United Kingdom Accounting Standards and applicable law).  Under company law the directors must not approve the financial statements unless they are satisfied that they give a true and fair view of the state of affairs of the company and of the profit or loss of the company for that period. In preparing these financial statements, the directors are required to select suitable accounting policies and then apply them consistently make judgments and estimates that are reasonable and prudent state whether applicable UK Accounting Standards have been followed, subject to any material departures disclosed and explained ill the financial statements make judgments and estimates that are reasonable and prudent inappropriate to presume that the company will continue in business  The directors are responsible for keeping adequate accounting records that disclose with reasonable accuracy at any time the financial position of the company and enable them to ensure that the financial statements comply with the Companies Act 2006 They are also responsible for safeguarding the assets of the company and hence for taking reasonable steps for the prevention and detection of fraud and other irregularities.	
+						Tx5275	In so far as the directors are aware there is no relevant audit information of which the company's auditors are unaware, and the directors have taken all steps that they ought to have taken to make themselves aware of any relevant audit information and to establish that the auditors are aware of that information.	
+	#					Tx5171	The directors are responsible for the maintenance and integrity of the corporate and financial information included on the company's website Legislation in the United Kingdom governing the preparation and dissemination of financial statements may differ from legislation in other jurisdictions.	
+	#							
+	#						DEF LLP are willing to continue in office and a resolution to reappoint them will be proposed at the Annual General Meeting.	
+	#							
+						Tx5139	04/03/10	
+	#						The report of the directors was approved by the Board on 4 March 2010 and signed on its behalf by	
+	#					Tx5524:Officers.Director2	B B Black	
+						Tx5170:Officers.Director2	TRUE	
+	#					Tx5170:Officers.Director2	Director	
+	#						Independent auditor's report to the members of AAAAA Limited	
+	#						We have audited the financial statements of AAAAA Limited for the year ended 31December 2009 which comprise the principal accounting policies, the profit and loss account, the balance sheet, and notes 1 to 19 The financial reporting framework that has been applied in their preparation is applicable law and United Kingdom Accounting Standards (United Kingdom Generally Accepted Accounting Practice).	
+	#						This report is made solely to the company's members, as a body, in accordance With Sections 495 and 496 of the Companies Act 2006 Our audit work has been undertaken so that we might state to the company's members those matters we are required to state to them in an auditor's report and for no other purpose To the fullest extent permitted by law, we do not accept or assume responsibility to anyone other than the company and the company's members as a body, for our audit work, for this report, or for the opinions we have formed.	
+	#							
+						Tx5333:TPAType.Auditors	As explained more fully in the Directors' Responsibilities Statement, the directors are responsible for the preparation of the financial statements and for being satisfied that they give a true and fair view Our responsibility is to audit the financial statements in accordance with applicable law and International Standards on Auditing (UK and Ireland) Those standards require us to comply With the Auditing Practices Board's (APB's) Ethical Standards for Auditors.	
+	#							
+						Tx5331:TPAType.Auditors	A description of the scope of an audit of financial statements is provided on the APB's web site at www.frc.org.uk/apb/scope/UKNP	
+	#							
+						Tx5318:TPAType.Auditors	In our opinion the financial statements give a true and fair view of the state of the company's affairs as at 31 December2009 and of Its profit for the year then ended, have been properly prepared in accordance with United Kingdom Generally Accepted Accounting Practice, and have been prepared in accordance with the requirements of the Companies Act 2006.	
+	#							
+	#						In our opinion the information given in the Directors' Report for the financial year for which the financial statements are prepared is consistent with the financial statements.	
+	#							
+	#						We have nothing to report in respect of the following matters where the Companies Act 2006 requires us to report to you if, in our opinion adequate accounting records have not been kept, or returns adequate for our audit have not been received from branches visited by us; or the financial statements are not in agreement with the accounting records or returns; or certain disclosures of directors' remuneration specified by law are not made or we have not received all the information and explanations we require for our audit.	
+						Tx5317:TPAType.Auditors	V Grey	
+	#						Senior Statutory Auditor 	
+	#					Tx5527:TPAType.Auditors	DEF LLP 	
+	#						for and on behalf of DEF LLP 	
+	#						Statutory Auditor, Chartered Accountants 	
+						Tx5294:TPAType.Auditors	04.03.10	
+	#							
+	#							
+						Tx4504	The financial statements are prepared under the historical cost convention and in accordance with applicable accounting standards.	
+	#							
+						Tx4911	Turnover consists of the invoiced value (excluding VAT) receivable by the company in the ordinary course of business for goods supplied and for services supplied as a principal.	
+	#							
+			#			Tx4673 TFAClasses.All	Depreciation is calculated to write off the cost, less estimated residual values, of tangible fixed assets over then: estimated useful lives to the business Where there is evidence of impairment, fixed assets are written down to receivable amount Any such write down would be charged to operating profit.	
+	#						The annual depreciation rates and methods are as follows	
+						Tx1371:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	2.0% straight line 	
+						Tx1371:TFAClasses.VehiclesPlantMachinery:TFAOwnership.OwnedOrFreehold	12.5% straight line 	
+						Tx1371:TFAClasses.VehiclesPlantMachinery:TFAOwnership.Leased	25.0% straight line 	
+						Tx1371:TFAClasses.ComputerEquipment:TFAOwnership.OwnedOrFreehold	33.0% straight line 	
+						Tx1371:TFAClasses.FixturesFittingsToolsEquipment:TFAOwnership.OwnedOrFreehold	12.5% straight line 	
+	#							
+						Tx4556	Stock is valued at the lower of cost and net realisable value Cost is determined on a first-in, first-out basis Cost consists of direct materials, labour and attributable overheads Net realisable value is based on estimated selling pace less any further costs of realisation. Amounts recoverable on long-term contracts, which are included in debtors, are stated at the net sales value of the work done less amounts received as progress payments on account, Excess progress payments are included in creditors as payments on account Cumulative costs incurred net of amounts transferred to cost of sales, less provision for contingencies and anticipated future losses on contracts, are included as long-term contract balances in stock.	
+	#							
+						Tx4712	Deferred tax is provided, except as noted below, on timing differences that have arisen but not reversed by the balance sheet date, where the timing differences result in an obligation to pay more tax, or a right to pay less tax, in the future Timing differences arise because of differences between the treatment of certain items for accounting and taxation purposes In accordance with FRS 19 deferred tax is not provided on timing differences arising from gains on the sale of non-monetary assets, where on the basis of all available evidence it is more likely than not that the taxable gain will be rolled over into replacement assets. Deferred tax assets are recognised to the extent that it is regarded as more likely than not that they will be recovered. Deferred tax is measured at the tax rates that are expected to apply ill the periods when the timing differences are expected to reverse, based on tax rates and law enacted or substantively enacted at the balance sheet date Deferred tax assets and liabilities are not discounted. Deferred tax is measured at the tax rates that are expected to apply in the statement of total recognised gains and losses; the related taxation is also taken directly to the statement of total recognised gains and losses in due course.	
+	#							
+						Tx3034	Assets held under finance leases (including hire purchase contracts) are capitalised at the fair value of the asset at the inception of the lease, with an equivalent liability categorised as appropriate under creditors due within and after one year. Assets are deprecated over the shorter of the lease term and their useful economic life, in the case of assets held under hire purchase agreements they are depreciated over their useful economic life. Finance charges are allocated to accounting years over the lie of each lease to produce a constant rate of charge on the outstanding balance. Rentals under operating leases are charged on a straight-line basis over the lease term.	
+	#							
+						Tx3808	Liabilities under the defined contribution pension scheme are charged to the profit and loss account in the year in which they arise	
+	#							
+						Tx2214	Normal trading activities denominated in foreign currencies are recorded in sterling at actual exchange rates at the date of the transaction. Monetary assets and liabilities denominated in foreign currencies at the year-end are reported at the rates of exchange prevailing at that date.	
+	#							
+						Tx4237	Research expenditure is written off in the year of expenditure. Development expenditure is also written off, except where the directors are satisfied as to the technical, commercial and financial viability of individual projects. In such cases, the identifiable expenditure is deferred and amortised over the period which the company is expected to benefit. This period is between three and five years Amortisation does not start until the project is complete. Provision is made for any impartment.	
+	#							
+						Tx916	TRUE	
+			#			Tx916	The company has taken advantage of the exemption not to prepare a cash flow statement on the grounds that it is a fully owned subsidiary of a UK parent whose consolidated financial statements are publicly available.	
+	#							
+						Tx1778	Dividend distributions are recognised as a liability in the period in which the dividends are approved by the company's shareholders Interim dividends are recognised when they are paid.	
+	#							
+						Tx2108	Financial liabilities and equity instruments are classified according to the substance of the contractual arrangements entered into. An equity instrument is any contract that evidences a residual interest in the assets of the entity after deducting all of Its financial liabilities. Where the contractual obligations of financial instruments (including share capital) are equivalent to a similar debt instrument, those financial instruments are classed as financial liabilities. Financial liabilities are presented as such in the balance sheet. Finance costs and gains or losses relating to financial liabilities are included in the profit and loss account. Finance costs are calculated so as to produce a constant rate of return on the outstanding liability. Where the contractual terms of share capital do not have any terms meeting the definition of a financial liability then this is classed as an equity instrument. Dividends and distributions relating to equity instruments are debited direct to equity.	
+						Tx4523	TRUE	
+			#			Tx4523	There were no recognised gains or losses other than the profit for the financial year.	
+						Tx5356	31/12/09	
+	#						BALANCE SHEET AT 31 December 2009 	
+						Tx1141	04/03/10	
+	#						The financial statements were approved by the Board of Directors on 4 March 2010	
+						Tx3227:Officers.Director2	TRUE	
+			#			Tx3227:Officers.Director2	B B Black	
+	#						Director	
+						Tx5303:TPAType.Auditors	Fees payable to the Company's auditor, DEF LLP, and its associates for services other than the statutory audit of the company are not disclosed in the company’s financial statements because the group financial statements of the company’s parent, AAAAA Parent Ltd, are required by the Companies (Disclosure of Auditor Remuneration) Regulations 2005, regulation 5(1) to disclose non-audit fees on a consolidated basis.	
+	#							
+	#							
+	#							
+	#						Number 	Number
+						Tx3977	140 	155
+						Tx4324	11 	9
+						Tx121	12 	12
+	# See note 27					Tx346	163 	176
+	#							
+	#							
+# See note 28						Tx5167:Officers.HighestPaidDirector	125,218 	113,226
+# See note 28						Tx5131:Officers.HighestPaidDirector	15,506 	62,813
+	# See note 27					Tx5169:Officers.HighestPaidDirector	140,724 	176,039
+			#			Tx5218:Officers.All	3	3
+			#			Tx5218:	3	3
+	#						Retirement benefits under money purchase schemes in respect of their services to the company were accruing to 3 of the directors at 31 December 2009 (2008 3)	
+	#							
+	#							
+	#						The tax charge for the year is arrived as follows  UK corporation tax at 28% (2008 28.5%) on the profit .	
+	#							
+	#						The standard rate of tax for the period based on the UK standard rate of corporation tax is 28%. The corporation tax rate has fallen to 28% as a result of the reduction in the UK corporation tax rate to 28% from 6 April 2008. The actual tax charge for the current and previous year differs from the standard rate for the reasons set out in the following reconciliation.	
+						Tx4500	0.280	0.285
+						Tx4699	456,091 	352,476
+	#							
+						Tx4418	(4,226)	14,516
+						Tx1971	13,300 	13,116
+						Tx117	(264,757)	(3,746)
+						Tx498	29,104 	8,116
+	#							
+	#							
+	#							
+	#							
+	#							
+	#							
+	#							
+	#							
+	#							
+	#							
+	#							
+	#							
+	#							
+	#						The replacement cost of the above stocks would not be significantly different from the values stated.	
+	#							
+	#							
+	#							
+	#					Tx389	331,701 	241,815
+	#						462,838 	429,504
+	#							
+	#							
+						Tx1075	Obligations under finance leases and hire purchase contracts are wholly payable within five years, by instalments, and are secured on the fixed assets concerned.	
+	#							
+	#							
+	#							
+	#							
+						Tx4074:ProvisionsClasses.DeferredTaxation	There were no unprovided amounts of deferred taxation at 31 December 2009 or 31 December 2008	
+	#							
+	#							
+						Tx3729	1	
+	#						Ordinary shares of £1 each 	
+	#							
+	#							
+	#							
+	#							
+	#							
+						Tx4617Tu126:T.425	AAAAA Parent Ltd	
+						Tx1415Tu126:T.424	The company is party to a cross guarantee in favour of Large Bank Plc entered into by the parent company, AAAAA Parent Ltd	
+	#							
+						Tx907:Ageing.<1	-4,575 	-10,445
+	#						At the period end there were annual commitments under non-cancellable operating leases in respect of office equipment which expire as follows.	
+	#						4,575 	10,445
+	#							
+			#			Tx4199	Advantage has been taken of the exemption available under FRS 8 to dispense with the requirement to disclose transactions With fellow subsidiaries, 100% of whose voting rights are held within the group and which are included in the consolidated financial statements of AAAAA Patent Ltd.	
+						Tx4199	TRUE	
+	#							
+						Tx3222Tu139:T.456	AAAAA Parent Ltd	
+						Tx106Tu139	Parent House, ParentRoad, Parent Town, PT1 GRP	
+			#			Tx987Tu139:T.459	The immediate and ultimate holding company and controlling party of this company is AAAAA Parent Ltd which is registered in England and Wales Copies of the group accounts may be obtained from the Secretary, Parent House, ParentRoad, Parent Town, PT1 GRP	
+						Tx987Tu139:T.459	TRUE	
+						Tx3235Tu99:T.339		
+						Tx1042Tu99:Countries.England:T.340		
+	#							
+	#							
+	#							
+	#						2009	2008
+	#						£ 	£
+	#					Tx4907	16,613,551 	19,195,013
+	#					Expenses:ExpenseType.CoS	(13,819,379)	(16,524,490)
+	#					Tx2449	2,794,172 	2,670,523
+	#					Expenses:ExpenseType.Distrib	(221,780)	(260,471)
+	#					Expenses:ExpenseType.Admin	(862,719)	(1,057,994)
+	#					Tx3422	1,709,673 	1,352,058
+	#					FinanceIncNetRecOther:Function.NonOp	372 	1,876
+	#					InterestPayableSimilarCharges:Function.NonOp	(81,149)	(117,176)
+	#					Tx3998	1,628,896 	1,236,758
+	#					Tx4704	(212,422)	(337,173)
+	#					Tx3990Hy8	1,416,474 	899,585
+	#							
+	#					Tx5284:TPAType.Auditors	16,500 	16,500
+	#					Tx3411	6,922 	10,445
+	#					Tx1268:TFAOwnership.OwnedOrFreehold	279,468 	241,176
+	#					Tx1268:TFAOwnership.Leased	167,234 	202,824
+	#					Tx178	40,140 	40,141
+	#					Tx5058	4,177,750 	4,177,099
+	#					Tx4420	412,790 	442,516
+	#					Tx3765	151,502 	155,713
+	#					Tx4450	4,742,042 	4,775,328
+	#					Tx5167:Officers.All	240,321 	267,040
+	#					Tx5131:Officers.All	47,956 	79,600
+	#					Tx5169:Officers.All	288,277 	346,640
+	#					InterestPayableSimilarCharges:Function.NonOp	81,149 	117,176
+	#					Tx4918Hy12	93,714 	134,867
+	#					Tx4917Hy12	229,512 	384,478
+	#					Tx4704	212,422 	337,173
+	#					Tx3998	1,628,896 	1,236,758
+	#					Tx3990Hy8	1,416,474 	
+	#					Tx3984	1,007,016 	
+	#						2009	2008
+	#						£ 	£
+	#							
+	#					Tx2801	406,383 	363,958
+	#					Tx4651	3,542,723 	3,792,075
+	#					Tx2168	3,949,106 	4,156,033
+	#							
+	#					Tx4536	2,195,092 	2,410,817
+	#					Tx1202	4,522,203 	3,385,253
+	#					Tx542	66,330 	35,082
+	#					Tx1116	6,783,625 	5,831,152
+	#					Tx1072	(5,003,464)	(4,590,691)
+	#					Tx3277	1,780,161 	1,240,461
+	#					Tx4752	5,729,267 	5,396,494
+	#					Tx1069	(592,949)	(959,560)
+	#					Tx4062	(148,112)	(165,202)
+	#					Tx3261	4,988,206 	4,271,732
+	#							
+	#					Tx488	3,981,190 	3,981,190
+	#					Tx3984	1,007,016 	290,542
+	#					Tx4403	4,988,206 	4,271,732
+	#					Tx3297	716,474 	(100,415)
+	#					Tx4403	4,271,732 	4,372,147
+	#					Tx2815:IFAClasses.DevelopmentCosts	498,247 	415,682
+	#					Tx2805:IFAClasses.DevelopmentCosts	91,864 	51,724
+	#					Tx2801:IFAClasses.DevelopmentCosts	406,383 	363,958
+	#					Tx2801:IFAClasses.DevelopmentCosts	363,958 	
+	#					Tx4654:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	2,067,544 	2,067,544
+	#					Tx4654:TFAClasses.VehiclesPlantMachinery	9,547,618 	9,374,695
+	#					Tx4654:TFAClasses.FixturesFittingsToolsEquipment	937,119 	927,564
+	#					Tx4654	12,552,281 	12,369,803
+	#					Tx4655:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	96,290 	72,887
+	#					Tx4655:TFAClasses.VehiclesPlantMachinery	8,054,624 	7,678,365
+	#					Tx4655:TFAClasses.FixturesFittingsToolsEquipment	858,644 	826,476
+	#					Tx4655	9,009,558 	8,577,728
+	#					Tx4651:TFAClasses.Buildings:TFAOwnership.OwnedOrFreehold	1,971,254 	1,994,657
+	#					Tx4651:TFAClasses.VehiclesPlantMachinery	1,492,994 	1,696,330
+	#					Tx4651:TFAClasses.FixturesFittingsToolsEquipment	78,475 	101,088
+	#					Tx4651	3,542,723 	3,792,075
+	#					Tx4651:TFAOwnership.Leased	1,096,616 	1,116,671
+	#					Tx4656:TFAOwnership.Leased	£167,234	£202,824
+	#						The net book value of assets held under hire purchase and finance leaseagreements totalled £1,096,616 (2008 £1,116,671) During the year, depreciation of £167,234 (2008 £202,824) was charged on assets held under hire purchase andfinance lease agreements	
+	#					Tx3392	303,130 	429,504
+	#					Tx3393	289,819 	530,056
+	#					Tx4062:ProvisionsClasses.DeferredTaxation	148,112 	

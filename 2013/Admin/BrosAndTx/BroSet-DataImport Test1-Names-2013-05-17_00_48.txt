@@ -1,0 +1,114 @@
+﻿BroId	Type	Level	BroName	Name0	N1	N2	N3	N4	N5	N6	N7	N8	ShortName	Master	Ref	Folio	DataType	AdbField	Sign	AcctTypes	PostType	RO	ExclProps	AllowProps	Items	SumUp	Check	Related	Period	StartEnd	Zones	Order	Descr	Comment	Scratch	I Usable Props	I Sum Usable Props	I M# Item Info	I StartEnd	I Slave Ids	I Slave Filtering
+BroSet = Type: In-Main, Name: DataImport Test1, Descr: In-Main Test based on old Bros,SortKey:DIT1
+PeriodStartDateBro = SchInputBRI.DatesPeriods.Start
+PeriodEndDateBro = SchInputBRI.DatesPeriods.End
+
+#	01-ENTITY INFORMATION 01-ENTITY INFORMATION 01-ENTITY INFORMATION 01-ENTITY INFORMATION 01-ENTITY INFORMATION 01-ENTITY INFORMATION 01-ENTITY INFORMATION 01-ENTITY INFORMATION 01-ENTITY INFORMATION
+ =30000	Set	0	SchInputEntity	SchInputEntity													Money		Debit	BS	Sch														Prev Excl Dims
+30001	Set	1	  SchInputEntity.Names	 	Names												String			Info															3,48
+30002	Ele	2	    SchInputEntity.Names.CurrentLegalOrRegistered	 		CurrentLegalOrRegistered							Tx5469			Basic	String			Info			Restated,Ageing												3,48	Group
+30003	Ele	2	    SchInputEntity.Names.Trading	 		Trading							Tx5493			Basic	String			Info			Restated,Ageing													Group
+30004	Set	2	    SchInputEntity.Names.FormerLegalOrRegisteredName	 		FormerLegalOrRegisteredName											String			Info															3,48
+30005	Ele	3	      SchInputEntity.Names.FormerLegalOrRegisteredName.Entity	 			Entity						Tx5471Tu155			Basic	String			Info			Restated,Ageing												3,48	Group
+30006	Ele	3	      SchInputEntity.Names.FormerLegalOrRegisteredName.DateWhenCeasedToBe	 			DateWhenCeasedToBe						Tx5384Tu155			Basic	String			Info			Restated,Ageing													Group
+30007	Set	1	  SchInputEntity.IdentifyingCodes	 	IdentifyingCodes												String			Info															3,48
+30008	Ele	2	    SchInputEntity.IdentifyingCodes.UKCompaniesHouseRegisteredNumber	 		UKCompaniesHouseRegisteredNumber							Tx5600			Basic	String			Info			Restated,Ageing												3,48	Group
+30009	Ele	2	    SchInputEntity.IdentifyingCodes.UKVATRegistrationNumber	 		UKVATRegistrationNumber							Tx5601			Basic	String			Info			Restated,Ageing													Group
+30010	Set	1	  SchInputEntity.Activities	 	Activities												String			Info															3
+30011	Ele	2	    SchInputEntity.Activities.DescrPrincipal	 		DescrPrincipal							Tx5394			Countries	String			Info			Restated													Group,Country
+30012	Set	2	    SchInputEntity.Activities.ActivityCode	 		ActivityCode											String			Info															3
+30013	Ele	3	      SchInputEntity.Activities.ActivityCode.DescrSystem	 			DescrSystem						Tx5386Tu154			Countries	String			Info			Restated												3	Group,Country
+30014	Ele	3	      SchInputEntity.Activities.ActivityCode.For	 			For						Tx5369Tu154			Countries	String			Info			Restated												3	Group,Country
+30015	Ele	2	    SchInputEntity.Activities.DescrOther	 		DescrOther							Tx5392			Countries	String			Info			Restated													Group,Country
+30016	Set	1	  SchInputEntity.LegalForm	 	LegalForm												String			Info															3,48
+30017	Ele	2	    SchInputEntity.LegalForm.Of	 		Of							Tx5513			Basic	String			Info			Restated,Ageing												3	Group
+30018	Ele	2	    SchInputEntity.LegalForm.CountryFormationOrIncorporation	 		CountryFormationOrIncorporation							Tx5376			Countries	Boolean			Info			Restated												3,48	Group,Country
+30019	Ele	2	    SchInputEntity.LegalForm.DateFormationOrIncorporation	 		DateFormationOrIncorporation							Tx5382			Basic	Date			Info			Restated,Ageing													Group
+30020	Set	1	  SchInputEntity.Shares	 	Shares												String			Info
+#	X Ref - See Equity Schedule Input information on shares issued.																																		3
+30021	Ele	2	    SchInputEntity.Shares.DescrType	 		DescrType							Tx5396Hy32			ShareAcqs	String			Info			Restated													Group,Acqs,ShareClasses,ShareTypes
+30022	Ele	2	    SchInputEntity.Shares.Authorised	 		Authorised							Tx4379			Shares	Money		Credit	BS	Sch	RO				No										Group,Restated,ShareClasses,ShareTypes
+30023	Ele	2	    SchInputEntity.Shares.NumberSharesAuthorised	 		NumberSharesAuthorised							Tx3381			Shares	Share			BS		RO				NA										Group,Restated,ShareClasses,ShareTypes
+30024	Ele	2	    SchInputEntity.Shares.ParValue	 		ParValue							Tx3729			Shares	Money		Either	BS	Sch	RO				No										Group,Restated,ShareClasses,ShareTypes
+30025	Set	1	  SchInputEntity.PublicListingInformation	 	PublicListingInformation												String			Info
+30026	Ele	2	    SchInputEntity.PublicListingInformation.PrincipalStockExchange	 		PrincipalStockExchange							Tx5577			StockExs	Boolean			Info																Group,StockEx
+30027	Ele	2	    SchInputEntity.PublicListingInformation.SecondaryStockExchange	 		SecondaryStockExchange							Tx5585			StockExs	Boolean			Info																Group,StockEx
+30028	Ele	2	    SchInputEntity.PublicListingInformation.MainTradingSymbolOnExchange	 		MainTradingSymbolOnExchange							Tx5518			StockExs	String			Info																Group,StockEx
+30029	Set	2	    SchInputEntity.PublicListingInformation.Listing	 		Listing											String			Info
+30030	Ele	3	      SchInputEntity.PublicListingInformation.Listing.DescrSpecificSecurity	 			DescrSpecificSecurity						Tx5397Tu156			StockExs	String			Info																Group,StockEx
+30031	Ele	3	      SchInputEntity.PublicListingInformation.Listing.SymbolSpecificSecurity	 			SymbolSpecificSecurity						Tx5593Tu156			StockExs	String			Info																Group,StockEx
+30032	Set	1	  SchInputEntity.OfficialOperationalStatus	 	OfficialOperationalStatus												Boolean			Info
+30033	Ele	2	    SchInputEntity.OfficialOperationalStatus.Audited	 		Audited											Boolean			Info															3
+30034	Ele	2	    SchInputEntity.OfficialOperationalStatus.Dormant	 		Dormant							Tx5470			Countries	Boolean			Info			Restated												3	Group,Country
+30035	Ele	2	    SchInputEntity.OfficialOperationalStatus.Trading	 		Trading							Tx5492			Countries	Boolean			Info			Restated												3	Group,Country
+30036	Ele	2	    SchInputEntity.OfficialOperationalStatus.Admin	 		Admin							Tx5474			Countries	Boolean			Info			Restated												3	Group,Country
+30037	Ele	2	    SchInputEntity.OfficialOperationalStatus.Receivership	 		Receivership							Tx5478			Countries	Boolean			Info			Restated												3	Group,Country
+30038	Set	2	    SchInputEntity.OfficialOperationalStatus.Liquidation	 		Liquidation							Tx5477			Countries	Boolean			Info			Restated												3	Group,Country
+30039	Ele	3	      SchInputEntity.OfficialOperationalStatus.Liquidation.Compulsory	 			Compulsory						Tx5475			Countries	Boolean			Info			Restated												3	Group,Country
+30040	Ele	3	      SchInputEntity.OfficialOperationalStatus.Liquidation.Voluntary	 			Voluntary						Tx5479			Countries	Boolean			Info			Restated												3	Group,Country
+30041	Ele	3	      SchInputEntity.OfficialOperationalStatus.Liquidation.Insolvent	 			Insolvent						Tx5476			Countries	Boolean			Info			Restated												3	Group,Country
+30042	Ele	2	    SchInputEntity.OfficialOperationalStatus.UnderCoVoluntaryArrangement	 		UnderCoVoluntaryArrangement							Tx5494			Countries	Boolean			Info			Restated													Group,Country
+30043	Set	1	  SchInputEntity.Officers	 	Officers												String			Info
+30044	Ele	2	    SchInputEntity.Officers.Properties	 		Properties											Boolean			Info				Officer											3,30	Officer		M# Items + Type 2
+30045	Ele	2	    SchInputEntity.Officers.Name	 		Name							Tx5524			Officers	String			Info			Restated												3,30	Group,Officer		M# Items + Type 2
+30046	Ele	2	    SchInputEntity.Officers.DirectorSigningAccounts	 		DirectorSigningAccounts							Tx3227			Officers	Boolean			Info			Restated													Group,Officer		M# Items + Type 2
+30047	Set	1	  SchInputEntity.MeansContact	 	MeansContact												String			Info
+30048	Set	2	    SchInputEntity.MeansContact.Address	 		Address											String			Info															38
+30049	Ele	3	      SchInputEntity.MeansContact.Address.Line1	 			Line1						Tx5341Hy40			ContactInfo	String			Info															38	Group,Contact,Country,Language		M# Items + Type 2
+30050	Ele	3	      SchInputEntity.MeansContact.Address.Line2	 			Line2						Tx5342Hy40			ContactInfo	String			Info															38	Group,Contact,Country,Language		M# Items + Type 2
+30051	Ele	3	      SchInputEntity.MeansContact.Address.Line3	 			Line3						Tx5343Hy40			ContactInfo	String			Info															38	Group,Contact,Country,Language		M# Items + Type 2
+30052	Ele	3	      SchInputEntity.MeansContact.Address.CityOrTown	 			CityOrTown						Tx5576Hy40			ContactInfo	String			Info															38	Group,Contact,Country,Language		M# Items + Type 2
+30053	Ele	3	      SchInputEntity.MeansContact.Address.CountyRegion	 			CountyRegion						Tx5377Hy40			ContactInfo	String			Info															38	Group,Contact,Country,Language		M# Items + Type 2
+30054	Ele	3	      SchInputEntity.MeansContact.Address.PostCode	 			PostCode						Tx5568Hy40			ContactInfo	String			Info															37,38	Group,Contact,Country,Language		M# Items + Type 2
+30055	Ele	2	    SchInputEntity.MeansContact.EmailAddress	 		EmailAddress							Tx5457Hy40			ContactInfo	String			Info																Group,Contact,Country,Language		M# Items + Type 2
+30056	Set	2	    SchInputEntity.MeansContact.PhoneNumber	 		PhoneNumber											String			Info															37
+30057	Ele	3	      SchInputEntity.MeansContact.PhoneNumber.CountryCode	 			CountryCode						Tx5375Hy40			ContactInfo	String			Info															37	Group,Contact,Country,Language		M# Items + Type 2
+30058	Ele	3	      SchInputEntity.MeansContact.PhoneNumber.AreaCode	 			AreaCode						Tx5355Hy40			ContactInfo	String			Info															37	Group,Contact,Country,Language		M# Items + Type 2
+30059	Ele	3	      SchInputEntity.MeansContact.PhoneNumber.Local	 			Local						Tx5514Hy40			ContactInfo	String			Info															37	Group,Contact,Country,Language		M# Items + Type 2
+30060	Ele	3	      SchInputEntity.MeansContact.PhoneNumber.Extension	 			Extension						Tx5497Hy40			ContactInfo	String			Info																Group,Contact,Country,Language		M# Items + Type 2
+30061	Set	1	  SchInputEntity.ContactPerson	 	ContactPerson												String			Info															37,38
+30062	Ele	2	    SchInputEntity.ContactPerson.NameMain	 		NameMain							Tx5525Hy40			ContactInfo	String			Info															37,38	Group,Contact,Country,Language		M# Items + Type 2
+30063	Ele	2	    SchInputEntity.ContactPerson.JobTitlePositionMain	 		JobTitlePositionMain							Tx5506Hy40			ContactInfo	String			Info															37,38	Group,Contact,Country,Language		M# Items + Type 2
+30064	Ele	2	    SchInputEntity.ContactPerson.OtherOnPersons	 		OtherOnPersons							Tx5541Hy40			ContactInfo	String			Info																Group,Contact,Country,Language		M# Items + Type 2
+30065	Set	1	  SchInputEntity.WebsiteInformation	 	WebsiteInformation												String			Info															37,38
+30066	Ele	2	    SchInputEntity.WebsiteInformation.MainPageURL	 		MainPageURL							Tx5613Hy40			ContactInfo	String			Info															37,38	Group,Contact,Country,Language		M# Items + Type 2
+30067	Ele	2	    SchInputEntity.WebsiteInformation.DescrOrOtherOn	 		DescrOrOtherOn							Tx5390Hy40			ContactInfo	String			Info																Group,Contact,Country,Language		M# Items + Type 2
+30068	Ele	1	  SchInputEntity.DescrOrOtherOnContact	 	DescrOrOtherOnContact								Tx5388			ContactInfo	String			Info																Group,Contact,Country,Language		M# Items + Type 2
+30069	Set	1	  SchInputEntity.ThirdPartyAgents	 	ThirdPartyAgents												String			Info
+30070	Ele	2	    SchInputEntity.ThirdPartyAgents.AccountantsAndAuditors	 		AccountantsAndAuditors											Boolean			Info															3,35,36,37,38
+30071	Ele	2	    SchInputEntity.ThirdPartyAgents.Name	 		Name							Tx5527			TPAs	String			Info			Contact,Restated												3,35,36,37,38	Group,Country,Language
+30072	Ele	2	    SchInputEntity.ThirdPartyAgents.Descr	 		Descr							Tx5389			TPAs	String			Info			Contact,Restated												3,35,36,37,38	Group,Country,Language
+30073	Ele	2	    SchInputEntity.ThirdPartyAgents.NameOrLocationOfficePerformingAudit	 		NameOrLocationOfficePerformingAudit							Tx5316			TPAs	String			Info			Contact,Restated												3,35,36,37,38	Group,Country,Language
+30074	Ele	2	    SchInputEntity.ThirdPartyAgents.NameIndividualOrAccountant	 		NameIndividualOrAccountant							Tx5315			TPAs	String			Info			Contact,Restated												3,35,36,37,38	Group,Country,Language
+30075	Ele	2	    SchInputEntity.ThirdPartyAgents.NameSeniorStatutory	 		NameSeniorStatutory							Tx5317			TPAs	String			Info			Contact,Restated													Group,Country,Language
+30076	Set	2	    SchInputEntity.ThirdPartyAgents.MeansContact	 		MeansContact											String			Info
+30077	Set	3	      SchInputEntity.ThirdPartyAgents.MeansContact.Address	 			Address										String			Info															3,35,38
+30078	Ele	4	        SchInputEntity.ThirdPartyAgents.MeansContact.Address.Line1	 				Line1					Tx5341Hy41			TPAs	String			Info			Restated												3,35,38	Group,Contact,Country,Language		M# Items + Type 2
+30079	Ele	4	        SchInputEntity.ThirdPartyAgents.MeansContact.Address.Line2	 				Line2					Tx5342Hy41			TPAs	String			Info			Restated												3,35,38	Group,Contact,Country,Language		M# Items + Type 2
+30080	Ele	4	        SchInputEntity.ThirdPartyAgents.MeansContact.Address.Line3	 				Line3					Tx5343Hy41			TPAs	String			Info			Restated												3,35,38	Group,Contact,Country,Language		M# Items + Type 2
+30081	Ele	4	        SchInputEntity.ThirdPartyAgents.MeansContact.Address.CityOrTown	 				CityOrTown					Tx5576Hy41			TPAs	String			Info			Restated												3,35,38	Group,Contact,Country,Language		M# Items + Type 2
+30082	Ele	4	        SchInputEntity.ThirdPartyAgents.MeansContact.Address.CountyRegion	 				CountyRegion					Tx5377Hy41			TPAs	String			Info			Restated												3,35,38	Group,Contact,Country,Language		M# Items + Type 2
+30083	Ele	4	        SchInputEntity.ThirdPartyAgents.MeansContact.Address.PostCode	 				PostCode					Tx5568Hy41			TPAs	String			Info			Restated												3,37,38	Group,Contact,Country,Language		M# Items + Type 2
+30084	Ele	3	      SchInputEntity.ThirdPartyAgents.MeansContact.EmailAddress	 			EmailAddress						Tx5457Hy41			TPAs	String			Info			Restated													Group,Contact,Country,Language		M# Items + Type 2
+30085	Set	3	      SchInputEntity.ThirdPartyAgents.MeansContact.PhoneNumber	 			PhoneNumber										String			Info															3,37
+30086	Ele	4	        SchInputEntity.ThirdPartyAgents.MeansContact.PhoneNumber.CountryCode	 				CountryCode					Tx5375Hy41			TPAs	String			Info			Restated												3,37	Group,Contact,Country,Language		M# Items + Type 2
+30087	Ele	4	        SchInputEntity.ThirdPartyAgents.MeansContact.PhoneNumber.AreaCode	 				AreaCode					Tx5355Hy41			TPAs	String			Info			Restated												3,37	Group,Contact,Country,Language		M# Items + Type 2
+30088	Ele	4	        SchInputEntity.ThirdPartyAgents.MeansContact.PhoneNumber.Local	 				Local					Tx5514Hy41			TPAs	String			Info			Restated												3,37	Group,Contact,Country,Language		M# Items + Type 2
+30089	Ele	4	        SchInputEntity.ThirdPartyAgents.MeansContact.PhoneNumber.Extension	 				Extension					Tx5497Hy41			TPAs	String			Info			Restated													Group,Contact,Country,Language		M# Items + Type 2
+30090	Set	2	    SchInputEntity.ThirdPartyAgents.ContactPerson	 		ContactPerson											String			Info															3,37,38
+30091	Ele	3	      SchInputEntity.ThirdPartyAgents.ContactPerson.NameMain	 			NameMain						Tx5525Hy41			TPAs	String			Info			Restated												3,37,38	Group,Contact,Country,Language		M# Items + Type 2
+30092	Ele	3	      SchInputEntity.ThirdPartyAgents.ContactPerson.JobTitlePositionMain	 			JobTitlePositionMain						Tx5506Hy41			TPAs	String			Info			Restated												3,37,38	Group,Contact,Country,Language		M# Items + Type 2
+30093	Ele	3	      SchInputEntity.ThirdPartyAgents.ContactPerson.OtherOnPersons	 			OtherOnPersons						Tx5541Hy41			TPAs	String			Info			Restated													Group,Contact,Country,Language		M# Items + Type 2
+30094	Set	2	    SchInputEntity.ThirdPartyAgents.WebsiteInformation	 		WebsiteInformation											String			Info															3,37,38
+30095	Ele	3	      SchInputEntity.ThirdPartyAgents.WebsiteInformation.MainPageURL	 			MainPageURL						Tx5613Hy41			TPAs	String			Info			Restated												3,37,38	Group,Contact,Country,Language		M# Items + Type 2
+30096	Ele	3	      SchInputEntity.ThirdPartyAgents.WebsiteInformation.DescrOrOtherOn	 			DescrOrOtherOn						Tx5390Hy41			TPAs	String			Info			Restated													Group,Contact,Country,Language		M# Items + Type 2
+
+#	02-BRI (Business Report Information) 02-BRI (Business Report Information) 02-BRI (Business Report Information) 02-BRI (Business Report Information) 02-BRI (Business Report Information) 02-BRI (Business Report Information)
+ =30200	Set	0	SchInputBRI	SchInputBRI													String			Other
+30201	Set	1	  SchInputBRI.DatesPeriods	 	DatesPeriods												Date			Other
+30202	Ele	2	    SchInputBRI.DatesPeriods.BS	 		BS							Tx5356			Basic	Date			Other																Group,Restated,Ageing
+30203	Ele	2	    SchInputBRI.DatesPeriods.ApprovalAccounts	 		ApprovalAccounts							Tx1141			Basic	Date			Other																Group,Restated,Ageing
+30204	Ele	2	    SchInputBRI.DatesPeriods.DescrCoveredByReport	 		DescrCoveredByReport							Tx5393			Basic	String			Other																Group,Restated,Ageing
+30205	Ele	2	    SchInputBRI.DatesPeriods.Start	 		Start							Tx5589			Basic	Date			Other																Group,Restated,Ageing
+30206	Ele	2	    SchInputBRI.DatesPeriods.End	 		End							Tx5460			Basic	Date			Other																Group,Restated,Ageing
+30207	Ele	2	    SchInputBRI.DatesPeriods.BusinessReportPublication	 		BusinessReportPublication							Tx5363			Basic	Date			Other																Group,Restated,Ageing

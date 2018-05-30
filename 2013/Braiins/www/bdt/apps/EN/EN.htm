@@ -1,0 +1,28 @@
+<!-- EN New Entity -->
+<h2 class=c>Add New <span class=AName></span> Entity</h2>
+<div id=ENdI>
+<h3 class=c>Basic Details of the Entity</h3>
+<form>
+<table class='mc mb05'>
+<tr><td>Name</td><td><input id=ENiN type=text size=75 data-minl=3 maxlength=100 required title='Name of the Entity'></td></tr>
+<tr><td>Reference&nbsp;</td><td><input id=ENiR type=text size=40 data-minl=1 maxlength=40 required title='Reference code for the Entity, which should be the same as used in the [AName] AP system'></td></tr>
+<tr><td>Taxonomy</td><td><input type=text size=40 readonly title='UK-GAAP only currently. Other taxonomies will follow.' value='UK GAAP'></td></tr>
+<tr><td>Type</td><td><input type=text size=40 readonly title='Private Limited Company only currently. Other entity types will follow.' value='Private Limited Company (2)'></td></tr>
+<tr><td>Size</td><td><span id=ENsCS class=in title='Size as defined by SI 2008/393 The Companies Act 2006 (Amendment) (Accounts and Reports) Regulations 2008)'></span></td></tr>
+<tr><td>Manager</td><td><select id=ENsMN title='The [AName] Member responsible for the Entity'></select>&nbsp;&nbsp;Entity Access Level <input id=ENnLev type=number class=w30x min=1 data-min=1 size=1 maxlength=1 title='Anyone with the required Access Permission(s) and a Member Access Level equal to or greater than this Entity Access Level will be able to access and operate on the entity. You can change this setting to any value between 1 and your Member Access Level of [MLevel].'></td></tr>
+</table>
+<h3 class=c>Reporting Requirements</h3>
+<p class=c>Select the Reporting Requirements needed for processing the accounts for the entity. <span class=u title='<p>Select only the Reporting Requirements you are sure will be needed. You can always add more later via Entities Edit if necessary. Conversely, you can also remove unused ones in Entities Edit and receive a refund of the credits.</p><p class=mb0>Leaving out Reporting Requirements here not only saves credits but results in fewer alternatives being presented in posting type screens, and helps with checking by trapping invalid postings sooner.</p>'>More info...</span></p>
+<div class='c mb05'><button id=ENbAll class=bLoc title='Click to Select All available Reporting Requirements'>Select All</button><button id=ENbDeAll class=bLoc title='Click to Deselect All Reporting Requirements'>Deselect All</button></div>
+<div id=ENdRR class=mc style=width:580px></div>
+<p class='clr c pt05 mb0'><span class=f90>The numbers in brackets after items above are the credits required for the item.</span><br>
+Credits required to add the Entity = <span class='ENCrs b'></span></p>
+<p class='ENIC hide c'><span class=wng>Sorry, the available credits are insufficient to add the new entity.</span><br>
+Credits need to be added via Account Admin Credits<span id=ENBaseOK>, or you could deselect some Reporting Requirements to add the entity now, and then add them later via Entity Edit once your credits have been topped up</span>.</p>
+<div class=ENOK>
+<div class='c p10'><button id=ENbRes title='Click to Reset the form'>Reset</button><button id=ENbSav title='Click to add the New Entity'>New Entity</button></div>
+<p class='c mb0'>Complete the form and click the New Entity button to add the entity.</p>
+</div>
+<p class=c>Total available <span class=AName></span> credits = <span class=AgCrs></span>.<button id=ENbRef class=bLoc title='Click to Refresh the Available Credits if they might have been updated by another person or in another window.'>Refresh</button> Total after add = <span class=AgACrs></span>.</p>
+</form>
+</div>

@@ -1,0 +1,221 @@
+Importing Data
+File Donations Restated.txt read.
+StartYear: 4
+ImportType: Replace
+Import is for year: Year 1 (Restated)
+Data Import Row	DE Running Balances	Processed BroRef if different	Comments
+BroRef	
+Year 1 (Restated)
+	Year 1 (Restated)
+SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.NameOrDescrRecipientOrg,T.21	EU Party One R			Bro 6375
+SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg,Restated.AcctPolicyIncr,T.21	1			Bro 6376
+
+Summing Money Year 1 (Restated)
+
+Summing Money Year 0
+
+Data Import and Summing Results
+Ref	Short Bro Name	Bro Reference	PT	Src	Year 0	Year 1	Year 1 (Restated)
+1049		PLExps	DE	S	7,400	1,116	1,116
+1146		PLExps.OperationalAdministration	DE	S	7,400	1,116	1,116
+1160	Tx5129	PLExps.OperationalAdministration.CharitableDonations	DE	P	3,000	306	306
+1161	Tx5256	PLExps.OperationalAdministration.PoliticalDonations	DE	P	4,400	810	810
+2701		Suspense	DE	P	-7,400	-1,116	-1,116
+3021		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax	Sch	S	7,400	1,116	1,116
+3023		PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.ProfitOnOrdinaryActivitiesBeforeFinanceChargesAndInterest	Sch	mS	7,400	1,116	1,116
+3030		PLTotals.ProfitLossOnOrdinaryActivitiesBeforeFinanceChargesInterest	Sch	mS	7,400	1,116	1,116
+5000		CF	DE	S	7,400	1,116	1,116
+5036		CF.ReconciliationCashFlowsOperatingActivities	DE	S	7,400	1,116	1,116
+5037		CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom	DE	S	7,400	1,116	1,116
+5038		CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom.ProfitLoss	DE	mS	7,400	1,116	1,116
+6248	Tx5469	SchInputEntity.Names.CurrentLegalOrRegistered	Sch	P	AAAAA Limited
+6347	Tx5356	SchInputBRI.DatesPeriods.BS	Sch	e	2009-12-31
+6348	Tx1141	SchInputBRI.DatesPeriods.ApprovalAccounts	Sch	e	2010-01-30
+6350	Tx5589	SchInputBRI.DatesPeriods.Start	Sch	P	2009-01-01	2008-01-01	2008-01-01
+6351	Tx5460	SchInputBRI.DatesPeriods.End	Sch	P	2009-12-31	2008-12-31	2008-12-31
+6367	Tx5254	SchInputDirRep.PoliticalCharitableDonations	Sch	S,S,b	7,400	1,116	1,117
+6367,73	Tx5254	SchInputDirRep.PoliticalCharitableDonations,Restated.Amount	Sch	d			1,117
+6367,74	Tx5254	SchInputDirRep.PoliticalCharitableDonations,Restated.PriorPeriodIncr	Sch	d			1
+6367,75	Tx5254	SchInputDirRep.PoliticalCharitableDonations,Restated.AcctPolicyIncr	Sch	S			1
+6367,77	Tx5254	SchInputDirRep.PoliticalCharitableDonations,Restated.OriginalAmount	Sch	R			1,116
+6368		SchInputDirRep.PoliticalCharitableDonations.Charitable	Sch	S	3,000	306	306
+6369		SchInputDirRep.PoliticalCharitableDonations.Charitable.SpecificCharitableDonation	Sch	S	3,000	306	306
+6370,T.11	Tx5152Tu151	SchInputDirRep.PoliticalCharitableDonations.Charitable.SpecificCharitableDonation.DescrPurpose,T.11	Sch	P	Save the Children	Save the Children	Save the Children
+6370,T.12	Tx5152Tu151	SchInputDirRep.PoliticalCharitableDonations.Charitable.SpecificCharitableDonation.DescrPurpose,T.12	Sch	P	Save the Parents	Save the Parents	Save the Parents
+6370,T.13	Tx5152Tu151	SchInputDirRep.PoliticalCharitableDonations.Charitable.SpecificCharitableDonation.DescrPurpose,T.13	Sch	P	Save the Planet	Save the Planet	Save the Planet
+6371	Tx5124Tu151	SchInputDirRep.PoliticalCharitableDonations.Charitable.SpecificCharitableDonation.Amount	Sch	b	3,000	306	306
+6371,T.11	Tx5124Tu151	SchInputDirRep.PoliticalCharitableDonations.Charitable.SpecificCharitableDonation.Amount,T.11	Sch	P	1,000	101	101
+6371,T.12	Tx5124Tu151	SchInputDirRep.PoliticalCharitableDonations.Charitable.SpecificCharitableDonation.Amount,T.12	Sch	P	1,000	102	102
+6371,T.13	Tx5124Tu151	SchInputDirRep.PoliticalCharitableDonations.Charitable.SpecificCharitableDonation.Amount,T.13	Sch	P	1,000	103	103
+6372		SchInputDirRep.PoliticalCharitableDonations.Political	Sch	S,S,b	4,400	810	811
+6372,73		SchInputDirRep.PoliticalCharitableDonations.Political,Restated.Amount	Sch	d			811
+6372,74		SchInputDirRep.PoliticalCharitableDonations.Political,Restated.PriorPeriodIncr	Sch	d			1
+6372,75		SchInputDirRep.PoliticalCharitableDonations.Political,Restated.AcctPolicyIncr	Sch	S			1
+6372,77		SchInputDirRep.PoliticalCharitableDonations.Political,Restated.OriginalAmount	Sch	R			810
+6373	Tx5181	SchInputDirRep.PoliticalCharitableDonations.Political.EU	Sch	S,S,b	3,600	606	607
+6373,73	Tx5181	SchInputDirRep.PoliticalCharitableDonations.Political.EU,Restated.Amount	Sch	d			607
+6373,74	Tx5181	SchInputDirRep.PoliticalCharitableDonations.Political.EU,Restated.PriorPeriodIncr	Sch	d			1
+6373,75	Tx5181	SchInputDirRep.PoliticalCharitableDonations.Political.EU,Restated.AcctPolicyIncr	Sch	S			1
+6373,77	Tx5181	SchInputDirRep.PoliticalCharitableDonations.Political.EU,Restated.OriginalAmount	Sch	R			606
+6374		SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation	Sch	S,S,b	3,600	606	607
+6374,73		SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation,Restated.Amount	Sch	d			607
+6374,74		SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation,Restated.PriorPeriodIncr	Sch	d			1
+6374,75		SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation,Restated.AcctPolicyIncr	Sch	S			1
+6374,77		SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation,Restated.OriginalAmount	Sch	R			606
+6375,T.21	Tx5209Tu152	SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.NameOrDescrRecipientOrg,T.21	Sch	P	EU Party One	EU Party One	EU Party One R
+6375,T.22	Tx5209Tu152	SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.NameOrDescrRecipientOrg,T.22	Sch	P	EU Party Two	EU Party Two	EU Party Two
+6375,T.23	Tx5209Tu152	SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.NameOrDescrRecipientOrg,T.23	Sch	P	EU Party Three	EU Party Three	EU Party Three
+Data Import and Summing Results
+Ref	Short Bro Name	Bro Reference	PT	Src	Year 0	Year 1	Year 1 (Restated)
+6376	Tx5118Tu152	SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg	Sch	b	3,600	606	607
+6376,T.21	Tx5118Tu152	SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg,T.21	Sch	P,P,Pt	1,200	201	202
+6376,73,T.21	Tx5118Tu152	SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg,Restated.Amount,T.21	Sch	d			202
+6376,74,T.21	Tx5118Tu152	SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg,Restated.PriorPeriodIncr,T.21	Sch	d			1
+6376,75,T.21	Tx5118Tu152	SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg,Restated.AcctPolicyIncr,T.21	Sch	P			1
+6376,77,T.21	Tx5118Tu152	SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg,Restated.OriginalAmount,T.21	Sch	r			201
+6376,T.22	Tx5118Tu152	SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg,T.22	Sch	P	1,200	202	202
+6376,T.23	Tx5118Tu152	SchInputDirRep.PoliticalCharitableDonations.Political.EU.SpecificEUPoliticalDonation.AmountToEUOrg,T.23	Sch	P	1,200	203	203
+6377	Tx5215	SchInputDirRep.PoliticalCharitableDonations.Political.NonEU	Sch	P	800	204	204
+6574		SchInputPL.SegAnalysisRevCostsProfits	Sch	S	66,600	10,044	10,044
+6576		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates	Sch	S	22,200	3,348	3,348
+6578		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.LossOnOrdinaryActivitiesAfterTax	Sch	mS	7,400	1,116	1,116
+6580		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.LossOnOrdinaryActivitiesBeforeTax	Sch	mS	7,400	1,116	1,116
+6592		SchInputPL.SegAnalysisRevCostsProfits.JVAssociates.OpLoss	Sch	mS	7,400	1,116	1,116
+6595		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity	Sch	S	22,200	3,348	3,348
+6607		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss	Sch	S	22,200	3,348	3,348
+6609		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.OrdinaryActivitiesBeforeTax	Sch	mS	7,400	1,116	1,116
+6622		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.OrdinaryActivitiesBeforeFinanceChargesInterest	Sch	mS	7,400	1,116	1,116
+6629		SchInputPL.SegAnalysisRevCostsProfits.BusinessActivity.ProfitLoss.Op	Sch	mS	7,400	1,116	1,116
+6633		SchInputPL.SegAnalysisRevCostsProfits.Geography	Sch	S	22,200	3,348	3,348
+6646		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss	Sch	S	22,200	3,348	3,348
+6648		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.OrdinaryActivitiesBeforeTax	Sch	mS	7,400	1,116	1,116
+6656		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.OrdinaryActivitiesBeforeFinanceChargesInterest	Sch	mS	7,400	1,116	1,116
+6663		SchInputPL.SegAnalysisRevCostsProfits.Geography.ProfitLoss.Op	Sch	mS	7,400	1,116	1,116
+7525		CalcPLF2SubTotsNotIncElsewhere	DE	S	7,400	1,116	1,116
+7540		CalcPLF2SubTotsNotIncElsewhere.PersonnelRelated	DE	S	7,400	1,116	1,116
+7542		CalcPLF2SubTotsNotIncElsewhere.PersonnelRelated.OperationalAdministration	DE	mS	7,400	1,116	1,116
+7547	Tx3422	CalcPLTotals.OperatingProfit	DE	S	7,400	1,116	1,116
+7549		CalcPLTotals.OperatingProfit.PLExps	DE	mS	7,400	1,116	1,116
+7550	Tx3997	CalcPLTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest	DE	S	7,400	1,116	1,116
+7551		CalcPLTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest.OperatingProfit	DE	mS	7,400	1,116	1,116
+7553	Tx3998	CalcPLTotals.ProfitLossOnOrdinaryActivitiesBeforeTax	DE	S	7,400	1,116	1,116
+7554		CalcPLTotals.ProfitLossOnOrdinaryActivitiesBeforeTax.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest	DE	mS	7,400	1,116	1,116
+7556	Tx3996	CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax	DE	S	7,400	1,116	1,116
+7557		CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax.ProfitLossOnOrdinaryActivitiesBeforeTax	DE	mS	7,400	1,116	1,116
+7561		CalcPLTotals.ExtraordinaryProfitLossAfterTaxation.ProfitLossOnOrdinaryActivitiesAfterTax	DE	mS	7,400	1,116	1,116
+7739		ReportDPL	DE	S	7,400	1,116	1,116
+7787		ReportDPL.Exps	DE	S	7,400	1,116	1,116
+7870		ReportDPL.Exps.OperationalAdministration	DE	S	7,400	1,116	1,116
+7881		ReportDPL.Exps.OperationalAdministration.CharitableDonations	DE	mP	3,000	306	306
+7882		ReportDPL.Exps.OperationalAdministration.PoliticalDonations	DE	mP	4,400	810	810
+7898		ReportDPL.ProfitTaxTotals.OperatingProfit	Sch	mS	7,400	1,116	1,116
+7899		ReportDPL.ProfitTaxTotals.ProfitOnOrdinaryActivitiesBeforeFinanceChargesInterest	DE	mS	7,400	1,116	1,116
+7900		ReportDPL.ProfitTaxTotals.ProfitLossOnOrdinaryActivitiesBeforeTax	Sch	mS	7,400	1,116	1,116
+7901		ReportDPL.ProfitTaxTotals.ProfitLossOnOrdinaryActivitiesAfterTax	Sch	mS	7,400	1,116	1,116
+
+Where the 'Src' column shows the Source of the values as follows:
+•	P	Posting or Import
+•	PE	Prior year End value as Start for a startend Bro
+•	R	Restated Orignal Value - included in 'b' Base Sum and 'd' Restated Amount Sum
+•	S	Summed
+•	SE	Sum End calculation for a startend Bro of type SumEnd
+•	b	Base (no dims) value = sum of the primary dimension values for the Bro
+•	t	Base (no dims) value for a Tuple
+•	d	Dimension summing value as per the Dimensions Map
+•	e	dErived or dEduced value
+•	i	Intermediate dimension for a posting with multiple dimensions
+•	r	Restated Orignal Value - included in 'd' Restated Amount Sum
+
+An upper case Source code indicates that this is a Primary entry. In the case of Summing Bros a Primary entry is one which contributes to the Bro's Base total i.e. its no dimensions value. Lower case codes are for information values derived from the primary values.
+A prefix of 'm' means that the value has been copied from the Master, which also means that the Bro in question is a Slave Bro.
+'i' and 't' codes can appear after a Primary code when a combination is involved.
+If different Source codes apply in different years, the column contains a comma separated list for all years, otherwise a single code is shown which applies to all years.
+
+Summing Warnings for Money Year 1 (Restated)
+
+Bro Equivalence checks gave:
+
+3019 PLTotals.ProfitOrdinaryActivitiesAfterTax has a balance of 'undefined' (no posting) which is required to Equal the 7556 CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax balance but that is 1,116.
+
+3024 PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit has a balance of 'undefined' (no posting) which is required to Equal the 7547 CalcPLTotals.OperatingProfit balance but that is 1,116.
+
+3035 PLTotals.ProfitOnOrdinaryActivitiesAfterTax has a balance of 'undefined' (no posting) which is required to Equal the 7556 CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax balance but that is 1,116.
+
+5003 CF.CashFlowStatement.OutflowBeforeManagementLiquidResourcesFinancing.FromOpActivities has a balance of 'undefined' (no posting) which is required to Equal the 5037 CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom balance but that is 1,116.
+
+5037 CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom has a balance of 1,116 which is required to Equal the 5003 CF.CashFlowStatement.OutflowBeforeManagementLiquidResourcesFinancing.FromOpActivities balance but that is 'undefined' (no posting).
+
+6372 SchInputDirRep.PoliticalCharitableDonations.Political has a balance of 811 which is required to Equal the 1161 PLExps.OperationalAdministration.PoliticalDonations balance but that is 810.
+
+7540 CalcPLF2SubTotsNotIncElsewhere.PersonnelRelated has a balance of 1,116 which is required to Equal the 1116 PLExps.PersonnelRelated balance but that is 'undefined' (no posting).
+
+7564 CalcPLTotals.ProfitLossForPeriod.ProfitLossOnOrdinaryActivitiesAfterTax has a balance of 'undefined' (no posting) which is required to Equal the 7556 CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax balance but that is 1,116.
+
+Summing Warnings for Money Year 0
+
+Bro Equivalence checks gave:
+
+3019 PLTotals.ProfitOrdinaryActivitiesAfterTax has a balance of 'undefined' (no posting) which is required to Equal the 7556 CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax balance but that is 7,400.
+
+3024 PLTotals.ProfitOrdinaryActivitiesAfterTax.ProfitBeforeTax.OperatingProfit has a balance of 'undefined' (no posting) which is required to Equal the 7547 CalcPLTotals.OperatingProfit balance but that is 7,400.
+
+3035 PLTotals.ProfitOnOrdinaryActivitiesAfterTax has a balance of 'undefined' (no posting) which is required to Equal the 7556 CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax balance but that is 7,400.
+
+5003 CF.CashFlowStatement.OutflowBeforeManagementLiquidResourcesFinancing.FromOpActivities has a balance of 'undefined' (no posting) which is required to Equal the 5037 CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom balance but that is 7,400.
+
+5037 CF.ReconciliationCashFlowsOperatingActivities.OutflowFrom has a balance of 7,400 which is required to Equal the 5003 CF.CashFlowStatement.OutflowBeforeManagementLiquidResourcesFinancing.FromOpActivities balance but that is 'undefined' (no posting).
+
+7540 CalcPLF2SubTotsNotIncElsewhere.PersonnelRelated has a balance of 7,400 which is required to Equal the 1116 PLExps.PersonnelRelated balance but that is 'undefined' (no posting).
+
+7564 CalcPLTotals.ProfitLossForPeriod.ProfitLossOnOrdinaryActivitiesAfterTax has a balance of 'undefined' (no posting) which is required to Equal the 7556 CalcPLTotals.ProfitLossOnOrdinaryActivitiesAfterTax balance but that is 7,400.
+
+
+The import has been processed but there were 15 warnings issued. See above. These should be investigated.
+Data Import
+
+Select the File to import OR paste the Import Data below and click Import
+AAAAA 222.txt
+AAAAA 3019.txt
+AAAAA AuditFees.txt
+AAAAA Cash.txt
+AAAAA CashDims.txt
+AAAAA CashMove.txt
+AAAAA CashMove2648.txt
+AAAAA CashMoveDims.txt
+AAAAA CashMoveNotEqual.txt
+AAAAA CashODraft.txt
+AAAAA Creditors.txt
+AAAAA IFA.txt
+AAAAA NetDebtCFlow.txt
+AAAAA Stock 1.txt
+AAAAA Stock 2.txt
+AAAAA Stock 3.txt
+AAAAA Test.txt
+AAAAA Worked TB.txt
+ADIErrors.txt
+ATest.txt
+DE Stock Test.txt
+Donations Restated.txt
+Donations.txt
+Import 120622.txt
+Import 120813.txt
+Import 120818.txt
+Import 120823.txt
+Import Complete.txt
+Import Restated.txt
+Import.txt
+Pensions Restated.txt
+Pensions.txt
+StartEndDESch-TB+Duration.txt
+StartEndDESch-TB.txt
+
+Debug option: (Nothing to use import comammnd setting, 0-3 to override the import setting.)
+
+Done in 177 msecs
+Top
+
+Home
+
+
+Home
+Home
