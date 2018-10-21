@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:ct-default="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-default/2010-06-15"
+  xmlns:ct-DR="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-DR/2010-06-15"
+  xmlns:ct-CT="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-CT/2010-06-15"
+  xmlns:ct-CaseI="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-CaseI/2010-06-15"
+  xmlns:ct-Tax="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-Tax/2010-06-15">
+  <link:schemaRef xlink:type="simple" xlink:href="http://www.hmrc.gov.uk/schemas/ct/comp/taxonomies/2010-06-15/ct-2010-06-15.xsd"/>
+  <context id="c0">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <instant>2008-03-31</instant>
+    </period>
+  </context>
+  <context id="c1">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <startDate>2007-04-01</startDate>
+      <endDate>2008-03-31</endDate>
+    </period>
+  </context>
+  <context id="c2">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <instant>2007-03-31</instant>
+    </period>
+  </context>
+  <unit id="u0">
+    <measure>iso4217:GBP</measure>
+  </unit>
+<ct-CT:DescriptorCompanyName contextRef="c0">Testco (ME) Ltd</ct-CT:DescriptorCompanyName>
+<ct-CT:DescriptorTaxReference contextRef="c0">1111111111</ct-CT:DescriptorTaxReference>
+<ct-CT:DescriptorStartOfPeriodForWhichReturnRequired contextRef="c2">2007-04-01</ct-CT:DescriptorStartOfPeriodForWhichReturnRequired>
+<ct-CT:DescriptorEndOfPeriodForWhichReturnRequired contextRef="c0">2008-03-31</ct-CT:DescriptorEndOfPeriodForWhichReturnRequired>
+<ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsProfitsAndGainsFromNTLR contextRef="c1" unitRef="u0" precision="INF">1488544</ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsProfitsAndGainsFromNTLR>
+<ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsDeficitBFAndUsed contextRef="c1" unitRef="u0" precision="INF">55220</ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsDeficitBFAndUsed>
+<ct-Tax:CalculationOfCTLiabilityProfitsBeforeOtherDeductionsReliefs contextRef="c1" unitRef="u0" precision="INF">1433324</ct-Tax:CalculationOfCTLiabilityProfitsBeforeOtherDeductionsReliefs>
+<ct-DR:ManagementExpensesRelief contextRef="c1" unitRef="u0" precision="INF">1433324</ct-DR:ManagementExpensesRelief>
+<ct-Tax:CalculationOfCTLiabilityProfits contextRef="c1" unitRef="u0" precision="INF">0</ct-Tax:CalculationOfCTLiabilityProfits>
+<ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsNonTradeDeficitsBF contextRef="c2" unitRef="u0" precision="INF">55220</ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsNonTradeDeficitsBF>
+<ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsNonTradeDeficitsCF contextRef="c0" unitRef="u0" precision="INF">0</ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsNonTradeDeficitsCF>
+<ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsExchangeGains contextRef="c1" unitRef="u0" precision="INF">452667</ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsExchangeGains>
+<ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsExchangeLosses contextRef="c1" unitRef="u0" precision="INF">58773</ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsExchangeLosses>
+<ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsOtherCredits contextRef="c1" unitRef="u0" precision="INF">1553872</ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsOtherCredits>
+<ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsOtherDebits contextRef="c1" unitRef="u0" precision="INF">459222</ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsOtherDebits>
+<ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsInterestReceivablePerAccounts contextRef="c1" unitRef="u0" precision="INF">1553872</ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsInterestReceivablePerAccounts>
+<ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsInterestPayablePerAccounts contextRef="c1" unitRef="u0" precision="INF">459222</ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsInterestPayablePerAccounts>
+<ct-DR:ManagementExpensesExpensesOfPeriodManagementExpensesEmploymentCosts contextRef="c1" unitRef="u0" precision="INF">224775</ct-DR:ManagementExpensesExpensesOfPeriodManagementExpensesEmploymentCosts>
+<ct-DR:ManagementExpensesExpensesOfPeriodManagementExpensesPropertyCosts contextRef="c1" unitRef="u0" precision="INF">51000</ct-DR:ManagementExpensesExpensesOfPeriodManagementExpensesPropertyCosts>
+<ct-DR:ManagementExpensesExpensesOfPeriodManagementExpensesRecharges contextRef="c1" unitRef="u0" precision="INF">172500</ct-DR:ManagementExpensesExpensesOfPeriodManagementExpensesRecharges>
+<ct-DR:ManagementExpensesExpensesOfPeriodManagementExpensesTotal contextRef="c1" unitRef="u0" precision="INF">103275</ct-DR:ManagementExpensesExpensesOfPeriodManagementExpensesTotal>
+<ct-DR:ManagementExpensesBF contextRef="c2" unitRef="u0" precision="INF">1330049</ct-DR:ManagementExpensesBF>
+<ct-DR:ManagementExpensesArisingThisPeriod contextRef="c1" unitRef="u0" precision="INF">103275</ct-DR:ManagementExpensesArisingThisPeriod>
+<ct-DR:ManagementExpensesCF contextRef="c0" unitRef="u0" precision="INF">0</ct-DR:ManagementExpensesCF>
+</xbrl>

@@ -1,0 +1,1450 @@
+From: <Saved by Windows Internet Explorer 7>
+Subject: HM Revenue & Customs: Generic IRmark: Online Service technical pack for software developers
+Date: Tue, 28 Dec 2010 17:12:57 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01CBA6B2.78C55960"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5994
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01CBA6B2.78C55960
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.hmrc.gov.uk/ebu/irmark-techpack/index.htm
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML lang=3Den><HEAD><TITLE>HM Revenue & Customs: Generic IRmark: =
+Online Service technical pack for software developers</TITLE><!-- =
+InstanceBegin template=3D"/Templates/online_sevices.dwt" =
+codeOutsideHTMLIsLocked=3D"false" --><!-- InstanceBeginEditable =
+name=3D"doctitle" --><!-- InstanceEndEditable --><!-- =
+InstanceBeginEditable name=3D"Metadata" -->
+<META http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8">
+<META http-equiv=3Dpics-label=20
+content=3D'(pics-1.1 "http://www.icra.org/ratingsv02.html" l gen true =
+for "http://www.hmrc.gov.uk" r (nz 1 vz 1 lz 1 oz 1 cz 1) gen true for =
+"http://www.hmce.gov.uk" r (nz 1 vz 1 lz 1 oz 1 cz 1) gen true for =
+"http://www.ir.gov.uk" r (nz 1 vz 1 lz 1 oz 1 cz 1) gen true for =
+"http://customs.hmrc.gov.uk" r (nz 1 vz 1 lz 1 oz 1 cz 1))'>
+<META lang=3Deng=20
+content=3D"HM Revenue and Customs, 100 Parliament Street London SW1A =
+2BQ"=20
+name=3DDC.creator>
+<META lang=3Deng scheme=3DDCTERMS.IMT content=3Dtext/HTML =
+name=3DDC.format>
+<META scheme=3DDCTERMS.ISO639-2 content=3Deng name=3DDC.language>
+<META lang=3Deng=20
+content=3D"HM Revenue and Customs, 100 Parliament Street London SW1A =
+2BQ"=20
+name=3DDC.publisher>
+<META lang=3Deng=20
+content=3D"Crown copyright =
+http://www.opsi.gov.uk/advice/crown-copyright/"=20
+name=3DeGMS.copyright>
+<META lang=3Deng=20
+content=3D"Generic IRmark: Online Service technical pack for software =
+developers"=20
+name=3Dtitle>
+<META lang=3Deng=20
+content=3D"Technical pack for developers who need to implement the =
+IRmark for their service"=20
+name=3Ddescription>
+<META lang=3Deng=20
+content=3D"IRmark, HMRCMark, irmark, hmrcmark, Security, Base64, SHA-1, =
+Canonicalisation"=20
+name=3Dkeywords>
+<META lang=3Deng scheme=3DGCL content=3D"Tax, Benefits" =
+name=3DDC.subject>
+<META lang=3Deng content=3D"" name=3DDCTERMS.audience>
+<META scheme=3DW3CDTF content=3D2010-07-29 name=3DDCTERMS.issued>
+<META lang=3Deng scheme=3DDCTERMS.W3CDTF content=3D"" =
+name=3DDCTERMS.modified>
+<META content=3D"" name=3DDC.identifier>
+<META scheme=3DW3CDTF content=3D2006/04/01 name=3DeGMS.disposalReview>
+<META lang=3Deng content=3D"" name=3DDC.type><!-- InstanceEndEditable =
+--><LINK=20
+media=3Dscreen href=3D"http://www.hmrc.gov.uk/styles.css" =
+type=3Dtext/css=20
+rel=3Dstylesheet><LINK media=3Dscreen =
+href=3D"http://www.hmrc.gov.uk/ir_supp.css"=20
+type=3Dtext/css rel=3Dstylesheet><LINK media=3Dprint=20
+href=3D"http://www.hmrc.gov.uk/print_styles.css" type=3Dtext/css =
+rel=3Dstylesheet><!-- InstanceBeginEditable name=3D"head" --><!-- =
+InstanceEndEditable -->
+<META content=3D"MSHTML 6.00.6000.17093" name=3DGENERATOR></HEAD>
+<BODY>
+<DIV id=3Dheader>
+<DIV class=3Dmain_frame_container><A =
+href=3D"http://www.hmrc.gov.uk/"><IMG=20
+class=3Dhmrc_logo title=3D"HM Revenue &amp; Customs" alt=3D"HM Revenue =
+&amp; Customs"=20
+src=3D"http://www.hmrc.gov.uk/images/HMRC_logo_alt.gif" =
+name=3DHMRC></A><A=20
+name=3Dtop></A>=20
+<DIV id=3Dnavigation>
+<UL class=3Dlevel1_nav>
+  <LI><A href=3D"http://www.hmrc.gov.uk/">Home</A> </LI>
+  <LI><A=20
+  =
+href=3D"http://search2.hmrc.gov.uk/kbroker/hmrc/contactus/start.jsp">Cont=
+act=20
+  us</A> </LI>
+  <LI><A href=3D"http://www.hmrc.gov.uk/menus/aboutmenu.htm">About =
+us</A> </LI>
+  <LI><A href=3D"http://www.hmrc.gov.uk/jobs/">Jobs</A> </LI>
+  <LI><A =
+href=3D"http://www.hmrc.gov.uk/accessibility/index.htm">Accessibility</A>=
+=20
+  </LI>
+  <LI><A href=3D"http://www.hmrc.gov.uk/comment/index.htm">Feedback</A> =
+</LI>
+  <LI><A href=3D"http://www.hmrc.gov.uk/menus/help.htm">Help</A> =
+</LI></UL><BR=20
+class=3Dclear>
+<DIV id=3Dlower_nav>
+<DIV id=3Dsite_search>
+<DIV class=3Dsite_search_container>
+<FORM name=3Dsearch =
+action=3Dhttp://search.hmrc.gov.uk/kb5/hmrc/hmrc/results.page=20
+method=3Dget target=3D_top><INPUT class=3Dsearch_button =
+id=3Dsearch_submit_button type=3Dsubmit value=3D" Search ">=20
+<LABEL class=3Dhidden for=3Dsearch_keywords>Search</LABEL> <INPUT=20
+class=3Dform_input_box id=3Dsearch_keywords alt=3DSearch size=3D10 =
+name=3Dqt><!--[if gte IE 6]><![endif]--> </FORM></DIV></DIV>
+<DIV id=3Dtax_advisers_button><A =
+href=3D"http://www.hmrc.gov.uk/agents/">Tax agents=20
+&amp; advisers</A> </DIV></DIV></DIV></DIV></DIV>
+<DIV id=3Dtabs_etc>
+<DIV id=3Dtabs_container>
+<DIV id=3Dtabs>
+<DIV class=3Dtab id=3Dtab_bandc><A=20
+href=3D"http://www.hmrc.gov.uk/businesses/">businesses&nbsp;&amp;=20
+corporations</A></DIV>
+<DIV class=3Dtab id=3Dtab_employers><A=20
+href=3D"http://www.hmrc.gov.uk/employers/">employers</A></DIV>
+<DIV class=3Dtab id=3Dtab_iande><A=20
+href=3D"http://www.hmrc.gov.uk/individuals/">individuals&nbsp;&amp;=20
+employees</A></DIV></DIV></DIV></DIV>
+<DIV id=3Dmain_body>
+<DIV class=3Dfullwidth id=3Dcentre_left_cols>
+<DIV id=3Dcentre_col>
+<DIV id=3Dbreadcrumb><STRONG>You are here:</STRONG> <A=20
+href=3D"http://www.hmrc.gov.uk/online/">Online Services</A> </DIV>
+<H1><!-- InstanceBeginEditable name=3D"Title" -->Generic IRmark: Online =
+Service=20
+technical pack for software developers<!-- InstanceEndEditable =
+--></H1><!-- InstanceBeginEditable name=3D"Content" -->
+<P><STRONG>Note. The pack contains documentation required to support the =
+
+development of the generic IRmark for online filing =
+services.</STRONG></P>
+<P>This pack is aimed at software developers only and not for =
+individuals and=20
+others who may wish to use the online services.</P>
+<P><STRONG>The contents of this pack are frequently updated, please =
+check the=20
+website regularly to ensure that you are working with the most up to =
+date=20
+version.</STRONG></P>
+<H2>Generic IRmark documents </H2>
+<P>Choose the individual files you require from the following list:</P>
+<UL>
+  <LI><A=20
+  =
+href=3D"http://www.hmrc.gov.uk/ebu/irmark-techpack/generic-irmark-v1.3.zi=
+p">Generic=20
+  IRmark specification (ZIP 122K)</A> version 1.3, 26 May 2005=20
+  <LI><A=20
+  =
+href=3D"http://www.hmrc.gov.uk/ebu/irmark-techpack/markcalculator.zip">IR=
+mark=20
+  generation: code examples (JAVA) =E2=80=93 Code examples in JAVA for =
+generating an=20
+  IRmark for both Govtalk Envelope (CT, SA) and SOAP (EMCS, ICS) based =
+services=20
+  (ZIP 3.97MB)</A>=20
+  <LI><A =
+href=3D"http://www.hmrc.gov.uk/ebu/irmark-techpack/irmarkdos.zip">IRmark =
+
+  executable JAR (ZIP 3.1MB )- Only for services that use the Govtalk =
+Envelope=20
+  (not SOAP services) </A>
+  <LI><A=20
+  =
+href=3D"http://www.hmrc.gov.uk/ebu/irmark-techpack/succrespschema-v1.1.zi=
+p">Success=20
+  Response Schema (ZIP 62K)</A> version 1.1, 17 July 2006=20
+  <LI><A=20
+  =
+href=3D"http://www.hmrc.gov.uk/ebu/irmark-techpack/irmark_step_by_step.pd=
+f">IRmark=20
+  Step by Step a simple guide to producing an IRmark (PDF 64K)</A> =
+version 1.0,=20
+  19 May 2005=20
+  <LI><A=20
+  =
+href=3D"http://www.hmrc.gov.uk/ebu/irmark-techpack/generic-irmark-addinfo=
+.pdf">Additional=20
+  information (PDF 54K)</A> version 1.0, 07 June 2004 </LI></UL>
+<H2>IRmark example files</H2>
+<P>Open the <A=20
+href=3D"http://www.hmrc.gov.uk/ebu/irmark-techpack/irmark-examples.zip">I=
+Rmark=20
+example files (ZIP 4K)</A> to obtain all the items listed below or =
+choose the=20
+individual files you require from the following list:</P>
+<UL>
+  <LI><A =
+href=3D"http://www.hmrc.gov.uk/ebu/irmark-techpack/submission.zip">IRmark=
+=20
+  (submission) (ZIP 2K)</A> version 1.1, 17 July 2006=20
+  <LI><A =
+href=3D"http://www.hmrc.gov.uk/ebu/irmark-techpack/response.zip">IRmark=20
+  (response) (ZIP 2K)</A> version 1.1, 17 July 2006=20
+  <LI><A=20
+  =
+href=3D"http://www.hmrc.gov.uk/ebu/irmark-techpack/canonicalised.zip">IRm=
+ark=20
+  (canonicalised) (ZIP 1K)</A> version 1.1, 17 July 2006 </LI></UL><!-- =
+InstanceEndEditable --></DIV>
+<DIV id=3Dleft_col></DIV></DIV><!-- End centre & left --></DIV><!-- End =
+main_body -->
+<DIV class=3Dclear_all></DIV><!-- Footer -->
+<DIV id=3Dfooter>
+<DIV class=3Dmain_frame_container>
+<UL class=3Dfooter_nav>
+  <LI><A href=3D"http://www.businesslink.gov.uk/mkt1_home" =
+target=3D_blank><IMG=20
+  class=3Dbusinesslink_logo title=3D"Business Link" alt=3D"Business =
+Link"=20
+  src=3D"http://www.hmrc.gov.uk/images/blank.gif"></A><SPAN>|</SPAN> =
+</LI>
+  <LI><A href=3D"http://www.hmrc.gov.uk/copyright/">=C2=A9 Crown=20
+  Copyright</A><SPAN>|</SPAN> </LI>
+  <LI><A href=3D"http://www.hmrc.gov.uk/terms/">Terms &amp;=20
+  Conditions</A><SPAN>|</SPAN> </LI>
+  <LI><A href=3D"http://www.hmrc.gov.uk/about/privacy.htm">Privacy=20
+  Policy</A><SPAN>|</SPAN> </LI>
+  <LI><A href=3D"http://www.hmrc.gov.uk/nav/index.htm">Site =
+Map</A><SPAN>|</SPAN>=20
+  </LI>
+  <LI><A href=3D"http://www.hmrc.gov.uk/about/foi.htm">Freedom of=20
+  Information</A><SPAN>|</SPAN> </LI>
+  <LI><A href=3D"http://www.direct.gov.uk/en/index.htm" =
+target=3D_blank><IMG=20
+  class=3Ddirectgov_logo title=3DDirectGov alt=3DDirectGov=20
+  src=3D"http://www.hmrc.gov.uk/images/blank.gif"></A> =
+</LI></UL></DIV></DIV><!-- begin_exclude-->
+<SCRIPT src=3D"http://www.hmrc.gov.uk/ProphetInsert.js"=20
+type=3Dtext/javascript></SCRIPT>
+<!-- end_exclude--><!-- InstanceEnd --></BODY></HTML>
+
+------=_NextPart_000_0000_01CBA6B2.78C55960
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.hmrc.gov.uk/images/HMRC_logo_alt.gif
+
+R0lGODlhBgAGAIAAAP///wAAACH5BAEAAAAALAAAAAAGAAYAAAIFhI+pywUAOw==
+
+------=_NextPart_000_0000_01CBA6B2.78C55960
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.hmrc.gov.uk/images/blank.gif
+
+R0lGODlhBgAGAIAAAACAgAAAACH5BAEAAAAALAAAAAAGAAYAQAIFhI+pywUAOw==
+
+------=_NextPart_000_0000_01CBA6B2.78C55960
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.hmrc.gov.uk/styles.css
+
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 80%; PADDING-BOTTOM: =
+0px; MARGIN: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #fff
+}
+BODY {
+	FONT-FAMILY: verdana,helvetica,arial,sans-serif
+}
+.sell_block H3 {
+	FONT-FAMILY: verdana,helvetica,arial,sans-serif
+}
+H1 {
+	FONT-FAMILY: arial, tahoma, sans-serif
+}
+H2 {
+	FONT-FAMILY: arial, tahoma, sans-serif
+}
+.side_menu_title {
+	FONT-FAMILY: arial, tahoma, sans-serif
+}
+.os_title {
+	FONT-FAMILY: arial, tahoma, sans-serif
+}
+H1 {
+	FONT-WEIGHT: normal
+}
+H1 B {
+	FONT-WEIGHT: normal
+}
+H2 B {
+	FONT-WEIGHT: normal
+}
+H3 B {
+	FONT-WEIGHT: normal
+}
+H1 {
+	FONT-SIZE: 2em
+}
+.os_title {
+	FONT-SIZE: 2em
+}
+H1 {
+	MARGIN: 10px 0px 8px 3px
+}
+H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.6em; MARGIN: 1.3em 0px 3px 3px
+}
+.promotions#library H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.6em; MARGIN: 1.3em 0px 3px 3px
+}
+H3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.3em; MARGIN: 1.2em 0px 8px 3px
+}
+.promotions#library H3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.3em; MARGIN: 1.2em 0px 8px 3px
+}
+H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 1em; MARGIN: 1.1em 0px 0px 3px
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; =
+MARGIN-LEFT: 3px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; =
+MARGIN-LEFT: 3px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; =
+MARGIN-LEFT: 3px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; =
+MARGIN-LEFT: 3px; PADDING-TOP: 0px
+}
+P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; =
+MARGIN-LEFT: 3px; PADDING-TOP: 0px
+}
+P {
+	MARGIN: 3px 0px 3px 3px
+}
+P {
+	LINE-HEIGHT: 1.3em
+}
+LI {
+	LINE-HEIGHT: 1.3em
+}
+#tab_employers DIV UL LI A {
+	LINE-HEIGHT: 1.3em
+}
+TH {
+	FONT-WEIGHT: normal; BACKGROUND-COLOR: #eee; TEXT-ALIGN: left
+}
+TD {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; =
+PADDING-TOP: 3px; spacing: 0px
+}
+TH {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; =
+PADDING-TOP: 3px; spacing: 0px
+}
+TABLE {
+=09
+}
+#tabs_etc {
+	WIDTH: 770px
+}
+#main_body {
+	WIDTH: 770px
+}
+.fullwidth#centre_left_cols {
+	WIDTH: 770px
+}
+.more_link {
+=09
+}
+.clear_all {
+	CLEAR: both; MARGIN-TOP: -2px; FONT-SIZE: 0em; HEIGHT: 1px
+}
+#centre_col P {
+	PADDING-RIGHT: 10px
+}
+#centre_col UL {
+	PADDING-RIGHT: 10px
+}
+#centre_col UL {
+	CLEAR: left; PADDING-LEFT: 15px; MARGIN: 1px 0px 6px 20px
+}
+#centre_col LI {
+	PADDING-BOTTOM: 3px
+}
+#centre_col P {
+	MARGIN-TOP: 5px; MARGIN-BOTTOM: 10px
+}
+#centre_col LI LI {
+	FONT-SIZE: 1em
+}
+#breadcrumb {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; FONT-SIZE: 0.9em; =
+PADDING-BOTTOM: 3px; MARGIN: 8px 12px 0px 0px; COLOR: #444; PADDING-TOP: =
+3px
+}
+#breadcrumb A {
+	MARGIN: 0px 4px
+}
+#breadcrumb STRONG {
+	MARGIN-RIGHT: 10px
+}
+#breadcrumb HR {
+	BORDER-TOP: #ddd 1px solid; MARGIN-BOTTOM: 6px; WIDTH: 99%; =
+BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: =
+none
+}
+.promotions H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 1.1em
+}
+.promotions H3 {
+	MARGIN-TOP: 5px; FONT-WEIGHT: bold; FONT-SIZE: 0.95em; MARGIN-BOTTOM: =
+1px; LETTER-SPACING: 0px
+}
+.promotions {
+	BORDER-TOP: #fff 12px solid; PADDING-TOP: 10px; BACKGROUND-COLOR: #fff
+}
+.ad_image_left {
+	FLOAT: left; MARGIN-RIGHT: 6px
+}
+.boxout {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 4px; MARGIN: =
+10px 6px 10px 0px; PADDING-TOP: 4px; BACKGROUND-COLOR: #cfc
+}
+#centre_col .boxout A {
+	FONT-WEIGHT: bold
+}
+.sell_block {
+	CLEAR: left
+}
+.sell_block H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 1em; LETTER-SPACING: 0px
+}
+.sell_block IMG {
+	FLOAT: left; MARGIN: 0px 8px 8px 0px
+}
+#dio_special UL {
+	PADDING-LEFT: 8px; MARGIN-LEFT: 0px; BACKGROUND-COLOR: #096
+}
+#dio_special UL LI {
+	BACKGROUND-POSITION: 3px 0.1em; PADDING-LEFT: 22px; BACKGROUND-IMAGE: =
+url(images/bullet_white_on_green.gif); BACKGROUND-REPEAT: no-repeat
+}
+#dio_special A {
+	COLOR: #fff
+}
+#dio_special A:hover {
+	COLOR: #fff
+}
+#centre_left_cols {
+	FLOAT: left; WIDTH: 642px
+}
+#centre_col {
+	MARGIN-TOP: 10px; FLOAT: right; WIDTH: 504px
+}
+.fullwidth #centre_col {
+	WIDTH: 637px
+}
+#left_col {
+	MARGIN-BOTTOM: 20px; OVERFLOW: hidden
+}
+#right_col {
+	MARGIN-BOTTOM: 20px; OVERFLOW: hidden
+}
+#centre_col {
+	MARGIN-BOTTOM: 20px; OVERFLOW: hidden
+}
+#left_col {
+	FLOAT: left; WIDTH: 121px
+}
+#right_col {
+	FLOAT: left; WIDTH: 121px
+}
+#left_col {
+	MARGIN: 5px 6px 0px 3px; WIDTH: 124px
+}
+#right_col {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px =
+0px 0px 6px; PADDING-TOP: 48px
+}
+#centre_col {
+	BACKGROUND-POSITION: right top; BACKGROUND-IMAGE: =
+url(images/default_corner_bg.gif); BACKGROUND-REPEAT: no-repeat
+}
+.promotions {
+	BACKGROUND-POSITION: right top; BACKGROUND-IMAGE: =
+url(images/default_corner_bg.gif); BACKGROUND-REPEAT: no-repeat
+}
+BODY.affinity #right_col {
+	MARGIN-TOP: 5px; PADDING-TOP: 0px
+}
+.two_col {
+	FLOAT: left; WIDTH: 49%
+}
+.two_col + .two_col {
+	MARGIN-LEFT: 1%; WIDTH: 48%
+}
+#header {
+	WIDTH: 770px; BORDER-BOTTOM: #000 0.06em solid; FONT-FAMILY: Arial, =
+Helvetica, sans-serif; HEIGHT: 73px; BACKGROUND-COLOR: #008080
+}
+A.skip {
+	FONT-SIZE: 0em; LEFT: 0px; POSITION: absolute; TOP: 0px; =
+TEXT-DECORATION: none
+}
+A.skip {
+	COLOR: #008080
+}
+A.skip:visited {
+	COLOR: #008080
+}
+A.skip:active {
+	COLOR: #008080
+}
+A.skip:hover {
+	COLOR: #008080
+}
+#header_logo {
+	PADDING-LEFT: 10px; WIDTH: 80px; MARGIN-RIGHT: 10px
+}
+#header .main_frame_container {
+	FLOAT: left; WIDTH: 770px; BACKGROUND-COLOR: #008080; TEXT-ALIGN: left
+}
+#navigation {
+	PADDING-TOP: 14px; BACKGROUND-COLOR: #008080
+}
+#navigation UL {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FLOAT: left; =
+PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: =
+none
+}
+#navigation LI {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FONT-SIZE: =
+0.9em; FLOAT: left; PADDING-BOTTOM: 3px; MARGIN: 0px 14px 0px 0px; =
+PADDING-TOP: 0px; BORDER-BOTTOM: #009aa0 2px groove; LIST-STYLE-TYPE: =
+none; TEXT-DECORATION: none
+}
+#navigation LI A {
+	PADDING-BOTTOM: 3px; BORDER-BOTTOM: #009aa0 2px groove
+}
+#navigation LI:hover {
+	BORDER-LEFT-COLOR: #7eff00; BORDER-BOTTOM-COLOR: #7eff00; CURSOR: =
+pointer; BORDER-TOP-COLOR: #7eff00; BORDER-RIGHT-COLOR: #7eff00
+}
+#navigation LI A:hover {
+	BORDER-LEFT-COLOR: #7eff00; BORDER-BOTTOM-COLOR: #7eff00; =
+PADDING-BOTTOM: 3px; BORDER-TOP-COLOR: #7eff00; BORDER-RIGHT-COLOR: =
+#7eff00
+}
+#navigation A {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+#lower_nav {
+	CLEAR: both; FLOAT: right; WIDTH: 565px
+}
+.site_search_container {
+	OVERFLOW: hidden; HEIGHT: 18px
+}
+.search {
+	FLOAT: right; WIDTH: 398px; HEIGHT: 20px
+}
+#site_search {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FLOAT: left; PADDING-BOTTOM: =
+1px; WIDTH: 255px; MARGIN-RIGHT: 7px; PADDING-TOP: 1px; HEIGHT: 18px; =
+BACKGROUND-COLOR: #fff
+}
+#site_search .form_input_box {
+	BORDER-RIGHT: #fff 1px solid; BORDER-TOP: #fff 1px solid; FONT-SIZE: =
+11px; FLOAT: left; MARGIN-LEFT: 4px; BORDER-LEFT: #fff 1px solid; WIDTH: =
+170px; LINE-HEIGHT: 13px; BORDER-BOTTOM: #fff 1px solid; HEIGHT: 14px
+}
+#search_button_outer {
+	BACKGROUND-POSITION: right 50%; MARGIN-TOP: 0px; PADDING-LEFT: 5px; =
+FONT-WEIGHT: 800; FLOAT: left; BACKGROUND-IMAGE: =
+url(images/search_button.gif); PADDING-BOTTOM: 1px; WIDTH: 64px; CURSOR: =
+pointer; COLOR: #fff; MARGIN-RIGHT: 0px; PADDING-TOP: 1px; =
+BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #009966; TEXT-ALIGN: =
+left
+}
+.search_button {
+	BORDER-RIGHT: #009966 2px solid; PADDING-RIGHT: 0px; =
+BACKGROUND-POSITION: right 50%; BORDER-TOP: #009966 2px solid; =
+PADDING-LEFT: 0px; FONT-WEIGHT: 800; FONT-SIZE: 0.85em; FLOAT: right; =
+BACKGROUND-IMAGE: url(images/search_button.gif); PADDING-BOTTOM: 0px; =
+MARGIN: 0px; BORDER-LEFT: #009966 2px solid; WIDTH: 69px; CURSOR: =
+pointer; COLOR: #fff; PADDING-TOP: 0px; BORDER-BOTTOM: #009966 2px =
+solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #009966; =
+TEXT-ALIGN: left
+}
+#form_search {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FLOAT: left; PADDING-BOTTOM: =
+1px; WIDTH: 200px; PADDING-TOP: 1px; HEIGHT: 20px; BACKGROUND-COLOR: =
+#fff
+}
+#form_search .form_input_box {
+	BORDER-RIGHT: #fff 1px solid; BORDER-TOP: #fff 1px solid; FONT-SIZE: =
+11px; FLOAT: left; MARGIN-LEFT: 4px; BORDER-LEFT: #fff 1px solid; WIDTH: =
+96px; LINE-HEIGHT: 13px; BORDER-BOTTOM: #fff 1px solid; HEIGHT: 13px
+}
+.form_button {
+	PADDING-RIGHT: 1px; BACKGROUND-POSITION: right 50%; MARGIN-TOP: 1px; =
+PADDING-LEFT: 6px; FONT-WEIGHT: 800; FONT-SIZE: 11px; FLOAT: right; =
+BACKGROUND-IMAGE: url(images/form_button.gif); PADDING-BOTTOM: 1px; =
+WIDTH: 82px; CURSOR: pointer; COLOR: #fff; MARGIN-RIGHT: 1px; =
+PADDING-TOP: 1px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: =
+#009966
+}
+#tax_advisers_button {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 21px; FONT-WEIGHT: 800; FONT-SIZE: =
+11px; FLOAT: left; BACKGROUND-IMAGE: url(images/tax_agents_button.gif); =
+PADDING-BOTTOM: 5px; WIDTH: 149px; COLOR: #fff; LINE-HEIGHT: 20px; =
+PADDING-TOP: 0px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: ariel, =
+helvetica, san-serif; LETTER-SPACING: 0px; HEIGHT: 20px
+}
+.hidden {
+	DISPLAY: none
+}
+.hmrc_logo {
+	BORDER-TOP-WIDTH: 0px; BACKGROUND-POSITION: left top; MARGIN-TOP: 7px; =
+BORDER-LEFT-WIDTH: 0px; FLOAT: left; BACKGROUND-IMAGE: =
+url(images/hmrc_logo.gif); BORDER-BOTTOM-WIDTH: 0px; WIDTH: 149px; =
+MARGIN-RIGHT: 55px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 39px; =
+BORDER-RIGHT-WIDTH: 0px
+}
+#footer {
+	BORDER-TOP: #666 1px solid; MARGIN-TOP: 10px; FONT-SIZE: 0.85em; WIDTH: =
+770px; COLOR: #fff; PADDING-TOP: 1.6em; FONT-FAMILY: Arial, Helvetica, =
+sans-serif; BACKGROUND-COLOR: #008080
+}
+#footer UL {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; MARGIN: =
+0px; PADDING-TOP: 20px
+}
+#footer LI {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FLOAT: left; =
+PADDING-BOTTOM: 0px; MARGIN: 0px; BOTTOM: 7px; PADDING-TOP: 0px; =
+LIST-STYLE-TYPE: none; POSITION: relative; TEXT-DECORATION: none
+}
+#footer LI A {
+	COLOR: #fff! important; TEXT-DECORATION: none
+}
+#footer LI A:hover {
+	COLOR: #c9e9cc! important; TEXT-DECORATION: underline
+}
+#footer LI SPAN {
+	MARGIN-LEFT: 10px; MARGIN-RIGHT: 10px
+}
+.businesslink_logo {
+	BORDER-TOP-WIDTH: 0px; BACKGROUND-POSITION: left top; =
+BORDER-LEFT-WIDTH: 0px; FLOAT: left; BACKGROUND-IMAGE: =
+url(images/businesslink_logo.gif); BORDER-BOTTOM-WIDTH: 0px; WIDTH: =
+99px; BOTTOM: 4px; BACKGROUND-REPEAT: no-repeat; POSITION: relative; =
+HEIGHT: 17px; BORDER-RIGHT-WIDTH: 0px
+}
+.directgov_logo {
+	BORDER-TOP-WIDTH: 0px; BACKGROUND-POSITION: left top; MARGIN-TOP: 7px; =
+BORDER-LEFT-WIDTH: 0px; FLOAT: left; BACKGROUND-IMAGE: =
+url(images/directgov_logo.gif); BORDER-BOTTOM-WIDTH: 0px; WIDTH: 63px; =
+BOTTOM: 8px; BACKGROUND-REPEAT: no-repeat; POSITION: relative; HEIGHT: =
+17px; BORDER-RIGHT-WIDTH: 0px
+}
+.side_menu {
+	MARGIN: 5px auto 10px; BACKGROUND-COLOR: #fff
+}
+.side_menu_title {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: =
+0.85em; PADDING-BOTTOM: 14px; PADDING-TOP: 14px
+}
+.side_menu P {
+	BORDER-RIGHT: #363 1px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; =
+PADDING-BOTTOM: 3px; MARGIN: 0px 0px -1px; BORDER-LEFT: #363 1px solid; =
+PADDING-TOP: 3px
+}
+#left_col .title_decoration {
+	FLOAT: right; BACKGROUND-IMAGE: url(images/tab_corner_on.gif); WIDTH: =
+12px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 12px
+}
+#left_col .side_menu_title {
+	BACKGROUND-POSITION: left top; PADDING-LEFT: 38px; BACKGROUND-IMAGE: =
+url(images/side_col_down_arrow.gif); COLOR: #fff; BORDER-BOTTOM: #363 =
+1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #096
+}
+#dio_special .side_menu_title {
+	BORDER-BOTTOM: #fff 1px solid
+}
+#right_col .side_menu_title {
+	BACKGROUND-POSITION: right top; BACKGROUND-IMAGE: =
+url(images/grey_corner_bg.gif); BORDER-LEFT: #4e4a49 1px solid; COLOR: =
+#444; BORDER-BOTTOM: #4e4a49 1px solid; BACKGROUND-REPEAT: no-repeat; =
+BACKGROUND-COLOR: #fff
+}
+#right_col .title_decoration {
+	FLOAT: left; BACKGROUND-IMAGE: =
+url(images/side_col_lite_down_arrow.gif); WIDTH: 38px; =
+BACKGROUND-REPEAT: no-repeat; HEIGHT: 36px
+}
+.side_menu UL {
+	FONT-SIZE: 0.85em
+}
+.side_menu P {
+	FONT-SIZE: 0.85em
+}
+.side_menu UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 15px; MARGIN: =
+0px 0px 25px; PADDING-TOP: 3px; LIST-STYLE-TYPE: none
+}
+#left_col .side_menu UL {
+	BORDER-RIGHT: #096 1px solid; BORDER-LEFT: #096 1px solid
+}
+#right_col .side_menu UL {
+	BORDER-RIGHT: #4e4a49 1px solid; BORDER-LEFT: #4e4a49 1px solid
+}
+.side_menu UL LI {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: =
+0px; PADDING-TOP: 4px
+}
+.global_nav A {
+	COLOR: #fff
+}
+.practitioner_zone_link A {
+	COLOR: #fff
+}
+.global_nav A:visited {
+	COLOR: #fff
+}
+.practitioner_zone_link A:visited {
+	COLOR: #fff
+}
+A {
+	COLOR: #03a; TEXT-DECORATION: none
+}
+#homepage #tabs LI A {
+	COLOR: #03a; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #747
+}
+#homepage #tab_bandc LI A:visited {
+	COLOR: #747
+}
+#homepage #tab_iande LI A:visited {
+	COLOR: #747
+}
+#homepage #tab_employers LI A:visited {
+	COLOR: #747
+}
+A:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+#homepage .tab .home_tab_links A:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+#homepage #tab_bandc LI A:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+#homepage #tab_iande LI A:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+#homepage #tab_employers LI A:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+#individuals_and_employees #tab_iande A:hover {
+	COLOR: #fff
+}
+#employers #tab_employers A:hover {
+	COLOR: #fff
+}
+#businesses_and_corporations #tab_bandc A:hover {
+	COLOR: #fff
+}
+.small_tabs .tab#selected A:hover {
+	COLOR: #fff
+}
+#homepage .tab A:hover {
+	COLOR: #fff
+}
+#centre_col A {
+	TEXT-DECORATION: underline
+}
+#centre_col LI A {
+	TEXT-DECORATION: none
+}
+#centre_col H4 A {
+	TEXT-DECORATION: none
+}
+#tabs_etc {
+	PADDING-TOP: 10px
+}
+#tabs_container {
+	FLOAT: right; WIDTH: 525px; TEXT-ALIGN: right
+}
+.tab {
+	BACKGROUND-POSITION: right top; MARGIN-TOP: 5px; FONT-SIZE: 10pt; =
+FLOAT: right; MARGIN-LEFT: 6px; BORDER-LEFT: #096 1px solid; WIDTH: =
+126px; BORDER-BOTTOM: #096 1px solid
+}
+.tab A {
+	PADDING-RIGHT: 3px; DISPLAY: block; PADDING-LEFT: 35px; PADDING-BOTTOM: =
+7px; PADDING-TOP: 9px; HEIGHT: 2.9em; TEXT-ALIGN: left; voice-family: =
+inherit
+}
+#homepage .tab A {
+	COLOR: #fff
+}
+#homepage .tab .home_tab_links {
+	FLOAT: left; MARGIN: 0px; WIDTH: 123px; voice-family: inherit
+}
+#homepage .tab .home_tab_links UL {
+	MARGIN-BOTTOM: 0px
+}
+#homepage .tab .home_tab_links A {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: =
+0px; LINE-HEIGHT: 1em; PADDING-TOP: 0px; HEIGHT: 1em
+}
+#tab_employers A {
+	LINE-HEIGHT: 2.4em
+}
+#special_title {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; FLOAT: left; PADDING-BOTTOM: =
+0px; WIDTH: 235px; PADDING-TOP: 5px
+}
+#special_title H1 {
+	CLEAR: none; PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; =
+FONT-WEIGHT: 600; FONT-SIZE: 1.8em; FLOAT: left; PADDING-BOTTOM: 0px; =
+MARGIN: 0px; PADDING-TOP: 0px
+}
+#special_image {
+	MARGIN-TOP: 5px; MARGIN-RIGHT: -2px
+}
+UL#sag_list {
+	CLEAR: right; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: right; =
+PADDING-BOTTOM: 2px; MARGIN: 5px 0px 0px; WIDTH: 393px; PADDING-TOP: 3px
+}
+UL#sag_list LI {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 5px; FONT-WEIGHT: =
+bold; FONT-SIZE: 0.85em; FLOAT: left; PADDING-BOTTOM: 4px; WIDTH: 12em; =
+COLOR: #fff; PADDING-TOP: 2px; LETTER-SPACING: -0.05em; TEXT-ALIGN: left
+}
+UL#sag_list LI A {
+	FONT-WEIGHT: normal; COLOR: #fff; LETTER-SPACING: 0px
+}
+UL#sag_list LI A:hover {
+	TEXT-DECORATION: underline
+}
+#tab_iande {
+	BORDER-LEFT-COLOR: #939; BACKGROUND-IMAGE: =
+url(images/corner_bg_iande.gif); BORDER-BOTTOM-COLOR: #939; =
+BORDER-TOP-COLOR: #939; BORDER-RIGHT-COLOR: #939
+}
+#tab_iande A {
+	BACKGROUND-IMAGE: url(images/tab_iande_arrow_off.gif); COLOR: #939
+}
+#tab_bandc {
+	BORDER-LEFT-COLOR: #900; BACKGROUND-IMAGE: =
+url(images/corner_bg_bandc.gif); BORDER-BOTTOM-COLOR: #900; =
+BORDER-TOP-COLOR: #900; BORDER-RIGHT-COLOR: #900
+}
+#tab_bandc A {
+	BACKGROUND-IMAGE: url(images/tab_bandc_arrow_off.gif); COLOR: #900
+}
+#tab_employers {
+	BORDER-LEFT-COLOR: #039; BACKGROUND-IMAGE: =
+url(images/corner_bg_employers.gif); BORDER-BOTTOM-COLOR: #039; =
+BORDER-TOP-COLOR: #039; BORDER-RIGHT-COLOR: #039
+}
+#tab_employers A {
+	BACKGROUND-IMAGE: url(images/tab_employers_arrow_off.gif); COLOR: #039
+}
+#tab_iande A:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+#tab_bandc A:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+#tab_employers A:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+#individuals_and_employees #special_title H1 {
+	COLOR: #939
+}
+#individuals_and_employees #tab_iande {
+	BACKGROUND-IMAGE: url(images/tab_corner_iande.gif); BACKGROUND-REPEAT: =
+no-repeat
+}
+#homepage #tab_iande {
+	BACKGROUND-IMAGE: url(images/tab_corner_iande.gif); BACKGROUND-REPEAT: =
+no-repeat
+}
+#individuals_and_employees #tab_iande A {
+	BACKGROUND-IMAGE: url(images/tab_iande_arrow.gif); COLOR: #fff
+}
+#homepage #tab_iande A {
+	BACKGROUND-IMAGE: url(images/tab_iande_arrow.gif); COLOR: #fff
+}
+#individuals_and_employees UL#sag_list {
+	BACKGROUND-COLOR: #939
+}
+#individuals_and_employees #centre_col {
+	BACKGROUND-IMAGE: url(images/corner_bg_iande.gif)
+}
+#individuals_and_employees .promotions {
+	BACKGROUND-IMAGE: url(images/corner_bg_iande.gif)
+}
+#individuals_and_employees .ad_style {
+	COLOR: #939
+}
+#individuals_and_employees UL#sag_list LI {
+	WIDTH: 8.5em
+}
+#employers #special_title H1 {
+	COLOR: #039
+}
+#employers #tab_employers {
+	BACKGROUND-IMAGE: url(images/tab_corner_employers.gif); =
+BACKGROUND-REPEAT: no-repeat
+}
+#homepage #tab_employers {
+	BACKGROUND-IMAGE: url(images/tab_corner_employers.gif); =
+BACKGROUND-REPEAT: no-repeat
+}
+#employers #tab_employers A {
+	BACKGROUND-IMAGE: url(images/tab_employers_arrow.gif); COLOR: #fff
+}
+#homepage #tab_employers A {
+	BACKGROUND-IMAGE: url(images/tab_employers_arrow.gif); COLOR: #fff
+}
+#employers UL#sag_list {
+	PADDING-BOTTOM: 13px; PADDING-TOP: 12px; BACKGROUND-COLOR: #039
+}
+#employers UL#sag_list LI {
+	WIDTH: 10em
+}
+#employers #centre_col {
+	BACKGROUND-IMAGE: url(images/corner_bg_employers.gif)
+}
+#employers .promotions {
+	BACKGROUND-IMAGE: url(images/corner_bg_employers.gif)
+}
+#businesses_and_corporations #special_title H1 {
+	COLOR: #900
+}
+#businesses_and_corporations #tab_bandc {
+	BACKGROUND-POSITION: right top; BACKGROUND-IMAGE: =
+url(images/tab_corner_bandc.gif); BACKGROUND-REPEAT: no-repeat
+}
+#homepage #tab_bandc {
+	BACKGROUND-POSITION: right top; BACKGROUND-IMAGE: =
+url(images/tab_corner_bandc.gif); BACKGROUND-REPEAT: no-repeat
+}
+#businesses_and_corporations #tab_bandc A {
+	BACKGROUND-IMAGE: url(images/tab_bandc_arrow.gif); COLOR: #fff
+}
+#homepage #tab_bandc A {
+	BACKGROUND-IMAGE: url(images/tab_bandc_arrow.gif); COLOR: #fff
+}
+#businesses_and_corporations UL#sag_list {
+	BACKGROUND-COLOR: #900
+}
+#businesses_and_corporations #centre_col {
+	BACKGROUND-IMAGE: url(images/corner_bg_bandc.gif)
+}
+#businesses_and_corporations .promotions {
+	BACKGROUND-IMAGE: url(images/corner_bg_bandc.gif)
+}
+#businesses_and_corporations UL#sag_list LI {
+	WIDTH: 11em
+}
+#ir_transactions #special_title {
+	COLOR: #096
+}
+#homepage .tab {
+	BACKGROUND-POSITION: right top; BACKGROUND-REPEAT: no-repeat
+}
+#homepage #tab_bandc {
+	BACKGROUND-IMAGE: url(images/tab_corner_bandc.gif)
+}
+#homepage #tab_employers {
+	BACKGROUND-IMAGE: url(images/tab_corner_employers.gif)
+}
+#homepage A {
+	BACKGROUND-REPEAT: no-repeat
+}
+#homepage #tab_bandc .home_tab_links A {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#homepage #tab_employers .home_tab_links A {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#homepage #tab_iande .home_tab_links A {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#homepage #centre_col {
+	CLEAR: none; FLOAT: left; MARGIN-LEFT: 5px; WIDTH: 505px; PADDING-TOP: =
+10px; voice-family: inherit
+}
+#homepage #left_col {
+	WIDTH: 114px
+}
+#homepage #right_col {
+	WIDTH: 114px
+}
+#homepage .tab DIV {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; =
+PADDING-TOP: 1px; TEXT-ALIGN: left
+}
+#homepage #tab_bandc .home_tab_links {
+	BORDER-RIGHT: #900 1px solid
+}
+#homepage #tab_iande .home_tab_links {
+	BORDER-RIGHT: #939 1px solid
+}
+#homepage #tab_employers .home_tab_links {
+	BORDER-RIGHT: #009 1px solid
+}
+#homepage .tab UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.85em; =
+PADDING-BOTTOM: 0px; MARGIN: 0px 0px 5px 8px; PADDING-TOP: 0px; =
+LIST-STYLE-TYPE: none
+}
+#homepage .tab DIV P {
+	FONT-SIZE: 0.85em
+}
+#homepage .tab UL LI {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; =
+PADDING-TOP: 2px
+}
+.hide {
+	FONT-SIZE: 0%; COLOR: #fff
+}
+.globalnav UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: =
+0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.globalnav UL LI {
+	DISPLAY: inline; HEIGHT: 1em
+}
+.globalnav A {
+	BORDER-RIGHT: #085 1px solid; PADDING-RIGHT: 12px; BORDER-TOP: #0a7 1px =
+solid; PADDING-LEFT: 12px; PADDING-BOTTOM: 5px; BORDER-LEFT: #0a7 1px =
+solid; PADDING-TOP: 5px; BORDER-BOTTOM: #085 1px solid; HEIGHT: 1em
+}
+#header .globalnav A:visited {
+	BORDER-RIGHT: #085 1px solid; PADDING-RIGHT: 12px; BORDER-TOP: #0a7 1px =
+solid; PADDING-LEFT: 12px; PADDING-BOTTOM: 5px; BORDER-LEFT: #0a7 1px =
+solid; PADDING-TOP: 5px; BORDER-BOTTOM: #085 1px solid; HEIGHT: 1em
+}
+.globalnav A:hover {
+	BORDER-LEFT-COLOR: #3a8; BORDER-BOTTOM-COLOR: #fff; COLOR: #fff; =
+BORDER-TOP-COLOR: #318; BACKGROUND-COLOR: #05a26a; TEXT-DECORATION: =
+none; BORDER-RIGHT-COLOR: #074
+}
+.hidden_links {
+	LEFT: -999px; WIDTH: 990px; POSITION: absolute
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: =
+0px; BORDER-RIGHT-WIDTH: 0px
+}
+
+------=_NextPart_000_0000_01CBA6B2.78C55960
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.hmrc.gov.uk/ir_supp.css
+
+TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 0px
+}
+TH {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 0px
+}
+TABLE {
+	FONT-SIZE: 100%
+}
+.tablebg1 {
+	BACKGROUND-COLOR: #cfc
+}
+.msgbg {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; =
+MARGIN-LEFT: 3px; MARGIN-RIGHT: 10px; PADDING-TOP: 3px; =
+BACKGROUND-COLOR: #cfc
+}
+.manual-nav {
+	FONT-SIZE: 70%
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: =
+0px; BORDER-RIGHT-WIDTH: 0px
+}
+.table-border {
+	BORDER-TOP: #096 1px solid; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 3px; =
+BORDER-LEFT: #096 1px solid; MARGIN-RIGHT: 10px; BORDER-COLLAPSE: =
+collapse
+}
+.table-border CAPTION {
+	FONT-WEIGHT: bold; FONT-SIZE: 1.3em; PADDING-BOTTOM: 6px; FONT-FAMILY: =
+Arial, sans-serif; TEXT-ALIGN: left
+}
+.table-border TH {
+	BORDER-RIGHT: #096 1px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; =
+PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BORDER-BOTTOM: #096 1px solid
+}
+.table-border TD {
+	BORDER-RIGHT: #096 1px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; =
+PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BORDER-BOTTOM: #096 1px solid
+}
+.table-border TH {
+	FONT-WEIGHT: bold; BACKGROUND: #eee; FONT-FAMILY: Verdana, sans-serif
+}
+.greenBkd {
+	BACKGROUND: #096
+}
+.pdf {
+	FONT-WEIGHT: bold; COLOR: #990033; TEXT-DECORATION: none
+}
+.html {
+	FONT-WEIGHT: bold; COLOR: #096; TEXT-DECORATION: none
+}
+#feedback_form {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 15px; MARGIN: =
+20px 0px; WIDTH: 500px; PADDING-TOP: 15px; BACKGROUND-COLOR: #cfc
+}
+#feedback_form .text_input {
+	WIDTH: 450px
+}
+#feedback_form .error {
+	WIDTH: 450px
+}
+#feedback_form .choice {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 40px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 0px
+}
+.feedback_error {
+	DISPLAY: none; FONT-SIZE: 12px; MARGIN-LEFT: 50px; COLOR: red
+}
+.feedback_hide {
+	FONT-SIZE: 12px; MARGIN-LEFT: 50px; COLOR: blue
+}
+.totop {
+	FONT-WEIGHT: bold; TEXT-ALIGN: right
+}
+.alignright {
+	TEXT-ALIGN: right
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: =
+0px; BORDER-RIGHT-WIDTH: 0px
+}
+
+------=_NextPart_000_0000_01CBA6B2.78C55960
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.hmrc.gov.uk/print_styles.css
+
+.global_nav {
+	DISPLAY: none
+}
+.search_form_container {
+	DISPLAY: none
+}
+.practitioner_zone_link {
+	DISPLAY: none
+}
+#left_col {
+	DISPLAY: none
+}
+#right_col {
+	DISPLAY: none
+}
+#tabs_container {
+	DISPLAY: none
+}
+A.skip {
+	DISPLAY: none
+}
+.hide {
+	DISPLAY: none
+}
+.logo {
+	DISPLAY: none
+}
+#footer {
+	DISPLAY: none
+}
+.hidden_links {
+	DISPLAY: none
+}
+#breadcrumb {
+	DISPLAY: none
+}
+BODY {
+	FONT-SIZE: 10pt; FONT-FAMILY: verdana,helvetica,arial,sans-serif
+}
+H1 {
+	FONT-FAMILY: arial, tahoma, sans-serif
+}
+H2 {
+	FONT-FAMILY: arial, tahoma, sans-serif
+}
+.side_menu_title {
+	FONT-FAMILY: arial, tahoma, sans-serif
+}
+.os_title {
+	FONT-FAMILY: arial, tahoma, sans-serif
+}
+H1 {
+	FONT-WEIGHT: normal
+}
+H2 {
+	FONT-WEIGHT: normal
+}
+H3 {
+	FONT-WEIGHT: normal
+}
+H1 B {
+	FONT-WEIGHT: normal
+}
+H2 B {
+	FONT-WEIGHT: normal
+}
+H3 B {
+	FONT-WEIGHT: normal
+}
+.clear_all {
+	CLEAR: both; MARGIN-TOP: -1px; FONT-SIZE: 0em; HEIGHT: 1px
+}
+#centre_col P {
+	PADDING-RIGHT: 10px
+}
+#centre_col UL {
+	PADDING-RIGHT: 10px
+}
+#centre_col UL {
+	CLEAR: left; PADDING-LEFT: 15px; MARGIN: 1px 0px 6px 20px
+}
+#centre_col LI {
+	PADDING-BOTTOM: 3px
+}
+#centre_col LI {
+	FONT-SIZE: 0.9em
+}
+#centre_col P {
+	FONT-SIZE: 0.9em
+}
+#centre_col P {
+	MARGIN-TOP: 5px; MARGIN-BOTTOM: 10px
+}
+#centre_col LI LI {
+	FONT-SIZE: 1em
+}
+#breadcrumb {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; FONT-SIZE: 0.9em; =
+PADDING-BOTTOM: 3px; MARGIN: 8px 12px 0px 0px; COLOR: #444; PADDING-TOP: =
+3px
+}
+#breadcrumb A {
+	MARGIN: 0px 4px
+}
+#breadcrumb STRONG {
+	MARGIN-RIGHT: 10px
+}
+#breadcrumb HR {
+	BORDER-TOP: #ddd 1px solid; MARGIN-BOTTOM: 6px; WIDTH: 99%; =
+BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: =
+none
+}
+.promotions H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 1.1em
+}
+.promotions H3 {
+	MARGIN-TOP: 5px; FONT-WEIGHT: bold; FONT-SIZE: 0.95em; MARGIN-BOTTOM: =
+1px; LETTER-SPACING: 0px
+}
+.promotions {
+	BORDER-TOP: #fff 12px solid; PADDING-TOP: 10px; HEIGHT: 15px; =
+BACKGROUND-COLOR: #fff
+}
+.ad_image_left {
+	FLOAT: left; MARGIN-RIGHT: 6px
+}
+.boxout {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 4px; MARGIN: =
+10px; PADDING-TOP: 4px; BACKGROUND-COLOR: #cfc
+}
+.boxout A {
+	FONT-WEIGHT: bold
+}
+.sell_block {
+	CLEAR: left
+}
+.sell_block H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 1em; LETTER-SPACING: 0px
+}
+.sell_block IMG {
+	FLOAT: left; MARGIN: 0px 8px 8px 0px
+}
+#dio_special UL {
+	BACKGROUND-COLOR: #096
+}
+#dio_special UL LI {
+	BACKGROUND-POSITION: 3px 0.1em; PADDING-LEFT: 22px; BACKGROUND-IMAGE: =
+url(images/bullet_white_on_green.gif); BACKGROUND-REPEAT: no-repeat
+}
+#dio_special A {
+	COLOR: #fff
+}
+#dio_special A:hover {
+	COLOR: #fff
+}
+B B {
+	FONT-WEIGHT: normal
+}
+B B B {
+	FONT-WEIGHT: bold
+}
+
+------=_NextPart_000_0000_01CBA6B2.78C55960
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.hmrc.gov.uk/ProphetInsert.js
+
+<!--
+var =
+hmrcGL=3D((document.cookie.indexOf('hmrcSF=3Dy')=3D=3D-1)&&(document.cook=
+ie.indexOf('hmrcStopFlag=3Dy')=3D=3D-1)&&(-2 !=3D =
+window.hmrcsn));/*@cc_on@if(@_jscript_version>=3D5.5)hmrcGL=3Dtrue;@end@*=
+/;function =
+hmrcSL(){if((hmrcGL=3D=3Dtrue)&&(window.hmrcwindowID))return;var =
+a=3D'hmrc';var b=3D'windowID';var g=3D'usy46gabsosd';var w=3Dwindow;var =
+d=3Ddocument;var l=3Dlocation;var =
+ck=3Dd.cookie;w[a+'LF']=3Dtrue;if(!(w[a+'gC'])){w[a+'gC']=3Dfunction(ckVa=
+l){return ckVal;};}w[a+'gPr']=3Dfunction(){var =
+bi=3Dl.protocol;if(w[a+'ForceSecure']=3D=3Dtrue)bi=3D'https:';if(bi=3D=3D=
+'https:')return 'https://stc01.u5e.com';else return =
+'http://stc01.u5e.com';};if(!w.hmrcGD){w[a+'GD']=3Dfunction(u,s,e){u=3Dl.=
+hostname;s=3Du.indexOf('.');if(s<0)return'';return =
+';domain=3D'+u.substring(s);};}w[a+'SC']=3Dfunction(v,e,u,cT,cpt,ctr,dmn)=
+{var d=3Ddocument;var w =3D window;cT =3D v+'; =
+path=3D/;';if(e)cT=3DcT+'expires=3D'+e;d.cookie=3DcT+w[a+'GD']();if(d.coo=
+kie.indexOf(v)>-1)return;u=3Dlocation.hostname;cpt=3Du.split('.');if(cpt.=
+length>=3D2){ctr=3Dcpt.length-2;dmn=3D'.'+cpt[ctr+1];while((d.cookie.inde=
+xOf(v)=3D=3D-1)&&(ctr>=3D0)){dmn=3D'.'+cpt[ctr]+dmn;d.cookie=3DcT+'; =
+domain=3D'+dmn;ctr--;}}if(d.cookie.indexOf(v) =3D=3D =
+-1){if(!w.hmrcPII){hmrcPII =3D w[a+'gPr']()+'/WEOIWMPIJ/'+new =
+Date().valueOf()+'/cImage.bmp';var weuc =3D =
+window.encodeURIComponent;if(weuc){hmrcPII +=3D =
+'?c=3D'+weuc(d.referrer.substring(0,Math.min(d.referrer.length,500)))+'&d=
+=3D'+weuc(navigator.cookieEnabled);}new Image().src =3D =
+hmrcPII;}w[a+'SF']=3D1;}};w[a+'ae']=3Dfunction(){if(w[a+'ln'])return;if((=
+new =
+Date().valueOf()-w[a+'Tm'])>30000){if(w.frames.length=3D=3D0)d.cookie=3Da=
++'SF=3Dy;path=3D/'+w[a+'GD']();return;}else =
+w.setTimeout(a+'ae();',2000);};w[a+'client_event']=3Dfunction(ap,al){if(d=
+ocument.cookie.indexOf('hmrcSF=3Dy') > -1)return;var =
+w=3Dwindow;if(w[a+'queueUserEvent'])w[a+'queueUserEvent'](ap,al);else{var=
+ =
+ar=3Da+'client_event(\''+ap+'\',\''+al+'\');';w.setTimeout(ar,500);}};w[a=
++'GP']=3Dfunction(p){return null;};w[a+'GPWID']=3Dfunction(p){return =
+p.hmrcwindowID;};w[a+'LC']=3Dfunction(bb,scriptID,bd){if(ck.indexOf(a+'SF=
+=3Dy')>-1)return;var =
+ai=3Dfalse;/*@cc_on@if(@_jscript_version>=3D5.5)ai=3Dtrue;@end@*/;var =
+dType;if(document.doctype)dType =3D '' + document.doctype.publicId;else =
+if((document.all)&&(document.all[0]))	dType =3D '' + =
+document.all[0].nodeValue;if((dType)&&(dType.indexOf('XHTML')> =
+-1))ai=3Dtrue;if((ai)&&(d.getElementById)){var =
+aw=3Dd.getElementById(bd);var =
+az=3Dd.getElementsByTagName('head').item(0);if(az){var =
+ak=3Dd.createElement('script');ak.src=3Dbb;ak.type=3D'text/javascript';ak=
+.id=3DscriptID;az.appendChild(ak);}}else{if(d.body)d.write("<scrip"+"t =
+type=3D'text/javascript' src=3D'"+bb+"'><\/script>");else(new =
+Image()).src=3Dbb;}};/*@cc_on@if(@_jscript_version>=3D5)w[a+'GP']=3Dfunct=
+ion(p){try{if(p=3D=3D=3Dp.parent)return null;return =
+p.parent;}catch(e){}return =
+null;};@end@*/;w[a+'TWID']=3D'AUTOSET';w[a+b]=3D'_'+(new =
+Date()).getTime()+Math.random()+'_';w[a+'getSD']=3Dfunction(q,w,d,n){var =
+euc=3Dw.encodeURIComponent;function =
+je(av){if(euc){av=3Deuc(av);av=3Dav.replace(/'/g,'%27');av=3Dav.replace(/=
+~/g,'%7E');return av;}else return escape(av);};function =
+as(ag,aj,at,ind2,bL,tl,ox,xs,ac,ab,aa,lb){lb=3D''+Math.floor((Math.random=
+()*9999)+1);while(lb.length<4)lb=3D'0'+lb;ag=3Dwindow[a+'gPr']();var =
+fCK=3Dd.cookie;aj=3D'';at=3D'';if(fCK.length>1024)at=3DfCK.substring(0,10=
+24);else at=3DfCK;if(fCK.indexOf(g)=3D=3D =
+-1){w[a+'SC'](g+'=3D'+a+w[a+b]+lb);aj=3Dw[a+b]+lb;}else{var =
+cKL,cLI,ind1;cKL=3Da+'__';cLI=3DfCK.indexOf(cKL);if(cLI>-1){ind2=3DfCK.in=
+dexOf('::',cLI);if(ind2<0)ind2=3DfCK.indexOf(';',cLI);if(ind2<0)ind2=3DfC=
+K.length;aj=3D'x'+fCK.substring(cLI+cKL.length,ind2);var =
+vx=3Daj.lastIndexOf('_');if(vx>-1)lb=3Daj.substring(vx+1);}else{cKL=3Da+'=
+_';cLI=3DfCK.indexOf(cKL);if(cLI>-1){cLI+=3DcKL.length-1;var =
+ind2=3DfCK.indexOf('::',cLI);if(ind2<0)ind2=3DfCK.indexOf(';',cLI);if(ind=
+2<0)ind2=3DfCK.length;aj=3DfCK.substring(cLI,ind2);var =
+vx=3Daj.lastIndexOf('_');if(vx>-1)lb=3Daj.substring(vx+1);}else{var =
+ind1=3DfCK.indexOf(g+'=3D');var =
+ind2=3DfCK.indexOf(';',ind1);if(ind2<0)ind2=3DfCK.length;aj=3Dw[a+b]+lb;w=
+[a+'SC'](fCK.substring(ind1,ind2)+'::'+a+w[a+b]+lb);}}}function =
+aLV(af,ah){if((!ah)&&(!(ah =3D=3D=3D 0))&(!(ah =3D=3D=3D =
+false)))return;ah=3Dje(ah);if((bL.length+af.length+ah.length)<=3D1950)bL=3D=
+bL+af+ah;};function =
+am(ms,dt,ay,ax,be,pd){if((ms.length+ay.length+ax.length+be.length+dt.leng=
+th+pd.length+20)<=3D1940)return true;return false;}function gDID(){var d =
+=3D document;var vSI=3Dd.cookie.indexOf('hmrcDBID=3D');if(vSI =3D=3D =
+-1)return '';var vEI=3Dd.cookie.indexOf(';', vSI);if(vEI =3D=3D -1)vEI =
+=3D d.cookie.length;return =
+d.cookie.substring(vSI+a.length+4+1,vEI);}bL=3D''+ag+'/'+lb+'/handler7/se=
+ssion.js?';aLV('se=3D',aj);aLV('&di=3D',gDID());aLV('&sj=3D',a);aLV('&aP=3D=
+',w[a+b]);aLV('&bd=3D',n.cookieEnabled);aLV('&si=3D',n.javaEnabled());aLV=
+('&aM=3D',GPWID(w));var =
+iip=3DGIIP();if(-2<iip)aLV('&aO=3D',''+iip);if(bL.length<1950){var =
+trC=3Dnew =
+Array();trC[0]=3Dd.title;trC[1]=3Dw[a+'gC'](ck);trC[2]=3Dd.referrer;trC[3=
+]=3Dl.href;trC[4]=3Dw[a+'PageID'];if(!(w[a+'PageID'])&&(!(w[a+'PageID']=3D=
+=3D=3D0)))trC[4]=3D'';var fT=3Dfalse;var =
+trc=3Dfalse;while((!am(bL,je(trC[0]),je(trC[1]),je(trC[2]),je(trC[3]),je(=
+trC[4])))&&(!fT)){var lI=3D0;if(je(trC[1]).length =
+>je(trC[lI]).length)lI=3D1;if(je(trC[2]).length>je(trC[lI]).length)lI=3D2=
+;if(je(trC[3]).length>je(trC[lI]).length)lI=3D3;if(je(trC[4]).length>je(t=
+rC[lI]).length)lI=3D4;var trLn =3D Math.min((trC[lI].length/2), (1940 - =
+bL.length - 20));trC[lI]=3DtrC[lI].substring(0, =
+trLn);trc=3Dtrue;fT=3D((trC[0].length=3D=3D0)&&(trC[1].length=3D=3D0)&&(t=
+rC[2].length=3D=3D0)&&(trC[3].length=3D=3D0)&&(trC[4].length=3D=3D0));}aL=
+V('&cf=3D',trC[0]);aLV('&az=3D',trC[1]);aLV('&ar=3D',trC[2]);aLV('&au=3D'=
+,trC[3]);aLV('&sg=3D',trC[4]);if(trc)aLV('&ic=3D','true');}if((!w[a+'SF']=
+)&&(bL.length<=3D1950)){w[a+'LC'](bL,a+'loadPageId',a+'LPDiv');w[a+'LC'](=
+''+ag+'/JavascriptInsert.js',a+'csaId',a+'csaDiv');}w[a+'ae']();};functio=
+n GIIP(p,q,r){if(GP){p=3DGP(w);if(!p||!p.frames)return =
+-2;q=3Dp.frames;for(r=3D0;r<q.length;r++)if(q[r]=3D=3Dw)return r;}return =
+-1;}/*@cc_on@if(@_jscript_version>=3D5)w[a+'GPWID']=3Dfunction(win,v){if(=
+!GP)return 'not_available';v=3DGP(win);if(!v)v=3Dwin;try{return =
+v.hmrcwindowID;}catch(e){return 'not_available';}};@end@*/var =
+GP=3Dw[a+'GP'];var GPWID=3Dw[a+'GPWID'];w[a+'Tm']=3Dnew =
+Date().valueOf();as();};w[a+'getSD'](d.body,w,d,navigator);}if(window.hmr=
+cSL)window.hmrcSL();
+//-->
+------=_NextPart_000_0000_01CBA6B2.78C55960--

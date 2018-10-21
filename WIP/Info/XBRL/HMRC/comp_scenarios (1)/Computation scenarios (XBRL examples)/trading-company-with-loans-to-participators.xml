@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:ct-default="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-default/2010-06-15"
+  xmlns:ct-CT="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-CT/2010-06-15"
+  xmlns:ct-PL="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-PL/2010-06-15"
+  xmlns:ct-CaseI="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-CaseI/2010-06-15"
+  xmlns:ct-Tax="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-Tax/2010-06-15">
+  <link:schemaRef xlink:type="simple" xlink:href="http://www.hmrc.gov.uk/schemas/ct/comp/taxonomies/2010-06-15/ct-2010-06-15.xsd"/>
+  <context id="c0">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <instant>2008-03-31</instant>
+    </period>
+  </context>
+  <context id="c1">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <startDate>2007-04-01</startDate>
+      <endDate>2008-03-31</endDate>
+    </period>
+  </context>
+  <context id="c2">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <instant>2007-03-31</instant>
+    </period>
+  </context>
+  <unit id="u0">
+    <measure>iso4217:GBP</measure>
+  </unit>
+  <unit id="u1">
+    <measure>xbrli:pure</measure>
+  </unit>
+<ct-CT:DescriptorCompanyName contextRef="c0">Testco (JC) Ltd</ct-CT:DescriptorCompanyName>
+<ct-CT:DescriptorTaxReference contextRef="c0">1111111111</ct-CT:DescriptorTaxReference>
+<ct-CT:DescriptorStartOfPeriodForWhichReturnRequired contextRef="c2">2007-04-01</ct-CT:DescriptorStartOfPeriodForWhichReturnRequired>
+<ct-CT:DescriptorEndOfPeriodForWhichReturnRequired contextRef="c0">2008-03-31</ct-CT:DescriptorEndOfPeriodForWhichReturnRequired>
+<ct-Tax:CalculationOfCTLiabilityProfits contextRef="c1" unitRef="u0" precision="INF">64573</ct-Tax:CalculationOfCTLiabilityProfits>
+<ct-Tax:CalculationOfCTLiabilityCTLiability contextRef="c1" unitRef="u0" precision="INF">12914.6</ct-Tax:CalculationOfCTLiabilityCTLiability>
+<ct-default:OtherLiabilitiesLoansToParticipatorsTaxPayableUnderS419 contextRef="c1" unitRef="u0" precision="INF">3517</ct-default:OtherLiabilitiesLoansToParticipatorsTaxPayableUnderS419>
+<ct-Tax:CalculationOfCTLiabilityAmountDue contextRef="c1" unitRef="u0" precision="INF">16431.6</ct-Tax:CalculationOfCTLiabilityAmountDue>
+<ct-Tax:CalculationOfCTLiabilityFinancialYear1Date contextRef="c1">2007</ct-Tax:CalculationOfCTLiabilityFinancialYear1Date>
+<ct-Tax:CalculationOfCTLiabilityFinancialYear1AmountOfProfitChargeableAtFirstRate contextRef="c1" unitRef="u0" precision="INF">64573</ct-Tax:CalculationOfCTLiabilityFinancialYear1AmountOfProfitChargeableAtFirstRate>
+<ct-Tax:CalculationOfCTLiabilityFinancialYear1FirstRateOfTax contextRef="c1" unitRef="u1" precision="INF">0.2</ct-Tax:CalculationOfCTLiabilityFinancialYear1FirstRateOfTax>
+<ct-Tax:CalculationOfCTLiabilityFinancialYear1TaxAtFirstRate contextRef="c1" unitRef="u0" precision="INF">12914.6</ct-Tax:CalculationOfCTLiabilityFinancialYear1TaxAtFirstRate>
+<ct-Tax:CalculationOfCTLiabilityCorporationTax contextRef="c1" unitRef="u0" precision="INF">12914.6</ct-Tax:CalculationOfCTLiabilityCorporationTax>
+<ct-CaseI:TradingProfitsIndividualTradeProfitPerAccounts contextRef="c1" unitRef="u0" precision="INF">48405</ct-CaseI:TradingProfitsIndividualTradeProfitPerAccounts>
+<ct-CaseI:TradingProfitsIndividualTradeAdjustmentsEntertaining contextRef="c1" unitRef="u0" precision="INF">8809</ct-CaseI:TradingProfitsIndividualTradeAdjustmentsEntertaining>
+<ct-CaseI:TradingProfitsIndividualTradeAdjustmentsDepreciation contextRef="c1" unitRef="u0" precision="INF">21443</ct-CaseI:TradingProfitsIndividualTradeAdjustmentsDepreciation>
+<ct-CaseI:TradingProfitsIndividualTradeCapitalAllowancesNetAllowancesCharges contextRef="c1" unitRef="u0" precision="INF">14084</ct-CaseI:TradingProfitsIndividualTradeCapitalAllowancesNetAllowancesCharges>
+<ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade contextRef="c1" unitRef="u0" precision="INF">64573</ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade>
+<ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolWDVBF contextRef="c2" unitRef="u0" precision="INF">27662</ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolWDVBF>
+<ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolExpenditureQualifyingForWDA contextRef="c1" unitRef="u0" precision="INF">28674</ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolExpenditureQualifyingForWDA>
+<ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolWritingDownAllowances contextRef="c1" unitRef="u0" precision="INF">14084</ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolWritingDownAllowances>
+<ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolTotalAllowances contextRef="c1" unitRef="u0" precision="INF">14084</ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolTotalAllowances>
+<ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolWDVCF contextRef="c0" unitRef="u0" precision="INF">42252</ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolWDVCF>
+<ct-default:OtherLiabilitiesLoansToParticipatorsTransactionsInPeriodLoansMadeAndOutstandingTotal contextRef="c1" unitRef="u0" precision="INF">14068</ct-default:OtherLiabilitiesLoansToParticipatorsTransactionsInPeriodLoansMadeAndOutstandingTotal>
+<ct-default:OtherLiabilitiesLoansToParticipatorsTransactionsInPeriodTaxChargeableOnLoans contextRef="c1" unitRef="u0" precision="INF">3517</ct-default:OtherLiabilitiesLoansToParticipatorsTransactionsInPeriodTaxChargeableOnLoans>
+<ct-PL:AnalysisOfProfitAndLossAccountSalesReceiptsTurnover contextRef="c1" unitRef="u0" precision="INF">574323</ct-PL:AnalysisOfProfitAndLossAccountSalesReceiptsTurnover>
+<ct-PL:AnalysisOfProfitAndLossAccountCostOfSales contextRef="c1" unitRef="u0" precision="INF">51483</ct-PL:AnalysisOfProfitAndLossAccountCostOfSales>
+<ct-PL:AnalysisOfProfitAndLossAccountGrossProfit contextRef="c1" unitRef="u0" precision="INF">522480</ct-PL:AnalysisOfProfitAndLossAccountGrossProfit>
+<ct-PL:AnalysisOfProfitAndLossAccountRentRatesPowerAndOtherPremisesCosts contextRef="c1" unitRef="u0" precision="INF">55875</ct-PL:AnalysisOfProfitAndLossAccountRentRatesPowerAndOtherPremisesCosts>
+<ct-PL:AnalysisOfProfitAndLossAccountTelephoneFaxStationeryAndOtherOfficeCosts contextRef="c1" unitRef="u0" precision="INF">123545</ct-PL:AnalysisOfProfitAndLossAccountTelephoneFaxStationeryAndOtherOfficeCosts>
+<ct-PL:AnalysisOfProfitAndLossAccountWagesSalariesAndOtherStaffCosts contextRef="c1" unitRef="u0" precision="INF">248890</ct-PL:AnalysisOfProfitAndLossAccountWagesSalariesAndOtherStaffCosts>
+<ct-PL:AnalysisOfProfitAndLossAccountDirectorsRemuneration contextRef="c1" unitRef="u0" precision="INF">42302</ct-PL:AnalysisOfProfitAndLossAccountDirectorsRemuneration>
+<ct-PL:AnalysisOfProfitAndLossAccountInterestAndOtherFinancialCharges contextRef="c1" unitRef="u0" precision="INF">3823</ct-PL:AnalysisOfProfitAndLossAccountInterestAndOtherFinancialCharges>
+<ct-PL:AnalysisOfProfitAndLossAccountTotalExpenses contextRef="c1" unitRef="u0" precision="INF">474435</ct-PL:AnalysisOfProfitAndLossAccountTotalExpenses>
+<ct-PL:AnalysisOfProfitAndLossAccountNetProfit contextRef="c1" unitRef="u0" precision="INF">48405</ct-PL:AnalysisOfProfitAndLossAccountNetProfit>
+</xbrl>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:ct-CT="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-CT/2010-06-15"
+  xmlns:ct-CaseI="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-CaseI/2010-06-15"
+  xmlns:ct-Tax="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-Tax/2010-06-15">
+  <link:schemaRef xlink:type="simple" xlink:href="http://www.hmrc.gov.uk/schemas/ct/comp/taxonomies/2010-06-15/ct-2010-06-15.xsd"/>
+  <context id="c0">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <instant>2007-12-31</instant>
+    </period>
+  </context>
+  <context id="c1">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <startDate>2007-01-01</startDate>
+      <endDate>2007-12-31</endDate>
+    </period>
+  </context>
+  <context id="c2">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <startDate>2008-01-01</startDate>
+      <endDate>2008-01-31</endDate>
+    </period>
+  </context>
+  <context id="c3">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <startDate>2007-01-01</startDate>
+      <endDate>2008-01-31</endDate>
+    </period>
+  </context>
+  <context id="c4">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <instant>2006-12-31</instant>
+    </period>
+  </context>
+  <context id="c5">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <instant>2008-01-31</instant>
+    </period>
+  </context>
+  <unit id="u0">
+    <measure>iso4217:GBP</measure>
+  </unit>
+  <ct-CT:DescriptorCompanyName contextRef="c0">Long Period Ltd</ct-CT:DescriptorCompanyName>
+  <ct-CT:DescriptorTaxReference contextRef="c0">1111111111</ct-CT:DescriptorTaxReference>
+  <ct-CT:DescriptorStartOfPeriodForWhichReturnRequired contextRef="c4">2007-01-01</ct-CT:DescriptorStartOfPeriodForWhichReturnRequired>
+  <ct-CT:DescriptorEndOfPeriodForWhichReturnRequired contextRef="c0">2007-12-31</ct-CT:DescriptorEndOfPeriodForWhichReturnRequired>
+  <ct-CaseI:TradingProfitsTotalProfitsAllTrades contextRef="c1" unitRef="u0" precision="INF">12381</ct-CaseI:TradingProfitsTotalProfitsAllTrades>
+  <ct-CaseI:TradingProfitsTotalProfitsAllTrades contextRef="c2" unitRef="u0" precision="INF">674</ct-CaseI:TradingProfitsTotalProfitsAllTrades>
+  <ct-Tax:CalculationOfCTLiabilityProfits contextRef="c1" unitRef="u0" precision="INF">12381</ct-Tax:CalculationOfCTLiabilityProfits>
+  <ct-Tax:CalculationOfCTLiabilityProfits contextRef="c2" unitRef="u0" precision="INF">674</ct-Tax:CalculationOfCTLiabilityProfits>
+  <ct-CaseI:TradingProfitsIndividualTradeProfitPerAccounts contextRef="c3" unitRef="u0" precision="INF">13000</ct-CaseI:TradingProfitsIndividualTradeProfitPerAccounts>
+  <ct-CaseI:TradingProfitsIndividualTradeAdjustmentsDepreciation contextRef="c3" unitRef="u0" precision="INF">850</ct-CaseI:TradingProfitsIndividualTradeAdjustmentsDepreciation>
+  <ct-CaseI:TradingProfitsIndividualTradeAdjustedProfitOrLossBeforeAPAdjustments contextRef="c3" unitRef="u0" precision="INF">13850</ct-CaseI:TradingProfitsIndividualTradeAdjustedProfitOrLossBeforeAPAdjustments>
+  <ct-CaseI:TradingProfitsIndividualTradeAdjustedProfitOrLossBeforeAPAdjustments contextRef="c1" unitRef="u0" precision="INF">13131</ct-CaseI:TradingProfitsIndividualTradeAdjustedProfitOrLossBeforeAPAdjustments>
+  <ct-CaseI:TradingProfitsIndividualTradeAdjustedProfitOrLossBeforeAPAdjustments contextRef="c2" unitRef="u0" precision="INF">719</ct-CaseI:TradingProfitsIndividualTradeAdjustedProfitOrLossBeforeAPAdjustments>
+  <ct-CaseI:TradingProfitsIndividualTradeCapitalAllowancesNetAllowancesCharges contextRef="c1" unitRef="u0" precision="INF">750</ct-CaseI:TradingProfitsIndividualTradeCapitalAllowancesNetAllowancesCharges>
+  <ct-CaseI:TradingProfitsIndividualTradeCapitalAllowancesNetAllowancesCharges contextRef="c2" unitRef="u0" precision="INF">45</ct-CaseI:TradingProfitsIndividualTradeCapitalAllowancesNetAllowancesCharges>
+  <ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade contextRef="c1" unitRef="u0" precision="INF">12381</ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade>
+  <ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade contextRef="c2" unitRef="u0" precision="INF">674</ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade>
+  <ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolWDVBF contextRef="c4" unitRef="u0" precision="INF">3000</ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolWDVBF>
+  <ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolTotalAllowances contextRef="c1" unitRef="u0" precision="INF">750</ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolTotalAllowances>
+  <ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolWDVCF contextRef="c0" unitRef="u0" precision="INF">2250</ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolWDVCF>
+  <ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolTotalAllowances contextRef="c2" unitRef="u0" precision="INF">45</ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolTotalAllowances>
+  <ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolWDVCF contextRef="c5" unitRef="u0" precision="INF">2205</ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolWDVCF>
+</xbrl>

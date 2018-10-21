@@ -1,0 +1,564 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:s="http://xbrl.org/specification/2007" xmlns:diff="http://xbrl.org/specification/2007/diff"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Inline XBRL 1.0</title><link rel="stylesheet" type="text/css" href="styles.css"></head><body>
+  <div class="head">
+<h1><a name="title" id="title"></a>Inline XBRL 1.0</h1>
+<h2><a name="subtitle" id="subtitle"></a>Background information and guidance</h2>
+<h2>Supporting document for a Recommendation 20 April 2010</h2><p>Copyright ©2010 XBRL International Inc., All Rights Reserved.</p><dl><dt>This version:</dt><dd><a href="http://www.xbrl.org/Specification/inlineXBRL/REC-2010-04-20/inlineXBRL-background-REC-2010-04-20.html">&lt;http://www.xbrl.org/Specification/inlineXBRL/REC-2010-04-20/inlineXBRL-background-REC-2010-04-20.html&gt;</a></dd><dt>Editor:</dt><dd><a name="auth-plega" id="auth-plega"></a>
+            Philip Allen,
+  
+             CoreFiling Limited
+             <a href="mailto:plega@corefiling.com">&lt;plega@corefiling.com&gt;</a>
+         </dd><dt>Contributors:</dt><dd><a name="contrib-apg" id="contrib-apg"></a>
+            Andy Greener,
+  
+             HMRC
+             <a href="mailto:andy@gid.co.uk">&lt;andy@gid.co.uk&gt;</a>
+         </dd><dd><a name="contrib-wch" id="contrib-wch"></a>
+            Walter Hamscher,
+  
+             Securities &amp; Exchange Commission
+             <a href="mailto:hamscherw@sec.gov">&lt;hamscherw@sec.gov&gt;</a>
+         </dd><dd><a name="contrib-ml" id="contrib-ml"></a>
+            Michael Leditschke,
+  
+             Australian Bureau of Statistics
+             <a href="mailto:michael.leditschke@abs.gov.au">&lt;michael.leditschke@abs.gov.au&gt;</a>
+         </dd><dd><a name="contrib-jr" id="contrib-jr"></a>
+            Jim Richards,
+  
+             JDR &amp; Associates
+             <a href="mailto:jdrassoc@iinet.net.au">&lt;jdrassoc@iinet.net.au&gt;</a>
+         </dd><dd><a name="contrib-hw" id="contrib-hw"></a>
+            Hugh Wallis,
+  
+             XBRL International, Inc.
+             <a href="mailto:hughwallis@xbrl.org">&lt;hughwallis@xbrl.org&gt;</a>
+         </dd></dl><hr><div><h2><a name="status" id="status"></a>Status</h2><p>Circulation of this  supporting document for a  Recommendation is unrestricted. 
+          Recipients are invited to submit comments to
+        <a href="mailto:rendering-feedback@xbrl.org">rendering-feedback@xbrl.org</a>,
+        
+          and to submit notification of any relevant patent rights 
+          of which they are aware and provide supporting 
+          documentation.
+        </p></div><div>
+<h2><a name="abstract" id="abstract"></a>Abstract</h2>
+         <p>
+
+This document provides background to the Specification for Inline XBRL, and its
+relationship to XBRL International's requirements for a rendering standard.
+
+      </p>
+      </div></div>
+  <div class="toc">
+<h2><a name="contents" id="contents"></a>Table of Contents</h2><p class="toc">1 <a href="#sec-">Use cases</a><br>
+2 <a href="#d1e160">Requirements</a><br>
+3 <a href="#sec-relationship">Relationship to other specifications</a><br>
+</p>
+<h3><a name="appendices" id="appendices"></a>Appendices</h3><p class="toc">A <a href="#d1e261">Relationship to rendering requirements</a><br>
+   A.1 <a href="#d1e276">Completeness [3.02]</a><br>
+   A.2 <a href="#d1e285">Adaptability and consistency [3.04]</a><br>
+   A.3 <a href="#d1e295">Accuracy [3.05]</a><br>
+   A.4 <a href="#d1e304">Positive and negative signs	[3.06]</a><br>
+   A.5 <a href="#d1e313">Grouping and ordering [3.07]</a><br>
+   A.6 <a href="#d1e322">Tables [3.08]</a><br>
+   A.7 <a href="#d1e331">Descriptive headings for sections	[3.10]</a><br>
+   A.8 <a href="#d1e340">Data highlighting [3.11]</a><br>
+   A.9 <a href="#d1e350">Footnotes [3.13]</a><br>
+   A.10 <a href="#d1e359">Unbroken data [3.14]</a><br>
+   A.11 <a href="#d1e368">Embedding of data in text [3.15]</a><br>
+   A.12 <a href="#d1e377">Handling of text, numbers and monetary values [3.16]</a><br>
+   A.13 <a href="#d1e386">Referenced taxonomies [3.17]</a><br>
+   A.14 <a href="#d1e395">Inclusion of formatted content from external source	[4.01]</a><br>
+B <a href="#sec-references">References</a><br>
+C <a href="#sec-ip-status">Intellectual property status (non-normative)</a><br>
+D <a href="#sec-acknowledgements">Acknowledgements (non-normative)</a><br>
+E <a href="#sec-history">Document history (non-normative)</a><br>
+</p></div><hr><div class="body">
+      <div class="div1"><a name="sec-" id="sec-"></a>
+         <h1>1 Use cases</h1>
+         <p>
+
+The main objective of Inline XBRL is to allow XBRL-based data to be
+displayed in situations where the producer wants to preserve a specific visual
+presentation of the information, and the consumer wants to be able to validate
+the input data.  The primary use cases which drove the specification of Inline XBRL
+were:
+
+      </p>
+         <ul>
+            <li>Preparation of company financials for filing with securities regulator</li>
+            <li>Companies registrar wants to collect extensible business reports</li>
+            <li>Company needs to view data prepared for internal consolidation</li>
+         </ul>
+         <p>
+
+The Rendering Working Group established other uses for Inline XBRL, such as:
+
+      </p>
+         <ul>
+            <li>Display of comparative corporate information on a web-page</li>
+            <li>Reporting of very large financial statements</li>
+         </ul>
+         <p>
+
+These use cases are described more fully in <a href="#IXBRL-UCASES">[Inline XBRL Use Cases]</a>.
+
+      </p>
+      </div>
+      <div class="div1"><a name="d1e160" id="d1e160"></a> 
+         <h1>2 Requirements</h1>
+         <p>
+
+The <a href="#IXBRL-PART1">[Inline XBRL Specification]</a> satisfies all requirements in the <a href="#REQ">[PWD Requirements]</a> except those requiring creation and control of rendering metadata at the
+taxonomy level referred to in requirements 3.1, 3.3 and 3.20, and 3.19 which
+requires that a solution should not assume a particular file format for a final
+rendering.   It covers all the examples, and also provides features originally
+deemed out of scope, such as requirement 3.15 related to embedding of data in
+text.
+
+      </p>
+         <p>
+
+For a detailed discussion of requirements addressed by the <a href="#IXBRL-PART1">[Inline XBRL Specification]</a>,
+see the appendix below.
+
+      </p>
+      </div>
+      <div class="div1"><a name="sec-relationship" id="sec-relationship"></a>
+         <h1>3 Relationship to other specifications</h1>
+         <p> 
+
+The <a href="#IXBRL-PART1">[Inline XBRL Specification]</a> relies upon <a href="#XBRL">[XBRL 2.1]</a>, <a href="#XML">[XML]</a>, <a href="#XMLBASE">[XML Base]</a> and <a href="#XMLNAMES">[XML Names]</a>.  By incorporating
+metadata within the body of an HTML document it carries out a similar task to
+<a href="#MathML">[MathML]</a> and <a href="#SVG">[SVG]</a>, and to that envisaged by both
+<a href="#Microformats">[Microformats]</a> and <a href="#HTML5">[HTML5]</a>.  Among these
+standards, however, there is a divergence of approach to the inline
+encapsulation of metadata.
+
+      </p> 
+         <p><a href="#MathML">[MathML]</a> and <a href="#SVG">[SVG]</a> both allow metadata to be
+incorporated as <span class="term">elements</span> within the HTML document.  This is the
+approach taken by the <a href="#IXBRL-PART1">[Inline XBRL Specification]</a>.  However, both <a href="#Microformats">[Microformats]</a> and
+<a href="#HTML5">[HTML5]</a>  require metadata to be incorporated as
+<span class="term">attributes</span> to existing HTML <span class="term">elements</span>.  The vocabulary
+for <a href="#HTML5">[HTML5]</a> is currently a working draft.
+
+      </p> 
+         <p> 
+
+Incorporating XBRL-based metadata within <span class="term">attribute</span> values would
+add a further layer of complexity to the Inline XBRL document and be more difficult
+to comprehend without adding any tangible benefits.  The present approach
+depends upon web browsers continuing not to display XML elements that are not
+HTML, and this behaviour is very unlikely to change in the foreseeable future.
+
+      </p> 
+         <p> 
+
+The present <a href="#IXBRL-PART1">[Inline XBRL Specification]</a> provides a mechanism for encapsulating <a href="#XBRL">[XBRL 2.1]</a> metadata within HTML documents, and is supported by a
+<span class="term">schema document</span> which complies with <a href="#ModularXHTML">[Modular XHTML]</a>.  The
+<span class="term">attribute</span>-based alternative, in contrast, depends upon an approach
+which is still in flux, and likely to remain unstable for some time to come,
+and therefore should not be used for the <a href="#IXBRL-PART1">[Inline XBRL Specification]</a>.
+
+      </p> 
+         <p> 
+
+Use cases were put forward only for embedding Inline XBRL into HTML and XHTML.
+Although embedding into other document types is appealing, no convincing use
+cases were forthcoming. Thus, the syntax and processing semantics of Inline XBRL are largely independent of the container document type, but not entirely
+so.  If and when use cases for other embeddings are put forward, we anticipate
+that this could be accommodated in any XML document type with a content model
+open with respect to elements.
+
+      </p> 
+      </div>
+  </div>
+  <div class="back">
+      <div class="div1"><a name="d1e261" id="d1e261"></a>
+         <h1>Appendix A Relationship to rendering requirements</h1>
+         <p>
+
+The phrasing of requirements in <a href="#REQ">[PWD Requirements]</a> assumes that a rendering
+process produces renderings from an XBRL instance. Naturally, in making that
+assumption, some legitimate business requirements - such as the need for a trail
+or link from a target document fragment to its source facts - seemed too
+difficult or out of scope. 
+
+      </p>
+         <p>
+
+Inline XBRL does not define such a generation method, but insofar as it
+specifies a means of embedding XBRL in HTML, it satisfies some of the same
+business needs as rendering, it satisfies additional needs of regulators and
+preparers, and it thereby complements a rendering process <a href="#IXBRL-PART1">[Inline XBRL Specification]</a> rather
+than competing with it. This section details the requirements met by Inline XBRL.
+
+      </p>
+         <div class="div2"><a name="d1e276" id="d1e276"></a>
+            <h2>A.1 Completeness [3.02]</h2>
+            <p>
+
+The first half of the requirement - that "a standardised rendering method MUST
+be able to reproduce completely all facts in an instance, including all data
+types and footnotes, without loss of data" - is satisfied because nothing can
+be extracted from the Inline XBRL Document Set except target instance
+documents.  The second half of this requirement - that "no other information is
+included in an instance which is not represented in the rendering" -  is not a
+completeness requirement and is not met.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e285" id="d1e285"></a>
+            <h2>A.2 Adaptability and consistency [3.04]</h2>
+            <p>
+
+An Inline XBRL Document Set can be edited to update its contents for a new
+period and maintain consistency of formatting.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e295" id="d1e295"></a>
+            <h2>A.3 Accuracy [3.05]</h2>
+            <p>
+
+If functions in the transformation registry properly convert displayed
+characters into fact values, then the rendering literally "shows accurately all
+facts".
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e304" id="d1e304"></a>
+            <h2>A.4 Positive and negative signs	[3.06]</h2>
+            <p>
+
+The positive and negative signs on values as they appear in the target instance
+document are preserved in the sense that they must be specified independently
+of the colouring or other conventions used to display negative values.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e313" id="d1e313"></a>
+            <h2>A.5 Grouping and ordering [3.07]</h2>
+            <p>
+
+While Inline XBRL does not specify a procedure for generating layout purely
+from XBRL facts or metadata, Inline XBRL exceeds this requirement because rows,
+columns, cells and nested table layouts can contain any kind of fact value or
+other content.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e322" id="d1e322"></a>
+            <h2>A.6 Tables [3.08]</h2>
+            <p>
+
+This generalisation of 3.07 is satisfied in the same way as 3.07.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e331" id="d1e331"></a>
+            <h2>A.7 Descriptive headings for sections	[3.10]</h2>
+            <p>
+
+This is a further generalisation of 3.07 satisfied in the same way.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e340" id="d1e340"></a>
+            <h2>A.8 Data highlighting [3.11]</h2>
+            <p>
+
+This is partly satisfied in the sense that cascading styles such as "emphasis"
+or "strong" and relative point sizes can be specified in HTML and applied to
+any text that appears in facts.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e350" id="d1e350"></a>
+            <h2>A.9 Footnotes [3.13]</h2>
+            <p>
+
+Preparers using Inline XBRL can specify all aspects of footnote layout.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e359" id="d1e359"></a>
+            <h2>A.10 Unbroken data [3.14]</h2>
+            <p>
+
+Preparers may use HTML's page-break style attributes to achieve similar effects.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e368" id="d1e368"></a>
+            <h2>A.11 Embedding of data in text [3.15]</h2>
+            <p>
+
+Inline XBRL satisfies this requirement; it is an example of functionality
+deemed out of scope for a rendering process, even though the business need was
+already widely recognized for regulatory environments where quantitative
+disclosures commonly appear in narrative text. 
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e377" id="d1e377"></a>
+            <h2>A.12 Handling of text, numbers and monetary values [3.16]</h2>
+            <p>
+
+Inline XBRL complements a rendering process specification by providing a
+flexible target rendering in which all facts can be embedded adjacent to their
+renderings.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e386" id="d1e386"></a>
+            <h2>A.13 Referenced taxonomies [3.17]</h2>
+            <p>
+
+Inline XBRL can be used with any extension of any taxonomy, which is the point
+of the requirement.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e395" id="d1e395"></a>
+            <h2>A.14 Inclusion of formatted content from external source	[4.01]</h2>
+            <p>
+
+The rejection of this requirement was a consequence of the second half of
+requirement 3.02, which required the rendering to contain no information that was not in
+the instance nor its DTS, even though other business users of XBRL see value in
+this function. XInclude, for example, allows HTML documents to include content
+from other sources, implying that Inline XBRL fulfils this need. In other words, the
+second half of requirement 3.02 is relevant to a rendering process and not a
+document.
+
+        </p>
+         </div>
+      </div>
+      <div class="div1"><a name="sec-references" id="sec-references"></a>
+         <h1>Appendix B References</h1>
+         <dl>
+              
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+         <dt class="label"><a name="HTML5" id="HTML5"></a>HTML5</dt><dd>W3C (World Wide Web Consortium). "HTML 5: A vocabulary and associated APIs for HTML and XHTML"<br>Ian Hickson, and David Hyatt.<br>(See <a href="http://www.w3.org/TR/html5/">http://www.w3.org/TR/html5/</a>)</dd><dt class="label"><a name="IXBRL-PART1" id="IXBRL-PART1"></a>Inline XBRL Specification</dt><dd>XBRL International Inc.. "Inline XBRL Part 1: Specification 1.0"<br>Philip Allen, and Ian Stokes-Rees.<br>(See <a href="http://www.xbrl.org/Specification/inlineXBRL-part1/REC-2010-04-20/inlineXBRL-part1-REC-2010-04-20.html">http://www.xbrl.org/Specification/inlineXBRL-part1/REC-2010-04-20/inlineXBRL-part1-REC-2010-04-20.html</a>)</dd><dt class="label"><a name="IXBRL-UCASES" id="IXBRL-UCASES"></a>Inline XBRL Use Cases</dt><dd>XBRL International Inc.. "Use cases for Inline XBRL 1.0"<br>John Turner.<br>(See <a href="http://www.xbrl.org/Specification/inlineXBRL/REC-2010-04-20/inlineXBRL-useCases-REC-2010-04-20.html">http://www.xbrl.org/Specification/inlineXBRL/REC-2010-04-20/inlineXBRL-useCases-REC-2010-04-20.html</a>)</dd><dt class="label"><a name="MathML" id="MathML"></a>MathML</dt><dd>W3C (World Wide Web Consortium). "Mathematical Markup Language (MathML) Version 2.0 (Second Edition)"<br>David Carlisle, Patrick Ion, Robert Miner, and Nico Poppelier.<br>(See <a href="http://www.w3.org/TR/MathML2/">http://www.w3.org/TR/MathML2/</a>)</dd><dt class="label"><a name="Microformats" id="Microformats"></a>Microformats</dt><dd> "Microformats Principles"<br>Tantek Çelik.<br>(See <a href="http://microformats.org/wiki/principles">http://microformats.org/wiki/principles</a>)</dd><dt class="label"><a name="ModularXHTML" id="ModularXHTML"></a>Modular XHTML</dt><dd>W3C (World Wide Web Consortium). "XHTML Modularization 1.1"<br>Murray Altheim, Frank Boumphrey, Sam Dooley, Shane McCarron, Sebastian Schnitzenbaumer, and Ted Wugofski.<br>(See <a href="http://www.w3.org/TR/xhtml-modularization/">http://www.w3.org/TR/xhtml-modularization/</a>)</dd><dt class="label"><a name="REQ" id="REQ"></a>PWD Requirements</dt><dd>XBRL International Inc.. "XBRL Rendering Requirements, Public Working Draft dated 2007‑07‑24"<br>Peter Calvert.<br>(See <a href="http://www.xbrl.org/technical/requirements/REN-REQ-PWD-2007-07-24.zip">http://www.xbrl.org/technical/requirements/REN-REQ-PWD-2007-07-24.zip</a>)</dd><dt class="label"><a name="SVG" id="SVG"></a>SVG</dt><dd>W3C (World Wide Web Consortium). "Scalable Vector Graphics (SVG) 1.1 Specification"<br>Jon Ferraiolo, Jun Fujisawa, and Dean Jackson.<br>(See <a href="http://www.w3.org/TR/SVG/">http://www.w3.org/TR/SVG/</a>)</dd><dt class="label"><a name="XBRL" id="XBRL"></a>XBRL 2.1</dt><dd>XBRL International Inc.. "Extensible Business Reporting Language (XBRL) 2.1 Includes Corrected Errata Up To 2008-07-02"<br>Phillip Engel, Walter Hamscher, Geoff Shuetrim, David vun Kannon, and Hugh Wallis.<br>(See <a href="http://www.xbrl.org/Specification/XBRL-RECOMMENDATION-2003-12-31+Corrected-Errata-2008-07-02.htm">http://www.xbrl.org/Specification/XBRL-RECOMMENDATION-2003-12-31+Corrected-Errata-2008-07-02.htm</a>)</dd><dt class="label"><a name="XML" id="XML"></a>XML</dt><dd>W3C (World Wide Web Consortium). "Extensible Markup Language (XML) 1.0 (Fifth Edition)"<br>Tim Bray, Jean Paoli, C. M. Sperberg-McQueen, Eve Maler, and François Yergeau.<br>(See <a href="http://www.w3.org/TR/REC-xml/">http://www.w3.org/TR/REC-xml/</a>)</dd><dt class="label"><a name="XMLBASE" id="XMLBASE"></a>XML Base</dt><dd>W3C (World Wide Web Consortium). "XML Base"<br>Johnathan Marsh.<br>(See <a href="http://www.w3.org/TR/xmlbase/">http://www.w3.org/TR/xmlbase/</a>)</dd><dt class="label"><a name="XMLNAMES" id="XMLNAMES"></a>XML Names</dt><dd>W3C (World Wide Web Consortium). "Namespaces in XML 1.0 (Second Edition)"<br>Tim Bray, Dave Hollander, Andrew Layman, and Richard Tobin.<br>(See <a href="http://www.w3.org/TR/REC-xml-names/">http://www.w3.org/TR/REC-xml-names/</a>)</dd></dl>
+      </div>
+      <div class="div1"><a name="sec-ip-status" id="sec-ip-status"></a>
+         <h1>Appendix C Intellectual property status (non-normative)</h1>
+  
+         <p>
+    This document and translations of it may be copied and
+    furnished to others, and derivative works that comment on or
+    otherwise explain it or assist in its implementation may be
+    prepared, copied, published and distributed, in whole or in
+    part, without restriction of any kind, provided that the above
+    copyright notice and this paragraph are included on all such
+    copies and derivative works. However, this document itself may
+    not be modified in any way, such as by removing the copyright
+    notice or references to XBRL International or XBRL
+    organizations, except as required to translate it into
+    languages other than English. Members of XBRL International
+    agree to grant certain licenses under the XBRL International
+    Intellectual Property Policy 
+    (<a href="http://www.xbrl.org/legal">www.xbrl.org/legal</a>).
+  </p>
+
+
+         <p>
+    This document and the information contained herein is provided
+    on an "AS IS" basis and XBRL INTERNATIONAL DISCLAIMS ALL
+    WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+    ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT
+    INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF
+    MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+  </p>
+
+         <p>
+    The attention of users of this document is directed to the
+    possibility that compliance with or adoption of XBRL
+    International specifications may require use of an invention
+    covered by patent rights. XBRL International shall not be
+    responsible for identifying patents for which a license may be
+    required by any XBRL International specification, or for
+    conducting legal inquiries into the legal validity or scope of
+    those patents that are brought to its attention. XBRL
+    International specifications are prospective and advisory
+    only. Prospective users are responsible for protecting
+    themselves against liability for infringement of patents. XBRL
+    International takes no position regarding the validity or
+    scope of any intellectual property or other rights that might
+    be claimed to pertain to the implementation or use of the
+    technology described in this document or the extent to which
+    any license under such rights might or might not be available;
+    neither does it represent that it has made any effort to
+    identify any such rights. Members of XBRL International agree
+    to grant certain licenses under the XBRL International
+    Intellectual Property Policy 
+    (<a href="http://www.xbrl.org/legal">www.xbrl.org/legal</a>).
+  </p>
+      </div>
+      <div class="div1"><a name="sec-acknowledgements" id="sec-acknowledgements"></a>
+         <h1>Appendix D Acknowledgements (non-normative)</h1>
+         <p>
+    This document could not have been written without the
+    contributions of many people including the participants in the
+    Rendering Working Group.
+  </p>
+
+      </div>
+      <div class="div1"><a name="sec-history" id="sec-history"></a>
+         <h1>Appendix E Document history (non-normative)</h1>
+         <table class="revisions"><tr><th>Date</th><th>Author</th><th>Details</th></tr>
+            <tr><td>23 June 2008</td><td>Philip Allen</td><td>
+               <p class="revision">Initial draft of background document.</p>
+            </td></tr>
+            <tr><td>25 June 2008</td><td>Walter Hamscher</td><td>
+               <p class="revision">Substantial edits.</p>
+            </td></tr>
+            <tr><td>25 June 2008</td><td>Philip Allen</td><td>
+               <p class="revision">Corrected section on validation.</p>
+               <p class="revision">Added abstract.</p>
+            </td></tr>
+            <tr><td>27 June 2008</td><td>Michael Leditschke</td><td>
+               <p class="revision">Added definition for IXDS</p>
+               <p class="revision">Reworded discussion of scope of XML Schema.</p>
+               <p class="revision">Corrected use of IXDS in s.4.</p>
+               <p class="revision">Re-worded description of changes to XBRL Schemas.</p>
+               <p class="revision">Fixed minor typos.</p>
+            </td></tr>
+            <tr><td>27 June 2008</td><td>Jim Richards</td><td>
+               <p class="revision">Minor grammatical changes</p>
+            </td></tr>
+            <tr><td>27 June 2008</td><td>Philip Allen</td><td>
+               <p class="revision">Corrected section on duplication.</p>
+               <p class="revision">Added note deprecating HTML generally.</p>
+            </td></tr>
+            <tr><td>27 June 2008</td><td>Andy Greener</td><td>
+               <p class="revision">Added reference to XML Namespaces.</p>
+               <p class="revision">Added reference to XML Schema 1.0.</p>
+               <p class="revision">Fixed typos.</p>
+            </td></tr>
+            <tr><td>10 July 2008</td><td>Hugh Wallis</td><td>
+               <p class="revision">Editorial for publication as support for the inlineXBRL Candidate Recommendation.</p>
+            </td></tr>
+            <tr><td>19 August 2008</td><td>Walter Hamscher</td><td>
+               <p class="revision">Grammatical fixes suggested by Allyson Ugarte.</p>
+            </td></tr>
+            <tr><td>27 August 2008</td><td>Philip Allen</td><td>
+               <p class="revision">Added paragraph deprecating non-exact matches in duplicates (s.6.2).</p>
+            </td></tr>
+            <tr><td>30 September 2008</td><td>Philip Allen</td><td>
+               <p class="revision">Added section on the use of ix:exclude.</p>
+            </td></tr>
+            <tr><td>07 October 2008</td><td>Hugh Wallis</td><td>
+               <p class="revision">Editorial for publication as support for the inlineXBRL Candidate Recommendation 2.</p>
+            </td></tr>
+            <tr><td>20 January 2009</td><td>Hugh Wallis</td><td>
+        	      <p class="revision">Editorial for publication as CR3.</p>
+            </td></tr>
+            <tr><td>27 January 2009</td><td>Philip Allen</td><td>
+               <p class="revision">Added note on use of xml:base with relative URIs.</p>
+               <p class="revision">Added references to XML Base.</p>
+               <p class="revision">Added comment about excessive namespace declarations.</p>
+            </td></tr>
+            <tr><td>31 March 2009</td><td>Philip Allen</td><td>
+        	      <p class="revision">Added note on prohibition of recursive tuples.</p>
+               <p class="revision">Added note on handling of negative numbers.</p>
+        	      <p class="revision">Re-ordered section 6.</p>
+            </td></tr>
+            <tr><td>01 April 2009</td><td>Philip Allen</td><td>
+               <p class="revision">Extended the discussion of de-duplication.</p>
+               <p class="revision">Added discussion of target document content.</p>
+            </td></tr>
+            <tr><td>03 April 2009</td><td>Philip Allen</td><td>
+               <p class="revision">Removed namespace from ix: attributes, where mentioned.</p>
+               <p class="revision">Added note on use of the id attribute.</p>
+            </td></tr>
+            <tr><td>06 May 2009</td><td>Philip Allen</td><td>
+               <p class="revision">Corrected spelling mistake.</p>
+            </td></tr>
+            <tr><td>10 August 2009</td><td>Philip Allen</td><td>
+               <p class="revision">Added note on other attributes.</p>
+            </td></tr>
+            <tr><td>02 September 2009</td><td>Philip Allen</td><td>
+               <p class="revision">Added note on HTML escaping.</p>
+            </td></tr>
+            <tr><td>08 September 2009</td><td>Philip Allen</td><td>
+               <p class="revision">Added a second paragraph on HTML escaping.</p>
+               <p class="revision">Added a section on resolution of relative URIs within HTML which is to be escaped.</p>
+            </td></tr>
+            <tr><td>22 September 2009</td><td>Philip Allen</td><td>
+               <p class="revision">Added section on QNames and namespace declarations.</p>
+               <p class="revision">Updated reference to main spec.</p>
+            </td></tr>
+            <tr><td>23 September 2009</td><td>Philip Allen</td><td>
+               <p class="revision">Added paragraph on nesting ix:nonNumeric elements.</p>
+            </td></tr>
+            <tr><td>02 October 2009</td><td>Hugh Wallis</td><td>
+               <p class="revision">Editorial for publication as CR5</p>
+               <p class="revision">Updated reference links.</p>
+            </td></tr>
+            <tr><td>28 October 2009</td><td>Philip Allen</td><td>
+               <p class="revision">Added note on provision of page breaks.</p>
+            </td></tr>
+            <tr><td>13 November 2009</td><td>Philip Allen</td><td>
+               <p class="revision">Added note on de-duplication of tuple children.</p>
+            </td></tr>
+            <tr><td>14 November 2009</td><td>Philip Allen</td><td>
+               <p class="revision">Added clarification to note on signs.</p>
+            </td></tr>
+            <tr><td>16 November 2009</td><td>Philip Allen</td><td>
+               <p class="revision">Changed date to 2009-11-16 and status to DCR in expectation of publication as CR6.</p>
+            </td></tr>
+            <tr><td>19 November 2009</td><td>Hugh Wallis</td><td>
+               <p class="revision">Editorial for publication as CR, approved by the XSB.</p>
+            </td></tr>
+            <tr><td>21 December 2009</td><td>Philip Allen</td><td>
+               <p class="revision">Added note on the handling of text content (ix:footnote and ix:nonNumeric).</p>
+            </td></tr>
+            <tr><td>23 December 2009</td><td>Philip Allen</td><td>
+               <p class="revision">Added section on identification of Inline XBRL documents.</p>
+               <p class="revision">Added note regarding use of relative hyperlinks between multiple documents.</p>
+               <p class="revision">Changed Formal Public Identifier version to 1.0.</p>
+            </td></tr>
+            <tr><td>04 January 2010</td><td>Philip Allen</td><td>
+               <p class="revision">Added second paragraph in section on signs to explain the constraints on transformations.</p>
+            </td></tr>
+            <tr><td>18 January 2010</td><td>Philip Allen</td><td>
+               <p class="revision">Updated note on other attributes.</p>
+               <p class="revision">Fixed typos.</p>
+            </td></tr>
+            <tr><td>20 January 2010</td><td>Philip Allen</td><td>
+               <p class="revision">Removed user guidance for move to primer document.</p>
+            </td></tr>
+            <tr><td>22 January 2010</td><td>Philip Allen</td><td>
+               <p class="revision">Changed date to 2010-01-22 and status to DPR in expectation of publication as PREC.</p>
+            </td></tr>
+            <tr><td>27 January 2010</td><td>Hugh Wallis</td><td>
+               <p class="revision">Editorial to reflect publication as PR</p>
+            </td></tr>
+            <tr><td>01 February 2010</td><td>Philip Allen</td><td>
+               <p class="revision">Replaced "iXBRL" with "Inline XBRL".</p>
+               <p class="revision">Replaced "IXDS" with "Inline XBRL Document Set".</p>
+               <p class="revision">Corrected "can" to "must" in requirement 3.06.</p>
+               <p class="revision">Corrected requirements filename reference.</p>
+            </td></tr>
+            <tr><td>20 April 2010</td><td>Hugh Wallis</td><td>
+               <p class="revision">Editorial for publication of RECOMMENDATION</p>
+            </td></tr>
+         </table>
+      </div>
+  </div>
+</body></html>

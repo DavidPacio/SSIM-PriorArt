@@ -1,0 +1,79 @@
+CEASA Paper.txt started 30.01.13
+===========
+
+Hoffman
+=======
+Charles Hoffman blog: http://xbrl.squarespace.com/journal/2013/1/19/inline-xbrl-is-not-a-panacea-or-magic-bullet.html
+
+---
+And so those two questions (what is the target and can that target be achieved) is different than the real thing which ails XBRL.
+
+This issue will NEVER be solved by Inline XBRL nor by the Data Point Model as far as I can tell.  This issue can likewise be broken down into two parts: (a) do domains express enough metadata so that interchangeable models can be created and (b) does XBRL have enough expressive power verification capabilities to verify that good models are being created?
+
+In my view, this is the REAL issue.  XBRL cannot capture enough of the semantics which are necessary in a global-standard way to build high-quality, interoperable financial information which can be effectively exchanged.
+
+---
+etc.
+
+In other words, XBRL is not fit for purpose, right from the horses mouth!
+
+=> http://xbrl.squarespace.com/journal/2013/1/18/financial-report-ontology-draft.html
+
+"Still to come is a UML (Unified modeling language) representation and an RDF/RDFS/OWL (Semantic Web Technologies) representation." !!
+
+= even CH acknowledges that XBRL (or iXBRL) is far from what is needed!
+
+And see his "Why am I doing this?  See here and here." pages:
+http://xbrl.squarespace.com/journal/2013/1/2/smart-dataapplications.html
+http://xbrl.squarespace.com/journal/2012/12/27/project10x-power-of-strong-semantics.html
+
+
+CEASA
+=====
+Columbia Business School, Center for Excellence in Accounting and Security Analysis (CEASA)
+An Evaluation of the Current State and Future of XBRL and Interactive Data for Investors and Analysts
+December 2012, published 22 January 2013
+http://www8.gsb.columbia.edu/ceasa/newsn/2252
+
+Summary: //www.ibtimes.com//press-release/20130122/sec-mandated-xbrl-data-risk-being-irrelevant-investors-analysts-1030778
+
+Reactions:
+XBRL Webinar with Calcbench – featuring their insights on the Columbia Business School report
+http://www.linkedin.com/groups/XBRL-Webinar-Calcbench-featuring-their-4383209.S.211931054?view=&gid=4383209&type=member&item=211931054&trk=eml-anet_dig-b_nd-pst_ttle-cn
+http://irblog.prnewswire.com/2013/01/24/xbrl-webinar-with-calcbench-featuring-their-insights-on-the-columbia-business-school-report/?goback=.gde_4383209_member_211931054
+       irblog.prnewswire.com/2013/01/24/xbrl-webinar-with-calcbench-featuring-their-insights-on-the-columbia-business-school-report/
+
+http://blogs.wsj.com/cfo/2013/01/22/costly-data-go-untapped/?goback=.gde_44575_member_207029194
+
+with a quote from the second one:
+
+XBRL was the standard of tomorrow in 1999,” said Daniel Roberts, who served from 2005 to 2006 as chairman of the XBRL-US steering committee, a nonprofit group of companies formed to facilitate the adoption of the technology. “Now it simply adds to the cost burden of financial reporting,” he said.
+
+and from a comment by Kevin Day:
+In order for XBRL to take hold, there has to be value beyond public filings. The day when a small business using Quickbooks or Simply Accounting [djh: Sage 50?] can export their data in XBRL and submit it to a bank for a loan (as an example), XBRL will really take off.
+
+Strong reaction by Data Transparency Coalition
+Connecting big business (regulation) to Big Data: Columbia report shows the need for action
+http://www.linkedin.com/groupAnswers?viewQuestionAndAnswers=&discussionID=208496182&gid=2809538&trk=eml-anet_dig-b_nd-pst_ttle-cn&ut=1rMsm5ImIAJ5A1
+-> http://datacoalition.blogspot.com.au/2013/01/connecting-big-business-regulation-to.html?goback=.gde_2809538_member_208496182
+Solution: Improve quality... More (ancillary filings) not less. Expand the mandate! Make structured data the filing i.e. ditch the paper part. (As for the UK.) Legislate to force the pace. Mentions one available too CalcBench: http://www.calcbench.com/
+
+If You Build It, They May Not Come
+http://www.linkedin.com/groupAnswers?viewQuestionAndAnswers=&discussionID=208388301&gid=2809538&trk=eml-anet_dig-b_nd-pst_ttle-cn&ut=0Z3vsZTuYzJ5A1
+http://www.complianceweek.com/if-you-build-it-they-may-not-come/article/277585/?goback=.gde_2809538_member_208388301
+"Certainly, it's way too soon to dub XBRL a failure or to predict its demise. But the window of opportunity won't be open forever, either. If regulators can't convince—or cudgel—filers to fix problems, investors and analysts could abandon XBRL forever, and search for their own ways to make financial data more interactive. In fact, Big Data, which allows structured and unstructured data to be analyzed on the whole, already offers lot of promise in this area."
+
+Not-So-Happy Anniversary, XBRL
+http://www3.cfo.com/article/2013/1/gaap-ifrs_xbrl-tagging-columbia-sec-investors-analysts-interest-
+
+XBRL News include a poll on CEASA Report Recommendations - take it here
+http://www.linkedin.com/groupAnswers?viewQuestionAndAnswers=&discussionID=208926653&gid=2809538&trk=eml-anet_dig-b_nd-pst_ttle-cn&ut=3_tFlxEft8L5A1
+
+Who can improve usability of XBRL data? FERF Research
+http://www.linkedin.com/groupAnswers?viewQuestionAndAnswers=&discussionID=209769654&gid=44575&trk=eml-anet_dig-b_nd-pst_ttle-cn&ut=0NZD6y0m4ZOBA1
+
+Who can improve usability of XBRL data?
+http://www.linkedin.com/groupAnswers?viewQuestionAndAnswers=&discussionID=210317489&gid=2809538&trk=eml-anet_dig-b_nd-pst_ttle-cn&ut=3saxSPSsRrQBA1
+
+Happy Birthday XBRL
+http://robertkugel.ventanaresearch.com/2013/02/08/happy-birthday-xbrl/

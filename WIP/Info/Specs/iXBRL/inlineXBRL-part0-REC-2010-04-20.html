@@ -1,0 +1,1305 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:s="http://xbrl.org/specification/2007" xmlns:diff="http://xbrl.org/specification/2007/diff"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Inline XBRL Part 0: Primer 1.0</title><link rel="stylesheet" type="text/css" href="styles.css"></head><body>
+  <div class="head">
+<h1><a name="title" id="title"></a>Inline XBRL Part 0: Primer 1.0</h1>
+<h2>Supporting document for a Recommendation 20 April 2010</h2><p>Copyright ©2010 XBRL International Inc., All Rights Reserved.</p><dl><dt>This version:</dt><dd><a href="http://www.xbrl.org/Specification/inlineXBRL-part0/REC-2010-04-20/inlineXBRL-part0-REC-2010-04-20.html">&lt;http://www.xbrl.org/Specification/inlineXBRL-part0/REC-2010-04-20/inlineXBRL-part0-REC-2010-04-20.html&gt;</a></dd><dt>Editor:</dt><dd><a name="auth-plega" id="auth-plega"></a>
+            Philip Allen,
+  
+             CoreFiling Limited
+             <a href="mailto:plega@corefiling.com">&lt;plega@corefiling.com&gt;</a>
+         </dd></dl><hr><div><h2><a name="status" id="status"></a>Status</h2><p>Circulation of this  supporting document for a  Recommendation is unrestricted. 
+          Recipients are invited to submit comments to
+        <a href="mailto:rendering-feedback@xbrl.org">rendering-feedback@xbrl.org</a>,
+        
+          and to submit notification of any relevant patent rights 
+          of which they are aware and provide supporting 
+          documentation.
+        </p></div><div>
+<h2><a name="abstract" id="abstract"></a>Abstract</h2>
+         <p>
+
+Inline XBRL Part 0: Primer is a non-normative document intended to provide an
+easily readable description of Inline XBRL.  <a href="#IXBRL-PART1">[Inline XBRL Specification]</a> and
+<a href="#IXBRL-PART2">[Inline XBRL Schema]</a> provide the complete normative description of the
+Inline XBRL specification.
+
+      </p>
+      </div></div>
+  <div class="toc">
+<h2><a name="contents" id="contents"></a>Table of Contents</h2><p class="toc">1 <a href="#d1e60">Introduction</a><br>
+2 <a href="#d1e77">Structure</a><br>
+   2.1 <a href="#d1e82">The Inline XBRL Document</a><br>
+   2.2 <a href="#d1e94">Multiple documents</a><br>
+   2.3 <a href="#d1e118">Target documents</a><br>
+   2.4 <a href="#d1e140">Use of ID types</a><br>
+3 <a href="#sec-processing">Processing and validation</a><br>
+   3.1 <a href="#d1e228">Inline XBRL documents</a><br>
+   3.2 <a href="#d1e340">Processors</a><br>
+      3.2.1 <a href="#d1e348">The Conformant Processor</a><br>
+      3.2.2 <a href="#d1e357">The Validating Conformant Processor</a><br>
+   3.3 <a href="#d1e367">Validation</a><br>
+   3.4 <a href="#d1e427">Conformance suite</a><br>
+      3.4.1 <a href="#d1e435">Use of valid test pairs in the conformance suite</a><br>
+      3.4.2 <a href="#d1e444">Use of invalid IXDSs in the conformance suite</a><br>
+   3.5 <a href="#d1e454">Identification of Inline XBRL documents</a><br>
+      3.5.1 <a href="#d1e459">Doctype</a><br>
+      3.5.2 <a href="#d1e480">Version</a><br>
+      3.5.3 <a href="#d1e503">Namespace</a><br>
+      3.5.4 <a href="#d1e524">Processing Inline XBRL</a><br>
+      3.5.5 <a href="#d1e566">Non-XHTML</a><br>
+4 <a href="#sec-transformation">Transformations</a><br>
+   4.1 <a href="#d1e597">Transformation Rules</a><br>
+   4.2 <a href="#d1e636">Transformation Rules Registries</a><br>
+   4.3 <a href="#d1e669">The Specified Registry</a><br>
+5 <a href="#sec-guidance">Mapping values to the Target Document</a><br>
+   5.1 <a href="#d1e699">Contexts</a><br>
+   5.2 <a href="#d1e714">Duplicates</a><br>
+   5.3 <a href="#d1e743">Equal values</a><br>
+   5.4 <a href="#d1e762">Totalling</a><br>
+   5.5 <a href="#d1e777">Nested tags</a><br>
+   5.6 <a href="#d1e834">Nested tuples</a><br>
+   5.7 <a href="#d1e849">Signs</a><br>
+   5.8 <a href="#d1e879">Other attributes</a><br>
+6 <a href="#d1e955">Formatting</a><br>
+   6.1 <a href="#d1e960">Markup elements in text data</a><br>
+   6.2 <a href="#d1e1029">XML-escaping</a><br>
+7 <a href="#d1e1055">Syntax</a><br>
+   7.1 <a href="#d1e1060">MIME types</a><br>
+   7.2 <a href="#d1e1075">Namespace declarations</a><br>
+   7.3 <a href="#d1e1105">Page breaks</a><br>
+   7.4 <a href="#d1e1120">QNames in attributes</a><br>
+   7.5 <a href="#d1e1218">URIs in Markup elements</a><br>
+   7.6 <a href="#d1e1250">URIs in Inline XBRL Elements</a><br>
+8 <a href="#sec-consuming">Discussion of consuming applications</a><br>
+   8.1 <a href="#d1e1283">Hidden elements</a><br>
+   8.2 <a href="#d1e1298">DOM</a><br>
+</p>
+<h3><a name="appendices" id="appendices"></a>Appendices</h3><p class="toc">A <a href="#sec-references">References</a><br>
+B <a href="#sec-ip-status">Intellectual property status (non-normative)</a><br>
+C <a href="#sec-acknowledgements">Acknowledgements (non-normative)</a><br>
+D <a href="#sec-history">Document history (non-normative)</a><br>
+</p></div><hr><div class="body">
+      <div class="div1"><a name="d1e60" id="d1e60"></a>
+         <h1>1 Introduction</h1>
+         <p> 
+
+Inline XBRL was created to avoid the need to create visual renderings of XBRL
+instance documents.
+ 
+      </p> 
+         <p> 
+
+Conventional XML data documents (like XBRL instance documents) maintain a
+separation of data and rendering instructions.  The data is kept in the XML
+data document, and the rendering instructions are kept in a stylesheet or
+separate application.  Where the structure of the data is known in advance,
+this is efficient and simple.  XBRL, however, is based on taxonomies and not
+schemas: the precise data content of a document is often not known in advance.
+This makes it difficult to devise satisfactory rendering instructions.
+
+      </p> 
+         <p> 
+
+Inline XBRL is a mechanism for allowing the author of the XBRL instance
+document to specify the visual rendering of the data.  It does this by
+providing a method for incorporating XBRL instance data and metadata into an
+HTML or XHTML document.  The <a href="#IXBRL-PART1">[Inline XBRL Specification]</a> defines how this data
+and metadata can then be used to construct an XBRL instance document.
+
+      </p> 
+      </div>
+      <div class="div1"><a name="d1e77" id="d1e77"></a>
+         <h1>2 Structure</h1>
+         <div class="div2"><a name="d1e82" id="d1e82"></a>
+            <h2>2.1 The Inline XBRL Document</h2>
+            <p>
+
+The Inline XBRL Document is typically a single XHTML document which, when
+displayed in a browser, provides a full visual rendering of given XBRL data.
+An Inline XBRL processor (a "Processor"), given that Inline XBRL Document, will
+generate an XBRL instance document.
+
+        </p>
+            <p>
+
+In the Inline XBRL Document, data values are nested within Inline XBRL Elements
+which are themselves nested within HTML or XHTML elements ("Markup Elements").
+This technique relies upon the ability of browsers to ignore XML elements that
+it does not recognise.  The browser, in effect, ignores the Inline XBRL
+Elements and displays the data values as though they were textual content of
+the Markup Elements.  A Processor will ignore the Markup Elements and combine
+the Inline XBRL Elements and the data values to generate an XBRL instance
+document (the "Target Document").
+  
+        </p>
+         </div>
+         <div class="div2"><a name="d1e94" id="d1e94"></a>
+            <h2>2.2 Multiple documents</h2>
+            <p>
+
+Current browsers impose an effective maximum size limit on the files that
+they can handle.  The financial statements for a large company, which might be
+in the order of five megabytes in size, are too large for most browsers to
+handle today.
+
+        </p> 
+            <p> 
+
+To get round this limitation, a complete set of Inline XBRL information can be
+split across multiple documents.  The <a href="#IXBRL-PART1">[Inline XBRL Specification]</a> allows
+a set of documents, which together may form part of a web-site, to be
+treated as a single Inline XBRL Document Set ("IXDS").  There are few
+restrictions relating to the division of metadata between the different
+documents in the document set, so it is open to the author to repeat metadata
+across documents or to abstract common metadata (such as context information)
+into a header document.
+
+        </p> 
+            <div class="nonNormativeExample">
+
+When constructing multiple documents, be careful to use relative URLs in
+hyperlinks between the documents, so that they don't break when moved to other
+environments.
+
+        </div> 
+            <p> 
+
+The <a href="#IXBRL-PART1">[Inline XBRL Specification]</a> allows (although it does NOT recommend) the
+IXDS to consist of both HTML and XHTML documents.  The <a href="#IXBRL-PART1">[Inline XBRL Specification]</a> requires that a Validating Conformant Processor validate
+any XHTML documents against the Schema, but it will not validate or process a
+mixed-type IXDS.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e118" id="d1e118"></a>
+            <h2>2.3 Target documents</h2>
+            <p>
+
+Inline XBRL allows more than one Target Document to be created from the Inline
+XBRL Document, so as to make it possible to take two (or more) separate XBRL
+reports and display the data in a single web page.  This allows the author to
+build an HTML page which combines comparative data from different companies
+which, when processed, would become a set of financial reports, one for each
+company.
+
+        </p> 
+            <p> 
+
+But it is important not to confuse the mechanism for multiple input documents
+(i.e., the IXDS) with that for multiple output documents (i.e. Target
+Documents).  It was never the intention that the multiple documents in the IXDS
+would map into multiple Target Documents, although it is possible to construct
+an IXDS in this way.  Any two random Inline XBRL Documents - which, when
+processed would create individual Target Documents - will often not be suitable
+to be treated as constituent parts of the same IXDS, because of the need to
+ensure that IDs and references are unique across the IXDS, and that the target
+attributes are set appropriately.
+
+        </p> 
+            <p> 
+
+Each Inline XBRL Element is mapped to a given Target Document.  The Target
+Document is identified logically (but not physically) by means of the "target"
+attribute (if any) on that Inline XBRL Element.  If there is no target
+attribute then the Inline XBRL Element will map to the "default" Target
+Document.
+
+        </p> 
+            <p> 
+
+There is no distinction, other than the convenience of the specification,
+between specified Target Documents and the default Target Document.  It follows
+that, if there are no target attributes, there will be only one Target Document
+and that will be the default Target Document.  On the other hand, if target
+attributes are set on all the appropriate Inline XBRL Elements, there will be
+no default Target Document, and if the value of all those target attributes is
+the same then there will be only one Target Document.
+
+        </p> 
+            <p> 
+
+It follows that, if the target attribute is never specified in the IXDS, all
+output will be mapped to the same, single, Target Document.  If target
+attributes are provided in some cases but not in others there will always be at
+least two Target Documents produced.  Note that it is never possible to map
+the same element to more than one Target Document (although it may be possible
+to map the same data to more than one Target Document by the use of XML
+nesting).
+
+        </p> 
+         </div>
+         <div class="div2"><a name="d1e140" id="d1e140"></a>
+            <h2>2.4 Use of ID types</h2>
+            <p>
+
+Because Inline XBRL can use multiple documents, use of IDs and IDREFs is scoped
+across the IXDS rather than the individual Inline XBRL Document.  Thus, an item
+of type IDREF must have a matching ID somewhere within the IXDS, not
+necessarily within the same Inline XBRL Document.  However, the conventional
+method of IDREF typing (as defined in <a href="#XMLSCHEMA-DATATYPES">[XML Schema Datatypes]</a>) can
+only be applied, for validation purposes, to a single document.
+
+        </p>
+            <p>
+
+We considered requiring that schema validation be applied to an IXDS that had
+been merged to create a single document.  However, while the Inline XBRL Elements in
+the IXDS can be merged without danger to the semantics, the Markup Elements
+cannot.  There are issues relating to merging common elements - like
+<code>HTML</code>, <code>HEAD</code> and <code>BODY</code> - which would make
+it difficult to validate the document with confidence after the merge.
+
+        </p>
+            <p>
+
+The problem is that schema validation using the XHTML Modular Schema covers
+both the Inline XBRL elements and the Markup Elements.  Given that the merge
+can have unpredictable results on the validity of the XHTML, it is sensible to
+restrict schema-level validation to each individual Inline XBRL Document rather
+than the IXDS.
+
+        </p>
+            <p>
+
+We have accordingly avoided IDREF and IDREFS types in the <a href="#IXBRL-PART2">[Inline XBRL Schema]</a>, making use of <code>xs:NCName</code> types instead,
+replacing the implicit schema constraints with appropriate
+<strong>MUST</strong>s within the <a href="#IXBRL-PART1">[Inline XBRL Specification]</a>.  These
+<strong>MUST</strong>s are then tested by proprietary code within the
+Validating Conformant Processor, which can do so without concern about the
+impact of merging on XHTML validation.
+
+        </p>
+            <p>
+
+We have taken the same approach with the optional <code>id</code> attribute,
+which uses the <code>xs:NCName</code> type, and is required by the <a href="#IXBRL-PART1">[Inline XBRL Specification]</a> to be unique across the IXDS.   By requiring id attributes
+to be unique across the IXDS it becomes simpler for the Processor to identify
+elements, should that be necessary.
+
+        </p>
+            <div class="nonNormativeExample">
+
+Authors should therefore be aware that <code>contextRef</code>,
+<code>footnoteID</code>, <code>footnoteRefs</code>, <code>id</code>,
+<code>tupleID</code>, <code>tupleRef</code> and <code>unitRef</code>
+               <span class="term">attributes</span> are validated with reference to the IXDS and not the
+individual Inline XBRL Document.
+
+        </div>
+         </div>
+      </div>
+      <div class="div1"><a name="sec-processing" id="sec-processing"></a>
+         <h1>3 Processing and validation</h1>
+         <div class="div2"><a name="d1e228" id="d1e228"></a>
+            <h2>3.1 Inline XBRL documents</h2>
+            <p>
+
+The <a href="#IXBRL-PART1">[Inline XBRL Specification]</a> provides for different levels of conforming
+Inline XBRL documents.  Inline XBRL documents will generally be HTML or XHTML.
+They can also, in theory, be any other well-formed XML dialect.  All must, of
+course, be compliant with the specification but only XHTML documents can be
+validated using the normative <a href="#IXBRL-PART2">[Inline XBRL Schema]</a>.
+
+        </p>
+            <p>
+
+The following table summarises the validation framework for Inline XBRL
+documents.  It is described in fuller detail in the following paragraphs.
+
+        </p>
+            <table>
+               <tbody>
+                  <tr>
+                     <td></td>
+                     <td>Non-HTML</td> 
+                     <td>HTML</td> 
+                     <td>XHTML</td> 
+                  </tr>
+                  <tr>
+                     <td>Well-formed XML and compliant Inline XBRL </td>
+                     <td>
+                        <strong>MUST</strong>
+                     </td>
+                     <td>
+                        <strong>MUST</strong>
+                     </td>
+                     <td>
+                        <strong>MUST</strong>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Validatable against <a href="#IXBRL-PART2">[Inline XBRL Schema]</a>
+                     </td>
+                     <td>no</td>
+                     <td>no</td>
+                     <td>yes</td>
+                  </tr>
+                  <tr>
+                     <td>Validatable by a Validating Conformant Processor against the rules set out in the <a href="#IXBRL-PART1">[Inline XBRL Specification]</a>
+                     </td>
+                     <td>
+                        <strong>MUST NOT</strong>
+                     </td>
+                     <td>
+                        <strong>MUST NOT</strong>
+                     </td>
+                     <td>
+                        <strong>MUST</strong>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <p></p>
+            <div class="nonNormativeExample">
+
+It is worth noting that HTML documents are not often well-formed, and that most
+authoring tools may have more success creating XHTML than well-formed HTML.  We
+would strongly recommend the use of XHTML rather than HTML.  We expect that
+most Inline XBRL applications will in fact require XHTML.
+
+        </div>
+            <p>
+
+The specification, however, does not outlaw non-XHTML dialects because we
+wanted to encourage as-yet unforeseen uses of Inline XBRL to develop in the future
+with the full benefit of the specification.  There is, in fact, no technical
+reason short of validation why non-XHTML dialects should not be as acceptable a
+host for Inline XBRL as XHTML.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e340" id="d1e340"></a>
+            <h2>3.2 Processors</h2>
+            <p>
+           
+The purpose of the Processor is to generate XBRL from an IXDS without reference
+to any taxonomy.  Even so, there are different types of Processors:
+ 
+        </p>
+            <div class="div3"><a name="d1e348" id="d1e348"></a>
+               <h3>3.2.1 The Conformant Processor</h3>
+               <p>
+
+The Conformant Processor must be able to handle multiple input documents (which
+together comprise the IXDS) and be able to generate multiple Target Documents. 
+
+          </p>
+            </div>
+            <div class="div3"><a name="d1e357" id="d1e357"></a>
+               <h3>3.2.2 The Validating Conformant Processor</h3>
+               <p>
+
+The Validating Conformant Processor is required to validate the IXDS and may
+only validate an IXDS which consists solely of XHTML documents.  If (and only
+if) the IXDS is valid, it will then generate the Target Document(s).
+
+          </p>
+            </div>
+         </div>
+         <div class="div2"><a name="d1e367" id="d1e367"></a>
+            <h2>3.3 Validation</h2>
+            <p>
+
+Validation is the process which must be carried out in full by a Validating
+Conformant Processor on any XHTML document.  Validation involves:
+
+        </p>
+            <ol>
+               <li>
+
+testing that the IXDS meets the rules set out in the
+<a href="#IXBRL-PART1">[Inline XBRL Specification]</a>; and
+
+          </li>
+               <li>
+
+validating each of the Inline XBRL Documents against the <a href="#IXBRL-PART2">[Inline XBRL Schema]</a>.
+
+          </li>
+            </ol>
+            <p>
+
+For the purposes of the conformance suite, a set of Schematron rules have been
+created, which test many of the rules set out in the <a href="#IXBRL-PART1">[Inline XBRL Specification]</a>.
+Together, the Schematron rules and the Schema provide nearly-complete coverage
+of all the requirements of the <a href="#IXBRL-PART1">[Inline XBRL Specification]</a>. 
+
+        </p>
+            <p>
+
+Note that while the rules in the <a href="#IXBRL-PART1">[Inline XBRL Specification]</a> and the <a href="#IXBRL-PART2">[Inline XBRL Schema]</a> are both normative (the latter only for XHTML-based
+documents), the Schematron rules are non-normative.  This is because the
+Schematron rules are encapsulations of the (normative) <strong>MUST</strong>s
+in the <a href="#IXBRL-PART1">[Inline XBRL Specification]</a>, while the <a href="#IXBRL-PART2">[Inline XBRL Schema]</a>
+covers concepts which are not in all cases made explicit in the <a href="#IXBRL-PART1">[Inline XBRL Specification]</a>.
+
+        </p>
+            <p>
+
+The implication of this is that application of the Schematron rules will NOT
+necessarily meet the requirement for a Validating Conformant Processor to test
+that the IXDS meets the rules set out in the <a href="#IXBRL-PART1">[Inline XBRL Specification]</a>.
+
+        </p>
+         </div>
+         <p>
+
+The <a href="#IXBRL-PART2">[Inline XBRL Schema]</a> uses a modular technique which involves
+extending the XHTML Schema to accept Inline XBRL Elements within the XHTML
+document.  The Schema also makes use of parts of the schemas for XBRL, but to
+accomplish this some changes have had to be made to the structure of the XBRL
+Schemas that are referenced by the modular <a href="#IXBRL-PART1">[Inline XBRL Specification]</a>.  The
+re-structured schemas logically define identical instance document content
+models as the normative XBRL Schemas.
+
+      </p>
+         <div class="div2"><a name="d1e427" id="d1e427"></a>
+            <h2>3.4 Conformance suite</h2>
+            <p>
+
+The conformance suite is used to test a Processor and has no role in
+determining the validity of a given Inline XBRL Document.
+
+        </p>
+            <div class="div3"><a name="d1e435" id="d1e435"></a>
+               <h3>3.4.1 Use of valid test pairs in the conformance suite</h3>
+               <p>
+
+The conformance suite consists largely of pairs of IXDSs and Target Documents.
+Each pair is illustrative of a conforming transformation.  Both a Conformant
+Processor and a Validating Conformant Processor will, when processing a given
+IXDS, generate the associated Target Documents; if it does not, it will not be
+deemed conformant.
+
+          </p>
+            </div>
+            <div class="div3"><a name="d1e444" id="d1e444"></a>
+               <h3>3.4.2 Use of invalid IXDSs in the conformance suite</h3>
+               <p>
+
+The conformance suite also includes IXDSs that are not valid, which are
+used only to test Validating Conformant Processors.  A Validating Conformant
+Processor will, when processing an invalid IXDS, generate a failure message.
+
+          </p>
+            </div>
+         </div>
+         <div class="div2"><a name="d1e454" id="d1e454"></a>
+            <h2>3.5 Identification of Inline XBRL documents</h2>
+            <div class="div3"><a name="d1e459" id="d1e459"></a>
+               <h3>3.5.1 Doctype</h3>
+               <p> 
+
+Setting a <code>DOCTYPE</code> in the Inline XBRL Document will, in many
+processing situations, trigger an attempt to validate against a DTD.  We did
+not plan for the use of DTDs in Inline XBRL because of lack of support for
+<span class="term">namespaces</span> in DTDs.  There is therefore no normative DTD for Inline XBRL.
+
+          </p> 
+               <div class="nonNormativeExample">
+
+We strongly advise against setting a <code>DOCTYPE</code> in Inline XBRL
+Documents, because it is liable to lead to a validation failure.
+
+          </div>
+            </div>
+            <div class="div3"><a name="d1e480" id="d1e480"></a>
+               <h3>3.5.2 Version</h3>
+               <p> 
+
+The <code>version</code>&nbsp;<span class="term">attribute</span> can, optionally, be used
+to identify a document as Inline XBRL.  If used, the value
+<strong>MUST</strong> be the Formal Public Identifier defined in <a href="#IXBRL-PART2">[Inline XBRL Schema]</a> (currently "-//XBRL International//DTD XHTML Inline XBRL
+1.0//EN").
+
+          </p> 
+               <p> 
+
+It is worth noting that the Public Text Class "DTD", when used as part of the
+Formal Public Identifier, means "document type declaration subset" and not
+"Document Type Definition"; so the use of the Formal Public Identifier should
+not be taken to imply the existence of a Document Type Definition.
+
+          </p> 
+            </div>
+            <div class="div3"><a name="d1e503" id="d1e503"></a>
+               <h3>3.5.3 Namespace</h3>
+               <p> 
+
+The Inline XBRL <span class="term">namespace name</span>,
+<code>http://www.xbrl.org/2008/inlineXBRL</code>, identifies Inline XBRL
+elements with the 1.0 version of this standard (and all its errata corrections,
+if any).  Any subsequent versions of this standard (i.e., non-errata correction
+changes which have an impact on validity) will have a new <span class="term">namespace
+name</span>, such as (for instance)
+<code>http://www.xbrl.org/2015/inlineXBRL</code>.
+
+          </p> 
+            </div>
+            <div class="div3"><a name="d1e524" id="d1e524"></a>
+               <h3>3.5.4 Processing Inline XBRL</h3>
+               <p> 
+
+Because the version attribute is optional, it cannot be relied upon by
+Processors seeking to identify a document as Inline XBRL.  Instead, a Processor
+will look for (a) the <span class="term">namespace</span> of the root <code>HTML</code>
+element, which should have the <span class="term">namespace name</span><code>http://www.w3.org/1999/xhtml</code>; and (b) the existence of one or more
+elements which have the
+<code>http://www.xbrl.org/2008/inlineXBRL</code>&nbsp;<span class="term">namespace
+name</span>.
+
+          </p> 
+               <p>
+
+It will often be the case that the <span class="term">namespace name</span> of the root
+element will have a schema location hint leading the Processor to
+<code>http://www.xbrl.org/2008/inlineXBRL/xhtml-inlinexbrl-1_0.xsd</code>: but
+this location is not mandatory (and so cannot be relied upon) and will in any
+case (for security or performance considerations) often be ignored by the
+Processor.
+  
+          </p> 
+               <p>
+
+The implication of using the Inline XBRL <span class="term">namespace name</span> as a key
+identifier is that a Processor is not allowed to distinguish between the REC
+version of the specification and subsequent errata, if any.  The Processor must
+support both REC and all the errata.
+
+          </p> 
+            </div>
+            <div class="div3"><a name="d1e566" id="d1e566"></a>
+               <h3>3.5.5 Non-XHTML</h3>
+               <p> 
+
+A document which does not have a root <code>HTML</code> element (or which has a
+root <code>HTML</code> element which does not have the <span class="term">namespace
+name</span> "http://www.w3.org/1999/xhtml") but which does include one or more
+elements which have the "http://www.xbrl.org/2008/inlineXBRL" <span class="term">namespace
+name</span> can still be in full compliance with the Inline XBRL specification
+and therefore can be considered prima facie an Inline XBRL Document.  A
+Conformant Processor is expected to process such a document successfully, if it
+is in compliance with the specification.  However, a Validating Conformant
+Processor will not successfully validate such a document and is not allowed to
+process it further.
+
+          </p> 
+               <p> 
+
+If the document complies with the specification the Processor will be able to
+generate the Target Document successfully.  However, in the absence of
+validation there is no obvious way of determining compliance and the behaviour
+of the Processor in the presence of a non-compliant document is not defined by
+the specification.  The purpose of this treatment is to allow well-formed XML
+(other than XHTML) to host Inline XBRL Elements.  As mentioned above, had we
+forbidden any host markup other than XHTML it would have outlawed potential
+future uses of the Specification.
+
+          </p> 
+            </div>
+         </div>
+      </div>
+      <div class="div1"><a name="sec-transformation" id="sec-transformation"></a>
+         <h1>4 Transformations</h1>
+         <div class="div2"><a name="d1e597" id="d1e597"></a>
+            <h2>4.1 Transformation Rules</h2>
+            <p>
+
+The <a href="#IXBRL-PART1">[Inline XBRL Specification]</a> provides examples of Transformation Rules, but
+the normative list will be maintained separately.  The transformations will
+require different implementations for different execution environments.
+
+        </p>
+            <p>
+
+Transformation Rules may be thought of as parsing rules; they convert textual
+displays into XML Schema data types having canonical lexical representations
+along with XBRL specific attributes. Transformation Rules producing types
+derived from <code>xs:decimal</code>, in particular, must interpret the
+<code>decimals</code> and <code>precision</code>&nbsp;<span class="term">attributes</span>
+and produce not only a canonical lexical representation but also corresponding
+<code>decimals</code> and <code>precision</code>&nbsp;<span class="term">attributes</span>.  
+
+        </p>
+            <p>
+
+There is a long tail of potentially useful transformations to parse currency
+symbols, dates (in a variety of formats), Boolean values, texts written
+right-to-left, Chinese, and other display formats. The registry is a practical
+means for covering a large set of critical numeric and date types for browser
+execution, XSL and other key environments, while allowing for growth in the set
+of transformations and implementations.           
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e636" id="d1e636"></a>
+            <h2>4.2 Transformation Rules Registries</h2>
+            <p>
+
+Transformation Rules are stored in a Transformation Rules Registry which may
+consist of multiple versions, over time.  Within a registry a function is
+identified by its <span class="term">local name</span>, with the presumption that the
+function assigned to that <span class="term">local name</span> will never change.  Functions
+will persist from one version of the registry to the next, and only be dropped
+from subsequent versions in the case of deprecation.  This allows the creation
+of a set of Transformation Rules and their amendment over time while
+maintaining clarity as to content and purpose.
+
+        </p>
+            <p>
+
+A given registry is identified by its <span class="term">namespace</span>, which will
+incorporate the date that that version of the registry was accorded REC status.
+This neatly resolves the issue of <span class="term">errata corrections</span> - because
+errata don't have a REC date they can't have a separate <span class="term">namespace</span>
+and so must be identified with any reference to the underlying registry
+version.
+
+        </p>
+            <p>
+
+For developers, the <span class="term">namespace</span> mechanism provides both clarity as
+to the identification of the set of functions being supported, and a simple way
+to upgrade provision from one version of a registry to another.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e669" id="d1e669"></a>
+            <h2>4.3 The Specified Registry</h2>
+            <p>
+
+The Specified Registry is the initial version of the registry defined by XBRL
+International and which is required to be supported by any processor which
+supports Inline XBRL.  It should be noted that subsequent versions of that
+registry are not required to be supported, although we would expect that
+implementations of Inline XBRL will probably seek to do so.
+
+        </p>
+            <p>
+
+It was intended by the authors of the specification that the Specified Registry
+would meet the needs of regulators and other users of Inline XBRL.  The
+registry framework, as described above, nevertheless provides a clean mechanism
+for the creation and maintenance of other registries by third parties.
+
+        </p>
+            <p>
+
+It should be noted that the <span class="term">namespace name</span> given to the Specified
+Registry was changed when the specification was accorded REC status (so as to
+incorporate the REC date) and is therefore not the same <span class="term">namespace
+name</span> as was published in the Proposed REC and previous versions of the
+specification.
+
+        </p>
+         </div>
+      </div>
+      <div class="div1"><a name="sec-guidance" id="sec-guidance"></a>
+         <h1>5 Mapping values to the Target Document</h1>
+         <p>
+
+Every XBRL fact and xlink relationship in the Target Document must be justified
+by reference to an appropriate Inline XBRL Element in the input data.  This
+means that the Target Document is not allowed to contain other facts or
+relationships.  (It does not, incidentally, prohibit duplication, if duplicates
+are present in the input data.)  Nor does it restrict contexts and units, which
+may be included in the Target Document whether or not they appeared in the
+input document.
+
+      </p>
+         <div class="div2"><a name="d1e699" id="d1e699"></a>
+            <h2>5.1 Contexts</h2>
+            <p>
+
+Inline XBRL does not specify any way for the text content of Markup Elements
+displayed in a browser to be transformed into the content of contexts in the
+target documents. Dates appearing in column headings, for example, normally
+appear in the IXDS as Markup Elements without any Inline XBRL Element
+ancestors.  Management of the contexts referenced by
+<code>xbrli:contextRef</code>&nbsp;<span class="term">attributes</span> in the IXDS is done
+as in any other XBRL creation process.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e714" id="d1e714"></a>
+            <h2>5.2 Duplicates</h2>
+            <p>
+
+Financial statements normally have at least a handful of facts that appear in
+more than one location in an IXDS.  Net Income, for example, may appear both
+on an Income Statement and a Statement of Cash Flows. If both occurrences in
+the IXDS are tagged with the same element and context, and have the same actual
+or default {target} property, the output may contain both occurrences.
+
+        </p>
+            <p>
+
+In some cases it will be desired that such occurrences ("duplicates") are
+removed from the output.  However, the rules for de-duplication will vary from
+occasion to occasion.  Duplicates as defined by the XBRL v2.1 Specification can
+only be determined by reference to the DTS.  Because Processors are not
+required to access the DTS, it cannot be assumed that a Processor will be able
+to carry out XBRL-level de-duplication.  In addition, because it is possible to
+add user-defined (non-Inline XBRL) attributes to Inline XBRL Elements, output
+elements which are XBRL-s-equal may actually contain different attribute-level
+information.
+
+        </p>
+            <p>
+
+The <a href="#IXBRL-PART1">[Inline XBRL Specification]</a> therefore allows de-duplication to be carried
+out at the discretion of the Processor.
+
+        </p>
+            <p>
+
+In some cases, either because of different rounding conventions or by mistake,
+a pair of facts may match as to element name, context and {target} property,
+but may have different values.  The <a href="#IXBRL-PART1">[Inline XBRL Specification]</a>requires that
+both facts appear in the Target Document.  This is not illegal XBRL but it is
+very much to be deplored.  
+
+        </p>
+            <div class="nonNormativeExample">
+
+Avoid including matching facts with different values in the IXDS.
+
+        </div>
+            <p>
+
+In the case of tuple children, however, the creation of duplicates in the
+target document will often be schema-invalid.  For this reason, duplicate tuple
+children are removed prior to mapping.  To keep the Processor as light-weight
+as possible, duplicates for these purposes are defined as those with the same
+tuple order value.  To validate that these two elements do indeed have the same
+value, a string-comparison mechanism is used.   This is more restrictive than
+the XBRL v2.1 Specification, which allows (say) for two elements with the same
+value to use different schemaRef attributes.  Such elements would fail Inline XBRL
+validation.  We consider that the benefits of this restriction, by making it
+easier to process Inline XBRL, outweigh any drawbacks.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e743" id="d1e743"></a>
+            <h2>5.3 Equal values</h2>
+            <p>
+
+An author might wish for a fragment of text in an IXDS to correspond to more
+than one fact in a Target Document. For example, a formatted date such as "25
+June 2008" may need to appear in the target document both as a tuple with day,
+month and year, and separately as an item of type dateTime. Inline XBRL does not
+support a one-to-many mapping of source text to facts.
+
+        </p>
+            <div class="nonNormativeExample">
+        
+The correct way to handle "one to many" mappings is to tag the text with one of
+the mappings, and place the other output tag inside an
+<code>ix:hidden</code>&nbsp;<span class="term">element</span>.
+
+        </div>
+         </div>
+         <div class="div2"><a name="d1e762" id="d1e762"></a>
+            <h2>5.4 Totalling</h2>
+            <p>
+
+A special case of "Equal values" would be a numeric value displayed in the
+Inline XBRL Document that is meant to map to more than one output fact, the sum
+of which is the displayed total. (Note that in some regulatory environments,
+this would clearly not be acceptable.) The displayed figure would have no
+Inline XBRL tags at all; the output facts would simply appear as Inline XBRL
+Elements inside the <code>ix:hidden</code>&nbsp;<span class="term">element</span>.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e777" id="d1e777"></a>
+            <h2>5.5 Nested tags</h2>
+            <p>
+
+There is, however, a special case where "dual tagging" of a single piece of
+displayed text is permissible.  Individual pieces of data which fall within an
+<code>ix:nonNumeric</code> tag may also themselves be tagged.  So a textual
+note can be tagged as <code>ix:nonNumeric</code> and parts of the text (say, a
+fraction) can also be tagged (in this case, as <code>ix:fraction</code>).  That
+fraction will appear twice in the target document, once as part of the textual
+note and once as a numeric <span class="term">fact</span>.
+
+        </p>
+            <p>
+
+A single date within <code>ix:nonNumeric</code> tags could, for instance, be
+nested inside a further set of <code>ix:nonNumeric</code> tags.  The date would
+appear twice in the target document, once for each <code>ix:nonNumeric</code>
+element.  If the date was in the form, say, "July 14, 1789" then both
+<code>ix:nonNumeric</code> elements would include the attribute
+<code>format="ixt:datelongus"</code>, and both dates in the Target Document
+would appear in the canonical form "1789-07-14".
+
+        </p>
+            <p>
+
+By using the <code>ix:exclude</code> element it is possible to remove part of
+the content of the <code>ix:nonNumeric</code> element from the output in the
+Target Document.  But any <code>ix:</code> tags which are nested within that
+<code>ix:exclude</code> element will continue to be processed in their own
+right (although no longer as part of the host <code>ix:nonNumeric</code>
+element).
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e834" id="d1e834"></a>
+            <h2>5.6 Nested tuples</h2>
+            <p>
+
+Tuples can be nested, either physically or by reference (the latter by using
+<code>tupleRef</code> and <code>tupleID</code>).  There is no limit to the
+recursion, except that it is not permitted for tuple content to include, in its
+own tuple content, the parent tuple.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e849" id="d1e849"></a>
+            <h2>5.7 Signs</h2>
+            <p>
+  
+Inline XBRL requires that numerics (<code>ix:denominator</code>,
+<code>ix:numerator</code> and <code>ix:nonFraction</code>) must use the
+<code>sign</code>&nbsp;<span class="term">attribute</span> to indicate negative values.  Any
+negative indicator (dash, brackets, or colour-coding) must be positioned in the
+Inline XBRL Document outside the relevant Inline XBRL Element.  The content of
+the relevant Inline XBRL Element will therefore always be a non-negative
+number, unless the format attribute is present and a transformation is thus
+indicated.
+
+        </p>
+            <p>
+
+Data values which are to be transformed must either represent non-numerics
+(e.g. dates) or they must also represent (allowing for commas and other
+formatting) non-negative numerics.  No transformation may be used to change the
+sign of the content.  This enforces the general requirement that all numeric
+values in Inline XBRL are always positive, and values which are required to be
+negative in the Target Document may only be represented by use of the <code>sign</code>
+attribute. 
+
+       </p>
+         </div>
+         <div class="div2"><a name="d1e879" id="d1e879"></a>
+            <h2>5.8 Other attributes</h2>
+            <p><a href="#XBRL">[XBRL 2.1]</a> allows the addition of <span class="term">attributes</span>, other
+than those defined in the <a href="#IXBRL-PART1">[Inline XBRL Specification]</a>, to an XBRL instance
+document.  For instance, it may be desired to give
+<code>xml:id</code>&nbsp;<span class="term">attributes</span> to <span class="term">elements</span> in
+the XBRL instance document.  Inline XBRL allows the matching addition of "other
+attributes", in a number of places, to provide for this.
+
+
+        </p>
+            <p>
+
+Note that for some <span class="term">elements</span> (<code>ix:footnote</code>,
+<code>ix:denominator</code> and <code>ix:numerator</code>) the definition of
+"other attributes" is explicitly more permissive than is the
+<span class="term">attribute</span> model for that <span class="term">element</span>.  This is because
+definitions which explicitly matched the <span class="term">attribute</span> model would
+not, in fact, encompass <span class="term">attributes</span> such as those with the
+<code>http://www.w3.org/2001/XMLSchema-instance</code>&nbsp;<span class="term">namespace
+name</span> which are not referenced in the schema but which are legal in both
+Inline XBRL and XBRL v2.1.  In the case of <code>ix:denominator</code> and
+<code>ix:numerator</code>, <span class="term">attributes</span> with the
+<code>http://www.w3.org/2001/XMLSchema-instance</code>&nbsp;<span class="term">namespace
+name</span> are actually the only legal members of "other attributes".
+
+       </p>
+         </div>
+      </div>
+      <div class="div1"><a name="d1e955" id="d1e955"></a>
+         <h1>6 Formatting</h1>
+         <div class="div2"><a name="d1e960" id="d1e960"></a>
+            <h2>6.1 Markup elements in text data</h2>
+            <p>
+
+The Inline XBRL equivalents to XBRL text-based facts are
+<code>ix:footnote</code> and <code>ix:nonNumeric</code>.  There are some
+important differences in the treatment of the content of these
+<span class="term">elements</span>.  Neither has any restriction on <span class="term">element</span>
+content; in practice this means the content may be <code>ix: elements</code> or
+Markup Elements.  Both can therefore accommodate the nesting of
+<code>ix:</code>&nbsp;<span class="term">elements</span> and both use the
+<code>ix:exclude</code> element to remove content from the mapped data.
+
+        </p>
+            <p>
+
+However, they are very different in their treatment of Markup Elements.  In
+Inline XBRL, most Markup Elements are discarded upon processing, but this is
+not the case for <code>ix:footnote</code> and <code>ix:nonNumeric</code>.  The
+<code>ix:footnote</code>&nbsp;<span class="term">element</span> includes full Markup
+Elements in its mappable value, in conformance with the content model for
+<code>link:footnote</code> in <a href="#XBRL">[XBRL 2.1]</a>.  However, <a href="#XBRL">[XBRL 2.1]</a> does not allow Markup Elements in non-numeric facts.  Inline XBRL
+provides that Markup Elements are only mapped to the Target Document if the
+<code>escape</code>&nbsp;<span class="term">attribute</span> has been set to true, in which
+case the Markup Elements are XML-escaped in the Target Document.  If the
+<code>escape</code>&nbsp;<span class="term">attribute</span> is false, the HTML or XHTML
+tags are discarded prior to mapping.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e1029" id="d1e1029"></a>
+            <h2>6.2 XML-escaping</h2>
+            <p>
+
+
+XML-escaped Markup Elements, where they are found in non-numeric XBRL facts, is
+used most commonly in US SEC reporting, to provide some local formatting for
+large blocks of text.
+
+        </p>
+            <p>
+
+XML-escaping may be achieved by escaping individual characters or by enclosing
+the text in a CDATA block.  It is up to the Processor to determine whether to
+use CDATA blocks or character escaping, because both options are treated as
+equivalent in <a href="#XML">[XML]</a>.
+
+        </p>
+            <p>
+
+The full definition of XML-escaping can be found in <a href="#XML">[XML]</a>.  In
+Inline XBRL, XML-escaping applies both to Markup Elements and Markup Elements
+that have already been escaped in the original <code>ix:nonNumeric</code>
+element.  In the latter case, the mapped output will be "double-escaped".
+Note, however, that the XML specification forbids the nesting of CDATA blocks.
+
+        </p>
+            <p>
+
+By way of example, the XML  &lt;b&gt; Hello World &lt;/b&gt;  will be output as
+ &amp;lt;b&amp;gt; Hello World &amp;lt;/b&amp;gt; .  The XML   &gt; ,
+which is escaped as  &amp;gt; , would be double-escaped as 
+&amp;amp;gt; .
+
+        </p>
+         </div>
+      </div>
+      <div class="div1"><a name="d1e1055" id="d1e1055"></a>
+         <h1>7 Syntax</h1>
+         <div class="div2"><a name="d1e1060" id="d1e1060"></a>
+            <h2>7.1 MIME types</h2>
+            <p>
+
+The MIME type selected for the Inline XBRL Document will often have an impact
+on whether browsers display the document correctly.  The MIME type can be set
+within the Inline XBRL Document with code such as:  &lt;meta
+content='text/html; charset=utf-8' http-equiv='Content-Type' /&gt; .
+
+        </p>
+            <p>
+
+It should also be noted that browsers may also depend upon the filename suffix
+in order to determine display behaviour.
+
+        </p>
+            <div class="nonNormativeExample">
+
+Authors of Inline XBRL Documents should test how their documents display in
+different browsers to ensure that the MIME type is set appropriately.
+
+        </div>
+         </div>
+         <div class="div2"><a name="d1e1075" id="d1e1075"></a>
+            <h2>7.2 Namespace declarations</h2>
+            <p>
+
+The display of Inline XBRL documents in different browsers is, regrettably,
+sometimes dependent upon the location of the <span class="term">namespace</span> declarations in the
+document.  In particular, placing the XHTML <span class="term">namespace</span> declaration
+(<code>xmlns:html="http://www.w3.org/1999/xhtml"</code>) anywhere in the body
+of the Inline XBRL document is likely to lead to undefined treatment in many
+browsers.
+
+        </p>
+            <div class="nonNormativeExample">
+        
+It is advisable to define the XHTML <span class="term">namespace</span> as the default in the root
+<code>HTML</code>&nbsp;<span class="term">element</span> and nowhere else.
+
+        </div>
+         </div>
+         <div class="div2"><a name="d1e1105" id="d1e1105"></a>
+            <h2>7.3 Page breaks</h2>
+            <p>
+
+Inline XBRL supports page breaks in printed output.
+
+        </p>
+            <div class="nonNormativeExample">
+        
+Include the markup <code>&lt;p style="page-break-before: always" /&gt;</code> to
+force a page break when the document is printed from most common browsers.
+
+        </div>
+         </div>
+         <div class="div2"><a name="d1e1120" id="d1e1120"></a>
+            <h2>7.4 QNames in attributes</h2>
+            <p>
+
+In Inline XBRL, the name of the XBRL element type in the Target Document is
+determined by the value of the relevant
+<code>name</code>&nbsp;<span class="term">attribute</span> in the Inline XBRL Document.  The
+<code>name</code>&nbsp;<span class="term">attribute</span> is a <span class="term">QName</span>, that is,
+it is in the form <span class="term">namespace prefix</span>:<span class="term">local name</span>.
+
+        </p>
+            <p>
+
+So that the <span class="term">namespace prefix</span> can be expanded to the underlying
+<span class="term">namespace name</span>, it is essential to make sure that all
+<code>name</code>&nbsp;<span class="term">attributes</span> fall within the scope of the
+appropriate <span class="term">namespace</span> declaration.
+
+        </p>
+            <p>
+
+There is a general rule (Section 3.3.2 of the <a href="#IXBRL-PART1">[Inline XBRL Specification]</a>)
+which requires that <span class="term">namespaces</span> are handled in accordance with the
+namespaces specification, which is interpreted by Processors as requiring these
+declarations to be made available within the Target Document.
+
+        </p>
+            <p>
+
+Note that it should not be necessary to provide a <span class="term">namespace</span> declaration for
+every  <code>name</code>&nbsp;<span class="term">attribute</span>.  As long as there is an
+appropriate <span class="term">namespace</span> declaration in scope for the <span class="term">attribute</span>, the
+<code>QName</code> will be treated correctly in the Target Document.
+
+        </p>
+            <p>
+
+Canonicalisation <a href="#C14N">[C14N]</a> of the Inline XBRL document, which will
+remove similar <span class="term">namespace</span> declarations with an overlapping scope, will not have
+any impact on the validity of the Target Document.
+
+        </p>
+            <div class="nonNormativeExample">
+        
+Remember to make sure that there is an appropriate <span class="term">namespace</span> declaration in
+scope for all <code>QNames</code> which are used in the Inline XBRL Document.
+
+        </div>
+         </div>
+         <div class="div2"><a name="d1e1218" id="d1e1218"></a>
+            <h2>7.5 URIs in Markup elements</h2>
+            <p>
+
+Markup which is mapped to the target document (as is the case with Markup
+Elements included in <code>ix:footnote</code> elements and some
+<code>ix:nonNumeric</code> elements) may contain URIs.
+
+        </p>
+            <p>
+
+In HTML and XHTML, URIs may be absolute or relative.  In the absence of any
+alternative, relative URIs will be converted to absolute URIs by Processors
+using contextual information (such as current document location).  This is
+unattractive for Inline XBRL, where the Inline XBRL document may be part of an
+electronic filing with no pre-determined location, and can lead to
+unpredictable results.
+
+        </p>
+            <div class="nonNormativeExample">
+
+Unless hyperlinking between parts of the IXDS, authors should either use
+absolute URIs or they should provide a base URI by including the
+<code>BASE</code> element in the <code>HEAD</code> element of the Inline XBRL
+document.
+
+        </div>
+            <p>
+
+This topic is covered more fully in section 12.4.1 of the <a href="#HTML">[HTML]</a>
+specification.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e1250" id="d1e1250"></a>
+            <h2>7.6 URIs in Inline XBRL Elements</h2>
+            <p>
+  
+Inline XBRL Element URIs, like URIs in Markup Elements, need to be capable
+of resolution to absolute URIs as part of the mapping process.  A common
+example of this is the <code>xlink:href</code> attribute.
+
+        </p>
+            <p>
+
+The resolution of relative URIs in Inline XBRL Elements is controlled by the
+<code>xml:base</code> attribute.  
+
+        </p>
+            <div class="nonNormativeExample">
+        
+Authors should either use absolute URIs in Inline XBRL Elements or they should
+use the <code>xml:base</code> attribute.
+
+        </div>
+         </div>
+      </div>
+      <div class="div1"><a name="sec-consuming" id="sec-consuming"></a>
+         <h1>8 Discussion of consuming applications</h1>
+         <p>
+
+In general, it has been assumed that Inline XBRL will be consumed by standalone
+Processors that will convert the Inline XBRL into an XBRL instance document which
+will then be passed on to another application for further analysis or storage.
+However, some use cases suggest that embedded applications (for instance,
+JavaScript executed by a browser) might also be used to process the Inline XBRL.
+
+      </p>
+         <div class="div2"><a name="d1e1283" id="d1e1283"></a>
+            <h2>8.1 Hidden elements</h2>
+            <p>
+
+Some elements which are required in the XBRL are not expected to be
+displayed.  For instance, a value may be repeated several times in an XBRL
+instance document, each time as a different concept.  Where the convention is
+only to display this value once, the other occurrences are not displayed in the
+Markup.  Inline XBRL uses the convention that such values will be placed in the
+<code>ix:hidden</code> element.
+
+        </p>
+            <p>
+
+However, use of the hidden area opens the possibility that data which will in
+due course be processed and validated may be deliberately hidden from view.  We
+expect that applications consuming Inline XBRL for further processing will
+search for tagged data which has not been displayed, to check that it is
+properly placed in the hidden area.  Likewise, the consuming application would
+provide users with a way to inspect data in the hidden area.
+
+        </p>
+         </div>
+         <div class="div2"><a name="d1e1298" id="d1e1298"></a>
+            <h2>8.2 DOM</h2>
+            <p>
+
+There is a general caution with respect to Inline XBRL for in-browser
+processing.  Inline XBRL uses several XML <span class="term">namespaces</span> to provide for more
+reliable data processing.  Within the browser, however, different browsers may
+expose Inline XBRL Elements to the <a href="#DOM">[HTML DOM]</a> in different ways.  Web
+designers looking to access Inline XBRL metadata should be careful to take this
+into account.
+
+        </p>
+         </div>
+      </div>
+  </div>
+  <div class="back">
+      <div class="div1"><a name="sec-references" id="sec-references"></a>
+         <h1>Appendix A References</h1>
+         <dl>
+            
+            
+            
+            
+            
+            
+            
+            
+         <dt class="label"><a name="C14N" id="C14N"></a>C14N</dt><dd>W3C (World Wide Web Consortium). "Canonical XML"<br>John Boyer.<br>(See <a href="http://www.w3.org/TR/xml-c14n">http://www.w3.org/TR/xml-c14n</a>)</dd><dt class="label"><a name="HTML" id="HTML"></a>HTML</dt><dd>W3C (World Wide Web Consortium). "HTML 4.01 Specification"<br>Dave Raggett, Arnaud Le Hors, and Ian Jacobs.<br>(See <a href="http://www.w3.org/TR/html401/">http://www.w3.org/TR/html401/</a>)</dd><dt class="label"><a name="DOM" id="DOM"></a>HTML DOM</dt><dd>W3C (World Wide Web Consortium). "Document Object Model (DOM) Level 2 HTML Specification"<br>Johnny Stenback, Philippe Le Hégaret, and Arnaud Le Hors.<br>(See <a href="http://www.w3.org/TR/DOM-Level-2-HTML">http://www.w3.org/TR/DOM-Level-2-HTML</a>)</dd><dt class="label"><a name="IXBRL-PART2" id="IXBRL-PART2"></a>Inline XBRL Schema</dt><dd>XBRL International Inc.. "Inline XBRL Part 2: Schema 1.0"<br>Philip Allen, and Ian Stokes-Rees.<br>(See <a href="http://www.xbrl.org/Specification/inlineXBRL-part2/REC-2010-04-20/inlineXBRL-part2-REC-2010-04-20.html">http://www.xbrl.org/Specification/inlineXBRL-part2/REC-2010-04-20/inlineXBRL-part2-REC-2010-04-20.html</a>)</dd><dt class="label"><a name="IXBRL-PART1" id="IXBRL-PART1"></a>Inline XBRL Specification</dt><dd>XBRL International Inc.. "Inline XBRL Part 1: Specification 1.0"<br>Philip Allen, and Ian Stokes-Rees.<br>(See <a href="http://www.xbrl.org/Specification/inlineXBRL-part1/REC-2010-04-20/inlineXBRL-part1-REC-2010-04-20.html">http://www.xbrl.org/Specification/inlineXBRL-part1/REC-2010-04-20/inlineXBRL-part1-REC-2010-04-20.html</a>)</dd><dt class="label"><a name="XBRL" id="XBRL"></a>XBRL 2.1</dt><dd>XBRL International Inc.. "Extensible Business Reporting Language (XBRL) 2.1 Includes Corrected Errata Up To 2008-07-02"<br>Phillip Engel, Walter Hamscher, Geoff Shuetrim, David vun Kannon, and Hugh Wallis.<br>(See <a href="http://www.xbrl.org/Specification/XBRL-RECOMMENDATION-2003-12-31+Corrected-Errata-2008-07-02.htm">http://www.xbrl.org/Specification/XBRL-RECOMMENDATION-2003-12-31+Corrected-Errata-2008-07-02.htm</a>)</dd><dt class="label"><a name="XML" id="XML"></a>XML</dt><dd>W3C (World Wide Web Consortium). "Extensible Markup Language (XML) 1.0 (Fifth Edition)"<br>Tim Bray, Jean Paoli, C. M. Sperberg-McQueen, Eve Maler, and François Yergeau.<br>(See <a href="http://www.w3.org/TR/REC-xml/">http://www.w3.org/TR/REC-xml/</a>)</dd><dt class="label"><a name="XMLSCHEMA-DATATYPES" id="XMLSCHEMA-DATATYPES"></a>XML Schema Datatypes</dt><dd>W3C (World Wide Web Consortium). "XML Schema Part 2: Datatypes Second Edition"<br>Paul V. Biron, and Ashok Malhotra.<br>(See <a href="http://www.w3.org/TR/xmlschema-2/">http://www.w3.org/TR/xmlschema-2/</a>)</dd></dl>
+      </div>
+      <div class="div1"><a name="sec-ip-status" id="sec-ip-status"></a>
+         <h1>Appendix B Intellectual property status (non-normative)</h1>
+  
+         <p>
+    This document and translations of it may be copied and
+    furnished to others, and derivative works that comment on or
+    otherwise explain it or assist in its implementation may be
+    prepared, copied, published and distributed, in whole or in
+    part, without restriction of any kind, provided that the above
+    copyright notice and this paragraph are included on all such
+    copies and derivative works. However, this document itself may
+    not be modified in any way, such as by removing the copyright
+    notice or references to XBRL International or XBRL
+    organizations, except as required to translate it into
+    languages other than English. Members of XBRL International
+    agree to grant certain licenses under the XBRL International
+    Intellectual Property Policy 
+    (<a href="http://www.xbrl.org/legal">www.xbrl.org/legal</a>).
+  </p>
+
+
+         <p>
+    This document and the information contained herein is provided
+    on an "AS IS" basis and XBRL INTERNATIONAL DISCLAIMS ALL
+    WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+    ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT
+    INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF
+    MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+  </p>
+
+         <p>
+    The attention of users of this document is directed to the
+    possibility that compliance with or adoption of XBRL
+    International specifications may require use of an invention
+    covered by patent rights. XBRL International shall not be
+    responsible for identifying patents for which a license may be
+    required by any XBRL International specification, or for
+    conducting legal inquiries into the legal validity or scope of
+    those patents that are brought to its attention. XBRL
+    International specifications are prospective and advisory
+    only. Prospective users are responsible for protecting
+    themselves against liability for infringement of patents. XBRL
+    International takes no position regarding the validity or
+    scope of any intellectual property or other rights that might
+    be claimed to pertain to the implementation or use of the
+    technology described in this document or the extent to which
+    any license under such rights might or might not be available;
+    neither does it represent that it has made any effort to
+    identify any such rights. Members of XBRL International agree
+    to grant certain licenses under the XBRL International
+    Intellectual Property Policy 
+    (<a href="http://www.xbrl.org/legal">www.xbrl.org/legal</a>).
+  </p>
+      </div>
+      <div class="div1"><a name="sec-acknowledgements" id="sec-acknowledgements"></a>
+         <h1>Appendix C Acknowledgements (non-normative)</h1>
+         <p>
+    This document could not have been written without the
+    contributions of many people including the participants in the
+    Rendering Working Group.
+  </p>
+
+      </div>
+      <div class="div1"><a name="sec-history" id="sec-history"></a>
+         <h1>Appendix D Document history (non-normative)</h1>
+         <table class="revisions"><tr><th>Date</th><th>Author</th><th>Details</th></tr>
+            <tr><td>22 January 2010</td><td>Philip Allen</td><td>
+               <p class="revision">Full draft of new document.</p>
+               <p class="revision">Changed date to 2010-01-22 and status to DPR in expectation of publication as PREC.</p>
+            </td></tr>
+            <tr><td>27 January 2010</td><td></td><td>
+               <p class="revision">Editorial to reflect publication as PR</p>
+            </td></tr>
+            <tr><td>01 February 2010</td><td>Philip Allen</td><td>
+               <p class="revision">Reworded part of treatment of hidden data.</p>
+            </td></tr>
+            <tr><td>08 February 2010</td><td>Philip Allen</td><td>
+               <p class="revision">Added discussion on the use of target attributes.</p>
+            </td></tr>
+            <tr><td>21 March 2010</td><td>Philip Allen</td><td>
+               <p class="revision">Added explanation of relationship between REC, errata, namespace and processor support.</p>
+            </td></tr>
+            <tr><td>20 April 2010</td><td>Philip Allen</td><td>
+               <p class="revision">Expanded note on assignment of namespace for Inline XBRL.</p>
+               <p class="revision">Added section on registries.</p>
+            </td></tr>
+            <tr><td>20 April 2010</td><td></td><td>
+               <p class="revision">Editorial for publication of RECOMMENDATION</p>
+            </td></tr>
+         </table>
+      </div>
+  </div>
+</body></html>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:ct-DR="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-DR/2010-06-15"
+  xmlns:ct-CG="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-CG/2010-06-15"
+  xmlns:ct-CT="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-CT/2010-06-15"
+  xmlns:ct-CaseI="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-CaseI/2010-06-15"
+  xmlns:ct-Tax="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-Tax/2010-06-15"
+  xmlns:gtctcomp="http://govtalk.gov.uk/CT/Comp">
+  <link:schemaRef xlink:type="simple" xlink:href="http://www.hmrc.gov.uk/schemas/ct/comp/taxonomies/2010-06-15/ct-2010-06-15.xsd"/>
+  <context id="c0">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <instant>2008-03-31</instant>
+    </period>
+  </context>
+  <context id="c1">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <startDate>2007-04-01</startDate>
+      <endDate>2008-03-31</endDate>
+    </period>
+  </context>
+  <context id="c2">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <instant>2007-03-31</instant>
+    </period>
+  </context>
+  <context id="c3">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+      <segment>
+        <gtctcomp:connectedParty>Mr Shareholder</gtctcomp:connectedParty>
+      </segment>
+    </entity>
+    <period>
+      <startDate>2007-04-01</startDate>
+      <endDate>2008-03-31</endDate>
+    </period>
+  </context>
+  <context id="c4">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+      <segment>
+        <gtctcomp:connectedParty>Mr Shareholder</gtctcomp:connectedParty>
+      </segment>
+    </entity>
+    <period>
+      <instant>2008-03-31</instant>
+    </period>
+  </context>
+  <unit id="u0">
+    <measure>iso4217:GBP</measure>
+  </unit>
+<ct-CT:DescriptorCompanyName contextRef="c0">Testco (Capital Gains) Ltd</ct-CT:DescriptorCompanyName>
+<ct-CT:DescriptorTaxReference contextRef="c0">1111111111</ct-CT:DescriptorTaxReference>
+<ct-CT:DescriptorStartOfPeriodForWhichReturnRequired contextRef="c2">2007-04-01</ct-CT:DescriptorStartOfPeriodForWhichReturnRequired>
+<ct-CT:DescriptorEndOfPeriodForWhichReturnRequired contextRef="c0">2008-03-31</ct-CT:DescriptorEndOfPeriodForWhichReturnRequired>
+<ct-CG:CGSummaryGrossChargeableGains contextRef="c1" unitRef="u0" precision="INF">55000</ct-CG:CGSummaryGrossChargeableGains>
+<ct-CG:CGSummaryAllowableLossesDeducted contextRef="c1" unitRef="u0" precision="INF">50000</ct-CG:CGSummaryAllowableLossesDeducted>
+<ct-CG:CGSummaryNetChargeableGains contextRef="c1" unitRef="u0" precision="INF">5000</ct-CG:CGSummaryNetChargeableGains>
+<ct-DR:ManagementExpensesRelief contextRef="c1" unitRef="u0" precision="INF">5000</ct-DR:ManagementExpensesRelief>
+<ct-Tax:CalculationOfCTLiabilityProfits contextRef="c1" unitRef="u0" precision="INF">0</ct-Tax:CalculationOfCTLiabilityProfits>
+<ct-DR:ManagementExpensesBF contextRef="c2" unitRef="u0" precision="INF">12000</ct-DR:ManagementExpensesBF>
+<ct-DR:ManagementExpensesCF contextRef="c0" unitRef="u0" precision="INF">7000</ct-DR:ManagementExpensesCF>
+<ct-CG:CGComputationOfGainsAndLossesTotalGains contextRef="c3" unitRef="u0" precision="INF">50000</ct-CG:CGComputationOfGainsAndLossesTotalGains>
+<ct-CG:CGComputationOfGainsAndLossesTotalGains contextRef="c1" unitRef="u0" precision="INF">5000</ct-CG:CGComputationOfGainsAndLossesTotalGains>
+<ct-CG:CGComputationOfGainsAndLossesIndividualComputations>
+<ct-CG:CGComputationOfGainsAndLossesIndividualComputationsDescriptionOfAsset contextRef="c1">1 Church Road</ct-CG:CGComputationOfGainsAndLossesIndividualComputationsDescriptionOfAsset>
+<ct-CG:CGComputationOfGainsAndLossesIndividualComputationsDateOfDisposal contextRef="c0">2008-01-31</ct-CG:CGComputationOfGainsAndLossesIndividualComputationsDateOfDisposal>
+<ct-CG:CGComputationOfGainsAndLossesIndividualComputationsProceeds contextRef="c0" unitRef="u0" precision="INF">3000000</ct-CG:CGComputationOfGainsAndLossesIndividualComputationsProceeds>
+<ct-CG:CGComputationOfGainsAndLossesIndividualComputationsIncidentalCostsOfDisposal contextRef="c1" unitRef="u0" precision="INF">3000</ct-CG:CGComputationOfGainsAndLossesIndividualComputationsIncidentalCostsOfDisposal>
+<ct-CG:CGComputationOfGainsAndLossesIndividualComputationsCostBasisCosts contextRef="c1" unitRef="u0" precision="INF">1686111</ct-CG:CGComputationOfGainsAndLossesIndividualComputationsCostBasisCosts>
+<ct-CG:CGComputationOfGainsAndLossesIndividualComputationsCostBasisIndexationAllowance contextRef="c1" unitRef="u0" precision="INF">1305889</ct-CG:CGComputationOfGainsAndLossesIndividualComputationsCostBasisIndexationAllowance>
+<ct-CG:CGComputationOfGainsAndLossesIndividualComputationsCostBasisIndexedGainOrLoss contextRef="c1" unitRef="u0" precision="INF">5000</ct-CG:CGComputationOfGainsAndLossesIndividualComputationsCostBasisIndexedGainOrLoss>
+</ct-CG:CGComputationOfGainsAndLossesIndividualComputations>
+<ct-CG:CGComputationOfGainsAndLossesIndividualComputations>
+<ct-CG:CGComputationOfGainsAndLossesIndividualComputationsDescriptionOfAsset contextRef="c3">2 Church Road</ct-CG:CGComputationOfGainsAndLossesIndividualComputationsDescriptionOfAsset>
+<ct-CG:CGComputationOfGainsAndLossesIndividualComputationsDateOfDisposal contextRef="c4">2008-01-31</ct-CG:CGComputationOfGainsAndLossesIndividualComputationsDateOfDisposal>
+<ct-CG:CGComputationOfGainsAndLossesIndividualComputationsProceeds contextRef="c4" unitRef="u0" precision="INF">2999999</ct-CG:CGComputationOfGainsAndLossesIndividualComputationsProceeds>
+<ct-CG:CGComputationOfGainsAndLossesIndividualComputationsCostBasisCosts contextRef="c3" unitRef="u0" precision="INF">1560846</ct-CG:CGComputationOfGainsAndLossesIndividualComputationsCostBasisCosts>
+<ct-CG:CGComputationOfGainsAndLossesIndividualComputationsCostBasisIndexationAllowance contextRef="c3" unitRef="u0" precision="INF">1389153</ct-CG:CGComputationOfGainsAndLossesIndividualComputationsCostBasisIndexationAllowance>
+<ct-CG:CGComputationOfGainsAndLossesIndividualComputationsCostBasisIndexedGainOrLoss contextRef="c3" unitRef="u0" precision="INF">50000</ct-CG:CGComputationOfGainsAndLossesIndividualComputationsCostBasisIndexedGainOrLoss>
+</ct-CG:CGComputationOfGainsAndLossesIndividualComputations>
+</xbrl>

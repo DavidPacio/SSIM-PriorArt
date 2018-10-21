@@ -1,0 +1,258 @@
+DigitalFinancialReporting-2012-09-30.txt started 15.07.13 djh
+----------------------------------------
+
+DIGITAL FINANCIAL REPORTING (DRAFT VERSION .8)
+Digital Financial Reporting Using an XBRL-based Model
+
+The doc is available via two urls but pdf's are the same size so presumably identical:
+http://www.xbrlsite.com/DigitalFinancialReporting/Book/DigitalFinancialReporting-2012-09-30.pdf
+http://www.xbrl.org/sites/xbrl.org/files/resources/digital_financial_reporting-using_an_xbrl_model.pdf
+
+Resources
+=========
+And ref to the pdf (first one above) plus doc by chapters: http://xbrl.squarespace.com/digital-financial-reporting/
+
+From 4.2. Unstructured versus structured information p45: Some people believe that there is another category “semi-structured” information. For more information this white paper is helpful:
+Combining Unstructured, Fully Structured and Semi-Structured Information in Semantic Wikis
+http://stexx.files.wordpress.com/2010/07/combining_unstructured_semistructured_fullystructured_data.pdf
+
+Points and Extracts
+===================
+
+Strange that this has stayed at Draft version .8 for so long.
+
+From 1.1 p18
+While this resource uses XBRL to explain digital financial reporting, XBRL is really only one of many technical tools which will be employed for digital financial reporting. While XBRL is a widely technical tool, it is not the only tool and there is more to digital financial reporting than the XBRL technical tools. XBRL is simply one of many enabling technologies.
+
+1.2 bp 1
+We assume that you are not the average user but rather somewhat of an early adopter or someone who will be helping the average business user understand digital financial reports. As software improves, the complexity of digital financial reports will be absorbed by software. However, at this stage of the evolution of digital financial reports we have not reached the ease of use required for the average accountant to make use of digital financial reports.
+
+1.4. Additional resources p 20
+Arelle is a project to provide the XBRL community with an easy to use open source platform for XBRL.
+http://arelle.org/
+
+2.5.2. Filling in a box p31
+->
+So, it seems that the spectrum of options is as such:
+ Provide lots and lots of permutations and combinations, and still allow a filer to create more permutations and combinations
+ Provide lots and lots of permutations and combinations, but DON'T allow the filer to create other possible permutations/combinations
+ Require SEC filers to unbundled their disclosures, and also their financial statement line items, into discrete disclosures/line items (i.e. get rid of the bundles)
+
+djh: SIM takes the third approach.
+
+2.5.3. Dance between implicit and explicit p33
+Paper is a medium. XBRL is a medium. Each medium has different properties and features.
+
+When you create an XBRL-based financial report you basically take all the information you want to report and you put it in what amounts to little boxes or structures. Many people erroneously refer to this process as “tagging” because software makes it seem like you are putting tags on information which exists within some document. But what you are actually doing is constructing a model.
+
+djh: Wrong: No computer will ever be able to imply what humans can imply.
+
+The optimal equilibrium in the implicit/explicit trade-off needs to be fleshed out by the accounting profession.
+
+2.8. Road work ahead: last mile of finance p34
+
+Disclosure Management and Collaborative Disclosure Management (CDM). This seems to be a new class of software.
+While business intelligence (BI) software was generally used for consuming information, this new class of software is for creating information. Enterprise Performance Management (EPM) seems to be the buzz word for consuming financial information.
+
+XBRL is only part of the change or maybe even call it a trend. We are hearing the term "model based reporting" come up.
+
+3.5. Quantitative and qualitative; objective and subjective p40
+To be useful, the information possesses the following characteristics: relevance, reliability, comparability, and consistency.
+
+3.6. Identifiable, definitive, discrete set of pieces p41
+
+Table summary of the risks which could lead to a financial report being invalid and the risk mitigation assertion or verification task which would assure that the risk goes unrealized.
+
+4.6. Metadata p46
+Data about data.
+
+Third order removes the limitations which people seem to assume exist when it comes to organizing information. Weinberger (the author of Everything is Miscellaneous) says this about the third order of order:
+“In fact, the third-order practices that make a company's existing assets more profitable, increase customer loyalty, and seriously reduce costs are the Trojan horse of the information age. As we all get used to them, third-order practices undermine some of our most deeply ingrained ways of thinking about the world and our knowledge of it.”
+
+Metadata has strategic implications.
+
+Financial reporting has boatloads and boatloads of metadata, far more metadata than is included in the US GAAP Taxonomy.
+
+The only thing better than metadata is more metadata.
+
+4.8. Notion of semantic model p48
+
+HINT: Take a look at the video on this web page titled “The Basics of Quantrix Modeler”: http://goo.gl/qQ4Hx [http://www.quantrix.com/Quantrix_Video_Demos.htm] This video will help you understand the difference between logical models and semantic models.
+
+4.10. Role of software p49
+Complexity can never be removed from a process but it can be moved. Software can assume the complexity of things like the XBRL technical syntax by leveraging things like a logical model or a semantic model. Software can leverage ideas such as the multidimensional model in pursuit of that task.
+
+Software can turn the complex physical implementation of technology into a significantly easier to use logical model and/or semantic model; hiding and taking care of the complexity of the technology for the user in the background. Most software today which tries to help business users make us of XBRL is still maturing and does not leverage a logical model or semantic model; therefore they have to work at the level of the XBRL technical syntax. Software will mature and move to a more semantic approach, hiding the technical syntax from business users.
+
+4.11. Semantic, structured authoring p 49-50
+Semantic, structured authoring is defined:
+"to compose information content semantically structured according to some ontology"
+
+4.12.5. Reconciling multidimensional terminology p53
+Useful table of terms
+
+Common BI or Multidimensional Model Term | XBRL Dimensions Term | US GAAP Term | Description
+
+4.13. XBRL is only one of many digital financial report technical syntaxes p 54
+
+The bottom line is that digital financial reports need to be better, faster, and cheaper than existing approaches or business users will never use them.
+
+As software improves more and more information in this document will become obsolete, complexity being absorbed by software applications.
+
+6.2. Pieces of a financial report p 59-60
+ Component:
+ Fact:
+ Characteristic:
+ Parenthetical explanation:
+ Relation:
+ Property:
+
+Uses Property!
+
+6.3. Relations between numeric facts
+ Roll up: Fact A + Fact B + Fact C = Fact D (a total)
+ Roll forward: Beginning balance + changes = Ending balance
+ Adjustment: Originally stated balance + adjustments = restated balance
+ Variance: Actual amount – Budgeted amount = variance
+ Complex computation: Net income / Weighted average shares = earnings per share
+ Hierarchy: Facts are related in some way, but not numerically.
+
+6.4. Relations between characteristics
+ Partial set:
+ Complete flat set:
+ Complete hierarchical set:
+ Complete complex set:
+NOTE: Note that sets which are complete can be aggregated. A member aggregation is similar to a roll up in that it is an aggregation; however the aggregation is not across a set of [Line Items], rather there is only one [Line Items] concept which is used by multiple facts, the aggregation is of the [Member]s which differentiate that single concept. The formula for a member aggregation is: Concept(Member 1) + Concept(Member 2) + Concept(Member N) = Concept(Default Member). The default member is generally intersected with some other financial report component. (Note that semantically, a member aggregation and a roll forward are identical. Syntactically, a roll up is expressed using XBRL calculations and a member aggregation must be expressed using XBRL Formula.)
+
+7.1. Difference between report level model semantics and financial reporting domain level semantics p 65
+
+This foundation will undoubtedly be built upon. It is with these financial reporting domain level semantics where the real value of digital financial reports becomes clear.
+
+7.2. Financial reporting conceptual framework p 66
+
+NOTE: The FASB and IASB are creating a common framework for financial reporting (see http://goo.gl/4fSqO [http://www.ifrs.org/Current-Projects/IASB-Projects/Conceptual-Framework/Pages/Conceptual-Framework.aspx]). The framework is not complete [paused as of 15.07.13], but it does offer insight into the pieces of a financial report.
+
+7.7. Financial report components may have core facts and relations common to all reporting entities p 
+On the balance sheet, assets foots
+Assume foots to mean total i.e. values summed and total output
+
+p69 not 100% of balance sheets in SEC sample balanced!
+
+7.13. Reporting entity segment definitions are inconsistent in financial reporting literature p73
+
+The segments into which a reporting entity can be broken down are defined inconsistently in the financial reporting literature. From FASB Accounting Standards Codifications, ASC 280 relates to the classification of assets and sometimes liabilities uses the terms operating segments and reportable segments of the business. ASC 350 which relates to impairment uses the term reporting unit. ASC 860 which relates to special-purpose entities and the master glossary uses the term business. ASC 360 which relates to long-lived assets uses the term asset groups and disposal groups.
+As such, the following terminology is proposed:
+ Consolidated entity
+ Parent holding company
+ Operating segment (ASC 280)
+ Reportable segment (ASC 280)
+ Reporting unit (ASC 350)
+ Business (ASC 805)
+ Asset group (ASC 360)
+ Disposal group (ASC 360)
+
+
+8.3. Network
+Is a grouping rather than "network"
+
+8.9. Component
+A component is a combination of a network and a table. A component is a set of facts which go together for some specific purpose. Because a network and table have undefined semantics, likewise a component must have undefined semantics.
+
+HINT: Taxonomies such as the US GAAP Taxonomy SHOULD define specific semantics for networks and tables. If such semantics were known, then the semantics of a component would be clear. Each reporting entity can, and generally does, have their scheme or approach to how they create the many pieces which make up their financial report. That is their scheme. Each scheme could be different. There are exactly three approaches to defining components: use only networks (and make all tables the same), use only tables (and make networks meaningless) or use both networks and tables. If an approach where tables are used, each table should be unique (have a unique name). Having one table have multiple meanings (i.e. polymorphic) causes issues with using financial report information.
+
+8.16. Footnote (parenthetical explanation) p84 
+Facts may also have footnotes (parenthetical explanations, don’t confuse this with notes to the financial statements) which provide addition information about the fact.
+
+8.20. Summary visualization of report model p85
+
+You can find a complete version of this mind map of the logical model at this URL:
+http://www.xbrlsite.com/2012/Library/TheoryPlusImplementation_v3.pdf
+
+9.1. Overview or relations between report elements p92
+
+As pointed out in the previous section, digital financial reports are made up of the following report elements: networks, tables, axes, members, line items, concepts, facts.
+These report elements can be related:
+ Concept relations: relations between concepts
+ Member aggregations: relations between the members of a domain
+ Business rules: relations between facts
+ Flow or sequence: relations between financial report components
+ Integrity: relations between concepts which exist within numerous components
+ Intersections: general relation between report elements which may exist in more than one component and therefore can be leveraged for navigating between components of the digital financial report
+
+9.2. Concept relation metapatterns
+Rather obvious?
+
+9.3.3. Aggregation p99
+
+The XBRL Dimensions specification does not address dimensional aggregation.
+
+9.3.4. Domain Partition Aggregation Models p99
+There is no “standard” XBRL terminology at this time for these types of relations, all the terminology is taxonomy specific. This is because XBRL Dimensions does not address aggregation of domain members.
+
+However, although XBRL Dimensions does not define how members of a domain aggregate or if they aggregate at all, you can use XBRL Formulas to clearly define such aggregation if they exist.
+
+9.4.5. Notion of the “Implied [Table]”
+
+The “No Table [Table]”
+
+9.4.7. Which Approach is Best?
+
+ Use explicit unique [Tables].
+
+
+9.5.5.4. Related by [Axis] and [Members]
+
+PPE example. Also 17.22. Property, plant and equipment details p 332
+
+10.8. Connecting the report level model to its implementation model p124-125
+
+10.14. Unanswered verification related questions p151
+
+Sometimes accountants feel XBRL is a like a “black box”.
+
+US GAAP taxonomy is incomplete: The US GAAP taxonomy is obviously incomplete in the area of business rules and disclosure rules which exist in US GAAP. It should not be a guessing game to figure out information such as what XBRL US is publishing as their “consistency suite”. It seems that this information should exist in the taxonomy. At the other end of the spectrum; what is necessary from the FASB is more like an ontology as opposed to a taxonomy. US GAAP is a far richer than what is being articulated in the current instantiation of the US GAAP taxonomy. Exactly how far should the US GAAP taxonomy go? Should a complete computer readable disclosure checklist be provided by the SEC or FASB? Or, should the market provide this useful resource? If different vendors in the market provide different rules, how will that impact interoperability?
+
+11.5.2. Other issues p 155
+Looking at this situation from the bottom up, there are approximately 15,000 concepts within the US GAAP taxonomy, too detailed a perspective for any useful comparison at the individual concept level. There is no middle “level” between the 15,000 concepts which is too granular and too large and the [Table]s which are too few, most time not identifiable as they are implicit and have no explicit handle to grab onto.
+
+To exacerbate this situation, SEC filers can extend the US GAAP taxonomy adding additional networks, explicit [Table]s, implicit tables (i.e. everything within a network which is not within an explicit table is within an unnamed implicit table), [Axis], [Line Items] or concepts, and so forth.
+When an SEC XBRL filer expresses their information, they create new networks which are comparable to no other network, they define [Table]s which could be used to express many different sets of information, tables could be defined implicitly or explicitly, and the [Axis] on each information set have no real pattern.
+
+This problem seems unsolvable.
+
+12.2. Deciding between isomorphic and polymorphic tables p160
+!!
+
+12.6. Understanding XBRL calculation inconsistencies p 163
+Generally you do not want calculation inconsistencies (they are really called inconsistencies, not errors) in your SEC XBRL filing. Many SEC filers can avoid all calculation inconsistencies. Sometimes though you cannot. The technical reason for this is that certain facts reported with certain periods sometimes get included in calculations which they should not actually be included in. This is a known situation in XBRL and is unavoidable. This is not the same thing as calculations which should add up but don’t.
+
+...
+
+p333:
+HINT: Modelling as [Line Items] or [Member]s of an [Axis]; which to use when? If you look at the inventory components breakdown and the property, plant, and equipment breakdown; you will notice that they are modelled differently. Inventory components are modelled using multiple concepts within a set of [Line Items]. Whereas, property, plant and equipment, gross components are modelled using a single concept "Property, plant, and equipment, gross" and then distinguishing which the class of PPE using different [Member]s of the "Property, plant and equipment type [Axis]".
+
+An obvious question is why the difference and when do you use the first approach and when do you use the second? Also, because the US GAAP Taxonomy uses both approaches, does not explain or reveal any pattern as to which approach is use and in fact many times provides both approaches for the same financial report component; selecting the right option can be challenging.
+
+p 336:
+HINT: Roll ups, roll forwards, adjustments, variance are defined by which [Axis] changes.x
+
+19.2. Reconciliation of implementation model terminology to financial report semantic terminology p363
+
+The following is a reconciliation of implementation model terminology to financial report semantics terminology defined by the Financial Report Semantics and Dynamics Theory. Also provided is a column for the XBRL technical syntax of how the report element is implemented.
+
+Table:
+Implementation Model Term (US GAAP Taxonomy Architecture /SEC Model Term) | XBRL Technical Syntax Term | Financial Report Semantics and Dynamics Theory Term | Example
+
+19.3. Reconciliation of implementation model terminology to XBRL Abstract Model 2.0 terminology:
+Example | US GAAP/SEC Model Object | XBRL Abstract Model 2.0 Object
+
+
+22. APPENDIX: Benefits and Limitations of Inline XBRL p381
+Because of these advantages, there is enough of a probability that the SEC could move to Inline XBRL at some point in the future. This is worth keeping in the back of one’s mind.
+
+djh: Yes please, SEC!
+
+
+
+Set of members of a dimension. Plus from section 8.6 Member:A domain is a cohesive set of members. The set of members which comprise a domain share a certain common nature. Domains have partitions. A partition is collectively exhaustive and mutually exclusive set of members within a domain. Partitions do not overlap. Given a set X, a partition is a division of X into non-overlapping and non-empty "parts" or "blocks" or "cells" that cover all of X. More formally, these "cells" are both collectively exhaustive and mutually exclusive with respect to the set being partitioned. Domains always have at least one partition and may have many partitions.A domain could have subdomains.For example, say you have the axis “Business Segments [Axis]”. That axis might have the domain “Business Segments, All [Member]” which represents the total of all business segments, the sum of all the members. That is a usable domain. Whereas, suppose you had the axis “Subsequent Event Types [Axis]”. Subsequent events are never aggregated, so you would never use that domain. But you would still need to provide a domain such as “Subsequent Event Types, all types [Member]”, even though that domain would never actually be used within a report.
+

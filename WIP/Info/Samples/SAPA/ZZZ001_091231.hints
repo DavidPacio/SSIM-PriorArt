@@ -1,0 +1,2124 @@
+<?xml version="1.0"?>
+<hints>
+	<hint col="5" value="uk small limited company example client company accounts" id="el0.0.0" label=""/>
+	<hint col="5" value="" id="el9" label=""/>
+	<hint col="5" value="xbrli:pure" id="el0.0.5" label=""/>
+	<hint col="5" value="xbrli:shares" id="el0.0.6" label=""/>
+	<hint col="5" value="iso4217:gbp" id="el0.0.7" label=""/>
+	<hint col="5" value="19283747" id="el0.0.8" label=""/>
+	<hint col="5" value="2009-01-01" id="el0.0.9" label=""/>
+	<hint col="5" value="2009-12-31" id="el0.0.10" label=""/>
+	<hint col="5" value="19283747" id="el0.0.11" label=""/>
+	<hint col="5" value="2009-12-31" id="el0.0.12" label=""/>
+	<hint col="5" value="19283747" id="el0.0.13" label=""/>
+	<hint col="5" value="2008-01-01" id="el0.0.14" label=""/>
+	<hint col="5" value="2008-12-31" id="el0.0.15" label=""/>
+	<hint col="5" value="19283747" id="el0.0.16" label=""/>
+	<hint col="5" value="2008-12-31" id="el0.0.17" label=""/>
+	<hint col="5" value="19283747" id="el0.0.18" label=""/>
+	<hint col="5" value="uk-bus:companysecretary" id="el0.0.19" label=""/>
+	<hint col="5" value="2009-01-01" id="el0.0.20" label=""/>
+	<hint col="5" value="2009-12-31" id="el0.0.21" label=""/>
+	<hint col="5" value="19283747" id="el0.0.22" label=""/>
+	<hint col="5" value="uk-bus:director1" id="el0.0.23" label=""/>
+	<hint col="5" value="2009-01-01" id="el0.0.24" label=""/>
+	<hint col="5" value="2009-12-31" id="el0.0.25" label=""/>
+	<hint col="5" value="19283747" id="el0.0.26" label=""/>
+	<hint col="5" value="uk-bus:director2" id="el0.0.27" label=""/>
+	<hint col="5" value="2009-01-01" id="el0.0.28" label=""/>
+	<hint col="5" value="2009-12-31" id="el0.0.29" label=""/>
+	<hint col="5" value="19283747" id="el0.0.30" label=""/>
+	<hint col="5" value="uk-bus:director3" id="el0.0.31" label=""/>
+	<hint col="5" value="2009-01-01" id="el0.0.32" label=""/>
+	<hint col="5" value="2009-12-31" id="el0.0.33" label=""/>
+	<hint col="5" value="19283747" id="el0.0.34" label=""/>
+	<hint col="5" value="uk-bus:director4" id="el0.0.35" label=""/>
+	<hint col="5" value="2009-01-01" id="el0.0.36" label=""/>
+	<hint col="5" value="2009-12-31" id="el0.0.37" label=""/>
+	<hint col="5" value="19283747" id="el0.0.38" label=""/>
+	<hint col="5" value="uk-bus:registeredoffice" id="el0.0.39" label=""/>
+	<hint col="5" value="2009-01-01" id="el0.0.40" label=""/>
+	<hint col="5" value="2009-12-31" id="el0.0.41" label=""/>
+	<hint col="5" value="19283747" id="el0.0.42" label=""/>
+	<hint col="5" value="uk-bus:entityaccountantsorauditors" id="el0.0.43" label=""/>
+	<hint col="5" value="2009-01-01" id="el0.0.44" label=""/>
+	<hint col="5" value="2009-12-31" id="el0.0.45" label=""/>
+	<hint col="5" value="19283747" id="el0.0.46" label=""/>
+	<hint col="5" value="uk-bus:entitybankers" id="el0.0.47" label=""/>
+	<hint col="5" value="uk-bus:principalagent" id="el0.0.48" label="uk-bus:entitybankers"/>
+	<hint col="5" value="2009-01-01" id="el0.0.49" label=""/>
+	<hint col="5" value="2009-12-31" id="el0.0.50" label=""/>
+	<hint col="5" value="19283747" id="el0.0.51" label=""/>
+	<hint col="5" value="uk-bus:entitylawyersorlegaladvisers" id="el0.0.52" label=""/>
+	<hint col="5" value="uk-bus:principalagent" id="el0.0.53" label="uk-bus:entitylawyersorlegaladvisers"/>
+	<hint col="5" value="2009-01-01" id="el0.0.54" label=""/>
+	<hint col="5" value="2009-12-31" id="el0.0.55" label=""/>
+	<hint col="5" value="19283747" id="el0.0.56" label=""/>
+	<hint col="5" value="uk-bus:allentityofficers" id="el0.0.57" label=""/>
+	<hint col="5" value="2009-01-01" id="el0.0.58" label=""/>
+	<hint col="5" value="2009-12-31" id="el0.0.59" label=""/>
+	<hint col="5" value="19283747" id="el0.0.60" label=""/>
+	<hint col="5" value="uk-bus:allentityofficers" id="el0.0.61" label=""/>
+	<hint col="5" value="2008-01-01" id="el0.0.62" label=""/>
+	<hint col="5" value="2008-12-31" id="el0.0.63" label=""/>
+	<hint col="5" value="" id="el0.0.64" label=""/>
+	<hint col="5" value="company registration number" id="el10" label=""/>
+	<hint col="5" value="" id="el0.0.65" label="company registration number"/>
+	<hint col="5" value="" id="el0.0.66" label=""/>
+	<hint col="5" value="" id="el0.0.67" label=""/>
+	<hint col="5" value="" id="el0.0.68" label=""/>
+	<hint col="5" value="" id="el0.0.69" label=""/>
+	<hint col="5" value="" id="el0.0.70" label=""/>
+	<hint col="5" value="" id="el0.0.71" label=""/>
+	<hint col="5" value="" id="el0.0.72" label=""/>
+	<hint col="5" value="" id="el0.0.73" label=""/>
+	<hint col="5" value="" id="el0.0.74" label=""/>
+	<hint col="5" value="" id="el0.0.75" label=""/>
+	<hint col="5" value="" id="el0.0.76" label=""/>
+	<hint col="5" value="" id="el0.0.77" label=""/>
+	<hint col="5" value="" id="el0.0.78" label=""/>
+	<hint col="5" value="" id="el0.0.79" label=""/>
+	<hint col="5" value="" id="el0.0.80" label=""/>
+	<hint col="5" value="uk small limited company example client" id="el11" label=""/>
+	<hint col="5" value="" id="el0.0.81" label="uk small limited company example client"/>
+	<hint col="5" value="unaudited financial statements" id="el12" label=""/>
+	<hint col="5" value="" id="el0.0.82" label="unaudited financial statements"/>
+	<hint col="5" value="31 december 2009" id="el13" label=""/>
+	<hint col="5" value="" id="el0.0.83" label="31 december 2009"/>
+	<hint col="5" value="" id="el0.0.84" label=""/>
+	<hint col="5" value="uk small limited company example client" id="el0.0.85" label=""/>
+	<hint col="5" value="" id="el0.0.86" label="uk small limited company example client"/>
+	<hint col="5" value="officers and professional advisers" id="el0.0.87" label=""/>
+	<hint col="5" value="" id="el0.0.88" label="officers and professional advisers"/>
+	<hint col="5" value="" id="el0.0.89" label=""/>
+	<hint col="5" value="" id="el0.0.90" label=""/>
+	<hint col="5" value="" id="el0.0.91" label=""/>
+	<hint col="5" value="the board of directors" id="el0.0.92" label=""/>
+	<hint col="5" value="" id="el0.0.93" label="the board of directors"/>
+	<hint col="5" value="mr a arthur" id="el14" label=""/>
+	<hint col="5" value="" id="el0.0.94" label=""/>
+	<hint col="5" value="mr b benedict" id="el15" label=""/>
+	<hint col="5" value="" id="el0.0.95" label=""/>
+	<hint col="5" value="mrs c clement" id="el16" label=""/>
+	<hint col="5" value="" id="el0.0.96" label=""/>
+	<hint col="5" value="mr d duncan" id="el17" label=""/>
+	<hint col="5" value="" id="el0.0.97" label="mr d duncan"/>
+	<hint col="5" value="company secretary" id="el0.0.98" label=""/>
+	<hint col="5" value="" id="el0.0.99" label="company secretary"/>
+	<hint col="5" value="mrs f fine" id="el18" label=""/>
+	<hint col="5" value="" id="el0.0.100" label="mrs f fine"/>
+	<hint col="5" value="registered office" id="el0.0.101" label=""/>
+	<hint col="5" value="" id="el0.0.102" label="registered office"/>
+	<hint col="5" value="silicon tower" id="el19" label=""/>
+	<hint col="5" value="" id="el0.0.103" label=""/>
+	<hint col="5" value="london road" id="el20" label=""/>
+	<hint col="5" value="" id="el0.0.104" label=""/>
+	<hint col="5" value="camelot" id="el21" label=""/>
+	<hint col="5" value="" id="el0.0.105" label=""/>
+	<hint col="5" value="greenshire" id="el22" label=""/>
+	<hint col="5" value="" id="el0.0.106" label=""/>
+	<hint col="5" value="ab34 5fg" id="el23" label=""/>
+	<hint col="5" value="" id="el0.0.107" label="ab34 5fg"/>
+	<hint col="5" value="accountants" id="el0.0.108" label=""/>
+	<hint col="5" value="" id="el0.0.109" label="accountants"/>
+	<hint col="5" value="green &amp; co" id="el0.0.110" label=""/>
+	<hint col="5" value="" id="el0.0.111" label=""/>
+	<hint col="5" value="chartered accountants" id="el0.0.112" label=""/>
+	<hint col="5" value="" id="el0.0.113" label=""/>
+	<hint col="5" value="penney house" id="el24" label=""/>
+	<hint col="5" value="" id="el0.0.114" label=""/>
+	<hint col="5" value="high street" id="el25" label=""/>
+	<hint col="5" value="" id="el0.0.115" label=""/>
+	<hint col="5" value="oldport" id="el26" label=""/>
+	<hint col="5" value="" id="el0.0.116" label=""/>
+	<hint col="5" value="greenshire" id="el27" label=""/>
+	<hint col="5" value="" id="el0.0.117" label=""/>
+	<hint col="5" value="ab12 4rr" id="el28" label=""/>
+	<hint col="5" value="" id="el0.0.118" label="ab12 4rr"/>
+	<hint col="5" value="bankers" id="el0.0.119" label=""/>
+	<hint col="5" value="" id="el0.0.120" label="bankers"/>
+	<hint col="5" value="global banking plc" id="el29" label=""/>
+	<hint col="5" value="" id="el0.0.121" label=""/>
+	<hint col="5" value="darke towers" id="el30" label=""/>
+	<hint col="5" value="" id="el0.0.122" label=""/>
+	<hint col="5" value="highland road" id="el31" label=""/>
+	<hint col="5" value="" id="el0.0.123" label=""/>
+	<hint col="5" value="sharpley" id="el32" label=""/>
+	<hint col="5" value="" id="el0.0.124" label=""/>
+	<hint col="5" value="greenshire" id="el33" label=""/>
+	<hint col="5" value="" id="el0.0.125" label=""/>
+	<hint col="5" value="ab66 6xx" id="el34" label=""/>
+	<hint col="5" value="" id="el0.0.126" label="ab66 6xx"/>
+	<hint col="5" value="solicitors" id="el0.0.127" label=""/>
+	<hint col="5" value="" id="el0.0.128" label="solicitors"/>
+	<hint col="5" value="henry, richard &amp; co" id="el35" label=""/>
+	<hint col="5" value="" id="el0.0.129" label=""/>
+	<hint col="5" value="clements building" id="el36" label=""/>
+	<hint col="5" value="" id="el0.0.130" label=""/>
+	<hint col="5" value="lowlands road" id="el37" label=""/>
+	<hint col="5" value="" id="el0.0.131" label=""/>
+	<hint col="5" value="sharpley" id="el38" label=""/>
+	<hint col="5" value="" id="el0.0.132" label=""/>
+	<hint col="5" value="greenshire" id="el39" label=""/>
+	<hint col="5" value="" id="el0.0.133" label=""/>
+	<hint col="5" value="ab88 8qq" id="el40" label=""/>
+	<hint col="5" value="" id="el0.0.134" label="ab88 8qq"/>
+	<hint col="5" value="uk small limited company example client" id="el0.0.135" label=""/>
+	<hint col="5" value="" id="el0.0.136" label="uk small limited company example client"/>
+	<hint col="5" value="the directors&apos; report" id="el0.0.137" label=""/>
+	<hint col="5" value="" id="el0.0.138" label="the directors&apos; report"/>
+	<hint col="5" value="year ended 31 december 2009" id="el0.0.139" label=""/>
+	<hint col="5" value="" id="el0.0.140" label="year ended 31 december 2009"/>
+	<hint col="5" value="" id="el0.0.141" label=""/>
+	<hint col="5" value="the directors have pleasure in presenting their report and the unaudited financial statements of the company for the year ended 31 december 2009." id="el0.0.142" label=""/>
+	<hint col="5" value="" id="el0.0.143" label="the directors have pleasure in presenting their report and the unaudited financial statements of the company for the year ended 31 december 2009."/>
+	<hint col="5" value="principal activities and business review" id="el0.0.144" label=""/>
+	<hint col="5" value="the principal activity of the company during the year was the import, manufacture and distribution of glassware for scientific uses." id="el41" label=""/>
+	<hint col="5" value="" id="el0.0.145" label="the principal activity of the company during the year was the import, manufacture and distribution of glassware for scientific uses."/>
+	<hint col="5" value="the directors are happy with the results for the current period.  they have seen an upturn in turnover in a period when the industry sector has been struggling to grow.  the directors believe that the increase in turnover will continue into the next year and are expecting healthy profits for that year." id="el0.0.146" label=""/>
+	<hint col="5" value="" id="el0.0.147" label="the directors are happy with the results for the current period.  they have seen an upturn in turnover in a period when the industry sector has been struggling to grow.  the directors believe that the increase in turnover will continue into the next year and are expecting healthy profits for that year."/>
+	<hint col="5" value="during the year dividends on ordinary shares at 35p per share were paid (2008 - 25p) and the preference dividends of &#163;325 (2008 - &#163;300) were also paid." id="el0.0.148" label=""/>
+	<hint col="5" value="" id="el0.0.149" label="during the year dividends on ordinary shares at 35p per share were paid (2008 - 25p) and the preference dividends of &#163;325 (2008 - &#163;300) were also paid."/>
+	<hint col="5" value="the directors and their interests in the shares of the company" id="el0.0.150" label=""/>
+	<hint col="5" value="the directors who served the company during the year together with their beneficial interests in the shares of the company were as follows:" id="el0.0.151" label=""/>
+	<hint col="5" value="" id="el0.0.152" label="the directors who served the company during the year together with their beneficial interests in the shares of the company were as follows:"/>
+	<hint col="1" value="" id="el1.1.0" label=""/>
+	<hint col="2" value="class of share" id="el1.1.1" label=""/>
+	<hint col="3" value="at                                   31 december 2009" id="el1.1.2" label=""/>
+	<hint col="4" value="at                                   1 january 2009" id="el1.1.3" label=""/>
+	<hint col="4" value="" id="el1.1.4" label="at                                   1 january 2009"/>
+	<hint col="1" value="mr a arthur" id="el2.2.0" label=""/>
+	<hint col="2" value="ordinary shares" id="el2.2.1" label=""/>
+	<hint col="3" value="100" id="el2.2.2" label=""/>
+	<hint col="4" value="100" id="el2.2.3" label=""/>
+	<hint col="1" value="mr b benedict" id="el2.3.0" label=""/>
+	<hint col="2" value="ordinary shares" id="el2.3.1" label=""/>
+	<hint col="3" value="75" id="el2.3.2" label=""/>
+	<hint col="4" value="75" id="el2.3.3" label=""/>
+	<hint col="1" value="" id="el2.4.0" label=""/>
+	<hint col="2" value="redeemable preference" id="el2.4.1" label=""/>
+	<hint col="3" value="" id="el2.4.2" label=""/>
+	<hint col="4" value="" id="el2.4.3" label=""/>
+	<hint col="1" value="" id="el2.5.0" label=""/>
+	<hint col="2" value="shares" id="el2.5.1" label=""/>
+	<hint col="3" value="10" id="el2.5.2" label=""/>
+	<hint col="4" value="10" id="el2.5.3" label=""/>
+	<hint col="1" value="mr d duncan" id="el2.6.0" label=""/>
+	<hint col="2" value="ordinary shares" id="el2.6.1" label=""/>
+	<hint col="3" value="10" id="el2.6.2" label=""/>
+	<hint col="4" value="-" id="el2.6.3" label=""/>
+	<hint col="1" value="" id="el2.7.0" label=""/>
+	<hint col="2" value="" id="el2.7.1" label=""/>
+	<hint col="3" value="" id="el2.7.2" label=""/>
+	<hint col="4" value="" id="el2.7.3" label=""/>
+	<hint col="4" value="" id="el2.7.4" label=""/>
+	<hint col="4" value="donations" id="el2.7.5" label=""/>
+	<hint col="4" value="during the year the company made the following contributions:" id="el2.7.6" label=""/>
+	<hint col="4" value="" id="el2.7.7" label="during the year the company made the following contributions:"/>
+	<hint col="1" value="" id="el3.8.0" label=""/>
+	<hint col="2" value="" id="el3.8.1" label=""/>
+	<hint col="3" value="2009" id="el3.8.2" label=""/>
+	<hint col="4" value="2008" id="el3.8.3" label=""/>
+	<hint col="1" value="" id="el3.9.0" label=""/>
+	<hint col="2" value="" id="el3.9.1" label=""/>
+	<hint col="3" value="&#163;" id="el3.9.2" label=""/>
+	<hint col="4" value="&#163;" id="el3.9.3" label=""/>
+	<hint col="1" value="charitable donations" id="el3.10.0" label=""/>
+	<hint col="2" value="" id="el3.10.1" label=""/>
+	<hint col="3" value="495" id="el42" label=""/>
+	<hint col="4" value="495" id="el43" label=""/>
+	<hint col="1" value="" id="el3.11.0" label=""/>
+	<hint col="2" value="" id="el3.11.1" label=""/>
+	<hint col="3" value="" id="el3.11.2" label=""/>
+	<hint col="4" value="" id="el3.11.3" label=""/>
+	<hint col="4" value="" id="el3.11.4" label=""/>
+	<hint col="4" value="purchase of own shares" id="el3.11.5" label=""/>
+	<hint col="4" value="the company did not acquire any of its own shares in the period." id="el3.11.6" label=""/>
+	<hint col="4" value="" id="el3.11.7" label="the company did not acquire any of its own shares in the period."/>
+	<hint col="4" value="uk small limited company example client" id="el3.11.8" label=""/>
+	<hint col="4" value="" id="el3.11.9" label="uk small limited company example client"/>
+	<hint col="4" value="the directors&apos; report" id="el3.11.10" label=""/>
+	<hint col="4" value="(continued)" id="el3.11.11" label="the directors&apos; report"/>
+	<hint col="4" value="" id="el3.11.12" label="(continued)"/>
+	<hint col="4" value="year ended 31 december 2009" id="el3.11.13" label=""/>
+	<hint col="4" value="" id="el3.11.14" label="year ended 31 december 2009"/>
+	<hint col="4" value="" id="el3.11.15" label=""/>
+	<hint col="4" value="small company provisions" id="el3.11.16" label=""/>
+	<hint col="4" value="this report has been prepared in accordance with the special provisions for small companies under part 15 of the companies act 2006." id="el44" label=""/>
+	<hint col="4" value="" id="el3.11.17" label="this report has been prepared in accordance with the special provisions for small companies under part 15 of the companies act 2006."/>
+	<hint col="4" value="" id="el3.11.18" label=""/>
+	<hint col="4" value="registered office:      signed by order of the directors" id="el3.11.19" label=""/>
+	<hint col="4" value="silicon tower" id="el3.11.20" label=""/>
+	<hint col="4" value="london road" id="el3.11.21" label=""/>
+	<hint col="4" value="camelot" id="el3.11.22" label=""/>
+	<hint col="4" value="greenshire" id="el3.11.23" label=""/>
+	<hint col="4" value="ab34 5fg" id="el3.11.24" label=""/>
+	<hint col="4" value="" id="el3.11.25" label="ab34 5fg"/>
+	<hint col="4" value="" id="el3.11.26" label=""/>
+	<hint col="4" value="" id="el3.11.27" label=""/>
+	<hint col="4" value="" id="el3.11.28" label=""/>
+	<hint col="4" value="mrs f fine" id="el3.11.29" label=""/>
+	<hint col="4" value="company secretary" id="el3.11.30" label=""/>
+	<hint col="4" value="" id="el3.11.31" label="company secretary"/>
+	<hint col="4" value="approved by the directors on" id="el45" label=""/>
+	<hint col="4" value="" id="el3.11.32" label="approved by the directors on"/>
+	<hint col="4" value="uk small limited company example client" id="el3.11.33" label=""/>
+	<hint col="4" value="" id="el3.11.34" label="uk small limited company example client"/>
+	<hint col="4" value="profit and loss account" id="el3.11.35" label=""/>
+	<hint col="4" value="" id="el3.11.36" label="profit and loss account"/>
+	<hint col="4" value="year ended 31 december 2009" id="el3.11.37" label=""/>
+	<hint col="4" value="" id="el3.11.38" label="year ended 31 december 2009"/>
+	<hint col="4" value="" id="el3.11.39" label=""/>
+	<hint col="1" value="" id="el4.12.0" label=""/>
+	<hint col="2" value="2009" id="el4.12.1" label=""/>
+	<hint col="3" value="2008" id="el4.12.2" label=""/>
+	<hint col="1" value="note" id="el4.13.0" label=""/>
+	<hint col="2" value="&#163;" id="el4.13.1" label=""/>
+	<hint col="3" value="&#163;" id="el4.13.2" label=""/>
+	<hint col="1" value="turnover" id="el4.14.0" label=""/>
+	<hint col="2" value="2" id="el4.14.1" label=""/>
+	<hint col="3" value="213,482" id="el46" label=""/>
+	<hint col="4" value="210,346" id="el47" label=""/>
+	<hint col="4" value="" id="el4.15.0" label=""/>
+	<hint col="1" value="cost of sales" id="el5.16.0" label=""/>
+	<hint col="2" value="()" id="el48" label=""/>
+	<hint col="3" value="()" id="el49" label=""/>
+	<hint col="1" value="" id="el5.17.0" label=""/>
+	<hint col="2" value="„„„„„„„„„„" id="el5.17.1" label=""/>
+	<hint col="3" value="„„„„„„„„„„" id="el5.17.2" label=""/>
+	<hint col="1" value="gross profit" id="el5.18.0" label=""/>
+	<hint col="1" value="" id="el5.18.1" label="gross profit"/>
+	<hint col="2" value="127,434" id="el50" label=""/>
+	<hint col="3" value="125,868" id="el51" label=""/>
+	<hint col="3" value="" id="el5.18.2" label=""/>
+	<hint col="1" value="distribution costs" id="el6.19.0" label=""/>
+	<hint col="2" value="()" id="el52" label=""/>
+	<hint col="3" value="()" id="el53" label=""/>
+	<hint col="1" value="administrative expenses" id="el6.20.0" label=""/>
+	<hint col="2" value="()" id="el54" label=""/>
+	<hint col="3" value="()" id="el55" label=""/>
+	<hint col="1" value="other operating income" id="el6.21.0" label=""/>
+	<hint col="2" value="3" id="el6.21.1" label=""/>
+	<hint col="3" value="1,986" id="el56" label=""/>
+	<hint col="4" value="1,765" id="el57" label=""/>
+	<hint col="1" value="" id="el6.22.0" label=""/>
+	<hint col="2" value="" id="el6.22.1" label=""/>
+	<hint col="3" value="„„„„„„„„„„" id="el6.22.2" label=""/>
+	<hint col="4" value="„„„„„„„„„„" id="el6.22.3" label=""/>
+	<hint col="1" value="operating profit" id="el6.23.0" label=""/>
+	<hint col="2" value="4/5" id="el6.23.1" label=""/>
+	<hint col="3" value="4,954" id="el58" label=""/>
+	<hint col="4" value="14,047" id="el59" label=""/>
+	<hint col="4" value="" id="el6.24.0" label=""/>
+	<hint col="4" value="attributable to:" id="el6.24.1" label=""/>
+	<hint col="1" value="operating profit before exceptional items" id="el7.25.0" label=""/>
+	<hint col="2" value="6,079" id="el7.25.1" label=""/>
+	<hint col="3" value="15,172" id="el7.25.2" label=""/>
+	<hint col="1" value="exceptional items" id="el7.26.0" label=""/>
+	<hint col="2" value="5" id="el7.26.1" label=""/>
+	<hint col="3" value="(1,125)" id="el7.26.2" label=""/>
+	<hint col="4" value="(1,125)" id="el7.26.3" label=""/>
+	<hint col="1" value="" id="el7.27.0" label=""/>
+	<hint col="2" value="„„„„„„„" id="el7.27.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el7.27.2" label=""/>
+	<hint col="1" value="" id="el7.28.0" label=""/>
+	<hint col="2" value="4,954" id="el7.28.1" label=""/>
+	<hint col="3" value="14,047" id="el7.28.2" label=""/>
+	<hint col="1" value="" id="el7.29.0" label=""/>
+	<hint col="2" value="" id="el7.29.1" label=""/>
+	<hint col="3" value="" id="el7.29.2" label=""/>
+	<hint col="1" value="income from fixed asset investments" id="el7.30.0" label=""/>
+	<hint col="2" value="6" id="el7.30.1" label=""/>
+	<hint col="3" value="5,252" id="el60" label=""/>
+	<hint col="4" value="5,252" id="el61" label=""/>
+	<hint col="1" value="interest receivable" id="el7.31.0" label=""/>
+	<hint col="2" value="175" id="el62" label=""/>
+	<hint col="3" value="160" id="el63" label=""/>
+	<hint col="1" value="interest payable and similar charges" id="el7.32.0" label=""/>
+	<hint col="2" value="7" id="el7.32.1" label=""/>
+	<hint col="3" value="()" id="el64" label=""/>
+	<hint col="4" value="()" id="el65" label=""/>
+	<hint col="1" value="" id="el7.33.0" label=""/>
+	<hint col="2" value="" id="el7.33.1" label=""/>
+	<hint col="3" value="" id="el7.33.2" label=""/>
+	<hint col="1" value="" id="el7.34.0" label=""/>
+	<hint col="2" value="„„„„„„„" id="el7.34.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el7.34.2" label=""/>
+	<hint col="1" value="profit on ordinary activities before taxation" id="el7.35.0" label=""/>
+	<hint col="2" value="9,578" id="el66" label=""/>
+	<hint col="3" value="18,794" id="el67" label=""/>
+	<hint col="4" value="" id="el7.36.0" label=""/>
+	<hint col="1" value="tax on profit on ordinary activities" id="el8.37.0" label=""/>
+	<hint col="2" value="8" id="el8.37.1" label=""/>
+	<hint col="3" value="()" id="el68" label=""/>
+	<hint col="4" value="()" id="el69" label=""/>
+	<hint col="1" value="" id="el8.38.0" label=""/>
+	<hint col="2" value="" id="el8.38.1" label=""/>
+	<hint col="3" value="" id="el8.38.2" label=""/>
+	<hint col="1" value="" id="el8.39.0" label=""/>
+	<hint col="2" value="„„„„„„„" id="el8.39.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el8.39.2" label=""/>
+	<hint col="1" value="profit for the financial year" id="el8.40.0" label=""/>
+	<hint col="2" value="7,117" id="el70" label=""/>
+	<hint col="3" value="14,619" id="el71" label=""/>
+	<hint col="1" value="" id="el8.41.0" label=""/>
+	<hint col="2" value="" id="el8.41.1" label=""/>
+	<hint col="3" value="" id="el8.41.2" label=""/>
+	<hint col="3" value="" id="el8.41.3" label=""/>
+	<hint col="3" value="uk small limited company example client" id="el8.41.4" label=""/>
+	<hint col="3" value="" id="el8.41.5" label="uk small limited company example client"/>
+	<hint col="3" value="statement of total recognised gains and losses" id="el8.41.6" label=""/>
+	<hint col="3" value="" id="el8.41.7" label="statement of total recognised gains and losses"/>
+	<hint col="3" value="year ended 31 december 2009" id="el8.41.8" label=""/>
+	<hint col="3" value="" id="el8.41.9" label="year ended 31 december 2009"/>
+	<hint col="3" value="" id="el8.41.10" label=""/>
+	<hint col="3" value="" id="el8.41.11" label=""/>
+	<hint col="1" value="" id="el9.42.0" label=""/>
+	<hint col="2" value="2009" id="el9.42.1" label=""/>
+	<hint col="3" value="2008" id="el9.42.2" label=""/>
+	<hint col="1" value="" id="el9.43.0" label=""/>
+	<hint col="2" value="&#163;" id="el9.43.1" label=""/>
+	<hint col="3" value="&#163;" id="el9.43.2" label=""/>
+	<hint col="3" value="profit for the financial year" id="el9.43.3" label=""/>
+	<hint col="1" value="attributable to the shareholders" id="el10.44.0" label=""/>
+	<hint col="2" value="7,117" id="el10.44.1" label=""/>
+	<hint col="3" value="14,619" id="el10.44.2" label=""/>
+	<hint col="3" value="" id="el10.44.3" label=""/>
+	<hint col="1" value="unrealised profit on revaluation of certain fixed assets" id="el11.45.0" label=""/>
+	<hint col="2" value="30,000" id="el72" label=""/>
+	<hint col="3" value="-" id="el11.45.1" label=""/>
+	<hint col="1" value="" id="el11.46.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el11.46.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el11.46.2" label=""/>
+	<hint col="1" value="total gains and losses recognised since the last annual report" id="el11.47.0" label=""/>
+	<hint col="2" value="37,117" id="el73" label=""/>
+	<hint col="3" value="14,619" id="el74" label=""/>
+	<hint col="1" value="" id="el11.48.0" label=""/>
+	<hint col="2" value="" id="el11.48.1" label=""/>
+	<hint col="3" value="" id="el11.48.2" label=""/>
+	<hint col="3" value="" id="el11.48.3" label=""/>
+	<hint col="3" value="uk small limited company example client" id="el11.48.4" label=""/>
+	<hint col="3" value="" id="el11.48.5" label="uk small limited company example client"/>
+	<hint col="3" value="balance sheet" id="el11.48.6" label=""/>
+	<hint col="3" value="" id="el11.48.7" label="balance sheet"/>
+	<hint col="3" value="31 december 2009" id="el75" label=""/>
+	<hint col="3" value="" id="el11.48.8" label="31 december 2009"/>
+	<hint col="3" value="" id="el11.48.9" label=""/>
+	<hint col="1" value="" id="el12.49.0" label=""/>
+	<hint col="2" value="2009" id="el12.49.1" label=""/>
+	<hint col="3" value="2008" id="el12.49.2" label=""/>
+	<hint col="1" value="note" id="el12.50.0" label=""/>
+	<hint col="2" value="&#163;" id="el12.50.1" label=""/>
+	<hint col="3" value="&#163;" id="el12.50.2" label=""/>
+	<hint col="1" value="fixed assets" id="el12.51.0" label=""/>
+	<hint col="1" value="intangible assets" id="el12.51.1" label=""/>
+	<hint col="2" value="10" id="el12.51.2" label=""/>
+	<hint col="3" value="5,000" id="el76" label=""/>
+	<hint col="4" value="6,000" id="el77" label=""/>
+	<hint col="1" value="tangible assets" id="el12.52.0" label=""/>
+	<hint col="2" value="11" id="el12.52.1" label=""/>
+	<hint col="3" value="134,653" id="el78" label=""/>
+	<hint col="4" value="89,838" id="el79" label=""/>
+	<hint col="1" value="investments" id="el12.53.0" label=""/>
+	<hint col="2" value="12" id="el12.53.1" label=""/>
+	<hint col="3" value="124,750" id="el80" label=""/>
+	<hint col="4" value="123,250" id="el81" label=""/>
+	<hint col="1" value="" id="el12.54.0" label=""/>
+	<hint col="2" value="„„„„„„„„„„" id="el12.54.1" label=""/>
+	<hint col="3" value="„„„„„„„„„„" id="el12.54.2" label=""/>
+	<hint col="1" value="" id="el12.55.0" label=""/>
+	<hint col="2" value="264,403" id="el12.55.1" label=""/>
+	<hint col="3" value="219,088" id="el12.55.2" label=""/>
+	<hint col="1" value="" id="el12.56.0" label=""/>
+	<hint col="2" value="„„„„„„„„„„" id="el12.56.1" label=""/>
+	<hint col="3" value="„„„„„„„„„„" id="el12.56.2" label=""/>
+	<hint col="1" value="current assets" id="el12.57.0" label=""/>
+	<hint col="1" value="stocks" id="el12.57.1" label=""/>
+	<hint col="2" value="13" id="el12.57.2" label=""/>
+	<hint col="3" value="44,670" id="el82" label=""/>
+	<hint col="4" value="43,511" id="el83" label=""/>
+	<hint col="1" value="" id="el12.58.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el12.58.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el12.58.2" label=""/>
+	<hint col="4" value="debts factored without recourse:" id="el12.59.0" label=""/>
+	<hint col="1" value="gross debts (after providing for credit protection fee and accrued interest)" id="el13.60.0" label=""/>
+	<hint col="2" value="1,920" id="el13.60.1" label=""/>
+	<hint col="3" value="1,905" id="el13.60.2" label=""/>
+	<hint col="1" value="" id="el13.61.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el13.61.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el13.61.2" label=""/>
+	<hint col="1" value="" id="el13.62.0" label=""/>
+	<hint col="2" value="1,920" id="el13.62.1" label=""/>
+	<hint col="3" value="1,905" id="el13.62.2" label=""/>
+	<hint col="1" value="" id="el13.63.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el13.63.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el13.63.2" label=""/>
+	<hint col="1" value="other debtors" id="el13.64.0" label=""/>
+	<hint col="2" value="14" id="el13.64.1" label=""/>
+	<hint col="3" value="17,095" id="el13.64.2" label=""/>
+	<hint col="4" value="15,938" id="el13.64.3" label=""/>
+	<hint col="1" value="" id="el13.65.0" label=""/>
+	<hint col="2" value="" id="el13.65.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el13.65.2" label=""/>
+	<hint col="4" value="„„„„„„„„„" id="el13.65.3" label=""/>
+	<hint col="1" value="cash at bank and in hand" id="el13.66.0" label=""/>
+	<hint col="2" value="11,611" id="el84" label=""/>
+	<hint col="3" value="23,981" id="el85" label=""/>
+	<hint col="1" value="" id="el13.67.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el13.67.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el13.67.2" label=""/>
+	<hint col="1" value="prepayments and accrued income" id="el13.68.0" label=""/>
+	<hint col="2" value="1,301" id="el86" label=""/>
+	<hint col="3" value="1,140" id="el87" label=""/>
+	<hint col="1" value="" id="el13.69.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el13.69.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el13.69.2" label=""/>
+	<hint col="1" value="total current assets" id="el13.70.0" label=""/>
+	<hint col="2" value="76,597" id="el13.70.1" label=""/>
+	<hint col="3" value="86,475" id="el13.70.2" label=""/>
+	<hint col="4" value="" id="el13.71.0" label=""/>
+	<hint col="1" value="creditors: amounts falling due within one year" id="el14.72.0" label=""/>
+	<hint col="2" value="15" id="el14.72.1" label=""/>
+	<hint col="3" value="21,848" id="el88" label=""/>
+	<hint col="4" value="25,681" id="el89" label=""/>
+	<hint col="1" value="" id="el14.73.0" label=""/>
+	<hint col="2" value="" id="el14.73.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el14.73.2" label=""/>
+	<hint col="4" value="„„„„„„„„„" id="el14.73.3" label=""/>
+	<hint col="1" value="net current assets" id="el14.74.0" label=""/>
+	<hint col="2" value="54,749" id="el90" label=""/>
+	<hint col="3" value="60,794" id="el91" label=""/>
+	<hint col="1" value="" id="el14.75.0" label=""/>
+	<hint col="2" value="„„„„„„„„„„" id="el14.75.1" label=""/>
+	<hint col="3" value="„„„„„„„„„„" id="el14.75.2" label=""/>
+	<hint col="1" value="total assets less current liabilities" id="el14.76.0" label=""/>
+	<hint col="1" value="" id="el14.76.1" label="total assets less current liabilities"/>
+	<hint col="2" value="319,152" id="el92" label=""/>
+	<hint col="3" value="279,882" id="el93" label=""/>
+	<hint col="3" value="" id="el14.76.2" label=""/>
+	<hint col="1" value="creditors: amounts falling due after more than one year" id="el15.77.0" label=""/>
+	<hint col="2" value="16" id="el15.77.1" label=""/>
+	<hint col="3" value="17,250" id="el94" label=""/>
+	<hint col="4" value="12,250" id="el95" label=""/>
+	<hint col="4" value="" id="el15.77.2" label=""/>
+	<hint col="4" value="provisions for liabilities" id="el15.77.3" label=""/>
+	<hint col="1" value="deferred taxation" id="el16.78.0" label=""/>
+	<hint col="2" value="18" id="el16.78.1" label=""/>
+	<hint col="3" value="930" id="el96" label=""/>
+	<hint col="4" value="605" id="el97" label=""/>
+	<hint col="4" value="" id="el16.78.2" label=""/>
+	<hint col="1" value="government grants" id="el17.79.0" label=""/>
+	<hint col="2" value="19" id="el17.79.1" label=""/>
+	<hint col="3" value="2,200" id="el98" label=""/>
+	<hint col="4" value="1,600" id="el99" label=""/>
+	<hint col="1" value="" id="el17.80.0" label=""/>
+	<hint col="2" value="„„„„„„„„„„" id="el17.80.1" label=""/>
+	<hint col="3" value="„„„„„„„„„„" id="el17.80.2" label=""/>
+	<hint col="1" value="" id="el17.81.0" label=""/>
+	<hint col="2" value="(298,772)" id="el17.81.1" label=""/>
+	<hint col="3" value="(265,427)" id="el17.81.2" label=""/>
+	<hint col="3" value="" id="el17.81.3" label=""/>
+	<hint col="1" value="accruals and deferred income" id="el18.82.0" label=""/>
+	<hint col="2" value="20" id="el18.82.1" label=""/>
+	<hint col="3" value="951" id="el100" label=""/>
+	<hint col="4" value="973" id="el101" label=""/>
+	<hint col="1" value="" id="el18.83.0" label=""/>
+	<hint col="2" value="„„„„„„„„„„" id="el18.83.1" label=""/>
+	<hint col="3" value="„„„„„„„„„„" id="el18.83.2" label=""/>
+	<hint col="1" value="" id="el18.84.0" label=""/>
+	<hint col="2" value="297,821" id="el102" label=""/>
+	<hint col="3" value="264,454" id="el103" label=""/>
+	<hint col="1" value="" id="el18.85.0" label=""/>
+	<hint col="2" value="" id="el18.85.1" label=""/>
+	<hint col="3" value="" id="el18.85.2" label=""/>
+	<hint col="3" value="" id="el18.85.3" label=""/>
+	<hint col="3" value="uk small limited company example client" id="el18.85.4" label=""/>
+	<hint col="3" value="" id="el18.85.5" label="uk small limited company example client"/>
+	<hint col="3" value="balance sheet" id="el18.85.6" label=""/>
+	<hint col="3" value="(continued)" id="el18.85.7" label="balance sheet"/>
+	<hint col="3" value="" id="el18.85.8" label="(continued)"/>
+	<hint col="3" value="31 december 2009" id="el18.85.9" label=""/>
+	<hint col="3" value="" id="el18.85.10" label="31 december 2009"/>
+	<hint col="3" value="" id="el18.85.11" label=""/>
+	<hint col="1" value="" id="el19.86.0" label=""/>
+	<hint col="2" value="2009" id="el19.86.1" label=""/>
+	<hint col="3" value="2008" id="el19.86.2" label=""/>
+	<hint col="1" value="note" id="el19.87.0" label=""/>
+	<hint col="2" value="&#163;" id="el19.87.1" label=""/>
+	<hint col="3" value="&#163;" id="el19.87.2" label=""/>
+	<hint col="1" value="capital and reserves" id="el19.88.0" label=""/>
+	<hint col="1" value="called-up equity share capital" id="el19.88.1" label=""/>
+	<hint col="2" value="24" id="el19.88.2" label=""/>
+	<hint col="3" value="10,000" id="el104" label=""/>
+	<hint col="4" value="10,000" id="el105" label=""/>
+	<hint col="1" value="revaluation reserve" id="el19.89.0" label=""/>
+	<hint col="2" value="25" id="el19.89.1" label=""/>
+	<hint col="3" value="30,000" id="el106" label=""/>
+	<hint col="4" value="-" id="el19.89.2" label=""/>
+	<hint col="1" value="other reserves" id="el19.90.0" label=""/>
+	<hint col="2" value="25" id="el19.90.1" label=""/>
+	<hint col="3" value="4,000" id="el19.90.2" label=""/>
+	<hint col="4" value="4,000" id="el19.90.3" label=""/>
+	<hint col="1" value="profit and loss account" id="el19.91.0" label=""/>
+	<hint col="2" value="25" id="el19.91.1" label=""/>
+	<hint col="3" value="253,821" id="el107" label=""/>
+	<hint col="4" value="250,454" id="el108" label=""/>
+	<hint col="1" value="" id="el19.92.0" label=""/>
+	<hint col="2" value="„„„„„„„„„„" id="el19.92.1" label=""/>
+	<hint col="3" value="„„„„„„„„„„" id="el19.92.2" label=""/>
+	<hint col="1" value="shareholders&apos; funds" id="el19.93.0" label=""/>
+	<hint col="2" value="297,821" id="el109" label=""/>
+	<hint col="3" value="264,454" id="el110" label=""/>
+	<hint col="1" value="" id="el19.94.0" label=""/>
+	<hint col="2" value="" id="el19.94.1" label=""/>
+	<hint col="3" value="" id="el19.94.2" label=""/>
+	<hint col="4" value="" id="el19.95.0" label=""/>
+	<hint col="4" value="the directors are satisfied that the company is entitled to exemption from the provisions of the companies act 2006 (the act) relating to the audit of the financial statements for the year by virtue of section 477, and that no member or members have requested an audit pursuant to section 476 of the act." id="el19.95.1" label=""/>
+	<hint col="4" value="" id="el19.95.2" label="the directors are satisfied that the company is entitled to exemption from the provisions of the companies act 2006 (the act) relating to the audit of the financial statements for the year by virtue of section 477, and that no member or members have requested an audit pursuant to section 476 of the act."/>
+	<hint col="4" value="the directors acknowledge their responsibilities for:" id="el19.95.3" label=""/>
+	<hint col="4" value="" id="el19.95.4" label="the directors acknowledge their responsibilities for:"/>
+	<hint col="4" value="(i)      ensuring that the company keeps adequate accounting records which comply with section 386 of the act, and" id="el19.95.5" label=""/>
+	<hint col="4" value="" id="el19.95.6" label="(i)      ensuring that the company keeps adequate accounting records which comply with section 386 of the act, and"/>
+	<hint col="4" value="(ii)      preparing financial statements which give a true and fair view of the state of affairs of the company as at the end of the financial year and of its profit or loss for the financial year in accordance with the requirements of section 393, and which otherwise comply with the requirements of the act relating to financial statements, so far as applicable to the company." id="el19.95.7" label=""/>
+	<hint col="4" value="" id="el19.95.8" label="(ii)      preparing financial statements which give a true and fair view of the state of affairs of the company as at the end of the financial year and of its profit or loss for the financial year in accordance with the requirements of section 393, and which otherwise comply with the requirements of the act relating to financial statements, so far as applicable to the company."/>
+	<hint col="4" value="these financial statements have been prepared in accordance with the special provisions for small companies under part 15 of the companies act 2006 and with the financial reporting standard for smaller entities (effective april 2008)." id="el19.95.9" label=""/>
+	<hint col="4" value="" id="el19.95.10" label="these financial statements have been prepared in accordance with the special provisions for small companies under part 15 of the companies act 2006 and with the financial reporting standard for smaller entities (effective april 2008)."/>
+	<hint col="4" value="these financial statements were approved by the directors and authorised for issue on, and are signed on their behalf by:" id="el111" label=""/>
+	<hint col="4" value="" id="el19.95.11" label="these financial statements were approved by the directors and authorised for issue on, and are signed on their behalf by:"/>
+	<hint col="4" value="mr a arthur" id="el19.95.12" label=""/>
+	<hint col="4" value="mr b benedict" id="el19.95.13" label="mr a arthur"/>
+	<hint col="4" value="" id="el19.95.14" label="mr b benedict"/>
+	<hint col="4" value="" id="el19.95.15" label=""/>
+	<hint col="4" value="company registration number: 19283747" id="el19.95.16" label=""/>
+	<hint col="4" value="" id="el19.95.17" label="company registration number: 19283747"/>
+	<hint col="4" value="uk small limited company example client" id="el19.95.18" label=""/>
+	<hint col="4" value="" id="el19.95.19" label="uk small limited company example client"/>
+	<hint col="4" value="cash flow statement" id="el19.95.20" label=""/>
+	<hint col="4" value="" id="el19.95.21" label="cash flow statement"/>
+	<hint col="4" value="year ended 31 december 2009" id="el19.95.22" label=""/>
+	<hint col="4" value="" id="el19.95.23" label="year ended 31 december 2009"/>
+	<hint col="4" value="" id="el19.95.24" label=""/>
+	<hint col="1" value="" id="el20.96.0" label=""/>
+	<hint col="2" value="2009" id="el20.96.1" label=""/>
+	<hint col="3" value="2008" id="el20.96.2" label=""/>
+	<hint col="1" value="note" id="el20.97.0" label=""/>
+	<hint col="2" value="&#163;" id="el20.97.1" label=""/>
+	<hint col="3" value="&#163;" id="el20.97.2" label=""/>
+	<hint col="1" value="net cash inflow from operating activities" id="el20.98.0" label=""/>
+	<hint col="1" value="" id="el20.98.1" label="net cash inflow from operating activities"/>
+	<hint col="2" value="26" id="el20.98.2" label=""/>
+	<hint col="3" value="18,002" id="el20.98.3" label=""/>
+	<hint col="4" value="27,889" id="el20.98.4" label=""/>
+	<hint col="4" value="" id="el20.99.0" label=""/>
+	<hint col="1" value="returns on investments and servicing of finance" id="el21.100.0" label=""/>
+	<hint col="1" value="" id="el21.100.1" label="returns on investments and servicing of finance"/>
+	<hint col="2" value="26" id="el21.100.2" label=""/>
+	<hint col="3" value="4,529" id="el21.100.3" label=""/>
+	<hint col="4" value="4,682" id="el21.100.4" label=""/>
+	<hint col="4" value="" id="el21.100.5" label=""/>
+	<hint col="1" value="taxation" id="el22.101.0" label=""/>
+	<hint col="1" value="" id="el22.101.1" label="taxation"/>
+	<hint col="2" value="26" id="el22.101.2" label=""/>
+	<hint col="3" value="(6,136)" id="el22.101.3" label=""/>
+	<hint col="4" value="(3,200)" id="el22.101.4" label=""/>
+	<hint col="4" value="" id="el22.101.5" label=""/>
+	<hint col="1" value="capital expenditure and financial investment" id="el23.102.0" label=""/>
+	<hint col="1" value="" id="el23.102.1" label="capital expenditure and financial investment"/>
+	<hint col="2" value="26" id="el23.102.2" label=""/>
+	<hint col="3" value="(26,515)" id="el23.102.3" label=""/>
+	<hint col="4" value="(11,175)" id="el23.102.4" label=""/>
+	<hint col="4" value="" id="el23.102.5" label=""/>
+	<hint col="1" value="equity dividends paid" id="el24.103.0" label=""/>
+	<hint col="2" value="(3,500)" id="el24.103.1" label=""/>
+	<hint col="3" value="(3,500)" id="el24.103.2" label=""/>
+	<hint col="3" value="" id="el24.103.3" label=""/>
+	<hint col="1" value="" id="el25.104.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el25.104.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el25.104.2" label=""/>
+	<hint col="1" value="cash (outflow)/inflow before financing" id="el25.105.0" label=""/>
+	<hint col="2" value="(13,620)" id="el25.105.1" label=""/>
+	<hint col="3" value="14,696" id="el25.105.2" label=""/>
+	<hint col="3" value="" id="el25.105.3" label=""/>
+	<hint col="1" value="financing" id="el26.106.0" label=""/>
+	<hint col="1" value="" id="el26.106.1" label="financing"/>
+	<hint col="2" value="26" id="el26.106.2" label=""/>
+	<hint col="3" value="1,250" id="el26.106.3" label=""/>
+	<hint col="4" value="2,200" id="el26.106.4" label=""/>
+	<hint col="4" value="" id="el26.106.5" label=""/>
+	<hint col="1" value="" id="el27.107.0" label=""/>
+	<hint col="2" value="" id="el27.107.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el27.107.2" label=""/>
+	<hint col="4" value="„„„„„„„„„" id="el27.107.3" label=""/>
+	<hint col="1" value="(decrease)/increase in cash" id="el27.108.0" label=""/>
+	<hint col="1" value="" id="el27.108.1" label="(decrease)/increase in cash"/>
+	<hint col="2" value="26" id="el27.108.2" label=""/>
+	<hint col="3" value="(12,370)" id="el27.108.3" label=""/>
+	<hint col="4" value="16,896" id="el27.108.4" label=""/>
+	<hint col="1" value="" id="el27.109.0" label=""/>
+	<hint col="2" value="" id="el27.109.1" label=""/>
+	<hint col="3" value="" id="el27.109.2" label=""/>
+	<hint col="4" value="" id="el27.109.3" label=""/>
+	<hint col="4" value="" id="el27.109.4" label=""/>
+	<hint col="4" value="uk small limited company example client" id="el27.109.5" label=""/>
+	<hint col="4" value="" id="el27.109.6" label="uk small limited company example client"/>
+	<hint col="4" value="notes to the financial statements" id="el27.109.7" label=""/>
+	<hint col="4" value="" id="el27.109.8" label="notes to the financial statements"/>
+	<hint col="4" value="year ended 31 december 2009" id="el27.109.9" label=""/>
+	<hint col="4" value="" id="el27.109.10" label="year ended 31 december 2009"/>
+	<hint col="4" value="" id="el27.109.11" label=""/>
+	<hint col="4" value="1." id="el27.109.12" label=""/>
+	<hint col="4" value="" id="el27.109.13" label=""/>
+	<hint col="4" value="accounting policies" id="el27.109.14" label=""/>
+	<hint col="4" value="" id="el27.109.15" label=""/>
+	<hint col="4" value="basis of accounting" id="el27.109.16" label=""/>
+	<hint col="4" value="the financial statements have been prepared under the historical cost convention, modified to include the revaluation of certain fixed assets, and in accordance with the financial reporting standard for smaller entities (effective april 2008)." id="el112" label=""/>
+	<hint col="4" value="" id="el27.109.17" label="the financial statements have been prepared under the historical cost convention, modified to include the revaluation of certain fixed assets, and in accordance with the financial reporting standard for smaller entities (effective april 2008)."/>
+	<hint col="4" value="" id="el27.109.18" label=""/>
+	<hint col="4" value="turnover" id="el27.109.19" label=""/>
+	<hint col="4" value="the turnover shown in the profit and loss account represents amounts invoiced during the year, exclusive of value added tax. in respect of long-term contracts and contracts for on-going services, turnover represents the value of work done in the year, including estimates of amounts not invoiced. turnover in respect of long-term contracts and contracts for on-going services is recognised by reference to the stage of completion." id="el113" label=""/>
+	<hint col="4" value="" id="el27.109.20" label="the turnover shown in the profit and loss account represents amounts invoiced during the year, exclusive of value added tax. in respect of long-term contracts and contracts for on-going services, turnover represents the value of work done in the year, including estimates of amounts not invoiced. turnover in respect of long-term contracts and contracts for on-going services is recognised by reference to the stage of completion."/>
+	<hint col="4" value="" id="el27.109.21" label=""/>
+	<hint col="4" value="research and development" id="el27.109.22" label=""/>
+	<hint col="4" value="research expenditure is written off in the year in which it is incurred." id="el27.109.23" label=""/>
+	<hint col="4" value="" id="el27.109.24" label="research expenditure is written off in the year in which it is incurred."/>
+	<hint col="4" value="development expenditure incurred on clearly defined projects whose outcome can be assessed with reasonable certainty is carried forward and amortisation is charged from that time over the lesser of the life of the project or three years." id="el27.109.25" label=""/>
+	<hint col="4" value="" id="el27.109.26" label="development expenditure incurred on clearly defined projects whose outcome can be assessed with reasonable certainty is carried forward and amortisation is charged from that time over the lesser of the life of the project or three years."/>
+	<hint col="4" value="" id="el27.109.27" label=""/>
+	<hint col="4" value="goodwill" id="el27.109.28" label=""/>
+	<hint col="4" value="positive purchased goodwill arising on acquisitions is capitalised, classified as an asset on the balance sheet and amortised over its estimated useful life up to a maximum of 20 years. this length of time is presumed to be the maximum useful life of purchased goodwill because it is difficult to make projections beyond this period. goodwill is reviewed for impairment at the end of the first full financial year following each acquisition and subsequently as and when necessary if circumstances emerge that indicate that the carrying value may not be recoverable." id="el27.109.29" label=""/>
+	<hint col="4" value="" id="el27.109.30" label="positive purchased goodwill arising on acquisitions is capitalised, classified as an asset on the balance sheet and amortised over its estimated useful life up to a maximum of 20 years. this length of time is presumed to be the maximum useful life of purchased goodwill because it is difficult to make projections beyond this period. goodwill is reviewed for impairment at the end of the first full financial year following each acquisition and subsequently as and when necessary if circumstances emerge that indicate that the carrying value may not be recoverable."/>
+	<hint col="4" value="" id="el27.109.31" label=""/>
+	<hint col="4" value="amortisation" id="el27.109.32" label=""/>
+	<hint col="4" value="amortisation is calculated so as to write off the cost of an asset, less its estimated residual value, over the useful economic life of that asset as follows:" id="el27.109.33" label=""/>
+	<hint col="4" value="" id="el27.109.34" label="amortisation is calculated so as to write off the cost of an asset, less its estimated residual value, over the useful economic life of that asset as follows:"/>
+	<hint col="4" value="goodwill      -      10% straight line" id="el27.109.35" label=""/>
+	<hint col="4" value="" id="el27.109.36" label="goodwill      -      10% straight line"/>
+	<hint col="4" value="" id="el27.109.37" label=""/>
+	<hint col="4" value="fixed assets" id="el27.109.38" label=""/>
+	<hint col="4" value="all fixed assets are initially recorded at cost." id="el27.109.39" label=""/>
+	<hint col="4" value="" id="el27.109.40" label="all fixed assets are initially recorded at cost."/>
+	<hint col="4" value="" id="el27.109.41" label=""/>
+	<hint col="4" value="depreciation" id="el27.109.42" label=""/>
+	<hint col="4" value="depreciation is calculated so as to write off the cost of an asset, less its estimated residual value, over the useful economic life of that asset as follows:" id="el27.109.43" label=""/>
+	<hint col="4" value="" id="el27.109.44" label="depreciation is calculated so as to write off the cost of an asset, less its estimated residual value, over the useful economic life of that asset as follows:"/>
+	<hint col="4" value="freehold property      -      2% reducing balance" id="el27.109.45" label=""/>
+	<hint col="4" value="plant and machinery      -      25% straight line" id="el27.109.46" label=""/>
+	<hint col="4" value="fixtures and fittings      -      10% straight line" id="el27.109.47" label=""/>
+	<hint col="4" value="motor vehicles      -      20% straight line" id="el27.109.48" label=""/>
+	<hint col="4" value="" id="el27.109.49" label="motor vehicles      -      20% straight line"/>
+	<hint col="4" value="uk small limited company example client" id="el27.109.50" label=""/>
+	<hint col="4" value="" id="el27.109.51" label="uk small limited company example client"/>
+	<hint col="4" value="notes to the financial statements" id="el27.109.52" label=""/>
+	<hint col="4" value="" id="el27.109.53" label="notes to the financial statements"/>
+	<hint col="4" value="year ended 31 december 2009" id="el27.109.54" label=""/>
+	<hint col="4" value="" id="el27.109.55" label="year ended 31 december 2009"/>
+	<hint col="4" value="" id="el27.109.56" label=""/>
+	<hint col="4" value="1." id="el27.109.57" label=""/>
+	<hint col="4" value="" id="el27.109.58" label=""/>
+	<hint col="4" value="accounting policies" id="el27.109.59" label=""/>
+	<hint col="4" value="(continued)" id="el27.109.60" label="accounting policies"/>
+	<hint col="4" value="" id="el27.109.61" label=""/>
+	<hint col="4" value="investment properties" id="el27.109.62" label=""/>
+	<hint col="4" value="in accordance with the financial reporting standard for smaller entities (effective january 2008) no depreciation is provided in respect of freehold properties held as investments.  this is a departure from the requirements of the companies act 1985 which requires all properties to be depreciated.  such properties are held for investment and not for consumption and the directors consider that to depreciate them would not give a true and fair view.  depreciation is only one of the many elements reflected in the annual valuation of properties and accordingly the amount of depreciation which might otherwise have been charged cannot be separately identified and quantified.  the directors consider that this policy results in the accounts giving a true and fair view." id="el27.109.63" label=""/>
+	<hint col="4" value="" id="el27.109.64" label="in accordance with the financial reporting standard for smaller entities (effective january 2008) no depreciation is provided in respect of freehold properties held as investments.  this is a departure from the requirements of the companies act 1985 which requires all properties to be depreciated.  such properties are held for investment and not for consumption and the directors consider that to depreciate them would not give a true and fair view.  depreciation is only one of the many elements reflected in the annual valuation of properties and accordingly the amount of depreciation which might otherwise have been charged cannot be separately identified and quantified.  the directors consider that this policy results in the accounts giving a true and fair view."/>
+	<hint col="4" value="" id="el27.109.65" label=""/>
+	<hint col="4" value="stocks" id="el27.109.66" label=""/>
+	<hint col="4" value="stocks are valued at the lower of cost and net realisable value, after making due allowance for obsolete and slow moving items." id="el27.109.67" label=""/>
+	<hint col="4" value="" id="el27.109.68" label="stocks are valued at the lower of cost and net realisable value, after making due allowance for obsolete and slow moving items."/>
+	<hint col="4" value="cost is calculated on a first in, first out basis." id="el27.109.69" label=""/>
+	<hint col="4" value="" id="el27.109.70" label="cost is calculated on a first in, first out basis."/>
+	<hint col="4" value="" id="el27.109.71" label=""/>
+	<hint col="4" value="work in progress" id="el27.109.72" label=""/>
+	<hint col="4" value="work in progress is valued on the basis of direct costs plus attributable overheads based on normal level of activity. provision is made for any foreseeable losses where appropriate. no element of profit is included in the valuation of work in progress." id="el27.109.73" label=""/>
+	<hint col="4" value="" id="el27.109.74" label="work in progress is valued on the basis of direct costs plus attributable overheads based on normal level of activity. provision is made for any foreseeable losses where appropriate. no element of profit is included in the valuation of work in progress."/>
+	<hint col="4" value="" id="el27.109.75" label=""/>
+	<hint col="4" value="hire purchase agreements" id="el27.109.76" label=""/>
+	<hint col="4" value="assets held under hire purchase agreements are capitalised and disclosed under tangible fixed assets at their fair value. the capital element of the future payments is treated as a liability and the interest is charged to the profit and loss account on a straight line basis." id="el27.109.77" label=""/>
+	<hint col="4" value="" id="el27.109.78" label="assets held under hire purchase agreements are capitalised and disclosed under tangible fixed assets at their fair value. the capital element of the future payments is treated as a liability and the interest is charged to the profit and loss account on a straight line basis."/>
+	<hint col="4" value="" id="el27.109.79" label=""/>
+	<hint col="4" value="operating lease agreements" id="el27.109.80" label=""/>
+	<hint col="4" value="rentals applicable to operating leases where substantially all of the benefits and risks of ownership remain with the lessor are charged against profits on a straight line basis over the period of the lease." id="el27.109.81" label=""/>
+	<hint col="4" value="" id="el27.109.82" label="rentals applicable to operating leases where substantially all of the benefits and risks of ownership remain with the lessor are charged against profits on a straight line basis over the period of the lease."/>
+	<hint col="4" value="" id="el27.109.83" label=""/>
+	<hint col="4" value="pension costs" id="el27.109.84" label=""/>
+	<hint col="4" value="the company operates a defined contribution pension scheme for employees. the assets of the scheme are held separately from those of the company. the annual contributions payable are charged to the profit and loss account." id="el27.109.85" label=""/>
+	<hint col="4" value="" id="el27.109.86" label="the company operates a defined contribution pension scheme for employees. the assets of the scheme are held separately from those of the company. the annual contributions payable are charged to the profit and loss account."/>
+	<hint col="4" value="" id="el27.109.87" label=""/>
+	<hint col="4" value="deferred taxation" id="el27.109.88" label=""/>
+	<hint col="4" value="deferred tax is recognised in respect of all timing differences that have originated but not reversed at the balance sheet date where transactions or events have occurred at that date that will result in an obligation to pay more, or a right to pay less or to receive more tax, with the following exceptions:" id="el27.109.89" label=""/>
+	<hint col="4" value="" id="el27.109.90" label="deferred tax is recognised in respect of all timing differences that have originated but not reversed at the balance sheet date where transactions or events have occurred at that date that will result in an obligation to pay more, or a right to pay less or to receive more tax, with the following exceptions:"/>
+	<hint col="4" value="uk small limited company example client" id="el27.109.91" label=""/>
+	<hint col="4" value="" id="el27.109.92" label="uk small limited company example client"/>
+	<hint col="4" value="notes to the financial statements" id="el27.109.93" label=""/>
+	<hint col="4" value="" id="el27.109.94" label="notes to the financial statements"/>
+	<hint col="4" value="year ended 31 december 2009" id="el27.109.95" label=""/>
+	<hint col="4" value="" id="el27.109.96" label="year ended 31 december 2009"/>
+	<hint col="4" value="" id="el27.109.97" label=""/>
+	<hint col="4" value="1." id="el27.109.98" label=""/>
+	<hint col="4" value="" id="el27.109.99" label=""/>
+	<hint col="4" value="accounting policies" id="el27.109.100" label=""/>
+	<hint col="4" value="(continued)" id="el27.109.101" label="accounting policies"/>
+	<hint col="4" value="provision is made for tax on gains arising from the revaluation (and similar fair value adjustments) of fixed assets, and gains on disposal of fixed assets that have been rolled over into replacement assets, only to the extent that, at the balance sheet date, there is a binding agreement to dispose of the assets concerned. however, no provision is made where, on the basis of all available evidence at the balance sheet date, it is more likely than not that the taxable gain will be rolled over into replacement assets and charged to tax only where the replacement assets are sold." id="el27.109.102" label=""/>
+	<hint col="4" value="" id="el27.109.103" label="provision is made for tax on gains arising from the revaluation (and similar fair value adjustments) of fixed assets, and gains on disposal of fixed assets that have been rolled over into replacement assets, only to the extent that, at the balance sheet date, there is a binding agreement to dispose of the assets concerned. however, no provision is made where, on the basis of all available evidence at the balance sheet date, it is more likely than not that the taxable gain will be rolled over into replacement assets and charged to tax only where the replacement assets are sold."/>
+	<hint col="4" value="deferred tax assets are recognised only to the extent that the directors consider that it is more likely than not that there will be suitable taxable profits from which the future reversal of the underlying timing differences can be deducted." id="el27.109.104" label=""/>
+	<hint col="4" value="" id="el27.109.105" label="deferred tax assets are recognised only to the extent that the directors consider that it is more likely than not that there will be suitable taxable profits from which the future reversal of the underlying timing differences can be deducted."/>
+	<hint col="4" value="deferred tax is measured on an undiscounted basis at the tax rates that are expected to apply in the periods in which timing differences reverse, based on tax rates and laws enacted or substantively enacted at the balance sheet date." id="el27.109.106" label=""/>
+	<hint col="4" value="" id="el27.109.107" label="deferred tax is measured on an undiscounted basis at the tax rates that are expected to apply in the periods in which timing differences reverse, based on tax rates and laws enacted or substantively enacted at the balance sheet date."/>
+	<hint col="4" value="" id="el27.109.108" label=""/>
+	<hint col="4" value="foreign currencies" id="el27.109.109" label=""/>
+	<hint col="4" value="assets and liabilities in foreign currencies are translated into sterling at the rates of exchange ruling at the balance sheet date. transactions in foreign currencies are translated into sterling at the rate of exchange ruling at the date of the transaction. exchange differences are taken into account in arriving at the operating profit." id="el27.109.110" label=""/>
+	<hint col="4" value="" id="el27.109.111" label="assets and liabilities in foreign currencies are translated into sterling at the rates of exchange ruling at the balance sheet date. transactions in foreign currencies are translated into sterling at the rate of exchange ruling at the date of the transaction. exchange differences are taken into account in arriving at the operating profit."/>
+	<hint col="4" value="" id="el27.109.112" label=""/>
+	<hint col="4" value="financial instruments" id="el27.109.113" label=""/>
+	<hint col="4" value="" id="el114" label=""/>
+	<hint col="4" value="" id="el27.109.114" label=""/>
+	<hint col="4" value="" id="el27.109.115" label=""/>
+	<hint col="4" value="deferred government grants" id="el27.109.116" label=""/>
+	<hint col="4" value="deferred government grants in respect of capital expenditure are treated as deferred income and are credited to the profit and loss account over the estimated useful life of the assets to which they relate." id="el27.109.117" label=""/>
+	<hint col="4" value="" id="el27.109.118" label="deferred government grants in respect of capital expenditure are treated as deferred income and are credited to the profit and loss account over the estimated useful life of the assets to which they relate."/>
+	<hint col="4" value="2." id="el27.109.119" label=""/>
+	<hint col="4" value="" id="el27.109.120" label=""/>
+	<hint col="4" value="turnover" id="el27.109.121" label=""/>
+	<hint col="4" value="overseas turnover amounted to 4.80% (2008 - 4.58%) of the total turnover for the year." id="el27.109.122" label=""/>
+	<hint col="4" value="" id="el27.109.123" label="overseas turnover amounted to 4.80% (2008 - 4.58%) of the total turnover for the year."/>
+	<hint col="4" value="3." id="el27.109.124" label=""/>
+	<hint col="4" value="" id="el27.109.125" label=""/>
+	<hint col="4" value="other operating income" id="el27.109.126" label=""/>
+	<hint col="1" value="" id="el28.110.0" label=""/>
+	<hint col="2" value="2009" id="el28.110.1" label=""/>
+	<hint col="3" value="2008" id="el28.110.2" label=""/>
+	<hint col="1" value="" id="el28.111.0" label=""/>
+	<hint col="2" value="&#163;" id="el28.111.1" label=""/>
+	<hint col="3" value="&#163;" id="el28.111.2" label=""/>
+	<hint col="1" value="commission receivable" id="el28.112.0" label=""/>
+	<hint col="2" value="1,986" id="el115" label=""/>
+	<hint col="3" value="1,765" id="el116" label=""/>
+	<hint col="1" value="" id="el28.113.0" label=""/>
+	<hint col="2" value="" id="el28.113.1" label=""/>
+	<hint col="3" value="" id="el28.113.2" label=""/>
+	<hint col="3" value="" id="el28.113.3" label=""/>
+	<hint col="3" value="uk small limited company example client" id="el28.113.4" label=""/>
+	<hint col="3" value="" id="el28.113.5" label="uk small limited company example client"/>
+	<hint col="3" value="notes to the financial statements" id="el28.113.6" label=""/>
+	<hint col="3" value="" id="el28.113.7" label="notes to the financial statements"/>
+	<hint col="3" value="year ended 31 december 2009" id="el28.113.8" label=""/>
+	<hint col="3" value="" id="el28.113.9" label="year ended 31 december 2009"/>
+	<hint col="3" value="" id="el28.113.10" label=""/>
+	<hint col="3" value="4." id="el28.113.11" label=""/>
+	<hint col="3" value="" id="el28.113.12" label=""/>
+	<hint col="3" value="operating profit" id="el28.113.13" label=""/>
+	<hint col="3" value="operating profit is stated after charging/(crediting):" id="el28.113.14" label=""/>
+	<hint col="3" value="" id="el28.113.15" label="operating profit is stated after charging/(crediting):"/>
+	<hint col="1" value="" id="el29.114.0" label=""/>
+	<hint col="2" value="2009" id="el29.114.1" label=""/>
+	<hint col="3" value="2008" id="el29.114.2" label=""/>
+	<hint col="1" value="" id="el29.115.0" label=""/>
+	<hint col="2" value="&#163;" id="el29.115.1" label=""/>
+	<hint col="3" value="&#163;" id="el29.115.2" label=""/>
+	<hint col="1" value="directors&apos; remuneration" id="el29.116.0" label=""/>
+	<hint col="2" value="2,150" id="el117" label=""/>
+	<hint col="3" value="1,785" id="el118" label=""/>
+	<hint col="1" value="staff pension contributions" id="el29.117.0" label=""/>
+	<hint col="2" value="5,635" id="el29.117.1" label=""/>
+	<hint col="3" value="4,560" id="el29.117.2" label=""/>
+	<hint col="1" value="amortisation of government grants re fixed assets" id="el29.118.0" label=""/>
+	<hint col="2" value="(900)" id="el29.118.1" label=""/>
+	<hint col="3" value="(900)" id="el29.118.2" label=""/>
+	<hint col="1" value="amortisation of intangible assets" id="el29.119.0" label=""/>
+	<hint col="2" value="1,000" id="el119" label=""/>
+	<hint col="3" value="1,000" id="el120" label=""/>
+	<hint col="1" value="research  expenditure written off" id="el29.120.0" label=""/>
+	<hint col="2" value="5,315" id="el29.120.1" label=""/>
+	<hint col="3" value="5,360" id="el29.120.2" label=""/>
+	<hint col="1" value="depreciation of owned fixed assets" id="el29.121.0" label=""/>
+	<hint col="2" value="13,150" id="el29.121.1" label=""/>
+	<hint col="3" value="13,770" id="el29.121.2" label=""/>
+	<hint col="1" value="depreciation of assets held under hire purchase and finance lease agreements" id="el29.122.0" label=""/>
+	<hint col="2" value="2,185" id="el29.122.1" label=""/>
+	<hint col="3" value="970" id="el29.122.2" label=""/>
+	<hint col="1" value="loss/(profit) on disposal of fixed assets" id="el29.123.0" label=""/>
+	<hint col="2" value="115" id="el121" label=""/>
+	<hint col="3" value="()" id="el122" label=""/>
+	<hint col="1" value="" id="el29.124.0" label=""/>
+	<hint col="2" value="" id="el29.124.1" label=""/>
+	<hint col="3" value="" id="el29.124.2" label=""/>
+	<hint col="3" value="" id="el29.124.3" label=""/>
+	<hint col="3" value="5." id="el29.124.4" label=""/>
+	<hint col="3" value="" id="el29.124.5" label=""/>
+	<hint col="3" value="exceptional items" id="el29.124.6" label=""/>
+	<hint col="1" value="" id="el30.125.0" label=""/>
+	<hint col="2" value="2009" id="el30.125.1" label=""/>
+	<hint col="3" value="2008" id="el30.125.2" label=""/>
+	<hint col="1" value="" id="el30.126.0" label=""/>
+	<hint col="2" value="&#163;" id="el30.126.1" label=""/>
+	<hint col="3" value="&#163;" id="el30.126.2" label=""/>
+	<hint col="1" value="recognised in arriving at operating profit:" id="el30.127.0" label=""/>
+	<hint col="1" value="exceptional cost of sales" id="el30.127.1" label=""/>
+	<hint col="2" value="(1,125)" id="el30.127.2" label=""/>
+	<hint col="3" value="(1,125)" id="el30.127.3" label=""/>
+	<hint col="1" value="" id="el30.128.0" label=""/>
+	<hint col="2" value="„„„„„„„" id="el30.128.1" label=""/>
+	<hint col="3" value="„„„„„„„" id="el30.128.2" label=""/>
+	<hint col="1" value="" id="el30.129.0" label=""/>
+	<hint col="2" value="()" id="el123" label=""/>
+	<hint col="3" value="()" id="el124" label=""/>
+	<hint col="1" value="" id="el30.130.0" label=""/>
+	<hint col="2" value="" id="el30.130.1" label=""/>
+	<hint col="3" value="" id="el30.130.2" label=""/>
+	<hint col="3" value="" id="el30.130.3" label=""/>
+	<hint col="3" value="for several months during the current year there was a world wide shortage of certain glassmaking components which the company needs for its specialised manufacturing process.  in order to maintain continuity of operations it was necessary to incur a premium charge for each shipment of these components and the total of these costs is shown separately as an exceptional item rather than as part of cost of sales." id="el30.130.4" label=""/>
+	<hint col="3" value="" id="el30.130.5" label="for several months during the current year there was a world wide shortage of certain glassmaking components which the company needs for its specialised manufacturing process.  in order to maintain continuity of operations it was necessary to incur a premium charge for each shipment of these components and the total of these costs is shown separately as an exceptional item rather than as part of cost of sales."/>
+	<hint col="3" value="6." id="el30.130.6" label=""/>
+	<hint col="3" value="" id="el30.130.7" label=""/>
+	<hint col="3" value="income from fixed asset investments" id="el30.130.8" label=""/>
+	<hint col="1" value="" id="el31.131.0" label=""/>
+	<hint col="2" value="2009" id="el31.131.1" label=""/>
+	<hint col="3" value="2008" id="el31.131.2" label=""/>
+	<hint col="1" value="" id="el31.132.0" label=""/>
+	<hint col="2" value="&#163;" id="el31.132.1" label=""/>
+	<hint col="3" value="&#163;" id="el31.132.2" label=""/>
+	<hint col="1" value="income from other fixed asset investments" id="el31.133.0" label=""/>
+	<hint col="2" value="5,252" id="el31.133.1" label=""/>
+	<hint col="3" value="5,252" id="el31.133.2" label=""/>
+	<hint col="1" value="" id="el31.134.0" label=""/>
+	<hint col="2" value="„„„„„„„" id="el31.134.1" label=""/>
+	<hint col="3" value="„„„„„„„" id="el31.134.2" label=""/>
+	<hint col="1" value="" id="el31.135.0" label=""/>
+	<hint col="2" value="5,252" id="el125" label=""/>
+	<hint col="3" value="5,252" id="el126" label=""/>
+	<hint col="1" value="" id="el31.136.0" label=""/>
+	<hint col="2" value="" id="el31.136.1" label=""/>
+	<hint col="3" value="" id="el31.136.2" label=""/>
+	<hint col="3" value="" id="el31.136.3" label=""/>
+	<hint col="3" value="7." id="el31.136.4" label=""/>
+	<hint col="3" value="" id="el31.136.5" label=""/>
+	<hint col="3" value="interest payable and similar charges" id="el31.136.6" label=""/>
+	<hint col="1" value="" id="el32.137.0" label=""/>
+	<hint col="2" value="2009" id="el32.137.1" label=""/>
+	<hint col="3" value="2008" id="el32.137.2" label=""/>
+	<hint col="1" value="" id="el32.138.0" label=""/>
+	<hint col="2" value="&#163;" id="el32.138.1" label=""/>
+	<hint col="3" value="&#163;" id="el32.138.2" label=""/>
+	<hint col="1" value="bank interest payable" id="el32.139.0" label=""/>
+	<hint col="2" value="478" id="el32.139.1" label=""/>
+	<hint col="3" value="365" id="el32.139.2" label=""/>
+	<hint col="1" value="dividend paid on 6% redeemable preference shares" id="el32.140.0" label=""/>
+	<hint col="2" value="325" id="el32.140.1" label=""/>
+	<hint col="3" value="300" id="el32.140.2" label=""/>
+	<hint col="1" value="" id="el32.141.0" label=""/>
+	<hint col="2" value="„„„„" id="el32.141.1" label=""/>
+	<hint col="3" value="„„„„" id="el32.141.2" label=""/>
+	<hint col="1" value="" id="el32.142.0" label=""/>
+	<hint col="2" value="803" id="el127" label=""/>
+	<hint col="3" value="665" id="el128" label=""/>
+	<hint col="1" value="" id="el32.143.0" label=""/>
+	<hint col="2" value="" id="el32.143.1" label=""/>
+	<hint col="3" value="" id="el32.143.2" label=""/>
+	<hint col="3" value="" id="el32.143.3" label=""/>
+	<hint col="3" value="uk small limited company example client" id="el32.143.4" label=""/>
+	<hint col="3" value="" id="el32.143.5" label="uk small limited company example client"/>
+	<hint col="3" value="notes to the financial statements" id="el32.143.6" label=""/>
+	<hint col="3" value="" id="el32.143.7" label="notes to the financial statements"/>
+	<hint col="3" value="year ended 31 december 2009" id="el32.143.8" label=""/>
+	<hint col="3" value="" id="el32.143.9" label="year ended 31 december 2009"/>
+	<hint col="3" value="" id="el32.143.10" label=""/>
+	<hint col="3" value="8." id="el32.143.11" label=""/>
+	<hint col="3" value="" id="el32.143.12" label=""/>
+	<hint col="3" value="taxation on ordinary activities" id="el32.143.13" label=""/>
+	<hint col="3" value="" id="el32.143.14" label=""/>
+	<hint col="3" value="(a) analysis of charge in the year" id="el32.143.15" label=""/>
+	<hint col="3" value="" id="el32.143.16" label="(a) analysis of charge in the year"/>
+	<hint col="1" value="" id="el33.144.0" label=""/>
+	<hint col="2" value="2009" id="el33.144.1" label=""/>
+	<hint col="3" value="2008" id="el33.144.2" label=""/>
+	<hint col="1" value="" id="el33.145.0" label=""/>
+	<hint col="2" value="&#163;" id="el33.145.1" label=""/>
+	<hint col="3" value="&#163;" id="el33.145.2" label=""/>
+	<hint col="3" value="current tax:" id="el33.145.3" label=""/>
+	<hint col="3" value="" id="el33.145.4" label="current tax:"/>
+	<hint col="3" value="in respect of the year:" id="el33.145.5" label=""/>
+	<hint col="3" value="" id="el33.145.6" label="in respect of the year:"/>
+	<hint col="1" value="uk corporation tax based on the results for the year at% (2008 - 20%)" id="el129" label=""/>
+	<hint col="2" value="2,136" id="el130" label=""/>
+	<hint col="3" value="3,950" id="el131" label=""/>
+	<hint col="1" value="" id="el34.147.0" label=""/>
+	<hint col="2" value="„„„„„„„" id="el34.147.1" label=""/>
+	<hint col="3" value="„„„„„„„" id="el34.147.2" label=""/>
+	<hint col="1" value="total current tax" id="el34.148.0" label=""/>
+	<hint col="2" value="2,136" id="el132" label=""/>
+	<hint col="3" value="3,950" id="el133" label=""/>
+	<hint col="3" value="" id="el34.148.1" label=""/>
+	<hint col="3" value="deferred tax:" id="el34.148.2" label=""/>
+	<hint col="3" value="" id="el34.148.3" label="deferred tax:"/>
+	<hint col="3" value="origination and reversal of timing differences (note 18)" id="el34.148.4" label=""/>
+	<hint col="1" value="capital allowances" id="el35.149.0" label=""/>
+	<hint col="2" value="325" id="el134" label=""/>
+	<hint col="3" value="225" id="el135" label=""/>
+	<hint col="1" value="" id="el35.150.0" label=""/>
+	<hint col="2" value="„„„„„„„" id="el35.150.1" label=""/>
+	<hint col="3" value="„„„„„„„" id="el35.150.2" label=""/>
+	<hint col="1" value="tax on profit on ordinary activities" id="el35.151.0" label=""/>
+	<hint col="2" value="2,461" id="el136" label=""/>
+	<hint col="3" value="4,175" id="el137" label=""/>
+	<hint col="1" value="" id="el35.152.0" label=""/>
+	<hint col="2" value="" id="el35.152.1" label=""/>
+	<hint col="3" value="" id="el35.152.2" label=""/>
+	<hint col="3" value="" id="el35.152.3" label=""/>
+	<hint col="3" value="" id="el35.152.4" label=""/>
+	<hint col="3" value="(b) factors affecting current tax charge" id="el35.152.5" label=""/>
+	<hint col="3" value="" id="el35.152.6" label="(b) factors affecting current tax charge"/>
+	<hint col="3" value="the tax assessed on the profit on ordinary activities for the year is higher than the standard rate of corporation tax in the uk of 20% (2008 - 20%)." id="el35.152.7" label=""/>
+	<hint col="3" value="" id="el35.152.8" label="the tax assessed on the profit on ordinary activities for the year is higher than the standard rate of corporation tax in the uk of 20% (2008 - 20%)."/>
+	<hint col="3" value="no provision has been made for deferred tax on gains recognised on revaluing property to its market value or on the sale of properties where potentially taxable gains have been rolled over into replacement assets.  such tax would become payable only if the property were sold without it being possible to claim tax rollover relief.  the total amount of tax that would be payable in the event of a sale is not qualifiable as the company has no plans to sell the premises in the foreseeable future." id="el35.152.9" label=""/>
+	<hint col="3" value="" id="el35.152.10" label="no provision has been made for deferred tax on gains recognised on revaluing property to its market value or on the sale of properties where potentially taxable gains have been rolled over into replacement assets.  such tax would become payable only if the property were sold without it being possible to claim tax rollover relief.  the total amount of tax that would be payable in the event of a sale is not qualifiable as the company has no plans to sell the premises in the foreseeable future."/>
+	<hint col="1" value="" id="el36.153.0" label=""/>
+	<hint col="2" value="2009" id="el36.153.1" label=""/>
+	<hint col="3" value="2008" id="el36.153.2" label=""/>
+	<hint col="1" value="" id="el36.154.0" label=""/>
+	<hint col="2" value="&#163;" id="el36.154.1" label=""/>
+	<hint col="3" value="&#163;" id="el36.154.2" label=""/>
+	<hint col="1" value="profit on ordinary activities before taxation" id="el36.155.0" label=""/>
+	<hint col="2" value="9,578" id="el36.155.1" label=""/>
+	<hint col="3" value="18,794" id="el36.155.2" label=""/>
+	<hint col="1" value="" id="el36.156.0" label=""/>
+	<hint col="2" value="" id="el36.156.1" label=""/>
+	<hint col="3" value="" id="el36.156.2" label=""/>
+	<hint col="3" value="" id="el36.156.3" label=""/>
+	<hint col="1" value="profit on ordinary activities by rate of tax" id="el37.157.0" label=""/>
+	<hint col="2" value="1,916" id="el138" label=""/>
+	<hint col="3" value="3,759" id="el139" label=""/>
+	<hint col="1" value="expenses not deductible for tax purposes" id="el37.158.0" label=""/>
+	<hint col="2" value="335" id="el37.158.1" label=""/>
+	<hint col="3" value="320" id="el37.158.2" label=""/>
+	<hint col="1" value="capital allowances for year in excess of depreciation" id="el37.159.0" label=""/>
+	<hint col="2" value="(110)" id="el37.159.1" label=""/>
+	<hint col="3" value="(125)" id="el37.159.2" label=""/>
+	<hint col="1" value="adjustments to tax charge in respect of prior years" id="el37.160.0" label=""/>
+	<hint col="2" value="(5)" id="el37.160.1" label=""/>
+	<hint col="3" value="(4)" id="el37.160.2" label=""/>
+	<hint col="1" value="" id="el37.161.0" label=""/>
+	<hint col="2" value="„„„„„„„" id="el37.161.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el37.161.2" label=""/>
+	<hint col="1" value="total current tax (note 8(a))" id="el37.162.0" label=""/>
+	<hint col="2" value="2,136" id="el37.162.1" label=""/>
+	<hint col="3" value="3,950" id="el37.162.2" label=""/>
+	<hint col="1" value="" id="el37.163.0" label=""/>
+	<hint col="2" value="" id="el37.163.1" label=""/>
+	<hint col="3" value="" id="el37.163.2" label=""/>
+	<hint col="3" value="" id="el37.163.3" label=""/>
+	<hint col="3" value="uk small limited company example client" id="el37.163.4" label=""/>
+	<hint col="3" value="" id="el37.163.5" label="uk small limited company example client"/>
+	<hint col="3" value="notes to the financial statements" id="el37.163.6" label=""/>
+	<hint col="3" value="" id="el37.163.7" label="notes to the financial statements"/>
+	<hint col="3" value="year ended 31 december 2009" id="el37.163.8" label=""/>
+	<hint col="3" value="" id="el37.163.9" label="year ended 31 december 2009"/>
+	<hint col="3" value="" id="el37.163.10" label=""/>
+	<hint col="3" value="9." id="el37.163.11" label=""/>
+	<hint col="3" value="" id="el37.163.12" label=""/>
+	<hint col="3" value="dividends" id="el37.163.13" label=""/>
+	<hint col="3" value="" id="el37.163.14" label=""/>
+	<hint col="3" value="equity dividends" id="el37.163.15" label=""/>
+	<hint col="1" value="" id="el38.164.0" label=""/>
+	<hint col="2" value="2009" id="el38.164.1" label=""/>
+	<hint col="3" value="2008" id="el38.164.2" label=""/>
+	<hint col="1" value="" id="el38.165.0" label=""/>
+	<hint col="2" value="&#163;" id="el38.165.1" label=""/>
+	<hint col="3" value="&#163;" id="el38.165.2" label=""/>
+	<hint col="3" value="" id="el38.165.3" label="&#163;"/>
+	<hint col="3" value="paid during the year:" id="el38.165.4" label=""/>
+	<hint col="1" value="dividends on equity shares" id="el39.166.0" label=""/>
+	<hint col="2" value="1,000" id="el39.166.1" label=""/>
+	<hint col="3" value="1,000" id="el39.166.2" label=""/>
+	<hint col="1" value="" id="el39.167.0" label=""/>
+	<hint col="2" value="" id="el39.167.1" label=""/>
+	<hint col="3" value="" id="el39.167.2" label=""/>
+	<hint col="3" value="" id="el39.167.3" label=""/>
+	<hint col="3" value="proposed at the year-end (recognised as a liability):" id="el39.167.4" label=""/>
+	<hint col="1" value="dividends on equity shares" id="el40.168.0" label=""/>
+	<hint col="2" value="2,750" id="el40.168.1" label=""/>
+	<hint col="3" value="2,750" id="el40.168.2" label=""/>
+	<hint col="1" value="" id="el40.169.0" label=""/>
+	<hint col="2" value="" id="el40.169.1" label=""/>
+	<hint col="3" value="" id="el40.169.2" label=""/>
+	<hint col="3" value="" id="el40.169.3" label=""/>
+	<hint col="3" value="10." id="el40.169.4" label=""/>
+	<hint col="3" value="" id="el40.169.5" label=""/>
+	<hint col="3" value="intangible fixed assets" id="el40.169.6" label=""/>
+	<hint col="1" value="" id="el41.170.0" label=""/>
+	<hint col="2" value="goodwill" id="el41.170.1" label=""/>
+	<hint col="1" value="" id="el41.171.0" label=""/>
+	<hint col="2" value="&#163;" id="el41.171.1" label=""/>
+	<hint col="1" value="" id="el41.172.0" label=""/>
+	<hint col="1" value="cost" id="el41.172.1" label=""/>
+	<hint col="1" value="at 1 january 2009 and 31 december 2009" id="el41.172.2" label=""/>
+	<hint col="2" value="10,000" id="el41.172.3" label=""/>
+	<hint col="1" value="" id="el41.173.0" label=""/>
+	<hint col="2" value="" id="el41.173.1" label=""/>
+	<hint col="2" value="" id="el41.173.2" label=""/>
+	<hint col="2" value="" id="el41.173.3" label=""/>
+	<hint col="2" value="amortisation" id="el41.173.4" label=""/>
+	<hint col="1" value="at 1 january 2009" id="el42.174.0" label=""/>
+	<hint col="2" value="4,000" id="el140" label=""/>
+	<hint col="1" value="charge for the year" id="el42.175.0" label=""/>
+	<hint col="2" value="1,000" id="el141" label=""/>
+	<hint col="1" value="" id="el42.176.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el42.176.1" label=""/>
+	<hint col="1" value="at 31 december 2009" id="el42.177.0" label=""/>
+	<hint col="2" value="5,000" id="el142" label=""/>
+	<hint col="1" value="" id="el42.178.0" label=""/>
+	<hint col="2" value="" id="el42.178.1" label=""/>
+	<hint col="2" value="" id="el42.178.2" label=""/>
+	<hint col="2" value="" id="el42.178.3" label=""/>
+	<hint col="2" value="net book value" id="el42.178.4" label=""/>
+	<hint col="1" value="at 31 december 2009" id="el43.179.0" label=""/>
+	<hint col="2" value="5,000" id="el43.179.1" label=""/>
+	<hint col="1" value="" id="el43.180.0" label=""/>
+	<hint col="2" value="" id="el43.180.1" label=""/>
+	<hint col="1" value="at 31 december 2008" id="el43.181.0" label=""/>
+	<hint col="2" value="6,000" id="el43.181.1" label=""/>
+	<hint col="1" value="" id="el43.182.0" label=""/>
+	<hint col="2" value="" id="el43.182.1" label=""/>
+	<hint col="2" value="" id="el43.182.2" label=""/>
+	<hint col="2" value="uk small limited company example client" id="el43.182.3" label=""/>
+	<hint col="2" value="" id="el43.182.4" label="uk small limited company example client"/>
+	<hint col="2" value="notes to the financial statements" id="el43.182.5" label=""/>
+	<hint col="2" value="" id="el43.182.6" label="notes to the financial statements"/>
+	<hint col="2" value="year ended 31 december 2009" id="el43.182.7" label=""/>
+	<hint col="2" value="" id="el43.182.8" label="year ended 31 december 2009"/>
+	<hint col="2" value="" id="el43.182.9" label=""/>
+	<hint col="2" value="11." id="el43.182.10" label=""/>
+	<hint col="2" value="" id="el43.182.11" label=""/>
+	<hint col="2" value="tangible fixed assets" id="el43.182.12" label=""/>
+	<hint col="1" value="" id="el44.183.0" label=""/>
+	<hint col="2" value="land and buildings" id="el44.183.1" label=""/>
+	<hint col="3" value="other plant &amp; machinery etc." id="el44.183.2" label=""/>
+	<hint col="4" value="total" id="el44.183.3" label=""/>
+	<hint col="1" value="" id="el44.184.0" label=""/>
+	<hint col="2" value="&#163;" id="el44.184.1" label=""/>
+	<hint col="3" value="&#163;" id="el44.184.2" label=""/>
+	<hint col="4" value="&#163;" id="el44.184.3" label=""/>
+	<hint col="1" value="" id="el44.185.0" label=""/>
+	<hint col="1" value="cost or valuation" id="el44.185.1" label=""/>
+	<hint col="1" value="at 1 january 2009" id="el44.185.2" label=""/>
+	<hint col="2" value="50,000" id="el44.185.3" label=""/>
+	<hint col="3" value="99,115" id="el44.185.4" label=""/>
+	<hint col="4" value="149,115" id="el143" label=""/>
+	<hint col="1" value="additions" id="el44.186.0" label=""/>
+	<hint col="2" value="-" id="el44.186.1" label=""/>
+	<hint col="3" value="30,400" id="el44.186.2" label=""/>
+	<hint col="4" value="30,400" id="el144" label=""/>
+	<hint col="1" value="disposals" id="el44.187.0" label=""/>
+	<hint col="2" value="-" id="el44.187.1" label=""/>
+	<hint col="3" value="(1,550)" id="el44.187.2" label=""/>
+	<hint col="4" value="()" id="el145" label=""/>
+	<hint col="1" value="revaluation" id="el44.188.0" label=""/>
+	<hint col="2" value="25,000" id="el44.188.1" label=""/>
+	<hint col="3" value="-" id="el44.188.2" label=""/>
+	<hint col="4" value="25,000" id="el146" label=""/>
+	<hint col="1" value="" id="el44.189.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el44.189.1" label=""/>
+	<hint col="3" value="„„„„„„„„„„" id="el44.189.2" label=""/>
+	<hint col="4" value="„„„„„„„„„„" id="el44.189.3" label=""/>
+	<hint col="1" value="at 31 december 2009" id="el44.190.0" label=""/>
+	<hint col="2" value="75,000" id="el44.190.1" label=""/>
+	<hint col="3" value="127,965" id="el44.190.2" label=""/>
+	<hint col="4" value="202,965" id="el147" label=""/>
+	<hint col="1" value="" id="el44.191.0" label=""/>
+	<hint col="2" value="" id="el44.191.1" label=""/>
+	<hint col="3" value="" id="el44.191.2" label=""/>
+	<hint col="4" value="" id="el44.191.3" label=""/>
+	<hint col="4" value="" id="el44.191.4" label=""/>
+	<hint col="4" value="" id="el44.191.5" label=""/>
+	<hint col="4" value="depreciation" id="el44.191.6" label=""/>
+	<hint col="1" value="at 1 january 2009" id="el45.192.0" label=""/>
+	<hint col="2" value="7,200" id="el45.192.1" label=""/>
+	<hint col="3" value="52,077" id="el45.192.2" label=""/>
+	<hint col="4" value="59,277" id="el148" label=""/>
+	<hint col="1" value="charge for the year" id="el45.193.0" label=""/>
+	<hint col="2" value="1,250" id="el45.193.1" label=""/>
+	<hint col="3" value="14,085" id="el45.193.2" label=""/>
+	<hint col="4" value="15,335" id="el149" label=""/>
+	<hint col="1" value="on disposals" id="el45.194.0" label=""/>
+	<hint col="2" value="-" id="el45.194.1" label=""/>
+	<hint col="3" value="(1,300)" id="el45.194.2" label=""/>
+	<hint col="4" value="()" id="el150" label=""/>
+	<hint col="1" value="revaluation adjustment" id="el45.195.0" label=""/>
+	<hint col="2" value="(5,000)" id="el45.195.1" label=""/>
+	<hint col="3" value="-" id="el45.195.2" label=""/>
+	<hint col="4" value="()" id="el151" label=""/>
+	<hint col="1" value="" id="el45.196.0" label=""/>
+	<hint col="2" value="„„„„„„„" id="el45.196.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el45.196.2" label=""/>
+	<hint col="4" value="„„„„„„„„„" id="el45.196.3" label=""/>
+	<hint col="1" value="at 31 december 2009" id="el45.197.0" label=""/>
+	<hint col="2" value="3,450" id="el45.197.1" label=""/>
+	<hint col="3" value="64,862" id="el45.197.2" label=""/>
+	<hint col="4" value="68,312" id="el152" label=""/>
+	<hint col="1" value="" id="el45.198.0" label=""/>
+	<hint col="2" value="" id="el45.198.1" label=""/>
+	<hint col="3" value="" id="el45.198.2" label=""/>
+	<hint col="4" value="" id="el45.198.3" label=""/>
+	<hint col="4" value="" id="el45.198.4" label=""/>
+	<hint col="4" value="" id="el45.198.5" label=""/>
+	<hint col="4" value="net book value" id="el45.198.6" label=""/>
+	<hint col="1" value="at 31 december 2009" id="el46.199.0" label=""/>
+	<hint col="2" value="71,550" id="el46.199.1" label=""/>
+	<hint col="3" value="63,103" id="el46.199.2" label=""/>
+	<hint col="4" value="134,653" id="el46.199.3" label=""/>
+	<hint col="1" value="" id="el46.200.0" label=""/>
+	<hint col="2" value="" id="el46.200.1" label=""/>
+	<hint col="3" value="" id="el46.200.2" label=""/>
+	<hint col="4" value="" id="el46.200.3" label=""/>
+	<hint col="1" value="at 31 december 2008" id="el46.201.0" label=""/>
+	<hint col="2" value="42,800" id="el46.201.1" label=""/>
+	<hint col="3" value="47,038" id="el46.201.2" label=""/>
+	<hint col="4" value="89,838" id="el46.201.3" label=""/>
+	<hint col="1" value="" id="el46.202.0" label=""/>
+	<hint col="2" value="" id="el46.202.1" label=""/>
+	<hint col="3" value="" id="el46.202.2" label=""/>
+	<hint col="4" value="" id="el46.202.3" label=""/>
+	<hint col="4" value="" id="el46.202.4" label=""/>
+	<hint col="4" value="the freehold land and buildings were revalued for the first time during the year by james french &amp; company, qualified surveyors and architects, on an open market basis." id="el46.202.5" label=""/>
+	<hint col="4" value="" id="el46.202.6" label="the freehold land and buildings were revalued for the first time during the year by james french &amp; company, qualified surveyors and architects, on an open market basis."/>
+	<hint col="4" value="" id="el46.202.7" label=""/>
+	<hint col="4" value="in respect of certain fixed assets stated at valuations, the comparable historical cost and depreciation values are as follows:" id="el46.202.8" label=""/>
+	<hint col="1" value="" id="el47.203.0" label=""/>
+	<hint col="2" value="2009" id="el47.203.1" label=""/>
+	<hint col="3" value="2008" id="el47.203.2" label=""/>
+	<hint col="1" value="" id="el47.204.0" label=""/>
+	<hint col="2" value="&#163;" id="el47.204.1" label=""/>
+	<hint col="3" value="&#163;" id="el47.204.2" label=""/>
+	<hint col="3" value="" id="el47.204.3" label="&#163;"/>
+	<hint col="1" value="historical cost" id="el48.205.0" label=""/>
+	<hint col="2" value="46,125" id="el153" label=""/>
+	<hint col="3" value="45,620" id="el154" label=""/>
+	<hint col="1" value="" id="el48.206.0" label=""/>
+	<hint col="2" value="" id="el48.206.1" label=""/>
+	<hint col="3" value="" id="el48.206.2" label=""/>
+	<hint col="1" value="" id="el48.207.0" label=""/>
+	<hint col="1" value="depreciation:" id="el48.207.1" label=""/>
+	<hint col="1" value="at 1 january 2009" id="el48.207.2" label=""/>
+	<hint col="2" value="3,535" id="el48.207.3" label=""/>
+	<hint col="3" value="3,450" id="el48.207.4" label=""/>
+	<hint col="1" value="aggregate depreciation on assets revalued in year" id="el48.208.0" label=""/>
+	<hint col="2" value="4,350" id="el48.208.1" label=""/>
+	<hint col="3" value="4,380" id="el48.208.2" label=""/>
+	<hint col="1" value="" id="el48.209.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el48.209.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el48.209.2" label=""/>
+	<hint col="1" value="at 31 december 2009" id="el48.210.0" label=""/>
+	<hint col="2" value="7,885" id="el155" label=""/>
+	<hint col="3" value="7,830" id="el156" label=""/>
+	<hint col="1" value="" id="el48.211.0" label=""/>
+	<hint col="2" value="" id="el48.211.1" label=""/>
+	<hint col="3" value="" id="el48.211.2" label=""/>
+	<hint col="3" value="" id="el48.211.3" label=""/>
+	<hint col="3" value="" id="el48.211.4" label=""/>
+	<hint col="3" value="net historical cost value:" id="el48.211.5" label=""/>
+	<hint col="1" value="at 31 december 2009" id="el49.212.0" label=""/>
+	<hint col="2" value="38,240" id="el49.212.1" label=""/>
+	<hint col="3" value="37,790" id="el49.212.2" label=""/>
+	<hint col="1" value="" id="el49.213.0" label=""/>
+	<hint col="2" value="" id="el49.213.1" label=""/>
+	<hint col="3" value="" id="el49.213.2" label=""/>
+	<hint col="1" value="at 1 january 2009" id="el49.214.0" label=""/>
+	<hint col="2" value="42,590" id="el49.214.1" label=""/>
+	<hint col="3" value="42,170" id="el49.214.2" label=""/>
+	<hint col="1" value="" id="el49.215.0" label=""/>
+	<hint col="2" value="" id="el49.215.1" label=""/>
+	<hint col="3" value="" id="el49.215.2" label=""/>
+	<hint col="3" value="" id="el49.215.3" label=""/>
+	<hint col="3" value="uk small limited company example client" id="el49.215.4" label=""/>
+	<hint col="3" value="" id="el49.215.5" label="uk small limited company example client"/>
+	<hint col="3" value="notes to the financial statements" id="el49.215.6" label=""/>
+	<hint col="3" value="" id="el49.215.7" label="notes to the financial statements"/>
+	<hint col="3" value="year ended 31 december 2009" id="el49.215.8" label=""/>
+	<hint col="3" value="" id="el49.215.9" label="year ended 31 december 2009"/>
+	<hint col="3" value="" id="el49.215.10" label=""/>
+	<hint col="3" value="11." id="el49.215.11" label=""/>
+	<hint col="3" value="" id="el49.215.12" label=""/>
+	<hint col="3" value="tangible fixed assets" id="el49.215.13" label=""/>
+	<hint col="3" value="(continued)" id="el49.215.14" label="tangible fixed assets"/>
+	<hint col="3" value="" id="el49.215.15" label=""/>
+	<hint col="3" value="hire purchase and finance lease agreements" id="el49.215.16" label=""/>
+	<hint col="3" value="" id="el49.215.17" label="hire purchase and finance lease agreements"/>
+	<hint col="3" value="included within the net book value of &#163;134,653 is &#163;20,815 (2008 - &#163;8,750) relating to assets held under hire purchase and finance lease agreements. the depreciation charged to the financial statements in the year in respect of such assets amounted to &#163;2,185 (2008 - &#163;970)." id="el49.215.18" label=""/>
+	<hint col="3" value="" id="el49.215.19" label="included within the net book value of &#163;134,653 is &#163;20,815 (2008 - &#163;8,750) relating to assets held under hire purchase and finance lease agreements. the depreciation charged to the financial statements in the year in respect of such assets amounted to &#163;2,185 (2008 - &#163;970)."/>
+	<hint col="3" value="" id="el49.215.20" label=""/>
+	<hint col="3" value="capital commitments" id="el49.215.21" label=""/>
+	<hint col="1" value="" id="el50.216.0" label=""/>
+	<hint col="2" value="2009" id="el50.216.1" label=""/>
+	<hint col="3" value="2008" id="el50.216.2" label=""/>
+	<hint col="1" value="" id="el50.217.0" label=""/>
+	<hint col="2" value="&#163;" id="el50.217.1" label=""/>
+	<hint col="3" value="&#163;" id="el50.217.2" label=""/>
+	<hint col="1" value="contracted but not provided for in the financial statements" id="el50.218.0" label=""/>
+	<hint col="2" value="1,285" id="el50.218.1" label=""/>
+	<hint col="3" value="625" id="el50.218.2" label=""/>
+	<hint col="1" value="" id="el50.219.0" label=""/>
+	<hint col="2" value="" id="el50.219.1" label=""/>
+	<hint col="3" value="" id="el50.219.2" label=""/>
+	<hint col="3" value="" id="el50.219.3" label=""/>
+	<hint col="3" value="12." id="el50.219.4" label=""/>
+	<hint col="3" value="" id="el50.219.5" label=""/>
+	<hint col="3" value="investments" id="el50.219.6" label=""/>
+	<hint col="1" value="" id="el51.220.0" label=""/>
+	<hint col="2" value="shares" id="el51.220.1" label=""/>
+	<hint col="3" value="property" id="el51.220.2" label=""/>
+	<hint col="4" value="total" id="el51.220.3" label=""/>
+	<hint col="1" value="" id="el51.221.0" label=""/>
+	<hint col="2" value="&#163;" id="el51.221.1" label=""/>
+	<hint col="3" value="&#163;" id="el51.221.2" label=""/>
+	<hint col="4" value="&#163;" id="el51.221.3" label=""/>
+	<hint col="1" value="" id="el51.222.0" label=""/>
+	<hint col="1" value="cost/fair value" id="el51.222.1" label=""/>
+	<hint col="1" value="balance brought forward" id="el51.222.2" label=""/>
+	<hint col="2" value="13,250" id="el51.222.3" label=""/>
+	<hint col="3" value="110,000" id="el51.222.4" label=""/>
+	<hint col="4" value="123,250" id="el51.222.5" label=""/>
+	<hint col="1" value="additions - group shares" id="el51.223.0" label=""/>
+	<hint col="2" value="1,500" id="el51.223.1" label=""/>
+	<hint col="3" value="-" id="el51.223.2" label=""/>
+	<hint col="4" value="1,500" id="el51.223.3" label=""/>
+	<hint col="1" value="" id="el51.224.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el51.224.1" label=""/>
+	<hint col="3" value="„„„„„„„„„„" id="el51.224.2" label=""/>
+	<hint col="4" value="„„„„„„„„„„" id="el51.224.3" label=""/>
+	<hint col="1" value="balance carried forward" id="el51.225.0" label=""/>
+	<hint col="2" value="14,750" id="el51.225.1" label=""/>
+	<hint col="3" value="110,000" id="el51.225.2" label=""/>
+	<hint col="4" value="124,750" id="el51.225.3" label=""/>
+	<hint col="1" value="" id="el51.226.0" label=""/>
+	<hint col="2" value="" id="el51.226.1" label=""/>
+	<hint col="3" value="" id="el51.226.2" label=""/>
+	<hint col="4" value="" id="el51.226.3" label=""/>
+	<hint col="1" value="" id="el51.227.0" label=""/>
+	<hint col="1" value="net book value" id="el51.227.1" label=""/>
+	<hint col="1" value="balance carried forward" id="el51.227.2" label=""/>
+	<hint col="2" value="14,750" id="el51.227.3" label=""/>
+	<hint col="3" value="110,000" id="el51.227.4" label=""/>
+	<hint col="4" value="124,750" id="el51.227.5" label=""/>
+	<hint col="1" value="" id="el51.228.0" label=""/>
+	<hint col="2" value="" id="el51.228.1" label=""/>
+	<hint col="3" value="" id="el51.228.2" label=""/>
+	<hint col="4" value="" id="el51.228.3" label=""/>
+	<hint col="1" value="balance brought forward" id="el51.229.0" label=""/>
+	<hint col="2" value="13,250" id="el51.229.1" label=""/>
+	<hint col="3" value="110,000" id="el51.229.2" label=""/>
+	<hint col="4" value="123,250" id="el51.229.3" label=""/>
+	<hint col="1" value="" id="el51.230.0" label=""/>
+	<hint col="2" value="" id="el51.230.1" label=""/>
+	<hint col="3" value="" id="el51.230.2" label=""/>
+	<hint col="4" value="" id="el51.230.3" label=""/>
+	<hint col="4" value="" id="el51.230.4" label=""/>
+	<hint col="4" value="the value of the investment property, which has been included at the cost in 2004, has been considered by the directors.  the directors believe this to be an appropriate value due to the depressed state of the rental market in the area where the property is situated." id="el51.230.5" label=""/>
+	<hint col="4" value="" id="el51.230.6" label="the value of the investment property, which has been included at the cost in 2004, has been considered by the directors.  the directors believe this to be an appropriate value due to the depressed state of the rental market in the area where the property is situated."/>
+	<hint col="4" value="13." id="el51.230.7" label=""/>
+	<hint col="4" value="" id="el51.230.8" label=""/>
+	<hint col="4" value="stocks" id="el51.230.9" label=""/>
+	<hint col="1" value="" id="el52.231.0" label=""/>
+	<hint col="2" value="2009" id="el52.231.1" label=""/>
+	<hint col="3" value="2008" id="el52.231.2" label=""/>
+	<hint col="1" value="" id="el52.232.0" label=""/>
+	<hint col="2" value="&#163;" id="el52.232.1" label=""/>
+	<hint col="3" value="&#163;" id="el52.232.2" label=""/>
+	<hint col="1" value="work in progress" id="el52.233.0" label=""/>
+	<hint col="2" value="9,985" id="el157" label=""/>
+	<hint col="3" value="9,858" id="el158" label=""/>
+	<hint col="1" value="finished goods" id="el52.234.0" label=""/>
+	<hint col="2" value="34,685" id="el159" label=""/>
+	<hint col="3" value="33,653" id="el160" label=""/>
+	<hint col="1" value="" id="el52.235.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el52.235.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el52.235.2" label=""/>
+	<hint col="1" value="" id="el52.236.0" label=""/>
+	<hint col="2" value="44,670" id="el52.236.1" label=""/>
+	<hint col="3" value="43,511" id="el52.236.2" label=""/>
+	<hint col="1" value="" id="el52.237.0" label=""/>
+	<hint col="2" value="" id="el52.237.1" label=""/>
+	<hint col="3" value="" id="el52.237.2" label=""/>
+	<hint col="3" value="" id="el52.237.3" label=""/>
+	<hint col="3" value="" id="el161" label=""/>
+	<hint col="3" value="" id="el52.237.4" label=""/>
+	<hint col="3" value="uk small limited company example client" id="el52.237.5" label=""/>
+	<hint col="3" value="" id="el52.237.6" label="uk small limited company example client"/>
+	<hint col="3" value="notes to the financial statements" id="el52.237.7" label=""/>
+	<hint col="3" value="" id="el52.237.8" label="notes to the financial statements"/>
+	<hint col="3" value="year ended 31 december 2009" id="el52.237.9" label=""/>
+	<hint col="3" value="" id="el52.237.10" label="year ended 31 december 2009"/>
+	<hint col="3" value="" id="el52.237.11" label=""/>
+	<hint col="3" value="14." id="el52.237.12" label=""/>
+	<hint col="3" value="" id="el52.237.13" label=""/>
+	<hint col="3" value="other debtors" id="el52.237.14" label=""/>
+	<hint col="1" value="" id="el53.238.0" label=""/>
+	<hint col="2" value="2009" id="el53.238.1" label=""/>
+	<hint col="3" value="2008" id="el53.238.2" label=""/>
+	<hint col="1" value="" id="el53.239.0" label=""/>
+	<hint col="2" value="&#163;" id="el53.239.1" label=""/>
+	<hint col="3" value="&#163;" id="el53.239.2" label=""/>
+	<hint col="1" value="trade debtors" id="el53.240.0" label=""/>
+	<hint col="2" value="3,933" id="el53.240.1" label=""/>
+	<hint col="3" value="3,828" id="el53.240.2" label=""/>
+	<hint col="1" value="amounts recoverable on contracts" id="el53.241.0" label=""/>
+	<hint col="2" value="10,037" id="el53.241.1" label=""/>
+	<hint col="3" value="10,015" id="el53.241.2" label=""/>
+	<hint col="1" value="director&apos;s current account" id="el53.242.0" label=""/>
+	<hint col="2" value="1,760" id="el53.242.1" label=""/>
+	<hint col="3" value="1,745" id="el53.242.2" label=""/>
+	<hint col="1" value="other debtors" id="el53.243.0" label=""/>
+	<hint col="2" value="680" id="el53.243.1" label=""/>
+	<hint col="3" value="350" id="el53.243.2" label=""/>
+	<hint col="1" value="called up share capital not paid" id="el53.244.0" label=""/>
+	<hint col="2" value="685" id="el53.244.1" label=""/>
+	<hint col="3" value="-" id="el53.244.2" label=""/>
+	<hint col="1" value="" id="el53.245.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el53.245.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el53.245.2" label=""/>
+	<hint col="1" value="" id="el53.246.0" label=""/>
+	<hint col="2" value="17,095" id="el162" label=""/>
+	<hint col="3" value="15,938" id="el163" label=""/>
+	<hint col="1" value="" id="el53.247.0" label=""/>
+	<hint col="2" value="" id="el53.247.1" label=""/>
+	<hint col="3" value="" id="el53.247.2" label=""/>
+	<hint col="3" value="" id="el53.247.3" label=""/>
+	<hint col="3" value="included in other debtors are amounts of &#163;680 (2008 - &#163;350) paid as deposits on consignment stocks." id="el53.247.4" label=""/>
+	<hint col="3" value="" id="el53.247.5" label="included in other debtors are amounts of &#163;680 (2008 - &#163;350) paid as deposits on consignment stocks."/>
+	<hint col="3" value="15." id="el53.247.6" label=""/>
+	<hint col="3" value="" id="el53.247.7" label=""/>
+	<hint col="3" value="creditors:" id="el53.247.8" label=""/>
+	<hint col="3" value="amounts falling due within one year" id="el53.247.9" label="creditors:"/>
+	<hint col="1" value="" id="el54.248.0" label=""/>
+	<hint col="2" value="2009" id="el54.248.1" label=""/>
+	<hint col="3" value="2008" id="el54.248.2" label=""/>
+	<hint col="1" value="" id="el54.249.0" label=""/>
+	<hint col="2" value="&#163;" id="el54.249.1" label=""/>
+	<hint col="3" value="&#163;" id="el54.249.2" label=""/>
+	<hint col="1" value="bank loans" id="el54.250.0" label=""/>
+	<hint col="2" value="2,000" id="el54.250.1" label=""/>
+	<hint col="3" value="2,000" id="el54.250.2" label=""/>
+	<hint col="1" value="trade creditors" id="el54.251.0" label=""/>
+	<hint col="2" value="9,120" id="el164" label=""/>
+	<hint col="3" value="9,125" id="el165" label=""/>
+	<hint col="1" value="corporation tax" id="el54.252.0" label=""/>
+	<hint col="2" value="932" id="el166" label=""/>
+	<hint col="3" value="4,932" id="el167" label=""/>
+	<hint col="1" value="other taxation and social security" id="el54.253.0" label=""/>
+	<hint col="2" value="3,046" id="el168" label=""/>
+	<hint col="3" value="3,124" id="el169" label=""/>
+	<hint col="1" value="hire purchase and finance lease agreements" id="el54.254.0" label=""/>
+	<hint col="2" value="2,750" id="el54.254.1" label=""/>
+	<hint col="3" value="2,750" id="el54.254.2" label=""/>
+	<hint col="1" value="other creditors" id="el54.255.0" label=""/>
+	<hint col="2" value="4,000" id="el170" label=""/>
+	<hint col="3" value="3,750" id="el171" label=""/>
+	<hint col="1" value="" id="el54.256.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el54.256.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el54.256.2" label=""/>
+	<hint col="1" value="" id="el54.257.0" label=""/>
+	<hint col="2" value="21,848" id="el54.257.1" label=""/>
+	<hint col="3" value="25,681" id="el54.257.2" label=""/>
+	<hint col="1" value="" id="el54.258.0" label=""/>
+	<hint col="2" value="" id="el54.258.1" label=""/>
+	<hint col="3" value="" id="el54.258.2" label=""/>
+	<hint col="3" value="" id="el54.258.3" label=""/>
+	<hint col="3" value="the following liabilities disclosed under creditors falling due within one year are secured by the company:" id="el54.258.4" label=""/>
+	<hint col="3" value="" id="el54.258.5" label="the following liabilities disclosed under creditors falling due within one year are secured by the company:"/>
+	<hint col="1" value="" id="el55.259.0" label=""/>
+	<hint col="2" value="2009" id="el55.259.1" label=""/>
+	<hint col="3" value="2008" id="el55.259.2" label=""/>
+	<hint col="1" value="" id="el55.260.0" label=""/>
+	<hint col="2" value="&#163;" id="el55.260.1" label=""/>
+	<hint col="3" value="&#163;" id="el55.260.2" label=""/>
+	<hint col="1" value="bank loans" id="el55.261.0" label=""/>
+	<hint col="2" value="2,000" id="el55.261.1" label=""/>
+	<hint col="3" value="2,000" id="el55.261.2" label=""/>
+	<hint col="1" value="hire purchase agreements" id="el55.262.0" label=""/>
+	<hint col="2" value="2,750" id="el55.262.1" label=""/>
+	<hint col="3" value="2,750" id="el55.262.2" label=""/>
+	<hint col="1" value="" id="el55.263.0" label=""/>
+	<hint col="2" value="„„„„„„„" id="el55.263.1" label=""/>
+	<hint col="3" value="„„„„„„„" id="el55.263.2" label=""/>
+	<hint col="1" value="" id="el55.264.0" label=""/>
+	<hint col="2" value="4,750" id="el55.264.1" label=""/>
+	<hint col="3" value="4,750" id="el55.264.2" label=""/>
+	<hint col="1" value="" id="el55.265.0" label=""/>
+	<hint col="2" value="" id="el55.265.1" label=""/>
+	<hint col="3" value="" id="el55.265.2" label=""/>
+	<hint col="3" value="" id="el55.265.3" label=""/>
+	<hint col="3" value="16." id="el55.265.4" label=""/>
+	<hint col="3" value="" id="el55.265.5" label=""/>
+	<hint col="3" value="creditors:" id="el55.265.6" label=""/>
+	<hint col="3" value="amounts falling due after more than one year" id="el55.265.7" label="creditors:"/>
+	<hint col="1" value="" id="el56.266.0" label=""/>
+	<hint col="2" value="2009" id="el56.266.1" label=""/>
+	<hint col="3" value="2008" id="el56.266.2" label=""/>
+	<hint col="1" value="" id="el56.267.0" label=""/>
+	<hint col="2" value="&#163;" id="el56.267.1" label=""/>
+	<hint col="3" value="&#163;" id="el56.267.2" label=""/>
+	<hint col="1" value="bank loans and overdrafts" id="el56.268.0" label=""/>
+	<hint col="2" value="6,000" id="el56.268.1" label=""/>
+	<hint col="3" value="3,500" id="el56.268.2" label=""/>
+	<hint col="1" value="hire purchase and finance lease agreements" id="el56.269.0" label=""/>
+	<hint col="2" value="6,250" id="el56.269.1" label=""/>
+	<hint col="3" value="3,750" id="el56.269.2" label=""/>
+	<hint col="1" value="6% redeemable preference shares" id="el56.270.0" label=""/>
+	<hint col="2" value="5,000" id="el56.270.1" label=""/>
+	<hint col="3" value="5,000" id="el56.270.2" label=""/>
+	<hint col="1" value="" id="el56.271.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el56.271.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el56.271.2" label=""/>
+	<hint col="1" value="" id="el56.272.0" label=""/>
+	<hint col="2" value="17,250" id="el56.272.1" label=""/>
+	<hint col="3" value="12,250" id="el56.272.2" label=""/>
+	<hint col="1" value="" id="el56.273.0" label=""/>
+	<hint col="2" value="" id="el56.273.1" label=""/>
+	<hint col="3" value="" id="el56.273.2" label=""/>
+	<hint col="3" value="" id="el56.273.3" label=""/>
+	<hint col="3" value="uk small limited company example client" id="el56.273.4" label=""/>
+	<hint col="3" value="" id="el56.273.5" label="uk small limited company example client"/>
+	<hint col="3" value="notes to the financial statements" id="el56.273.6" label=""/>
+	<hint col="3" value="" id="el56.273.7" label="notes to the financial statements"/>
+	<hint col="3" value="year ended 31 december 2009" id="el56.273.8" label=""/>
+	<hint col="3" value="" id="el56.273.9" label="year ended 31 december 2009"/>
+	<hint col="3" value="" id="el56.273.10" label=""/>
+	<hint col="3" value="16." id="el56.273.11" label=""/>
+	<hint col="3" value="" id="el56.273.12" label=""/>
+	<hint col="3" value="creditors:" id="el56.273.13" label=""/>
+	<hint col="3" value="amounts falling due after more than one year" id="el56.273.14" label="creditors:"/>
+	<hint col="3" value="(continued)" id="el56.273.15" label="amounts falling due after more than one year"/>
+	<hint col="3" value="the following liabilities disclosed under creditors falling due after more than one year are secured by the company:" id="el56.273.16" label=""/>
+	<hint col="3" value="" id="el56.273.17" label="the following liabilities disclosed under creditors falling due after more than one year are secured by the company:"/>
+	<hint col="1" value="" id="el57.274.0" label=""/>
+	<hint col="2" value="2009" id="el57.274.1" label=""/>
+	<hint col="3" value="2008" id="el57.274.2" label=""/>
+	<hint col="1" value="" id="el57.275.0" label=""/>
+	<hint col="2" value="&#163;" id="el57.275.1" label=""/>
+	<hint col="3" value="&#163;" id="el57.275.2" label=""/>
+	<hint col="1" value="bank loans and overdrafts" id="el57.276.0" label=""/>
+	<hint col="2" value="6,000" id="el57.276.1" label=""/>
+	<hint col="3" value="3,500" id="el57.276.2" label=""/>
+	<hint col="1" value="hire purchase agreements" id="el57.277.0" label=""/>
+	<hint col="2" value="5,250" id="el57.277.1" label=""/>
+	<hint col="3" value="3,750" id="el57.277.2" label=""/>
+	<hint col="1" value="" id="el57.278.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el57.278.1" label=""/>
+	<hint col="3" value="„„„„„„„" id="el57.278.2" label=""/>
+	<hint col="1" value="" id="el57.279.0" label=""/>
+	<hint col="2" value="11,250" id="el57.279.1" label=""/>
+	<hint col="3" value="7,250" id="el57.279.2" label=""/>
+	<hint col="1" value="" id="el57.280.0" label=""/>
+	<hint col="2" value="" id="el57.280.1" label=""/>
+	<hint col="3" value="" id="el57.280.2" label=""/>
+	<hint col="3" value="" id="el57.280.3" label=""/>
+	<hint col="3" value="the bank has a floating charge over the company&apos;s assets to secure the bank loan.  the loans in respect of the hire purchase agreements are secured against the assets to which they relate." id="el57.280.4" label=""/>
+	<hint col="3" value="" id="el57.280.5" label="the bank has a floating charge over the company&apos;s assets to secure the bank loan.  the loans in respect of the hire purchase agreements are secured against the assets to which they relate."/>
+	<hint col="3" value="none of the amounts due after more than one year are due after more than five years." id="el57.280.6" label=""/>
+	<hint col="3" value="" id="el57.280.7" label="none of the amounts due after more than one year are due after more than five years."/>
+	<hint col="3" value="17." id="el57.280.8" label=""/>
+	<hint col="3" value="" id="el57.280.9" label=""/>
+	<hint col="3" value="pensions" id="el57.280.10" label=""/>
+	<hint col="3" value="the company operates a defined contribution pension scheme.  the contributions for the period amounted to &#163;5,635 (2008 - &#163;4,560).  there were no prepayments or accruals at the end of the year and the comparative year." id="el57.280.11" label=""/>
+	<hint col="3" value="" id="el57.280.12" label="the company operates a defined contribution pension scheme.  the contributions for the period amounted to &#163;5,635 (2008 - &#163;4,560).  there were no prepayments or accruals at the end of the year and the comparative year."/>
+	<hint col="3" value="18." id="el57.280.13" label=""/>
+	<hint col="3" value="" id="el57.280.14" label=""/>
+	<hint col="3" value="deferred taxation" id="el57.280.15" label=""/>
+	<hint col="3" value="the movement in the deferred taxation provision during the year was:" id="el57.280.16" label=""/>
+	<hint col="3" value="" id="el57.280.17" label="the movement in the deferred taxation provision during the year was:"/>
+	<hint col="1" value="" id="el58.281.0" label=""/>
+	<hint col="2" value="2009" id="el58.281.1" label=""/>
+	<hint col="3" value="2008" id="el58.281.2" label=""/>
+	<hint col="1" value="" id="el58.282.0" label=""/>
+	<hint col="2" value="&#163;" id="el58.282.1" label=""/>
+	<hint col="3" value="&#163;" id="el58.282.2" label=""/>
+	<hint col="1" value="provision brought forward" id="el58.283.0" label=""/>
+	<hint col="2" value="605" id="el58.283.1" label=""/>
+	<hint col="3" value="380" id="el58.283.2" label=""/>
+	<hint col="1" value="profit and loss account movement arising during the year" id="el58.284.0" label=""/>
+	<hint col="2" value="325" id="el58.284.1" label=""/>
+	<hint col="3" value="225" id="el58.284.2" label=""/>
+	<hint col="1" value="" id="el58.285.0" label=""/>
+	<hint col="2" value="„„„„" id="el58.285.1" label=""/>
+	<hint col="3" value="„„„„" id="el58.285.2" label=""/>
+	<hint col="1" value="provision carried forward" id="el58.286.0" label=""/>
+	<hint col="2" value="930" id="el58.286.1" label=""/>
+	<hint col="3" value="605" id="el58.286.2" label=""/>
+	<hint col="1" value="" id="el58.287.0" label=""/>
+	<hint col="2" value="" id="el58.287.1" label=""/>
+	<hint col="3" value="" id="el58.287.2" label=""/>
+	<hint col="3" value="" id="el58.287.3" label=""/>
+	<hint col="3" value="the provision for deferred taxation consists of the tax effect of timing differences in respect of:" id="el58.287.4" label=""/>
+	<hint col="3" value="" id="el58.287.5" label="the provision for deferred taxation consists of the tax effect of timing differences in respect of:"/>
+	<hint col="1" value="" id="el59.288.0" label=""/>
+	<hint col="2" value="2009" id="el59.288.1" label=""/>
+	<hint col="3" value="2008" id="el59.288.2" label=""/>
+	<hint col="1" value="" id="el59.289.0" label=""/>
+	<hint col="2" value="&#163;" id="el59.289.1" label=""/>
+	<hint col="3" value="&#163;" id="el59.289.2" label=""/>
+	<hint col="1" value="excess of taxation allowances over depreciation on fixed assets" id="el59.290.0" label=""/>
+	<hint col="2" value="930" id="el59.290.1" label=""/>
+	<hint col="3" value="605" id="el59.290.2" label=""/>
+	<hint col="1" value="" id="el59.291.0" label=""/>
+	<hint col="2" value="„„„„" id="el59.291.1" label=""/>
+	<hint col="3" value="„„„„" id="el59.291.2" label=""/>
+	<hint col="1" value="" id="el59.292.0" label=""/>
+	<hint col="2" value="930" id="el59.292.1" label=""/>
+	<hint col="3" value="605" id="el59.292.2" label=""/>
+	<hint col="1" value="" id="el59.293.0" label=""/>
+	<hint col="2" value="" id="el59.293.1" label=""/>
+	<hint col="3" value="" id="el59.293.2" label=""/>
+	<hint col="3" value="" id="el59.293.3" label=""/>
+	<hint col="3" value="uk small limited company example client" id="el59.293.4" label=""/>
+	<hint col="3" value="" id="el59.293.5" label="uk small limited company example client"/>
+	<hint col="3" value="notes to the financial statements" id="el59.293.6" label=""/>
+	<hint col="3" value="" id="el59.293.7" label="notes to the financial statements"/>
+	<hint col="3" value="year ended 31 december 2009" id="el59.293.8" label=""/>
+	<hint col="3" value="" id="el59.293.9" label="year ended 31 december 2009"/>
+	<hint col="3" value="" id="el59.293.10" label=""/>
+	<hint col="3" value="19." id="el59.293.11" label=""/>
+	<hint col="3" value="" id="el59.293.12" label=""/>
+	<hint col="3" value="government grants" id="el59.293.13" label=""/>
+	<hint col="1" value="" id="el60.294.0" label=""/>
+	<hint col="2" value="2009" id="el60.294.1" label=""/>
+	<hint col="3" value="2008" id="el60.294.2" label=""/>
+	<hint col="1" value="" id="el60.295.0" label=""/>
+	<hint col="2" value="&#163;" id="el60.295.1" label=""/>
+	<hint col="3" value="&#163;" id="el60.295.2" label=""/>
+	<hint col="1" value="received and receivable:" id="el60.296.0" label=""/>
+	<hint col="2" value="" id="el60.296.1" label=""/>
+	<hint col="3" value="" id="el60.296.2" label=""/>
+	<hint col="1" value="at 1 january 2009" id="el60.297.0" label=""/>
+	<hint col="2" value="5,500" id="el60.297.1" label=""/>
+	<hint col="3" value="4,500" id="el60.297.2" label=""/>
+	<hint col="1" value="receivable during year" id="el60.298.0" label=""/>
+	<hint col="2" value="1,500" id="el60.298.1" label=""/>
+	<hint col="3" value="1,000" id="el60.298.2" label=""/>
+	<hint col="1" value="" id="el60.299.0" label=""/>
+	<hint col="2" value="„„„„„„„" id="el60.299.1" label=""/>
+	<hint col="3" value="„„„„„„„" id="el60.299.2" label=""/>
+	<hint col="1" value="at 31 december 2009" id="el60.300.0" label=""/>
+	<hint col="2" value="7,000" id="el60.300.1" label=""/>
+	<hint col="3" value="5,500" id="el60.300.2" label=""/>
+	<hint col="1" value="" id="el60.301.0" label=""/>
+	<hint col="2" value="" id="el60.301.1" label=""/>
+	<hint col="3" value="" id="el60.301.2" label=""/>
+	<hint col="1" value="" id="el60.302.0" label=""/>
+	<hint col="2" value="" id="el60.302.1" label=""/>
+	<hint col="3" value="" id="el60.302.2" label=""/>
+	<hint col="1" value="amortisation:" id="el60.303.0" label=""/>
+	<hint col="2" value="" id="el60.303.1" label=""/>
+	<hint col="3" value="" id="el60.303.2" label=""/>
+	<hint col="1" value="at 1 january 2009" id="el60.304.0" label=""/>
+	<hint col="2" value="3,900" id="el60.304.1" label=""/>
+	<hint col="3" value="3,000" id="el60.304.2" label=""/>
+	<hint col="1" value="credit to profit and loss account" id="el60.305.0" label=""/>
+	<hint col="2" value="900" id="el60.305.1" label=""/>
+	<hint col="3" value="900" id="el60.305.2" label=""/>
+	<hint col="1" value="" id="el60.306.0" label=""/>
+	<hint col="2" value="„„„„„„„" id="el60.306.1" label=""/>
+	<hint col="3" value="„„„„„„„" id="el60.306.2" label=""/>
+	<hint col="1" value="at 31 december 2009" id="el60.307.0" label=""/>
+	<hint col="2" value="4,800" id="el60.307.1" label=""/>
+	<hint col="3" value="3,900" id="el60.307.2" label=""/>
+	<hint col="1" value="" id="el60.308.0" label=""/>
+	<hint col="2" value="" id="el60.308.1" label=""/>
+	<hint col="3" value="" id="el60.308.2" label=""/>
+	<hint col="1" value="" id="el60.309.0" label=""/>
+	<hint col="2" value="" id="el60.309.1" label=""/>
+	<hint col="3" value="" id="el60.309.2" label=""/>
+	<hint col="1" value="net balance at 31 december 2009" id="el60.310.0" label=""/>
+	<hint col="2" value="2,200" id="el60.310.1" label=""/>
+	<hint col="3" value="1,600" id="el60.310.2" label=""/>
+	<hint col="1" value="" id="el60.311.0" label=""/>
+	<hint col="2" value="" id="el60.311.1" label=""/>
+	<hint col="3" value="" id="el60.311.2" label=""/>
+	<hint col="3" value="" id="el60.311.3" label=""/>
+	<hint col="3" value="20." id="el60.311.4" label=""/>
+	<hint col="3" value="" id="el60.311.5" label=""/>
+	<hint col="3" value="accruals and deferred income" id="el60.311.6" label=""/>
+	<hint col="1" value="" id="el61.312.0" label=""/>
+	<hint col="2" value="2009" id="el61.312.1" label=""/>
+	<hint col="3" value="2008" id="el61.312.2" label=""/>
+	<hint col="1" value="" id="el61.313.0" label=""/>
+	<hint col="2" value="&#163;" id="el61.313.1" label=""/>
+	<hint col="3" value="&#163;" id="el61.313.2" label=""/>
+	<hint col="1" value="falling due within one year:" id="el61.314.0" label=""/>
+	<hint col="2" value="" id="el61.314.1" label=""/>
+	<hint col="3" value="" id="el61.314.2" label=""/>
+	<hint col="1" value="accruals and deferred income" id="el61.315.0" label=""/>
+	<hint col="2" value="951" id="el61.315.1" label=""/>
+	<hint col="3" value="973" id="el61.315.2" label=""/>
+	<hint col="1" value="" id="el61.316.0" label=""/>
+	<hint col="2" value="" id="el61.316.1" label=""/>
+	<hint col="3" value="" id="el61.316.2" label=""/>
+	<hint col="3" value="" id="el61.316.3" label=""/>
+	<hint col="3" value="21." id="el61.316.4" label=""/>
+	<hint col="3" value="" id="el61.316.5" label=""/>
+	<hint col="3" value="contingencies" id="el61.316.6" label=""/>
+	<hint col="3" value="a previous employee of the company is currently suing for unfair dismissal.  the directors do not believe that this action will be successful, this opinion being based on legal advice which has been received; hence no provision has been made in these accounts for any award that may be made." id="el61.316.7" label=""/>
+	<hint col="3" value="" id="el61.316.8" label="a previous employee of the company is currently suing for unfair dismissal.  the directors do not believe that this action will be successful, this opinion being based on legal advice which has been received; hence no provision has been made in these accounts for any award that may be made."/>
+	<hint col="3" value="22." id="el61.316.9" label=""/>
+	<hint col="3" value="" id="el61.316.10" label=""/>
+	<hint col="3" value="transactions with the directors" id="el61.316.11" label=""/>
+	<hint col="3" value="during the year the company purchased goods amounting to &#163;15,015 (2006 - &#163;14,765) from blue glass limited a company in which mr a. arthur has a controlling interest.  these goods were purchased on an arms length basis.  there were no amounts outstanding to or from the company at the current or comparative period ends." id="el61.316.12" label=""/>
+	<hint col="3" value="" id="el61.316.13" label="during the year the company purchased goods amounting to &#163;15,015 (2006 - &#163;14,765) from blue glass limited a company in which mr a. arthur has a controlling interest.  these goods were purchased on an arms length basis.  there were no amounts outstanding to or from the company at the current or comparative period ends."/>
+	<hint col="3" value="23." id="el61.316.14" label=""/>
+	<hint col="3" value="" id="el61.316.15" label=""/>
+	<hint col="3" value="related party transactions" id="el61.316.16" label=""/>
+	<hint col="3" value="the ultimate controlling party was mr a. arthur, a director and member of the company." id="el61.316.17" label=""/>
+	<hint col="3" value="" id="el61.316.18" label="the ultimate controlling party was mr a. arthur, a director and member of the company."/>
+	<hint col="3" value="included in other debtors is an amount owing by the company to one of the directors.  this was an advance of &#163;1,750 made to mr a. arthur, a director of the company to provide funds for overseas travel expenses he expected to incur on company business.  this trip was completed shortly after the year end and the director has repaid the advance in full.  the balance represents the highest amount outstanding in the year." id="el61.316.19" label=""/>
+	<hint col="3" value="" id="el61.316.20" label="included in other debtors is an amount owing by the company to one of the directors.  this was an advance of &#163;1,750 made to mr a. arthur, a director of the company to provide funds for overseas travel expenses he expected to incur on company business.  this trip was completed shortly after the year end and the director has repaid the advance in full.  the balance represents the highest amount outstanding in the year."/>
+	<hint col="3" value="uk small limited company example client" id="el61.316.21" label=""/>
+	<hint col="3" value="" id="el61.316.22" label="uk small limited company example client"/>
+	<hint col="3" value="notes to the financial statements" id="el61.316.23" label=""/>
+	<hint col="3" value="" id="el61.316.24" label="notes to the financial statements"/>
+	<hint col="3" value="year ended 31 december 2009" id="el61.316.25" label=""/>
+	<hint col="3" value="" id="el61.316.26" label="year ended 31 december 2009"/>
+	<hint col="3" value="" id="el61.316.27" label=""/>
+	<hint col="3" value="24." id="el61.316.28" label=""/>
+	<hint col="3" value="" id="el61.316.29" label=""/>
+	<hint col="3" value="share capital" id="el61.316.30" label=""/>
+	<hint col="3" value="" id="el61.316.31" label=""/>
+	<hint col="3" value="authorised share capital:" id="el61.316.32" label=""/>
+	<hint col="3" value="" id="el61.316.33" label="authorised share capital:"/>
+	<hint col="1" value="" id="el62.317.0" label=""/>
+	<hint col="2" value="2009" id="el62.317.1" label=""/>
+	<hint col="3" value="2008" id="el62.317.2" label=""/>
+	<hint col="1" value="" id="el62.318.0" label=""/>
+	<hint col="2" value="&#163;" id="el62.318.1" label=""/>
+	<hint col="3" value="&#163;" id="el62.318.2" label=""/>
+	<hint col="1" value="250,000 ordinary shares of &#163;1 each" id="el62.319.0" label=""/>
+	<hint col="2" value="250,000" id="el62.319.1" label=""/>
+	<hint col="3" value="250,000" id="el62.319.2" label=""/>
+	<hint col="1" value="100,000 redeemable preference shares of &#163;1 each" id="el62.320.0" label=""/>
+	<hint col="2" value="100,000" id="el62.320.1" label=""/>
+	<hint col="3" value="100,000" id="el62.320.2" label=""/>
+	<hint col="1" value="" id="el62.321.0" label=""/>
+	<hint col="2" value="„„„„„„„„„„" id="el62.321.1" label=""/>
+	<hint col="3" value="„„„„„„„„„„" id="el62.321.2" label=""/>
+	<hint col="1" value="" id="el62.322.0" label=""/>
+	<hint col="2" value="350,000" id="el62.322.1" label=""/>
+	<hint col="3" value="350,000" id="el62.322.2" label=""/>
+	<hint col="1" value="" id="el62.323.0" label=""/>
+	<hint col="2" value="" id="el62.323.1" label=""/>
+	<hint col="3" value="" id="el62.323.2" label=""/>
+	<hint col="3" value="" id="el62.323.3" label=""/>
+	<hint col="3" value="" id="el62.323.4" label=""/>
+	<hint col="3" value="allotted and called up:" id="el62.323.5" label=""/>
+	<hint col="3" value="" id="el62.323.6" label="allotted and called up:"/>
+	<hint col="1" value="" id="el63.324.0" label=""/>
+	<hint col="2" value="2009" id="el63.324.1" label=""/>
+	<hint col="2" value="" id="el63.324.2" label=""/>
+	<hint col="3" value="2008" id="el63.324.3" label=""/>
+	<hint col="1" value="" id="el63.325.0" label=""/>
+	<hint col="2" value="no" id="el63.325.1" label=""/>
+	<hint col="3" value="&#163;" id="el63.325.2" label=""/>
+	<hint col="4" value="no" id="el63.325.3" label=""/>
+	<hint col="5" value="&#163;" id="el63.325.4" label=""/>
+	<hint col="1" value="10,000 ordinary shares of &#163;1 each" id="el63.326.0" label=""/>
+	<hint col="2" value="10,000" id="el63.326.1" label=""/>
+	<hint col="3" value="10,000" id="el63.326.2" label=""/>
+	<hint col="4" value="10,000" id="el63.326.3" label=""/>
+	<hint col="5" value="10,000" id="el63.326.4" label=""/>
+	<hint col="1" value="5,000 redeemable preference shares of &#163;1 each" id="el63.327.0" label=""/>
+	<hint col="2" value="5,000" id="el63.327.1" label=""/>
+	<hint col="3" value="5,000" id="el63.327.2" label=""/>
+	<hint col="4" value="5,000" id="el63.327.3" label=""/>
+	<hint col="5" value="5,000" id="el63.327.4" label=""/>
+	<hint col="1" value="" id="el63.328.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el63.328.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el63.328.2" label=""/>
+	<hint col="4" value="„„„„„„„„„" id="el63.328.3" label=""/>
+	<hint col="5" value="„„„„„„„„„" id="el63.328.4" label=""/>
+	<hint col="1" value="" id="el63.329.0" label=""/>
+	<hint col="2" value="15,000" id="el63.329.1" label=""/>
+	<hint col="3" value="15,000" id="el63.329.2" label=""/>
+	<hint col="4" value="15,000" id="el63.329.3" label=""/>
+	<hint col="5" value="15,000" id="el63.329.4" label=""/>
+	<hint col="1" value="" id="el63.330.0" label=""/>
+	<hint col="2" value="" id="el63.330.1" label=""/>
+	<hint col="3" value="" id="el63.330.2" label=""/>
+	<hint col="4" value="" id="el63.330.3" label=""/>
+	<hint col="5" value="" id="el63.330.4" label=""/>
+	<hint col="5" value="" id="el63.331.0" label=""/>
+	<hint col="1" value="" id="el64.332.0" label=""/>
+	<hint col="2" value="2009" id="el64.332.1" label=""/>
+	<hint col="3" value="2008" id="el64.332.2" label=""/>
+	<hint col="1" value="amounts presented in equity:" id="el64.333.0" label=""/>
+	<hint col="2" value="&#163;" id="el64.333.1" label=""/>
+	<hint col="3" value="&#163;" id="el64.333.2" label=""/>
+	<hint col="1" value="10,000 ordinary shares of &#163;1 each" id="el64.334.0" label=""/>
+	<hint col="2" value="10,000" id="el64.334.1" label=""/>
+	<hint col="3" value="10,000" id="el64.334.2" label=""/>
+	<hint col="1" value="" id="el64.335.0" label=""/>
+	<hint col="2" value="" id="el64.335.1" label=""/>
+	<hint col="3" value="" id="el64.335.2" label=""/>
+	<hint col="3" value="" id="el64.335.3" label=""/>
+	<hint col="3" value="" id="el64.335.4" label=""/>
+	<hint col="3" value="amounts presented in liabilities:" id="el64.335.5" label=""/>
+	<hint col="1" value="5,000 redeemable preference shares of &#163;1 each" id="el65.336.0" label=""/>
+	<hint col="2" value="5,000" id="el65.336.1" label=""/>
+	<hint col="3" value="5,000" id="el65.336.2" label=""/>
+	<hint col="1" value="" id="el65.337.0" label=""/>
+	<hint col="2" value="" id="el65.337.1" label=""/>
+	<hint col="3" value="" id="el65.337.2" label=""/>
+	<hint col="3" value="" id="el65.337.3" label=""/>
+	<hint col="3" value="the amounts of paid up share capital for the following categories of shares differed from the called up share capital stated above due to unpaid calls and were as follows:" id="el65.337.4" label=""/>
+	<hint col="3" value="" id="el65.337.5" label="the amounts of paid up share capital for the following categories of shares differed from the called up share capital stated above due to unpaid calls and were as follows:"/>
+	<hint col="1" value="" id="el66.338.0" label=""/>
+	<hint col="2" value="2009" id="el66.338.1" label=""/>
+	<hint col="3" value="2008" id="el66.338.2" label=""/>
+	<hint col="1" value="" id="el66.339.0" label=""/>
+	<hint col="2" value="&#163;" id="el66.339.1" label=""/>
+	<hint col="3" value="&#163;" id="el66.339.2" label=""/>
+	<hint col="1" value="ordinary shares" id="el66.340.0" label=""/>
+	<hint col="2" value="685" id="el66.340.1" label=""/>
+	<hint col="3" value="-" id="el66.340.2" label=""/>
+	<hint col="1" value="" id="el66.341.0" label=""/>
+	<hint col="2" value="" id="el66.341.1" label=""/>
+	<hint col="3" value="" id="el66.341.2" label=""/>
+	<hint col="3" value="" id="el66.341.3" label=""/>
+	<hint col="3" value="25." id="el66.341.4" label=""/>
+	<hint col="3" value="" id="el66.341.5" label=""/>
+	<hint col="3" value="reserves" id="el66.341.6" label=""/>
+	<hint col="1" value="" id="el67.342.0" label=""/>
+	<hint col="2" value="revaluation reserve" id="el67.342.1" label=""/>
+	<hint col="3" value="general reserve" id="el67.342.2" label=""/>
+	<hint col="4" value="profit and loss account" id="el67.342.3" label=""/>
+	<hint col="1" value="" id="el67.343.0" label=""/>
+	<hint col="2" value="&#163;" id="el67.343.1" label=""/>
+	<hint col="3" value="&#163;" id="el67.343.2" label=""/>
+	<hint col="4" value="&#163;" id="el67.343.3" label=""/>
+	<hint col="1" value="balance brought forward" id="el67.344.0" label=""/>
+	<hint col="2" value="-" id="el67.344.1" label=""/>
+	<hint col="3" value="4,000" id="el67.344.2" label=""/>
+	<hint col="4" value="250,454" id="el67.344.3" label=""/>
+	<hint col="1" value="profit for the year" id="el67.345.0" label=""/>
+	<hint col="2" value="-" id="el67.345.1" label=""/>
+	<hint col="3" value="-" id="el67.345.2" label=""/>
+	<hint col="4" value="7,117" id="el67.345.3" label=""/>
+	<hint col="1" value="equity dividends" id="el67.346.0" label=""/>
+	<hint col="2" value="-" id="el67.346.1" label=""/>
+	<hint col="3" value="-" id="el67.346.2" label=""/>
+	<hint col="4" value="(3,750)" id="el67.346.3" label=""/>
+	<hint col="1" value="other gains and losses" id="el67.347.0" label=""/>
+	<hint col="2" value="" id="el67.347.1" label=""/>
+	<hint col="3" value="" id="el67.347.2" label=""/>
+	<hint col="4" value="" id="el67.347.3" label=""/>
+	<hint col="1" value="- revaluation of fixed assets" id="el67.348.0" label=""/>
+	<hint col="2" value="30,000" id="el67.348.1" label=""/>
+	<hint col="3" value="-" id="el67.348.2" label=""/>
+	<hint col="4" value="-" id="el67.348.3" label=""/>
+	<hint col="1" value="" id="el67.349.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el67.349.1" label=""/>
+	<hint col="3" value="„„„„„„„" id="el67.349.2" label=""/>
+	<hint col="4" value="„„„„„„„„„„" id="el67.349.3" label=""/>
+	<hint col="1" value="balance carried forward" id="el67.350.0" label=""/>
+	<hint col="2" value="30,000" id="el67.350.1" label=""/>
+	<hint col="3" value="4,000" id="el67.350.2" label=""/>
+	<hint col="4" value="253,821" id="el67.350.3" label=""/>
+	<hint col="1" value="" id="el67.351.0" label=""/>
+	<hint col="2" value="" id="el67.351.1" label=""/>
+	<hint col="3" value="" id="el67.351.2" label=""/>
+	<hint col="4" value="" id="el67.351.3" label=""/>
+	<hint col="4" value="" id="el67.351.4" label=""/>
+	<hint col="4" value="uk small limited company example client" id="el67.351.5" label=""/>
+	<hint col="4" value="" id="el67.351.6" label="uk small limited company example client"/>
+	<hint col="4" value="notes to the financial statements" id="el67.351.7" label=""/>
+	<hint col="4" value="" id="el67.351.8" label="notes to the financial statements"/>
+	<hint col="4" value="year ended 31 december 2009" id="el67.351.9" label=""/>
+	<hint col="4" value="" id="el67.351.10" label="year ended 31 december 2009"/>
+	<hint col="4" value="" id="el67.351.11" label=""/>
+	<hint col="4" value="26." id="el67.351.12" label=""/>
+	<hint col="4" value="" id="el67.351.13" label=""/>
+	<hint col="4" value="notes to the cash flow statement" id="el67.351.14" label=""/>
+	<hint col="4" value="" id="el67.351.15" label=""/>
+	<hint col="4" value="reconciliation of operating profit to net cash inflow from" id="el67.351.16" label=""/>
+	<hint col="4" value="" id="el67.351.17" label=""/>
+	<hint col="4" value="operating activities" id="el67.351.18" label=""/>
+	<hint col="1" value="" id="el68.352.0" label=""/>
+	<hint col="2" value="2009" id="el68.352.1" label=""/>
+	<hint col="3" value="2008" id="el68.352.2" label=""/>
+	<hint col="1" value="" id="el68.353.0" label=""/>
+	<hint col="2" value="&#163;" id="el68.353.1" label=""/>
+	<hint col="3" value="&#163;" id="el68.353.2" label=""/>
+	<hint col="1" value="operating profit" id="el68.354.0" label=""/>
+	<hint col="2" value="4,954" id="el68.354.1" label=""/>
+	<hint col="3" value="14,047" id="el68.354.2" label=""/>
+	<hint col="1" value="amortisation" id="el68.355.0" label=""/>
+	<hint col="2" value="1,000" id="el68.355.1" label=""/>
+	<hint col="3" value="1,000" id="el68.355.2" label=""/>
+	<hint col="1" value="depreciation" id="el68.356.0" label=""/>
+	<hint col="2" value="15,335" id="el68.356.1" label=""/>
+	<hint col="3" value="14,740" id="el68.356.2" label=""/>
+	<hint col="1" value="loss/(profit) on disposal of fixed assets" id="el68.357.0" label=""/>
+	<hint col="2" value="115" id="el68.357.1" label=""/>
+	<hint col="3" value="(275)" id="el68.357.2" label=""/>
+	<hint col="1" value="amortisation of government grants" id="el68.358.0" label=""/>
+	<hint col="2" value="(900)" id="el68.358.1" label=""/>
+	<hint col="3" value="(900)" id="el68.358.2" label=""/>
+	<hint col="1" value="increase in stocks" id="el68.359.0" label=""/>
+	<hint col="2" value="(1,159)" id="el68.359.1" label=""/>
+	<hint col="3" value="(708)" id="el68.359.2" label=""/>
+	<hint col="1" value="increase in debtors" id="el68.360.0" label=""/>
+	<hint col="2" value="(1,238)" id="el68.360.1" label=""/>
+	<hint col="3" value="(22)" id="el68.360.2" label=""/>
+	<hint col="1" value="(decrease)/increase in creditors" id="el68.361.0" label=""/>
+	<hint col="2" value="(105)" id="el68.361.1" label=""/>
+	<hint col="3" value="7" id="el68.361.2" label=""/>
+	<hint col="1" value="" id="el68.362.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el68.362.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el68.362.2" label=""/>
+	<hint col="1" value="net cash inflow from operating activities" id="el68.363.0" label=""/>
+	<hint col="2" value="18,002" id="el68.363.1" label=""/>
+	<hint col="3" value="27,889" id="el68.363.2" label=""/>
+	<hint col="1" value="" id="el68.364.0" label=""/>
+	<hint col="2" value="" id="el68.364.1" label=""/>
+	<hint col="3" value="" id="el68.364.2" label=""/>
+	<hint col="3" value="" id="el68.364.3" label=""/>
+	<hint col="3" value="" id="el68.364.4" label=""/>
+	<hint col="3" value="returns on investments and servicing of finance" id="el68.364.5" label=""/>
+	<hint col="1" value="" id="el69.365.0" label=""/>
+	<hint col="2" value="2009" id="el69.365.1" label=""/>
+	<hint col="3" value="2008" id="el69.365.2" label=""/>
+	<hint col="1" value="" id="el69.366.0" label=""/>
+	<hint col="2" value="&#163;" id="el69.366.1" label=""/>
+	<hint col="3" value="&#163;" id="el69.366.2" label=""/>
+	<hint col="1" value="income from other fixed asset investments" id="el69.367.0" label=""/>
+	<hint col="2" value="5,252" id="el69.367.1" label=""/>
+	<hint col="3" value="5,252" id="el69.367.2" label=""/>
+	<hint col="1" value="interest received" id="el69.368.0" label=""/>
+	<hint col="2" value="80" id="el69.368.1" label=""/>
+	<hint col="3" value="95" id="el69.368.2" label=""/>
+	<hint col="1" value="interest paid" id="el69.369.0" label=""/>
+	<hint col="2" value="(478)" id="el69.369.1" label=""/>
+	<hint col="3" value="(365)" id="el69.369.2" label=""/>
+	<hint col="1" value="dividends on shares classed as financial liabilities" id="el69.370.0" label=""/>
+	<hint col="2" value="(325)" id="el69.370.1" label=""/>
+	<hint col="3" value="(300)" id="el69.370.2" label=""/>
+	<hint col="1" value="" id="el69.371.0" label=""/>
+	<hint col="2" value="„„„„„„„" id="el69.371.1" label=""/>
+	<hint col="3" value="„„„„„„„" id="el69.371.2" label=""/>
+	<hint col="1" value="net cash inflow from returns on investments and servicing of finance" id="el69.372.0" label=""/>
+	<hint col="2" value="4,529" id="el69.372.1" label=""/>
+	<hint col="3" value="4,682" id="el69.372.2" label=""/>
+	<hint col="1" value="" id="el69.373.0" label=""/>
+	<hint col="2" value="" id="el69.373.1" label=""/>
+	<hint col="3" value="" id="el69.373.2" label=""/>
+	<hint col="3" value="" id="el69.373.3" label=""/>
+	<hint col="3" value="" id="el69.373.4" label=""/>
+	<hint col="3" value="taxation" id="el69.373.5" label=""/>
+	<hint col="1" value="" id="el70.374.0" label=""/>
+	<hint col="2" value="2009" id="el70.374.1" label=""/>
+	<hint col="3" value="2008" id="el70.374.2" label=""/>
+	<hint col="1" value="" id="el70.375.0" label=""/>
+	<hint col="2" value="&#163;" id="el70.375.1" label=""/>
+	<hint col="3" value="&#163;" id="el70.375.2" label=""/>
+	<hint col="1" value="taxation" id="el70.376.0" label=""/>
+	<hint col="2" value="(6,136)" id="el70.376.1" label=""/>
+	<hint col="3" value="(3,200)" id="el70.376.2" label=""/>
+	<hint col="1" value="" id="el70.377.0" label=""/>
+	<hint col="2" value="" id="el70.377.1" label=""/>
+	<hint col="3" value="" id="el70.377.2" label=""/>
+	<hint col="3" value="" id="el70.377.3" label=""/>
+	<hint col="3" value="" id="el70.377.4" label=""/>
+	<hint col="3" value="capital expenditure and financial investment" id="el70.377.5" label=""/>
+	<hint col="1" value="" id="el71.378.0" label=""/>
+	<hint col="2" value="2009" id="el71.378.1" label=""/>
+	<hint col="3" value="2008" id="el71.378.2" label=""/>
+	<hint col="1" value="" id="el71.379.0" label=""/>
+	<hint col="2" value="&#163;" id="el71.379.1" label=""/>
+	<hint col="3" value="&#163;" id="el71.379.2" label=""/>
+	<hint col="1" value="payments to acquire tangible fixed assets" id="el71.380.0" label=""/>
+	<hint col="2" value="(25,150)" id="el71.380.1" label=""/>
+	<hint col="3" value="(2,200)" id="el71.380.2" label=""/>
+	<hint col="1" value="receipts from sale of fixed assets" id="el71.381.0" label=""/>
+	<hint col="2" value="135" id="el71.381.1" label=""/>
+	<hint col="3" value="525" id="el71.381.2" label=""/>
+	<hint col="1" value="acquisition of fixed asset investments" id="el71.382.0" label=""/>
+	<hint col="2" value="(1,500)" id="el71.382.1" label=""/>
+	<hint col="3" value="(9,500)" id="el71.382.2" label=""/>
+	<hint col="1" value="" id="el71.383.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el71.383.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el71.383.2" label=""/>
+	<hint col="1" value="net cash outflow for capital expenditure and financial investment" id="el71.384.0" label=""/>
+	<hint col="2" value="(26,515)" id="el71.384.1" label=""/>
+	<hint col="3" value="(11,175)" id="el71.384.2" label=""/>
+	<hint col="1" value="" id="el71.385.0" label=""/>
+	<hint col="2" value="" id="el71.385.1" label=""/>
+	<hint col="3" value="" id="el71.385.2" label=""/>
+	<hint col="3" value="" id="el71.385.3" label=""/>
+	<hint col="3" value="" id="el71.385.4" label=""/>
+	<hint col="3" value="financing" id="el71.385.5" label=""/>
+	<hint col="1" value="" id="el72.386.0" label=""/>
+	<hint col="2" value="2009" id="el72.386.1" label=""/>
+	<hint col="3" value="2008" id="el72.386.2" label=""/>
+	<hint col="1" value="" id="el72.387.0" label=""/>
+	<hint col="2" value="&#163;" id="el72.387.1" label=""/>
+	<hint col="3" value="&#163;" id="el72.387.2" label=""/>
+	<hint col="1" value="new bank loans" id="el72.388.0" label=""/>
+	<hint col="2" value="4,500" id="el72.388.1" label=""/>
+	<hint col="3" value="3,800" id="el72.388.2" label=""/>
+	<hint col="1" value="repayment of bank loans" id="el72.389.0" label=""/>
+	<hint col="2" value="(2,000)" id="el72.389.1" label=""/>
+	<hint col="3" value="(1,800)" id="el72.389.2" label=""/>
+	<hint col="1" value="capital element of hire purchase and finance lease" id="el72.390.0" label=""/>
+	<hint col="2" value="(2,750)" id="el72.390.1" label=""/>
+	<hint col="3" value="(800)" id="el72.390.2" label=""/>
+	<hint col="1" value="new grants received" id="el72.391.0" label=""/>
+	<hint col="2" value="1,500" id="el72.391.1" label=""/>
+	<hint col="3" value="1,000" id="el72.391.2" label=""/>
+	<hint col="1" value="" id="el72.392.0" label=""/>
+	<hint col="2" value="„„„„„„„" id="el72.392.1" label=""/>
+	<hint col="3" value="„„„„„„„" id="el72.392.2" label=""/>
+	<hint col="1" value="net cash inflow from financing" id="el72.393.0" label=""/>
+	<hint col="2" value="1,250" id="el72.393.1" label=""/>
+	<hint col="3" value="2,200" id="el72.393.2" label=""/>
+	<hint col="1" value="" id="el72.394.0" label=""/>
+	<hint col="2" value="" id="el72.394.1" label=""/>
+	<hint col="3" value="" id="el72.394.2" label=""/>
+	<hint col="3" value="" id="el72.394.3" label=""/>
+	<hint col="3" value="uk small limited company example client" id="el72.394.4" label=""/>
+	<hint col="3" value="" id="el72.394.5" label="uk small limited company example client"/>
+	<hint col="3" value="notes to the financial statements" id="el72.394.6" label=""/>
+	<hint col="3" value="" id="el72.394.7" label="notes to the financial statements"/>
+	<hint col="3" value="year ended 31 december 2009" id="el72.394.8" label=""/>
+	<hint col="3" value="" id="el72.394.9" label="year ended 31 december 2009"/>
+	<hint col="3" value="" id="el72.394.10" label=""/>
+	<hint col="3" value="26." id="el72.394.11" label=""/>
+	<hint col="3" value="" id="el72.394.12" label=""/>
+	<hint col="3" value="notes to the cash flow statement" id="el72.394.13" label=""/>
+	<hint col="3" value="(continued)" id="el72.394.14" label="notes to the cash flow statement"/>
+	<hint col="3" value="" id="el72.394.15" label=""/>
+	<hint col="3" value="reconciliation of net cash flow to movement in net debt" id="el72.394.16" label=""/>
+	<hint col="1" value="" id="el73.395.0" label=""/>
+	<hint col="2" value="2009" id="el73.395.1" label=""/>
+	<hint col="3" value="2008" id="el73.395.2" label=""/>
+	<hint col="1" value="" id="el73.396.0" label=""/>
+	<hint col="2" value="&#163;" id="el73.396.1" label=""/>
+	<hint col="3" value="&#163;" id="el73.396.2" label=""/>
+	<hint col="1" value="(decrease)/increase in cash in the period" id="el73.397.0" label=""/>
+	<hint col="2" value="(12,370)" id="el73.397.1" label=""/>
+	<hint col="3" value="16,896" id="el73.397.2" label=""/>
+	<hint col="3" value="" id="el73.397.3" label=""/>
+	<hint col="1" value="net cash (inflow) from bank loans" id="el74.398.0" label=""/>
+	<hint col="2" value="(2,500)" id="el74.398.1" label=""/>
+	<hint col="3" value="(2,000)" id="el74.398.2" label=""/>
+	<hint col="1" value="cash outflow in respect of hire purchase and finance lease" id="el74.399.0" label=""/>
+	<hint col="2" value="2,750" id="el74.399.1" label=""/>
+	<hint col="3" value="800" id="el74.399.2" label=""/>
+	<hint col="1" value="" id="el74.400.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el74.400.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el74.400.2" label=""/>
+	<hint col="1" value="change in net debt resulting from cash flows" id="el74.401.0" label=""/>
+	<hint col="2" value="(12,120)" id="el74.401.1" label=""/>
+	<hint col="3" value="15,696" id="el74.401.2" label=""/>
+	<hint col="1" value="new finance leases" id="el74.402.0" label=""/>
+	<hint col="2" value="(5,250)" id="el74.402.1" label=""/>
+	<hint col="3" value="(1,800)" id="el74.402.2" label=""/>
+	<hint col="1" value="" id="el74.403.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el74.403.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el74.403.2" label=""/>
+	<hint col="1" value="movement in net debt in the period" id="el74.404.0" label=""/>
+	<hint col="2" value="(17,370)" id="el74.404.1" label=""/>
+	<hint col="3" value="13,896" id="el74.404.2" label=""/>
+	<hint col="1" value="" id="el74.405.0" label=""/>
+	<hint col="2" value="" id="el74.405.1" label=""/>
+	<hint col="3" value="" id="el74.405.2" label=""/>
+	<hint col="1" value="net funds at 1 january 2009" id="el74.406.0" label=""/>
+	<hint col="2" value="6,981" id="el74.406.1" label=""/>
+	<hint col="3" value="(6,915)" id="el74.406.2" label=""/>
+	<hint col="1" value="" id="el74.407.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el74.407.1" label=""/>
+	<hint col="3" value="„„„„„„„" id="el74.407.2" label=""/>
+	<hint col="1" value="net debt at 31 december 2009" id="el74.408.0" label=""/>
+	<hint col="2" value="(10,389)" id="el74.408.1" label=""/>
+	<hint col="3" value="6,981" id="el74.408.2" label=""/>
+	<hint col="1" value="" id="el74.409.0" label=""/>
+	<hint col="2" value="" id="el74.409.1" label=""/>
+	<hint col="3" value="" id="el74.409.2" label=""/>
+	<hint col="3" value="" id="el74.409.3" label=""/>
+	<hint col="3" value="" id="el74.409.4" label=""/>
+	<hint col="3" value="analysis of changes in net debt" id="el74.409.5" label=""/>
+	<hint col="1" value="" id="el75.410.0" label=""/>
+	<hint col="2" value="at                                   1 jan 2009" id="el75.410.1" label=""/>
+	<hint col="3" value="cash flows" id="el75.410.2" label=""/>
+	<hint col="4" value="other changes" id="el75.410.3" label=""/>
+	<hint col="5" value="at                                   31 dec 2009" id="el75.410.4" label=""/>
+	<hint col="1" value="" id="el75.411.0" label=""/>
+	<hint col="2" value="&#163;" id="el75.411.1" label=""/>
+	<hint col="3" value="&#163;" id="el75.411.2" label=""/>
+	<hint col="4" value="&#163;" id="el75.411.3" label=""/>
+	<hint col="5" value="&#163;" id="el75.411.4" label=""/>
+	<hint col="1" value="net cash:" id="el75.412.0" label=""/>
+	<hint col="1" value="cash in hand and at bank" id="el75.412.1" label=""/>
+	<hint col="2" value="23,981" id="el75.412.2" label=""/>
+	<hint col="3" value="(12,370)" id="el75.412.3" label=""/>
+	<hint col="4" value="-" id="el75.412.4" label=""/>
+	<hint col="5" value="11,611" id="el75.412.5" label=""/>
+	<hint col="1" value="" id="el75.413.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el75.413.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el75.413.2" label=""/>
+	<hint col="4" value="„„„„" id="el75.413.3" label=""/>
+	<hint col="5" value="„„„„„„„„„" id="el75.413.4" label=""/>
+	<hint col="1" value="debt:" id="el75.414.0" label=""/>
+	<hint col="1" value="debt due within 1 year" id="el75.414.1" label=""/>
+	<hint col="2" value="(2,000)" id="el75.414.2" label=""/>
+	<hint col="3" value="-" id="el75.414.3" label=""/>
+	<hint col="4" value="-" id="el75.414.4" label=""/>
+	<hint col="5" value="(2,000)" id="el75.414.5" label=""/>
+	<hint col="1" value="debt due after 1 year" id="el75.415.0" label=""/>
+	<hint col="2" value="(8,500)" id="el75.415.1" label=""/>
+	<hint col="3" value="(2,500)" id="el75.415.2" label=""/>
+	<hint col="4" value="-" id="el75.415.3" label=""/>
+	<hint col="5" value="(11,000)" id="el75.415.4" label=""/>
+	<hint col="1" value="hire purchase and finance lease agreements" id="el75.416.0" label=""/>
+	<hint col="2" value="(6,500)" id="el75.416.1" label=""/>
+	<hint col="3" value="2,750" id="el75.416.2" label=""/>
+	<hint col="4" value="(5,250)" id="el75.416.3" label=""/>
+	<hint col="5" value="(9,000)" id="el75.416.4" label=""/>
+	<hint col="1" value="" id="el75.417.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el75.417.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el75.417.2" label=""/>
+	<hint col="4" value="„„„„„„„" id="el75.417.3" label=""/>
+	<hint col="5" value="„„„„„„„„„" id="el75.417.4" label=""/>
+	<hint col="1" value="" id="el75.418.0" label=""/>
+	<hint col="2" value="(17,000)" id="el75.418.1" label=""/>
+	<hint col="3" value="250" id="el75.418.2" label=""/>
+	<hint col="4" value="(5,250)" id="el75.418.3" label=""/>
+	<hint col="5" value="(22,000)" id="el75.418.4" label=""/>
+	<hint col="1" value="" id="el75.419.0" label=""/>
+	<hint col="2" value="„„„„„„„„„" id="el75.419.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el75.419.2" label=""/>
+	<hint col="4" value="„„„„„„„" id="el75.419.3" label=""/>
+	<hint col="5" value="„„„„„„„„„" id="el75.419.4" label=""/>
+	<hint col="1" value="" id="el75.420.0" label=""/>
+	<hint col="2" value="„„„„„„„" id="el75.420.1" label=""/>
+	<hint col="3" value="„„„„„„„„„" id="el75.420.2" label=""/>
+	<hint col="4" value="„„„„„„„" id="el75.420.3" label=""/>
+	<hint col="5" value="„„„„„„„„„" id="el75.420.4" label=""/>
+	<hint col="1" value="net debt" id="el75.421.0" label=""/>
+	<hint col="2" value="6,981" id="el75.421.1" label=""/>
+	<hint col="3" value="(12,120)" id="el75.421.2" label=""/>
+	<hint col="4" value="(5,250)" id="el75.421.3" label=""/>
+	<hint col="5" value="(10,389)" id="el75.421.4" label=""/>
+	<hint col="1" value="" id="el75.422.0" label=""/>
+	<hint col="2" value="" id="el75.422.1" label=""/>
+	<hint col="3" value="" id="el75.422.2" label=""/>
+	<hint col="4" value="" id="el75.422.3" label=""/>
+	<hint col="5" value="" id="el75.422.4" label=""/>
+	<hint col="5" value="" id="el75.422.5" label=""/>
+	<hint col="5" value="" id="el75.422.6" label=""/>
+	<hint col="5" value="27." id="el75.422.7" label=""/>
+	<hint col="5" value="" id="el75.422.8" label=""/>
+	<hint col="5" value="loss of major customer" id="el75.422.9" label=""/>
+	<hint col="5" value="in the last month of the financial year the equipment supply contract with the national scientific organisation reached its termination date and has now ended.  while the end of the contract will significantly impact revenues until replacement business is obtained, the directors are confident that the end of this contract will not adversely affect the company in the long run." id="el75.422.10" label=""/>
+	<hint col="5" value="" id="el75.422.11" label="in the last month of the financial year the equipment supply contract with the national scientific organisation reached its termination date and has now ended.  while the end of the contract will significantly impact revenues until replacement business is obtained, the directors are confident that the end of this contract will not adversely affect the company in the long run."/>
+	<hint col="5" value="28." id="el75.422.12" label=""/>
+	<hint col="5" value="" id="el75.422.13" label=""/>
+	<hint col="5" value="post balance sheet events" id="el75.422.14" label=""/>
+	<hint col="5" value="on 12 january 2010 the company issued a further 50,000 &#163;1 ordinary shares at a premium of 50p and an additional 10,000 6% redeemable preference shares at par.  this issue was undertaken in order to fund the development of the freehold premises to enable an increase of production of a new design for which orders are currently being received." id="el75.422.15" label=""/>
+	<hint col="5" value="" id="el75.422.16" label="on 12 january 2010 the company issued a further 50,000 &#163;1 ordinary shares at a premium of 50p and an additional 10,000 6% redeemable preference shares at par.  this issue was undertaken in order to fund the development of the freehold premises to enable an increase of production of a new design for which orders are currently being received."/>
+	<hint col="5" value="" id="el75.422.17" label=""/>
+	<hint col="5" value="" id="el75.422.18" label=""/>
+</hints>

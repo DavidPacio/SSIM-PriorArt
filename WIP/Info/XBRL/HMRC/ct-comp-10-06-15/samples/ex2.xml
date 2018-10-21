@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:ct-CT="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-CT/2010-06-15"
+  xmlns:ct-CaseI="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-CaseI/2010-06-15"
+  xmlns:ct-Tax="http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-Tax/2010-06-15"
+  xmlns:gtctcomp="http://govtalk.gov.uk/CT/Comp">
+  <link:schemaRef xlink:type="simple" xlink:href="http://www.hmrc.gov.uk/schemas/ct/comp/taxonomies/2010-06-15/ct-2010-06-15.xsd"/>
+  <context id="c0">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <instant>2008-03-31</instant>
+    </period>
+  </context>
+  <context id="c1">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <startDate>2007-04-01</startDate>
+      <endDate>2008-03-31</endDate>
+    </period>
+  </context>
+  <context id="c2">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+      <segment>
+        <gtctcomp:trade>Computer Trade</gtctcomp:trade>
+      </segment>
+    </entity>
+    <period>
+      <startDate>2007-04-01</startDate>
+      <endDate>2008-03-31</endDate>
+    </period>
+  </context>
+  <context id="c3">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+      <segment>
+        <gtctcomp:trade>Yacht Trade</gtctcomp:trade>
+      </segment>
+    </entity>
+    <period>
+      <startDate>2007-04-01</startDate>
+      <endDate>2008-03-31</endDate>
+    </period>
+  </context>
+  <context id="c4">
+    <entity>
+      <identifier scheme="http://www.hmrc.gov.uk/">1111111111</identifier>
+    </entity>
+    <period>
+      <instant>2007-03-31</instant>
+    </period>
+  </context>
+  <unit id="u0">
+    <measure>iso4217:GBP</measure>
+  </unit>
+  <unit id="u1">
+    <measure>iso4217:JPY</measure>
+  </unit>
+  <unit id="u2">
+    <measure>iso4217:USD</measure>
+  </unit>
+  <unit id="u3">
+    <measure>iso4217:EUR</measure>
+  </unit>
+<ct-CT:DescriptorCompanyName contextRef="c0">Testco (Currency) Ltd</ct-CT:DescriptorCompanyName>
+<ct-CT:DescriptorTaxReference contextRef="c0">1111111111</ct-CT:DescriptorTaxReference>
+<ct-CT:DescriptorStartOfPeriodForWhichReturnRequired contextRef="c4">2007-04-01</ct-CT:DescriptorStartOfPeriodForWhichReturnRequired>
+<ct-CT:DescriptorEndOfPeriodForWhichReturnRequired contextRef="c0">2008-03-31</ct-CT:DescriptorEndOfPeriodForWhichReturnRequired>
+<ct-Tax:CalculationOfCTLiabilityProfits contextRef="c1" unitRef="u0" precision="INF">2300000</ct-Tax:CalculationOfCTLiabilityProfits>
+<ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade contextRef="c2" unitRef="u1" precision="INF">110000000</ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade>
+<ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade contextRef="c2" unitRef="u0" precision="INF">1100000</ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade>
+<ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade contextRef="c3" unitRef="u1" precision="INF">120000000</ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade>
+<ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade contextRef="c3" unitRef="u0" precision="INF">1200000</ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade>
+<ct-CaseI:TradingProfitsTotalProfitsAllTrades contextRef="c1" unitRef="u0" precision="INF">2300000</ct-CaseI:TradingProfitsTotalProfitsAllTrades>
+<ct-CaseI:TradingProfitsIndividualTradeProfitPerAccounts contextRef="c2" unitRef="u2" precision="INF">2000000</ct-CaseI:TradingProfitsIndividualTradeProfitPerAccounts>
+<ct-CaseI:TradingProfitsIndividualTradeAdjustmentsAllocatedToOtherTrades contextRef="c2" unitRef="u2" precision="INF">1000000</ct-CaseI:TradingProfitsIndividualTradeAdjustmentsAllocatedToOtherTrades>
+<ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade contextRef="c2" unitRef="u2" precision="INF">1000000</ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade>
+<ct-CaseI:TradingProfitsIndividualTradeAdjustmentsAllocatedFromOtherTrade contextRef="c3" unitRef="u3" precision="INF">900000</ct-CaseI:TradingProfitsIndividualTradeAdjustmentsAllocatedFromOtherTrade>
+<ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade contextRef="c3" unitRef="u3" precision="INF">900000</ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade>
+</xbrl>

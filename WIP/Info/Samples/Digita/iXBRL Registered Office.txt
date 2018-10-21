@@ -1,0 +1,55 @@
+<add-to-body>
+  <table segment-of-table="CompanyInformation">
+    <table-row>
+      <table-cell align="top-left">
+        <para para-spacing-before="0mm" para-alignment="Left" para-spacing-after="5mm" base-style="Title" smart-tag="new ISmartTag[] { uiHooks.SmartTagFactory.EditParagraph, uiHooks.SmartTagFactory.DeleteParagraph }">
+          <data>report.sections.ActiveSection.Description</data>
+        </para>
+      </table-cell>
+      <table-cell>
+        <para condition="reporting.queries.client.lookupaccountingperioddata(&quot;ClientSummaryTab|ClientDetails|General|Addresses|RegisteredOfficeAddressLine1|Current Period&quot;)[0].HasValue = false" tag-value="uiHooks.TagFactory.Commands.LaunchDynamicDataDialog('ClientSummaryTab|ClientDetails|General')" toggle-expand-on-click="true" base-style="Link To Data">
+	Registered office
+	</para>
+        <section tag-value="uiHooks.TagFactory.Commands.LaunchDynamicDataDialog('ClientSummaryTab|ClientDetails|General')">
+          <para para-alignment="Full" para-spacing-after="5mm" smart-tag="new ISmartTag[] { uiHooks.SmartTagFactory.EditParagraph, uiHooks.SmartTagFactory.DeleteParagraph }" width="100%">
+            <inline condition="reporting.queries.client.lookupaccountingperioddata(&quot;ClientSummaryTab|ClientDetails|General|Addresses|RegisteredOfficeAddressLine1|Current Period&quot;)[0].HasValue">
+              <inline xbrl-concept="uk-bus:AddressLine1" xbrl-period="CurrentPeriod" xbrl-hypercube="uk-bus:EntityContactInfoHypercube" xbrl-dimensions="uk-bus:EntityContactTypeDimension=uk-bus:RegisteredOffice">
+                <data>reporting.queries.client.lookupaccountingperioddata("ClientSummaryTab|ClientDetails|General|Addresses|RegisteredOfficeAddressLine1|Current Period")[0].Value</data>
+              </inline>
+            </inline>
+            <inline condition="reporting.queries.client.lookupaccountingperioddata(&quot;ClientSummaryTab|ClientDetails|General|Addresses|RegisteredOfficeAddressLine2|Current Period&quot;)[0].HasValue">
+              <br />
+              <inline xbrl-concept="uk-bus:AddressLine2" xbrl-period="CurrentPeriod" xbrl-hypercube="uk-bus:EntityContactInfoHypercube" xbrl-dimensions="uk-bus:EntityContactTypeDimension=uk-bus:RegisteredOffice">
+                <data>reporting.queries.client.lookupaccountingperioddata("ClientSummaryTab|ClientDetails|General|Addresses|RegisteredOfficeAddressLine2|Current Period")[0].Value</data>
+              </inline>
+            </inline>
+            <inline condition="reporting.queries.client.lookupaccountingperioddata(&quot;ClientSummaryTab|ClientDetails|General|Addresses|RegisteredOfficeAddressLine3|Current Period&quot;)[0].HasValue">
+              <br />
+              <inline xbrl-concept="uk-bus:AddressLine3" xbrl-period="CurrentPeriod" xbrl-hypercube="uk-bus:EntityContactInfoHypercube" xbrl-dimensions="uk-bus:EntityContactTypeDimension=uk-bus:RegisteredOffice">
+                <data>reporting.queries.client.lookupaccountingperioddata("ClientSummaryTab|ClientDetails|General|Addresses|RegisteredOfficeAddressLine3|Current Period")[0].Value</data>
+              </inline>
+            </inline>
+            <inline condition="reporting.queries.client.lookupaccountingperioddata(&quot;ClientSummaryTab|ClientDetails|General|Addresses|RegisteredOfficeCityTown|Current Period&quot;)[0].HasValue">
+              <br />
+              <inline xbrl-concept="uk-bus:PrincipalLocation-CityOrTown" xbrl-period="CurrentPeriod" xbrl-hypercube="uk-bus:EntityContactInfoHypercube" xbrl-dimensions="uk-bus:EntityContactTypeDimension=uk-bus:RegisteredOffice">
+                <data>reporting.queries.client.lookupaccountingperioddata("ClientSummaryTab|ClientDetails|General|Addresses|RegisteredOfficeCityTown|Current Period")[0].Value</data>
+              </inline>
+            </inline>
+            <inline condition="reporting.queries.client.lookupaccountingperioddata(&quot;ClientSummaryTab|ClientDetails|General|Addresses|RegisteredOfficeCountyRegion|Current Period&quot;)[0].HasValue">
+              <br />
+              <inline xbrl-concept="uk-bus:CountyRegion" xbrl-period="CurrentPeriod" xbrl-hypercube="uk-bus:EntityContactInfoHypercube" xbrl-dimensions="uk-bus:EntityContactTypeDimension=uk-bus:RegisteredOffice">
+                <data>reporting.queries.client.lookupaccountingperioddata("ClientSummaryTab|ClientDetails|General|Addresses|RegisteredOfficeCountyRegion|Current Period")[0].Value</data>
+              </inline>
+            </inline>
+            <inline condition="reporting.queries.client.lookupaccountingperioddata(&quot;ClientSummaryTab|ClientDetails|General|Addresses|RegisteredOfficePostcode|Current Period&quot;)[0].HasValue">
+              <br />
+              <inline xbrl-concept="uk-bus:PostalCodeZip" xbrl-period="CurrentPeriod" xbrl-hypercube="uk-bus:EntityContactInfoHypercube" xbrl-dimensions="uk-bus:EntityContactTypeDimension=uk-bus:RegisteredOffice">
+                <data>reporting.queries.client.lookupaccountingperioddata("ClientSummaryTab|ClientDetails|General|Addresses|RegisteredOfficePostcode|Current Period")[0].Value</data>
+              </inline>
+            </inline>
+          </para>
+        </section>
+      </table-cell>
+    </table-row>
+  </table>
+</add-to-body>

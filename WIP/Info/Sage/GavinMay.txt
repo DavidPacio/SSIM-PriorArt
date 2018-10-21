@@ -1,0 +1,57 @@
+Phone call with Gavin May 28.01.11
+
+To tell Gavin
+A. Info from outside
+B. Press
+C. 3 aspects to this
+   - responsibility to my clients
+   - interest
+   - opportunity to earn a few bob
+
+Climate of lies. Simon Taylor
+
+Questions for Gavin
+1. Expected release date?
+2. Number of staff working on the project
+3. Management of project now?
+4. What happened to Ben Bishop?
+5. SAPA and SAP User numbers?
+6. SAPA expertise?
+7. SAP expertise?
+
+1) How do Board think SAD are doing. (If well, how come head of R&D, Ben Bishop, just booted out at such a critical stage).
+2) What do they see as their Plan B if IFS project gets into serious difficulty. (Tagging Tool no Plan B)
+
+We want to avoid detail; just enough to make them interested:
+Financial     - Stress this is a difficult job and worth a lot to Sage.
+              - Three part payment plan; Engagement, Work, Performance Bonus
+
+Technical - big risk that he will try and pick your brains, think he has "got it" (he is technical by Sage standards), and report back to Paul Harrison that Sage can do it in house (if they need it doing at all)
+
+Avoid getting Legally tied up:
+Must avoid any requirements that limit our freedom. Suggest that this initial talk is off the record if need be
+Our "internal to SAPA" solution may end up being the same as the Cloud one; depending what we find
+Do not want to lock out Cloud option - ideally get Sage to fund this. (Even if do not want be in direct competition with Sage on SAPA (and who knows), we certainly might re SAP, and we might have a market for other AP users. Plus Cloud option could well be the launch pad for whole new business.
+
+Gavin's personal ambitions:
+Interesting to know if Gavin wanted to move on from SAD back in 2000. Would he like to be back in charge of it - i.e. kick out Jayne Archbold?
+
+--
+
+If you want to get Gavin rattled just say casually that could not help wondering whether Sage's IFS is like CSM's Accountants Desktop - and we all know what happened there.
+
+You can also just wonder at some of the statements said by Jayne Archbold - convincing stuff?
+
+Even if tagging tool able to stem the client bleed as an interim product, Users will still need to know how to operate it, and Sage will need a lot of people to train and support the Users.
+
+See highlighted text plus comments in text
+
+--
+
+Question for Gavin: Say if even thyey might just like the option on the possibility of having a Plan B, just bung you £50k to help you start thinking about it (plus any source code etc, but no strings i.e. do not sign any NDA (other than re source of course)). £50k is like a retainer only. Non refundable.
+
+
+
+
+Have you experimeneted with the HMRC PDF
+http://www.accountingweb.co.uk/anyanswers/hmrc-accounts-package/475021

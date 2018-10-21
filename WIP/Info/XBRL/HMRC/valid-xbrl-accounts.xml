@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Note - V1.0 27/07/09 This is an example to show the layout of how an XML test message for a CT Return may look.  Please see the documents published in the Technical Pack for further details.  You must use your own credentials for testing purposes --><GovTalkMessage xmlns="http://www.govtalk.gov.uk/CM/envelope">
+	<EnvelopeVersion>2.0</EnvelopeVersion>
+	<Header>
+		<MessageDetails>
+			<Class>HMRC-CT-CT600</Class>
+			<Qualifier>request</Qualifier>
+			<Function>submit</Function>
+			<Transformation>XML</Transformation>
+			<GatewayTest>1</GatewayTest>
+		</MessageDetails>
+		<SenderDetails>
+			<IDAuthentication>
+				<SenderID>As advised by SDS Team</SenderID>
+				<Authentication>
+					<Method>clear</Method>
+					<Role>principal</Role>
+					<Value>As advised by SDS Team</Value>
+				</Authentication>
+			</IDAuthentication>
+			<EmailAddress>emailaddress@a.company.uk</EmailAddress> 
+		</SenderDetails>
+	</Header>
+	<GovTalkDetails>
+		<Keys>
+			<Key Type="UTR">As advised by SDS Team</Key>
+		</Keys>
+		<TargetDetails>
+			<Organisation>HMRC</Organisation>
+		</TargetDetails>
+		<ChannelRouting>
+			<Channel>
+				<URI>your 4 digit vendor ID</URI> 
+  <Product>your product name</Product> 
+  <Version>your version number</Version> 
+			</Channel>
+		</ChannelRouting>
+	</GovTalkDetails>
+	<Body>
+		<IRenvelope xmlns="http://www.govtalk.gov.uk/taxation/CT/3">
+			<IRheader>
+				<Keys>
+					<Key Type="UTR">As advised by SDS Team</Key>
+				</Keys>
+				<PeriodEnd>2008-04-01</PeriodEnd>
+				<DefaultCurrency>GBP</DefaultCurrency>
+				<Manifest>
+					<Contains>
+						<Reference>
+							<Namespace>http://www.govtalk.gov.uk/taxation/CT/3</Namespace>
+							<SchemaVersion>2004-v2.00</SchemaVersion>
+							<TopElementName>CompanyTaxReturn</TopElementName>
+						</Reference>
+					</Contains>
+				</Manifest>
+				<IRmark Type="generic">mTMo4lRmqHHRW0HO+wkyQXzI1gA=</IRmark>
+				<Sender>Company</Sender>
+			</IRheader>
+			<CompanyTaxReturn ReturnType="new">
+				<CompanyInformation>
+					<CompanyName>Example XML</CompanyName>
+					<RegistrationNumber>12345678</RegistrationNumber>
+					<Reference>As advised by SDS Team</Reference>
+					<CompanyType>6</CompanyType>
+					<PeriodCovered>
+						<From>2007-06-01</From>
+						<To>2008-05-31</To>
+					</PeriodCovered>
+				</CompanyInformation>
+				<ReturnInfoSummary>
+					<Accounts>
+						<ThisPeriodAccounts>yes</ThisPeriodAccounts>
+					</Accounts>
+					<Computations>
+						<NoComputationsReason>Company in liquidation</NoComputationsReason>
+					</Computations>
+				</ReturnInfoSummary>
+				<CompanyTaxCalculation>
+					<Income>
+						<TradingAndProfessional>
+							<Profits>280000.00</Profits>
+							<NetProfits>280000.00</NetProfits>
+						</TradingAndProfessional>
+						<NonTradingLoanProfitsAndGains>1.00</NonTradingLoanProfitsAndGains>
+					</Income>
+					<ProfitsBeforeOtherDeductions>280001.00</ProfitsBeforeOtherDeductions>
+					<DeductionsAndReliefs>
+						<CVSLossRelief>1.00</CVSLossRelief>
+						<TradingLossesS393AcarriedBack>yes</TradingLossesS393AcarriedBack>
+						<TradingLosses>1.00</TradingLosses>
+						<Total>2.00</Total>
+					</DeductionsAndReliefs>
+					<ChargesAndReliefs>
+						<ProfitsBeforeCharges>279999.00</ProfitsBeforeCharges>
+						<ChargesPaid>1.00</ChargesPaid>
+					</ChargesAndReliefs>
+					<ChargeableProfits>279998.00</ChargeableProfits>
+					<TaxCalculation>
+						<StartingOrSmallCompaniesRate>yes</StartingOrSmallCompaniesRate>
+					</TaxCalculation>
+					<CorporationTaxChargeable>
+						<FinancialYearOne>
+							<Year>2007</Year>
+							<Details>
+								<Profit>166667.00</Profit>
+								<TaxRate>20.00</TaxRate>
+								<Tax>33333.40</Tax>
+							</Details>
+							<Details>
+								<Profit>66665.00</Profit>
+								<TaxRate>20.00</TaxRate>
+								<Tax>13333.00</Tax>
+							</Details>
+						</FinancialYearOne>
+						<FinancialYearTwo>
+							<Year>2008</Year>
+							<Details>
+								<Profit>33333.00</Profit>
+								<TaxRate>21.00</TaxRate>
+								<Tax>6999.93</Tax>
+							</Details>
+							<Details>
+								<Profit>13333.00</Profit>
+								<TaxRate>21.00</TaxRate>
+								<Tax>2799.93</Tax>
+							</Details>
+						</FinancialYearTwo>
+					</CorporationTaxChargeable>
+					<TotalChargeableCorporationTax>56466.26</TotalChargeableCorporationTax>
+					<FurtherTaxCalculations>
+						<CTNetOfMRR>56466.26</CTNetOfMRR>
+					</FurtherTaxCalculations>
+					<NetCorporationTaxChargeable>56466.26</NetCorporationTaxChargeable>
+					<TaxReliefsAndDeductions>
+						<TotalReliefsAndDeductions>0.00</TotalReliefsAndDeductions>
+					</TaxReliefsAndDeductions>
+					<NetCorporationTaxLiability>56466.26</NetCorporationTaxLiability>
+					<TaxChargeable>56466.26</TaxChargeable>
+					<TaxPayable>56466.26</TaxPayable>
+					<TaxReconciliation>
+						<RandDCredit>5000.00</RandDCredit>
+						<LandOrLifeCredit>20000.00</LandOrLifeCredit>
+						<CapitalAllowancesFirstYearTaxCredit>10000.00</CapitalAllowancesFirstYearTaxCredit>
+						<RDCreditPayable>0.00</RDCreditPayable>
+						<LandOrLifeCreditPayable>0.00</LandOrLifeCreditPayable>
+						<CapitalAllowancesFirstYearTaxCreditPayable>0.00</CapitalAllowancesFirstYearTaxCreditPayable>
+						<TaxOutstandingOrOverpaid>
+							<TaxOutstanding>21466.26</TaxOutstanding>
+						</TaxOutstandingOrOverpaid>
+					</TaxReconciliation>
+					<Indicators>
+						<QuarterlyInstallment>yes</QuarterlyInstallment>
+						<GroupPayment>yes</GroupPayment>
+						<DisposalWDintangibles>yes</DisposalWDintangibles>
+					</Indicators>
+				</CompanyTaxCalculation>
+				<CapitalAllowancesExpenditure>
+					<ClaimingEnhancedExpenditureForFilm>yes</ClaimingEnhancedExpenditureForFilm>
+					<RandDEnhancedExpenditure>1.00</RandDEnhancedExpenditure>
+					<ChargesAndAllowances>
+						<AIACapitalAllowancesInc>5000.00</AIACapitalAllowancesInc>
+						<AIACapitalAllowancesNotInc>2000.00</AIACapitalAllowancesNotInc>
+					</ChargesAndAllowances>
+					<DesignatedEnvironmentallyFriendlyMachineryAndPlant>2000.00</DesignatedEnvironmentallyFriendlyMachineryAndPlant>
+				</CapitalAllowancesExpenditure>
+				<OverpaymentsAndRepayments>
+					<SmallRepayments>
+						<NoRepayments20OrLess>yes</NoRepayments20OrLess>
+					</SmallRepayments>
+					<Surrender>
+						<Amount>1.01</Amount>
+						<JointNotice>
+							<WillFollow>yes</WillFollow>
+						</JointNotice>
+					</Surrender>
+				</OverpaymentsAndRepayments>
+				<Declaration>
+					<AcceptDeclaration>yes</AcceptDeclaration>
+					<Name>eDelivery Testing</Name>
+					<Status>Testing Team</Status>
+				</Declaration>
+				<AttachedFiles>
+					<XBRLsubmission>
+						<Accounts>
+							<Instance>
+								<InlineXBRLDocument>
+									<html version="-//XBRL International//DTD XHTML Inline XBRL 0.1//EN" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:uk-gaap-pt="http://www.xbrl.org/uk/fr/gaap/pt/2008-01-15" xmlns:uk-cd-pt="http://www.xbrl.org/uk/cd/pres/2008-01-15" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns="http://www.w3.org/1999/xhtml" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:ix="http://www.xbrl.org/2008/inlineXBRL" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<head>
+											<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+											<title>Basic Inline XBRL Example</title>
+										</head>
+										<body xml:lang="en">
+											<div style="display:none">
+												<ix:header xmlns:ix="http://www.xbrl.org/2008/inlineXBRL">
+													<ix:references>
+														<link:schemaRef xlink:href="http://www.xbrl.org/uk/fr/gaap/pt/2008-01-15/uk-gaap-pt-2008-01-15.xsd" xlink:type="simple" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+														<link:schemaRef xlink:href="http://www.xbrl.org/uk/cd/pres/2008-01-15/uk-cd-pres-2008-01-15.xsd" xlink:type="simple" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+													</ix:references>
+													<ix:resources>
+														<xbrli:context id="CURRENT_YEAR" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+															<xbrli:entity>
+																<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">00000000</xbrli:identifier>
+															</xbrli:entity>
+															<xbrli:period>
+																<xbrli:startDate>2007-01-01</xbrli:startDate>
+																<xbrli:endDate>2007-12-31</xbrli:endDate>
+															</xbrli:period>
+														</xbrli:context>
+														<xbrli:context id="CURRENT_YEAR_INSTANT" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+															<xbrli:entity>
+																<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">00000000</xbrli:identifier>
+															</xbrli:entity>
+															<xbrli:period>
+																<instant xmlns="http://www.xbrl.org/2003/instance">2005-12-31</instant>
+															</xbrli:period>
+														</xbrli:context>
+														<xbrli:unit id="u1" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+															<xbrli:measure>iso4217:GBP</xbrli:measure>
+														</xbrli:unit>
+														<xbrli:unit id="ID-PURE" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+															<xbrli:measure>pure</xbrli:measure>
+														</xbrli:unit>
+														<xbrli:unit id="GBP" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+															<xbrli:measure>iso4217:GBP</xbrli:measure>
+														</xbrli:unit>
+													</ix:resources>
+												</ix:header>
+											</div>
+											<table style="border-collapse: collapse">
+												<tr>
+													<td class="label">Apportionment fraction for FY1</td>
+													<td/>
+													<td align="right">
+														<ix:nonNumeric ix:contextRef="CURRENT_YEAR" ix:name="uk-cd-pt:UKCompaniesHouseRegisteredNumber" xmlns:ix="http://www.xbrl.org/2008/inlineXBRL">12345678</ix:nonNumeric>
+														<ix:nonNumeric ix:contextRef="CURRENT_YEAR" ix:name="uk-cd-pt:EntityCurrentLegalOrRegisteredName" xmlns:ix="http://www.xbrl.org/2008/inlineXBRL">Company14</ix:nonNumeric>
+														<ix:tuple ix:name="uk-cd-pt:PeriodCoveredByBusinessReport-Details" xmlns:ix="http://www.xbrl.org/2008/inlineXBRL">
+															<ix:nonNumeric ix:contextRef="CURRENT_YEAR_INSTANT" ix:name="uk-cd-pt:StartDateForPeriodCoveredByReport" ix:order="1">2007-06-01</ix:nonNumeric>
+															<ix:nonNumeric ix:contextRef="CURRENT_YEAR_INSTANT" ix:name="uk-cd-pt:EndDateForPeriodCoveredByReport" ix:order="2">2008-05-31</ix:nonNumeric>
+														</ix:tuple>
+													</td>
+												</tr>
+											</table>
+										</body>
+									</html>
+								</InlineXBRLDocument>
+							</Instance>
+						</Accounts>
+					</XBRLsubmission>
+				</AttachedFiles>
+			</CompanyTaxReturn>
+		</IRenvelope>
+	</Body>
+</GovTalkMessage>

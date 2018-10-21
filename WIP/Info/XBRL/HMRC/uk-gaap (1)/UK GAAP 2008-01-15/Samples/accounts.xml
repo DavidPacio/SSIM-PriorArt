@@ -1,0 +1,777 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Instance Sample:  XBRL TESTCO Ltd - NO BUSINESS SEGMENTS-->
+<!--Based on XBRL 2.1-->
+<!--Created on: 24/02/2009-->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:uk-cd-pres="http://www.xbrl.org/uk/cd/pres/2008-01-15" xmlns:uk-gaap-pt="http://www.xbrl.org/uk/fr/gaap/pt/2008-01-15" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <link:schemaRef xlink:type="simple" xlink:href="../Taxonomies/monolithic/2008-01-15/uk-gaap-pt-2008-01-15.xsd" />
+  <link:schemaRef xlink:type="simple" xlink:href="../Taxonomies/cd/pres/2008-01-15/uk-cd-pres-2008-01-15.xsd" />
+  <!--Context Section-->
+  <context id="FY2007_Plant_and_machinery1">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:TangibleFixedAssetClassesDimension">uk-gaap-pt:PlantMachinery</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2006-04-01</instant>
+    </period>
+  </context>
+  <context id="FY2007_Motor_vehicles1">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:TangibleFixedAssetClassesDimension">uk-gaap-pt:MotorVehicles</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2006-04-01</instant>
+    </period>
+  </context>
+  <context id="FY2008_Plant_and_machinery2">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:TangibleFixedAssetClassesDimension">uk-gaap-pt:PlantMachinery</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2008-03-31</instant>
+    </period>
+  </context>
+  <context id="FY2008_Motor_vehicles2">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:TangibleFixedAssetClassesDimension">uk-gaap-pt:MotorVehicles</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2008-03-31</instant>
+    </period>
+  </context>
+  <context id="FY2007_Plant_and_machinery2">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:TangibleFixedAssetClassesDimension">uk-gaap-pt:PlantMachinery</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2007-03-31</instant>
+    </period>
+  </context>
+  <context id="FY2007_Motor_vehicles2">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:TangibleFixedAssetClassesDimension">uk-gaap-pt:MotorVehicles</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2007-03-31</instant>
+    </period>
+  </context>
+  <context id="FY20071">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+    </entity>
+    <period>
+      <instant>2006-04-01</instant>
+    </period>
+  </context>
+  <context id="FY2008_Development_costs__patents_and_similar">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:IntangibleFixedAssetClassesDimension">uk-gaap-pt:DevelopmentCostsPatentsSimilar</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <startDate>2007-04-01</startDate>
+      <endDate>2008-03-31</endDate>
+    </period>
+  </context>
+  <context id="FY2008_Development_costs__patents_and_similar1">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:IntangibleFixedAssetClassesDimension">uk-gaap-pt:DevelopmentCostsPatentsSimilar</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2007-04-01</instant>
+    </period>
+  </context>
+  <context id="FY2008_Development_costs__patents_and_similar2">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:IntangibleFixedAssetClassesDimension">uk-gaap-pt:DevelopmentCostsPatentsSimilar</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2008-03-31</instant>
+    </period>
+  </context>
+  <context id="FY2007_Development_costs__patents_and_similar2">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:IntangibleFixedAssetClassesDimension">uk-gaap-pt:DevelopmentCostsPatentsSimilar</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2007-03-31</instant>
+    </period>
+  </context>
+  <context id="FY2008_Dividends_proposed">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:DividendsDimension">uk-gaap-pt:DividendsProposed</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <startDate>2007-04-01</startDate>
+      <endDate>2008-03-31</endDate>
+    </period>
+  </context>
+  <context id="FY2007_Dividends_proposed">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:DividendsDimension">uk-gaap-pt:DividendsProposed</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <startDate>2006-04-01</startDate>
+      <endDate>2007-03-31</endDate>
+    </period>
+  </context>
+  <context id="FY2007_Plant_and_machinery">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:TangibleFixedAssetClassesDimension">uk-gaap-pt:PlantMachinery</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <startDate>2006-04-01</startDate>
+      <endDate>2007-03-31</endDate>
+    </period>
+  </context>
+  <context id="FY2007_Motor_vehicles">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:TangibleFixedAssetClassesDimension">uk-gaap-pt:MotorVehicles</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <startDate>2006-04-01</startDate>
+      <endDate>2007-03-31</endDate>
+    </period>
+  </context>
+  <context id="FY2008_Fixtures__fittings__tools_and_equipment">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:TangibleFixedAssetClassesDimension">uk-gaap-pt:FixturesFittingsToolsEquipment</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <startDate>2007-04-01</startDate>
+      <endDate>2008-03-31</endDate>
+    </period>
+  </context>
+  <context id="FY2007_Fixtures__fittings__tools_and_equipment">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:TangibleFixedAssetClassesDimension">uk-gaap-pt:FixturesFittingsToolsEquipment</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <startDate>2006-04-01</startDate>
+      <endDate>2007-03-31</endDate>
+    </period>
+  </context>
+  <context id="FY2008_Plant_and_machinery">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:TangibleFixedAssetClassesDimension">uk-gaap-pt:PlantMachinery</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <startDate>2007-04-01</startDate>
+      <endDate>2008-03-31</endDate>
+    </period>
+  </context>
+  <context id="FY2008_Motor_vehicles">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+      <segment>
+        <xbrldi:explicitMember dimension="uk-gaap-pt:TangibleFixedAssetClassesDimension">uk-gaap-pt:MotorVehicles</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <startDate>2007-04-01</startDate>
+      <endDate>2008-03-31</endDate>
+    </period>
+  </context>
+  <context id="FY20081">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+    </entity>
+    <period>
+      <instant>2007-04-01</instant>
+    </period>
+  </context>
+  <context id="FY20082">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+    </entity>
+    <period>
+      <instant>2008-03-31</instant>
+    </period>
+  </context>
+  <context id="FY20072">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+    </entity>
+    <period>
+      <instant>2007-03-31</instant>
+    </period>
+  </context>
+  <context id="FY2007">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+    </entity>
+    <period>
+      <startDate>2006-04-01</startDate>
+      <endDate>2007-03-31</endDate>
+    </period>
+  </context>
+  <context id="FY2008">
+    <entity>
+      <identifier scheme="http://www.companieshouse.gov.uk/">12345678</identifier>
+    </entity>
+    <period>
+      <startDate>2007-04-01</startDate>
+      <endDate>2008-03-31</endDate>
+    </period>
+  </context>
+  <!--Unit Section-->
+  <unit id="Pure">
+    <measure>xbrli:pure</measure>
+  </unit>
+  <unit id="GBP">
+    <measure>iso4217:GBP</measure>
+  </unit>
+  <!--Tuple Section-->
+  <uk-gaap-pt:DirectorSigningBalanceSheet-Details>
+    <uk-gaap-pt:NameDirectorSigningBalanceSheet contextRef="FY2008">A Smith</uk-gaap-pt:NameDirectorSigningBalanceSheet>
+  </uk-gaap-pt:DirectorSigningBalanceSheet-Details>
+  <uk-gaap-pt:EquityAuthorised-Details>
+    <uk-gaap-pt:TypeOrdinaryShare contextRef="FY2008">Ordinary shares of £1 each</uk-gaap-pt:TypeOrdinaryShare>
+    <uk-gaap-pt:NumberOrdinarySharesParticularTypeAuthorised contextRef="FY20082" unitRef="Pure" decimals="INF">1000</uk-gaap-pt:NumberOrdinarySharesParticularTypeAuthorised>
+    <uk-gaap-pt:ParValueOrdinaryShareParticularType contextRef="FY2008" unitRef="GBP" decimals="INF">1</uk-gaap-pt:ParValueOrdinaryShareParticularType>
+  </uk-gaap-pt:EquityAuthorised-Details>
+  <uk-gaap-pt:OtherSpecificAccountingPolicy-Details>
+    <uk-gaap-pt:TitleOtherSpecificAccountingPolicy contextRef="FY2008">Pensions</uk-gaap-pt:TitleOtherSpecificAccountingPolicy>
+    <uk-gaap-pt:ContentOtherSpecificAccountingPolicy contextRef="FY2008">The company makes contributions to a group personal pension scheme on behalf of its employees.  Contributions are charged to the profit and loss account as they become due, in accordance with the rules of the scheme.</uk-gaap-pt:ContentOtherSpecificAccountingPolicy>
+  </uk-gaap-pt:OtherSpecificAccountingPolicy-Details>
+  <uk-gaap-pt:ListDirectorsExecutives-Details>
+    <uk-gaap-pt:DirectorOrExecutivesName contextRef="FY2008">J Brown</uk-gaap-pt:DirectorOrExecutivesName>
+    <uk-gaap-pt:DirectorOrExecutivesInterestInSharesDebenturesEntityOrItsUndertakings-Details>
+      <uk-gaap-pt:DescriptionSharesOrDebentures contextRef="FY2008">Ordinary shares of £1 each</uk-gaap-pt:DescriptionSharesOrDebentures>
+      <uk-gaap-pt:NumberSharesDirectorOrExecutive contextRef="FY20082" unitRef="Pure" decimals="INF">1</uk-gaap-pt:NumberSharesDirectorOrExecutive>
+    </uk-gaap-pt:DirectorOrExecutivesInterestInSharesDebenturesEntityOrItsUndertakings-Details>
+  </uk-gaap-pt:ListDirectorsExecutives-Details>
+  <uk-gaap-pt:ListDirectorsExecutives-Details>
+    <uk-gaap-pt:DirectorOrExecutivesName contextRef="FY2008">A Smith</uk-gaap-pt:DirectorOrExecutivesName>
+    <uk-gaap-pt:DirectorOrExecutivesInterestInSharesDebenturesEntityOrItsUndertakings-Details>
+      <uk-gaap-pt:DescriptionSharesOrDebentures contextRef="FY2008">Ordinary shares of £1 each</uk-gaap-pt:DescriptionSharesOrDebentures>
+      <uk-gaap-pt:NumberSharesDirectorOrExecutive contextRef="FY20082" unitRef="Pure" decimals="INF">1</uk-gaap-pt:NumberSharesDirectorOrExecutive>
+    </uk-gaap-pt:DirectorOrExecutivesInterestInSharesDebenturesEntityOrItsUndertakings-Details>
+  </uk-gaap-pt:ListDirectorsExecutives-Details>
+  <uk-gaap-pt:ListDirectorsExecutives-Details>
+    <uk-gaap-pt:DirectorOrExecutivesName contextRef="FY2007">A Smith</uk-gaap-pt:DirectorOrExecutivesName>
+    <uk-gaap-pt:DirectorOrExecutivesInterestInSharesDebenturesEntityOrItsUndertakings-Details>
+      <uk-gaap-pt:DescriptionSharesOrDebentures contextRef="FY2007">Ordinary shares of £1 each</uk-gaap-pt:DescriptionSharesOrDebentures>
+      <uk-gaap-pt:NumberSharesDirectorOrExecutive contextRef="FY20072" unitRef="Pure" decimals="INF">1</uk-gaap-pt:NumberSharesDirectorOrExecutive>
+    </uk-gaap-pt:DirectorOrExecutivesInterestInSharesDebenturesEntityOrItsUndertakings-Details>
+  </uk-gaap-pt:ListDirectorsExecutives-Details>
+  <uk-gaap-pt:OrdinarySharesAllotted-Details>
+    <uk-gaap-pt:TypeOrdinaryShare contextRef="FY2007">Ordinary shares of £1 each</uk-gaap-pt:TypeOrdinaryShare>
+    <uk-gaap-pt:ParValueOrdinaryShareParticularType contextRef="FY2008" unitRef="GBP" decimals="INF">1</uk-gaap-pt:ParValueOrdinaryShareParticularType>
+    <uk-gaap-pt:OrdinarySharesAllotted-MovementAnalysis>
+      <uk-gaap-pt:ValueOrdinarySharesAllotted contextRef="FY20082" unitRef="GBP" decimals="INF">500</uk-gaap-pt:ValueOrdinarySharesAllotted>
+      <uk-gaap-pt:NumberOrdinarySharesAllotted contextRef="FY20072" unitRef="Pure" decimals="INF">500</uk-gaap-pt:NumberOrdinarySharesAllotted>
+    </uk-gaap-pt:OrdinarySharesAllotted-MovementAnalysis>
+  </uk-gaap-pt:OrdinarySharesAllotted-Details>
+  <uk-gaap-pt:ListDirectorsExecutives-Details>
+    <uk-gaap-pt:DirectorOrExecutivesName contextRef="FY2007">J Brown</uk-gaap-pt:DirectorOrExecutivesName>
+    <uk-gaap-pt:DirectorOrExecutivesInterestInSharesDebenturesEntityOrItsUndertakings-Details>
+      <uk-gaap-pt:DescriptionSharesOrDebentures contextRef="FY2007">Ordinary shares of £1 each</uk-gaap-pt:DescriptionSharesOrDebentures>
+      <uk-gaap-pt:NumberSharesDirectorOrExecutive contextRef="FY20072" unitRef="Pure" decimals="INF">1</uk-gaap-pt:NumberSharesDirectorOrExecutive>
+    </uk-gaap-pt:DirectorOrExecutivesInterestInSharesDebenturesEntityOrItsUndertakings-Details>
+  </uk-gaap-pt:ListDirectorsExecutives-Details>
+  <uk-gaap-pt:GeneralRelatedPartyTransactionsDescriptions-Details>
+    <uk-gaap-pt:GeneralDescriptionRelatedPartyTransaction contextRef="FY2008">During the year, the company made charitable contributions of £500,000 (2007 - £398,000) to the XBRL-TESTCO Foundation, a related party of the company by virtue of common directors/trustees.  The company has taken advantage of the exemptions available under FRS 8 not to disclose transactions with group companies, where consolidated financial statements are publicly available.  No other transactions which require disclosure by FRS8 took place during the year.</uk-gaap-pt:GeneralDescriptionRelatedPartyTransaction>
+  </uk-gaap-pt:GeneralRelatedPartyTransactionsDescriptions-Details>
+  <uk-gaap-pt:UltimateParentEntityOrControllingParty-Details>
+    <uk-gaap-pt:NameControllingParty contextRef="FY2008">BIG XBRL-TESTCO Limited</uk-gaap-pt:NameControllingParty>
+    <uk-gaap-pt:InformationOnControllingPartyIncludingDescriptionRelationship contextRef="FY2008">The company is a wholly owned subsidiary undertaking of BIG XBRL-TESTCO Limited.  The result of XBRL-TESTCO Limited is consolidated in the group financial statements of BIG XBRL-TESTCO Limited, which is the only group of which the company is a member.  The consolidated financial statements of BIG XBRL-TESTCO Limited can be obtained from Companies House, Cardiff, CF14 3UZ</uk-gaap-pt:InformationOnControllingPartyIncludingDescriptionRelationship>
+    <uk-gaap-pt:ControllingPartUltimateControllingParty contextRef="FY2008">true</uk-gaap-pt:ControllingPartUltimateControllingParty>
+  </uk-gaap-pt:UltimateParentEntityOrControllingParty-Details>
+  <uk-gaap-pt:DirectorOrExecutiveSigningReport-Details>
+    <uk-gaap-pt:DirectorOrExecutivesName contextRef="FY2008">A Smith</uk-gaap-pt:DirectorOrExecutivesName>
+  </uk-gaap-pt:DirectorOrExecutiveSigningReport-Details>
+  <uk-gaap-pt:AuditorsReport-Details>
+    <uk-gaap-pt:AuditorInformation-Details>
+      <uk-gaap-pt:NameAuditFirm contextRef="FY2008">Joe &amp; Fred LLP</uk-gaap-pt:NameAuditFirm>
+      <uk-gaap-pt:DescriptionAuditFirm contextRef="FY2008">Registered Auditor</uk-gaap-pt:DescriptionAuditFirm>
+      <uk-gaap-pt:NameOrLocationOfficePerformingAudit contextRef="FY2008">London</uk-gaap-pt:NameOrLocationOfficePerformingAudit>
+    </uk-gaap-pt:AuditorInformation-Details>
+    <uk-gaap-pt:AuditReportInformation-Details>
+      <uk-gaap-pt:BasisAuditOpinion contextRef="FY2008">We conducted our audit in accordance with International Standards on Auditing (UK and Ireland) issued by the Auditing Practices Board An audit includes examination, on a test basis, of evidence relevant to the amounts and disclosures in the financial statements.  It also includes an assessment of the significant estimates and judgements made by the directors in the preparation of the financial statements, and of whether the accounting policies are appropriate to the company's circumstances, consistently applied and adequately disclosed.  
+
+We planned and performed our audit so as to obtain all the information and explanations which we considered necessary in order to provide us with sufficient evidence to give reasonable assurance that the financial statements are free from material misstatement, whether caused by fraud or other irregularity or error In forming our opinion we also evaluated the overall adequacy of the presentation of information in the financial statements.</uk-gaap-pt:BasisAuditOpinion>
+      <uk-gaap-pt:StatementOnScopeAuditReport contextRef="FY2008">We have audited the company's financial statements for the year ended 31 December 2006 which comprise the Profit and Loss Account, Statement of Total Recognised Gains and Losses, Balance Sheet and the related notes 1 to 20.  These financial statements have been prepared on the basis of the accounting policies set out therein.
+
+This report is made solely to the company's members, as a body, in accordance with section 235 of the Companies Act 1985. Our audit work has been undertaken so that we might state to the company's members those matters we are required to state to them in an auditors' report and for no other purpose.  To the fullest extent permitted by law, we do not accept or assume responsibility to anyone other than the company and the company's members as a body, for our audit work, for this report, or for the opinions we have formed.</uk-gaap-pt:StatementOnScopeAuditReport>
+      <uk-gaap-pt:StatementResponsibilities contextRef="FY2008">The directors are responsible for the preparation of the financial statements in accordance with applicable United Kingdom law and Accounting Standards (United Kingdom Generally Accepted Accounting Practice) as set out in the Statement of Directors' Responsibilities.  
+
+Our responsibility is to audit the financial statements in accordance with relevant legal and regulatory requirements and International Standards on Auditing (UK and Ireland).  We report to you our opinion as to whether the financial statements give a true and fair view, are properly prepared in accordance with the Companies Act 1985, and whether the information given in the Directors' Report is consistent with the financial statements.  We also report to you if, in our opinion, the company has not kept proper accounting records, if we have not received all the information and explanations we require for our audit, or if information specified by law regarding directors' remuneration and other transactions is not disclosed.</uk-gaap-pt:StatementResponsibilities>
+      <uk-gaap-pt:OpinionAuditorsOnEntity contextRef="FY2008">In our opinion:
+• the financial statements give a true and fair view, in accordance with United Kingdom Generally Accepted Accounting Practice, of the state of the company's affairs as at 31 March 2008 and of its profit for the year then ended,
+• the Financial statements have been properly prepared in accordance with the Companies Act 1985, and
+• The information given in the Directors' Report is consistent with the financial statements</uk-gaap-pt:OpinionAuditorsOnEntity>
+      <uk-gaap-pt:DateAuditorsReport contextRef="FY20081">2008-07-15</uk-gaap-pt:DateAuditorsReport>
+    </uk-gaap-pt:AuditReportInformation-Details>
+  </uk-gaap-pt:AuditorsReport-Details>
+  <uk-gaap-pt:ListDirectorsExecutives-Details>
+    <uk-gaap-pt:DirectorOrExecutivesName contextRef="FY2007">R Bloggs</uk-gaap-pt:DirectorOrExecutivesName>
+    <uk-gaap-pt:DirectorOrExecutivesInterestInSharesDebenturesEntityOrItsUndertakings-Details>
+      <uk-gaap-pt:DescriptionSharesOrDebentures contextRef="FY2007">Ordinary shares of £1 each</uk-gaap-pt:DescriptionSharesOrDebentures>
+      <uk-gaap-pt:NumberSharesDirectorOrExecutive contextRef="FY20072" unitRef="Pure" decimals="INF">1</uk-gaap-pt:NumberSharesDirectorOrExecutive>
+    </uk-gaap-pt:DirectorOrExecutivesInterestInSharesDebenturesEntityOrItsUndertakings-Details>
+  </uk-gaap-pt:ListDirectorsExecutives-Details>
+  <uk-gaap-pt:ListDirectorsExecutives-Details>
+    <uk-gaap-pt:DirectorOrExecutivesName contextRef="FY2008">R Bloggs</uk-gaap-pt:DirectorOrExecutivesName>
+    <uk-gaap-pt:DirectorOrExecutivesInterestInSharesDebenturesEntityOrItsUndertakings-Details>
+      <uk-gaap-pt:DescriptionSharesOrDebentures contextRef="FY2008">Ordinary shares of £1 each</uk-gaap-pt:DescriptionSharesOrDebentures>
+      <uk-gaap-pt:NumberSharesDirectorOrExecutive contextRef="FY20082" unitRef="Pure" decimals="INF">1</uk-gaap-pt:NumberSharesDirectorOrExecutive>
+    </uk-gaap-pt:DirectorOrExecutivesInterestInSharesDebenturesEntityOrItsUndertakings-Details>
+  </uk-gaap-pt:ListDirectorsExecutives-Details>
+  <uk-gaap-pt:OrdinarySharesAllotted-Details>
+    <uk-gaap-pt:TypeOrdinaryShare contextRef="FY2008">Ordinary shares of £1 each</uk-gaap-pt:TypeOrdinaryShare>
+    <uk-gaap-pt:ParValueOrdinaryShareParticularType contextRef="FY2008" unitRef="GBP" decimals="INF">1</uk-gaap-pt:ParValueOrdinaryShareParticularType>
+    <uk-gaap-pt:OrdinarySharesAllotted-MovementAnalysis>
+      <uk-gaap-pt:ValueOrdinarySharesAllotted contextRef="FY20082" unitRef="GBP" decimals="INF">500</uk-gaap-pt:ValueOrdinarySharesAllotted>
+      <uk-gaap-pt:NumberOrdinarySharesAllotted contextRef="FY20082" unitRef="Pure" decimals="INF">500</uk-gaap-pt:NumberOrdinarySharesAllotted>
+    </uk-gaap-pt:OrdinarySharesAllotted-MovementAnalysis>
+  </uk-gaap-pt:OrdinarySharesAllotted-Details>
+  <uk-gaap-pt:OtherTypeRiskExposure-Details>
+    <uk-gaap-pt:DescriptionOtherTypeRisk contextRef="FY2008">Cash flow risk</uk-gaap-pt:DescriptionOtherTypeRisk>
+    <uk-gaap-pt:DescriptionPolicyProcessesForManagingOtherTypeRisk contextRef="FY2008">Cash flow risk is the risk of exposure to variability in cash flows that is attributable to a particular risk associated with a recognised asset or liability.  XBRL-TESTCO manages this risk, where significant, by use of derivatives as explained above.</uk-gaap-pt:DescriptionPolicyProcessesForManagingOtherTypeRisk>
+  </uk-gaap-pt:OtherTypeRiskExposure-Details>
+  <uk-gaap-pt:EquityAuthorised-Details>
+    <uk-gaap-pt:TypeOrdinaryShare contextRef="FY2007">Ordinary shares of £1 each</uk-gaap-pt:TypeOrdinaryShare>
+    <uk-gaap-pt:NumberOrdinarySharesParticularTypeAuthorised contextRef="FY20072" unitRef="Pure" decimals="INF">1000</uk-gaap-pt:NumberOrdinarySharesParticularTypeAuthorised>
+    <uk-gaap-pt:ParValueOrdinaryShareParticularType contextRef="FY2008" unitRef="GBP" decimals="INF">1</uk-gaap-pt:ParValueOrdinaryShareParticularType>
+  </uk-gaap-pt:EquityAuthorised-Details>
+  <uk-cd-pres:EntityInformation-Details>
+    <uk-cd-pres:EntityNames-Details>
+      <uk-cd-pres:EntityCurrentLegalOrRegisteredName contextRef="FY2008">XBRL-TESTCO Limited</uk-cd-pres:EntityCurrentLegalOrRegisteredName>
+    </uk-cd-pres:EntityNames-Details>
+    <uk-cd-pres:EntityIdentifyingCodes-Details>
+      <uk-cd-pres:UKCompaniesHouseRegisteredNumber contextRef="FY2008">12345678</uk-cd-pres:UKCompaniesHouseRegisteredNumber>
+    </uk-cd-pres:EntityIdentifyingCodes-Details>
+    <uk-cd-pres:EntityActivity-Details>
+      <uk-cd-pres:DescriptionActivity contextRef="FY2008">The principal activity of the company continued to be the manufacture and distribution of boats and shoes.  </uk-cd-pres:DescriptionActivity>
+      <uk-cd-pres:MainEntityActivity contextRef="FY20082">true</uk-cd-pres:MainEntityActivity>
+    </uk-cd-pres:EntityActivity-Details>
+    <uk-cd-pres:EntityOfficers-Details>
+      <uk-cd-pres:CompanySecretary contextRef="FY2008"/>
+      <uk-cd-pres:NameEntityOfficer contextRef="FY2008">A Smith</uk-cd-pres:NameEntityOfficer>
+    </uk-cd-pres:EntityOfficers-Details>
+    <uk-cd-pres:EntityOfficers-Details>
+      <uk-cd-pres:Director contextRef="FY2008"/>
+      <uk-cd-pres:NameEntityOfficer contextRef="FY2008">A Smith</uk-cd-pres:NameEntityOfficer>
+    </uk-cd-pres:EntityOfficers-Details>
+    <uk-cd-pres:EntityOfficers-Details>
+      <uk-cd-pres:Director contextRef="FY2008"/>
+      <uk-cd-pres:NameEntityOfficer contextRef="FY2008">J Brown</uk-cd-pres:NameEntityOfficer>
+    </uk-cd-pres:EntityOfficers-Details>
+    <uk-cd-pres:EntityOfficers-Details>
+      <uk-cd-pres:Director contextRef="FY2008"/>
+      <uk-cd-pres:NameEntityOfficer contextRef="FY2008">R Bloggs</uk-cd-pres:NameEntityOfficer>
+    </uk-cd-pres:EntityOfficers-Details>
+    <uk-cd-pres:EntityRegisteredOfficeAddress-Details>
+      <uk-cd-pres:Address-Details>
+        <uk-cd-pres:AddressLine1 contextRef="FY2008">XBRL-TESTCO Towers</uk-cd-pres:AddressLine1>
+        <uk-cd-pres:AddressLine2 contextRef="FY2008">1 XBRL Street</uk-cd-pres:AddressLine2>
+        <uk-cd-pres:PrincipalLocation-CityOrTown contextRef="FY2008">Testtown</uk-cd-pres:PrincipalLocation-CityOrTown>
+        <uk-cd-pres:PostalCodeZip contextRef="FY2008">TT1 1AA</uk-cd-pres:PostalCodeZip>
+      </uk-cd-pres:Address-Details>
+    </uk-cd-pres:EntityRegisteredOfficeAddress-Details>
+    <uk-cd-pres:ThirdPartyAgents-Details>
+      <uk-cd-pres:EntityAccountantsOrAuditors contextRef="FY2008"/>
+      <uk-cd-pres:NameThirdPartyAgent contextRef="FY2008">Joe &amp; Fred LLP</uk-cd-pres:NameThirdPartyAgent>
+      <uk-cd-pres:GeneralContactInformation-Details>
+        <uk-cd-pres:ContactInformation-Details>
+          <uk-cd-pres:Address-Details>
+            <uk-cd-pres:AddressLine1 contextRef="FY2008">1 London Street</uk-cd-pres:AddressLine1>
+            <uk-cd-pres:PrincipalLocation-CityOrTown contextRef="FY2008">London</uk-cd-pres:PrincipalLocation-CityOrTown>
+            <uk-cd-pres:PostalCodeZip contextRef="FY2008">LO1 2AA</uk-cd-pres:PostalCodeZip>
+          </uk-cd-pres:Address-Details>
+        </uk-cd-pres:ContactInformation-Details>
+      </uk-cd-pres:GeneralContactInformation-Details>
+    </uk-cd-pres:ThirdPartyAgents-Details>
+    <uk-cd-pres:ThirdPartyAgents-Details>
+      <uk-cd-pres:EntityBankers contextRef="FY2008"/>
+      <uk-cd-pres:NameThirdPartyAgent contextRef="FY2008">BigBank PLC</uk-cd-pres:NameThirdPartyAgent>
+      <uk-cd-pres:GeneralContactInformation-Details>
+        <uk-cd-pres:ContactInformation-Details>
+          <uk-cd-pres:Address-Details>
+            <uk-cd-pres:AddressLine1 contextRef="FY2008">2 London Street</uk-cd-pres:AddressLine1>
+            <uk-cd-pres:PrincipalLocation-CityOrTown contextRef="FY2008">London</uk-cd-pres:PrincipalLocation-CityOrTown>
+            <uk-cd-pres:PostalCodeZip contextRef="FY2008">LO1 3AA</uk-cd-pres:PostalCodeZip>
+          </uk-cd-pres:Address-Details>
+        </uk-cd-pres:ContactInformation-Details>
+      </uk-cd-pres:GeneralContactInformation-Details>
+    </uk-cd-pres:ThirdPartyAgents-Details>
+    <uk-cd-pres:ThirdPartyAgents-Details>
+      <uk-cd-pres:EntityLawyersOrLegalAdvisers contextRef="FY2008"/>
+      <uk-cd-pres:DescriptionOrOtherInformationOnThirdPartyAgent contextRef="FY2008">Legal &amp; Co</uk-cd-pres:DescriptionOrOtherInformationOnThirdPartyAgent>
+      <uk-cd-pres:GeneralContactInformation-Details>
+        <uk-cd-pres:ContactInformation-Details>
+          <uk-cd-pres:Address-Details>
+            <uk-cd-pres:AddressLine1 contextRef="FY2008">3 London Street</uk-cd-pres:AddressLine1>
+            <uk-cd-pres:PrincipalLocation-CityOrTown contextRef="FY2008">London</uk-cd-pres:PrincipalLocation-CityOrTown>
+	    <uk-cd-pres:PostalCodeZip contextRef="FY2008">LO1 4AA</uk-cd-pres:PostalCodeZip>
+          </uk-cd-pres:Address-Details>
+        </uk-cd-pres:ContactInformation-Details>
+      </uk-cd-pres:GeneralContactInformation-Details>
+    </uk-cd-pres:ThirdPartyAgents-Details>
+  </uk-cd-pres:EntityInformation-Details>
+  <uk-cd-pres:DocumentInformation-Details>
+    <uk-cd-pres:BusinessReportInformation-Details>
+      <uk-cd-pres:BusinessReportName contextRef="FY2008">Report and Financial Statements</uk-cd-pres:BusinessReportName>
+      <uk-cd-pres:BusinessReportDatesPeriodsCovered-Details>
+        <uk-cd-pres:BalanceSheetDate contextRef="FY20082">2008-03-31</uk-cd-pres:BalanceSheetDate>
+      </uk-cd-pres:BusinessReportDatesPeriodsCovered-Details>
+    </uk-cd-pres:BusinessReportInformation-Details>
+  </uk-cd-pres:DocumentInformation-Details>
+  <!--Element Section-->
+  <uk-gaap-pt:AccountancyFeesAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">18000</uk-gaap-pt:AccountancyFeesAdministrativeExpenses>
+  <uk-gaap-pt:AccountancyFeesAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">56000</uk-gaap-pt:AccountancyFeesAdministrativeExpenses>
+  <uk-gaap-pt:AccrualsDeferredIncomeWithinOneYear contextRef="FY20072" unitRef="GBP" decimals="-3">0</uk-gaap-pt:AccrualsDeferredIncomeWithinOneYear>
+  <uk-gaap-pt:AccrualsDeferredIncomeWithinOneYear contextRef="FY20082" unitRef="GBP" decimals="-3">1508000</uk-gaap-pt:AccrualsDeferredIncomeWithinOneYear>
+  <uk-gaap-pt:AdjustmentForPriorPeriodsLeadingToAnIncreaseDecreaseInTaxCharge contextRef="FY2007" unitRef="GBP" decimals="-3">-28000</uk-gaap-pt:AdjustmentForPriorPeriodsLeadingToAnIncreaseDecreaseInTaxCharge>
+  <uk-gaap-pt:AdjustmentForPriorPeriodsLeadingToAnIncreaseDecreaseInTaxCharge contextRef="FY2008" unitRef="GBP" decimals="-3">19000</uk-gaap-pt:AdjustmentForPriorPeriodsLeadingToAnIncreaseDecreaseInTaxCharge>
+  <uk-gaap-pt:AdministrationSupportAverageNumberEmployees contextRef="FY2007" unitRef="Pure" decimals="INF">21</uk-gaap-pt:AdministrationSupportAverageNumberEmployees>
+  <uk-gaap-pt:AdministrationSupportAverageNumberEmployees contextRef="FY2008" unitRef="Pure" decimals="INF">25</uk-gaap-pt:AdministrationSupportAverageNumberEmployees>
+  <uk-gaap-pt:AdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">4211000</uk-gaap-pt:AdministrativeExpenses>
+  <uk-gaap-pt:AdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">9634000</uk-gaap-pt:AdministrativeExpenses>
+  <uk-gaap-pt:AmortisationIntangibleAssets contextRef="FY2007" unitRef="GBP" decimals="-3">568000</uk-gaap-pt:AmortisationIntangibleAssets>
+  <uk-gaap-pt:AmortisationIntangibleAssets contextRef="FY2008" unitRef="GBP" decimals="-3">2640000</uk-gaap-pt:AmortisationIntangibleAssets>
+  <uk-gaap-pt:AmountsOwedToParentUndertakingAfterOneYear contextRef="FY20072" unitRef="GBP" decimals="-3">13200000</uk-gaap-pt:AmountsOwedToParentUndertakingAfterOneYear>
+  <uk-gaap-pt:AmountsOwedToParentUndertakingAfterOneYear contextRef="FY20082" unitRef="GBP" decimals="-3">13200000</uk-gaap-pt:AmountsOwedToParentUndertakingAfterOneYear>
+  <uk-gaap-pt:AmountsOwedToParentUndertakingWithinOneYear contextRef="FY20072" unitRef="GBP" decimals="-3">492000</uk-gaap-pt:AmountsOwedToParentUndertakingWithinOneYear>
+  <uk-gaap-pt:AmountsOwedToParentUndertakingWithinOneYear contextRef="FY20082" unitRef="GBP" decimals="-3">594000</uk-gaap-pt:AmountsOwedToParentUndertakingWithinOneYear>
+  <uk-gaap-pt:AverageNumberEmployeesDuringPeriod contextRef="FY2007" unitRef="Pure" decimals="INF">75</uk-gaap-pt:AverageNumberEmployeesDuringPeriod>
+  <uk-gaap-pt:AverageNumberEmployeesDuringPeriod contextRef="FY2008" unitRef="Pure" decimals="INF">118</uk-gaap-pt:AverageNumberEmployeesDuringPeriod>
+  <uk-gaap-pt:BadDebtsWrittenOffAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">18000</uk-gaap-pt:BadDebtsWrittenOffAdministrativeExpenses>
+  <uk-gaap-pt:BadDebtsWrittenOffAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">0</uk-gaap-pt:BadDebtsWrittenOffAdministrativeExpenses>
+  <uk-gaap-pt:BankChargesDetailedPL contextRef="FY2007" unitRef="GBP" decimals="-3">22000</uk-gaap-pt:BankChargesDetailedPL>
+  <uk-gaap-pt:BankChargesDetailedPL contextRef="FY2008" unitRef="GBP" decimals="-3">31000</uk-gaap-pt:BankChargesDetailedPL>
+  <uk-gaap-pt:BankLoansOverdraftsWithinOneYear id="Item-03" contextRef="FY20072" unitRef="GBP" decimals="-3">14000</uk-gaap-pt:BankLoansOverdraftsWithinOneYear>
+  <uk-gaap-pt:BankLoansOverdraftsWithinOneYear id="Item-01" contextRef="FY20082" unitRef="GBP" decimals="-3">0</uk-gaap-pt:BankLoansOverdraftsWithinOneYear>
+  <uk-gaap-pt:BankOverdraftsFinanceCharges contextRef="FY2007" unitRef="GBP" decimals="-3">1000</uk-gaap-pt:BankOverdraftsFinanceCharges>
+  <uk-gaap-pt:BankOverdraftsFinanceCharges contextRef="FY2008" unitRef="GBP" decimals="-3">5000</uk-gaap-pt:BankOverdraftsFinanceCharges>
+  <uk-gaap-pt:CalledUpShareCapital contextRef="FY20072" unitRef="GBP" decimals="-3">0</uk-gaap-pt:CalledUpShareCapital>
+  <uk-gaap-pt:CalledUpShareCapital contextRef="FY20082" unitRef="GBP" decimals="-3">0</uk-gaap-pt:CalledUpShareCapital>
+  <uk-gaap-pt:CapitalAllowancesInExcessDepreciationLeadingToDecreaseIncreaseInTax contextRef="FY2007" unitRef="GBP" decimals="-3">-13000</uk-gaap-pt:CapitalAllowancesInExcessDepreciationLeadingToDecreaseIncreaseInTax>
+  <uk-gaap-pt:CapitalAllowancesInExcessDepreciationLeadingToDecreaseIncreaseInTax contextRef="FY2008" unitRef="GBP" decimals="-3">-29000</uk-gaap-pt:CapitalAllowancesInExcessDepreciationLeadingToDecreaseIncreaseInTax>
+  <uk-gaap-pt:CashBankInHand contextRef="FY20072" unitRef="GBP" decimals="-3">2833000</uk-gaap-pt:CashBankInHand>
+  <uk-gaap-pt:CashBankInHand contextRef="FY20082" unitRef="GBP" decimals="-3">5318000</uk-gaap-pt:CashBankInHand>
+  <uk-gaap-pt:CompanyExemptFromPreparingCashFlowStatementUnderFRS1 contextRef="FY2008">true</uk-gaap-pt:CompanyExemptFromPreparingCashFlowStatementUnderFRS1>
+  <uk-gaap-pt:CompanyNotDormant contextRef="FY2008">true</uk-gaap-pt:CompanyNotDormant>
+  <uk-gaap-pt:CompanyTrading contextRef="FY2008">true</uk-gaap-pt:CompanyTrading>
+  <uk-gaap-pt:ComputerSoftwareITConsumablesMaintenanceAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">107000</uk-gaap-pt:ComputerSoftwareITConsumablesMaintenanceAdministrativeExpenses>
+  <uk-gaap-pt:ComputerSoftwareITConsumablesMaintenanceAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">196000</uk-gaap-pt:ComputerSoftwareITConsumablesMaintenanceAdministrativeExpenses>
+  <uk-gaap-pt:CorporationTaxDueWithinOneYear contextRef="FY20072" unitRef="GBP" decimals="-3">879000</uk-gaap-pt:CorporationTaxDueWithinOneYear>
+  <uk-gaap-pt:CorporationTaxDueWithinOneYear contextRef="FY20082" unitRef="GBP" decimals="-3">1729000</uk-gaap-pt:CorporationTaxDueWithinOneYear>
+  <uk-gaap-pt:CostSales contextRef="FY2007" unitRef="GBP" decimals="-3">23290000</uk-gaap-pt:CostSales>
+  <uk-gaap-pt:CostSales contextRef="FY2008" unitRef="GBP" decimals="-3">48072000</uk-gaap-pt:CostSales>
+  <uk-gaap-pt:CourierServicesAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">37000</uk-gaap-pt:CourierServicesAdministrativeExpenses>
+  <uk-gaap-pt:CourierServicesAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">40000</uk-gaap-pt:CourierServicesAdministrativeExpenses>
+  <uk-gaap-pt:CreditorsDueAfterOneYearTotalNon-currentLiabilities contextRef="FY20072" unitRef="GBP" decimals="-3">13200000</uk-gaap-pt:CreditorsDueAfterOneYearTotalNon-currentLiabilities>
+  <uk-gaap-pt:CreditorsDueAfterOneYearTotalNon-currentLiabilities contextRef="FY20082" unitRef="GBP" decimals="-3">13200000</uk-gaap-pt:CreditorsDueAfterOneYearTotalNon-currentLiabilities>
+  <uk-gaap-pt:CreditorsDueWithinOneYearTotalCurrentLiabilities contextRef="FY20072" unitRef="GBP" decimals="-3">7896000</uk-gaap-pt:CreditorsDueWithinOneYearTotalCurrentLiabilities>
+  <uk-gaap-pt:CreditorsDueWithinOneYearTotalCurrentLiabilities contextRef="FY20082" unitRef="GBP" decimals="-3">16153000</uk-gaap-pt:CreditorsDueWithinOneYearTotalCurrentLiabilities>
+  <uk-gaap-pt:CurrentAssets contextRef="FY20072" unitRef="GBP" decimals="-3">11804000</uk-gaap-pt:CurrentAssets>
+  <uk-gaap-pt:CurrentAssets contextRef="FY20082" unitRef="GBP" decimals="-3">23469000</uk-gaap-pt:CurrentAssets>
+  <uk-gaap-pt:DateApprovalOrAuthorisationBalanceSheet contextRef="FY20082">2008-07-15</uk-gaap-pt:DateApprovalOrAuthorisationBalanceSheet>
+  <uk-gaap-pt:DateSigningDirectorsReport contextRef="FY20082">2008-07-15</uk-gaap-pt:DateSigningDirectorsReport>
+  <uk-gaap-pt:Debtors contextRef="FY20072" unitRef="GBP" decimals="-3">6387000</uk-gaap-pt:Debtors>
+  <uk-gaap-pt:Debtors contextRef="FY20082" unitRef="GBP" decimals="-3">10350000</uk-gaap-pt:Debtors>
+  <uk-gaap-pt:DeferredTaxCurrentAsset contextRef="FY20072" unitRef="GBP" decimals="-3">110000</uk-gaap-pt:DeferredTaxCurrentAsset>
+  <uk-gaap-pt:DeferredTaxCurrentAsset contextRef="FY20081" unitRef="GBP" decimals="-3">110000</uk-gaap-pt:DeferredTaxCurrentAsset>
+  <uk-gaap-pt:DeferredTaxCurrentAsset contextRef="FY20082" unitRef="GBP" decimals="-3">167000</uk-gaap-pt:DeferredTaxCurrentAsset>
+  <uk-gaap-pt:DepreciationMethodRateOrUsefulEconomicLifeForTangibleFixedAssets contextRef="FY2008">Tangible fixed assets are stated at cost less depreciation.  Depreciation is provided at rates calculated to write off the cost less estimated residual value of each asset over its expected useful life, as follows:</uk-gaap-pt:DepreciationMethodRateOrUsefulEconomicLifeForTangibleFixedAssets>
+  <uk-gaap-pt:DepreciationMethodRateOrUsefulEconomicLifeForTangibleFixedAssets contextRef="FY2008_Motor_vehicles">Motor vehicles -- over a period of between 2 and 5 years straight line</uk-gaap-pt:DepreciationMethodRateOrUsefulEconomicLifeForTangibleFixedAssets>
+  <uk-gaap-pt:DepreciationMethodRateOrUsefulEconomicLifeForTangibleFixedAssets contextRef="FY2008_Plant_and_machinery">Plant and machinery -- over a period of between 2 and 5 years straight line</uk-gaap-pt:DepreciationMethodRateOrUsefulEconomicLifeForTangibleFixedAssets>
+  <uk-gaap-pt:DepreciationOtherAmountsWrittenOffTangibleFixedAssets contextRef="FY2007" unitRef="GBP" decimals="-3">222000</uk-gaap-pt:DepreciationOtherAmountsWrittenOffTangibleFixedAssets>
+  <uk-gaap-pt:DepreciationOtherAmountsWrittenOffTangibleFixedAssets contextRef="FY2008" unitRef="GBP" decimals="-3">347000</uk-gaap-pt:DepreciationOtherAmountsWrittenOffTangibleFixedAssets>
+  <uk-gaap-pt:DepreciationTangibleFixedAssetsAdministrativeExpenses contextRef="FY2007_Fixtures__fittings__tools_and_equipment" unitRef="GBP" decimals="-3">141000</uk-gaap-pt:DepreciationTangibleFixedAssetsAdministrativeExpenses>
+  <uk-gaap-pt:DepreciationTangibleFixedAssetsAdministrativeExpenses contextRef="FY2008_Fixtures__fittings__tools_and_equipment" unitRef="GBP" decimals="-3">232000</uk-gaap-pt:DepreciationTangibleFixedAssetsAdministrativeExpenses>
+  <uk-gaap-pt:DepreciationTangibleFixedAssetsDistributionCosts contextRef="FY2007_Motor_vehicles" unitRef="GBP" decimals="-3">45000</uk-gaap-pt:DepreciationTangibleFixedAssetsDistributionCosts>
+  <uk-gaap-pt:DepreciationTangibleFixedAssetsDistributionCosts contextRef="FY2007_Plant_and_machinery" unitRef="GBP" decimals="-3">37000</uk-gaap-pt:DepreciationTangibleFixedAssetsDistributionCosts>
+  <uk-gaap-pt:DepreciationTangibleFixedAssetsDistributionCosts contextRef="FY2008_Motor_vehicles" unitRef="GBP" decimals="-3">58000</uk-gaap-pt:DepreciationTangibleFixedAssetsDistributionCosts>
+  <uk-gaap-pt:DepreciationTangibleFixedAssetsDistributionCosts contextRef="FY2008_Plant_and_machinery" unitRef="GBP" decimals="-3">54000</uk-gaap-pt:DepreciationTangibleFixedAssetsDistributionCosts>
+  <uk-gaap-pt:DescriptionEffectChangeInEstimatesResidualValuesTangibleFixedAssets contextRef="FY2008">The carrying values of tangible fixed assets are reviewed for impairment when events or changes in circumstances indicate the carrying value may not be recoverable.</uk-gaap-pt:DescriptionEffectChangeInEstimatesResidualValuesTangibleFixedAssets>
+  <uk-gaap-pt:DescriptionGoodwillIntangibleAssetAmortisationMethodPeriods contextRef="FY2008">Intangible assets are amortised on a straight line basis over their useful economic lives up to a maximum of 20 years. The carrying value of intangible assets is reviewed for impairment at the end of the first full year following acquisition and in other periods if events or changes in circumstance indicate that the carrying value may not be recoverable.</uk-gaap-pt:DescriptionGoodwillIntangibleAssetAmortisationMethodPeriods>
+  <uk-gaap-pt:DescriptionMethodAscertainingAttributableProfit contextRef="FY2008">Net realisable value is based on estimated selling price less any further costs expected to be incurred to completion and disposal.</uk-gaap-pt:DescriptionMethodAscertainingAttributableProfit>
+  <uk-gaap-pt:DescriptionPolicyProcessesForManagingCreditRisk contextRef="FY2008">Credit risk is the risk that one party to a financial instrument will cause a financial loss for that other party by failing to discharge an obligation.  XBRL-TESTCO policies are aimed at minimising such losses, and require that deferred terms are only granted to customers who demonstrate an appropriate payment history and satisfy credit worthiness procedures.</uk-gaap-pt:DescriptionPolicyProcessesForManagingCreditRisk>
+  <uk-gaap-pt:DescriptionPolicyProcessesForManagingLiquidityRisk contextRef="FY2008">Liquidity risk is the risk that an entity will encounter difficulty in meeting obligations associated with financial liabilities.  XBRL-TESTCO aims to mitigate liquidity risk by managing cash generation by its operations, and also via financing facilities.</uk-gaap-pt:DescriptionPolicyProcessesForManagingLiquidityRisk>
+  <uk-gaap-pt:DescriptionTranslationAmountsInForeignCurrenciesIncludingResultsForeignEntities contextRef="FY2008">Transactions in foreign currencies are recorded at the rate ruling at the date of the transaction. 
+Monetary assets and liabilities denominated in foreign currencies are retranslated at the rate of exchange ruling at the balance sheet date.</uk-gaap-pt:DescriptionTranslationAmountsInForeignCurrenciesIncludingResultsForeignEntities>
+  <uk-gaap-pt:DescriptionTreatmentForeignExchangeDifferences contextRef="FY2008">All differences are taken to the profit and loss account.</uk-gaap-pt:DescriptionTreatmentForeignExchangeDifferences>
+  <uk-gaap-pt:DirectorsRemunerationAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">0</uk-gaap-pt:DirectorsRemunerationAdministrativeExpenses>
+  <uk-gaap-pt:DirectorsRemunerationAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">0</uk-gaap-pt:DirectorsRemunerationAdministrativeExpenses>
+  <uk-gaap-pt:DirectorsShareCapitalFree-textComment contextRef="FY2008">The directors' interests in the share capital of the company's parent undertaking, Big Sample Trading Limited, are disclosed an the directors' report and financial statements of that company.</uk-gaap-pt:DirectorsShareCapitalFree-textComment>
+  <uk-gaap-pt:DiscountsReceivableAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">91000</uk-gaap-pt:DiscountsReceivableAdministrativeExpenses>
+  <uk-gaap-pt:DiscountsReceivableAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">186000</uk-gaap-pt:DiscountsReceivableAdministrativeExpenses>
+  <uk-gaap-pt:DistributionCosts contextRef="FY2007" unitRef="GBP" decimals="-3">6538000</uk-gaap-pt:DistributionCosts>
+  <uk-gaap-pt:DistributionCosts contextRef="FY2008" unitRef="GBP" decimals="-3">11519000</uk-gaap-pt:DistributionCosts>
+  <uk-gaap-pt:DistributionCostsAdministrativeCostsSubtotal contextRef="FY2007" unitRef="GBP" decimals="-3">10749000</uk-gaap-pt:DistributionCostsAdministrativeCostsSubtotal>
+  <uk-gaap-pt:DistributionCostsAdministrativeCostsSubtotal contextRef="FY2008" unitRef="GBP" decimals="-3">21153000</uk-gaap-pt:DistributionCostsAdministrativeCostsSubtotal>
+  <uk-gaap-pt:DividendsFree-textComment contextRef="FY2008">Subject to approval by Shareholders the proposed dividend will be paid post year end and will be accounted for as an appropriation of retained earnings in the year ended 31 March 2008.</uk-gaap-pt:DividendsFree-textComment>
+  <uk-gaap-pt:DividendsWithdrawnFromProfitLossAccountReserve contextRef="FY2008" unitRef="GBP" decimals="-3">2500000</uk-gaap-pt:DividendsWithdrawnFromProfitLossAccountReserve>
+  <uk-gaap-pt:DividendsWithdrawnFromTotalReserves contextRef="FY2008" unitRef="GBP" decimals="-3">2500000</uk-gaap-pt:DividendsWithdrawnFromTotalReserves>
+  <uk-gaap-pt:DoubleTaxationRelief contextRef="FY2007" unitRef="GBP" decimals="-3">50000</uk-gaap-pt:DoubleTaxationRelief>
+  <uk-gaap-pt:DoubleTaxationRelief contextRef="FY2008" unitRef="GBP" decimals="-3">46000</uk-gaap-pt:DoubleTaxationRelief>
+  <uk-gaap-pt:EmployersNationalInsuranceAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">295000</uk-gaap-pt:EmployersNationalInsuranceAdministrativeExpenses>
+  <uk-gaap-pt:EmployersNationalInsuranceAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">547000</uk-gaap-pt:EmployersNationalInsuranceAdministrativeExpenses>
+  <uk-gaap-pt:EntertainingExpensesIncurredByStaffAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">35000</uk-gaap-pt:EntertainingExpensesIncurredByStaffAdministrativeExpenses>
+  <uk-gaap-pt:EntertainingExpensesIncurredByStaffAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">32000</uk-gaap-pt:EntertainingExpensesIncurredByStaffAdministrativeExpenses>
+  <uk-gaap-pt:EquitySharesTotalDividendPayment contextRef="FY2007" unitRef="GBP" decimals="-3">0</uk-gaap-pt:EquitySharesTotalDividendPayment>
+  <uk-gaap-pt:EquitySharesTotalDividendPayment contextRef="FY2008" unitRef="GBP" decimals="-3">4500000</uk-gaap-pt:EquitySharesTotalDividendPayment>
+  <uk-gaap-pt:ExpensesNotDeductibleForTaxPurposes contextRef="FY2007" unitRef="GBP" decimals="-3">74000</uk-gaap-pt:ExpensesNotDeductibleForTaxPurposes>
+  <uk-gaap-pt:ExpensesNotDeductibleForTaxPurposes contextRef="FY2008" unitRef="GBP" decimals="-3">801000</uk-gaap-pt:ExpensesNotDeductibleForTaxPurposes>
+  <uk-gaap-pt:FeesCommissionsPayableAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">1236000</uk-gaap-pt:FeesCommissionsPayableAdministrativeExpenses>
+  <uk-gaap-pt:FeesCommissionsPayableAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">1650000</uk-gaap-pt:FeesCommissionsPayableAdministrativeExpenses>
+  <uk-gaap-pt:FinalPayment contextRef="FY2007_Dividends_proposed" unitRef="GBP" decimals="-3">0</uk-gaap-pt:FinalPayment>
+  <uk-gaap-pt:FinalPayment contextRef="FY2008_Dividends_proposed" unitRef="GBP" decimals="-3">2000000</uk-gaap-pt:FinalPayment>
+  <uk-gaap-pt:FinancialInstrumentFairValuesUnderCompaniesActSchedule4Para45Free-textComment contextRef="FY2008">At the year end the company was committed to obligations under forward purchase contracts with a value of £16,073,000 (2005 - £4,424,000)</uk-gaap-pt:FinancialInstrumentFairValuesUnderCompaniesActSchedule4Para45Free-textComment>
+  <uk-gaap-pt:FinancialInstrumentsRisksFree-textComment contextRef="FY2008">XBRL-TESTCO uses forward foreign currency contracts to reduce exposure to the variability of foreign exchange rates by fixing the rate of any material payments in a foreign currency.</uk-gaap-pt:FinancialInstrumentsRisksFree-textComment>
+  <uk-gaap-pt:FinishedGoodsGoodsForResale contextRef="FY20072" unitRef="GBP" decimals="-3">1483000</uk-gaap-pt:FinishedGoodsGoodsForResale>
+  <uk-gaap-pt:FinishedGoodsGoodsForResale contextRef="FY20082" unitRef="GBP" decimals="-3">2092000</uk-gaap-pt:FinishedGoodsGoodsForResale>
+  <uk-gaap-pt:FixedAssets contextRef="FY20072" unitRef="GBP" decimals="-3">13032000</uk-gaap-pt:FixedAssets>
+  <uk-gaap-pt:FixedAssets contextRef="FY20082" unitRef="GBP" decimals="-3">10783000</uk-gaap-pt:FixedAssets>
+  <uk-gaap-pt:ForeignCurrentTaxOnIncomeForPeriod contextRef="FY2007" unitRef="GBP" decimals="-3">0</uk-gaap-pt:ForeignCurrentTaxOnIncomeForPeriod>
+  <uk-gaap-pt:ForeignCurrentTaxOnIncomeForPeriod contextRef="FY2008" unitRef="GBP" decimals="-3">46000</uk-gaap-pt:ForeignCurrentTaxOnIncomeForPeriod>
+  <uk-gaap-pt:GrossProfitLoss contextRef="FY2007" unitRef="GBP" decimals="-3">14434000</uk-gaap-pt:GrossProfitLoss>
+  <uk-gaap-pt:GrossProfitLoss contextRef="FY2008" unitRef="GBP" decimals="-3">27449000</uk-gaap-pt:GrossProfitLoss>
+  <uk-gaap-pt:HireLeasingPlantMachineryCosts contextRef="FY2007" unitRef="GBP" decimals="-3">8000</uk-gaap-pt:HireLeasingPlantMachineryCosts>
+  <uk-gaap-pt:HireLeasingPlantMachineryCosts contextRef="FY2008" unitRef="GBP" decimals="-3">0</uk-gaap-pt:HireLeasingPlantMachineryCosts>
+  <uk-gaap-pt:HirePurchaseContractsFinanceCharges contextRef="FY2007" unitRef="GBP" decimals="-3">3000</uk-gaap-pt:HirePurchaseContractsFinanceCharges>
+  <uk-gaap-pt:HirePurchaseContractsFinanceCharges contextRef="FY2008" unitRef="GBP" decimals="-3">0</uk-gaap-pt:HirePurchaseContractsFinanceCharges>
+  <uk-gaap-pt:IncreaseDecreaseInDeferredTaxFromOriginationReversalTimingDifferences contextRef="FY2007" unitRef="GBP" decimals="-3">-132000</uk-gaap-pt:IncreaseDecreaseInDeferredTaxFromOriginationReversalTimingDifferences>
+  <uk-gaap-pt:IncreaseDecreaseInDeferredTaxFromOriginationReversalTimingDifferences contextRef="FY2008" unitRef="GBP" decimals="-3">-57000</uk-gaap-pt:IncreaseDecreaseInDeferredTaxFromOriginationReversalTimingDifferences>
+  <uk-gaap-pt:IncreaseDecreaseInForeignTaxArisingFromAdjustmentForPriorPeriods contextRef="FY2007" unitRef="GBP" decimals="-3">0</uk-gaap-pt:IncreaseDecreaseInForeignTaxArisingFromAdjustmentForPriorPeriods>
+  <uk-gaap-pt:IncreaseDecreaseInForeignTaxArisingFromAdjustmentForPriorPeriods contextRef="FY2008" unitRef="GBP" decimals="-3">35000</uk-gaap-pt:IncreaseDecreaseInForeignTaxArisingFromAdjustmentForPriorPeriods>
+  <uk-gaap-pt:IncreaseDecreaseInUKCorporationTaxArisingFromAdjustmentForPriorPeriods contextRef="FY2007" unitRef="GBP" decimals="-3">-28000</uk-gaap-pt:IncreaseDecreaseInUKCorporationTaxArisingFromAdjustmentForPriorPeriods>
+  <uk-gaap-pt:IncreaseDecreaseInUKCorporationTaxArisingFromAdjustmentForPriorPeriods contextRef="FY2008" unitRef="GBP" decimals="-3">-16000</uk-gaap-pt:IncreaseDecreaseInUKCorporationTaxArisingFromAdjustmentForPriorPeriods>
+  <uk-gaap-pt:InsuranceAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">32000</uk-gaap-pt:InsuranceAdministrativeExpenses>
+  <uk-gaap-pt:InsuranceAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">55000</uk-gaap-pt:InsuranceAdministrativeExpenses>
+  <uk-gaap-pt:IntangibleAssetsPolicy contextRef="FY2008">Intangible assets acquired separately from a business are capitalised at cost Intangible assets created within the business are not capitalised and expenditure is charged against profits in the year in which it is incurred.</uk-gaap-pt:IntangibleAssetsPolicy>
+  <uk-gaap-pt:IntangibleFixedAssets contextRef="FY20072" unitRef="GBP" decimals="-3">12632000</uk-gaap-pt:IntangibleFixedAssets>
+  <uk-gaap-pt:IntangibleFixedAssets contextRef="FY2007_Development_costs__patents_and_similar2" unitRef="GBP" decimals="-3">12632000</uk-gaap-pt:IntangibleFixedAssets>
+  <uk-gaap-pt:IntangibleFixedAssets contextRef="FY20082" unitRef="GBP" decimals="-3">9992000</uk-gaap-pt:IntangibleFixedAssets>
+  <uk-gaap-pt:IntangibleFixedAssets contextRef="FY2008_Development_costs__patents_and_similar2" unitRef="GBP" decimals="-3">9992000</uk-gaap-pt:IntangibleFixedAssets>
+  <uk-gaap-pt:IntangibleFixedAssetsAggregateAmortisationImpairment contextRef="FY2008_Development_costs__patents_and_similar1" unitRef="GBP" decimals="-3">568000</uk-gaap-pt:IntangibleFixedAssetsAggregateAmortisationImpairment>
+  <uk-gaap-pt:IntangibleFixedAssetsAggregateAmortisationImpairment contextRef="FY2008_Development_costs__patents_and_similar2" unitRef="GBP" decimals="-3">3208000</uk-gaap-pt:IntangibleFixedAssetsAggregateAmortisationImpairment>
+  <uk-gaap-pt:IntangibleFixedAssetsAmortisationChargedInPeriod contextRef="FY2008_Development_costs__patents_and_similar" unitRef="GBP" decimals="-3">2640000</uk-gaap-pt:IntangibleFixedAssetsAmortisationChargedInPeriod>
+  <uk-gaap-pt:IntangibleFixedAssetsCostOrValuation contextRef="FY2008_Development_costs__patents_and_similar1" unitRef="GBP" decimals="-3">13200000</uk-gaap-pt:IntangibleFixedAssetsCostOrValuation>
+  <uk-gaap-pt:IntangibleFixedAssetsCostOrValuation contextRef="FY2008_Development_costs__patents_and_similar2" unitRef="GBP" decimals="-3">13200000</uk-gaap-pt:IntangibleFixedAssetsCostOrValuation>
+  <uk-gaap-pt:InterestPayableSimilarCharges contextRef="FY2007" unitRef="GBP" decimals="-3">4000</uk-gaap-pt:InterestPayableSimilarCharges>
+  <uk-gaap-pt:InterestPayableSimilarCharges contextRef="FY2008" unitRef="GBP" decimals="-3">5000</uk-gaap-pt:InterestPayableSimilarCharges>
+  <uk-gaap-pt:InterimPayment contextRef="FY2007" unitRef="GBP" decimals="-3">0</uk-gaap-pt:InterimPayment>
+  <uk-gaap-pt:InterimPayment contextRef="FY2008" unitRef="GBP" decimals="-3">2500000</uk-gaap-pt:InterimPayment>
+  <uk-gaap-pt:LeasesHirePurchaseContractsFinanceCharges contextRef="FY2007" unitRef="GBP" decimals="-3">3000</uk-gaap-pt:LeasesHirePurchaseContractsFinanceCharges>
+  <uk-gaap-pt:LeasesHirePurchaseContractsFinanceCharges contextRef="FY2008" unitRef="GBP" decimals="-3">0</uk-gaap-pt:LeasesHirePurchaseContractsFinanceCharges>
+  <uk-gaap-pt:LegalFeesAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">37000</uk-gaap-pt:LegalFeesAdministrativeExpenses>
+  <uk-gaap-pt:LegalFeesAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">80000</uk-gaap-pt:LegalFeesAdministrativeExpenses>
+  <uk-gaap-pt:LesseeOperatingLeasePolicy contextRef="FY2008">Rentals payable under operating leases are charged in the profit and loss accounts on a straight line basis over the lease term.</uk-gaap-pt:LesseeOperatingLeasePolicy>
+  <uk-gaap-pt:LossGainFromDeferredTaxProfitLossAccount contextRef="FY2008" unitRef="GBP" decimals="-3">57000</uk-gaap-pt:LossGainFromDeferredTaxProfitLossAccount>
+  <uk-gaap-pt:MarketingAdvertisingCostsDistributionCosts contextRef="FY2007" unitRef="GBP" decimals="-3">2155000</uk-gaap-pt:MarketingAdvertisingCostsDistributionCosts>
+  <uk-gaap-pt:MarketingAdvertisingCostsDistributionCosts contextRef="FY2008" unitRef="GBP" decimals="-3">5032000</uk-gaap-pt:MarketingAdvertisingCostsDistributionCosts>
+  <uk-gaap-pt:NetAssetsLiabilitiesIncludingPensionAssetLiability contextRef="FY20072" unitRef="GBP" decimals="-3">3740000</uk-gaap-pt:NetAssetsLiabilitiesIncludingPensionAssetLiability>
+  <uk-gaap-pt:NetAssetsLiabilitiesIncludingPensionAssetLiability contextRef="FY20082" unitRef="GBP" decimals="-3">4899000</uk-gaap-pt:NetAssetsLiabilitiesIncludingPensionAssetLiability>
+  <uk-gaap-pt:NetCurrentAssetsLiabilities contextRef="FY20072" unitRef="GBP" decimals="-3">3908000</uk-gaap-pt:NetCurrentAssetsLiabilities>
+  <uk-gaap-pt:NetCurrentAssetsLiabilities contextRef="FY20082" unitRef="GBP" decimals="-3">7316000</uk-gaap-pt:NetCurrentAssetsLiabilities>
+  <uk-gaap-pt:OperatingProfitLoss contextRef="FY2007" unitRef="GBP" decimals="-3">3685000</uk-gaap-pt:OperatingProfitLoss>
+  <uk-gaap-pt:OperatingProfitLoss contextRef="FY2008" unitRef="GBP" decimals="-3">6296000</uk-gaap-pt:OperatingProfitLoss>
+  <uk-gaap-pt:OtherBorrowingsInterestPaymentsSimilarCharges contextRef="FY2007" unitRef="GBP" decimals="-3">1000</uk-gaap-pt:OtherBorrowingsInterestPaymentsSimilarCharges>
+  <uk-gaap-pt:OtherBorrowingsInterestPaymentsSimilarCharges contextRef="FY2008" unitRef="GBP" decimals="-3">5000</uk-gaap-pt:OtherBorrowingsInterestPaymentsSimilarCharges>
+  <uk-gaap-pt:OtherCreditorsDueWithinOneYear contextRef="FY20072" unitRef="GBP" decimals="-3">1018000</uk-gaap-pt:OtherCreditorsDueWithinOneYear>
+  <uk-gaap-pt:OtherCreditorsDueWithinOneYear contextRef="FY20082" unitRef="GBP" decimals="-3">2135000</uk-gaap-pt:OtherCreditorsDueWithinOneYear>
+  <uk-gaap-pt:OtherDebtors contextRef="FY20072" unitRef="GBP" decimals="-3">58000</uk-gaap-pt:OtherDebtors>
+  <uk-gaap-pt:OtherDebtors contextRef="FY20082" unitRef="GBP" decimals="-3">90000</uk-gaap-pt:OtherDebtors>
+  <uk-gaap-pt:OtherInterestReceivableSimilarIncome contextRef="FY2007" unitRef="GBP" decimals="-3">63000</uk-gaap-pt:OtherInterestReceivableSimilarIncome>
+  <uk-gaap-pt:OtherInterestReceivableSimilarIncome contextRef="FY2008" unitRef="GBP" decimals="-3">173000</uk-gaap-pt:OtherInterestReceivableSimilarIncome>
+  <uk-gaap-pt:OtherOperatingLeasesExpiringWithinOneYear contextRef="FY20072" unitRef="GBP" decimals="-3">1000</uk-gaap-pt:OtherOperatingLeasesExpiringWithinOneYear>
+  <uk-gaap-pt:OtherOperatingLeasesExpiringWithinOneYear contextRef="FY20082" unitRef="GBP" decimals="-3">0</uk-gaap-pt:OtherOperatingLeasesExpiringWithinOneYear>
+  <uk-gaap-pt:OtherTaxationSocialSecurityWithinOneYear contextRef="FY20072" unitRef="GBP" decimals="-3">473000</uk-gaap-pt:OtherTaxationSocialSecurityWithinOneYear>
+  <uk-gaap-pt:OtherTaxationSocialSecurityWithinOneYear contextRef="FY20082" unitRef="GBP" decimals="-3">548000</uk-gaap-pt:OtherTaxationSocialSecurityWithinOneYear>
+  <uk-gaap-pt:OtherTimingDifferencesLeadingToDecreaseIncreaseInTaxation contextRef="FY2007" unitRef="GBP" decimals="-3">-118000</uk-gaap-pt:OtherTimingDifferencesLeadingToDecreaseIncreaseInTaxation>
+  <uk-gaap-pt:OtherTimingDifferencesLeadingToDecreaseIncreaseInTaxation contextRef="FY2008" unitRef="GBP" decimals="-3">-74000</uk-gaap-pt:OtherTimingDifferencesLeadingToDecreaseIncreaseInTaxation>
+  <uk-gaap-pt:PensionCosts contextRef="FY2007" unitRef="GBP" decimals="-3">4000</uk-gaap-pt:PensionCosts>
+  <uk-gaap-pt:PensionCosts contextRef="FY2008" unitRef="GBP" decimals="-3">12000</uk-gaap-pt:PensionCosts>
+  <uk-gaap-pt:PensionsAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">4000</uk-gaap-pt:PensionsAdministrativeExpenses>
+  <uk-gaap-pt:PensionsAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">11000</uk-gaap-pt:PensionsAdministrativeExpenses>
+  <uk-gaap-pt:PoliticalCharitableDonationsFree-textComment contextRef="FY2008">During the year, the company made charitable contributions, of £500,000 to the XBRL-TESTCO Foundation and £ 206,000 to Shelter.</uk-gaap-pt:PoliticalCharitableDonationsFree-textComment>
+  <uk-gaap-pt:PremisesCleaningAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">15000</uk-gaap-pt:PremisesCleaningAdministrativeExpenses>
+  <uk-gaap-pt:PremisesCleaningAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">22000</uk-gaap-pt:PremisesCleaningAdministrativeExpenses>
+  <uk-gaap-pt:PremisesCostsAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">38000</uk-gaap-pt:PremisesCostsAdministrativeExpenses>
+  <uk-gaap-pt:PremisesCostsAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">707000</uk-gaap-pt:PremisesCostsAdministrativeExpenses>
+  <uk-gaap-pt:PrepaymentsAccruedIncomeCurrentAsset contextRef="FY20072" unitRef="GBP" decimals="-3">473000</uk-gaap-pt:PrepaymentsAccruedIncomeCurrentAsset>
+  <uk-gaap-pt:PrepaymentsAccruedIncomeCurrentAsset contextRef="FY20082" unitRef="GBP" decimals="-3">150000</uk-gaap-pt:PrepaymentsAccruedIncomeCurrentAsset>
+  <uk-gaap-pt:PrintingPostageStationeryAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">43000</uk-gaap-pt:PrintingPostageStationeryAdministrativeExpenses>
+  <uk-gaap-pt:PrintingPostageStationeryAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">68000</uk-gaap-pt:PrintingPostageStationeryAdministrativeExpenses>
+  <uk-gaap-pt:ProfitLossAccountReserve contextRef="FY20071" unitRef="GBP" decimals="-3">1114000</uk-gaap-pt:ProfitLossAccountReserve>
+  <uk-gaap-pt:ProfitLossAccountReserve contextRef="FY20072" unitRef="GBP" decimals="-3">3740000</uk-gaap-pt:ProfitLossAccountReserve>
+  <uk-gaap-pt:ProfitLossAccountReserve contextRef="FY20082" unitRef="GBP" decimals="-3">4899000</uk-gaap-pt:ProfitLossAccountReserve>
+  <uk-gaap-pt:ProfitLossForPeriodBeforeDividendAppropriations contextRef="FY2007" unitRef="GBP" decimals="-3">2626000</uk-gaap-pt:ProfitLossForPeriodBeforeDividendAppropriations>
+  <uk-gaap-pt:ProfitLossForPeriodBeforeDividendAppropriations contextRef="FY2008" unitRef="GBP" decimals="-3">3659000</uk-gaap-pt:ProfitLossForPeriodBeforeDividendAppropriations>
+  <uk-gaap-pt:ProfitLossOnOrdinaryActivitiesBeforeTax contextRef="FY2007" unitRef="GBP" decimals="-3">3744000</uk-gaap-pt:ProfitLossOnOrdinaryActivitiesBeforeTax>
+  <uk-gaap-pt:ProfitLossOnOrdinaryActivitiesBeforeTax contextRef="FY2008" unitRef="GBP" decimals="-3">6464000</uk-gaap-pt:ProfitLossOnOrdinaryActivitiesBeforeTax>
+  <uk-gaap-pt:RepairsRenewalsMaintenanceAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">51000</uk-gaap-pt:RepairsRenewalsMaintenanceAdministrativeExpenses>
+  <uk-gaap-pt:RepairsRenewalsMaintenanceAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">71000</uk-gaap-pt:RepairsRenewalsMaintenanceAdministrativeExpenses>
+  <uk-gaap-pt:RetainedProfitLossForPeriod-TransferredToFromReserves contextRef="FY2007" unitRef="GBP" decimals="-3">2626000</uk-gaap-pt:RetainedProfitLossForPeriod-TransferredToFromReserves>
+  <uk-gaap-pt:RetainedProfitLossForPeriod-TransferredToFromReserves contextRef="FY2008" unitRef="GBP" decimals="-3">3659000</uk-gaap-pt:RetainedProfitLossForPeriod-TransferredToFromReserves>
+  <uk-gaap-pt:SalesMarketingDistributionAverageNumberEmployees contextRef="FY2007" unitRef="Pure" decimals="INF">54</uk-gaap-pt:SalesMarketingDistributionAverageNumberEmployees>
+  <uk-gaap-pt:SalesMarketingDistributionAverageNumberEmployees contextRef="FY2008" unitRef="Pure" decimals="INF">93</uk-gaap-pt:SalesMarketingDistributionAverageNumberEmployees>
+  <uk-gaap-pt:ShareholderFunds contextRef="FY20072" unitRef="GBP" decimals="-3">3740000</uk-gaap-pt:ShareholderFunds>
+  <uk-gaap-pt:ShareholderFunds contextRef="FY20082" unitRef="GBP" decimals="-3">4899000</uk-gaap-pt:ShareholderFunds>
+  <uk-gaap-pt:SharePremiumAccount contextRef="FY20071" unitRef="GBP" decimals="-3">0</uk-gaap-pt:SharePremiumAccount>
+  <uk-gaap-pt:SharePremiumAccount contextRef="FY20072" unitRef="GBP" decimals="-3">0</uk-gaap-pt:SharePremiumAccount>
+  <uk-gaap-pt:SharePremiumAccount contextRef="FY20082" unitRef="GBP" decimals="-3">0</uk-gaap-pt:SharePremiumAccount>
+  <uk-gaap-pt:SocialSecurityCosts contextRef="FY2007" unitRef="GBP" decimals="-3">295000</uk-gaap-pt:SocialSecurityCosts>
+  <uk-gaap-pt:SocialSecurityCosts contextRef="FY2008" unitRef="GBP" decimals="-3">547000</uk-gaap-pt:SocialSecurityCosts>
+  <uk-gaap-pt:StaffCosts contextRef="FY2007" unitRef="GBP" decimals="-3">2943000</uk-gaap-pt:StaffCosts>
+  <uk-gaap-pt:StaffCosts contextRef="FY2008" unitRef="GBP" decimals="-3">6707000</uk-gaap-pt:StaffCosts>
+  <uk-gaap-pt:StaffTrainingAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">46000</uk-gaap-pt:StaffTrainingAdministrativeExpenses>
+  <uk-gaap-pt:StaffTrainingAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">78000</uk-gaap-pt:StaffTrainingAdministrativeExpenses>
+  <uk-gaap-pt:StaffWelfareAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">120000</uk-gaap-pt:StaffWelfareAdministrativeExpenses>
+  <uk-gaap-pt:StaffWelfareAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">418000</uk-gaap-pt:StaffWelfareAdministrativeExpenses>
+  <uk-gaap-pt:StandardNominalTaxRate contextRef="FY2007" unitRef="Pure" decimals="INF">30</uk-gaap-pt:StandardNominalTaxRate>
+  <uk-gaap-pt:StandardNominalTaxRate contextRef="FY2008" unitRef="Pure" decimals="INF">30</uk-gaap-pt:StandardNominalTaxRate>
+  <uk-gaap-pt:StatementOnBasisMeasurementPreparationAccounts contextRef="FY2008">The financial statements are prepared under the historical cost convention and in accordance with applicable accounting standards.</uk-gaap-pt:StatementOnBasisMeasurementPreparationAccounts>
+  <uk-gaap-pt:StatementOnQualityCompletenessInformationProvidedToAuditors contextRef="FY2008">The directors confirm that to the best of each director's knowledge and belief:
+1.  There is no information relevant to the preparation of their report of which the company's auditors are unaware, and
+2.  Each director has taken all the steps a director might reasonably be expected to have taken to be aware of relevant audit information and to establish that the company's auditors are aware of that information.</uk-gaap-pt:StatementOnQualityCompletenessInformationProvidedToAuditors>
+  <uk-gaap-pt:StatementTotalRecognisedGainsLossesFree-textComment contextRef="FY2008">There are no recognised gains or losses other than the profit of £3,659,000 attributable to the shareholders for the year ended 31 March 2008 (2007 - profit of £2,626,000)</uk-gaap-pt:StatementTotalRecognisedGainsLossesFree-textComment>
+  <uk-gaap-pt:StocksInventory contextRef="FY20072" unitRef="GBP" decimals="-3">2584000</uk-gaap-pt:StocksInventory>
+  <uk-gaap-pt:StocksInventory contextRef="FY20082" unitRef="GBP" decimals="-3">7801000</uk-gaap-pt:StocksInventory>
+  <uk-gaap-pt:StocksRawMaterialsConsumables contextRef="FY20072" unitRef="GBP" decimals="-3">1101000</uk-gaap-pt:StocksRawMaterialsConsumables>
+  <uk-gaap-pt:StocksRawMaterialsConsumables contextRef="FY20082" unitRef="GBP" decimals="-3">5709000</uk-gaap-pt:StocksRawMaterialsConsumables>
+  <uk-gaap-pt:StocksWorkInProgressLong-termContractsPolicy contextRef="FY2008">Stocks are stated at the lower of cost and net realisable value.  Cost includes all costs incurred in bringing each product to its present location and condition as follows:
+Raw materials -- purchase cost on a first-in, first-out basis 
+Finished goods -- cost of direct materials, blending costs, and attributable overheads based on a normal level of activity.</uk-gaap-pt:StocksWorkInProgressLong-termContractsPolicy>
+  <uk-gaap-pt:SubscriptionsAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">17000</uk-gaap-pt:SubscriptionsAdministrativeExpenses>
+  <uk-gaap-pt:SubscriptionsAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">24000</uk-gaap-pt:SubscriptionsAdministrativeExpenses>
+  <uk-gaap-pt:SundryExpensesAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">583000</uk-gaap-pt:SundryExpensesAdministrativeExpenses>
+  <uk-gaap-pt:SundryExpensesAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">2795000</uk-gaap-pt:SundryExpensesAdministrativeExpenses>
+  <uk-gaap-pt:SundryExpensesDistributionCosts contextRef="FY2007" unitRef="GBP" decimals="-3">119000</uk-gaap-pt:SundryExpensesDistributionCosts>
+  <uk-gaap-pt:SundryExpensesDistributionCosts contextRef="FY2008" unitRef="GBP" decimals="-3">101000</uk-gaap-pt:SundryExpensesDistributionCosts>
+  <uk-gaap-pt:SupportAdministrationCostsDistributionCosts contextRef="FY2007" unitRef="GBP" decimals="-3">2306000</uk-gaap-pt:SupportAdministrationCostsDistributionCosts>
+  <uk-gaap-pt:SupportAdministrationCostsDistributionCosts contextRef="FY2008" unitRef="GBP" decimals="-3">2685000</uk-gaap-pt:SupportAdministrationCostsDistributionCosts>
+  <uk-gaap-pt:TangibleFixedAssets contextRef="FY20072" unitRef="GBP" decimals="-3">400000</uk-gaap-pt:TangibleFixedAssets>
+  <uk-gaap-pt:TangibleFixedAssets contextRef="FY2007_Motor_vehicles2" unitRef="GBP" decimals="-3">91000</uk-gaap-pt:TangibleFixedAssets>
+  <uk-gaap-pt:TangibleFixedAssets contextRef="FY2007_Plant_and_machinery2" unitRef="GBP" decimals="-3">309000</uk-gaap-pt:TangibleFixedAssets>
+  <uk-gaap-pt:TangibleFixedAssets contextRef="FY20082" unitRef="GBP" decimals="-3">791000</uk-gaap-pt:TangibleFixedAssets>
+  <uk-gaap-pt:TangibleFixedAssets contextRef="FY2008_Motor_vehicles2" unitRef="GBP" decimals="-3">124000</uk-gaap-pt:TangibleFixedAssets>
+  <uk-gaap-pt:TangibleFixedAssets contextRef="FY2008_Plant_and_machinery2" unitRef="GBP" decimals="-3">667000</uk-gaap-pt:TangibleFixedAssets>
+  <uk-gaap-pt:TangibleFixedAssetsAdditions contextRef="FY2008" unitRef="GBP" decimals="-3">738000</uk-gaap-pt:TangibleFixedAssetsAdditions>
+  <uk-gaap-pt:TangibleFixedAssetsAdditions contextRef="FY2008_Motor_vehicles" unitRef="GBP" decimals="-3">90000</uk-gaap-pt:TangibleFixedAssetsAdditions>
+  <uk-gaap-pt:TangibleFixedAssetsAdditions contextRef="FY2008_Plant_and_machinery" unitRef="GBP" decimals="-3">648000</uk-gaap-pt:TangibleFixedAssetsAdditions>
+  <uk-gaap-pt:TangibleFixedAssetsCostOrValuation contextRef="FY20071" unitRef="GBP" decimals="-3">910000</uk-gaap-pt:TangibleFixedAssetsCostOrValuation>
+  <uk-gaap-pt:TangibleFixedAssetsCostOrValuation contextRef="FY2007_Motor_vehicles1" unitRef="GBP" decimals="-3">221000</uk-gaap-pt:TangibleFixedAssetsCostOrValuation>
+  <uk-gaap-pt:TangibleFixedAssetsCostOrValuation contextRef="FY2007_Plant_and_machinery1" unitRef="GBP" decimals="-3">689000</uk-gaap-pt:TangibleFixedAssetsCostOrValuation>
+  <uk-gaap-pt:TangibleFixedAssetsCostOrValuation contextRef="FY20082" unitRef="GBP" decimals="-3">1648000</uk-gaap-pt:TangibleFixedAssetsCostOrValuation>
+  <uk-gaap-pt:TangibleFixedAssetsCostOrValuation contextRef="FY2008_Motor_vehicles2" unitRef="GBP" decimals="-3">311000</uk-gaap-pt:TangibleFixedAssetsCostOrValuation>
+  <uk-gaap-pt:TangibleFixedAssetsCostOrValuation contextRef="FY2008_Plant_and_machinery2" unitRef="GBP" decimals="-3">1337000</uk-gaap-pt:TangibleFixedAssetsCostOrValuation>
+  <uk-gaap-pt:TangibleFixedAssetsDepreciation contextRef="FY20071" unitRef="GBP" decimals="-3">510000</uk-gaap-pt:TangibleFixedAssetsDepreciation>
+  <uk-gaap-pt:TangibleFixedAssetsDepreciation contextRef="FY2007_Motor_vehicles1" unitRef="GBP" decimals="-3">130000</uk-gaap-pt:TangibleFixedAssetsDepreciation>
+  <uk-gaap-pt:TangibleFixedAssetsDepreciation contextRef="FY2007_Plant_and_machinery1" unitRef="GBP" decimals="-3">380000</uk-gaap-pt:TangibleFixedAssetsDepreciation>
+  <uk-gaap-pt:TangibleFixedAssetsDepreciation contextRef="FY20082" unitRef="GBP" decimals="-3">857000</uk-gaap-pt:TangibleFixedAssetsDepreciation>
+  <uk-gaap-pt:TangibleFixedAssetsDepreciation contextRef="FY2008_Motor_vehicles2" unitRef="GBP" decimals="-3">187000</uk-gaap-pt:TangibleFixedAssetsDepreciation>
+  <uk-gaap-pt:TangibleFixedAssetsDepreciation contextRef="FY2008_Plant_and_machinery2" unitRef="GBP" decimals="-3">670000</uk-gaap-pt:TangibleFixedAssetsDepreciation>
+  <uk-gaap-pt:TangibleFixedAssetsDepreciationChargedInPeriod contextRef="FY2008" unitRef="GBP" decimals="-3">347000</uk-gaap-pt:TangibleFixedAssetsDepreciationChargedInPeriod>
+  <uk-gaap-pt:TangibleFixedAssetsDepreciationChargedInPeriod contextRef="FY2008_Motor_vehicles" unitRef="GBP" decimals="-3">57000</uk-gaap-pt:TangibleFixedAssetsDepreciationChargedInPeriod>
+  <uk-gaap-pt:TangibleFixedAssetsDepreciationChargedInPeriod contextRef="FY2008_Plant_and_machinery" unitRef="GBP" decimals="-3">290000</uk-gaap-pt:TangibleFixedAssetsDepreciationChargedInPeriod>
+  <uk-gaap-pt:TaxationDeferredTaxationPolicy contextRef="FY2008">Deferred taxation is recognised in respect of all timing differences that have originated but not reversed at the balance sheet date where transactions or events have occurred at that date that will result in an obligation to pay more, or right to pay less or to receive more tax, with the following exception: 
+Deferred tax assets are recognised only to the extent that the directors consider that it is more likely than not that there will be suitable taxable profits from which the future reversal of the underlying timing differences can be deducted.
+Deferred tax is measured on an undiscounted. basis at the tax rates that are expected to apply in the periods in which timing differences reverse, based on tax rates and laws enacted or substantively enacted at the balance sheet date.</uk-gaap-pt:TaxationDeferredTaxationPolicy>
+  <uk-gaap-pt:TaxOnGroupProfitOnOrdinaryActivitiesStandardUKTaxRate contextRef="FY2007" unitRef="GBP" decimals="-3">1123000</uk-gaap-pt:TaxOnGroupProfitOnOrdinaryActivitiesStandardUKTaxRate>
+  <uk-gaap-pt:TaxOnGroupProfitOnOrdinaryActivitiesStandardUKTaxRate contextRef="FY2008" unitRef="GBP" decimals="-3">1939000</uk-gaap-pt:TaxOnGroupProfitOnOrdinaryActivitiesStandardUKTaxRate>
+  <uk-gaap-pt:TaxOnProfitOrLossOnOrdinaryActivities contextRef="FY2007" unitRef="GBP" decimals="-3">1118000</uk-gaap-pt:TaxOnProfitOrLossOnOrdinaryActivities>
+  <uk-gaap-pt:TaxOnProfitOrLossOnOrdinaryActivities contextRef="FY2008" unitRef="GBP" decimals="-3">2805000</uk-gaap-pt:TaxOnProfitOrLossOnOrdinaryActivities>
+  <uk-gaap-pt:TelecommunicationsCostsAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">86000</uk-gaap-pt:TelecommunicationsCostsAdministrativeExpenses>
+  <uk-gaap-pt:TelecommunicationsCostsAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">161000</uk-gaap-pt:TelecommunicationsCostsAdministrativeExpenses>
+  <uk-gaap-pt:TotalAssetsLessCurrentLiabilities contextRef="FY20072" unitRef="GBP" decimals="-3">16940000</uk-gaap-pt:TotalAssetsLessCurrentLiabilities>
+  <uk-gaap-pt:TotalAssetsLessCurrentLiabilities contextRef="FY20082" unitRef="GBP" decimals="-3">18099000</uk-gaap-pt:TotalAssetsLessCurrentLiabilities>
+  <uk-gaap-pt:TotalDirectorsExecutiveOfficersRemunerationBenefitsIncludingPaymentsToThirdParties id="Item-02" contextRef="FY2007" unitRef="GBP" decimals="-3">0</uk-gaap-pt:TotalDirectorsExecutiveOfficersRemunerationBenefitsIncludingPaymentsToThirdParties>
+  <uk-gaap-pt:TotalDirectorsExecutiveOfficersRemunerationBenefitsIncludingPaymentsToThirdParties id="Item-04" contextRef="FY2008" unitRef="GBP" decimals="-3">0</uk-gaap-pt:TotalDirectorsExecutiveOfficersRemunerationBenefitsIncludingPaymentsToThirdParties>
+  <uk-gaap-pt:TotalFeesToAuditors contextRef="FY2007" unitRef="GBP" decimals="-3">22000</uk-gaap-pt:TotalFeesToAuditors>
+  <uk-gaap-pt:TotalFeesToAuditors contextRef="FY2008" unitRef="GBP" decimals="-3">0</uk-gaap-pt:TotalFeesToAuditors>
+  <uk-gaap-pt:TotalReserves contextRef="FY20071" unitRef="GBP" decimals="-3">1114000</uk-gaap-pt:TotalReserves>
+  <uk-gaap-pt:TotalReserves contextRef="FY20072" unitRef="GBP" decimals="-3">3740000</uk-gaap-pt:TotalReserves>
+  <uk-gaap-pt:TotalReserves contextRef="FY20082" unitRef="GBP" decimals="-3">4899000</uk-gaap-pt:TotalReserves>
+  <uk-gaap-pt:TotalUKForeignCurrentTaxAfterAdjustmentsRelief contextRef="FY2007" unitRef="GBP" decimals="-3">1250000</uk-gaap-pt:TotalUKForeignCurrentTaxAfterAdjustmentsRelief>
+  <uk-gaap-pt:TotalUKForeignCurrentTaxAfterAdjustmentsRelief contextRef="FY2008" unitRef="GBP" decimals="-3">2862000</uk-gaap-pt:TotalUKForeignCurrentTaxAfterAdjustmentsRelief>
+  <uk-gaap-pt:TotalUKForeignDeferredTax contextRef="FY2007" unitRef="GBP" decimals="-3">-132000</uk-gaap-pt:TotalUKForeignDeferredTax>
+  <uk-gaap-pt:TotalUKForeignDeferredTax contextRef="FY2008" unitRef="GBP" decimals="-3">-57000</uk-gaap-pt:TotalUKForeignDeferredTax>
+  <uk-gaap-pt:TradeCreditorsWithinOneYear contextRef="FY20072" unitRef="GBP" decimals="-3">5020000</uk-gaap-pt:TradeCreditorsWithinOneYear>
+  <uk-gaap-pt:TradeCreditorsWithinOneYear contextRef="FY20082" unitRef="GBP" decimals="-3">9639000</uk-gaap-pt:TradeCreditorsWithinOneYear>
+  <uk-gaap-pt:TradeDebtors contextRef="FY20072" unitRef="GBP" decimals="-3">5746000</uk-gaap-pt:TradeDebtors>
+  <uk-gaap-pt:TradeDebtors contextRef="FY20082" unitRef="GBP" decimals="-3">9943000</uk-gaap-pt:TradeDebtors>
+  <uk-gaap-pt:TravelSubsistenceExpensesAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">182000</uk-gaap-pt:TravelSubsistenceExpensesAdministrativeExpenses>
+  <uk-gaap-pt:TravelSubsistenceExpensesAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">409000</uk-gaap-pt:TravelSubsistenceExpensesAdministrativeExpenses>
+  <uk-gaap-pt:TurnoverGrossOperatingRevenue contextRef="FY2007" unitRef="GBP" decimals="-3">37724000</uk-gaap-pt:TurnoverGrossOperatingRevenue>
+  <uk-gaap-pt:TurnoverGrossOperatingRevenue contextRef="FY2008" unitRef="GBP" decimals="-3">75521000</uk-gaap-pt:TurnoverGrossOperatingRevenue>
+  <uk-gaap-pt:TurnoverPolicy contextRef="FY2008">Turnover, which is stated net of value added tax, represents the invoiced amounts of goods sold to third parties. Turnover is attributable to the company's continuing principal activity.</uk-gaap-pt:TurnoverPolicy>
+  <uk-gaap-pt:UKCurrentCorporationTax contextRef="FY2007" unitRef="GBP" decimals="-3">1250000</uk-gaap-pt:UKCurrentCorporationTax>
+  <uk-gaap-pt:UKCurrentCorporationTax contextRef="FY2008" unitRef="GBP" decimals="-3">2781000</uk-gaap-pt:UKCurrentCorporationTax>
+  <uk-gaap-pt:UKCurrentCorporationTaxOnIncomeForPeriod contextRef="FY2007" unitRef="GBP" decimals="-3">1328000</uk-gaap-pt:UKCurrentCorporationTaxOnIncomeForPeriod>
+  <uk-gaap-pt:UKCurrentCorporationTaxOnIncomeForPeriod contextRef="FY2008" unitRef="GBP" decimals="-3">2843000</uk-gaap-pt:UKCurrentCorporationTaxOnIncomeForPeriod>
+  <uk-gaap-pt:VehicleRunningCostsDistributionCosts contextRef="FY2007" unitRef="GBP" decimals="-3">82000</uk-gaap-pt:VehicleRunningCostsDistributionCosts>
+  <uk-gaap-pt:VehicleRunningCostsDistributionCosts contextRef="FY2008" unitRef="GBP" decimals="-3">138000</uk-gaap-pt:VehicleRunningCostsDistributionCosts>
+  <uk-gaap-pt:WagesSalaries contextRef="FY2007" unitRef="GBP" decimals="-3">2644000</uk-gaap-pt:WagesSalaries>
+  <uk-gaap-pt:WagesSalaries contextRef="FY2008" unitRef="GBP" decimals="-3">6148000</uk-gaap-pt:WagesSalaries>
+  <uk-gaap-pt:WagesSalariesAdministrativeExpenses contextRef="FY2007" unitRef="GBP" decimals="-3">1139000</uk-gaap-pt:WagesSalariesAdministrativeExpenses>
+  <uk-gaap-pt:WagesSalariesAdministrativeExpenses contextRef="FY2008" unitRef="GBP" decimals="-3">2137000</uk-gaap-pt:WagesSalariesAdministrativeExpenses>
+  <uk-gaap-pt:WagesSalariesDistributionCosts contextRef="FY2007" unitRef="GBP" decimals="-3">1794000</uk-gaap-pt:WagesSalariesDistributionCosts>
+  <uk-gaap-pt:WagesSalariesDistributionCosts contextRef="FY2008" unitRef="GBP" decimals="-3">3451000</uk-gaap-pt:WagesSalariesDistributionCosts>
+  <!--Footnote Section-->
+  <link:footnoteLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <link:loc xlink:type="locator" xlink:href="#Item-03" xlink:label="Item-03_lbl" />
+    <link:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="Item-03_lbl" xlink:to="Footnote-01" order="1" />
+    <link:loc xlink:type="locator" xlink:href="#Item-01" xlink:label="Item-01_lbl" />
+    <link:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="Item-01_lbl" xlink:to="Footnote-01" order="1" />
+    <link:loc xlink:type="locator" xlink:href="#Item-02" xlink:label="Item-02_lbl" />
+    <link:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="Item-02_lbl" xlink:to="Footnote-02" order="1" />
+    <link:loc xlink:type="locator" xlink:href="#Item-04" xlink:label="Item-04_lbl" />
+    <link:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="Item-04_lbl" xlink:to="Footnote-02" order="1" />
+    <link:footnote xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:label="Footnote-01" xml:lang="en">*  The bank overdraft is secured by a fixed and floating charge over the assets of the company</link:footnote>
+    <link:footnote xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:label="Footnote-02" xml:lang="en">*  Directors receive emoluments from the parent company, BIG XBRL-TESTCO Limited.  No amounts are specifically recharged to the company in respect of their services as directors so it is not possible to state their aggregate emoluments.</link:footnote>
+  </link:footnoteLink>
+</xbrl>

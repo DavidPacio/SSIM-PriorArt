@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Please note that this is an example of how to form a full TPVS valid CT600 XML with valid iXBRL attached, it may not be a realistic CT600 scenario or a realistic computation --><GovTalkMessage xmlns="http://www.govtalk.gov.uk/CM/envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <EnvelopeVersion>2.0</EnvelopeVersion>
+        <Header>
+            <MessageDetails>
+                <Class>HMRC-CT-CT600</Class>
+                <Qualifier>request</Qualifier>
+                <Function>submit</Function>
+                <CorrelationID/>
+                <Transformation>XML</Transformation>
+                <GatewayTest>1</GatewayTest>
+            </MessageDetails>
+            <SenderDetails>
+                <IDAuthentication>
+					<SenderID>As provided by SDS Team</SenderID>
+                    <Authentication>
+                        <Method>clear</Method>
+                        <Role>principal</Role>
+                        <Value>As provided by SDS Team</Value>
+                    </Authentication>
+                </IDAuthentication>
+            </SenderDetails>
+        </Header>
+        <GovTalkDetails>
+            <Keys>
+                <Key Type="UTR">8596148860</Key>
+            </Keys>
+            <TargetDetails>
+                <Organisation>HMRC</Organisation>
+            </TargetDetails>
+            <ChannelRouting>
+                <Channel>
+                    <URI>http://www.4digitvendorID.com</URI>
+                    <Product>X-Meta</Product>
+                    <Version>1.0</Version>
+                </Channel>
+            </ChannelRouting>
+        </GovTalkDetails>
+        <Body>
+            <IRenvelope xmlns="http://www.govtalk.gov.uk/taxation/CT/3">
+                <IRheader>
+                    <Keys>
+                        <Key Type="UTR">8596148860</Key>
+                    </Keys>
+                    <PeriodEnd>2008-04-01</PeriodEnd>
+                    <DefaultCurrency>GBP</DefaultCurrency>
+                    <Manifest>
+                        <Contains>
+                            <Reference>
+                                <Namespace>http://www.govtalk.gov.uk/taxation/CT/3</Namespace>
+                                <SchemaVersion>2004-v2.00</SchemaVersion>
+                                <TopElementName>CompanyTaxReturn</TopElementName>
+                            </Reference>
+                        </Contains>
+                    </Manifest>
+                    <IRmark Type="generic">rtv48p9M/vohZvgajD6YOExWMH0=</IRmark>
+                    <Sender>Company</Sender>
+                </IRheader>
+                <CompanyTaxReturn ReturnType="new">
+                    <CompanyInformation>
+                        <CompanyName>Company16</CompanyName>
+						<!-- Reference will need to match the UTR used in the keys -->
+                        <Reference>8596148860</Reference>
+                        <CompanyType>6</CompanyType>
+                        <PeriodCovered>
+                            <From>2007-06-01</From>
+                            <To>2008-05-31</To>
+                        </PeriodCovered>
+                    </CompanyInformation>
+                    <ReturnInfoSummary>
+                        <Accounts>
+                            <NoAccountsReason>Company in liquidation</NoAccountsReason>
+                        </Accounts>
+                        <Computations>
+                            <ThisPeriodComputations>yes</ThisPeriodComputations>
+                        </Computations>
+                    </ReturnInfoSummary>
+                    <CompanyTaxCalculation>
+                        <Income>
+                            <TradingAndProfessional>
+                                <Profits>1000000.00</Profits>
+                                <NetProfits>1000000.00</NetProfits>
+                            </TradingAndProfessional>
+                            <NonTradingLoanProfitsAndGains>1.00</NonTradingLoanProfitsAndGains>
+                        </Income>
+                        <ProfitsBeforeOtherDeductions>1000001.00</ProfitsBeforeOtherDeductions>
+                        <DeductionsAndReliefs>
+                            <CVSLossRelief>1.00</CVSLossRelief>
+                            <TradingLossesS393AcarriedBack>yes</TradingLossesS393AcarriedBack>
+                            <TradingLosses>1.00</TradingLosses>
+                            <Total>2.00</Total>
+                        </DeductionsAndReliefs>
+                        <ChargesAndReliefs>
+                            <ProfitsBeforeCharges>999999.00</ProfitsBeforeCharges>
+                        </ChargesAndReliefs>
+                        <ChargeableProfits>999999.00</ChargeableProfits>
+                        <TaxCalculation>
+                            <StartingOrSmallCompaniesRate>yes</StartingOrSmallCompaniesRate>
+                        </TaxCalculation>
+                        <CorporationTaxChargeable>
+                            <FinancialYearOne>
+                                <Year>2007</Year>
+                                <Details>
+                                    <Profit>833333.00</Profit>
+                                    <TaxRate>30.00</TaxRate>
+                                    <Tax>249999.90</Tax>
+                                </Details>
+                            </FinancialYearOne>
+                            <FinancialYearTwo>
+                                <Year>2008</Year>
+                                <Details>
+                                    <Profit>166666.00</Profit>
+                                    <TaxRate>28.00</TaxRate>
+                                    <Tax>46666.48</Tax>
+                                </Details>
+                            </FinancialYearTwo>
+                        </CorporationTaxChargeable>
+                        <TotalChargeableCorporationTax>296666.38</TotalChargeableCorporationTax>
+                        <FurtherTaxCalculations>
+                            <MarginalRateRelief>11875.01</MarginalRateRelief>
+                            <CTNetOfMRR>284791.37</CTNetOfMRR>
+                        </FurtherTaxCalculations>
+                        <NetCorporationTaxChargeable>284791.37</NetCorporationTaxChargeable>
+                        <TaxReliefsAndDeductions>
+                            <TotalReliefsAndDeductions>0.00</TotalReliefsAndDeductions>
+                        </TaxReliefsAndDeductions>
+                        <NetCorporationTaxLiability>284791.37</NetCorporationTaxLiability>
+                        <TaxChargeable>284791.37</TaxChargeable>
+                        <TaxPayable>284791.37</TaxPayable>
+                        <TaxReconciliation>
+                            <RandDCredit>5000.00</RandDCredit>
+                            <LandOrLifeCredit>20000.00</LandOrLifeCredit>
+                            <CapitalAllowancesFirstYearTaxCredit>10000.00</CapitalAllowancesFirstYearTaxCredit>
+                            <RDCreditPayable>0.00</RDCreditPayable>
+                            <LandOrLifeCreditPayable>0.00</LandOrLifeCreditPayable>
+                            <CapitalAllowancesFirstYearTaxCreditPayable>0.00</CapitalAllowancesFirstYearTaxCreditPayable>
+                            <TaxOutstandingOrOverpaid>
+                                <TaxOutstanding>249791.37</TaxOutstanding>
+                            </TaxOutstandingOrOverpaid>
+                        </TaxReconciliation>
+                        <Indicators>
+                            <QuarterlyInstallment>yes</QuarterlyInstallment>
+                            <GroupPayment>yes</GroupPayment>
+                            <DisposalWDintangibles>yes</DisposalWDintangibles>
+                        </Indicators>
+                    </CompanyTaxCalculation>
+                    <CapitalAllowancesExpenditure>
+                        <ClaimingEnhancedExpenditureForFilm>yes</ClaimingEnhancedExpenditureForFilm>
+                        <RandDEnhancedExpenditure>1.00</RandDEnhancedExpenditure>
+                        <ChargesAndAllowances>
+                            <AIACapitalAllowancesInc>5000.00</AIACapitalAllowancesInc>
+                            <AIACapitalAllowancesNotInc>2000.00</AIACapitalAllowancesNotInc>
+                        </ChargesAndAllowances>
+                        <DesignatedEnvironmentallyFriendlyMachineryAndPlant>2000.00</DesignatedEnvironmentallyFriendlyMachineryAndPlant>
+                    </CapitalAllowancesExpenditure>
+                    <OverpaymentsAndRepayments>
+                        <SmallRepayments>
+                            <NoRepayments20OrLess>yes</NoRepayments20OrLess>
+                        </SmallRepayments>
+                        <Surrender>
+                            <Amount>1.01</Amount>
+                            <JointNotice>
+                                <WillFollow>yes</WillFollow>
+                            </JointNotice>
+                        </Surrender>
+                    </OverpaymentsAndRepayments>
+                    <Declaration>
+                        <AcceptDeclaration>yes</AcceptDeclaration>
+                        <Name>eDelivery Testing</Name>
+                        <Status>Testing Team</Status>
+                    </Declaration>
+                    <AttachedFiles>
+                        <XBRLsubmission>
+                            <Computation>
+                                <Instance>
+                                    <InlineXBRLDocument>
+<html version='-//XBRL International//DTD XHTML Inline XBRL 0.1//EN' xmlns='http://www.w3.org/1999/xhtml' xmlns:iso4217='http://www.xbrl.org/2003/iso4217' xmlns:ix='http://www.xbrl.org/2008/inlineXBRL' xmlns:ixt='http://www.xbrl.org/2008/inlineXBRL/transformation' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ct-CT='http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-CT/2009-07-03' xmlns:ct-CaseI='http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-CaseI/2009-07-03' xmlns:ct-Tax='http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-Tax/2009-07-03' xmlns:ct-default='http://www.govtalk.gov.uk/uk/fr/tax/uk-hmrc-ct-default/2009-07-03'>
+  <head>
+    <meta content='application/xhtml+xml; charset=UTF-8' http-equiv='Content-Type' />
+    <title>CT Comp iXBRL</title>
+    <style type='text/css'>
+      td
+      {
+        text-align: right
+      }
+      td.rowName
+      {
+        text-align: left
+      }
+      td.total
+      {
+        border-top: thin solid black;
+        border-bottom-style: double
+      }
+    </style>
+  </head>
+  <body xml:lang='en'>
+    <div style='display:none'>
+      <ix:header>
+
+	<!-- The references element is used to contain XBRL schemaRef and linkbaseRef elements which are required by the target XBRL instance. -->
+        <ix:references>
+          <link:schemaRef xlink:href='http://www.hmrc.gov.uk/schemas/ct/comp/taxonomies/2009-07-03/ct-2009-07-03.xsd' xlink:type='simple' />
+        </ix:references>
+
+	<!-- The resources element is used to contain XBRL roleRef, arcroleRef, context or unit elements which are required by the target XBRL instance. -->
+        <ix:resources>
+          <xbrli:context id='FY2007_Start'>
+            <xbrli:entity>
+              <xbrli:identifier scheme='http://www.companieshouse.gov.uk/'>12345678</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2007-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id='FY2007_End'>
+            <xbrli:entity>
+              <xbrli:identifier scheme='http://www.companieshouse.gov.uk/'>12345678</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2008-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id='FY2007'>
+            <xbrli:entity>
+              <xbrli:identifier scheme='http://www.companieshouse.gov.uk/'>12345678</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2007-04-01</xbrli:startDate>
+              <xbrli:endDate>2008-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:unit id='GBP'>
+            <xbrli:measure>iso4217:GBP</xbrli:measure>
+          </xbrli:unit>
+          <xbrli:unit id='Pure'>
+            <xbrli:measure>xbrli:pure</xbrli:measure>
+          </xbrli:unit>
+        </ix:resources>
+      </ix:header>
+    </div>
+    <table>
+      <tr>
+        <td class='rowName'>
+          <b>Name:</b>
+        </td>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2007_Start' name='ct-CT:DescriptorCompanyName'>XBRL-TESTCO Limited</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Tax Reference:</b>
+        </td>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2007_Start' name='ct-CT:DescriptorTaxReference'>8596148860</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Return for period:</b>
+        </td>
+        <td class='rowName'>from
+          <ix:nonNumeric contextRef='FY2007_Start' format='ixt:dateslasheu' name='ct-CT:DescriptorStartOfPeriodForWhichReturnRequired'>01/06/07</ix:nonNumeric> to <ix:nonNumeric contextRef='FY2007_End' format='ixt:dateslasheu' name='ct-CT:DescriptorEndOfPeriodForWhichReturnRequired'>31/05/2008</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>A. Corporation Tax</b>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td>&#163;</td>
+        <td />
+        <td>&#163;</td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Trading Profits</td>
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsTotalProfitsAllTrades' unitRef='GBP' >9,370,034</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Non-trading loan relationships</td>
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-default:InvestmentIncomeAndReliefsNonTradingLoanRelationshipsProfitsAndGainsFromNTLR' unitRef='GBP'>172,576</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Profits Chargeable</td>
+        <td class='total'>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-Tax:CalculationOfCTLiabilityProfits' unitRef='GBP'>9,542,610</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Financial year
+          <ix:nonNumeric contextRef='FY2007' name='ct-Tax:CalculationOfCTLiabilityFinancialYear1Date'>2007</ix:nonNumeric>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-Tax:CalculationOfCTLiabilityFinancialYear1AmountOfProfitChargeableAtFirstRate' unitRef='GBP'>9,542,610</ix:nonFraction>
+        </td>
+        <td class='rowName'>@<ix:nonFraction contextRef='FY2007' decimals='INF' name='ct-Tax:CalculationOfCTLiabilityFinancialYear1FirstRateOfTax' unitRef='Pure' scale='-2'>30</ix:nonFraction>%</td>
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-Tax:CalculationOfCTLiabilityFinancialYear1TaxAtFirstRate' unitRef='GBP'>2,862,783.00</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Corporation tax</td>
+        <td />
+        <td />
+        <td class='total'>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-Tax:CalculationOfCTLiabilityCorporationTax' unitRef='GBP'>2,862,783.00</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Corporation tax chargeable</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-Tax:CalculationOfCTLiabilityCTChargeable' unitRef='GBP'>2,862,783.00</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <a href='#C'>
+            <b>C</b>
+          </a>
+        </td>
+        <td class='rowName'>Double taxation relief</td>
+        <td>
+          <a id='doubleTaxationRelief'>
+            <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-Tax:CalculationOfCTLiabilityDoubleTaxationReliefAmount' unitRef='GBP'>45,000.00</ix:nonFraction>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td>Total reliefs and deductions in terms of tax</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-Tax:CalculationOfCTLiabilityTotalReliefsDeductionsInTermsOfTax' unitRef='GBP'>45,000.00</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Net corporation tax liability</td>
+        <td />
+        <td />
+        <td class='total'>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-Tax:CalculationOfCTLiabilityCTLiability' unitRef='GBP'>2,817,783.00</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>B. Trading profits</b>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>&#163;</td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Profits per accounts</td>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradeProfitPerAccounts' unitRef='GBP'>6,464,225</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Depreciation</td>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradeAdjustmentsDepreciation' unitRef='GBP'>347,375</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Amortisation</td>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradeAdjustmentsAmortisation' unitRef='GBP'>2,640,225</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Capital expenditure</td>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradeAdjustmentsCapitalExpenditure' unitRef='GBP'>91,401</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <a href='#B1'>
+            <b>B1</b>
+          </a>
+        </td>
+        <td class='rowName'>Legal and professional</td>
+        <td />
+        <td>
+          <a id='legalandprofessional'>
+            <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradeAdjustmentsAccountancyLegalAndProfessionalFees' unitRef='GBP'>49,000</ix:nonFraction>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Entertaining</td>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradeAdjustmentsEntertaining' unitRef='GBP'>229,384</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Interest receivable</td>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradeAdjustmentsNTLRCreditsPerAccounts' sign='-' unitRef='GBP'>172,576</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <a href='#B2'>
+            <b>B2</b>
+          </a>
+        </td>
+        <td class='rowName'>Capital allowances</td>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradeCapitalAllowancesNetAllowancesCharges' sign='-' unitRef='GBP'>279,000</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Adjusted profits</td>
+        <td />
+        <td class='total'>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradeNetTradingProfitsIndividualTrade' unitRef='GBP'>9,370,034</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <a id='B1'>
+            <b>B1. Legal and professional</b>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td />
+        <td>Total</td>
+        <td>Disallowed</td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Solicitor</td>
+        <td>31,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Surveyor</td>
+        <td>49,000</td>
+        <td>49,000</td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td />
+        <td class='total'>80,000</td>
+        <td class='total'>
+          <a href='#legalandprofessional'>49,000</a>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <a id='B2'>
+            <b>B2. Capital allowances</b>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>
+          <i>Plant and machinery</i>
+        </td>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td class='rowName'>Total allowances</td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Brought forward</td>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2007_Start' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolWDVBF' unitRef='GBP'>430,000</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <a href='#B2.1'>
+            <b>B2.1</b>
+          </a>
+        </td>
+        <td class='rowName'>Additions qualifying for WDA</td>
+        <td />
+        <td>
+          <a id='additionsQualifyingForWDA'>
+            <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolExpenditureQualifyingForWDA' unitRef='GBP'>650,000</ix:nonFraction>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>WDA</td>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolWritingDownAllowances' unitRef='GBP'>270,000</ix:nonFraction>
+        </td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolTotalAllowances' unitRef='GBP'>270,000</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Carried forward</td>
+        <td />
+        <td class='total'>
+          <ix:nonFraction contextRef='FY2007_End' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradePMAGeneralPoolWDVCF' unitRef='GBP'>810,000</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>
+          <i>Cars not in main pool</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>No of cars</td>
+        <td />
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='0' name='ct-CaseI:TradingProfitsIndividualTradePMAExpensiveCarsSummaryNumberOfSingleAssetPools' unitRef='Pure'>3</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Registration</td>
+        <td>ABC 123</td>
+        <td>DEF 345</td>
+        <td>GHI 678</td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Additions</td>
+        <td>30,000</td>
+        <td>30,000</td>
+        <td>30,000</td>
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradePMAExpensiveCarsSummaryExpenditureQualifyingForWDATotal' unitRef='GBP'>90,000</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>WDA</td>
+        <td>3,000</td>
+        <td>3,000</td>
+        <td>3,000</td>
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradePMAExpensiveCarsSummaryWritingDownAllowancesTotal' unitRef='GBP'>9,000</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradePMAExpensiveCarsSummaryTotalAllowancesTotal' unitRef='GBP'>9,000</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Carried forward</td>
+        <td class='total'>27,000</td>
+        <td class='total'>27,000</td>
+        <td class='total'>27,000</td>
+        <td class='total'>
+          <ix:nonFraction contextRef='FY2007_End' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradePMAExpensiveCarsSummaryWDVCFTotal' unitRef='GBP'>81,000</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Total Allowances</td>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td class='total'>
+          <ix:nonFraction contextRef='FY2007' decimals='2' format='ixt:numcommadot' name='ct-CaseI:TradingProfitsIndividualTradeCapitalAllowancesSummaryTotalAllowances' unitRef='GBP'>279,000</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <a id='B2.1'>
+            <b>B2.1 Additions to main pool</b>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Fixed asset additions</td>
+        <td />
+        <td>648,000</td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Capital expenditure in revenue</td>
+        <td />
+        <td>2,000</td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td />
+        <td />
+        <td class='total'>
+          <a href='#additionsQualifyingForWDA'>650,000</a>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <a id='C'>
+            <b>C Double taxation relief</b>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td />
+        <td>Spanish</td>
+        <td>French</td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Foreign tax</td>
+        <td>15,000.00</td>
+        <td>30,000.00</td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>UK tax on profits</td>
+        <td>17,000.00</td>
+        <td>30,000.00</td>
+      </tr>
+      <tr>
+        <td class='rowName' />
+        <td class='rowName'>Double taxation relief</td>
+        <td>15,000.00</td>
+        <td>30,000.00</td>
+        <td class='total'>
+          <a href='#doubleTaxationRelief'>45,000.00</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+                                    </InlineXBRLDocument>
+                                </Instance>
+                            </Computation>
+                        </XBRLsubmission>
+                    </AttachedFiles>
+                </CompanyTaxReturn>
+            </IRenvelope>
+        </Body>
+    </GovTalkMessage>

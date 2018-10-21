@@ -1,0 +1,3931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html
+    xmlns='http://www.w3.org/1999/xhtml'
+    xmlns:iso4217='http://www.xbrl.org/2003/iso4217'
+    xmlns:ix='http://www.xbrl.org/2008/inlineXBRL'
+    xmlns:link='http://www.xbrl.org/2003/linkbase'
+    xmlns:xbrli='http://www.xbrl.org/2003/instance'
+    xmlns:xlink='http://www.w3.org/1999/xlink'
+    xmlns:ixt='http://www.xbrl.org/2008/inlineXBRL/transformation'
+    xmlns:uk-gaap="http://www.xbrl.org/uk/gaap/core/2009-09-01"
+    xmlns:uk-bus="http://www.xbrl.org/uk/cd/business/2009-09-01"
+    xmlns:uk-direp="http://www.xbrl.org/uk/reports/direp/2009-09-01"
+    xmlns:uk-aurep="http://www.xbrl.org/uk/reports/aurep/2009-09-01"
+    xmlns:uk-countries="http://www.xbrl.org/uk/cd/countries/2009-09-01"
+    xmlns:xbrldi='http://xbrl.org/2006/xbrldi'>
+  <head>
+    <meta content='application/xhtml+xml; charset=UTF-8' http-equiv='Content-Type' />
+    <title>CT Accounts iXBRL</title>
+    <style type='text/css'>
+      td
+      {
+        text-align: right
+      }
+      td.rowName
+      {
+        text-align: left
+      }
+      td.majorTotal
+      {
+        border-top-style: double;
+        border-bottom-style: double
+      }
+      td.total
+      {
+        border-top: thin solid black;
+        border-bottom-style: double
+      }
+      td.minorTotal
+      {
+        border-top: thin solid black;
+        border-bottom: thin solid black;
+      }
+      td.subtotal
+      {
+        border-top: thin solid black;
+      }
+      td.listEnd
+      {
+        border-bottom-style: double
+      }
+      td.section
+      {
+        font-size: 200%;
+        text-align: left
+      }
+      td.para
+      {
+        column-span: all;
+      }
+    </style>
+  </head>
+  <body xml:lang='en'>
+    <div style='display:none'>
+      <ix:header>
+  <!-- The hidden element is used to contain XBRL facts that are not to be displayed in the Inline XBRL Document. -->
+        <ix:hidden>
+          <!--Tuple section-->
+          <ix:tuple name='uk-gaap:OtherSpecificTypeRiskExposureGrouping' tupleID='tuple.1'/>
+          <ix:tuple name='uk-gaap:OtherSpecificAccountingPolicyGrouping' tupleID='tuple.2'/>
+          <ix:tuple name='uk-gaap:OtherFinancialCommitmentsNotProvidedForInAccountsGrouping' tupleID='tuple.3'/>
+          <ix:tuple name='uk-gaap:RelatedPartyTransactionsGrouping' tupleID='tuple.4'/>
+          <ix:tuple name='uk-gaap:UltimateParentEntityOrControllingPartyGrouping' tupleID='tuple.5'/>
+          <ix:tuple name='uk-bus:XBRLDocumentAuthorGrouping' tupleID='tuple.6'/>
+          <!--Hidden element section-->
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:ControllingPartyUltimateControllingParty' order='3' tupleRef='tuple.5' >true</ix:nonNumeric>
+          <ix:nonNumeric contextRef='FY20092' name='uk-bus:StartDateForPeriodCoveredByReport'>2008-06-01</ix:nonNumeric>
+          <ix:nonNumeric contextRef='FY2009' name='uk-bus:EntityDormant'>false</ix:nonNumeric>
+          <ix:nonNumeric contextRef='FY2009' name='uk-bus:EntityTrading'>true</ix:nonNumeric>
+          <ix:nonNumeric contextRef='FY2008_Company_Secretary_Director' name='uk-bus:NameEntityOfficer'>A Smith</ix:nonNumeric>
+          <ix:nonNumeric contextRef='FY2008_Director_1' name='uk-bus:NameEntityOfficer'>J Brown</ix:nonNumeric>
+          <ix:nonNumeric contextRef='FY2008_Director_2' name='uk-bus:NameEntityOfficer'>R Bloggs</ix:nonNumeric>
+          <ix:nonFraction contextRef='FY2008_Development_costs__patents_and_similar2' decimals='-3' name='uk-gaap:IntangibleFixedAssetsCostOrValuation' scale='3' unitRef='GBP'>13200</ix:nonFraction>
+          <ix:nonNumeric contextRef='FY2009_Company_Secretary_Director' name='uk-gaap:NameDirectorSigningAccounts'/>
+          <ix:nonNumeric contextRef='FY2009_Company_Secretary_Director' name='uk-direp:DirectorSigningReport'/>
+          <ix:nonNumeric contextRef='FY2009' name='uk-bus:NameAuthor' order='1' tupleRef='tuple.6'>foo</ix:nonNumeric>
+          <ix:nonNumeric contextRef='FY2009' name='uk-bus:DescriptionOrTitleAuthor' order='2' tupleRef='tuple.6'>bar</ix:nonNumeric>
+        </ix:hidden>
+  <!-- The references element is used to contain XBRL schemaRef and linkbaseRef elements which are required by the target XBRL instance. -->
+        <ix:references>
+          <link:schemaRef xlink:type="simple" xlink:href="http://www.xbrl.org/uk/gaap/core/2009-09-01/uk-gaap-full-2009-09-01.xsd"/>
+        </ix:references>
+        <!-- The resources element is used to contain XBRL roleRef, arcroleRef, context or unit elements which are required by the target XBRL instance. -->
+        <ix:resources>
+          <!--Contexts Section-->
+          <xbrli:context id="FY2008_Plant_and_machinery1">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-gaap:TangibleFixedAssetClassesDimension">uk-gaap:PlantMachinery</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2008-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2008_Motor_vehicles1">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-gaap:TangibleFixedAssetClassesDimension">uk-gaap:Vehicles</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2008-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_Plant_and_machinery2">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-gaap:TangibleFixedAssetClassesDimension">uk-gaap:PlantMachinery</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2009-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_Motor_vehicles2">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-gaap:TangibleFixedAssetClassesDimension">uk-gaap:Vehicles</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2009-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY20081">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2006-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_Development_costs__patents_and_similar">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-gaap:IntangibleFixedAssetClassesDimension">uk-gaap:DevelopmentCostsPatentsSimilar</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2008-04-01</xbrli:startDate>
+              <xbrli:endDate>2009-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_Development_costs__patents_and_similar2">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-gaap:IntangibleFixedAssetClassesDimension">uk-gaap:DevelopmentCostsPatentsSimilar</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2009-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2008_Development_costs__patents_and_similar2">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-gaap:IntangibleFixedAssetClassesDimension">uk-gaap:DevelopmentCostsPatentsSimilar</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2008-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_Dividends_proposed">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-gaap:DividendsDimension">uk-gaap:DividendsProposed</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2008-04-01</xbrli:startDate>
+              <xbrli:endDate>2009-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2008_Dividends_proposed">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-gaap:DividendsDimension">uk-gaap:DividendsProposed</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2006-04-01</xbrli:startDate>
+              <xbrli:endDate>2008-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2008_Plant_and_machinery">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-gaap:TangibleFixedAssetClassesDimension">uk-gaap:PlantMachinery</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+             <xbrli:period>
+              <xbrli:startDate>2006-04-01</xbrli:startDate>
+              <xbrli:endDate>2008-03-31</xbrli:endDate>
+             </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2008_Motor_vehicles">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-gaap:TangibleFixedAssetClassesDimension">uk-gaap:Vehicles</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2006-04-01</xbrli:startDate>
+              <xbrli:endDate>2008-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_Fixtures__fittings__tools_and_equipment">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-gaap:TangibleFixedAssetClassesDimension">uk-gaap:FixturesFittingsToolsEquipment</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2008-04-01</xbrli:startDate>
+              <xbrli:endDate>2009-03-31</xbrli:endDate>
+            </xbrli:period>
+           </xbrli:context>
+          <xbrli:context id="FY2008_Fixtures__fittings__tools_and_equipment">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-gaap:TangibleFixedAssetClassesDimension">uk-gaap:FixturesFittingsToolsEquipment</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2006-04-01</xbrli:startDate>
+              <xbrli:endDate>2008-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_Plant_and_machinery">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-gaap:TangibleFixedAssetClassesDimension">uk-gaap:PlantMachinery</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2008-04-01</xbrli:startDate>
+              <xbrli:endDate>2009-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_Motor_vehicles">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-gaap:TangibleFixedAssetClassesDimension">uk-gaap:Vehicles</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2008-04-01</xbrli:startDate>
+              <xbrli:endDate>2009-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY20092">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2009-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY20082">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2008-03-31</xbrli:instant>
+            </xbrli:period>
+           </xbrli:context>
+          <xbrli:context id="FY2008">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2006-04-01</xbrli:startDate>
+              <xbrli:endDate>2008-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2008-04-01</xbrli:startDate>
+              <xbrli:endDate>2009-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_Company_Secretary_Director">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:CompanySecretaryDirector</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2008-04-01</xbrli:startDate>
+              <xbrli:endDate>2009-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_Director_1">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2008-04-01</xbrli:startDate>
+              <xbrli:endDate>2009-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_Director_2">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director2</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2008-04-01</xbrli:startDate>
+              <xbrli:endDate>2009-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_All_Entity_Officers">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:AllEntityOfficers</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2008-04-01</xbrli:startDate>
+              <xbrli:endDate>2009-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY20092_Company_Secretary_Director">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:CompanySecretaryDirector</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2009-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY20092_Director_1">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2009-03-31</xbrli:instant>
+             </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY20092_Director_2">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+               <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director2</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2009-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2008_Company_Secretary_Director">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:CompanySecretaryDirector</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2006-04-01</xbrli:startDate>
+              <xbrli:endDate>2008-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2008_Director_1">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2006-04-01</xbrli:startDate>
+              <xbrli:endDate>2008-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2008_Director_2">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director2</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2006-04-01</xbrli:startDate>
+              <xbrli:endDate>2008-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2008_All_Entity_Officers">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:AllEntityOfficers</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2006-04-01</xbrli:startDate>
+              <xbrli:endDate>2008-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY20082_Company_Secretary_Director">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:CompanySecretaryDirector</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2008-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY20082_Director_1">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2008-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY20082_Director_2">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director2</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2008-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_Entity_Accountants_Or_Auditors">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:ThirdPartyAgentTypeDimension">uk-bus:EntityAccountantsOrAuditors</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2008-04-01</xbrli:startDate>
+              <xbrli:endDate>2009-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2008_Entity_Accountants_Or_Auditors">
+             <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:ThirdPartyAgentTypeDimension">uk-bus:EntityAccountantsOrAuditors</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2006-04-01</xbrli:startDate>
+              <xbrli:endDate>2008-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY20092_Entity_Accountants_Or_Auditors">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:ThirdPartyAgentTypeDimension">uk-bus:EntityAccountantsOrAuditors</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2009-03-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_Registered_Office">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:EntityContactTypeDimension">uk-bus:RegisteredOffice</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2008-04-01</xbrli:startDate>
+              <xbrli:endDate>2009-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_Entity_Bankers">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:ThirdPartyAgentTypeDimension">uk-bus:EntityBankers</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2008-04-01</xbrli:startDate>
+              <xbrli:endDate>2009-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="FY2009_Entity_Lawyers_Or_Legal_Advisers">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">12345678</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="uk-bus:ThirdPartyAgentTypeDimension">uk-bus:EntityLawyersOrLegalAdvisers</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2008-04-01</xbrli:startDate>
+              <xbrli:endDate>2009-03-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <!--Unit Section-->
+          <xbrli:unit id='Pure'>
+            <xbrli:measure>xbrli:pure</xbrli:measure>
+          </xbrli:unit>
+          <xbrli:unit id='GBP'>
+            <xbrli:measure>iso4217:GBP</xbrli:measure>
+          </xbrli:unit>
+          <xbrli:unit id="Shares">
+            <xbrli:measure>xbrli:shares</xbrli:measure>
+          </xbrli:unit>
+        </ix:resources>
+      </ix:header>
+    </div>
+    <table>
+      <tr>
+        <td class='section'>
+          <b>
+            <ix:nonNumeric contextRef='FY2009' name='uk-bus:EntityCurrentLegalOrRegisteredName'>XBRL-TESTCO Limited</ix:nonNumeric>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td class='section'>
+          <b>
+            <ix:nonNumeric contextRef='FY2009' name='uk-bus:BusinessReportName'>Report and Financial Statements</ix:nonNumeric>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td id='BalanceSheetDate' class='section'>31 March 2009</td>
+      </tr>
+      <tr>
+        <td class='rowName'><b>Registered No </b>
+          <ix:nonNumeric contextRef='FY2009' name='uk-bus:UKCompaniesHouseRegisteredNumber'>12345678</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Directors</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'><a href='#DirectorOrExecutivesName1'>A Smith</a></td>
+      </tr>
+      <tr>
+        <td class='rowName'><a href='#DirectorOrExecutivesName2'>J Brown</a></td>
+      </tr>
+      <tr>
+        <td class='rowName'><a href='#DirectorOrExecutivesName3'>R Bloggs</a></td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Secretary</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'><a href='#NameDirectorSigningBalanceSheet'>A Smith</a></td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Auditors</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Accountants_Or_Auditors' name='uk-bus:NameThirdPartyAgent'>Joe &amp; Fred LLP</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Accountants_Or_Auditors' name='uk-bus:AddressLine1'>1 London Street</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Accountants_Or_Auditors' name='uk-bus:PrincipalLocation-CityOrTown'>London</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Accountants_Or_Auditors' name='uk-bus:PostalCodeZip'>LO1 2AA</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Bankers</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Bankers' name='uk-bus:NameThirdPartyAgent'>BigBank PLC</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Bankers' name='uk-bus:AddressLine1'>2 London Street</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Bankers' name='uk-bus:PrincipalLocation-CityOrTown'>London</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Bankers' name='uk-bus:PostalCodeZip'>LO1 3AA</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Solicitors</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Lawyers_Or_Legal_Advisers' name='uk-bus:NameThirdPartyAgent'>Legal &amp; Co</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Lawyers_Or_Legal_Advisers' name='uk-bus:AddressLine1'>3 London Street</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Lawyers_Or_Legal_Advisers' name='uk-bus:PrincipalLocation-CityOrTown'>London</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Lawyers_Or_Legal_Advisers' name='uk-bus:PostalCodeZip'>LO1 4AA</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Registered Office</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Registered_Office' name='uk-bus:AddressLine1'>XBRL-TESTCO Towers</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Registered_Office' name='uk-bus:AddressLine2'>1 XBRL Street</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Registered_Office' name='uk-bus:PrincipalLocation-CityOrTown'>Testtown</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Registered_Office' name='uk-bus:PostalCodeZip'>TT1 1AA</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='section'>
+          <b>Directors' report</b>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName' colspan='100'>The directors present their report and financial statements for the year ended <ix:nonNumeric contextRef='FY20092' name='uk-bus:EndDateForPeriodCoveredByReport' format='ixt:datelonguk'>31 May 2009</ix:nonNumeric>.</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Results and dividends</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' colspan='100'>The profit for the year after taxation amounted to <a href='#ProfitLossForPeriodBeforeDividendAppropriations2009'>&#163;3,659,000</a>.  An interim dividend of <a href='#InterimPayment2009'>&#163;2,500,000</a> was paid during the year. The directors recommend the payment of a final dividend of <a href='#FinalPayment2009'>&#163;2,000,000.</a></td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Prinicipal activity, review of the business and future developments</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-bus:DescriptionPrincipalActivities'>The principal activity of the company continued to be the manufacture and distribution of boats and shoes.  </ix:nonNumeric>In 2009, XBRL-TESTCO expanded into Europe.  Revenue increased significantly.  The directors are satisfied by the performance of the company.  The company will continue to pursue its main activities.
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Principal risks and uncertainties</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>Use of derivatives</i>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:FinancialInstrumentsRisksFree-textComment'>XBRL-TESTCO uses forward foreign currency contracts to reduce exposure to the variability of foreign exchange rates by fixing the rate of any material payments in a foreign currency.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>Exposure to credit, liquidity and cash flow risk</i>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:DescriptionPolicyProcessesForManagingCreditRisk'>Credit risk is the risk that one party to a financial instrument will cause a financial loss for that other party by failing to discharge an obligation.  XBRL-TESTCO policies are aimed at minimising such losses, and require that deferred terms are only granted to customers who demonstrate an appropriate payment history and satisfy credit worthiness procedures.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:DescriptionPolicyProcessesForManagingLiquidityRisk'>Liquidity risk is the risk that an entity will encounter difficulty in meeting obligations associated with financial liabilities.  XBRL-TESTCO aims to mitigate liquidity risk by managing cash generation by its operations, and also via financing facilities.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:DescriptionPolicyProcessesForManagingOtherSpecificTypeRisk' order='2' tupleRef='tuple.1'><ix:nonNumeric contextRef='FY2009' name='uk-gaap:DescriptionOtherSpecificTypeRisk' order='1' tupleRef='tuple.1'>Cash flow risk</ix:nonNumeric> is the risk of exposure to variability in cash flows that is attributable to a particular risk associated with a recognised asset or liability.  XBRL-TESTCO manages this risk, where significant, by use of derivatives as explained above.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Political and charitable contributions</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-direp:PoliticalCharitableDonationsFree-textComment'>During the year, the company made charitable contributions, of &#163;500,000 to the XBRL-TESTCO Foundation and &#163; 206,000 to Shelter.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Directors and their interests</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>The directors who served during the year and their interests in the share capital of the company were as follows:</td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td>
+         <i>Ordinary shares of &#163;1 each</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td>
+         <i>2009</i>
+        </td>
+        <td>
+         <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' id='DirectorOrExecutivesName1'>
+          <ix:nonNumeric contextRef='FY2009_Company_Secretary_Director' name='uk-bus:NameEntityOfficer'>A Smith</ix:nonNumeric>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20092_Company_Secretary_Director' decimals='INF' name='uk-direp:NumberSharesInEntityOrItsUndertakingsDirectors' unitRef='Shares'>1</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082_Company_Secretary_Director' decimals='INF' name='uk-direp:NumberSharesInEntityOrItsUndertakingsDirectors' unitRef='Shares'>1</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' id='DirectorOrExecutivesName2'>
+          <ix:nonNumeric contextRef='FY2009_Director_1' name='uk-bus:NameEntityOfficer'>J Brown</ix:nonNumeric>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20092_Director_1' decimals='INF' name='uk-direp:NumberSharesInEntityOrItsUndertakingsDirectors' unitRef='Shares'>1</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082_Director_1' decimals='INF' name='uk-direp:NumberSharesInEntityOrItsUndertakingsDirectors' unitRef='Shares'>1</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName' id='DirectorOrExecutivesName3'>
+          <ix:nonNumeric contextRef='FY2009_Director_2' name='uk-bus:NameEntityOfficer'>R Bloggs</ix:nonNumeric>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20092_Director_2' decimals='INF' name='uk-direp:NumberSharesInEntityOrItsUndertakingsDirectors' unitRef='Shares'>1</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082_Director_2' decimals='INF' name='uk-direp:NumberSharesInEntityOrItsUndertakingsDirectors' unitRef='Shares'>1</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_All_Entity_Officers' name='uk-direp:DirectorsInterestInSharesOrDebenturesEntityOrItsUndertakingsFree-textComment'>The directors' interests in the share capital of the company's parent undertaking, Big Sample Trading Limited, are disclosed an the directors' report and financial statements of that company.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Auditors</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>A resolution to reappoint Joe &amp; Fred LLP as auditors will be put to the members at the Annual General Meeting.</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Disclosure of information to auditors</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-direp:StatementOnQualityCompletenessInformationProvidedToAuditors'>The directors confirm that to the best of each director's knowledge and belief:
+1.  There is no information relevant to the preparation of their report of which the company's auditors are unaware, and
+2.  Each director has taken all the steps a director might reasonably be expected to have taken to be aware of relevant audit information and to establish that the company's auditors are aware of that information.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>On behalf of the board</td>
+      </tr>
+      <tr>
+        <td class='rowName'>Director</td>
+        <td id='NameDirectorSigningBalanceSheet' colspan='2'>A Smith</td>
+      </tr>
+      <tr>
+        <td class='rowName'>Date</td>
+        <td id='DateSigningDirectorsReport' colspan='2'>
+          <ix:nonNumeric contextRef='FY20092' name='uk-direp:DateSigningDirectorsReport' format='ixt:datelonguk'>15 July 2009</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='section'>
+          <b>Statement of directors' responsibilities</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Text on directors' responsibilities</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='section'>
+          <b>Independent auditors' report</b>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Accountants_Or_Auditors' name='uk-aurep:StatementOnScopeAuditReport'>We have audited the company's financial statements for the year ended 31 December 2006 which comprise the Profit and Loss Account, Statement of Total Recognised Gains and Losses, Balance Sheet and the related notes 1 to 20.  These financial statements have been prepared on the basis of the accounting policies set out therein.
+  This report is made solely to the company's members, as a body, in accordance with section 235 of the Companies Act 1985. Our audit work has been undertaken so that we might state to the company's members those matters we are required to state to them in an auditors' report and for no other purpose.  To the fullest extent permitted by law, we do not accept or assume responsibility to anyone other than the company and the company's members as a body, for our audit work, for this report, or for the opinions we have formed.
+</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Respective responsibilities of directors and auditors</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Accountants_Or_Auditors' name='uk-aurep:StatementResponsibilities'>The directors are responsible for the preparation of the financial statements in accordance with applicable United Kingdom law and Accounting Standards (United Kingdom Generally Accepted Accounting Practice) as set out in the Statement of Directors' Responsibilities.
+Our responsibility is to audit the financial statements in accordance with relevant legal and regulatory requirements and International Standards on Auditing (UK and Ireland).  We report to you our opinion as to whether the financial statements give a true and fair view, are properly prepared in accordance with the Companies Act 1985, and whether the information given in the Directors' Report is consistent with the financial statements.  We also report to you if, in our opinion, the company has not kept proper accounting records, if we have not received all the information and explanations we require for our audit, or if information specified by law regarding directors' remuneration and other transactions is not disclosed.
+</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Basis of audit opinion</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Accountants_Or_Auditors' name='uk-aurep:BasisAuditOpinion'>We conducted our audit in accordance with International Standards on Auditing (UK and Ireland) issued by the Auditing Practices Board An audit includes examination, on a test basis, of evidence relevant to the amounts and disclosures in the financial statements.  It also includes an assessment of the significant estimates and judgements made by the directors in the preparation of the financial statements, and of whether the accounting policies are appropriate to the company's circumstances, consistently applied and adequately disclosed.
+          We planned and performed our audit so as to obtain all the information and explanations which we considered necessary in order to provide us with sufficient evidence to give reasonable assurance that the financial statements are free from material misstatement, whether caused by fraud or other irregularity or error In forming our opinion we also evaluated the overall adequacy of the presentation of information in the financial statements.
+  </ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Opinion</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Accountants_Or_Auditors' name='uk-aurep:OpinionAuditorsOnEntity'>In our opinion:<br/><br/>
+&#8226; the financial statements give a true and fair view, in accordance with United Kingdom Generally Accepted Accounting Practice, of the state of the company's affairs as at 31 March 2009 and of its profit for the year then ended,<br/><br/>
+&#8226; the Financial statements have been properly prepared in accordance with the Companies Act 1985, and<br/><br/>
+&#8226; The information given in the Directors' Report is consistent with the financial statements<br/><br/>
+</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>Joe &amp; Fred LLP</td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Accountants_Or_Auditors' name='uk-bus:DescriptionOrOtherInformationOnThirdPartyAgent'>Registered Auditor</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Entity_Accountants_Or_Auditors' name='uk-aurep:NameOrLocationOfficePerformingAudit'>London</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Date</td>
+        <td colspan='2'>
+          <ix:nonNumeric contextRef='FY20092_Entity_Accountants_Or_Auditors' name='uk-aurep:DateAuditorsReport' format='ixt:datelonguk'>15 July 2009</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='section'>
+          <b>Profit and loss account</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>for the year ended 31 March 2009</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td/>
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td/>
+        <td>
+          <i>Notes</i>
+        </td>
+        <td>
+          <i>&#163;000</i>
+        </td>
+        <td>
+          <i>&#163;000</i>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Turnover</b>
+        </td>
+        <td/>
+        <td><a href='#notes_turnover'>2</a></td>
+        <td id='TurnoverGrossOperatingRevenue2009'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:TurnoverGrossOperatingRevenue' scale='3' unitRef='GBP' format='ixt:numcommadot'>75,521</ix:nonFraction>
+        </td>
+        <td id='TurnoverGrossOperatingRevenue2008'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:TurnoverGrossOperatingRevenue' scale='3' unitRef='GBP' format='ixt:numcommadot'>37,724</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Cost of sales</td>
+        <td/>
+        <td />
+        <td id='CostSales2009'>(<ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:CostSales' scale='3' unitRef='GBP' format='ixt:numcommadot'>48,072</ix:nonFraction>)</td>
+        <td id='CostSales2008'>(<ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:CostSales' scale='3' unitRef='GBP' format='ixt:numcommadot'>23,290</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Gross profit</b>
+        </td>
+        <td/>
+        <td />
+        <td id='GrossProfitLoss2009' class='subtotal'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:GrossProfitLoss' scale='3' unitRef='GBP' format='ixt:numcommadot'>27,449</ix:nonFraction>
+        </td>
+        <td id='GrossProfitLoss2008' class='subtotal'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:GrossProfitLoss' scale='3' unitRef='GBP' format='ixt:numcommadot'>14,434</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Distribution costs</td>
+        <td/>
+        <td />
+        <td id='DistributionCosts2009'>(<ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:DistributionCosts' scale='3' unitRef='GBP' format='ixt:numcommadot'>11,519</ix:nonFraction>)</td>
+        <td id='DistributionCosts2008'>(<ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:DistributionCosts' scale='3' unitRef='GBP' format='ixt:numcommadot'>6,538</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td class='rowName'>Administrative expenses</td>
+        <td/>
+        <td />
+        <td id='AdministrativeExpenses2009'>(<ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:AdministrativeExpenses' scale='3' unitRef='GBP' format='ixt:numcommadot'>9,634</ix:nonFraction>)</td>
+        <td id='AdministrativeExpenses2008'>(<ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:AdministrativeExpenses' scale='3' unitRef='GBP' format='ixt:numcommadot'>4,211</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Operating profit</b>
+        </td>
+        <td/>
+        <td><a href='#notes_operating_profit'>3</a></td>
+        <td id='OperatingProfitLoss2009' class='subtotal'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:OperatingProfitLoss' scale='3' unitRef='GBP' format='ixt:numcommadot'>6,296</ix:nonFraction>
+        </td>
+        <td id='OperatingProfitLoss2008' class='subtotal'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:OperatingProfitLoss' scale='3' unitRef='GBP' format='ixt:numcommadot'>3,685</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Bank interest receivable</td>
+        <td/>
+        <td />
+        <td id='OtherInterestReceivableSimilarIncome2009'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:OtherInterestReceivableSimilarIncome' scale='3' unitRef='GBP'>173</ix:nonFraction>
+        </td>
+        <td id='OtherInterestReceivableSimilarIncome2008'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:OtherInterestReceivableSimilarIncome' scale='3' unitRef='GBP'>63</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Interest payable</td>
+        <td/>
+        <td><a href='#notes_interest_payable'>5</a></td>
+        <td id='InterestPayableSimilarCharges2009'>(<ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:InterestPayableSimilarCharges' scale='3' unitRef='GBP'>5</ix:nonFraction>)</td>
+        <td id='InterestPayableSimilarCharges2008'>(<ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:InterestPayableSimilarCharges' scale='3' unitRef='GBP'>4</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Profit on ordinary activities before taxation</b>
+        </td>
+        <td/>
+        <td />
+        <td id='ProfitLossOnOrdinaryActivitiesBeforeTax2009' class='subtotal'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:ProfitLossOnOrdinaryActivitiesBeforeTax' scale='3' unitRef='GBP' format='ixt:numcommadot'>6,464</ix:nonFraction>
+        </td>
+        <td id='ProfitLossOnOrdinaryActivitiesBeforeTax2008' class='subtotal'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:ProfitLossOnOrdinaryActivitiesBeforeTax' scale='3' unitRef='GBP' format='ixt:numcommadot'>3,744</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Tax on profit on ordinary activities</td>
+        <td/>
+        <td><a href='#notes_taxation'>6</a></td>
+        <td id='TaxOnProfitOrLossOnOrdinaryActivities2009'>(<ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:TaxOnProfitOrLossOnOrdinaryActivities' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,805</ix:nonFraction>)</td>
+        <td id='TaxOnProfitOrLossOnOrdinaryActivities2008'>(<ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:TaxOnProfitOrLossOnOrdinaryActivities' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,118</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Profit for the financial year</b>
+        </td>
+        <td/>
+        <td><a href='#notes_reconciliation_of_shareholders_funds_and_movements_on_reserves'>17</a></td>
+        <td id='ProfitLossForPeriodBeforeDividendAppropriations2009' class='total'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:ProfitLossForPeriod' scale='3' unitRef='GBP' format='ixt:numcommadot'>3,659</ix:nonFraction>
+        </td>
+        <td id='ProfitLossForPeriodBeforeDividendAppropriations2008' class='total'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:ProfitLossForPeriod' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,626</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='section' colspan='100'>
+          <b>Statement of total recognised gains and losses</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:StatementTotalRecognisedGainsLossesFree-textComment'>There are no recognised gains or losses other than the profit of &#163;3,659,000 attributable to the shareholders for the year ended 31 March 2009 (2008 - profit of &#163;2,626,000)</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='section'>
+          <b>Balance sheet</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>at
+          <ix:nonNumeric contextRef='FY20092' name='uk-bus:BalanceSheetDate' format='ixt:datelonguk'>31 March 2009</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td/>
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td/>
+        <td>
+          <i>Notes</i>
+        </td>
+        <td>
+          <i>&#163;000</i>
+        </td>
+        <td>
+          <i>&#163;000</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Fixed assets</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Intangible assets</td>
+        <td/>
+        <td><a href='#notes_intangible_fixed_assets'>8</a></td>
+        <td>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:IntangibleFixedAssets' scale='3' unitRef='GBP' format='ixt:numcommadot'>9,992</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:IntangibleFixedAssets' scale='3' unitRef='GBP' format='ixt:numcommadot'>12,632</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Tangible assets</td>
+        <td/>
+        <td><a href='#notes_tangible_fixed_assets'>9</a></td>
+        <td id='TangibleFixedAssets2009'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:TangibleFixedAssets' scale='3' unitRef='GBP'>791</ix:nonFraction>
+        </td>
+        <td id='TangibleFixedAssets2008'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:TangibleFixedAssets' scale='3' unitRef='GBP'>400</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td/>
+        <td />
+        <td class='minorTotal'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:FixedAssets' scale='3' unitRef='GBP' format='ixt:numcommadot'>10,783</ix:nonFraction>
+        </td>
+        <td class='minorTotal'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:FixedAssets' scale='3' unitRef='GBP' format='ixt:numcommadot'>13,032</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Current assets</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Stocks</td>
+        <td/>
+        <td><a href='#notes_stocks'>10</a></td>
+        <td id='StocksInventory2009'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:StocksInventory' scale='3' unitRef='GBP' format='ixt:numcommadot'>7,801</ix:nonFraction>
+        </td>
+        <td id='StocksInventory2008'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:StocksInventory' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,584</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Debtors</td>
+        <td/>
+        <td><a href='#notes_debtors'>11</a></td>
+        <td id='Debtors2009'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:Debtors' scale='3' unitRef='GBP' format='ixt:numcommadot'>10,350</ix:nonFraction>
+        </td>
+        <td id='Debtors2008'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:Debtors' scale='3' unitRef='GBP' format='ixt:numcommadot'>6,387</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Cash at bank and in hand</td>
+        <td/>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:CashBankInHand' scale='3' unitRef='GBP' format='ixt:numcommadot'>5,318</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:CashBankInHand' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,833</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td/>
+        <td class='subtotal'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:CurrentAssets' scale='3' unitRef='GBP' format='ixt:numcommadot'>23,469</ix:nonFraction>
+        </td>
+        <td class='subtotal'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:CurrentAssets' scale='3' unitRef='GBP' format='ixt:numcommadot'>11,804</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Creditors:</b> amounts falling due within one year
+        </td>
+        <td/>
+        <td><a href='#notes_creditors_amounts_falling_due_within_one_year'>12</a></td>
+        <td id='CreditorsDueWithinOneYearTotalCurrentLiabilities2009'>(<ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:CreditorsDueWithinOneYear' scale='3' unitRef='GBP' format='ixt:numcommadot'>16,153</ix:nonFraction>)</td>
+        <td id='CreditorsDueWithinOneYearTotalCurrentLiabilities2008'>(<ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:CreditorsDueWithinOneYear' scale='3' unitRef='GBP' format='ixt:numcommadot'>7,896</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Net current assets</b>
+        </td>
+        <td/>
+        <td />
+        <td class='subtotal'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:NetCurrentAssetsLiabilities' scale='3' unitRef='GBP' format='ixt:numcommadot'>7,316</ix:nonFraction>
+        </td>
+        <td class='subtotal'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:NetCurrentAssetsLiabilities' scale='3' unitRef='GBP' format='ixt:numcommadot'>3,908</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Total assets less current liabilities</b>
+        </td>
+        <td/>
+        <td />
+        <td class='subtotal'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:TotalAssetsLessCurrentLiabilities' scale='3' unitRef='GBP' format='ixt:numcommadot'>18,099</ix:nonFraction>
+        </td>
+        <td class='subtotal'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:TotalAssetsLessCurrentLiabilities' scale='3' unitRef='GBP' format='ixt:numcommadot'>16,940</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Creditors:</b> amounts falling due after more than one year
+        </td>
+        <td/>
+        <td><a href='#notes_creditors_amounts_falling_due_after_more_than_one_year'>13</a></td>
+        <td>(<ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:CreditorsDueAfterOneYear' scale='3' unitRef='GBP' format='ixt:numcommadot'>13,200</ix:nonFraction>)</td>
+        <td>(<ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:CreditorsDueAfterOneYear' scale='3' unitRef='GBP' format='ixt:numcommadot'>13,200</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td/>
+        <td class='total'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:NetAssetsLiabilitiesIncludingPensionAssetLiability' scale='3' unitRef='GBP' format='ixt:numcommadot'>4,899</ix:nonFraction>
+        </td>
+        <td class='total'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:NetAssetsLiabilitiesIncludingPensionAssetLiability' scale='3' unitRef='GBP' format='ixt:numcommadot'>3,740</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Capital and reserves</b>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td class='rowName'>Called up share capital</td>
+        <td/>
+        <td><a href='#notes_share_capital'>16</a></td>
+        <td id='uk-gaap_CalledUpShareCapital_FY20092'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:CalledUpShareCapital' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+        <td id='uk-gaap_CalledUpShareCapital_FY20082'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:CalledUpShareCapital' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Profit and loss account</td>
+        <td/>
+        <td><a href='#notes_reconciliation_of_shareholders_funds_and_movements_on_reserves'>17</a></td>
+        <td id='ProfitLossAccountReserve2009'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:ProfitLossAccountReserve' scale='3' unitRef='GBP' format='ixt:numcommadot'>4,899</ix:nonFraction>
+        </td>
+        <td id='ProfitLossAccountReserve2008'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:ProfitLossAccountReserve' scale='3' unitRef='GBP' format='ixt:numcommadot'>3,740</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Shareholders' funds</b>
+        </td>
+        <td/>
+        <td><a href='#notes_reconciliation_of_shareholders_funds_and_movements_on_reserves'>17</a></td>
+        <td class='total'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:ShareholderFunds' scale='3' unitRef='GBP' format='ixt:numcommadot'>4,899</ix:nonFraction>
+        </td>
+        <td class='total'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:ShareholderFunds' scale='3' unitRef='GBP' format='ixt:numcommadot'>3,740</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>Signed by</td>
+      </tr>
+      <tr>
+        <td class='rowName'>Director</td>
+        <td colspan='2'>
+          <a href='#NameDirectorSigningBalanceSheet'>A Smith</a>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Date</td>
+        <td colspan='2'>
+          <ix:nonNumeric contextRef='FY20092' name='uk-gaap:DateApprovalAccounts' format='ixt:datelonguk'>15 July 2009</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='section' colspan='100'>
+          <b>Notes to the financial statements</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'><b>at 31 March 2009</b></td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_accounting_policies' class='rowName'>
+          <b>1. Accounting policies</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b><i>Basis of preparation</i></b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:StatementOnBasisMeasurementPreparationAccounts'>The financial statements are prepared under the historical cost convention and in accordance with applicable accounting standards.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b><i>Statement of cash flows</i></b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          Exempt from cash flow statement requirement:
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:CompanyExemptFromPreparingCashFlowStatementUnderFRS1'>true</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b><i>Tangible fixed assets and depreciation</i></b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:DescriptionDepreciationMethodRateOrUsefulEconomicLifeForTangibleFixedAssets'>Tangible fixed assets are stated at cost less depreciation.  Depreciation is provided at rates calculated to write off the cost less estimated residual value of each asset over its expected useful life, as follows:</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Plant_and_machinery' name='uk-gaap:DescriptionDepreciationMethodRateOrUsefulEconomicLifeForTangibleFixedAssets'>Plant and machinery -- over a period of between 2 and 5 years straight line</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009_Motor_vehicles' name='uk-gaap:DescriptionDepreciationMethodRateOrUsefulEconomicLifeForTangibleFixedAssets'>Motor vehicles -- over a period of between 2 and 5 years straight line</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:DescriptionEffectChangeInEstimatesResidualValuesTangibleFixedAssets'>The carrying values of tangible fixed assets are reviewed for impairment when events or changes in circumstances indicate the carrying value may not be recoverable.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b><i>Intangible fixed assets and amortisation</i></b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:IntangibleAssetsPolicy'>Intangible assets acquired separately from a business are capitalised at cost Intangible assets created within the business are not capitalised and expenditure is charged against profits in the year in which it is incurred.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:DescriptionGoodwillIntangibleAssetAmortisationMethodPeriods'>Intangible assets are amortised on a straight line basis over their useful economic lives up to a maximum of 20 years. The carrying value of intangible assets is reviewed for impairment at the end of the first full year following acquisition and in other periods if events or changes in circumstance indicate that the carrying value may not be recoverable.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b><i>Stock</i></b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:StocksWorkInProgressLong-termContractsPolicy'>Stocks are stated at the lower of cost and net realisable value.  Cost includes all costs incurred in bringing each product to its present location and condition as follows:
+Raw materials -- purchase cost on a first-in, first-out basis
+Finished goods -- cost of direct materials, blending costs, and attributable overheads based on a normal level of activity.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:DescriptionMethodAscertainingAttributableProfit'>Net realisable value is based on estimated selling price less any further costs expected to be incurred to completion and disposal.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b><i>Deferred taxation</i></b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:TaxationDeferredTaxationPolicy'>Deferred taxation is recognised in respect of all timing differences that have originated but not reversed at the balance sheet date where transactions or events have occurred at that date that will result in an obligation to pay more, or right to pay less or to receive more tax, with the following exception:
+Deferred tax assets are recognised only to the extent that the directors consider that it is more likely than not that there will be suitable taxable profits from which the future reversal of the underlying timing differences can be deducted.
+Deferred tax is measured on an undiscounted. basis at the tax rates that are expected to apply in the periods in which timing differences reverse, based on tax rates and laws enacted or substantively enacted at the balance sheet date.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b><i>Foreign currencies</i></b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:DescriptionTranslationAmountsInForeignCurrenciesIncludingResultsForeignEntities'>Transactions in foreign currencies are recorded at the rate ruling at the date of the transaction.
+Monetary assets and liabilities denominated in foreign currencies are retranslated at the rate of exchange ruling at the balance sheet date.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:DescriptionTreatmentForeignExchangeDifferences'>All differences are taken to the profit and loss account.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b><i>Leasing commitments</i></b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:LesseeOperatingLeasePolicy'>Rentals payable under operating leases are charged in the profit and loss accounts on a straight line basis over the lease term.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b><i>
+            <ix:nonNumeric contextRef='FY2009' name='uk-gaap:TitleOtherSpecificAccountingPolicy' order='1' tupleRef='tuple.2'>Pensions</ix:nonNumeric>
+          </i></b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:ContentOtherSpecificAccountingPolicy' order='2' tupleRef='tuple.2'>The company makes contributions to a group personal pension scheme on behalf of its employees.  Contributions are charged to the profit and loss account as they become due, in accordance with the rules of the scheme.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_turnover' class='rowName'>
+          <b>2. Turnover</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:TurnoverPolicy'>Turnover, which is stated net of value added tax, represents the invoiced amounts of goods sold to third parties. Turnover is attributable to the company's continuing principal activity.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_operating_profit' class='rowName'>
+          <b>3. Operating profit</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>This is stated after charging/(crediting)</td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>&#163;000</i>
+        </td>
+        <td>
+          <i>&#163;000</i>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>Operating lease rentals - plant and machinery</td>
+        <td />
+        <td />
+        <td id='uk-gaap_HireLeasingPlantMachineryCosts_FY2009'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:HireLeasingPlantMachineryCosts' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:HireLeasingPlantMachineryCosts' scale='3' unitRef='GBP'>8</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Auditors' remuneration</td>
+        <td />
+        <td />
+        <td id='uk-aurep_TotalFeesToAuditors_FY2009'>
+          <ix:nonFraction contextRef='FY2009_Entity_Accountants_Or_Auditors' decimals='-3' name='uk-aurep:TotalFeesToAuditors' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008_Entity_Accountants_Or_Auditors' decimals='-3' name='uk-aurep:TotalFeesToAuditors' scale='3' unitRef='GBP'>22</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Directors emoluments  *</td>
+        <td />
+        <td />
+        <td id='uk-direp_DirectorRemuneration_FY2009'>
+          <ix:nonFraction id='Item-04' contextRef='FY2009_All_Entity_Officers' decimals='-3' footnoteRefs=' footnote3' name='uk-direp:DirectorRemuneration' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+        <td id='uk-direp_DirectorRemuneration_FY2008'>
+          <ix:nonFraction id='Item-02' contextRef='FY2008_All_Entity_Officers' decimals='-3' footnoteRefs=' footnote3' name='uk-direp:DirectorRemuneration' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Depreciation of owned fixed assets</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:DepreciationTangibleFixedAssetsExpense' scale='3' unitRef='GBP'>347</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:DepreciationTangibleFixedAssetsExpense' scale='3' unitRef='GBP'>222</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Amortisation of intangible assets</td>
+        <td />
+        <td />
+        <td class='listEnd'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:AmortisationIntangibleAssetsExpense' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,640</ix:nonFraction>
+        </td>
+        <td class='listEnd'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:AmortisationIntangibleAssetsExpense' scale='3' unitRef='GBP'>568</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:footnote arcrole='http://www.xbrl.org/2003/arcrole/fact-footnote' footnoteID=' footnote3' footnoteLinkRole='http://www.xbrl.org/2003/role/link' footnoteRole='http://www.xbrl.org/2003/role/footnote' xml:lang='en'>*  Directors receive emoluments from the parent company, BIG XBRL-TESTCO Limited.  No amounts are specifically recharged to the company in respect of their services as directors so it is not possible to state their aggregate emoluments.</ix:footnote>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_staff_costs' class='rowName'>
+          <b>4. Staff costs</b>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>&#163;000</i>
+        </td>
+        <td>
+          <i>&#163;000</i>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>Wages and salaries</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:WagesSalaries' scale='3' unitRef='GBP' format='ixt:numcommadot'>6,148</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:WagesSalaries' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,644</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Social security costs</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:SocialSecurityCosts' scale='3' unitRef='GBP'>547</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:SocialSecurityCosts' scale='3' unitRef='GBP'>295</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Other pension costs</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:PensionCosts' scale='3' unitRef='GBP'>12</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:PensionCosts' scale='3' unitRef='GBP'>4</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td class='total'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:StaffCosts' scale='3' unitRef='GBP' format='ixt:numcommadot'>6,707</ix:nonFraction>
+        </td>
+        <td class='total'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:StaffCosts' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,943</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>The average monthly number of employees was as follows</td>
+      </tr>
+      <tr>
+        <td/>
+        <td />
+        <td />
+        <td>2009</td>
+        <td>2008</td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>Number</td>
+        <td>Number</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>Sales and distribution</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='INF' name='uk-gaap:SalesMarketingDistributionAverageNumberEmployees' unitRef='Pure'>93</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='INF' name='uk-gaap:SalesMarketingDistributionAverageNumberEmployees' unitRef='Pure'>54</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Administration</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='INF' name='uk-gaap:AdministrationSupportAverageNumberEmployees' unitRef='Pure'>25</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='INF' name='uk-gaap:AdministrationSupportAverageNumberEmployees' unitRef='Pure'>21</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td class='total'>
+          <ix:nonFraction contextRef='FY2009' decimals='INF' name='uk-gaap:AverageNumberEmployeesDuringPeriod' unitRef='Pure'>118</ix:nonFraction>
+        </td>
+        <td class='total'>
+          <ix:nonFraction contextRef='FY2008' decimals='INF' name='uk-gaap:AverageNumberEmployeesDuringPeriod' unitRef='Pure'>75</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_interest_payable' class='rowName'>
+          <b>5. Interest payable</b>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>&#163;000</i>
+        </td>
+        <td>
+          <i>&#163;000</i>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>Bank overdraft</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:BankOverdraftsFinanceCharges' scale='3' unitRef='GBP'>5</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:BankOverdraftsFinanceCharges' scale='3' unitRef='GBP'>1</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Finance charges payable under finance leases and hire purchase contracts</td>
+        <td />
+        <td />
+        <td id='uk-gaap_HirePurchaseContractsFinanceCharges_FY2009'><ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:HirePurchaseContractsFinanceCharges' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction></td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:HirePurchaseContractsFinanceCharges' scale='3' unitRef='GBP'>3</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td class='total'>
+          <a href='#InterestPayableSimilarCharges2009'>5</a>
+        </td>
+        <td class='total'>
+          <a href='#InterestPayableSimilarCharges2008'>4</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_taxation' class='rowName'>
+          <b>6. Taxation</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>(a) Tax on profit on ordinary activities</i>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>The tax charge is made up as follows</td>
+        <td />
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>&#163;000</i>
+        </td>
+        <td>
+          <i>&#163;000</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>Current tax</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>UK corporation tax</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:UKCurrentCorporationTaxOnIncomeForPeriod' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,843</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:UKCurrentCorporationTaxOnIncomeForPeriod' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,328</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Adjustment in respect of prior years</td>
+        <td />
+        <td />
+        <td>(<ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:IncreaseDecreaseInUKCorporationTaxArisingFromAdjustmentForPriorPeriods' scale='3' sign='-' unitRef='GBP'>16</ix:nonFraction>)</td>
+        <td>(<ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:IncreaseDecreaseInUKCorporationTaxArisingFromAdjustmentForPriorPeriods' scale='3' sign='-' unitRef='GBP'>28</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td class='rowName'>Double taxation relief</td>
+        <td />
+        <td />
+        <td>(<ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:DoubleTaxationRelief' scale='3' unitRef='GBP'>46</ix:nonFraction>)</td>
+        <td id='DoubleTaxationRelief2008'>(<ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:DoubleTaxationRelief' scale='3' unitRef='GBP'>50</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td class='rowName'>Total current tax</td>
+        <td />
+        <td />
+        <td class='subtotal'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:UKCurrentCorporationTax' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,781</ix:nonFraction>
+        </td>
+        <td class='subtotal'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:UKCurrentCorporationTax' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,250</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>Foreign tax</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Current year</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:ForeignCurrentTaxOnIncomeForPeriod' scale='3' unitRef='GBP'>46</ix:nonFraction>
+        </td>
+        <td id='uk-gaap_ForeignCurrentTaxOnIncomeForPeriod_FY2008'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:ForeignCurrentTaxOnIncomeForPeriod' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Adjustment in respect of previous periods</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:IncreaseDecreaseInForeignTaxArisingFromAdjustmentForPriorPeriods' scale='3' unitRef='GBP'>35</ix:nonFraction>
+        </td>
+        <td id='uk-gaap_IncreaseDecreaseInForeignTaxArisingFromAdjustmentForPriorPeriods_FY2008'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:IncreaseDecreaseInForeignTaxArisingFromAdjustmentForPriorPeriods' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Total current tax (note 6(b))</td>
+        <td />
+        <td />
+        <td id='TotalUKForeignCurrentTaxAfterAdjustmentsRelief2009' class='minorTotal'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:TotalUKForeignCurrentTaxAfterAdjustmentsRelief' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,862</ix:nonFraction>
+        </td>
+        <td id='TotalUKForeignCurrentTaxAfterAdjustmentsRelief2008' class='minorTotal'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:TotalUKForeignCurrentTaxAfterAdjustmentsRelief' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,250</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>Deferred tax</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Origination and reversal of timing differences</td>
+        <td />
+        <td />
+        <td>(<ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:IncreaseDecreaseInDeferredTaxFromOriginationReversalTimingDifferences' scale='3' sign='-' unitRef='GBP'>57</ix:nonFraction>)</td>
+        <td>(<ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:IncreaseDecreaseInDeferredTaxFromOriginationReversalTimingDifferences' scale='3' sign='-' unitRef='GBP'>132</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td class='rowName'>Total deferred tax (note 15)</td>
+        <td />
+        <td />
+        <td class='subtotal'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:TotalUKForeignDeferredTax' scale='3' sign='-' unitRef='GBP'>57</ix:nonFraction>
+        </td>
+        <td class='subtotal'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:TotalUKForeignDeferredTax' scale='3' sign='-' unitRef='GBP'>132</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Total tax charge for the year</td>
+        <td />
+        <td />
+        <td class='total'>
+          <a href='#TaxOnProfitOrLossOnOrdinaryActivities2009'>2,805</a>
+        </td>
+        <td class='total'>
+          <a href='#TaxOnProfitOrLossOnOrdinaryActivities2008'>1,118</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>(b) Factors affecting current tax charge for the year</i>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>The tax assessed for the year differs from the standard rate of corporation tax in the UK of 30% (2005 - 30%).  The differences are explained below</td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>&#163;000</i>
+        </td>
+        <td>
+          <i>&#163;000</i>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>Profit on ordinary activities before taxation</td>
+        <td />
+        <td />
+        <td class='listEnd'>
+          <a href='#ProfitLossOnOrdinaryActivitiesBeforeTax2009'>6,464</a>
+        </td>
+        <td class='listEnd'>
+          <a href='#ProfitLossOnOrdinaryActivitiesBeforeTax2008'>3,744</a>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Profit on ordinary activities multiplied by standard rate of corporation tax in the UK of
+          <ix:nonFraction contextRef='FY2009' decimals='INF' name='uk-gaap:StandardNominalTaxRate' unitRef='Pure' scale='-2'>30</ix:nonFraction>% (2008 -
+          <ix:nonFraction contextRef='FY2008' decimals='INF' name='uk-gaap:StandardNominalTaxRate' unitRef='Pure' scale='-2'>30</ix:nonFraction>%)</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:TaxOnGroupProfitOnOrdinaryActivitiesStandardUKTaxRate' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,939</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:TaxOnGroupProfitOnOrdinaryActivitiesStandardUKTaxRate' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,123</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>Effects of</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Non-deductible expenses</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:ExpensesNotDeductibleForTaxPurposes' scale='3' unitRef='GBP'>801</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:ExpensesNotDeductibleForTaxPurposes' scale='3' unitRef='GBP'>74</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Depreciation in excess of capital allowances</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:CapitalAllowancesInExcessDepreciationLeadingToDecreaseIncreaseInTax' scale='3' sign='-' unitRef='GBP'>29</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:CapitalAllowancesInExcessDepreciationLeadingToDecreaseIncreaseInTax' scale='3' sign='-' unitRef='GBP'>13</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Adjustments to previous periods</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:AdjustmentForPriorPeriodsLeadingToAnIncreaseDecreaseInTaxCharge' scale='3' unitRef='GBP'>19</ix:nonFraction>
+        </td>
+        <td>(<ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:AdjustmentForPriorPeriodsLeadingToAnIncreaseDecreaseInTaxCharge' scale='3' sign='-' unitRef='GBP'>28</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td class='rowName'>Other timing differences</td>
+        <td />
+        <td />
+        <td>(<ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:OtherTimingDifferencesLeadingToDecreaseIncreaseInTaxation' scale='3' unitRef='GBP'>74</ix:nonFraction>)</td>
+        <td>(<ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:OtherTimingDifferencesLeadingToDecreaseIncreaseInTaxation' scale='3' unitRef='GBP'>118</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td class='rowName'>Double taxation relief</td>
+        <td />
+        <td />
+        <td>-</td>
+        <td>
+          <a href='#DoubleTaxationRelief2008'>(50)</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>Current tax for the year (note 6(a))</td>
+        <td />
+        <td />
+        <td class='total'>
+          <a href='#TotalUKForeignCurrentTaxAfterAdjustmentsRelief2009'>2,862</a>
+        </td>
+        <td class='total'>
+          <a href='#TotalUKForeignCurrentTaxAfterAdjustmentsRelief2008'>1,250</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_dividends' class='rowName'>
+          <b>7. Dividends</b>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>&#163;000</i>
+        </td>
+        <td>
+          <i>&#163;000</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>Declared and paid during the year</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Interim dividend</td>
+        <td />
+        <td />
+        <td id='InterimPayment2009'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:InterimPayment' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,500</ix:nonFraction>
+        </td>
+        <td id='InterimPayment2008'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:InterimPayment' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>Proposed</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Final dividend</td>
+        <td />
+        <td />
+        <td id='FinalPayment2009'>
+          <ix:nonFraction contextRef='FY2009_Dividends_proposed' decimals='-3' name='uk-gaap:FinalPayment' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,000</ix:nonFraction>
+        </td>
+        <td id='uk-gaap_FinalPayment_FY2008_Dividends_proposed'>
+          <ix:nonFraction contextRef='FY2008_Dividends_proposed' decimals='-3' name='uk-gaap:FinalPayment' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td class='total'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:TotalDividendPayment' scale='3' unitRef='GBP' format='ixt:numcommadot'>4,500</ix:nonFraction>
+        </td>
+        <td class='total' id='uk-gaap_TotalDividendPayment_FY2008'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:TotalDividendPayment' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:DividendsFree-textComment'>Subject to approval by Shareholders the proposed dividend will be paid post year end and will be accounted for as an appropriation of retained earnings in the year ended 31 March 2009.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_intangible_fixed_assets' class='rowName'>
+          <b>8. Intangible fixed assets</b>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>Intellectual property</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td>&#163;000</td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>Cost</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 1 April 2008 and 31 March 2009</td>
+        <td />
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009_Development_costs__patents_and_similar2' decimals='-3' name='uk-gaap:IntangibleFixedAssetsCostOrValuation' scale='3' unitRef='GBP' format='ixt:numcommadot'>13,200</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>Amortisation</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 1 April 2008</td>
+        <td />
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2008_Development_costs__patents_and_similar2' decimals='-3' name='uk-gaap:IntangibleFixedAssetsAggregateAmortisationImpairment' scale='3' unitRef='GBP'>568</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Charge for the year</td>
+        <td />
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009_Development_costs__patents_and_similar' decimals='-3' name='uk-gaap:IntangibleFixedAssetsAmortisationChargedInPeriod' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,640</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 31 March 2009</td>
+        <td />
+        <td />
+        <td />
+        <td class='minorTotal'>
+          <ix:nonFraction contextRef='FY2009_Development_costs__patents_and_similar2' decimals='-3' name='uk-gaap:IntangibleFixedAssetsAggregateAmortisationImpairment' scale='3' unitRef='GBP' format='ixt:numcommadot'>3,208</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>Net book value</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 31 March 2009</td>
+        <td />
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009_Development_costs__patents_and_similar2' decimals='-3' name='uk-gaap:IntangibleFixedAssets' scale='3' unitRef='GBP' format='ixt:numcommadot'>9,992</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 31 March 2008</td>
+        <td />
+        <td />
+        <td />
+        <td class='majorTotal'>
+          <ix:nonFraction contextRef='FY2008_Development_costs__patents_and_similar2' decimals='-3' name='uk-gaap:IntangibleFixedAssets' scale='3' unitRef='GBP' format='ixt:numcommadot'>12,632</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_tangible_fixed_assets' class='rowName'>
+          <b>9. Tangible fixed assets</b>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td>
+          <i>Plant and machinery</i>
+        </td>
+        <td>
+          <i>Motor vehicles</i>
+        </td>
+        <td>
+          <i>Total</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td>&#163;000</td>
+        <td>&#163;000</td>
+        <td>&#163;000</td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>Cost</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 31 March 2008</td>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2008_Plant_and_machinery1' decimals='-3' name='uk-gaap:TangibleFixedAssetsCostOrValuation' scale='3' unitRef='GBP'>689</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008_Motor_vehicles1' decimals='-3' name='uk-gaap:TangibleFixedAssetsCostOrValuation' scale='3' unitRef='GBP'>221</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:TangibleFixedAssetsCostOrValuation' scale='3' unitRef='GBP'>910</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Additions</td>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009_Plant_and_machinery' decimals='-3' name='uk-gaap:TangibleFixedAssetsAdditions' scale='3' unitRef='GBP'>648</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2009_Motor_vehicles' decimals='-3' name='uk-gaap:TangibleFixedAssetsAdditions' scale='3' unitRef='GBP'>90</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:TangibleFixedAssetsAdditions' scale='3' unitRef='GBP'>738</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 31 March 2009</td>
+        <td />
+        <td class='minorTotal'>
+          <ix:nonFraction contextRef='FY2009_Plant_and_machinery2' decimals='-3' name='uk-gaap:TangibleFixedAssetsCostOrValuation' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,337</ix:nonFraction>
+        </td>
+        <td class='minorTotal'>
+          <ix:nonFraction contextRef='FY2009_Motor_vehicles2' decimals='-3' name='uk-gaap:TangibleFixedAssetsCostOrValuation' scale='3' unitRef='GBP'>311</ix:nonFraction>
+        </td>
+        <td class='minorTotal'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:TangibleFixedAssetsCostOrValuation' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,648</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>Depreciation</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 31 March 2008</td>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2008_Plant_and_machinery1' decimals='-3' name='uk-gaap:TangibleFixedAssetsDepreciation' scale='3' unitRef='GBP'>380</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008_Motor_vehicles1' decimals='-3' name='uk-gaap:TangibleFixedAssetsDepreciation' scale='3' unitRef='GBP'>130</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:TangibleFixedAssetsDepreciation' scale='3' unitRef='GBP'>510</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Charge for the year</td>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009_Plant_and_machinery' decimals='-3' name='uk-gaap:TangibleFixedAssetsDepreciationChargedInPeriod' scale='3' unitRef='GBP'>290</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2009_Motor_vehicles' decimals='-3' name='uk-gaap:TangibleFixedAssetsDepreciationChargedInPeriod' scale='3' unitRef='GBP'>57</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:TangibleFixedAssetsDepreciationChargedInPeriod' scale='3' unitRef='GBP'>347</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 31 March 2009</td>
+        <td />
+        <td class='minorTotal'>
+          <ix:nonFraction contextRef='FY2009_Plant_and_machinery2' decimals='-3' name='uk-gaap:TangibleFixedAssetsDepreciation' scale='3' unitRef='GBP'>670</ix:nonFraction>
+        </td>
+        <td class='minorTotal'>
+          <ix:nonFraction contextRef='FY2009_Motor_vehicles2' decimals='-3' name='uk-gaap:TangibleFixedAssetsDepreciation' scale='3' unitRef='GBP'>187</ix:nonFraction>
+        </td>
+        <td class='minorTotal'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:TangibleFixedAssetsDepreciation' scale='3' unitRef='GBP'>857</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <i>Net book value</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 31 March 2009</td>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009_Plant_and_machinery2' decimals='-3' name='uk-gaap:TangibleFixedAssets' scale='3' unitRef='GBP'>667</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2009_Motor_vehicles2' decimals='-3' name='uk-gaap:TangibleFixedAssets' scale='3' unitRef='GBP'>124</ix:nonFraction>
+        </td>
+        <td>
+          <a href='#TangibleFixedAssets2009'>791</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 31 March 2008</td>
+        <td />
+        <td class='majorTotal'>
+          <ix:nonFraction contextRef='FY2008_Plant_and_machinery1' decimals='-3' name='uk-gaap:TangibleFixedAssets' scale='3' unitRef='GBP'>309</ix:nonFraction>
+        </td>
+        <td class='majorTotal'>
+          <ix:nonFraction contextRef='FY2008_Motor_vehicles1' decimals='-3' name='uk-gaap:TangibleFixedAssets' scale='3' unitRef='GBP'>91</ix:nonFraction>
+        </td>
+        <td class='majorTotal'>
+          <a href='#TangibleFixedAssets2008'>400</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_stocks' class='rowName'>
+          <b>10. Stocks</b>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>&#163;000</td>
+        <td>&#163;000</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>Raw materials and consumables</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:StocksRawMaterialsConsumables' scale='3' unitRef='GBP' format='ixt:numcommadot'>5,709</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:StocksRawMaterialsConsumables' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,101</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Finished goods and goods for resale</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:FinishedGoodsGoodsForResale' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,092</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:FinishedGoodsGoodsForResale' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,483</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td class='total'>
+          <a href='#StocksInventory2009'>7,801</a>
+        </td>
+        <td class='total'>
+          <a href='#StocksInventory2008'>2,584</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_debtors' class='rowName'>
+          <b>11. Debtors</b>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>&#163;000</td>
+        <td>&#163;000</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>Trade debtors</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:TradeDebtors' scale='3' unitRef='GBP' format='ixt:numcommadot'>9,943</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:TradeDebtors' scale='3' unitRef='GBP' format='ixt:numcommadot'>5,746</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Other debtors</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:OtherDebtors' scale='3' unitRef='GBP'>90</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:OtherDebtors' scale='3' unitRef='GBP'>58</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Prepayments</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:PrepaymentsAccruedIncomeCurrentAsset' scale='3' unitRef='GBP'>150</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:PrepaymentsAccruedIncomeCurrentAsset' scale='3' unitRef='GBP'>473</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Deferred tax (note 15)</td>
+        <td />
+        <td />
+        <td id='DeferredTaxCurrentAsset2009'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:DeferredTaxCurrentAsset' scale='3' unitRef='GBP'>167</ix:nonFraction>
+        </td>
+        <td id='DeferredTaxCurrentAsset2008'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:DeferredTaxCurrentAsset' scale='3' unitRef='GBP'>110</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td class='total'>
+          <a href='#Debtors2009'>10,350</a>
+        </td>
+        <td class='total'>
+          <a href='#Debtors2008'>6,387</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_creditors_amounts_falling_due_within_one_year' class='rowName'>
+          <b>12. Creditors: amounts falling due within one year</b>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>&#163;000</td>
+        <td>&#163;000</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>Bank overdraft *</td>
+        <td />
+        <td />
+        <td id='uk-gaap_BankOverdraftsSecured_FY20092'>
+          <ix:nonFraction id='Item-01' contextRef='FY20092' decimals='-3' footnoteRefs=' footnote1' name='uk-gaap:BankOverdraftsSecured' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction id='Item-03' contextRef='FY20082' decimals='-3' footnoteRefs=' footnote1' name='uk-gaap:BankOverdraftsSecured' scale='3' unitRef='GBP'>14</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Trade creditors</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:TradeCreditorsWithinOneYear' scale='3' unitRef='GBP' format='ixt:numcommadot'>9,639</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:TradeCreditorsWithinOneYear' scale='3' unitRef='GBP' format='ixt:numcommadot'>5,020</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Amounts owed to parent undertaking</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:AmountsOwedToParentUndertakingWithinOneYear' scale='3' unitRef='GBP'>594</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:AmountsOwedToParentUndertakingWithinOneYear' scale='3' unitRef='GBP'>492</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Corporation tax</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:CorporationTaxDueWithinOneYear' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,729</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:CorporationTaxDueWithinOneYear' scale='3' unitRef='GBP'>879</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Other taxes and social security costs</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:OtherTaxationSocialSecurityWithinOneYear' scale='3' unitRef='GBP'>548</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:OtherTaxationSocialSecurityWithinOneYear' scale='3' unitRef='GBP'>473</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Other creditors</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:OtherCreditorsDueWithinOneYear' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,135</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:OtherCreditorsDueWithinOneYear' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,018</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Accruals and deferred income</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:AccrualsDeferredIncomeWithinOneYear' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,508</ix:nonFraction>
+        </td>
+        <td id='uk-gaap_AccrualsDeferredIncomeWithinOneYear_FY20082'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:AccrualsDeferredIncomeWithinOneYear' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td class='total'>
+          <a href='#CreditorsDueWithinOneYearTotalCurrentLiabilities2009'>16,153</a>
+        </td>
+        <td class='total'>
+          <a href='#CreditorsDueWithinOneYearTotalCurrentLiabilities2008'>7,896</a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:footnote arcrole='http://www.xbrl.org/2003/arcrole/fact-footnote' footnoteID=' footnote1' footnoteLinkRole='http://www.xbrl.org/2003/role/link' footnoteRole='http://www.xbrl.org/2003/role/footnote' xml:lang='en'>*  The bank overdraft is secured by a fixed and floating charge over the assets of the company</ix:footnote>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_creditors_amounts_falling_due_after_more_than_one_year' class='rowName'>
+          <b>13. Creditors: amounts falling due after more than one year</b>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>&#163;000</td>
+        <td>&#163;000</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>Amount owed to parent undertaking</td>
+        <td />
+        <td />
+        <td class='listEnd'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:AmountsOwedToParentUndertakingAfterOneYear' scale='3' unitRef='GBP' format='ixt:numcommadot'>13,200</ix:nonFraction>
+        </td>
+        <td class='listEnd'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:AmountsOwedToParentUndertakingAfterOneYear' scale='3' unitRef='GBP' format='ixt:numcommadot'>13,200</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_other_financial_commitments_1' class='rowName'>
+          <b>14. Other financial commitments</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:DescriptionOtherFinancialCommitmentsNotProvidedForInAccounts' order='1' tupleRef='tuple.3'>At the year end the company was committed to obligations under forward purchase contracts with a value of &#163;16,073,000 (2005 - &#163;4,424,000)</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_deferred_taxation' class='rowName'>
+          <b>15. Deferred taxation</b>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td colspan='2'>
+          <i>Deferred tax liability (asset)</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>&#163;000</i>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 1 April 2008</td>
+        <td />
+        <td />
+        <td />
+        <td>
+          <a href='#DeferredTaxCurrentAsset2008'>(110)</a>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Profit and loss account - Current year timing differences</td>
+        <td />
+        <td />
+        <td />
+        <td>(<ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:LossGainFromDeferredTaxProfitLossAccount' scale='3' unitRef='GBP'>57</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 31 March 2009</td>
+        <td />
+        <td />
+        <td />
+        <td class='total'>
+          <a href='#DeferredTaxCurrentAsset2009'>(167)</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>The deferred tax consists of</td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>Recognised</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>&#163;000</td>
+        <td>&#163;000</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>Accelerated capital allowances</td>
+        <td />
+        <td />
+        <td>12</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td class='rowName'>Other timing differences</td>
+        <td />
+        <td />
+        <td>(179)</td>
+        <td>(120)</td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td class='total'>
+          <a href='#DeferredTaxCurrentAsset2009'>(167)</a>
+        </td>
+        <td class='total'>
+          <a href='#DeferredTaxCurrentAsset2008'>(110)</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_share_capital' class='rowName'>
+          <b>16. Share capital</b>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>Authorised</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <ix:nonNumeric contextRef='FY2009' name='uk-bus:DescriptionShareType'>Ordinary shares of &#163;<ix:nonFraction contextRef='FY2009' decimals='INF' name='uk-gaap:ParValueShare' unitRef='GBP'>1</ix:nonFraction> each</ix:nonNumeric>
+        </td>
+        <td>
+          <ix:nonNumeric contextRef='FY2008' name='uk-bus:DescriptionShareType'>Ordinary shares of &#163;<ix:nonFraction contextRef='FY2008' decimals='INF' name='uk-gaap:ParValueShare' unitRef='GBP'>1</ix:nonFraction> each</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td class='listEnd'>
+          <ix:nonFraction contextRef='FY20092' decimals='INF' name='uk-gaap:NumberSharesAuthorised' unitRef='Shares' format='ixt:numcommadot'>1,000</ix:nonFraction>
+        </td>
+        <td class='listEnd'>
+          <ix:nonFraction contextRef='FY20082' decimals='INF' name='uk-gaap:NumberSharesAuthorised' unitRef='Shares' format='ixt:numcommadot'>1,000</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td colspan='100'>
+          <i>Allotted, called up and fully paid</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td>2009</td>
+        <td />
+        <td>2008</td>
+      </tr>
+      <tr>
+        <td />
+        <td>No</td>
+        <td />
+        <td>No</td>
+      </tr>
+      <tr>
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY20092' decimals='INF' name='uk-gaap:NumberSharesAllotted' unitRef='Shares'>500</ix:nonFraction>
+        </td>
+        <td class='listEnd'>
+          <ix:nonFraction contextRef='FY20092' decimals='INF' name='uk-gaap:ShareCapitalAllottedCalledUpPaid' unitRef='GBP'>500</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20082' decimals='INF' name='uk-gaap:NumberSharesAllotted' unitRef='Shares'>500</ix:nonFraction>
+        </td>
+        <td class='listEnd'>
+          <ix:nonFraction contextRef='FY20082' decimals='INF' name='uk-gaap:ShareCapitalAllottedCalledUpPaid' unitRef='GBP'>500</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_reconciliation_of_shareholders_funds_and_movements_on_reserves' colspan='100' class='rowName'>
+          <b>17. Reconciliation of shareholders' funds and movements on reserves</b>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td>
+          <i>Share Capital</i>
+        </td>
+        <td>
+          <i>Profit and Loss Account</i>
+        </td>
+        <td>
+          <i>Total</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td>
+          <i>&#163;000</i>
+        </td>
+        <td>
+          <i>&#163;000</i>
+        </td>
+        <td>
+          <i>&#163;000</i>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 1 April 2006</td>
+        <td />
+        <td id='uk-gaap_CalledUpShareCapital_FY20081'>
+          <ix:nonFraction contextRef='FY20081' decimals='-3' name='uk-gaap:CalledUpShareCapital' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20081' decimals='-3' name='uk-gaap:ProfitLossAccountReserve' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,114</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY20081' decimals='-3' name='uk-gaap:TotalReserves' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,114</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Profit for the year</td>
+        <td />
+        <td>-</td>
+        <td>
+          <a href='#ProfitLossForPeriodBeforeDividendAppropriations2008'>2,626</a>
+        </td>
+        <td>
+          <a href='#ProfitLossForPeriodBeforeDividendAppropriations2008'>2,626</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 31 March 2008</td>
+        <td />
+        <td class='subtotal'>
+          <a href='#uk-gaap_CalledUpShareCapital_FY20082'>-</a>
+        </td>
+        <td class='subtotal'>
+          <a href='#ProfitLossAccountReserve2008'>3,740</a>
+        </td>
+        <td class='subtotal'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:TotalReserves' scale='3' unitRef='GBP' format='ixt:numcommadot'>3,740</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Profit for the year</td>
+        <td />
+        <td>-</td>
+        <td>
+          <a href='#ProfitLossForPeriodBeforeDividendAppropriations2009'>3,659</a>
+        </td>
+        <td>
+          <a href='#ProfitLossForPeriodBeforeDividendAppropriations2009'>3,659</a>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Dividends paid</td>
+        <td />
+        <td>-</td>
+        <td>(<a href='#InterimPayment2009'>2,500</a>)</td>
+        <td>(<ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:DividendsWithdrawnFromTotalReserves' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,500</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 31 March 2009</td>
+        <td />
+        <td class='total' >
+          <a href='#uk-gaap_CalledUpShareCapital_FY20092'>-</a>
+        </td>
+        <td class='total'>
+          <a href='#ProfitLossAccountReserve2009'>4,899</a>
+        </td>
+        <td class='total'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:TotalReserves' scale='3' unitRef='GBP' format='ixt:numcommadot'>4,899</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_other_financial_commitments_2' colspan='100' class='rowName'>
+          <b>18. Other financial commitments</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>At 31 March 2009 the company had annual commitments under non-cancellable operating leases as set out below:</td>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>Other</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>&#163;000</i>
+        </td>
+        <td>
+          <i>&#163;000</i>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>Operating leases which expire within one year</td>
+        <td />
+        <td />
+        <td class='listEnd' id='uk-gaap_OtherOperatingLeasesExpiringWithinOneYear_FY20092'>
+          <ix:nonFraction contextRef='FY20092' decimals='-3' name='uk-gaap:OtherOperatingLeasesExpiringWithinOneYear' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+        <td class='listEnd'>
+          <ix:nonFraction contextRef='FY20082' decimals='-3' name='uk-gaap:OtherOperatingLeasesExpiringWithinOneYear' scale='3' unitRef='GBP'>1</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_related_party_transactions' colspan='100' class='rowName'>
+          <b>19. Related party transactions</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:DescriptionTransactionGeneralAmountsInvolved' order='1' tupleRef='tuple.4'>During the year, the company made charitable contributions of &#163;500,000 (2008 - &#163;398,000) to the XBRL-TESTCO Foundation, a related party of the company by virtue of common directors/trustees.  The company has taken advantage of the exemptions available under FRS 8 not to disclose transactions with group companies, where consolidated financial statements are publicly available.  No other transactions which require disclosure by FRS8 took place during the year.</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td id='notes_ultimate_undertaking_and_controlling_party' colspan='100' class='rowName'>
+          <b>20. Ultimate undertaking and controlling party</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='100' class='rowName'>
+          <ix:nonNumeric contextRef='FY2009' name='uk-gaap:InformationOnControllingPartyIncludingDescriptionRelationship' order='2' tupleRef='tuple.5'>The company is a wholly owned subsidiary undertaking of <ix:nonNumeric contextRef='FY2009' name='uk-gaap:NameControllingParty' order='1' tupleRef='tuple.5'>BIG XBRL-TESTCO Limited</ix:nonNumeric>.  The result of XBRL-TESTCO Limited is consolidated in the group financial statements of BIG XBRL-TESTCO Limited, which is the only group of which the company is a member.  The consolidated financial statements of BIG XBRL-TESTCO Limited can be obtained from Companies House, Cardiff, CF14 3UZ</ix:nonNumeric>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='section' colspan='100'>
+          <b>Detailed trading profit and loss account</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>for the year ended 31 March 2009</td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>&#163;000</i>
+        </td>
+        <td>
+          <i>&#163;000</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Turnover</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Sales</td>
+        <td />
+        <td />
+        <td class='total'>
+          <a href='#TurnoverGrossOperatingRevenue2009'>75,521</a>
+        </td>
+        <td class='total'>
+          <a href='#TurnoverGrossOperatingRevenue2008'>37,724</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Cost of sales</b>
+        </td>
+        <td />
+        <td />
+        <td>
+          <a href='#CostSales2009'>(48,072)</a>
+        </td>
+        <td>
+          <a href='#CostSales2008'>(23,290)</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Gross profit</b>
+        </td>
+        <td />
+        <td />
+        <td class='subtotal'>
+          <a href='#GrossProfitLoss2009'>27,449</a>
+        </td>
+        <td class='subtotal'>
+          <a href='#GrossProfitLoss2008'>14,434</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Distribution costs</b>
+        </td>
+        <td />
+        <td />
+        <td>
+          <a href='#DistributionCosts2009'>(11,519)</a>
+        </td>
+        <td>
+          <a href='#DistributionCosts2008'>(6,538)</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Administrative expenses</b>
+        </td>
+        <td />
+        <td />
+        <td>
+          <a href='#AdministrativeExpenses2009'>(9,634)</a>
+        </td>
+        <td>
+          <a href='#AdministrativeExpenses2008'>(4,211)</a>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td class='subtotal'>(<ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:DistributionCostsAdministrativeCostsSubtotal' scale='3' unitRef='GBP' format='ixt:numcommadot'>21,153</ix:nonFraction>)</td>
+        <td class='subtotal'>(<ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:DistributionCostsAdministrativeCostsSubtotal' scale='3' unitRef='GBP' format='ixt:numcommadot'>10,749</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Operating profit</b>
+        </td>
+        <td />
+        <td />
+        <td class='subtotal'>
+          <a href='#OperatingProfitLoss2009'>6,296</a>
+        </td>
+        <td class='subtotal'>
+          <a href='#OperatingProfitLoss2008'>3,685</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Interest</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Interest receivable</td>
+        <td />
+        <td />
+        <td>
+          <a href='#OtherInterestReceivableSimilarIncome2009'>173</a>
+        </td>
+        <td>
+          <a href='#OtherInterestReceivableSimilarIncome2008'>63</a>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Hire purchase interest paid</td>
+        <td />
+        <td />
+        <td id='uk-gaap_LeasesHirePurchaseContractsFinanceCharges_FY2009'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:LeasesHirePurchaseContractsFinanceCharges' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+        <td>(<ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:LeasesHirePurchaseContractsFinanceCharges' scale='3' unitRef='GBP'>3</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td class='rowName'>Other interest payable</td>
+        <td />
+        <td />
+        <td>(<ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:OtherBorrowingsInterestPaymentsSimilarCharges' scale='3' unitRef='GBP'>5</ix:nonFraction>)</td>
+        <td>(<ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:OtherBorrowingsInterestPaymentsSimilarCharges' scale='3' unitRef='GBP'>1</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Profit before taxation</b>
+        </td>
+        <td />
+        <td />
+        <td class='total'>
+          <a href='#ProfitLossOnOrdinaryActivitiesBeforeTax2009'>6,464</a>
+        </td>
+        <td class='total'>
+          <a href='#ProfitLossOnOrdinaryActivitiesBeforeTax2008'>3,744</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='section' colspan='100'>
+          <b>Schedule of distribution costs and administrative expenses</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>for the year ended 31 March 2009</td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>2009</i>
+        </td>
+        <td>
+          <i>2008</i>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <i>&#163;000</i>
+        </td>
+        <td>
+          <i>&#163;000</i>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Distribution costs</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Wages and salaries (excluding NI)</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:WagesSalariesDistributionCosts' scale='3' unitRef='GBP' format='ixt:numcommadot'>3,451</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:WagesSalariesDistributionCosts' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,794</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Motor vehicle costs</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:VehicleRunningCostsDistributionCosts' scale='3' unitRef='GBP'>138</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:VehicleRunningCostsDistributionCosts' scale='3' unitRef='GBP'>82</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Sales support</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:SupportAdministrationCostsDistributionCosts' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,685</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:SupportAdministrationCostsDistributionCosts' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,306</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Sundry expenses</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:SundryExpensesDistributionCosts' scale='3' unitRef='GBP'>101</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:SundryExpensesDistributionCosts' scale='3' unitRef='GBP'>119</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Depreciation on plant and equipment</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009_Plant_and_machinery' decimals='-3' name='uk-gaap:DepreciationTangibleFixedAssetsDistributionCosts' scale='3' unitRef='GBP'>54</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008_Plant_and_machinery' decimals='-3' name='uk-gaap:DepreciationTangibleFixedAssetsDistributionCosts' scale='3' unitRef='GBP'>37</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Depreciation on motor vehicles</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009_Motor_vehicles' decimals='-3' name='uk-gaap:DepreciationTangibleFixedAssetsDistributionCosts' scale='3' unitRef='GBP'>58</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008_Motor_vehicles' decimals='-3' name='uk-gaap:DepreciationTangibleFixedAssetsDistributionCosts' scale='3' unitRef='GBP'>45</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Marketing and advertising</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:MarketingAdvertisingCostsDistributionCosts' scale='3' unitRef='GBP' format='ixt:numcommadot'>5,032</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:MarketingAdvertisingCostsDistributionCosts' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,155</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td class='total'>
+          <a href='#DistributionCosts2009'>11,519</a>
+        </td>
+        <td class='total'>
+          <a href='#DistributionCosts2008'>6,538</a>
+        </td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td class='rowName'>
+          <b>Administrative expenses</b>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Wages and salaries (excluding NI)</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:WagesSalariesAdministrativeExpenses' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,137</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:WagesSalariesAdministrativeExpenses' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,139</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Directors' remuneration</td>
+        <td />
+        <td />
+        <td id='uk-gaap_DirectorsRemunerationAdministrativeExpenses_FY2009'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:DirectorsRemunerationAdministrativeExpenses' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+          </td>
+        <td id='uk-gaap_DirectorsRemunerationAdministrativeExpenses_FY2008'>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:DirectorsRemunerationAdministrativeExpenses' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Employer's NI contributions</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:EmployersNationalInsuranceAdministrativeExpenses' scale='3' unitRef='GBP'>547</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:EmployersNationalInsuranceAdministrativeExpenses' scale='3' unitRef='GBP'>295</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Staff pension costs</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:PensionsAdministrativeExpenses' scale='3' unitRef='GBP'>11</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:PensionsAdministrativeExpenses' scale='3' unitRef='GBP'>4</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Staff training</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:StaffTrainingAdministrativeExpenses' scale='3' unitRef='GBP'>78</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:StaffTrainingAdministrativeExpenses' scale='3' unitRef='GBP'>46</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Management and licence charges</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:FeesCommissionsPayableAdministrativeExpenses' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,650</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:FeesCommissionsPayableAdministrativeExpenses' scale='3' unitRef='GBP' format='ixt:numcommadot'>1,236</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Insurance</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:InsuranceAdministrativeExpenses' scale='3' unitRef='GBP'>55</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:InsuranceAdministrativeExpenses' scale='3' unitRef='GBP'>32</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Property costs</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:PremisesCostsAdministrativeExpenses' scale='3' unitRef='GBP'>707</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:PremisesCostsAdministrativeExpenses' scale='3' unitRef='GBP'>38</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Cleaning</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:PremisesCleaningAdministrativeExpenses' scale='3' unitRef='GBP'>22</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:PremisesCleaningAdministrativeExpenses' scale='3' unitRef='GBP'>15</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Repairs and maintenance</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:RepairsRenewalsMaintenanceAdministrativeExpenses' scale='3' unitRef='GBP'>71</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:RepairsRenewalsMaintenanceAdministrativeExpenses' scale='3' unitRef='GBP'>51</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Couriers</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:CourierServicesAdministrativeExpenses' scale='3' unitRef='GBP'>40</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:CourierServicesAdministrativeExpenses' scale='3' unitRef='GBP'>37</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Printing, postage and stationery</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:PrintingPostageStationeryAdministrativeExpenses' scale='3' unitRef='GBP'>68</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:PrintingPostageStationeryAdministrativeExpenses' scale='3' unitRef='GBP'>43</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Telephone</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:TelecommunicationsCostsAdministrativeExpenses' scale='3' unitRef='GBP'>161</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:TelecommunicationsCostsAdministrativeExpenses' scale='3' unitRef='GBP'>86</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Computer running costs</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:ComputerSoftwareITConsumablesMaintenanceAdministrativeExpenses' scale='3' unitRef='GBP'>196</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:ComputerSoftwareITConsumablesMaintenanceAdministrativeExpenses' scale='3' unitRef='GBP'>107</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Travelling expenses</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:TravelSubsistenceExpensesAdministrativeExpenses' scale='3' unitRef='GBP'>409</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:TravelSubsistenceExpensesAdministrativeExpenses' scale='3' unitRef='GBP'>182</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Entertaining</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:EntertainingExpensesIncurredByStaffAdministrativeExpenses' scale='3' unitRef='GBP'>32</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:EntertainingExpensesIncurredByStaffAdministrativeExpenses' scale='3' unitRef='GBP'>35</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Legal and professional fees</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:LegalFeesAdministrativeExpenses' scale='3' unitRef='GBP'>80</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:LegalFeesAdministrativeExpenses' scale='3' unitRef='GBP'>37</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Audit and accountancy fees</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:AccountancyFeesAdministrativeExpenses' scale='3' unitRef='GBP'>56</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:AccountancyFeesAdministrativeExpenses' scale='3' unitRef='GBP'>18</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Bank charges</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:BankChargesDetailedPL' scale='3' unitRef='GBP'>31</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:BankChargesDetailedPL' scale='3' unitRef='GBP'>22</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Bad and doubtful debts</td>
+        <td />
+        <td />
+        <td id='uk-gaap_BadDebtsWrittenOffAdministrativeExpenses_FY2009'>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:BadDebtsWrittenOffAdministrativeExpenses' scale='3' unitRef='GBP' format='ixt:numdash'>-</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:BadDebtsWrittenOffAdministrativeExpenses' scale='3' unitRef='GBP'>18</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Staff welfare</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:StaffWelfareAdministrativeExpenses' scale='3' unitRef='GBP'>418</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:StaffWelfareAdministrativeExpenses' scale='3' unitRef='GBP'>120</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Sundry expenses</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:SundryExpensesAdministrativeExpenses' scale='3' unitRef='GBP' format='ixt:numcommadot'>2,795</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:SundryExpensesAdministrativeExpenses' scale='3' unitRef='GBP'>583</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Subscriptions</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:SubscriptionsAdministrativeExpenses' scale='3' unitRef='GBP'>24</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:SubscriptionsAdministrativeExpenses' scale='3' unitRef='GBP'>17</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td class='rowName'>Discounts received</td>
+        <td />
+        <td />
+        <td>(<ix:nonFraction contextRef='FY2009' decimals='-3' name='uk-gaap:DiscountsReceivableAdministrativeExpenses' scale='3' unitRef='GBP'>186</ix:nonFraction>)</td>
+        <td>(<ix:nonFraction contextRef='FY2008' decimals='-3' name='uk-gaap:DiscountsReceivableAdministrativeExpenses' scale='3' unitRef='GBP'>91</ix:nonFraction>)</td>
+      </tr>
+      <tr>
+        <td class='rowName'>Depreciation on fixtures, fittings and equipment</td>
+        <td />
+        <td />
+        <td>
+          <ix:nonFraction contextRef='FY2009_Fixtures__fittings__tools_and_equipment' decimals='-3' name='uk-gaap:DepreciationTangibleFixedAssetsAdministrativeExpenses' scale='3' unitRef='GBP'>232</ix:nonFraction>
+        </td>
+        <td>
+          <ix:nonFraction contextRef='FY2008_Fixtures__fittings__tools_and_equipment' decimals='-3' name='uk-gaap:DepreciationTangibleFixedAssetsAdministrativeExpenses' scale='3' unitRef='GBP'>141</ix:nonFraction>
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td class='total'>
+          <a href='#AdministrativeExpenses2009'>9,634</a>
+        </td>
+        <td class='total'>
+          <a href='#AdministrativeExpenses2008'>4,211</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
